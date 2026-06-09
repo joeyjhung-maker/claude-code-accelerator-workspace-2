@@ -1,7 +1,23 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git rm *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git remote *)",
+      "Bash(git push *)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "TZ='Europe/London' bash -c 'hour=$(date +%H); if [ \"$hour\" -ge 17 ]; then echo \"{\\\"systemMessage\\\": \\\"It'\\''s past 5pm — want me to commit and push today'\\''s work to GitHub?\\\"}\"; fi'"
+          }
+        ]
+      }
     ]
   }
 }

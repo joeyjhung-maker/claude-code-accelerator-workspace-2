@@ -185,6 +185,9 @@
   },
   "active": "bb3c7a63fe9d45a7",
   "lastOpenFiles": [
+    "scripts/daily-backup.log",
+    "scripts/daily-backup.sh",
+    "scripts",
     "winners/_example-winner.md",
     "swipes/_organizing-swipes.md",
     "clients/flexxable.md"
