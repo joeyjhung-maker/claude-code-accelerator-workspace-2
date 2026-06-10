@@ -30,6 +30,12 @@ If you want to change how a skill works, ask Claude to edit the real skill in `.
 | [[convince-me]] | `/convince-me` | Make Claude argue for a recommendation with clearer reasoning. |
 | [[security-check]] | `/security-check` | Check installs, backups, public sharing, permissions, and risky file moves before acting. |
 
+## Creative strategy
+
+| Skill | Command | Use it when |
+|---|---|---|
+| [[creative-strategy-system]] | `/creative-strategy-system` | Build a full creative strategy — from hook to production plan to first winning ad. Strategy-first, then execution. |
+
 ## Building the system
 
 | Skill | Command | Use it when |

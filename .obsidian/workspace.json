@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "winners/flexxable-hook-high-ticket-sales.md",
+                "file": "winners/_example-winner.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "flexxable-hook-high-ticket-sales"
+              "title": "_example-winner"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "winners/flexxable-hook-high-ticket-sales.md",
+                "file": "winners/_example-winner.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for flexxable-hook-high-ticket-sales"
+              "title": "Backlinks for _example-winner"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "winners/flexxable-hook-high-ticket-sales.md",
+                "file": "winners/_example-winner.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from flexxable-hook-high-ticket-sales"
+              "title": "Outgoing links from _example-winner"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "winners/flexxable-hook-high-ticket-sales.md",
+                "file": "winners/_example-winner.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of flexxable-hook-high-ticket-sales"
+              "title": "Outline of _example-winner"
             }
           }
         ]
@@ -185,6 +185,14 @@
   },
   "active": "bb3c7a63fe9d45a7",
   "lastOpenFiles": [
+    "copy/flexxable-hooks-9to5-mechanism-L3.md",
+    "clients/flexxable-strategy-map.md",
+    "clients/flexxable-primers/hooks.md",
+    "clients/flexxable-primers",
+    "clients/flexxable-parsed-hooks-bodies-headlines.md",
+    "clients/flexxable-winning-ads.md",
+    "winners/flexxable-hook-high-ticket-sales.md",
+    "ready-check.md",
     "scripts/daily-backup.log",
     "scripts/daily-backup.sh",
     "scripts",
