@@ -2,7 +2,7 @@
 
 *The fingerprint to mirror on every Flexxable email and piece of copy. Pulled from Dan's hand-formatted Hulk squeeze page (2026-06-10). This is per-client — these rules are Flexxable's, do not leak them into another brand.*
 
-Related: [[flexxable-primers]] [[copy-rubric]] [[voice]]
+Related: [[flexxable-offer-doc-ROYA]] [[flexxable-primers]] [[copy-rubric]] [[voice]]
 
 ---
 
