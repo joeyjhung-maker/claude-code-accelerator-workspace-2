@@ -12,6 +12,10 @@ This is not a task list. It is the small map that helps Claude and you find the 
 - [[Promotion]] is the end-of-session move that makes the next session better.
 - [[Skills]] shows the slash commands you can use. The real instructions live in `.claude/skills/`, which Obsidian hides.
 
+## JV partnerships
+
+Separate line of work from core Flexxable copy. Map lives at [[JV Partnerships Map]] (`jv/JV-map.md`), with its own partner folders under `jv/partners/`. Same rules as everywhere else.
+
 ## Daily use
 
 1. Start in `CLAUDE.md`.

@@ -43,7 +43,7 @@ Working drafts: `emails/`
 | Ryan testi | $50M roofing, ~$12k/mo | 🟡 |
 | Oli testi | 10yr software eng → quit his job | 🟡 |
 | Scott testi | $27k from one AI demo | 🟡 |
-| 1k→4k | one client, 4× weekly profit | 🟡 |
+| 1k→4k | one client, 4× weekly profit — `emails/1k-to-4k-iteration.md` (kw SYSTEM) | 🟢 |
 
 ### Parent / Shark Segment
 | Email | Angle | Status |
@@ -56,7 +56,11 @@ Working drafts: `emails/`
 2 · Demo hell · 7 · Leaving money on table · 8 · $99/mo trap · 10 · Commoditization anxiety · 15 · Not technical enough · 16 · Setup takes forever · 17 · Scared it'll break · 18 · Don't trust myself to deliver · 20 · Everyone selling the same thing · 21 · Clients don't understand · 22 · Market moving too fast · 23 · Competing with Fiverr · 24 · Agencies getting desperate · 25 · Tired of grinding · 26 · Feel like a fraud · 27 · Scared to niche down · 28 · FOMO · 29 · Don't want to be agency owner · 33 · Tech layoffs / recession mindset · 34 · Everyone's a prompt engineer · 35 · AI guru gold rush · 45 · What happens when AI gets better · 46 · Clients who'll pay $50K in 2026
 
 ## Part 5 — Reveal New Bonus/Addition
-⬜ TBD
+| # | Send | Subject | File | Status |
+|---|------|---------|------|--------|
+| 26 | Fri 3 Jul | We just added a BRAIN to The Hulk | `emails/26-campaign-analyser.md` | 🟢 ready to schedule |
+
+Feature-reveal run (Sales Wingman + Hulk tools): Pain Signal Auditor → Revenue Leak Map → **Campaign Analyser (26)**. All close on the locked Hulk CTA model. Working copies in `copy/`.
 
 ## Part 6 — Payment Plan Close
 ⬜ TBD

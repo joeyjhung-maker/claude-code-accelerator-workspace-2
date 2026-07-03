@@ -22,6 +22,7 @@ Reference (feeds the work):
 - What died and why: losers/
 - Repeatable plays: workflows/
 - A specific client's context and rules: clients/{name}.md
+- JV partner deals (separate from core Flexxable work): jv/JV-map.md
 - Human-readable skill guide: skills/Skills.md
 
 Production (what I make):
