@@ -11,7 +11,7 @@
 - **First-person credibility bridge over a neutral connective.** Joey swapped MarioBot's "where this whole model starts" → "where I've made a ton of money." Plants the operator right before the mechanism. Watch for neutral bridges in AI drafts and earn them back.
 - **Ladder the mechanism pivot** (now also a writer-side rule in [[mariobot-style-contract]]): MarioBot crammed "instead of a retainer → battling CPLs → you install an AI employee" into one line; Joey broke it into a 3-line ellipsis ladder + added "(competing with hundreds of agencies)."
 
-## Open question (Joey to decide)
-- Joey used "And the best part:" as a lead-in. The style contract bans canned run-ups before a claim for the AI WRITER. Proposal: keep that signpost human-only (Joey can, MarioBot can't). Not yet baked into the contract — awaiting the call.
+## Resolved (2026-07-06)
+- "And the best part:" is HUMAN-ONLY. Joey keeps it as a hand-edit lead-in; MarioBot's ban on canned run-ups before a claim stays as-is in [[mariobot-style-contract]]. The signpost is Joey's to add on the pass, not the bot's to write.
 
 Related: [[mariobot-style-contract]] [[prime-mariobot-with-real-primers]] [[flexxable-offer-doc]] [[2026-06-29-flexxable-iaa-one-client-ai-age-fb-ad]]
