@@ -371,8 +371,8 @@ Structured, searchable text pulled from the testimonial images in `source/testim
 - **Best for:** short momentum proof.
 
 ### Michael — 10 clients in a month, ~$90k cash collected in December (via Sales Wingman)
-- **Source:** Michael 10 Clients.png + Michael 90k.png (WhatsApp snippets)
-- **Niche / android:** general / Sales Wingman `#scale`
+- **Source:** Michael 10 Clients.png + Michael 90k.png (WhatsApp snippets) + Joey's 2026-07-06 "2-Line SMS" ad
+- **Niche / android:** medical equipment sales / Sales Wingman `#scale` `#first-client`
 - **Result:** Signed 10 clients last month using the sales wingman, another 10–15 closing this month; "closed roughly $90k worth of biz (cash collected) in Dec alone."
 - **Quote:** "Used the sales wingman. … Guy's a machine." / "He's closed roughly $90ks worth of biz (cash collected) in Dec alone."
 - **Best for:** power-user/scale proof + Sales Wingman tool. (May be same Michael as the $1.5k bot-build post — possibly Michael Vohs; verify before naming.)

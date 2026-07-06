@@ -16,9 +16,12 @@ MarioBot is STATELESS. It remembers nothing between runs. It writes in whatever 
 3. **Run the 2-step Genesis protocol** (stateless — replay full history each call):
    - Prime: send the prime payload → bot replies "I've absorbed the patterns."
    - Instruct: send `[prime] → [confirmation] → [instruction]` → it writes.
-   - Runner: `/tmp/run_mario.py` (reads prime files + `/tmp/mario_instruction.md`; just repoint the file paths for a new client). Key: `clients/.env` (GENESIS_API_KEY + ANTHROPIC_API_KEY). Endpoint `https://gas.copycoders.ai/api/v1`, model `mariobot`, `stream:true` required.
-   - Gotcha: Python urllib needs an unverified SSL context (`ssl.CERT_NONE`) or it throws CERTIFICATE_VERIFY_FAILED — curl works fine without it.
-4. **Check.** Numbers verbatim against the offer doc/brief; voice-fingerprint tells present; bold skim-path sells alone; banned words absent.
+   - Runner: `scripts/run_mario.py --primer <primer.md> --instruction <brief.md>` (durable, in-repo — the old `/tmp` runner kept getting wiped, and each session rebuilt the prime from memory, which is how thin primes happened). It auto-prepends `rubrics/mariobot-style-contract.md` to the instruction so the WRITER sees the hard rules, not just the judge. Key: `clients/.env` (GENESIS_API_KEY + ANTHROPIC_API_KEY). Endpoint `https://gas.copycoders.ai/api/v1`, model `mariobot`, `stream:true` required, BOTH headers (`Authorization: Bearer` + `X-Provider-Key`). `--dry-run` prints the exact payloads.
+   - Gotcha: Python urllib needs an unverified SSL context (`ssl.CERT_NONE`) or it throws CERTIFICATE_VERIFY_FAILED — curl works fine without it. (The runner handles this.)
+   - Primers live in `clients/flexxable-primers/` (e.g. `iaa-jv-body.md` for IAA-book ads to JV lists). Never re-type a prime by hand.
+4. **Check — two layers, in order.**
+   - **Linter first:** `python3 scripts/copy_lint.py <draft.md>` — mechanical STRUCTURE rules (multi-sentence lines, fragment stacks, "No X. No Y.", banned words, signposts, dashes). Every FAIL gets rewritten before the judge pass. (Added 2026-07-06 after a judge-by-feel pass waved through 12 mechanical fails.)
+   - **Judge pass second:** grade the taste rules from `rubrics/copy-rubric.md` as an explicit PASS/FAIL scorecard per rule — not a prose summary. Numbers verbatim against the offer doc/brief AND proof TYPE matched to the claim; voice-fingerprint tells present; additive framing when it's a JV list; only a clean pass reaches Joey.
 
 ## What good looks like
 copy/2026-06-24-flexxable-hulk-student-rollcall-fb-ads.md — 3 roll-call→Hulk ads at ~200w, on-voice, that Dan then amended lightly rather than rewrote.
