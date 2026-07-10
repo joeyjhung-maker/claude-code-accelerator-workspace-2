@@ -85,6 +85,34 @@ Just tap the button on this ad to grab your copy.
 
 ---
 
+## The body — 200-word cut (short video version, 199 words)
+
+It's probably the most boring online business you'll ever hear about… AI-powered lead reactivation.
+
+But that's exactly why it works, because almost nobody is doing it yet.
+
+Every business has old leads sitting in their database, people who enquired months ago and never bought.
+
+You install an AI that texts those dead leads a simple conversational message over SMS… and wakes them back up.
+
+No upfront cost to the business, you just split the new sales with them.
+
+So it's a dead easy yes for any business owner, because those leads were going to waste anyway.
+
+Even with ONE client, you could be making a few thousand a month working maybe a few hours a week.
+
+You don't need to be technical, you don't need experience, a product, or money to start… if you can use ChatGPT, you can do this.
+
+I get it, this probably sounds too good to be true. I had my doubts too.
+
+The full step-by-step breakdown is inside a book called The Instant A.I. Agency.
+
+It's $14.40 with a 30-day guarantee where you keep everything even if you decide it's not for you.
+
+Just tap the button on this ad to grab your copy.
+
+---
+
 ## Judge notes (provenance: all mariobot/hookbot, graded hard)
 - **copy_lint:** body 0 FAIL / 0 FLAG (corrected version). Hooks eyeballed (linter is body-scoped).
 - **Mechanism corrected (Joey, 2026-07-10):** IAA is OLD/DEAD-lead reactivation over SMS → new sales, split revenue, no upfront cost — NOT new-lead generation. First draft had it wrong ("finds them new leads"). Source of truth: offer-doc-ROYA.md.
