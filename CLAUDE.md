@@ -34,6 +34,7 @@ Flow:
 - Unsorted drop zone: inbox/
 - Daily notes: daily/
 - Finished or retired work: archive/
+- The Studio (live pixel-map dashboard of the pipeline, read-only): double-click "Open The Studio.command", or ask Claude to start the studio (.studio/, port 4173)
 
 What to promote into memory vs ignore: the-data-dictionary.md (read it; it is the rule for what compounds).
 When creating a durable note, include a short `Related:` line with useful Obsidian links, for example `Related: [[Promotion]] [[Workbench vs Memory]]`.
