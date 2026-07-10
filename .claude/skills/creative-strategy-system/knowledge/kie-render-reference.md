@@ -60,6 +60,18 @@ photo a regular guy posted to Facebook. NOT an ad, NOT a model, NOT studio, NOT 
 NOT AI-looking. 4:5.
 ```
 
+## Model selection — text-heavy vs photo (banked 2026-07-10)
+Which model matters as much as the prompt:
+- **Text-heavy statics (screenshots, Notes app, texts, comments, search bars) → `nano-banana-2` (Pro).**
+  The base model `google/nano-banana` garbles fine text — it duplicated a word ("chest chest tight") and
+  invented junk UI labels ("Pladls / Blutn / Srams") on a Notes-app render. Re-running the exact same
+  prompt on `nano-banana-2` came back clean and legible. Don't waste a render firing screenshot concepts
+  at the base model.
+- **`nano-banana-2` ignores `image_size` and defaults to 1:1.** 1:1 is feed-native so it's fine; if you
+  specifically need 4:5 portrait, the param name differs for this model — sort it before relying on it.
+- Wired in `scripts/run_image.py`: `--model nano-banana-2` flips to Pro; default is base for photo work.
+  `python3 scripts/run_image.py "<prompt>" --model nano-banana-2 --out <path.png>`.
+
 ## Plain-English explainer
 We turn a winning ad's message into native-looking static images. Feed a real reference photo + a prompt
 into an image model (KIE / nano-banana). Two things make or break it: **(a)** get the reference onto a

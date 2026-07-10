@@ -132,6 +132,7 @@ When in doubt on a taste call (not a mechanical one), flag it for me rather than
 | 2026-07-06 | Swapped Rob Brown's profit + Jack's install fee out of the "6-figure commission checks" ad for the $222,600 commission, Scott $27k, Katarrey $4,250 | Proof TYPE must match the claim — a commission hook needs commission proof, not profit or fee numbers. |
 | 2026-07-06 | A prose "judge pass" signed off two mariobot drafts that `copy_lint.py` then failed 21 times between them | The judge outputs a rule-by-rule PASS/FAIL scorecard, never a narrative. Linter first (mechanical rules), scorecard second (taste rules). |
 | 2026-07-09 | "Rob Brown made $341,042…" → "Rob made $341,042…" | Never use Rob Brown's surname in copy — first name only, matching every other named proof point. |
+| 2026-07-10 | `copy_lint.py` failed a fine spoken hook (question + answer) and a headline during a /produce run | The linter's STRUCTURE rules are BODY-scoped. Hooks and headlines are single units — a Q+A hook or a short headline is not a "two sentences on a line" / "fragment stack" fail. Treat a lint FAIL on a hook/headline as a flag to eyeball, not an auto-rewrite. (Fix later: teach copy_lint line-type context so it stops crying wolf on hooks/headlines.) |
 
 <!-- Next time a draft makes me wince, add a row:
 | YYYY-MM-DD | "the thing I said once" | the permanent rule |
