@@ -1,32 +1,29 @@
 #!/usr/bin/env python3
-"""Run mariobot (Genesis) with the 2-step stateless protocol.
+"""Run ad-hook-bot-1 (Genesis) with the 3-step stateless hook protocol.
 
-Replaces the old throwaway /tmp/run_mario.py, which got wiped between sessions
-and led to the pipeline being rebuilt from memory (thin primes, forgotten rules).
+Sibling of run_mario.py, but for HOOKS. The difference is the mandatory
+double-pass: hooks need a third call that sharpens the best of the first 10 to
+Level 3 and generates 10 more, for 20 total (per the hook-bot template and
+knowledge/frameworks/hook-quality.md).
 
-What it does, per workflows/2026-06-24-mariobot-genesis-body-copy.md:
-  1. PRIME  — send the primer file(s) (winning ads), bot absorbs the patterns.
-  2. INSTRUCT — replay [primer -> confirmation -> instruction] and get the draft.
-
-The style contract (rubrics/mariobot-style-contract.md) is prepended to the
-instruction automatically, so the WRITER sees the hard rules — the judge is
-the backstop, not the only line of defence.
+  1. PRIME     — send the hook primer (winning hooks). Bot absorbs the patterns.
+  2. INSTRUCT  — replay [primer -> confirmation -> brief]. Bot returns ~10 hooks.
+  3. DOUBLEPASS- replay the whole history + "take your strongest, sharpen each to
+                 Level 3 viciousness, generate 10 MORE. Output all 20, numbered."
 
 Usage:
-  python3 scripts/run_mario.py \
-      --primer clients/flexxable/primers/iaa-jv-body.md \
+  python3 scripts/run_hookbot.py \
+      --primer clients/flexxable/primers/hooks.md \
       --instruction /path/to/brief.md \
-      --out jv/partners/.../draft.md          # optional; prints to stdout too
-  Add --dry-run to inspect the exact payloads without calling the API.
+      --out jv/.../hooks.md         # optional; also prints to stdout
+  --dry-run prints the payloads without calling the API.
 
-Keys come from clients/.env (GENESIS_API_KEY + ANTHROPIC_API_KEY).
-Endpoint needs BOTH headers (Authorization: Bearer genesis-key, X-Provider-Key:
-anthropic-key), stream:true is required, and sequential calls only on one key.
+Keys from clients/.env (GENESIS_API_KEY + ANTHROPIC_API_KEY). Both headers,
+stream:true required, sequential calls only, a beat between steps.
 """
 
 import argparse
 import json
-import re
 import ssl
 import sys
 import time
@@ -35,9 +32,16 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 ENV_FILE = REPO / "clients" / ".env"
-CONTRACT_FILE = REPO / "rubrics" / "mariobot-style-contract.md"
 BASE_URL = "https://gas.copycoders.ai/api/v1"
-BOT = "mariobot"
+BOT = "ad-hook-bot-1"
+
+DOUBLEPASS = (
+    "Now the double-pass. Take your strongest 2-3 hooks from above, sharpen each "
+    "to Level 3 viciousness (go harder for the throat, protect the charged word, "
+    "keep it spoken-natural for a Reel), then generate 10 MORE using Transfer / "
+    "Reframe / Promote. Output ALL 20 hooks as one numbered list, one line each. "
+    "No preamble, no commentary."
+)
 
 
 def load_env(path):
@@ -48,18 +52,6 @@ def load_env(path):
             k, v = line.split("=", 1)
             env[k.strip()] = v.strip()
     return env
-
-
-def style_contract():
-    text = CONTRACT_FILE.read_text()
-    m = re.search(
-        r"\(verbatim block starts here\)\n(.*?)\n\(verbatim block ends here\)",
-        text,
-        re.DOTALL,
-    )
-    if not m:
-        sys.exit(f"Could not find the verbatim block in {CONTRACT_FILE}")
-    return m.group(1).strip()
 
 
 def call_bot(messages, env):
@@ -104,32 +96,28 @@ def call_bot(messages, env):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--primer", action="append", required=True,
-                    help="primer file (winning ads); repeatable")
+                    help="hook primer file (winning hooks); repeatable")
     ap.add_argument("--instruction", required=True, help="the brief file")
-    ap.add_argument("--out", help="write the draft here as well as stdout")
+    ap.add_argument("--out", help="write the hooks here as well as stdout")
     ap.add_argument("--dry-run", action="store_true",
                     help="print payloads, no API call")
     args = ap.parse_args()
 
     primer = "\n\n---\n\n".join(Path(p).read_text() for p in args.primer)
     prime_msg = (
-        "You are about to write direct-response copy. First, absorb the voice "
-        "and patterns of these winning ads. Reply only that you've absorbed "
-        "the patterns.\n\n" + primer
+        "You are about to generate direct-response hooks. First, absorb the "
+        "voice, rhythm and hook patterns of these winning hooks. Reply only that "
+        "you've absorbed the patterns.\n\n" + primer
     )
-    instruction = (
-        "Before you write, these are the hard rules. They override any "
-        "structural pattern in the sample ads you absorbed.\n\n"
-        + style_contract()
-        + "\n\n---\n\nNow the brief:\n\n"
-        + Path(args.instruction).read_text()
-    )
+    instruction = Path(args.instruction).read_text()
 
     if args.dry_run:
         print("=== STEP 1: PRIME ===\n")
         print(prime_msg)
-        print("\n=== STEP 2: INSTRUCT (after replaying prime + confirmation) ===\n")
+        print("\n=== STEP 2: INSTRUCT ===\n")
         print(instruction)
+        print("\n=== STEP 3: DOUBLE-PASS ===\n")
+        print(DOUBLEPASS)
         return
 
     env = load_env(ENV_FILE)
@@ -139,23 +127,28 @@ def main():
 
     print(">>> Step 1: priming...", file=sys.stderr)
     confirmation = call_bot([{"role": "user", "content": prime_msg}], env)
+    time.sleep(2)
 
-    time.sleep(2)  # the server wants a beat between protocol steps
+    print(">>> Step 2: instructing (first pass)...", file=sys.stderr)
+    history = [
+        {"role": "user", "content": prime_msg},
+        {"role": "assistant", "content": confirmation},
+        {"role": "user", "content": instruction},
+    ]
+    first = call_bot(history, env)
+    time.sleep(2)
 
-    print(">>> Step 2: instructing...", file=sys.stderr)
-    draft = call_bot(
-        [
-            {"role": "user", "content": prime_msg},
-            {"role": "assistant", "content": confirmation},
-            {"role": "user", "content": instruction},
-        ],
-        env,
-    )
+    print(">>> Step 3: double-pass...", file=sys.stderr)
+    history += [
+        {"role": "assistant", "content": first},
+        {"role": "user", "content": DOUBLEPASS},
+    ]
+    final = call_bot(history, env)
 
     if args.out:
-        Path(args.out).write_text(draft + "\n")
-        print(f">>> Draft written to {args.out}", file=sys.stderr)
-    print(draft)
+        Path(args.out).write_text(final + "\n")
+        print(f">>> Hooks written to {args.out}", file=sys.stderr)
+    print(final)
 
 
 if __name__ == "__main__":

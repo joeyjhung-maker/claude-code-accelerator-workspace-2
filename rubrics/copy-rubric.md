@@ -67,6 +67,7 @@ When in doubt on a taste call (not a mechanical one), flag it for me rather than
 - **Calibrated hedges.** A naked superlative reads as hype and the guard goes up. A small hedge on the biggest claims ("probably," "considered a top 0.1%") makes them believable. The voice still runs at a 10 — only the claim gets the hedge.
 - **Lead with the human, not the machine/mechanism.** The mechanism is body proof, never the hook. Pain-point or world-level hook first. (Matches Script: never open with student proof or testimonials.)
 - **Never invent a result, number, or quote.** If it's not in the client file, FAIL and ask. (Hard rule from the Script.)
+- **Rob Brown → "Rob" only. Never use his surname in copy.** Locked rule. Every other named proof (Scott, Jack, Michael, Lachie, etc.) keeps first name only anyway — Rob Brown was the one outlier still carrying a surname. Fix on sight in any draft. (Banked 2026-07-09.)
 - **Proof TYPE must match the claim.** A real number attached to the wrong kind of claim still FAILS. A "6-figure commission checks" hook can't be backed by Rob Brown's $341,042 *profit* or Jack's $15,000 *install fee* — it needs a commission number ($222,600 commission, Scott's $27k deal, Katarrey's $4,250). Right numbers, wrong proof type = Joey has to fix it by hand. Match the category, not just the magnitude. (Banked 2026-07-06 — the no-ad-spend WINNER edit.)
 - **Check live dates against the calendar.** Any "Wednesday, Sept 17th"-style date: verify the weekday actually matches the date. Flag mismatches and placeholders (`Xpm`, `EST` in summer = EDT). Numbers must also stay consistent across pieces in the same campaign. (Banked 2026-06-10 — caught a Wed/Thu error on the Hulk Reveal email.)
 
@@ -130,6 +131,7 @@ When in doubt on a taste call (not a mechanical one), flag it for me rather than
 | 2026-07-06 | Killed six fragment-lists in the "build a life, not a cage" email → rewrote each with commas ("Coffee. Quiet house. Maybe 20 minutes." → "Coffee, a quiet house, and maybe 20 minutes of actual work.") | Don't manufacture fragment-lists for rhythm — join beats of one thought with commas and let it flow. General form of the flow-over-staccato rule. |
 | 2026-07-06 | Swapped Rob Brown's profit + Jack's install fee out of the "6-figure commission checks" ad for the $222,600 commission, Scott $27k, Katarrey $4,250 | Proof TYPE must match the claim — a commission hook needs commission proof, not profit or fee numbers. |
 | 2026-07-06 | A prose "judge pass" signed off two mariobot drafts that `copy_lint.py` then failed 21 times between them | The judge outputs a rule-by-rule PASS/FAIL scorecard, never a narrative. Linter first (mechanical rules), scorecard second (taste rules). |
+| 2026-07-09 | "Rob Brown made $341,042…" → "Rob made $341,042…" | Never use Rob Brown's surname in copy — first name only, matching every other named proof point. |
 
 <!-- Next time a draft makes me wince, add a row:
 | YYYY-MM-DD | "the thing I said once" | the permanent rule |

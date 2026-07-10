@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Segments — Exodus</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#F7F8FA;--card:#fff;--ink:#0F1115;--ink2:#6B7280;--ink3:#9CA3AF;--line:#ECEEF1;--line2:#DDE0E4;
+    --dark:#14171C;--blue:#2f6df6;--blue-bg:#eef3ff;--blue-ink:#274a8a;--amber:#d98a00;--amber-bg:#fbf4ec;--amber-ink:#8a5a28;--amber-line:#ecd9c2;
+    --purple-bg:#F3E8FF;--purple-ink:#7C3AED;--radius:12px;--radius-lg:16px}
+  *{box-sizing:border-box}html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  button{font-family:inherit;cursor:pointer}input{font-family:inherit}
+  .nav{background:#fff;border-bottom:1px solid var(--line);height:58px;display:flex;align-items:center;padding:0 24px;gap:24px;position:sticky;top:0;z-index:30}
+  .logo{font-weight:600;font-size:19px}.nav-links{display:flex;gap:18px}.nav-links a{color:var(--ink2);font-size:14px;text-decoration:none}.nav-links a.active{color:var(--ink);font-weight:500}
+  .nav-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+  .brand-pill{display:flex;align-items:center;gap:7px;border:1px solid var(--line2);border-radius:9px;padding:6px 11px;font-weight:500;font-size:13px}.brand-pill .chev{color:var(--ink3)}
+  .avatar{width:31px;height:31px;border-radius:50%;background:#cfd6e4}
+  .page{max-width:1400px;margin:0 auto;padding:18px 24px 90px}
+  .phead{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px}
+  .phead h1{font-size:23px;font-weight:600;letter-spacing:-.02em;margin:0}
+  .phead .sub{color:var(--ink3);font-size:12px;margin-top:2px}
+  .head-actions{display:flex;gap:8px}.saved{font-size:12px;color:var(--ink3);align-self:center}
+  .btn{background:#fff;border:1px solid var(--line2);border-radius:9px;padding:7px 11px;font-size:12.5px;font-weight:500;color:var(--ink)}.btn:hover{background:#FAFAFB}
+  .bar{display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--ink2);margin-bottom:10px}
+  .bar input{border:1px solid var(--line2);border-radius:8px;padding:6px 10px;font-size:13px}
+  .ex{margin-left:auto;display:flex;gap:6px;align-items:center}.ex span.l{font-size:11px;color:var(--ink3)}
+  .exb{border:1px solid var(--line2);background:#fff;border-radius:999px;padding:5px 12px;font-size:12px;color:var(--ink2)}.exb:hover{border-color:var(--blue);color:var(--blue)}
+  details.setup{margin:0 0 12px;border:1px solid var(--line);border-radius:var(--radius);padding:0 14px;background:#fff}
+  details.setup>summary{cursor:pointer;padding:10px 0;font-size:12px;color:var(--ink2);font-weight:600}
+  .setupgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:6px 0 18px}
+  .scol h4{margin:0 0 8px;font-size:11.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink2);font-weight:600}
+  .scol .sub{font-size:12px;color:var(--ink);margin:11px 0 5px;font-weight:500}
+  .metahint,.lenstag{font-size:10px;color:var(--ink3);font-weight:400}
+  .editchip{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;padding:4px 10px;border-radius:16px;border:1px solid var(--line);margin:0 4px 5px 0;background:#fbfbfc}
+  .editchip .x{cursor:pointer;color:var(--ink3)}.editchip .x:hover{color:var(--amber)}
+  .addi{border:1px dashed #ccc;border-radius:14px;padding:4px 10px;font-size:11.5px;width:160px;margin-top:4px}
+
+  .filters{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:10px 16px;margin-bottom:14px;display:flex;flex-direction:column}
+  .fzhdr{font-size:10px;font-weight:600;color:var(--ink3);letter-spacing:.6px;text-transform:uppercase;margin-bottom:4px}
+  .fzhdr span{text-transform:none;letter-spacing:0;font-weight:400}
+  .fgroup{display:flex;align-items:center;gap:12px;padding:6px 0;border-top:1px solid var(--line)}
+  .fglwrap{flex:0 0 146px;line-height:1.2}
+  .fgl{font-size:12px;font-weight:600;color:var(--ink)}
+  .fhint{font-size:10px;color:var(--ink3);font-weight:400;display:block}
+  .chips-inline{display:flex;flex-wrap:wrap;gap:5px;flex:1;align-content:center}
+  .chip{font-size:12px;padding:4px 11px;border-radius:16px;border:1px solid var(--line2);cursor:pointer;user-select:none;color:var(--ink2);background:#fff}
+  .chip:hover{border-color:#c3c8cf}.chip.on{background:var(--amber);border-color:var(--amber);color:#fff}
+  .chip.addchip{border-style:dashed;color:var(--ink3);font-size:11px}
+  .chip.sug{border-style:dashed;color:var(--blue);border-color:#bcd5fb}
+
+  .wrap{display:flex;align-items:flex-start;gap:16px}
+  .gridcard{flex:1;min-width:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:0 1px 2px rgba(15,17,21,.03)}
+  .gridcard .gh{padding:12px 18px;border-bottom:1px solid var(--line);font-weight:600;font-size:14px;display:flex;justify-content:space-between;align-items:center}
+  .gridcard .gh .hint{font-size:11px;color:var(--ink3);font-weight:400}
+  .gridwrap{overflow:auto;padding:12px 16px}
+  table{border-collapse:separate;border-spacing:6px}
+  .corner{font-size:10px;color:var(--ink3);text-align:left;vertical-align:bottom;padding:6px 8px;white-space:nowrap;min-width:110px}
+  .grouprow td{font-size:9px;letter-spacing:.8px;text-transform:uppercase;color:var(--ink3);padding:9px 8px 2px;font-weight:600}
+  /* outcome COLUMNS */
+  th.ocol{vertical-align:top;padding:0 3px;min-width:150px}
+  .ocard{font-size:13px;font-weight:600;padding:10px 11px;border-radius:10px;background:var(--blue-bg);color:var(--blue-ink);border:1.5px solid #d5e2ff;cursor:pointer;text-align:center;position:relative}
+  .ocard.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+  .ocard .vert{font-size:8px;letter-spacing:.5px;text-transform:uppercase;opacity:.65;display:block}
+  .ocard .lens{font-size:8px;opacity:.7}
+  .ocard .x{position:absolute;top:3px;right:6px;color:var(--ink3);font-size:12px}.ocard.on .x{color:#cfe0ff}
+  .subs{display:flex;flex-direction:column;gap:4px;margin:8px 0 0 9px;padding-left:10px;border-left:2px dashed #cfe0ff}
+  .subchip{font-size:11.5px;padding:6px 9px;border-radius:8px;background:#f4f8ff;color:var(--blue-ink);border:1px solid #dbe7ff;cursor:pointer;display:flex;justify-content:space-between;gap:6px;align-items:center;text-align:left}
+  .subchip:hover{border-color:#bcd5fb}
+  .subchip.on{background:var(--blue);color:#fff;border-color:var(--blue)}.subchip .x{color:var(--ink3);font-size:11px}.subchip.on .x{color:#cfe0ff}
+  .subadd{font-size:10.5px;color:var(--ink3);cursor:pointer;text-align:center;padding:2px}.subadd:hover{color:var(--blue)}
+  .subform{background:#f7f9ff;border:1px solid #e4ecfb;border-radius:7px;padding:6px;margin-top:2px}
+  .subform input{width:100%;border:1px solid var(--line2);border-radius:6px;padding:5px 7px;font-size:11.5px}.subform input:focus{outline:none;border-color:#bcd5fb}
+  .subsug{display:flex;flex-wrap:wrap;gap:3px;margin:4px 0}
+  .subsug .s{font-size:10px;border:1px dashed #bcd5fb;color:var(--blue);border-radius:999px;padding:1px 7px;cursor:pointer}
+  .addoc{color:var(--ink3);cursor:pointer;font-size:12px;vertical-align:top;padding-top:8px}.addoc:hover{color:var(--blue)}
+  /* demographic ROWS */
+  .rowh{text-align:right;padding:0 4px 0 0}
+  .rpill{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:9px;background:var(--amber-bg);color:var(--amber-ink);border:1.5px solid var(--amber-line);cursor:pointer;min-width:96px;justify-content:center}
+  .rpill.on{background:var(--amber);color:#fff;border-color:var(--amber)}
+  .rpill .x{color:var(--ink3);font-size:12px}.rpill.on .x{color:#fce8c8}
+  .rowadd{text-align:right;padding:2px 4px}.rowadd .addlink{font-size:11px}
+  td.c{cursor:pointer;border:1.5px solid #ececec;border-radius:7px;background:#fcfcfd;min-width:92px;height:38px;text-align:center;color:#ccc;font-size:11px;vertical-align:middle}
+  td.c:hover{border-color:#bcd0ff}td.c.osel{background:var(--blue-bg)}td.c.dsel{background:var(--amber-bg)}td.c.both{background:var(--blue);border-color:var(--blue);color:#fff}
+  td.c .pdot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--blue);opacity:.5}
+  .addlink{color:var(--ink3);font-size:12.5px;cursor:pointer}.addlink:hover{color:var(--blue)}
+  .inlineform{display:inline-flex;gap:7px;align-items:center;background:#F6F7F9;border:1px solid var(--line);border-radius:9px;padding:6px 9px}
+  .inlineform input{border:1px solid var(--line2);border-radius:7px;padding:6px 9px;font-size:13px;min-width:150px}.inlineform input:focus{outline:none;border-color:#bcd5fb}
+  .emptyhint{color:var(--ink3);font-size:13px;padding:22px 4px;line-height:1.9}.emptyhint b{color:var(--blue);font-weight:500;cursor:pointer}
+
+  aside{width:328px;flex:none;background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:0 1px 2px rgba(15,17,21,.03);padding:17px;position:sticky;top:70px}
+  .badge{display:inline-block;font-size:10.5px;font-weight:600;padding:3px 11px;border-radius:18px;background:var(--blue-bg);color:var(--blue)}
+  .segname{font-size:20px;font-weight:600;line-height:1.2;margin:9px 0 2px}
+  .pdesc{font-size:12px;color:var(--ink2)}
+  .angle{background:#F6F7F9;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:12.5px;line-height:1.45;margin-top:9px;color:#333}
+  .btns{display:flex;gap:8px;margin-top:12px}
+  button.add{flex:1;background:var(--blue);color:#fff;border:0;border-radius:9px;padding:11px;font-size:13px;font-weight:600}button.add:hover{background:#245fdc}button.add:disabled{background:#C9CDD3;cursor:not-allowed}
+  button.clr{background:#fff;border:1px solid var(--line2);border-radius:9px;padding:9px 13px;font-size:12px;color:var(--ink2)}
+  .sec{font-size:10px;letter-spacing:1.1px;text-transform:uppercase;color:var(--ink3);margin:18px 0 10px;border-top:1px solid var(--line);padding-top:13px;display:flex;justify-content:space-between}
+  .q{border:1px solid var(--line);border-radius:10px;padding:9px 11px;margin-bottom:8px;cursor:pointer}.q.sel{border-color:var(--blue);background:var(--blue-bg)}
+  .q .top{display:flex;align-items:center;gap:7px}.q .key{font-size:10px;font-weight:700;color:var(--blue);background:var(--blue-bg);border-radius:5px;padding:1px 6px}
+  .q .nm{font-weight:600;font-size:13px;flex:1}.q .code{font-size:9px;color:var(--amber-ink);font-weight:600}
+  .q .desc{font-size:11.5px;color:var(--ink2);margin-top:3px}.q .ops{display:flex;gap:9px;margin-top:6px}.q .ops span{font-size:11px;color:var(--ink3)}.q .ops span:hover{color:var(--blue)}
+  .empty{color:var(--ink3);font-size:12.5px;font-style:italic}
+  .aw{margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}.aw .awr{display:flex;gap:7px;align-items:center;margin-bottom:5px}
+  .aw .st{flex:0 0 74px;font-size:9.5px;text-align:center;padding:2px 6px;border-radius:999px;background:var(--purple-bg);color:var(--purple-ink);font-weight:500}
+  .aw input{flex:1;border:1px solid var(--line);border-radius:7px;padding:5px 8px;font-size:12px}.aw input:focus{outline:none;border-color:#bcd5fb}
+</style>
+</head>
+<body>
+  <div class="nav"><div class="logo">Exodus</div>
+    <div class="nav-links"><a href="#">Runs</a><a href="#">Library</a><a href="#">Ideas</a><a href="#">Memes</a><a href="#" class="active">Segments</a><a href="#">Settings</a></div>
+    <div class="nav-right"><div class="brand-pill" id="brandPill">Brand <span class="chev">▾</span></div><div class="avatar"></div></div></div>
+  <div class="page" id="page"></div>
+<script>
+const NAMEBANK={A:"Andy",B:"Brian",C:"Carl",D:"Dave",E:"Ella",F:"Frank",G:"Greg",H:"Hank",I:"Iris",J:"Jake",K:"Kyle",L:"Lena",M:"Mia",N:"Nathan",O:"Owen",P:"Paul",Q:"Quinn",R:"Ray",S:"Sam",T:"Travis",U:"Uma",V:"Vic",W:"Walt",X:"Xander",Y:"Yara",Z:"Zane"};
+const NAMES=["Elizabeth","Marcus","Priya","Diane","Hank","Lena","Carlos","Mei","Ruth","Omar","Sofia","Walt","Greta","Andre"];
+const AW=[["unaware","Unaware"],["problem","Problem"],["solution","Solution"],["product","Product"],["mostaware","Most-aware"]];
+const LENSBANK={Type:["roaches","ants","mosquitoes","sun-spots","melasma","hormonal"],Location:["belly","man boobs","love handles","forehead","under-eye","the yard"],Function:["get hard again","build muscle","kill the 3pm crash","focus"],Moment:["2pm crash","morning grogginess","at dusk","3am wake-up","stay ahead of it"],Severity:["I saw one","normal-but-off","flagged low","fully crashed"]};
+const DEMO_META={Buyer:'who PAYS — and are they even the user? ask this first',Gender:'',Age:'rough life-stage beats an exact number',"Race / Ethnicity":"only when it changes the product's job (skin tone, hair type)",Identity:'solidified & visible — married, new dad, retired, budget vs premium'};
+const FACET_META={Belief:'what they think is true — "I think ___" (cortisol is making me fat)',Identity:'the tribe they buy as — "I\'m a ___" (gym-rat, clean-beauty, prepper)',State:'true right now / already tried — "right now I am ___" (on a GLP-1, postpartum, tried Accutane)',Value:'what matters in the buy — "what matters is ___" (organic, fast, cheapest)',Occasion:'the event that put them in-market — "it changed when ___" (had a baby, turned 40)'};
+const FACET_PH={Belief:"e.g. cortisol is the problem",Identity:"e.g. gym-rat",State:"e.g. on a GLP-1",Value:"e.g. organic",Occasion:"e.g. just turned 40"};
+const FACET_SHORT={Belief:"what they blame",Identity:"the tribe they buy as",State:"true now / already tried",Value:"what matters in the buy",Occasion:"why now"};
+let uid=1;const nid=()=>"id"+(uid++);
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const code=s=>s.replace(/[^a-z0-9]/gi,'').slice(0,3).toUpperCase();
+
+function blank(){return{product:"your product",brand:"Brand",
+  outcomes:[],
+  demos:["Buyer","Gender","Age","Race / Ethnicity","Identity"].map(n=>({id:nid(),name:n,values:[]})),
+  facets:["Belief","Identity","State","Value","Occasion"].map(n=>({id:nid(),name:n,values:[]})),
+  queue:[],keyCounter:0};}
+
+const TEMPLATES={
+ Flow:{product:"Flow",brand:"Flow",
+  outcomes:[["Testosterone","Severity",["labs-normal-but-off","flagged low","crashed / post-cycle"]],["Sexual vitality","Function",["get hard again","keep it up","no libido / drive","stamina"]],["Weight loss","Location",["man boobs","love handles","gut I can't lose"]],["Energy","Moment",["2pm crash","wake up exhausted","gassed by evening"]],["Physical performance","Function",["build muscle","stamina / gas out"]],["Mental clarity","Function",["brain fog","can't focus","lost my edge"]]],
+  demos:{Buyer:["self","wife / partner","adult child"],Gender:["men","women"],Age:["25–34","35–44","45–54","55–64","65+"],"Race / Ethnicity":[],Identity:["married","single / dating","new dad","empty-nester","retired","executive","blue-collar"]},
+  facets:{Belief:["low-T","cortisol","estrogen","microplastics","seed oils","just aging"],Identity:["gym-rat / lifter","biohacker","faith-based","carnivore","veteran"],State:["never tried","tried boosters (failed)","on TRT","post-cycle","on a GLP-1","on finasteride","diabetic","vegetarian"],Value:["natural","no-needle","no-prescription","clinically-dosed","budget"],Occasion:["turned 50","divorced / dating again","doctor flagged labs","buddy's heart attack","beach / summer"]}},
+ Lumen:{product:"the serum",brand:"Lumen",
+  outcomes:[["Fewer wrinkles","Location",["forehead lines","crow's feet","'11' lines","crepey neck"]],["Clear acne","Type",["hormonal (jaw)","forehead","back / body","cystic"]],["Fade dark spots","Type",["sun spots","melasma","post-acne marks"]],["Hydration / glow","Severity",["dullness","dryness","flakiness"]],["Under-eye","Location",["dark circles","puffiness","bags"]]],
+  demos:{Buyer:["self","parent for teen","gift"],Gender:["women","men"],Age:["teens","20s","30s","40s","50s+"],"Race / Ethnicity":["fair skin","medium / olive","deep skin tone"],Identity:["new mom","bride-to-be","menopausal","teen"]},
+  facets:{Belief:["hormones","stress","sugar / diet","the sun","stripped my barrier","gut health"],Identity:["clean-beauty","K-beauty","skinimalist","skincare-nerd"],State:["pregnant / nursing","3mo postpartum","rosacea-prone","eczema","on Accutane","on tretinoin","derm-fatigued","switcher"],Value:["clean / non-toxic","fragrance-free","cruelty-free","derm-tested","luxury","budget"],Occasion:["wedding","reunion","just had a baby","turning 30","breakup glow-up"]}},
+ PestFree:{product:"PestFree",brand:"PestFree",
+  outcomes:[["Get them OUT of my home","Type",["roaches","ants","rodents","spiders"]],["Stop them hurting us","Type",["mosquito bites","fleas","wasps / stings"]],["Protect the house","Location",["termites / foundation","attic","walls / wiring"]],["Get my outdoor life back","Location",["patio / deck","the yard","kids' play area"]],["Keep them from ever coming","Moment",["seasonal prevention","after treatment","new home"]]],
+  demos:{Buyer:["homeowner","renter","for a parent's home"],Gender:["any","women","men"],Age:["under 35","35–54","55+"],"Race / Ethnicity":[],Identity:["new homeowner","parent of young kids","retiree","rural","suburban"]},
+  facets:{Belief:["sprays are toxic","exterminators rip you off","ultrasonic works","it's the neighbor's yard","standing water breeds them"],Identity:["prepper","eco / green","pet parent","gardener","clean-freak"],State:["has pets","has toddlers","allergic to bites","near water / woods","rental","has an exterminator","DIY sprays","tried cheap gadgets"],Value:["chemical-free","pet-safe","humane","plug-and-forget","budget","premium"],Occasion:["just moved in","mosquito season","roach in front of guests","kid got bitten","saw droppings"]}},
+ Flexxable:{product:"Instant AI Agency",brand:"Flexxable",
+  outcomes:[["Extra income without more hours","Moment",["need cash now","building a cushion / future-proofing","want proof-of-concept first"]],["Escape the 9-5","Severity",["mildly bored, wants more","burnt out, needs out","redundancy scare / just laid off"]],["Add a new revenue line to my existing agency","Type",["marketing/ads agency","web design/dev agency","coaching/consulting practice","real estate or local-service agency"]],["Prove I can actually do this","Severity",["total skeptic","cautiously optimistic","ready but scared"]],["Get my first clients","Function",["land the first client","get repeatable leads","raise prices past client #1"]]],
+  demos:{Buyer:["self"],Gender:["men","women"],Age:["25-29","30-44","45-60"],"Race / Ethnicity":[],Identity:["employed full-time / 9-5er","existing agency owner","parent with dependents","side-hustler already running something else"]},
+  facets:{Belief:["AI is the biggest opportunity of my lifetime","agencies are dying, I need to future-proof myself","you need to be technical to do AI","my 9-5 will never pay me what I'm worth"],Identity:["side-hustler","entrepreneur-at-heart","self-improvement / course-buyer"],State:["never built anything before","tried freelancing/agency before, it stalled","already dabbling with ChatGPT/AI personally","existing agency owner, flat/declining revenue"],Value:["speed","proof / credibility, not hype","done-with-you support vs. pure DIY"],Occasion:["saw AI take over their industry","job got shaky / layoffs at work","hit a birthday/milestone, reassessed life","burned out from a bad month/quarter"]}},
+};
+
+/* --- Flexxable persona preload: pushes the 8 personas already found via /storm's
+   Matrix door straight into the queue, with hooks slotted to their awareness stage. --- */
+function findOutcome(name){return S.outcomes.find(o=>o.name===name);}
+function findSub(o,name){return o?o.subs.find(s=>s.name===name):null;}
+function findGroupVal(arr,gName,vName){const g=arr.find(x=>x.name===gName);if(!g)return null;const v=g.values.find(x=>x.name===vName);return v?{g,v}:null;}
+function addPersona(def){
+  const o=findOutcome(def.outcome);const outs=[];let outName=def.outcome;
+  if(o){if(def.sub){const su=findSub(o,def.sub);if(su){outs.push('sub:'+o.id+':'+su.id);outName=su.name;}else outs.push('out:'+o.id);}else outs.push('out:'+o.id);}
+  const rows=[],facs=[],nameParts=[outName];
+  (def.demo||[]).forEach(([gName,vName])=>{const f=findGroupVal(S.demos,gName,vName);if(f){rows.push('d:'+f.g.id+':'+f.v.id);nameParts.push(vName);}});
+  (def.facet||[]).forEach(([gName,vName])=>{const f=findGroupVal(S.facets,gName,vName);if(f){facs.push('f:'+f.g.id+':'+f.v.id);nameParts.push(vName);}});
+  const codeStr=nameParts.map(code).join('·');
+  const aw={unaware:'',problem:'',solution:'',product:'',mostaware:''};aw[def.stage]=def.hook;
+  S.queue.push({id:nid(),key:String(S.queue.length+1).padStart(3,'0'),pname:def.pname,code:codeStr,type:'Persona',desc:def.desc,outs,rows,facs,aw});
+}
+const FLEXX_PERSONAS=[
+ {pname:"Redundancy Randy",outcome:"Escape the 9-5",sub:"redundancy scare / just laid off",demo:[["Identity","parent with dependents"]],facet:[["Belief","my 9-5 will never pay me what I'm worth"],["Occasion","job got shaky / layoffs at work"]],stage:"problem",hook:"They told me my role's 'under review.' I started my AI agency that weekend.",desc:"For the escape-the-9-5 segment who just had a layoff scare, has a family to provide for, and believes his job will never pay him what he's worth."},
+ {pname:"Pivot Pete",outcome:"Add a new revenue line to my existing agency",sub:"marketing/ads agency",demo:[["Identity","existing agency owner"]],facet:[["Belief","agencies are dying, I need to future-proof myself"],["State","existing agency owner, flat/declining revenue"],["Value","speed"]],stage:"solution",hook:"My ad agency was flatlining. Adding AI services 3x'd it in 90 days.",desc:"For agency owners whose growth has stalled and who think the old playbook is dying."},
+ {pname:"Dabbler Dave",outcome:"Extra income without more hours",sub:"building a cushion / future-proofing",demo:[],facet:[["State","already dabbling with ChatGPT/AI personally"],["Value","proof / credibility, not hype"]],stage:"solution",hook:"You're already using ChatGPT every day. Here's how to charge $2k/mo for it.",desc:"For people already messing with AI tools who haven't figured out how to get paid for it."},
+ {pname:"Cautious Carl",outcome:"Escape the 9-5",sub:"mildly bored, wants more",demo:[],facet:[["Belief","you need to be technical to do AI"],["State","never built anything before"]],stage:"unaware",hook:"I'm not a coder. I built an AI agency anyway — here's proof.",desc:"For 9-5ers who've never built a business and assume AI is too technical for them."},
+ {pname:"Second-Chance Sam",outcome:"Prove I can actually do this",sub:"cautiously optimistic",demo:[],facet:[["State","tried freelancing/agency before, it stalled"],["Value","proof / credibility, not hype"]],stage:"problem",hook:"My last side hustle died in 3 months. This time I had a system, not just hustle.",desc:"For people who tried to go out on their own once and it fizzled."},
+ {pname:"Family-First Fiona",outcome:"Extra income without more hours",sub:"need cash now",demo:[["Identity","parent with dependents"]],facet:[["Occasion","burned out from a bad month/quarter"]],stage:"unaware",hook:"One extra client covered my kid's daycare this month.",desc:"For parents who need extra income now, not someday."},
+ {pname:"Web-Dev Wendy",outcome:"Add a new revenue line to my existing agency",sub:"web design/dev agency",demo:[["Gender","women"]],facet:[["Occasion","saw AI take over their industry"]],stage:"problem",hook:"Clients are building sites with AI now. So I started selling them the AI instead.",desc:"For web design agency owners watching AI tools eat their core service."},
+ {pname:"Coach Cory",outcome:"Add a new revenue line to my existing agency",sub:"coaching/consulting practice",demo:[],facet:[["Belief","agencies are dying, I need to future-proof myself"]],stage:"solution",hook:"I didn't need a new niche. I needed a new offer for the clients I already had.",desc:"For coaches/consultants who want to bolt AI onto their existing authority instead of competing with it."}
+];
+function loadFlexxablePersonas(){FLEXX_PERSONAS.forEach(addPersona);}
+
+function loadExample(k){const t=TEMPLATES[k];S={product:t.product,brand:t.brand,
+  outcomes:t.outcomes.map(([n,l,subs])=>({id:nid(),name:n,lens:l,subs:subs.map(s=>({id:nid(),name:s})),bank:subs.slice()})),
+  demos:Object.entries(t.demos).map(([n,v])=>({id:nid(),name:n,values:v.map(x=>({id:nid(),name:x}))})),
+  facets:Object.entries(t.facets).map(([n,v])=>({id:nid(),name:n,values:v.map(x=>({id:nid(),name:x}))})),
+  queue:[],keyCounter:0};resetSel();if(k==="Flexxable")loadFlexxablePersonas();persist();render();}
+function normalizeImport(d){const V=arr=>(arr||[]).map(v=>({id:nid(),name:typeof v==="string"?v:v.name}));
+  return{product:d.product||"your product",brand:d.brand||"Brand",queue:Array.isArray(d.queue)?d.queue:[],keyCounter:d.keyCounter||0,
+    outcomes:(d.outcomes||[]).map(o=>({id:nid(),name:typeof o==="string"?o:o.name,lens:(o&&o.lens)||"",subs:V(o&&o.subs),bank:((o&&o.subs)||[]).map(s=>typeof s==="string"?s:s.name)})),
+    demos:(d.demos||[]).map(g=>({id:nid(),name:g.name,values:V(g.values)})),
+    facets:(d.facets||[]).map(g=>({id:nid(),name:g.name,values:V(g.values)}))};}
+
+const LSKEY="exodus-seg-v6";
+let S=blank();
+let expanded=new Set(),selOut=new Set(),selRow=new Set(),selFac=new Set(),selDetail=null,ui={form:null,arg:null,focus:null};
+function resetSel(){expanded=new Set();selOut=new Set();selRow=new Set();selFac=new Set();selDetail=null;ui={form:null,arg:null,focus:null};S.outcomes.forEach(o=>expanded.add(o.id));}
+function persist(){try{localStorage.setItem(LSKEY,JSON.stringify(S));if($("saved"))$("saved").textContent="saved ✓";}catch(e){}}
+function load(){try{const r=localStorage.getItem(LSKEY);if(r){S=JSON.parse(r);return true;}}catch(e){}return false;}
+
+const product=()=>S.product.trim()||"it";
+const outById=id=>S.outcomes.find(o=>o.id===id);
+function outLabel(key){const[t,a,b]=key.split(":");const o=outById(a);if(!o)return"";if(t==="out")return o.name;const su=o.subs.find(x=>x.id===b);return su?su.name:o.name;}
+function selByGroup(){const g={};S.facets.forEach(f=>{const s=f.values.filter(v=>selFac.has("f:"+f.id+":"+v.id)).map(v=>v.name);if(s.length)g[f.name]=s;});return g;}
+function facWords(){const w=[];
+  S.demos.forEach(d=>{const s=d.values.filter(v=>selRow.has("d:"+d.id+":"+v.id));if(s.length&&!(d.values.length>1&&s.length===d.values.length))w.push(...s.map(v=>v.name));});
+  S.facets.forEach(f=>{const s=f.values.filter(v=>selFac.has("f:"+f.id+":"+v.id));if(s.length&&!(f.values.length>1&&s.length===f.values.length))w.push(...s.map(v=>v.name));});
+  return w;}
+function definingTrait(){const bg=selByGroup();for(const g of ["State","Belief","Occasion","Identity","Value"]){if(bg[g])return bg[g][0];}
+  const outs=[...selOut].map(outLabel).filter(Boolean);return outs[0]||null;}
+function personaName(){let t=definingTrait();
+  if(!t){const anyDemo=[...selRow].length?facWords()[0]:null;if(!anyDemo){S.keyCounter++;return NAMES[(S.keyCounter-1)%NAMES.length];}t=anyDemo;}
+  t=t.replace(/^(on|tried|has|no|just)\s+/i,"").replace(/\(.*?\)/g,"").trim();
+  const clean=t.replace(/[^a-zA-Z0-9\s-]/g,"").trim()||"Segment";
+  const letter=(clean.match(/[a-zA-Z]/)||["S"])[0].toUpperCase();
+  const title=clean.split(/\s+/)[0];const cap=title.charAt(0).toUpperCase()+title.slice(1);
+  return cap+" "+(NAMEBANK[letter]||"Sam");}
+function selDemoByGroup(){const g={};S.demos.forEach(d=>{const s=d.values.filter(v=>selRow.has("d:"+d.id+":"+v.id)).map(v=>v.name);if(s.length)g[d.name]=s;});return g;}
+function joinAnd(a){return a.length<=1?a.join(""):a.length===2?a[0]+" and "+a[1]:a.slice(0,-1).join(", ")+", and "+a[a.length-1];}
+function facetClause(fam,vals){const v=joinAnd(vals);
+  if(fam==="Belief")return "believe it's "+v;
+  if(fam==="Identity")return "identify as "+v;
+  if(fam==="Value")return "value "+v;
+  if(fam==="State"){const have=vals.filter(x=>/^(tried|never|switch|diy)/i.test(x)),are=vals.filter(x=>!/^(tried|never|switch|diy)/i.test(x)),p=[];
+    if(are.length)p.push("are "+joinAnd(are));if(have.length)p.push("have "+joinAnd(have));return joinAnd(p);}
+  return v;}
+function compose(){const demoG=selDemoByGroup(),facG=selByGroup();const outs=[...selOut].map(outLabel).filter(Boolean);
+  const nO=outs.length,nF=facWords().length;
+  const type=!nO&&!nF?"TAM":nO&&!nF?(nO>1?"Super segment":"Outcome segment"):!nO&&nF?"Cross segment":nO===1?"Persona":"Sub-segment";
+  const subj=["Gender","Age","Buyer","Identity","Race / Ethnicity"].filter(k=>demoG[k]).map(k=>demoG[k].join("/")).join(", ");
+  const clauses=[];["Belief","Identity","State","Value"].forEach(f=>{if(facG[f])clauses.push(facetClause(f,facG[f]));});
+  const occ=facG["Occasion"]?facG["Occasion"].join(", "):null;
+  let desc;
+  if(type==="TAM")desc="Everyone — your whole TAM. Cut it down.";
+  else{desc="For ";
+    if(nO){desc+="the "+outs.join(" / ").toLowerCase()+" segment";if(subj)desc+=" ("+subj+")";}
+    else if(subj)desc+=subj;else desc+="anyone";
+    if(clauses.length)desc+=" who "+joinAnd(clauses);
+    if(occ)desc+=" — triggered by "+occ;
+    desc+=".";}
+  return{type,desc,name:type==="TAM"?"Everyone":personaNameStable(),codeStr:[...outs.map(code),...facWords().map(code)].join("·")};}
+let _nameCache=null;
+function personaNameStable(){return _nameCache||(_nameCache=personaName());}
+
+function render(){_nameCache=null;
+  $("brandPill").firstChild.textContent=(S.brand||"Brand")+" ";
+  $("page").innerHTML=`
+  <div class="phead"><div><h1>Segment map</h1><div class="sub">the WHAT (outcomes ↓, + sub-slices) × the WHO (demographics →) × the WHY (facets, stacked above) → a named persona · nothing selected = TAM</div></div>
+    <div class="head-actions"><span class="saved" id="saved">saved ✓</span><button class="btn" data-act="import">Import</button><button class="btn" data-act="export">Export</button><button class="btn" data-act="reset">Empty all</button><input type="file" id="importfile" accept="application/json,.json" style="display:none"></div></div>
+  <div class="bar"><label>Product word: <input id="product" value="${esc(S.product)}" style="width:130px"></label><label>Brand: <input id="brand" value="${esc(S.brand)}" style="width:140px"></label>
+    <span class="ex"><span class="l">load example:</span>${Object.keys(TEMPLATES).map(k=>`<button class="exb" data-act="ex" data-k="${k}">${k}</button>`).join("")}</span></div>
+  <details class="setup"><summary>⚙ Setup — bulk edit</summary><div class="setupgrid" id="setupgrid"></div></details>
+  <div class="filters" id="filters"></div>
+  <div class="wrap"><div class="gridcard"><div class="gh"><span>Outcomes — the WHAT (columns) × Demographics — the WHO (rows)</span><span class="hint">● persona here · click an outcome + a demographic (or a cell)</span></div>
+    <div class="gridwrap" id="gridwrap"></div></div>
+    <aside><div class="badge" id="badge"></div><div class="segname" id="segname"></div><div class="pdesc" id="pdesc"></div><div class="angle" id="angle"></div>
+      <div class="btns"><button class="add" id="addQ">+ Save persona</button><button class="clr" data-act="clr">clear</button></div>
+      <div class="sec"><span>Queue — segments to target</span><span id="qcount">0</span></div><div id="queue"></div></aside></div>`;
+  renderSetup();renderFilters();renderGrid();renderReadout();renderQueue();
+  if(ui.focus){const el=$(ui.focus);if(el){el.focus();el.select&&el.select();}ui.focus=null;}
+}
+function renderFilters(){$("filters").innerHTML='<div class="fzhdr">Facets — the WHY <span>what\'s true for them right now · stack 2 families to invent a pocket</span></div>'+S.facets.map(f=>`<div class="fgroup"><span class="fglwrap"><span class="fgl">${esc(f.name)}</span><span class="fhint">${esc(FACET_SHORT[f.name]||"")}</span></span><span class="chips-inline">${f.values.map(v=>`<span class="chip ${selFac.has("f:"+f.id+":"+v.id)?"on":""}" data-act="fac" data-f="${f.id}" data-v="${v.id}">${esc(v.name)}</span>`).join("")}${ui.form==="facval"&&ui.arg===f.id?`<input id="inp" class="chip" style="border-style:solid;border-color:#bcd5fb;min-width:130px" placeholder="${esc(FACET_PH[f.name]||"new")}" onkeydown="key(event)" onblur="commit()">`:`<span class="chip addchip" data-act="addfac" data-f="${f.id}">+ add</span>`}</span></div>`).join("");}
+
+function suggestFor(o){const have=new Set(o.subs.map(s=>s.name.toLowerCase()));
+  return [...(o.bank||[]),...(LENSBANK[o.lens]||[])].filter((v,i,a)=>a.indexOf(v)===i&&!have.has(v.toLowerCase())).slice(0,6);}
+function renderGrid(){const w=$("gridwrap");const demos=S.demos.filter(d=>d.values.length);
+  if(!S.outcomes.length&&!demos.length){w.innerHTML=`<div class="emptyhint"><b data-act="ex" data-k="Flow">Load an example</b> to see it filled — or build from empty:<br>· ${S.outcomes.length?"":'<b data-act="addout">+ add an outcome column</b>'} then click its <b>+ sub</b><br>· add demographic rows &amp; facet pills with the <b>+ add</b> chips</div>`;return;}
+  let h=`<table><tr><td class="corner">demographic ↓ / outcome →</td>`;
+  S.outcomes.forEach(o=>{const os=selOut.has("out:"+o.id);h+=`<th class="ocol"><div class="ocard ${os?"on":""}" data-act="out" data-k="out:${o.id}"><span class="vert">segment</span>${esc(o.name)}${o.lens?` <span class="lens">·${esc(o.lens)}</span>`:""}<span class="x" data-act="delout" data-id="${o.id}">×</span></div><div class="subs">`;
+    o.subs.forEach(su=>{const ss=selOut.has("sub:"+o.id+":"+su.id);h+=`<span class="subchip ${ss?"on":""}" data-act="out" data-k="sub:${o.id}:${su.id}">${esc(su.name)}<span class="x" data-act="delsub" data-o="${o.id}" data-s="${su.id}">×</span></span>`;});
+    if(ui.form==="sub"&&ui.arg===o.id){h+=`<div class="subform"><div class="subsug">${suggestFor(o).map(s=>`<span class="s" data-act="addsubval" data-o="${o.id}" data-v="${esc(s)}">+ ${esc(s)}</span>`).join("")}</div><input id="inp" placeholder="type a sub-slice…" onkeydown="key(event)"></div>`;}
+    else h+=`<div class="subadd" data-act="addsub" data-id="${o.id}">+ sub</div>`;
+    h+=`</div></th>`;});
+  h+=`<td class="addoc" data-act="addout">+ outcome</td></tr>`;
+  demos.forEach(d=>{h+=`<tr class="grouprow"><td>${esc(d.name)}${DEMO_META[d.name]?` <span style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--ink3)">— ${esc(DEMO_META[d.name])}</span>`:""}</td>${S.outcomes.map(()=>'<td></td>').join("")}<td></td></tr>`;
+    d.values.forEach(v=>{const vk="d:"+d.id+":"+v.id;const ds=selRow.has(vk);
+      h+=`<tr><td class="rowh"><span class="rpill ${ds?"on":""}" data-act="row" data-k="${vk}">${esc(v.name)}<span class="x" data-act="delval" data-d="${d.id}" data-v="${v.id}">×</span></span></td>`;
+      S.outcomes.forEach(o=>h+=cell(o.id,vk));h+=`<td></td></tr>`;});
+    h+=`<tr><td class="rowadd">${ui.form==="demoval"&&ui.arg===d.id?`<span class="inlineform"><input id="inp" placeholder="new ${esc(d.name.toLowerCase())}" onkeydown="key(event)"><button class="btn" onclick="commit()">add</button></span>`:`<span class="addlink" data-act="adddemo" data-d="${d.id}">+ ${esc(d.name.toLowerCase())}</span>`}</td>${S.outcomes.map(()=>'<td></td>').join("")}<td></td></tr>`;});
+  w.innerHTML=h+`</table>`;}
+function cell(oid,vk){const os=selOut.has("out:"+oid);const ds=selRow.has(vk);const has=S.queue.find(q=>q.outs&&q.outs.includes("out:"+oid)&&q.rows&&q.rows.includes(vk));
+  return `<td class="c ${os&&ds?"both":os?"osel":ds?"dsel":""}" data-act="cell" data-o="${oid}" data-v="${vk}">${os&&ds?"✓":has?'<span class="pdot"></span>':"·"}</td>`;}
+
+function renderReadout(){const c=compose();$("badge").textContent=c.type;$("segname").textContent=c.name;$("pdesc").textContent=c.codeStr||"";$("angle").textContent=c.desc;
+  $("addQ").disabled=c.type==="TAM";$("addQ").textContent=c.type==="TAM"?"pick a combination →":`+ Save "${c.name}"`;}
+function addQ(){const c=compose();if(c.type==="TAM")return;
+  S.queue.push({id:nid(),key:String(S.queue.length+1).padStart(3,'0'),pname:c.name,code:c.codeStr,type:c.type,desc:c.desc,
+    outs:[...selOut],rows:[...selRow],facs:[...selFac],aw:{unaware:"",problem:"",solution:"",product:"",mostaware:""}});
+  render();persist();}
+function renderQueue(){const q=$("queue");$("qcount").textContent=S.queue.length;
+  if(!S.queue.length){q.innerHTML='<div class="empty">Pick a combination, then “Save persona.”</div>';return;}
+  q.innerHTML="";S.queue.forEach((it,i)=>{const d=document.createElement('div');d.className='q'+(selDetail===it.id?' sel':'');
+    d.innerHTML=`<div class="top"><span class="key">#${it.key}</span><span class="nm">${esc(it.pname)}</span><span class="code">${esc(it.code)}</span></div><div class="desc">${esc(it.type)} — ${esc(it.desc)}</div>
+      <div class="ops"><span data-a="edit">${selDetail===it.id?"▾ hooks":"hooks ▸"}</span><span data-a="re">rename</span><span data-a="up">↑</span><span data-a="dn">↓</span><span data-a="del">delete</span></div>
+      ${selDetail===it.id?`<div class="aw">${AW.map(([k,l])=>`<div class="awr"><span class="st">${l}</span><input data-aw="${k}" value="${esc(it.aw[k]||"")}" placeholder="hook…"></div>`).join("")}</div>`:""}`;
+    d.querySelector('[data-a=edit]').onclick=e=>{e.stopPropagation();selDetail=selDetail===it.id?null:it.id;renderQueue();};
+    d.querySelector('[data-a=re]').onclick=e=>{e.stopPropagation();const n=prompt("Rename persona:",it.pname);if(n){it.pname=n;renderQueue();persist();}};
+    d.querySelector('[data-a=up]').onclick=e=>{e.stopPropagation();if(i>0){[S.queue[i-1],S.queue[i]]=[S.queue[i],S.queue[i-1]];renderQueue();persist();}};
+    d.querySelector('[data-a=dn]').onclick=e=>{e.stopPropagation();if(i<S.queue.length-1){[S.queue[i+1],S.queue[i]]=[S.queue[i],S.queue[i+1]];renderQueue();persist();}};
+    d.querySelector('[data-a=del]').onclick=e=>{e.stopPropagation();S.queue.splice(i,1);render();persist();};
+    d.querySelectorAll('[data-aw]').forEach(inp=>inp.oninput=()=>{it.aw[inp.dataset.aw]=inp.value;persist();});
+    q.appendChild(d);});}
+
+function renderSetup(){const g=$("setupgrid");g.innerHTML="";
+  const sc=ce('div','scol');sc.innerHTML='<h4>Outcomes → sub-slices · the WHAT</h4>';
+  S.outcomes.forEach(o=>{sc.insertAdjacentHTML('beforeend',`<div class="sub">${esc(o.name)}${o.lens?` <span class="metahint">${esc(o.lens)} lens</span>`:""}</div>`);const b=ce('div');
+    o.subs.forEach(su=>b.appendChild(chipX(su.name,()=>{o.subs=o.subs.filter(x=>x!==su);render();persist();})));
+    b.appendChild(adder("+ sub-slice",v=>{o.subs.push({id:nid(),name:v});render();persist();}));sc.appendChild(b);});
+  sc.appendChild(adder("+ outcome",v=>{S.outcomes.push({id:nid(),name:v,lens:"",subs:[],bank:[]});render();persist();}));g.appendChild(sc);
+  [["Demographics · the WHO",S.demos,DEMO_META],["Facets · the WHY",S.facets,FACET_META]].forEach(([title,arr,meta])=>{const col=ce('div','scol');col.innerHTML=`<h4>${title}</h4>`;
+    arr.forEach(grp=>{const hint=meta[grp.name]?` <span class="metahint">— ${esc(meta[grp.name])}</span>`:"";col.insertAdjacentHTML('beforeend',`<div class="sub">${esc(grp.name)}${hint}</div>`);const b=ce('div');
+      grp.values.forEach(v=>b.appendChild(chipX(v.name,()=>{grp.values=grp.values.filter(x=>x!==v);render();persist();})));
+      b.appendChild(adder("+ add value",val=>{grp.values.push({id:nid(),name:val});render();persist();}));col.appendChild(b);});g.appendChild(col);});}
+function ce(t,c){const e=document.createElement(t);if(c)e.className=c;return e;}
+function chipX(l,onX){const e=ce('span','editchip');e.innerHTML=`${esc(l)} <span class="x">×</span>`;e.querySelector('.x').onclick=onX;return e;}
+function adder(ph,onAdd){const i=ce('input','addi');i.placeholder=ph;i.onkeydown=e=>{if(e.key==='Enter'&&i.value.trim()){onAdd(i.value.trim());i.value="";}};return i;}
+
+window.key=e=>{if(e.key==='Enter')commit();if(e.key==='Escape')cancel();};
+window.commit=()=>{const v=($("inp")||{}).value;if(v&&v.trim()){const t=v.trim();
+    if(ui.form==="out")S.outcomes.push({id:nid(),name:t,lens:"",subs:[],bank:[]});
+    else if(ui.form==="sub"){const o=outById(ui.arg);if(o){o.subs.push({id:nid(),name:t});expanded.add(o.id);}}
+    else if(ui.form==="facval"){const f=S.facets.find(x=>x.id===ui.arg);if(f)f.values.push({id:nid(),name:t});}
+    else if(ui.form==="demoval"){const d=S.demos.find(x=>x.id===ui.arg);if(d)d.values.push({id:nid(),name:t});}}
+  ui={form:null,arg:null,focus:null};render();persist();};
+window.cancel=()=>{ui={form:null,arg:null,focus:null};render();};
+
+$("page").addEventListener("click",e=>{const t=e.target.closest("[data-act]");if(!t)return;const a=t.dataset.act;
+  if(a==="ex")loadExample(t.dataset.k);
+  else if(a==="reset"){if(confirm("Empty the whole map?")){S=blank();resetSel();render();persist();}}
+  else if(a==="export"){const b=new Blob([JSON.stringify(S,null,2)],{type:"application/json"});const x=document.createElement('a');x.href=URL.createObjectURL(b);x.download="segments-"+(S.brand||"brand")+".json";x.click();}
+  else if(a==="import"){$("importfile").click();}
+  else if(a==="addout"){ui={form:"out",arg:null,focus:"inp"};render();}
+  else if(a==="addsub"){ui={form:"sub",arg:t.dataset.id,focus:"inp"};render();}
+  else if(a==="addsubval"){const o=outById(t.dataset.o);if(o){o.subs.push({id:nid(),name:t.dataset.v});}render();persist();}
+  else if(a==="addfac"){ui={form:"facval",arg:t.dataset.f,focus:"inp"};render();}
+  else if(a==="adddemo"){ui={form:"demoval",arg:t.dataset.d,focus:"inp"};render();}
+  else if(a==="delout"){e.stopPropagation();S.outcomes=S.outcomes.filter(o=>o.id!==t.dataset.id);render();persist();}
+  else if(a==="delsub"){e.stopPropagation();const o=outById(t.dataset.o);if(o)o.subs=o.subs.filter(s=>s.id!==t.dataset.s);render();persist();}
+  else if(a==="delval"){e.stopPropagation();const d=S.demos.find(x=>x.id===t.dataset.d);if(d)d.values=d.values.filter(v=>v.id!==t.dataset.v);render();persist();}
+  else if(a==="out"){tog(selOut,t.dataset.k);render();}
+  else if(a==="row"){tog(selRow,t.dataset.k);render();}
+  else if(a==="fac"){tog(selFac,"f:"+t.dataset.f+":"+t.dataset.v);render();}
+  else if(a==="cell"){tog(selOut,"out:"+t.dataset.o);tog(selRow,t.dataset.v);render();}
+  else if(a==="clr"){selOut.clear();selRow.clear();selFac.clear();render();}
+});
+document.addEventListener("click",e=>{if(e.target.id==="addQ")addQ();});
+document.addEventListener("change",e=>{if(e.target.id!=="importfile")return;const f=e.target.files[0];if(!f)return;const r=new FileReader();
+  r.onload=()=>{try{const d=JSON.parse(r.result);if(!d.outcomes&&!d.demos&&!d.facets){alert("That JSON isn't a segment map.");return;}S=normalizeImport(d);resetSel();render();persist();}catch(err){alert("Couldn't read that file: "+err.message);}};
+  r.readAsText(f);e.target.value="";});
+$("page").addEventListener("input",e=>{if(e.target.id==="product"){S.product=e.target.value;renderReadout();persist();}if(e.target.id==="brand"){S.brand=e.target.value;$("brandPill").firstChild.textContent=e.target.value+" ";persist();}});
+function tog(set,k){set.has(k)?set.delete(k):set.add(k);}
+
+if(!load())S=blank();
+resetSel();render();persist();
+</script>
+</body>
+</html>

@@ -21,7 +21,7 @@ Reference (feeds the work):
 - What worked and why: winners/
 - What died and why: losers/
 - Repeatable plays: workflows/
-- A specific client's context and rules: clients/{name}.md
+- A specific client's context and rules: clients/{name}/client.md (one folder per client: primers/, strategy-map.md, seeds/, briefs/, winning-ads.md)
 - JV partner deals (separate from core Flexxable work): jv/JV-map.md
 - Human-readable skill guide: skills/Skills.md
 

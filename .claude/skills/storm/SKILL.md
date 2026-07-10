@@ -1,0 +1,102 @@
+---
+name: storm
+description: The STORMING ideation run — fill the seed bank. Use when Joey says "storm", "run storming", "find seeds", "ideation run", or has a Production Plan that needs ideas. Pulls from the 8 STORMING sources (swipes, templates, organic, research, matrix, internal vectors, new styles, gambits), producing seeds — verbatim hook/swipe + one-line idea — saved tagged to the client's seed bank. No copywriting, no brief-building; the output is a seed pile for /brief to pick from.
+---
+
+# /storm — pull wide, save everything, brief the best (later)
+
+You don't invent in a vacuum and you don't map all of creative space.
+You raid live sources and diversity falls out. The output of this skill is
+**seeds**, nothing more.
+
+**A seed = the verbatim hook or swipe + a one-line description of the idea.
+NOTHING ELSE.** The moment you start writing the ad inside a seed, you've
+jumped the gun. You are not a copywriter here.
+
+## The run
+
+### 1. Client, mode, target
+Load `clients/{name}/` — strategy-map.md, hypotheses.md, the latest
+`account-reads/` plan if one exists, and `parsed-hooks-bodies-headlines.md`.
+
+Ask which mode (or read it from what Joey says):
+- **Pointed** — the plan pulls: "I need 3 unaware ads for {segment}." Sources
+  get aimed at that order.
+- **Open** — fishing for bangers. Walk more doors, wider net, and a great find
+  is allowed to bend the plan.
+
+**The inventory is the clock.** If a Production Plan exists, its ad count is
+the stop condition — once seeds cover N, stop and point at /brief. No plan?
+Ask roughly how many seeds he wants before we call it (default: 20–40).
+
+### 2. Walk the doors
+Never say a source is "blocked." Explain how it runs, what he can paste, and
+what a key would unlock — then offer to wire it. Push every source 2–3
+passes; the first pass is always the boring one.
+
+- **S — Swipes** (competitor ads, these get Mad-Libbed later)
+  Paste FB Ad Library links or ad text/screenshots; or run meta-ads-extractor
+  on a competitor page. Save the asset, not just the hook — full text +
+  link into `clients/{name}/swipe-bank/swipes/YYYY-MM-DD.md`. Longevity is
+  the tell: months running = money.
+- **T — Templates** (proven shapes, filled with this brand)
+  Genesis: `python3 scripts/run_genesis.py --bot 75-ads-template-bot` with a
+  winning ad as primer. No key handy → run template shapes locally.
+- **O — Organic** (different incentives, faster signal)
+  Paste reels/posts/screenshots. Video → facebook-transcriber for the spoken
+  transcript (the hook comes from the transcript, not the caption line). Keep
+  verbatim → `swipe-bank/organic/YYYY-MM-DD.md`. Organic seeds keep their
+  exact hook downstream.
+- **R — Research** (the market's own words)
+  Paste comments/reviews, or run hook-miner when he wants a full mined sweep.
+  3-star reviews are gold — they list exactly what failed.
+- **M — Matrix** (chad logic poured into the gaps)
+  The strategy-map gaps + the plan's openings. For each gap: state the gap,
+  give ONE sample concept to illustrate, stop. Never pick the type or hook
+  for him.
+- **I — Internal vectors** (patterns across his own winners)
+  Genesis: `insight-vectors-bot` via run_genesis.py over the whole winners
+  corpus — not just this week's batch. Or do the pattern read manually from
+  parsed-hooks-bodies-headlines.md.
+- **N — New styles** (visual formats nobody's running yet)
+  Anything spotted while looking → one line each into
+  `clients/{name}/swipe-bank/visual-styles.md`. This branch feeds /statics
+  and /video, not copy.
+- **G — Gambits** (wildcards, longer shots)
+  Fed by hypotheses.md + comments. Label them gambits so the risk is priced in.
+
+### 3. Save the seeds
+Every seed, no matter the door, lands in
+`clients/{name}/seeds/YYYY-MM-DD.md`:
+
+```
+## S3 [source: swipe] [segment: burnt-out lead-gen owners] [awareness: problem] [gap: CRM-as-asset]
+Hook (verbatim): "..."
+Idea: one line.
+Link: <og-link if any>
+```
+
+Numbered so Joey can pick by number in /brief. Tags make the bank searchable
+later ("show me every seed for {segment}").
+
+### 4. Present + hand off
+Show **ALL seeds in one flat list** — every one, copy-paste-able, no indents,
+no decoration, no "best four." Joey's eye does the filtering; that's the
+human flywheel turning.
+
+If a door surfaced a genuinely NEW outcome or segment, propose adding it to
+strategy-map.md — propose, don't write it in.
+
+Close: "Seed bank has N. Pick numbers when you're ready to brief —
+that's /brief." Do not start briefing in this run.
+
+## Rules that bite here
+- Seeds stay small. Verbatim + one line. No copy, no "improved" hooks.
+- Full lists, all at once. Never sample.
+- The allocation mix guides which doors get weight — it is never stamped
+  onto a seed.
+- Organic ≠ swipe. Organic keeps its exact hook, swipes get Mad-Libbed —
+  mark the source on every seed because it routes the work downstream.
+- Never invent market language. If a door needs material he hasn't pasted
+  and no tool is wired, say what would unlock it and move to the next door.
+- Save raw pulls to the swipe-bank so credits/effort are never spent twice.
