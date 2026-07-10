@@ -656,7 +656,25 @@ function renderMarkdown(src) {
 }
 
 /* ---------- boot ---------- */
-buildMap();
-refresh();
-setInterval(refresh, 30000);
-window.addEventListener('focus', refresh);
+if (location.protocol === 'file:') {
+  // Opened as a raw file — the vault data can't reach it from here.
+  document.body.innerHTML = `
+    <div style="max-width:560px;margin:14vh auto;padding:26px 30px;
+      background:linear-gradient(178deg,#f2e4bc,#e2cf9c);border:3px solid #2b1d12;
+      box-shadow:0 8px 0 rgba(43,29,18,.35);text-align:center;">
+      <h1 style="font-family:'Uncial Antiqua',serif;font-size:30px;margin-bottom:12px;">
+        You shall not pass&hellip; this way</h1>
+      <p style="font-size:21px;line-height:1.5;">
+        This is only the blank parchment. The living map needs the studio server,
+        which reads the vault.</p>
+      <p style="font-size:21px;line-height:1.5;margin-top:12px;">
+        Double-click <b>&ldquo;Open The Studio.command&rdquo;</b> in the vault folder
+        &mdash; it lights the beacons and opens
+        <b>localhost:4173</b> for you.</p>
+    </div>`;
+} else {
+  buildMap();
+  refresh();
+  setInterval(refresh, 30000);
+  window.addEventListener('focus', refresh);
+}
