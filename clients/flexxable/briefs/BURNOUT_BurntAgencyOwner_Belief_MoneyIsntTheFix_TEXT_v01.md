@@ -1,7 +1,10 @@
 ---
-status: ready
+status: written
 date: 2026-07-09
 seed: R1 (clients/flexxable/seeds/2026-07-09.md)
+copy: copy/2026-07-10-flexxable-iaa-burnout-belief-fb-ad.md
+produced: 2026-07-10
+hook: "My bank account said I was successful, my body said I was dying, and I couldn't tell a single person because they'd all say \"must be nice.\""
 ---
 
 # BURNOUT_BurntAgencyOwner_Belief_MoneyIsntTheFix_TEXT_v01

@@ -36,6 +36,17 @@ If you want to change how a skill works, ask Claude to edit the real skill in `.
 |---|---|---|
 | [[creative-strategy-system]] | `/creative-strategy-system` | Build a full creative strategy — from hook to production plan to first winning ad. Strategy-first, then execution. |
 
+### The weekly pipeline (run in order)
+
+The flywheel turns one stage at a time: **read the account → storm seeds → brief the winners → produce the copy.** Each stage hands off to the next and does only its own job.
+
+| Stage | Command | Use it when |
+|---|---|---|
+| 1. [[account-read]] | `/account-read` | Turn the week's account results into hypotheses, gaps, and a Production Plan. Analysis only — no copywriting. |
+| 2. [[storm]] | `/storm` | Fill the seed bank — raid the STORMING sources for verbatim hooks + one-line ideas. No copywriting. |
+| 3. [[brief]] | `/brief` | Collapse chosen seeds into locked briefs — Segment, Awareness, Mechanism, CTA, Source route. The last cheap decision. No copywriting. |
+| 4. [[produce]] | `/produce` | Write the ad from a locked brief. mariobot drafts, the copy-rubric grades, then it saves and flips the brief to written. The only stage that writes. |
+
 ## Building the system
 
 | Skill | Command | Use it when |
