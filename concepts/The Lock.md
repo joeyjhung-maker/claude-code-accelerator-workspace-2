@@ -11,6 +11,12 @@ the world works, and the product is just what you'd obviously use once you see i
 Source: the "MOST IMPORTANT" section of the 37 Rapid-Fire A-lister tips.
 Related: [[The Script]] [[Memory Loop]] — lives at the /brief stage.
 
+**This is the dream state, not a bar.** Full lock is what we AIM for — the
+north star for a brief. But lots of good ads never fully lock, and we do NOT
+discount an ad, mechanism, or seed for failing to reach it. Use the test to see
+how close you are and to point at what to tighten, then ship anyway. Aim here;
+don't gate on it.
+
 ## The one test that matters
 Say the whole thing in ONE breath — product, mechanism, proof, enemy, solution
 — in 3–4 sentences someone at a dinner party would find compelling.

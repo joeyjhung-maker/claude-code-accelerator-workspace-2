@@ -87,11 +87,17 @@ Present all proposed DNA blocks at once. He edits. Lock.
 **Before you save — run the one-breath test ([[The Lock]]).** Say the whole ad
 in ONE breath: segment, mechanism, image, spokesperson, binary, proof, solution
 — 3–4 sentences where every clause implies the next. If it flows and the ending
-feels inevitable, the DNA rhymes — save it. If you keep needing "and also…", a
-dimension isn't rhyming (the star ingredient doesn't embody the mechanism, the
-spokesperson could be swapped out, the pain and solution don't share a root
-metaphor). Say WHERE the rhyme breaks and fix that field before locking. This is
-a rhyme check, not more copy — one breath, then save.
+feels inevitable, the DNA rhymes — that's full lock. If you keep needing "and
+also…", a dimension isn't rhyming yet (the star ingredient doesn't embody the
+mechanism, the spokesperson could be swapped out, the pain and solution don't
+share a root metaphor).
+
+**Full lock is the AIM, not a pass/fail gate.** It's the dream state we reach
+for — but plenty of good ads never get there, and we do NOT discount an ad,
+mechanism, or seed just because it won't fully lock. Note WHERE the rhyme is
+loose, tighten what's cheap to tighten, then ship the brief anyway. The test is
+a compass pointing at "tighter," not a bar every brief must clear. One breath,
+see how close, save.
 
 ### 3. Name + save
 One file per ad: `clients/{name}/briefs/OUTCOME_Persona_Facet_Angle_FORMAT_v01.md`
