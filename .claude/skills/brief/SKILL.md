@@ -1,6 +1,6 @@
 ---
 name: brief
-description: The inflection point — seeds become briefs with locked DNA. Use when Joey picks seeds by number from the seed bank ("brief T3, R1 and I2", "brief seeds 4 and 7"), or says "build briefs" after a /storm run. Locks Segment, Awareness, Mechanism, CTA, Guidelines, and Source-routing per ad BEFORE any copy exists. One brief file per ad in clients/{name}/briefs/. No copywriting — the brief is the last cheap decision; /produce writes.
+description: The inflection point — seeds become briefs with locked DNA. Use when Joey picks seeds by number from the seed bank ("brief T3, R1 and I2", "brief seeds 4 and 7"), or says "build briefs" after a /storm run. Locks Segment, Awareness, Mechanism, Problem-name, The Image, Spokesperson, CTA, Guidelines, and Source-routing per ad BEFORE any copy exists. One brief file per ad in clients/{name}/briefs/. No copywriting — the brief is the last cheap decision; /produce writes.
 ---
 
 # /brief — select, then specify. The last cheap decision.
@@ -28,7 +28,11 @@ tags and the client file, then he confirms or edits. One block per ad:
 - **Segment** — from the seed tag; check against strategy-map segments.
 - **Awareness** — from the seed tag. This picks the payload primer downstream
   (unaware/problem → long-form pain-first primer; solution/product →
-  comparison/offer primer; most-aware → direct offer).
+  comparison/offer primer; most-aware → direct offer). **For unaware/problem,
+  name the belief this ad works** — the existing worldview it VALIDATES ("finally
+  someone gets it") or CHALLENGES ("that's wrong"). Carried from the seed's R-door
+  tag; if it's blank, you don't have an unaware ad yet — you have a hook floating
+  in space.
 - **Concept** — the flat fact underneath (no spin, no villain, no "you").
 - **Angle** — the door in (fear, contrarian, discovery, remove-the-blame…).
   Concept and Angle are named SEPARATELY — if you can't state the concept
@@ -36,6 +40,32 @@ tags and the client file, then he confirms or edits. One block per ad:
 - **Mechanism** — client default unless the seed says otherwise (Flexxable:
   AI + SMS revives the business's dead leads; performance-based, 30-50% of
   profits).
+- **Problem name** — give the enemy a name the market has never heard but
+  instantly gets. "Estrogen leak." "Joint drought." "Cortisol belly." "Skinny
+  bacteria." "Soft tallow." The formula: body-part/concept + dysfunction word,
+  so it sounds like a real diagnosis without being jargon. A good name carries
+  the why-now, implies the fix (a leak gets plugged, a drought gets watered),
+  and often dodges the compliance trap — the NAME sells while the claim stays
+  accurate. The name becomes the mechanism's handle in every downstream ad.
+  Optional but high-leverage; propose one, Joey keeps or kills it.
+- **The Image** — one picture a 10-year-old could draw, that shows the
+  mechanism in a single glance. Not a line of copy — a PICTURE. (Green body /
+  red brain for brain-energy depletion. Money flushed down the toilet for
+  wasted supplements. A dog at a slot machine for overstimulation.) If you
+  can't name the picture, the mechanism isn't concrete yet — the brief is not
+  locked. This is the highest-leverage field on the page: the ad that owns the
+  clearest picture wins, and this is the last stage cheap enough to fix it.
+  The image can be literal or absurd — it doesn't have to depict the product,
+  it has to make the mechanism obvious or the scroll stop.
+- **Spokesperson** — WHO is talking, and the archetype that positions them.
+  The positioning must be a natural extension of who's presenting (a CIA agent
+  ≠ a life coach; a magician CURES, a scientist DISCOVERS — match the frame to
+  the person). Name the archetype (rebellious expert / accidental millionaire /
+  scientific authority / reluctant genius / outsider who asked the dumb
+  question). For Flexxable the spokesperson is **Dan**, so his archetype is the
+  lens AND the guard-rail: first-person claims must be true to Dan — no
+  invented backstory. See [[dan-truth-constraint]]. If the spokesperson is
+  interchangeable, the positioning isn't locked yet.
 - **CTA** — client default unless overridden (Flexxable: the $14.40 book +
   bonuses, 30-day keep-everything guarantee).
 - **Format** — text ad / static / video. If video with a specific conceit
@@ -54,14 +84,25 @@ tags and the client file, then he confirms or edits. One block per ad:
 
 Present all proposed DNA blocks at once. He edits. Lock.
 
+**Before you save — run the one-breath test ([[The Lock]]).** Say the whole ad
+in ONE breath: segment, mechanism, image, spokesperson, binary, proof, solution
+— 3–4 sentences where every clause implies the next. If it flows and the ending
+feels inevitable, the DNA rhymes — save it. If you keep needing "and also…", a
+dimension isn't rhyming (the star ingredient doesn't embody the mechanism, the
+spokesperson could be swapped out, the pain and solution don't share a root
+metaphor). Say WHERE the rhyme breaks and fix that field before locking. This is
+a rhyme check, not more copy — one breath, then save.
+
 ### 3. Name + save
 One file per ad: `clients/{name}/briefs/OUTCOME_Persona_Facet_Angle_FORMAT_v01.md`
 — CamelCase inside fields, underscores between, broad→narrow, so a sorted
 folder reads as strategy. Outcome/format from a fixed vocabulary; angle is
 freeform. Example: `ESCAPE_BurntAgencyOwner_Belief_MoreClientsLie_TEXT_v01.md`
 
-Brief file contents: the DNA block + the seed verbatim + links + date +
-`status: ready`. When /produce runs it, status flips to `written` with a
+Brief file contents: the DNA block (The Image included, written out) + the
+seed verbatim + links + date + `status: ready`. /produce reads The Image and
+briefs it to statics/video — the picture is the through-line from brief to
+creative, not a note that dies here. When /produce runs it, status flips to `written` with a
 pointer to the copy file.
 
 ### 4. Hand off
@@ -71,6 +112,9 @@ which brief first?" Do not start writing.
 ## Rules that bite here
 - Never pick the seed, the hook, or the angle FOR him. Propose, he decides.
 - Concept stated flat or it isn't a concept. Angle named or it's not locked.
+- The Image named or it's not locked. "Can you draw it on a whiteboard? Can a
+  10-year-old picture it?" If no, push the mechanism until yes. A half-baked,
+  un-picturable mechanism is the #1 killer of otherwise good copy.
 - Proof verified with a line reference or flagged. No exceptions.
 - Defaults are allowed everywhere — but say what default you applied.
 - The plan yields to a great idea, never the reverse.

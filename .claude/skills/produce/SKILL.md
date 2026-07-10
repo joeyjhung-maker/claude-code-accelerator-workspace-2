@@ -45,7 +45,11 @@ bots via the stateless prime→instruct protocol (`scripts/run_*.py`):
 - **regular** (hook bot → body → headlines):
   1. **Hooks** — `scripts/run_hookbot.py` (`ad-hook-bot-1`, 20 hooks via the
      mandatory double-pass). Present **all 20** in one flat list. Joey picks
-     one or steers. **Never pick the hook for him.**
+     one or steers. **Never pick the hook for him.** Judge them for intensity
+     against the rubric's flinch test and the 8 vicious-hook principles
+     (`brand/hooks.md`) — a too-polite hook is a fail, not a safe default. If the
+     whole set reads tame, say so and push for a hotter pass rather than
+     presenting 20 timid ones. The hook is 80% of the ad — spend the time here.
   2. **Body** — `scripts/run_mario.py` (`mariobot`) from the chosen hook. It
      prepends the style contract automatically.
   3. **Headlines** — mariobot writes them in the SAME conversation as a
@@ -106,6 +110,11 @@ we learned?"
 - **mariobot writes or no one writes.** Blank/missing keys → STOP and escalate.
   Never self-draft as a fallback (unless Joey asks for fast-and-loose).
 - **Never pick the hook for him.** All 20, one flat list, he chooses.
+- **Two passes, two mindsets — write vicious, dial back second.** The creative
+  brain and the compliance brain can't run at once. Let mariobot write hot;
+  handle compliance as a SEPARATE editing pass (aim 7/10, flag the risk, don't
+  neuter while writing). Trying to be safe mid-draft produces the tepid copy
+  that dies in the feed. (Lesson 22.)
 - **Scorecard or it didn't happen.** `copy_lint.py` first (mechanical), rubric
   tick-list second (taste). A prose "judge pass" is not a grade.
 - **Provenance holds.** Grade AI lines hard; only FLAG Joey's own. His dashes,

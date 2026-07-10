@@ -65,11 +65,36 @@ When in doubt on a taste call (not a mechanical one), flag it for me rather than
 - **Make mind movies.** A replacement for a "telling" line isn't enough if it's flat — it has to be VISUALLY strong, so the reader pictures the scene playing out. Paint the concrete moment (the face lighting up, the penny dropping), not just a literal restatement. (2026-06-10)
 - **Replace, never just delete.** When a flagged line fails, don't leave a hole — swap in something that keeps the line's JOB. A cut superlative still needs a reason in its place. (2026-06-10)
 - **Calibrated hedges.** A naked superlative reads as hype and the guard goes up. A small hedge on the biggest claims ("probably," "considered a top 0.1%") makes them believable. The voice still runs at a 10 — only the claim gets the hedge.
-- **Lead with the human, not the machine/mechanism.** The mechanism is body proof, never the hook. Pain-point or world-level hook first. (Matches Script: never open with student proof or testimonials.)
+- **Lead with the human, not the machine/mechanism.** The mechanism is body proof, never the hook. (Matches Script: never open with student proof or testimonials.)
+- **Don't default to a pain-first hook. Pain is the amplifier, not the opener.** AI defaults every hook to pain ("I used to crush mornings, now I'm just surviving them") and it's become white noise Meta dislikes too. Lead with curiosity, novelty, a weird tangible thing, a promise, or an identity challenge — then use pain AFTER you've earned attention and want to twist the knife. A hook that opens on suffering is a FAIL unless Joey asked for a pain-led variation on this specific ad. When he does, grade the pain version on its own merits. (Lesson 11, banked 2026-07-10.)
 - **Never invent a result, number, or quote.** If it's not in the client file, FAIL and ask. (Hard rule from the Script.)
 - **Rob Brown → "Rob" only. Never use his surname in copy.** Locked rule. Every other named proof (Scott, Jack, Michael, Lachie, etc.) keeps first name only anyway — Rob Brown was the one outlier still carrying a surname. Fix on sight in any draft. (Banked 2026-07-09.)
 - **Proof TYPE must match the claim.** A real number attached to the wrong kind of claim still FAILS. A "6-figure commission checks" hook can't be backed by Rob Brown's $341,042 *profit* or Jack's $15,000 *install fee* — it needs a commission number ($222,600 commission, Scott's $27k deal, Katarrey's $4,250). Right numbers, wrong proof type = Joey has to fix it by hand. Match the category, not just the magnitude. (Banked 2026-07-06 — the no-ad-spend WINNER edit.)
 - **Check live dates against the calendar.** Any "Wednesday, Sept 17th"-style date: verify the weekday actually matches the date. Flag mismatches and placeholders (`Xpm`, `EST` in summer = EDT). Numbers must also stay consistent across pieces in the same campaign. (Banked 2026-06-10 — caught a Wed/Thu error on the Hulk Reveal email.)
+
+### Substance gates (from the 37 Rapid-Fire tips, banked 2026-07-10)
+*Three fast pass/fail tests. Run them on the HOOK first, then the lead. A fail here isn't a line to polish — it's a line that says nothing yet.*
+
+- **The Product Swap Test.** Could this hook sell a different product? If a mattress, a coffee, a supplement, and an app could all run your exact line, it's not specific enough — FAIL. "I used to crush mornings, now I'm just surviving them" fits fifty products. Find the angle only THIS product can own. (Lesson 2 / 36.)
+- **The Step-Back Bullshit Detector.** Strip the adjectives and dramatic wrapping, say the bare claim out loud. If the bare idea is a platitude the reader already believes ("you are what you eat," "your body can heal itself," "there's a gene") — FAIL, no matter how good the language sounds. The writing can't rescue an idea that isn't worth writing about. Test: interrupt someone at dinner and say ONLY the bare claim. If they'd say "yeah, I know" or "so what?", it's dead. (Lesson 2.)
+- **One curiosity thread, not three.** One open loop the reader has to close — not three competing ones. Three threads dilute; the reader can't hold them and picks none. Pick the single most magnetic question and starve the rest. (Lesson 7.)
+
+### Hook intensity — too polite is a FAIL (Lesson 1 + 22, banked 2026-07-10)
+*The hook's job is to stop the scroll against the reader's will. Discomfort is the signal you're at the right level — not cleverness, not beauty.*
+
+- **The flinch test.** Read the hook aloud. If it doesn't make you (or a non-marketer) visibly react — wince, laugh, say "damn" — it's too tame. FAIL. Most people write 3–4 levels too polite and dial back way too early. "Your shower water contains chemicals" is flat; "most people's shower water is so toxic it'd kill a goldfish" is the level.
+- **Escalate first, dial back second — never the reverse.** Find the version that makes YOU uncomfortable (life-or-death, social stakes, identity confrontation), THEN decide how far to pull back for compliance. You can't find the ceiling by starting at the floor.
+- **Compliance is a spectrum, not a wall.** Aim for a 7/10 aggression. Write 1–2 points ABOVE the comfort line and let it get pulled back — writing at a 4 when a 5 is fine is killing yourself for nothing. This is a judge-flag, not an auto-cut: flag the risk level, don't neuter on sight.
+- **Third-person the scary claim.** Don't point the knife straight at the reader ("YOUR liver is shutting down"). Let them observe it: "most guys have no idea their liver is 18 months from shutting down." Same fear, no feeling of being attacked, softer compliance profile.
+- **Empathy, not accusation, on the tender stuff.** She FEELS like a burden — she doesn't say she IS one. The small shift turns an attack into empathy. (The softener move.)
+
+**Vicious-hook checklist — grade every hook against the 8 principles ([[hooks]]).** Full craft in `brand/hooks.md`; these are the pass/fail gates:
+- **Relevance in the first line.** Something relevant to the reader in the first 10–20 words (pain/condition call-out, belief call-out, or general intrigue). If line 1 is throat-clearing, FAIL.
+- **Protect the charged word.** The detonating word IS the hook — "sexless" not "unfulfilling," "killing" not "hurting," "panties" not "pajamas." If a softer/clinical synonym crept in, FAIL and restore the charged word.
+- **Caveman / Germanic language.** Short, blunt, five-year-old-simple. Fabrics→cloth, excessive→too much, insomnia→sleeplessness, perspire→sweat. Latinate/clinical word where a Germanic one exists = FAIL.
+- **Consequence before mechanism.** Lead with the wound, not the scalpel. A hook that opens on HOW it works ("silver releases ions…", "this spikes cortisol") before WHY they should care = FAIL — flip it, mechanism is body copy.
+- **Reads like information, not an ad.** Story, news, confession, or promised insight — the payoff is catharsis/intrigue/insight, never a pitch. If it reads like an ad, dead on arrival.
+- **Push to the edge of reality.** Comfortable and plausible = not on the edge. The best hooks make the reader think "there's no way…" and then need to find out. (Banked 2026-07-10, Lesson: vicious hooks.)
 
 ---
 
@@ -135,6 +160,7 @@ When in doubt on a taste call (not a mechanical one), flag it for me rather than
 | 2026-07-10 | `copy_lint.py` failed a fine spoken hook (question + answer) and a headline during a /produce run | The linter's STRUCTURE rules are BODY-scoped. Hooks and headlines are single units — a Q+A hook or a short headline is not a "two sentences on a line" / "fragment stack" fail. Treat a lint FAIL on a hook/headline as a flag to eyeball, not an auto-rewrite. (Fix later: teach copy_lint line-type context so it stops crying wolf on hooks/headlines.) |
 | 2026-07-10 | mariobot wrote the IAA business as "AI-powered lead generation… it finds them new leads" | **Mechanism check:** IAA is OLD/dead-lead REACTIVATION over SMS → new sales, not new-lead generation. Grade every Flexxable draft's mechanism against this. See [[iaa-mechanism-old-leads]]. |
 | 2026-07-10 | Hooks claimed "my company replaced my team with AI" / "I failed IT in school, now I make more than my desk job" — untrue for Dan | **Dan-truth check:** first-person claims must be true to Dan (no redundancy/desk-job/failed-IT backstory). Reframe escape-9-5 / not-technical angles as second-person. See [[dan-truth-constraint]]. |
+| 2026-07-10 | Mined the 37 Rapid-Fire A-lister tips for judge gates | Added three substance gates above: Product Swap Test, Step-Back Bullshit Detector, One curiosity thread. Run on the hook before the taste rules — they catch a hook that says nothing before we polish the way it says it. |
 
 <!-- Next time a draft makes me wince, add a row:
 | YYYY-MM-DD | "the thing I said once" | the permanent rule |

@@ -43,6 +43,15 @@ cold IAA ads", not attribution science. Append to
 `clients/{name}/hypotheses.md`, dated, tagged `[YYYY-MM-DD]`, with the ad it
 came from. Show them all; Joey edits or kills any before they're banked.
 
+**Trigger words (what the market responds to).** While reading the winners,
+watch for the specific WORDS that keep showing up where engagement is high —
+not concepts, actual words (inflammation, cortisol, silver, chlorine; for
+Flexxable, watch "dead leads", "CRM", "AI"). A word that keeps earning
+attention is a signal about what the market already believes and fears. Bank
+the recurring ones to a running `clients/{name}/trigger-words.md` watchlist,
+dated, with the ad they came from. These become go-deep material in /storm
+(history / tribal / conspiracy / suppression angles on that exact word).
+
 **Openings (forward, everywhere).** Three streams converge into ONE ranked
 list:
 - **Gaps** — overlay this week's ads on the strategy map. Loose classification

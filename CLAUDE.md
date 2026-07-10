@@ -17,6 +17,7 @@ Reference (feeds the work):
 - Memory map: memory-map.md
 - Concept notes: concepts/
 - Voice rules: brand/voice.md
+- Hook craft (8 vicious-hook principles): brand/hooks.md
 - Swipes to model, by mechanism: swipes/
 - What worked and why: winners/
 - What died and why: losers/
@@ -41,7 +42,7 @@ The real Claude Code skill instructions live in `.claude/skills/`. Obsidian hide
 ## Rules that bite
 - Short punchy paragraphs. One idea per line. Each sentence earns its own line. If it reads like an essay, rewrite it.
 - No corporate or agency language. Ban: "leverage," "solution," "deliverable," "onboarding." Write like Dan is texting a mate who happens to be a business owner. Casual, direct, British-inflected.
-- Never open copy with student proof or testimonials. Pain-point or world-level hook first. Proof comes after trust is built.
+- Never open copy with student proof or testimonials. And don't default to pain-first either — pain is white noise now. Lead with curiosity, novelty, a promise, or a world-level hook; use pain as the AMPLIFIER once you've earned attention. Proof comes after trust. (Ask me and I'll tell you when I want pain-led variations for a specific ad.)
 - Never write in blocks of text. Wall of text = instant delete.
 - Never invent a client result, number, or quote. If it is not in the client file, ask me.
 - If you are unsure what good looks like, ask for an example before guessing.
