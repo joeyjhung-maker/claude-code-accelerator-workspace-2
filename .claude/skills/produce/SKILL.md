@@ -30,7 +30,8 @@ STOP, tell Joey the route is down, do not self-draft. (Banked hard rule —
 
 ### 2. Pick the primers — Awareness routes
 The brief's **Awareness** picks the body payload primer:
-- **unaware / problem** → long-form, pain-first body primer
+- **unaware / problem** → long-form, pain-led BODY primer (pain amplifies in
+  the body — the hook still leads curiosity-first per the rubric)
 - **solution / product** → comparison / offer primer
 - **most-aware** → direct-offer primer
 

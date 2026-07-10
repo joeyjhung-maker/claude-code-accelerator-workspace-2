@@ -57,8 +57,10 @@ passes; the first pass is always the boring one.
     someone gets it") or CHALLENGE it (heated, "that's wrong") — both drive
     engagement, flat neither. For unaware seeds, tag the belief the seed is
     validating or challenging so /brief can lock it.
-  - **Go deep on the trigger words.** Pull the account's `trigger-words.md`
-    watchlist (the words that keep earning engagement). For each one, mine the
+  - **Go deep on the trigger words.** Pull `clients/{name}/trigger-words.md`
+    (the words that keep earning engagement — /account-read fills the
+    conversion side, the Monday competitor sweep fills the spend side; a word
+    on BOTH sides goes first). For each one, mine the
     history, tribal references, conspiracy and suppression angles around that
     EXACT word — that's the raw material for the suppression/zeitgeist angle
     families below.
@@ -119,6 +121,12 @@ Hook (verbatim): "..."
 Idea: one line.
 Link: <og-link if any>
 ```
+
+Two optional tags when they apply (both get locked downstream in /brief):
+- `[belief: validates|challenges "the market's belief, quoted"]` — required on
+  unaware/problem seeds from the R-door.
+- `[family: cause-effect-flip]` — when the seed came from a saffron-move pass,
+  name its angle family.
 
 Numbered so Joey can pick by number in /brief. Tags make the bank searchable
 later ("show me every seed for {segment}").

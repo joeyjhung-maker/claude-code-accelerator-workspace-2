@@ -49,7 +49,9 @@ not concepts, actual words (inflammation, cortisol, silver, chlorine; for
 Flexxable, watch "dead leads", "CRM", "AI"). A word that keeps earning
 attention is a signal about what the market already believes and fears. Bank
 the recurring ones to a running `clients/{name}/trigger-words.md` watchlist,
-dated, with the ad they came from — the conversion-side column. (The Monday
+one per line — `word · source: account-read {date} · ad it came from` (same
+format the sweep uses; bump last-seen instead of duplicating) — the
+conversion-side column. (The Monday
 competitor sweep fills the spend-side column of the same file from competitor
 mechanisms; a word on BOTH sides is a strong signal.) These become go-deep
 material in /storm (history / tribal / conspiracy / suppression angles on that

@@ -27,7 +27,8 @@ tags and the client file, then he confirms or edits. One block per ad:
 
 - **Segment** — from the seed tag; check against strategy-map segments.
 - **Awareness** — from the seed tag. This picks the payload primer downstream
-  (unaware/problem → long-form pain-first primer; solution/product →
+  (unaware/problem → long-form pain-led BODY primer — pain is the amplifier in
+  the body, the hook still leads curiosity-first; solution/product →
   comparison/offer primer; most-aware → direct offer). **For unaware/problem,
   name the belief this ad works** — the existing worldview it VALIDATES ("finally
   someone gets it") or CHALLENGES ("that's wrong"). Carried from the seed's R-door
@@ -47,14 +48,17 @@ tags and the client file, then he confirms or edits. One block per ad:
   the why-now, implies the fix (a leak gets plugged, a drought gets watered),
   and often dodges the compliance trap — the NAME sells while the claim stays
   accurate. The name becomes the mechanism's handle in every downstream ad.
-  Optional but high-leverage; propose one, Joey keeps or kills it.
+  If a cognitive binary suggests itself, name it here too — dead oil vs living
+  oil, horse pills vs micro-strip: the bad side is life WITHOUT the mechanism,
+  the good side is life WITH it. Both optional but high-leverage; propose,
+  Joey keeps or kills.
 - **The Image** — one picture a 10-year-old could draw, that shows the
   mechanism in a single glance. Not a line of copy — a PICTURE. (Green body /
   red brain for brain-energy depletion. Money flushed down the toilet for
   wasted supplements. A dog at a slot machine for overstimulation.) If you
-  can't name the picture, the mechanism isn't concrete yet — the brief is not
-  locked. This is the highest-leverage field on the page: the ad that owns the
-  clearest picture wins, and this is the last stage cheap enough to fix it.
+  can't name the picture, the mechanism isn't concrete yet — push it until a
+  picture appears. This is the highest-leverage field on the page: the ad that
+  owns the clearest picture wins, and this is the last stage cheap enough to fix it.
   The image can be literal or absurd — it doesn't have to depict the product,
   it has to make the mechanism obvious or the scroll stop.
 - **Spokesperson** — WHO is talking, and the archetype that positions them.
@@ -118,9 +122,11 @@ which brief first?" Do not start writing.
 ## Rules that bite here
 - Never pick the seed, the hook, or the angle FOR him. Propose, he decides.
 - Concept stated flat or it isn't a concept. Angle named or it's not locked.
-- The Image named or it's not locked. "Can you draw it on a whiteboard? Can a
-  10-year-old picture it?" If no, push the mechanism until yes. A half-baked,
-  un-picturable mechanism is the #1 killer of otherwise good copy.
+- Push hard for The Image. "Can you draw it on a whiteboard? Can a 10-year-old
+  picture it?" If no, push the mechanism — a half-baked, un-picturable mechanism
+  is the #1 killer of otherwise good copy. But like the Lock, it's an aim: if
+  nothing lands after real pushing, flag it as the loosest dimension and let
+  Joey decide. Never kill a brief over it.
 - Proof verified with a line reference or flagged. No exceptions.
 - Defaults are allowed everywhere — but say what default you applied.
 - The plan yields to a great idea, never the reverse.
