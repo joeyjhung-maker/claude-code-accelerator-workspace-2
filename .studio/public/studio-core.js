@@ -54,6 +54,7 @@ function setView(name) {
   }
   document.body.classList.toggle('view-office', name === 'office');
   document.body.classList.toggle('view-map', name === 'map');
+  document.body.classList.toggle('view-board', name === 'board');
   document.querySelectorAll('.viewbtn').forEach((b) =>
     b.classList.toggle('on', b.dataset.view === name));
   const v = VIEWS[name];

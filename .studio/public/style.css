@@ -387,6 +387,48 @@ body.view-office #colophon { color: #7d6a49; }
 .viewbtn.on { background: var(--wax); color: #f5e7c0; }
 .viewbtn:not(.on):hover { background: var(--glow); }
 
+/* ---------- coverage board (the war table) ---------- */
+#board-wrap {
+  position: fixed; inset: 0; z-index: 1;
+  padding: 104px 20px 46px 300px;
+  display: flex; align-items: flex-start; justify-content: center; overflow: auto;
+}
+.warframe {
+  width: min(1000px, 100%);
+  background: linear-gradient(178deg, #f2e4bc, #e7d5a4 70%, #ddc68e);
+  border: 3px solid var(--ink); border-radius: 4px;
+  box-shadow: 0 10px 0 rgba(43,29,18,.4), inset 0 0 46px rgba(184,134,11,.14);
+  padding: 18px 24px 22px; color: var(--ink);
+}
+.warhead h2 { font-family: 'Uncial Antiqua', serif; font-size: 27px; letter-spacing: .04em; }
+.warhead p { color: var(--ink-soft); font-size: 18px; margin: 2px 0 16px; }
+.wargrid { border-collapse: collapse; width: 100%; margin-bottom: 14px; }
+.wargrid th, .wargrid td { border: 2px solid var(--ink); text-align: center; }
+.wargrid thead th {
+  font-family: 'Uncial Antiqua', serif; font-size: 15px; letter-spacing: .04em;
+  padding: 6px 4px; background: rgba(184,134,11,.16);
+}
+.wargrid .corner { background: transparent; border: none; }
+.wargrid .segname {
+  text-align: left; font-size: 18px; padding: 6px 12px 6px 8px;
+  background: rgba(184,134,11,.1); white-space: nowrap;
+}
+.wargrid .cell { height: 46px; width: 15%; cursor: default; }
+.cellmark { font-size: 21px; font-weight: bold; }
+.c-gap  { background: repeating-linear-gradient(45deg, #d8c69a, #d8c69a 6px, #d0bc8c 6px, #d0bc8c 12px); color: var(--ink-soft); }
+.c-seed { background: #e0b64e; color: #3b2a1a; }
+.c-brief{ background: #6f86b0; color: #10131c; }
+.c-writ { background: #5f8a4a; color: #eafbe0; }
+
+.warlegend { display: flex; gap: 18px; flex-wrap: wrap; color: var(--ink-soft); font-size: 16px; margin-bottom: 12px; }
+.warlegend .sw { display: inline-block; width: 14px; height: 14px; border: 1px solid var(--ink); margin-right: 5px; vertical-align: -2px; }
+.wartally { display: flex; gap: 16px; flex-wrap: wrap; font-size: 20px; border-top: 2px solid var(--ink); padding-top: 12px; }
+.wartally b { font-size: 22px; }
+.t-writ b { color: #4a6b3a; } .t-brief b { color: #3f5470; } .t-seed b { color: #a67a1e; } .t-gap b { color: var(--wax); }
+.wartally .tallyhint { color: var(--ink-soft); font-size: 17px; align-self: center; }
+.warnote { margin-top: 14px; font-size: 18px; color: var(--wax); line-height: 1.4; }
+.warempty { padding: 30px; text-align: center; color: var(--ink-soft); }
+
 /* ---------- office interior ---------- */
 #office-wrap {
   position: fixed; inset: 0; z-index: 1;

@@ -87,6 +87,69 @@ function activity(lastMtime) {
   return 'quiet';
 }
 
+// ---------- strategy-map coverage grid ----------
+const AWARE = ['unaware', 'problem', 'solution', 'product', 'most-aware'];
+const SEGS = [
+  { id: 's1', name: 'Burned-Out Agency Owner' },
+  { id: 's2', name: '9-5 Escapee / Aspiring' },
+  { id: 's3', name: 'Proof-Chaser' },
+  { id: 's4', name: 'Opportunity Seeker' },
+  { id: 'niche', name: 'Niche / vertical cuts' },
+];
+function mapAware(text) {
+  if (!text) return null;
+  const t = text.toLowerCase().split('/')[0].split('→')[0];
+  if (t.includes('unaware')) return 'unaware';
+  if (t.includes('problem')) return 'problem';
+  if (t.includes('solution')) return 'solution';
+  if (t.includes('product')) return 'product';
+  if (t.includes('most')) return 'most-aware';
+  return null;
+}
+function mapSegs(text) {
+  if (!text) return [];
+  const t = text.toLowerCase();
+  const nums = [...t.matchAll(/segment\s*(\d)/g)].map((m) => 's' + m[1]).filter((s) => ['s1', 's2', 's3', 's4'].includes(s));
+  if (nums.length) return [...new Set(nums)];
+  if (t.includes('vertical')) return ['niche'];
+  if (t.includes('opportunit')) return ['s4'];
+  if (t.includes('proof')) return ['s3'];
+  if (t.includes('escap') || t.includes('9-5') || t.includes('9 to 5')) return ['s2'];
+  if (t.includes('agency')) return ['s1'];
+  return [];
+}
+function computeCoverage() {
+  const client = 'clients/flexxable';
+  const cells = {};
+  for (const s of SEGS) { cells[s.id] = {}; for (const a of AWARE) cells[s.id][a] = { seeds: 0, brief: false, written: false }; }
+  // seeds — explicit [segment]/[awareness] tags
+  for (const f of listDir(`${client}/seeds`)) {
+    let text; try { text = fs.readFileSync(path.join(VAULT, f.path), 'utf8'); } catch { continue; }
+    for (const b of text.split(/^## /m).slice(1)) {
+      const aw = mapAware((b.match(/\[awareness:\s*([^\]]+)\]/i) || [])[1]);
+      const segs = mapSegs((b.match(/\[segment:\s*([^\]]+)\]/i) || [])[1]);
+      if (!aw || !segs.length) continue;
+      for (const sg of segs) if (cells[sg]) cells[sg][aw].seeds++;
+    }
+  }
+  // briefs — DNA Segment/Awareness lines + frontmatter status
+  for (const f of listDir(`${client}/briefs`)) {
+    let text; try { text = fs.readFileSync(path.join(VAULT, f.path), 'utf8'); } catch { continue; }
+    const status = (text.match(/^status:\s*(\w+)/m) || [])[1] || '';
+    const aw = mapAware((text.match(/\*\*Awareness:\*\*\s*(.+)/i) || [])[1]);
+    const segs = mapSegs((text.match(/\*\*Segment:\*\*\s*(.+)/i) || [])[1]);
+    if (!aw || !segs.length) continue;
+    for (const sg of segs) if (cells[sg]) { cells[sg][aw].brief = true; if (status === 'written') cells[sg][aw].written = true; }
+  }
+  // tallies
+  let gaps = 0, seeded = 0, briefed = 0, written = 0;
+  for (const s of SEGS) for (const a of AWARE) {
+    const c = cells[s.id][a];
+    if (c.written) written++; else if (c.brief) briefed++; else if (c.seeds) seeded++; else gaps++;
+  }
+  return { segments: SEGS, awareness: AWARE, cells, tally: { gaps, seeded, briefed, written } };
+}
+
 // ---------- rooms ----------
 function buildState() {
   const client = 'clients/flexxable';
@@ -166,7 +229,7 @@ function buildState() {
     latestRead: accountReads[0] ? accountReads[0].name.replace('.md', '') : null,
   };
 
-  return { generatedAt: Date.now(), vault: VAULT, rooms, quest };
+  return { generatedAt: Date.now(), vault: VAULT, rooms, quest, coverage: computeCoverage() };
 }
 
 // ---------- file reads (sandboxed) ----------
