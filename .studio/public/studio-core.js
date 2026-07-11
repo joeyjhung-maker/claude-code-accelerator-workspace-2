@@ -24,6 +24,12 @@ const META = {
                 count: (r) => `${r.winners || 0} won · ${r.losers || 0} fell` },
 };
 
+/* the slash command each stage-room hands you (read-only — copies to clipboard) */
+const ROOM_CMD = {
+  tower: '/account-read', weathertop: '/storm', council: '/brief',
+  forge: '/produce', hall: '/reflect',
+};
+
 const EMPTY_HINT = {
   tower: 'No scrolls yet. <b>/account-read</b> writes the first quest scroll; the Monday sweep fills the leaderboard.',
   weathertop: 'The seed bank is empty. <b>/storm</b> fills it.',
@@ -77,12 +83,41 @@ function renderQuest() {
   ];
   $('#quest-stats').innerHTML = rows
     .map(([k, v]) => `<li><span>${k}</span><span class="v">${v}</span></li>`).join('');
-  let next;
-  if (!q.latestRead) next = '&#9888; No quest scroll yet — <b>/account-read</b> starts the week.';
-  else if (q.briefsReady > 0) next = `&#9876; ${q.briefsReady} brief${q.briefsReady > 1 ? 's' : ''} await the Forge — <b>/produce</b>.`;
-  else if (q.seedsTotal > 0) next = `&#10022; ${q.seedsTotal} seeds wait at the Council — pick numbers, <b>/brief</b>.`;
-  else next = '&#10022; The bank is empty — <b>/storm</b> for seeds.';
-  $('#quest-next').innerHTML = next;
+  let next, cmd;
+  if (!q.latestRead) { next = '&#9888; No quest scroll yet — <b>/account-read</b> starts the week.'; cmd = '/account-read'; }
+  else if (q.briefsReady > 0) { next = `&#9876; ${q.briefsReady} brief${q.briefsReady > 1 ? 's' : ''} await the Forge — <b>/produce</b>.`; cmd = '/produce'; }
+  else if (q.seedsTotal > 0) { next = `&#10022; ${q.seedsTotal} seeds wait at the Council — pick numbers, <b>/brief</b>.`; cmd = '/brief'; }
+  else { next = '&#10022; The bank is empty — <b>/storm</b> for seeds.'; cmd = '/storm'; }
+  $('#quest-next').innerHTML = `${next}<button class="cmdchip" data-cmd="${cmd}" title="copy to clipboard">&#9106; ${cmd}</button>`;
+}
+
+/* copy a slash command to the clipboard (never runs it — the Studio is read-only) */
+function legacyCopy(text) {
+  try {
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+    document.body.appendChild(ta); ta.focus(); ta.select();
+    const ok = document.execCommand('copy'); ta.remove(); return ok;
+  } catch (e) { return false; }
+}
+function flashCopied(chip) {
+  const old = chip.innerHTML;
+  chip.classList.add('copied');
+  chip.innerHTML = '&#10003; copied — paste into Claude Code';
+  setTimeout(() => { chip.innerHTML = old; chip.classList.remove('copied'); }, 1400);
+}
+function copyCmd(chip) {
+  const cmd = chip.dataset.cmd;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(cmd)
+      .then(() => flashCopied(chip))
+      .catch(() => { if (legacyCopy(cmd)) flashCopied(chip); else chip.innerHTML = '&#9888; copy blocked'; });
+  } else if (legacyCopy(cmd)) {
+    flashCopied(chip);
+  } else {
+    chip.innerHTML = '&#9888; copy blocked';
+  }
 }
 
 /* ---------- the scroll (room panel) ---------- */
@@ -100,12 +135,17 @@ const cleanName = (n) => n.replace(/\.md$|\.txt$/i, '').replace(/[-_]/g, ' ');
 
 const FICON = `<svg class="ficon" viewBox="0 0 7 8"><rect width="7" height="8" fill="#efe4c0"/><path d="M0,0 h7 v8 h-7 z" fill="none" stroke="#2b1d12" stroke-width="1.6"/><rect x="1.5" y="2" width="4" height="1" fill="#6b543a"/><rect x="1.5" y="4" width="4" height="1" fill="#6b543a"/></svg>`;
 
-function fileRow(f) {
+function fileRow(f, id) {
   const badges = [];
   if (f.status) badges.push(`<span class="badge ${f.status}">${f.status}</span>`);
   if (typeof f.seeds === 'number') badges.push(`<span class="badge seedcount">${f.seeds} seeds</span>`);
   if (f.extra) badges.push(`<span class="badge outside">outside vault</span>`);
   if (Date.now() - f.mtime < 86400000) badges.push(`<span class="badge new">new</span>`);
+  // a ready brief is a loaded gun for /produce — hand over the exact command
+  if (id === 'council' && f.status === 'ready') {
+    const target = f.name.replace(/\.md$/i, '');
+    badges.push(`<button class="cmdchip mini" data-cmd="/produce ${target}" title="copy /produce for this brief">&#9106; /produce</button>`);
+  }
   return `<li data-p="${encodeURIComponent(f.path)}" data-n="${encodeURIComponent(f.name)}">
     ${FICON}<span class="fname">${cleanName(f.name)}</span>${badges.join('')}
     <span class="fage">${ago(f.mtime)}</span></li>`;
@@ -137,9 +177,12 @@ function openRoom(id) {
   $('#scroll-title').textContent = meta.name;
   $('#scroll-sub').textContent = meta.sub;
   const body = $('#scroll-body');
+  const cmdRow = ROOM_CMD[id]
+    ? `<div class="cmdrow"><button class="cmdchip" data-cmd="${ROOM_CMD[id]}" title="copy to clipboard">&#9106; ${ROOM_CMD[id]}</button><span class="cmdhint">copy, then paste into Claude Code</span></div>`
+    : '';
 
   if (!room || room.files.length === 0) {
-    body.innerHTML = `<div class="empty">${EMPTY_HINT[id] || 'Nothing here yet.'}</div>`;
+    body.innerHTML = cmdRow + `<div class="empty">${EMPTY_HINT[id] || 'Nothing here yet.'}</div>`;
   } else {
     let stats = `<div class="statrow"><span class="stat"><b>${room.files.length}</b> files</span>`;
     if (id === 'weathertop') stats += `<span class="stat"><b>${room.seedsTotal}</b> seeds</span>`;
@@ -154,14 +197,17 @@ function openRoom(id) {
       if (!groups.has(g)) groups.set(g, []);
       groups.get(g).push(f);
     }
-    let html = stats;
+    let html = cmdRow + stats;
     for (const [g, files] of groups) {
       if (g) html += `<div class="groupHead">${g}</div>`;
-      html += `<ul class="filelist">${files.map(fileRow).join('')}</ul>`;
+      html += `<ul class="filelist">${files.map((f) => fileRow(f, id)).join('')}</ul>`;
     }
     body.innerHTML = html;
     body.querySelectorAll('.filelist li').forEach((li) => {
-      li.addEventListener('click', () => openFile(decodeURIComponent(li.dataset.p), decodeURIComponent(li.dataset.n)));
+      li.addEventListener('click', (e) => {
+        if (e.target.closest('.cmdchip')) return; // let the copy chip handle its own click
+        openFile(decodeURIComponent(li.dataset.p), decodeURIComponent(li.dataset.n));
+      });
     });
   }
   overlay().hidden = false;
@@ -308,6 +354,10 @@ function start() {
   }
   $('#scroll-close').addEventListener('click', closeScroll);
   overlay().addEventListener('click', (e) => { if (e.target === overlay()) closeScroll(); });
+  document.addEventListener('click', (e) => {
+    const chip = e.target.closest('.cmdchip');
+    if (chip) { e.stopPropagation(); copyCmd(chip); }
+  });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeScroll(); });
   document.querySelectorAll('.viewbtn').forEach((b) =>
     b.addEventListener('click', () => setView(b.dataset.view)));
