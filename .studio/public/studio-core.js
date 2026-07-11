@@ -183,7 +183,34 @@ async function openFile(p) {
     <div class="backbar"><button id="backbtn">&larr; back to the room</button></div>
     <div class="doc">${renderMarkdown(data.content)}</div>`;
   $('#backbtn').addEventListener('click', () => openRoom(currentRoom));
+  body.querySelectorAll('.imglink').forEach((el) =>
+    el.addEventListener('click', () => openImage(el.dataset.img)));
   body.scrollTop = 0;
+}
+
+/* ---------- image lightbox ---------- */
+function openImage(name) {
+  const src = `/api/asset?name=${encodeURIComponent(name)}`;
+  const box = document.createElement('div');
+  box.className = 'imgbox';
+  box.innerHTML = `
+    <div class="imgframe">
+      <div class="imgbar">
+        <span class="imgname">${name}</span>
+        <a class="imgdl" href="${src}&dl=1" download="${name}">&#8681; download</a>
+        <button class="imgclose" title="Close (Esc)">&times;</button>
+      </div>
+      <div class="imgstage"><img src="${src}" alt="${name}"></div>
+    </div>`;
+  document.body.appendChild(box);
+  const remove = () => { box.remove(); document.removeEventListener('keydown', onEsc); };
+  const onEsc = (e) => { if (e.key === 'Escape') remove(); };
+  box.addEventListener('click', (e) => { if (e.target === box) remove(); });
+  box.querySelector('.imgclose').addEventListener('click', remove);
+  box.querySelector('img').addEventListener('error', () => {
+    box.querySelector('.imgstage').innerHTML = `<div class="imgmiss">Couldn’t find <b>${name}</b> in the vault. It may not be rendered yet.</div>`;
+  });
+  document.addEventListener('keydown', onEsc);
 }
 
 function closeScroll() { overlay().hidden = true; }
@@ -195,6 +222,8 @@ function inline(s) {
     .replace(/\[\[([^\]]+)\]\]/g, '<mark>$1</mark>')
     .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+    // backtick'd image filenames become clickable chips (before generic code)
+    .replace(/`([\w./-]+\.(?:png|jpe?g|gif|webp))`/gi, '<span class="imglink" data-img="$1" title="click to view">$1</span>')
     .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>')
     .replace(/(^|\W)\*([^*\n]+)\*(?=\W|$)/g, '$1<i>$2</i>')
     .replace(/`([^`]+)`/g, '<code>$1</code>');

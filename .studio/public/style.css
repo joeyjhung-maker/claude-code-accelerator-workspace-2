@@ -287,6 +287,53 @@ body::after {
 .doc th { background: rgba(184,134,11,.16); font-family: 'Uncial Antiqua', serif; font-size: 15px; }
 .doc mark { background: var(--glow); padding: 0 3px; }
 
+/* clickable image chip */
+.imglink {
+  cursor: pointer; color: var(--ink);
+  background: rgba(184,134,11,.16);
+  border: 1px solid var(--gold); border-radius: 3px;
+  padding: 0 6px 0 4px; font-family: 'VT323', monospace; white-space: nowrap;
+}
+.imglink::before { content: '\1F5BC\FE0E'; margin-right: 4px; filter: grayscale(.3); }
+.imglink:hover { background: var(--glow); }
+
+/* image lightbox */
+.imgbox {
+  position: fixed; inset: 0; z-index: 40;
+  background: rgba(18,12,8,.84);
+  display: flex; align-items: center; justify-content: center; padding: 5vh 5vw;
+}
+.imgframe {
+  display: flex; flex-direction: column;
+  max-width: min(1020px, 100%); max-height: 90vh;
+  background: linear-gradient(178deg, #f2e4bc, #e7d5a4);
+  border: 3px solid var(--ink); border-radius: 4px;
+  box-shadow: 0 12px 0 rgba(43,29,18,.4);
+}
+.imgbar {
+  display: flex; align-items: center; gap: 12px;
+  padding: 8px 12px; border-bottom: 2px solid var(--ink); color: var(--ink);
+}
+.imgname { flex: 1; font-size: 19px; overflow-wrap: anywhere; }
+.imgdl {
+  text-decoration: none; font-size: 17px; color: var(--ink);
+  background: var(--gold); border: 2px solid var(--ink); border-radius: 2px;
+  padding: 2px 12px; box-shadow: 2px 2px 0 rgba(59,42,26,.3);
+}
+.imgdl:hover { background: var(--glow); }
+.imgclose {
+  font: 24px/1 'VT323', monospace; cursor: pointer;
+  background: var(--wax); color: #f5e7c0; border: 2px solid var(--ink);
+  border-radius: 2px; width: 30px; height: 30px;
+}
+.imgstage { overflow: auto; padding: 14px; display: flex; justify-content: center; }
+.imgstage img {
+  max-width: 100%; max-height: 74vh;
+  border: 1px solid var(--ink-soft); background: #fff;
+}
+.imgmiss { padding: 34px; color: var(--ink-soft); font-size: 20px; text-align: center; }
+.imgmiss b { color: var(--wax); }
+
 /* frontmatter DNA plate */
 .dna {
   border: 2px solid var(--ink); background: rgba(184,134,11,.1);

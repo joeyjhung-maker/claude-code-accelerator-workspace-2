@@ -181,10 +181,48 @@ function readVaultFile(p) {
   return { path: p, content: fs.readFileSync(abs, 'utf8') };
 }
 
+// ---------- image assets (sandboxed, found by basename) ----------
+const IMG_EXT = /\.(png|jpe?g|gif|webp)$/i;
+const SKIP_DIRS = new Set(['node_modules', '.git', '.studio', '.obsidian', '.claude']);
+let assetIndex = null;
+
+function buildAssetIndex() {
+  const map = new Map();
+  const walk = (dir) => {
+    let entries; try { entries = fs.readdirSync(dir, { withFileTypes: true }); } catch { return; }
+    for (const e of entries) {
+      if (e.name.startsWith('.') || SKIP_DIRS.has(e.name)) continue;
+      const full = path.join(dir, e.name);
+      if (e.isDirectory()) walk(full);
+      else if (IMG_EXT.test(e.name) && !map.has(e.name)) map.set(e.name, full);
+    }
+  };
+  walk(VAULT);
+  assetIndex = map;
+  return map;
+}
+
+// name may be a bare basename ("foo.png") or a vault-relative path ("creatives/foo.png")
+function resolveAsset(name) {
+  if (!IMG_EXT.test(name)) throw new Error('not an image');
+  if (name.includes('/')) {
+    const abs = path.resolve(VAULT, name);
+    if (!abs.startsWith(VAULT + path.sep)) throw new Error('outside vault');
+    if (exists(abs)) return abs;
+    name = path.basename(name);
+  }
+  if (!assetIndex) buildAssetIndex();
+  if (!assetIndex.has(name)) buildAssetIndex(); // maybe newly rendered — rebuild once
+  const hit = assetIndex.get(name);
+  if (!hit) throw new Error('not found in vault');
+  return hit;
+}
+
 // ---------- http ----------
 const MIME = {
   '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript',
   '.woff2': 'font/woff2', '.svg': 'image/svg+xml', '.png': 'image/png', '.json': 'application/json',
+  '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.gif': 'image/gif', '.webp': 'image/webp',
 };
 
 const server = http.createServer((req, res) => {
@@ -201,6 +239,20 @@ const server = http.createServer((req, res) => {
       const p = url.searchParams.get('p') || '';
       try { return send(200, JSON.stringify(readVaultFile(p))); }
       catch (e) { return send(403, JSON.stringify({ error: e.message })); }
+    }
+    if (url.pathname === '/api/asset') {
+      const name = url.searchParams.get('name') || '';
+      try {
+        const abs = resolveAsset(name);
+        const body = fs.readFileSync(abs);
+        const dl = url.searchParams.get('dl');
+        res.writeHead(200, {
+          'Content-Type': MIME[path.extname(abs).toLowerCase()] || 'application/octet-stream',
+          'Cache-Control': 'no-store',
+          ...(dl ? { 'Content-Disposition': `attachment; filename="${path.basename(abs)}"` } : {}),
+        });
+        return res.end(body);
+      } catch (e) { return send(404, JSON.stringify({ error: e.message })); }
     }
     // static
     let rel = url.pathname === '/' ? '/index.html' : url.pathname;
