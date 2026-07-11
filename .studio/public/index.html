@@ -7,35 +7,38 @@
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23e8d5a8'/><rect x='6' y='2' width='4' height='10' fill='%235f574c'/><circle cx='8' cy='3' r='2.4' fill='%236d4a86'/></svg>">
 </head>
-<body>
+<body class="view-office">
 
 <header id="masthead">
   <h1>The Studio</h1>
   <p class="sub">a living map of the flywheel &middot; Flexxable</p>
 </header>
 
-<!-- The quest log (week at a glance) -->
+<div id="viewswitch">
+  <button class="viewbtn on" data-view="office">&#9974; Studio</button>
+  <button class="viewbtn" data-view="map">&#9873; Map</button>
+</div>
+
 <aside id="quest" aria-label="Quest log">
   <h2>&#10022; The Quest</h2>
   <ul id="quest-stats"></ul>
   <p id="quest-next"></p>
 </aside>
 
-<!-- The map -->
-<main id="map-wrap">
+<!-- office interior -->
+<main id="office-wrap" hidden>
+  <svg id="office" viewBox="0 0 1380 840" preserveAspectRatio="xMidYMid meet" aria-label="The studio office"></svg>
+</main>
+
+<!-- overworld map -->
+<main id="map-wrap" hidden>
   <svg id="map" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet" aria-label="Map of the studio">
     <defs>
-      <filter id="parchment" x="0" y="0" width="100%" height="100%">
-        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
-        <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0.24  0 0 0 0 0.17  0 0 0 0 0.09  0 0 0 0.06 0"/>
-        <feComposite operator="over" in2="SourceGraphic"/>
-      </filter>
       <radialGradient id="vignette" cx="50%" cy="46%" r="72%">
         <stop offset="62%" stop-color="rgba(59,42,26,0)"/>
         <stop offset="100%" stop-color="rgba(59,42,26,0.34)"/>
       </radialGradient>
     </defs>
-    <!-- painted by app.js -->
   </svg>
 </main>
 
@@ -43,10 +46,9 @@
   <span><i class="dot hot"></i> forging now</span>
   <span><i class="dot warm"></i> worked today</span>
   <span><i class="dot quiet"></i> resting</span>
-  <span class="hint">click a place to enter</span>
+  <span class="hint">click a room to enter</span>
 </div>
 
-<!-- The scroll (room panel) -->
 <div id="overlay" hidden>
   <section id="scroll" role="dialog" aria-modal="true">
     <button id="scroll-close" title="Close (Esc)">&times;</button>
@@ -60,6 +62,9 @@
 
 <footer id="colophon">read-only window on the vault &middot; refreshes every 30s</footer>
 
-<script src="app.js"></script>
+<script src="studio-core.js"></script>
+<script src="view-map.js"></script>
+<script src="view-office.js"></script>
+<script src="boot.js"></script>
 </body>
 </html>
