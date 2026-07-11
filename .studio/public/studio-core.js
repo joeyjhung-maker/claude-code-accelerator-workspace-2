@@ -171,6 +171,53 @@ function groupFor(id, f) {
   return null;
 }
 
+// shared: wire every file row + trophy card to open its file
+function wireFileClicks(body) {
+  body.querySelectorAll('[data-p]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      if (e.target.closest('.cmdchip')) return; // copy chip handles its own click
+      openFile(decodeURIComponent(el.dataset.p), decodeURIComponent(el.dataset.n || ''));
+    });
+  });
+}
+
+// Golden Hall: winner plaques + the barrow (losers, or an honest hungry state)
+function trophyPanel() {
+  const t = STATE && STATE.trophies;
+  if (!t) return '';
+  const plaque = (w) => `<div class="plaqueCard" data-p="${encodeURIComponent(w.path)}">
+      <div class="plaqueHook">${w.hook ? `&ldquo;${w.hook}&rdquo;` : cleanName(w.title || 'winner')}</div>
+      ${w.why ? `<div class="plaqueWhy">${w.why}</div>` : ''}</div>`;
+  const stone = (l) => `<div class="barrowStone" data-p="${encodeURIComponent(l.path)}">
+      <div class="stoneName">&#9760; ${cleanName(l.title || 'fell')}</div>
+      ${l.why ? `<div class="stoneWhy">${l.why}</div>` : ''}</div>`;
+  let html = `<div class="hallWall"><div class="hallLabel">&#9819; On the wall</div>`;
+  html += t.winners.length ? t.winners.map(plaque).join('') : `<div class="empty">No winners enshrined yet.</div>`;
+  html += `</div>`;
+  html += `<div class="barrow"><div class="hallLabel">&#9760; The Barrow</div>`;
+  if (t.losers.length) {
+    html += t.losers.map(stone).join('');
+  } else {
+    html += `<div class="hungry">The barrow is empty. <b>${t.shipped}</b> blades shipped, <b>${t.winners.length}</b> enshrined, <b>0</b> buried.<br>Run <button class="cmdchip mini" data-cmd="/reflect">&#9106; /reflect</button> to promote what won and bury what died.</div>`;
+  }
+  html += `</div>`;
+  return html;
+}
+
+// Watch Room: the trigger-word watchlist (spend side × conversion side)
+function triggerPanel() {
+  const tw = STATE && STATE.triggerWords;
+  if (!tw) {
+    return `<div class="triggerBox"><div class="hallLabel">&#9758; Trigger words</div>
+      <div class="triggerEmpty">Empty for now. The Monday competitor sweep fills the spend side; <b>/account-read</b> fills the conversion side. A word on both is your storm fuel.</div></div>`;
+  }
+  const chip = (w) => `<span class="twword ${tw.both.includes(w) ? 'both' : ''}">${w}</span>`;
+  const col = (title, words) => `<div class="twcol"><div class="twhead">${title}</div>${words.length ? words.map(chip).join('') : '<span class="twnone">—</span>'}</div>`;
+  return `<div class="triggerBox"><div class="hallLabel">&#9758; Trigger words the market rewards</div>
+    <div class="twcols">${col('Spend side (competitors)', tw.spend)}${col('Conversion side (your winners)', tw.conversion)}</div>
+    ${tw.both.length ? `<div class="twboth">&#9733; On BOTH sides: ${tw.both.map((w) => `<b>${w}</b>`).join(', ')} — attention <em>and</em> money. Storm these first.</div>` : ''}</div>`;
+}
+
 function openRoom(id) {
   currentRoom = id;
   const meta = META[id];
@@ -182,8 +229,11 @@ function openRoom(id) {
     ? `<div class="cmdrow"><button class="cmdchip" data-cmd="${ROOM_CMD[id]}" title="copy to clipboard">&#9106; ${ROOM_CMD[id]}</button><span class="cmdhint">copy, then paste into Claude Code</span></div>`
     : '';
 
+  const special = (id === 'hall') ? trophyPanel() : (id === 'tower') ? triggerPanel() : '';
+
   if (!room || room.files.length === 0) {
-    body.innerHTML = cmdRow + `<div class="empty">${EMPTY_HINT[id] || 'Nothing here yet.'}</div>`;
+    body.innerHTML = cmdRow + special + `<div class="empty">${EMPTY_HINT[id] || 'Nothing here yet.'}</div>`;
+    wireFileClicks(body);
   } else {
     let stats = `<div class="statrow"><span class="stat"><b>${room.files.length}</b> files</span>`;
     if (id === 'weathertop') stats += `<span class="stat"><b>${room.seedsTotal}</b> seeds</span>`;
@@ -198,18 +248,13 @@ function openRoom(id) {
       if (!groups.has(g)) groups.set(g, []);
       groups.get(g).push(f);
     }
-    let html = cmdRow + stats;
+    let html = cmdRow + special + stats;
     for (const [g, files] of groups) {
       if (g) html += `<div class="groupHead">${g}</div>`;
       html += `<ul class="filelist">${files.map((f) => fileRow(f, id)).join('')}</ul>`;
     }
     body.innerHTML = html;
-    body.querySelectorAll('.filelist li').forEach((li) => {
-      li.addEventListener('click', (e) => {
-        if (e.target.closest('.cmdchip')) return; // let the copy chip handle its own click
-        openFile(decodeURIComponent(li.dataset.p), decodeURIComponent(li.dataset.n));
-      });
-    });
+    wireFileClicks(body);
   }
   overlay().hidden = false;
 }

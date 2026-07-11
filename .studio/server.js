@@ -150,6 +150,31 @@ function computeCoverage() {
   return { segments: SEGS, awareness: AWARE, cells, tally: { gaps, seeded, briefed, written } };
 }
 
+// ---------- trophies (Golden Hall) + trigger words (Watch Room) ----------
+function firstMatch(text, re) { const m = text.match(re); return m ? m[1].trim() : ''; }
+function parseTrophy(relPath) {
+  let text; try { text = fs.readFileSync(path.join(VAULT, relPath), 'utf8'); } catch { return null; }
+  const title = firstMatch(text, /^#\s+(.+)$/m).replace(/^Winner\s*\([^)]*\):\s*/i, '').replace(/^Loser\s*\([^)]*\):\s*/i, '').replace(/^["“]|["”]$/g, '');
+  const hook = firstMatch(text, /^[-*]\s*\*{0,2}Hook\*{0,2}:\s*["“]?(.+?)["”]?\s*$/mi);
+  const why = firstMatch(text, /^[-*]\s*\*{0,2}(?:Why[^:]*|Cause of death|Why it died)\*{0,2}:\s*(.+)$/mi);
+  return { path: relPath, title, hook, why };
+}
+function parseTriggerWords() {
+  const rel = 'clients/flexxable/trigger-words.md';
+  if (!exists(path.join(VAULT, rel))) return null;
+  let text; try { text = fs.readFileSync(path.join(VAULT, rel), 'utf8'); } catch { return null; }
+  const spend = new Set(), conv = new Set();
+  for (const line of text.split('\n')) {
+    const m = line.match(/^\s*[-*]?\s*([A-Za-z][\w '"/-]*?)\s*[·|]\s*source:\s*([\w-]+)/i);
+    if (!m) continue;
+    const word = m[1].trim().toLowerCase(), src = m[2].toLowerCase();
+    if (src.includes('sweep') || src.includes('competitor')) spend.add(word);
+    else conv.add(word);
+  }
+  const both = [...spend].filter((w) => conv.has(w));
+  return { spend: [...spend], conversion: [...conv], both, path: rel };
+}
+
 // ---------- rooms ----------
 function buildState() {
   const client = 'clients/flexxable';
@@ -229,7 +254,16 @@ function buildState() {
     latestRead: accountReads[0] ? accountReads[0].name.replace('.md', '') : null,
   };
 
-  return { generatedAt: Date.now(), vault: VAULT, rooms, quest, coverage: computeCoverage() };
+  const trophies = {
+    winners: winnerFiles.map((f) => parseTrophy(f.path)).filter(Boolean),
+    losers: loserFiles.map((f) => parseTrophy(f.path)).filter(Boolean),
+    shipped: copyFiles.length,
+  };
+
+  return {
+    generatedAt: Date.now(), vault: VAULT, rooms, quest,
+    coverage: computeCoverage(), trophies, triggerWords: parseTriggerWords(),
+  };
 }
 
 // ---------- file reads (sandboxed) ----------
