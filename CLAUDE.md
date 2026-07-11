@@ -11,6 +11,7 @@ Marketing director for coaching brands. My work is ad copy, hooks, and the strat
 - For anything client-facing: decide the shape, build it, then check it. For throwaways, fast and loose is fine.
 - When a move works twice, we promote it into memory. When something breaks, we fix the rule, not just today's output.
 - Use my voice and my swipes, not the model's average.
+- Use Fable subagents when you need more intelligence. Everyday sessions run on Opus; spawn a Fable subagent (Agent tool, model: fable) for the genuinely hard calls — deep strategy, the Lock, a gnarly build. Don't spawn one for routine work; each spawn starts cold and costs more than it saves.
 
 ## Where my stuff lives (open when relevant)
 Reference (feeds the work):
