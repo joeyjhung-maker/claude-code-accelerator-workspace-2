@@ -1,0 +1,21 @@
+# Memory index
+
+- [Genesis has no judge bot](genesis-no-judge-bot.md) — the editor half is a local rubric we built
+- [Judge provenance rule](judge-provenance-rule.md) — grade AI's lines hard, only flag the user's own
+- [Flexxable output format](flexxable-output-format.md) — Arial 12 / H35 / sub30 / emails body-only
+- [Daily git commit on close-out](daily-git-commit-on-closeout.md) — always commit to git at wrap-up, no need to ask
+- [Flexxable offer doc](flexxable-offer-doc.md) — ROYA doc is the source of truth for all Flexxable copy
+- [Don't verify user-written claims](dont-verify-user-written-claims.md) — if Joey wrote it, it's real; only flag AI/bot-generated lines
+- [No stacked abstract triplet](no-stacked-abstract-triplet.md) — never write three abstract benefits in a row; hard rule
+- [Run judge before showing copy](run-judge-before-showing-copy.md) — always grade against copy-rubric before Joey reads it
+- [Always use mariobot to write](always-use-mariobot-to-write.md) — mariobot drafts, rubric judges, never Claude drafting directly
+- [No fake-punchy fragments](no-fake-punchy-fragments.md) — don't chop into staccato; short lines must do a job
+- [JV additive framing](jv-additive-framing.md) — for partner audiences, add to their model, never dunk on it
+- [Rob first name only](rob-first-name-only.md) — never "Rob Brown," always just "Rob" in copy
+- [IAA mechanism = old leads](iaa-mechanism-old-leads.md) — reactivate OLD/dead leads over SMS, NOT new-lead gen
+- [Dan-truth constraint](dan-truth-constraint.md) — first-person claims must be true to Dan; no invented backstory
+- [Pain is amplifier not opener](pain-is-amplifier-not-opener.md) — lead with curiosity/novelty; pain amplifies after, opt-in per ad
+- [The Lock: aim not gate](the-lock-aim-not-gate.md) — brief is locked when dimensions rhyme (one-breath test); it's the dream, never a kill-switch
+- [Hooks are 80% / vicious = flinch](hooks-are-80-percent-vicious-flinch.md) — hook is most of the ad; craft lives in brand/hooks.md
+- [Show don't tell decisions](show-dont-tell-decisions.md) — render the actual thing to choose from; never abstract prose options he can't see
+- [JV webinar front-end ladder](jv-webinar-frontend-ladder.md) — webinar sells $500–1K reversible front-end, never book/cold high-ticket; price dictates the close

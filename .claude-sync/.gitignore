@@ -1,0 +1,15 @@
+# Never commit installed dependencies or nested git repos into the snapshot
+node_modules/
+**/node_modules/
+**/.git/
+.DS_Store
+
+# Bulky demo media bundled in third-party skills — reinstall the skill to get these
+*.jpeg
+*.jpg
+*.png
+*.gif
+*.mp3
+*.mp4
+*.mov
+*.wav
