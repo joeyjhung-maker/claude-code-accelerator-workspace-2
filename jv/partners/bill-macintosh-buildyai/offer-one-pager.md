@@ -10,11 +10,37 @@ Draft for Dan sign-off, then Bill/Russell feedback. Built off [campaign-plan.md]
 ## The one-line promise
 **Buildy taught you how to build the AI. This is how you get paid to sell it — commission-only, no build fee, no retainer.**
 
+## The Buildy avatar — current state
+🟢 Synthesized from the homepage/webinar/BAPP teardowns on file (see Research on file in [partner.md](partner.md)).
+- **Who:** solo founders, non-technical first-timers, aspiring online entrepreneurs. Not established agency owners — Buildy's own homepage targets "thousands of solo founders who made the leap."
+- **Where they are:** sold, or being sold, the promise that AI removes the hardest part of starting a business — "skip years of guesswork," no code, no long courses, an AI team that builds the site/funnel/agent while they bring "the vision." Many have also just been through BAPP (~$997–$4,994+$99/mo) for a similar "get your first client" promise, anchored on the Colin story (a total beginner landing $3,750 day one).
+- **What they genuinely have:** the ability to *build* — fast. A working AI agent, funnel, or site, in minutes to hours. This part of Buildy's promise is real and they've experienced it.
+- **The problem nobody's solved for them:** they can build the thing but don't know how to turn it into money. Per Travis: the unanswered pain is "how do I actually SELL this / get a paying client." They've solved production, not revenue.
+- **Likely fears (inferred, not confirmed):** no sales experience or confidence pitching/closing, fear of sounding salesy or being rejected, possible fatigue from just being sold BAPP's own "get clients" pitch, price sensitivity right after a recent spend — balanced against being primed to expect $997+ as normal pricing in this space.
+- **What they want:** real income from the skill/tool they just built. Fast, tangible proof it's working (the Colin-story format). A low-risk way to test it without repeating the "big investment, uncertain payoff" feeling they may have just had.
+
 ## The mechanism (Travis Sago's steer — this IS the angle)
 🟢 Locked strategically. Not "another AI course." The **anti-retainer** play:
 - Not $25k to build a tool. Not $3k/mo to automate a business.
 - Demo → propose a risk-free, **commission-only** test → split the upside when the money lands → they ask *you* what else you can do.
 - Frame: **Buildy = the build side. ROYA = the sell side** — the missing half, not a competing pitch. This is old ground for ROYA's own list but genuinely new to Buildy's audience (per Travis).
+
+## The 5 core ROYA pillars (generalized off the Ryan/Leadbase campaign, PPL-specific language stripped)
+🟢 The reusable foundation under every ROYA offer, mapped to this specific avatar. The core reframe: **not selling AI, selling "more customers with zero risk"** (the McDonald's line — AI is the tool, not the product).
+1. **Zero upfront risk is the spine.** No fee to start, split what it makes. For this avatar specifically: answers the "can I afford to be wrong again" fear after one or two recent spends.
+2. **There's a hidden, already-owned asset waiting to be activated.** Ryan's version: dead lead databases. **This avatar's version: the build itself.** They already have a working AI agent or funnel with no buyer attached yet — our offer turns that idle build into its first paycheck.
+3. **Additive, never a pivot.** Never asks them to abandon what they bought. Critical here — they just committed to Buildy and possibly BAPP; ROYA slots in as the missing half, never "replace what you just bought."
+4. **Speed and ease over skill.** No sales background needed. The single most load-bearing pillar for this avatar — "I can build it but can't sell it" is Travis's named pain, word for word.
+5. **Foot-in-the-door, then ascend.** Land a small, fast, reversible win first; the bigger relationship comes after trust. Matches where they are in their buying journey — they've already taken one or two big leaps, so repeating "big ask, cold" is the exact mistake the Ryan campaign died from.
+
+**Steal-worthy, flagged from the BAPP teardown:** this audience is trained on a strong risk-reversal ("money back + $500 on top") and a single-hero, day-one-speed proof story (Colin). Our guarantee and proof (see gates below) need to meet or beat that bar, not underdeliver against what they just saw.
+
+## How our offer gets them to their goal
+🟢 Applying the 5 pillars directly to this avatar's stated problem (can build, can't sell):
+- **Pillar 2 turns their existing build into the offer**, not something new to learn — first pitch is "monetize what you already made," not "learn a new skill first."
+- **Pillar 4 removes the single blocker standing between them and revenue** — the sales/outreach side, which is exactly the gap Buildy itself doesn't fill.
+- **Pillar 1 + 5 sequence the ask to match their current risk appetite** — small, reversible, provable before anything bigger is on the table.
+- Net promise: **Buildy got you to "I can build it." We get you to "I got paid for it."**
 
 ## Positioning line (Russell's, use near-verbatim)
 🟢 *"For the first time ever, we're partnering with another brand to bring you an opportunity we believe is the next logical step for your business."*
