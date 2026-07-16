@@ -39,6 +39,6 @@ They teach the **pay-per-lead (PPL) agency model**: build a niche brand, generat
 - Nothing run yet.
 
 ## What died
-- Nothing run yet.
+- **July 2026 Rainmaker webinar → straight-to-ROYA.** 200 reg / 100 live / 24 waitlist / **0 off the deal link**. Every close came from Ryan DMing students who already knew him; Dan's Skool profile closed nothing. Auction top bid $500 on a $3.5k+ program. Cause: sold high-ticket to a cold-to-Dan, low-buyer audience with the indoctrination rung (IAA book) skipped, a stranger's face, and no objection-handling conversation. Full post-mortem: [losers/2026-07-16-jv-webinar-straight-to-highticket-no-ladder.md](../../../losers/2026-07-16-jv-webinar-straight-to-highticket-no-ladder.md). **Rule: start low, ascend later — book front-end first, ROYA at the back, partner as closer.**
 
 Related: [[JV Partnerships Map]]
