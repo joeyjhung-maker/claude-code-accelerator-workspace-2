@@ -7,6 +7,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 
 const PORT = process.env.STUDIO_PORT || 4173;
 const VAULT = path.resolve(__dirname, '..');
@@ -175,6 +176,113 @@ function parseTriggerWords() {
   return { spend: [...spend], conversion: [...conv], both, path: rel };
 }
 
+// ---------- projects (clients + JV deals) ----------
+const prettyFolder = (name) => name.replace(/[-_]/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+
+function listSubdirs(rel) {
+  const abs = path.join(VAULT, rel);
+  if (!exists(abs)) return [];
+  let entries; try { entries = fs.readdirSync(abs, { withFileTypes: true }); } catch { return []; }
+  return entries
+    .filter((e) => e.isDirectory() && !e.name.startsWith('_') && !e.name.startsWith('.'))
+    .map((e) => e.name);
+}
+
+function partnerName(base) {
+  try {
+    const text = fs.readFileSync(path.join(VAULT, base, 'partner.md'), 'utf8');
+    const m = text.match(/^#\s+(.+)$/m);
+    if (m) return m[1].replace(/^JV\s*Partner:\s*/i, '').trim();
+  } catch {}
+  return null;
+}
+
+function buildJV(folder) {
+  const base = `jv/partners/${folder}`;
+  const research = listDir(`${base}/research`).filter(notTemplate);
+  const sellTheir = listDir(`${base}/copy/sell-their-offer`, { recursive: true }).filter(notTemplate);
+  const sellOur = listDir(`${base}/copy/sell-our-offer`, { recursive: true }).filter(notTemplate);
+  const last = newest(listDir(base, { recursive: true }));
+  return {
+    id: folder,
+    name: partnerName(base) || prettyFolder(folder),
+    partnerFile: exists(path.join(VAULT, base, 'partner.md')) ? `${base}/partner.md` : null,
+    research: research.length,
+    sellTheir: sellTheir.length,
+    sellOur: sellOur.length,
+    hasCampaignPlan: exists(path.join(VAULT, base, 'campaign-plan.md')),
+    hasOnePager: exists(path.join(VAULT, base, 'offer-one-pager.md')),
+    lastActivity: last,
+    activity: activity(last),
+  };
+}
+
+function buildProjects(quest) {
+  const jvs = listSubdirs('jv/partners').map(buildJV).sort((a, b) => b.lastActivity - a.lastActivity);
+  const clients = listSubdirs('clients').map((name) => {
+    const base = `clients/${name}`;
+    const isFlex = name === 'flexxable';
+    const last = newest(listDir(base, { recursive: true }));
+    return {
+      id: name,
+      name: prettyFolder(name),
+      clientFile: exists(path.join(VAULT, base, 'client.md')) ? `${base}/client.md` : null,
+      stats: isFlex ? {
+        seeds: quest.seedsTotal, briefsReady: quest.briefsReady,
+        briefsWritten: quest.briefsWritten, copyThisWeek: quest.copyThisWeek, winners: quest.winners,
+      } : null,
+      jvs: isFlex ? jvs : [],   // the JV layer is Flexxable's
+      lastActivity: last,
+      activity: activity(last),
+    };
+  });
+  return { clients };
+}
+
+// ---------- machine sync status (reports only — never mutates) ----------
+function git(args) {
+  try { return execFileSync('git', args, { cwd: VAULT, encoding: 'utf8', timeout: 8000 }).trim(); }
+  catch { return null; }
+}
+
+function buildSyncStatus() {
+  const dirtyOut = git(['status', '--porcelain']);
+  const dirty = dirtyOut == null ? null : (dirtyOut ? dirtyOut.split('\n').filter(Boolean).length : 0);
+  let ahead = null, behind = null;
+  const counts = git(['rev-list', '--left-right', '--count', 'HEAD...@{u}']); // no fetch — uses last-known refs
+  if (counts) { const m = counts.split(/\s+/); ahead = +m[0]; behind = +m[1]; }
+  const lastCommit = git(['log', '-1', '--format=%s']);
+  const lastCommitAt = git(['log', '-1', '--format=%ct']);
+  let fetchedAt = null;
+  try { fetchedAt = fs.statSync(path.join(VAULT, '.git', 'FETCH_HEAD')).mtimeMs; } catch {}
+
+  let verdict, tone, message;
+  if (ahead == null || behind == null) {
+    verdict = 'unknown'; tone = 'quiet';
+    message = 'No GitHub link yet. Double-click “Start Work” to connect and sync.';
+  } else if (ahead > 0 && behind > 0) {
+    verdict = 'diverged'; tone = 'bad';
+    message = 'Both machines changed since the last sync. Open Claude Code and say: “my repo diverged, help me merge.”';
+  } else if (behind > 0 && dirty) {
+    verdict = 'behind-dirty'; tone = 'bad';
+    message = 'GitHub has newer work AND you have unsaved changes here. Double-click “Finish Work” first, then ask Claude if it warns.';
+  } else if (behind > 0) {
+    verdict = 'behind'; tone = 'warn';
+    message = 'The other machine pushed newer work. Double-click “Start Work” to pull it in.';
+  } else if (ahead > 0 || dirty) {
+    verdict = 'ahead'; tone = 'warn';
+    message = 'You have work here that isn’t on GitHub yet. Double-click “Finish Work” before switching machines.';
+  } else {
+    verdict = 'synced'; tone = 'good';
+    message = 'In sync with GitHub — safe to switch machines.';
+  }
+  return {
+    dirty, ahead, behind, lastCommit,
+    lastCommitAt: lastCommitAt ? +lastCommitAt * 1000 : null,
+    fetchedAt, verdict, tone, message,
+  };
+}
+
 // ---------- rooms ----------
 function buildState() {
   const client = 'clients/flexxable';
@@ -263,6 +371,7 @@ function buildState() {
   return {
     generatedAt: Date.now(), vault: VAULT, rooms, quest,
     coverage: computeCoverage(), trophies, triggerWords: parseTriggerWords(),
+    projects: buildProjects(quest), sync: buildSyncStatus(),
   };
 }
 
@@ -331,6 +440,11 @@ const server = http.createServer((req, res) => {
   try {
     if (url.pathname === '/api/state') {
       return send(200, JSON.stringify(buildState()));
+    }
+    if (url.pathname === '/api/sync/refresh') {
+      // user-triggered "check GitHub now" — git fetch touches .git only, never the vault/working tree
+      git(['fetch', 'origin', '--quiet']);
+      return send(200, JSON.stringify(buildSyncStatus()));
     }
     if (url.pathname === '/api/file') {
       const p = url.searchParams.get('p') || '';

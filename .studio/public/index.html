@@ -15,6 +15,7 @@
 </header>
 
 <div id="viewswitch">
+  <button class="viewbtn" data-view="home">&#9750; Home</button>
   <button class="viewbtn on" data-view="office">&#9974; Studio</button>
   <button class="viewbtn" data-view="map">&#9873; Map</button>
   <button class="viewbtn" data-view="board">&#9638; Board</button>
@@ -25,6 +26,11 @@
   <ul id="quest-stats"></ul>
   <p id="quest-next"></p>
 </aside>
+
+<!-- the gatehouse (home: projects + machine sync) -->
+<main id="home-wrap" hidden>
+  <div id="home"></div>
+</main>
 
 <!-- office interior -->
 <main id="office-wrap" hidden>
@@ -72,6 +78,7 @@
 <script src="view-map.js"></script>
 <script src="view-office.js"></script>
 <script src="view-board.js"></script>
+<script src="view-home.js"></script>
 <script src="boot.js"></script>
 </body>
 </html>

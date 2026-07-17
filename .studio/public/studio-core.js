@@ -55,6 +55,7 @@ function setView(name) {
   document.body.classList.toggle('view-office', name === 'office');
   document.body.classList.toggle('view-map', name === 'map');
   document.body.classList.toggle('view-board', name === 'board');
+  document.body.classList.toggle('view-home', name === 'home');
   document.querySelectorAll('.viewbtn').forEach((b) =>
     b.classList.toggle('on', b.dataset.view === name));
   const v = VIEWS[name];
@@ -272,9 +273,9 @@ async function openFile(p) {
     return;
   }
   body.innerHTML = `
-    <div class="backbar"><button id="backbtn">&larr; back to the room</button></div>
+    <div class="backbar"><button id="backbtn">${currentRoom ? '&larr; back to the room' : '&larr; close'}</button></div>
     <div class="doc">${renderMarkdown(data.content)}</div>`;
-  $('#backbtn').addEventListener('click', () => openRoom(currentRoom));
+  $('#backbtn').addEventListener('click', () => currentRoom ? openRoom(currentRoom) : closeScroll());
   body.querySelectorAll('.imglink').forEach((el) =>
     el.addEventListener('click', () => openImage(el.dataset.img)));
   body.scrollTop = 0;
@@ -419,4 +420,7 @@ function start() {
   });
 }
 
-window.Studio = { registerView, setView, openRoom, meta: META, ago, state: () => STATE, start, SVG_NS };
+/* open a single vault doc directly (used by the Gatehouse cards — no parent room) */
+function openDoc(p) { currentRoom = null; overlay().hidden = false; openFile(p); }
+
+window.Studio = { registerView, setView, openRoom, openDoc, meta: META, ago, state: () => STATE, start, SVG_NS };

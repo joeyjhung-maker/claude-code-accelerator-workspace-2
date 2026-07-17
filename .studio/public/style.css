@@ -475,6 +475,82 @@ body.view-office #colophon { color: #7d6a49; }
 .warnote { margin-top: 14px; font-size: 18px; color: var(--wax); line-height: 1.4; }
 .warempty { padding: 30px; text-align: center; color: var(--ink-soft); }
 
+/* ---------- The Gatehouse (home: projects + machine sync) ---------- */
+#home-wrap {
+  position: fixed; inset: 0; z-index: 1;
+  padding: 104px 20px 46px 300px;
+  display: flex; align-items: flex-start; justify-content: center; overflow: auto;
+}
+.gateframe {
+  width: min(1000px, 100%);
+  background: linear-gradient(178deg, #f2e4bc, #e7d5a4 70%, #ddc68e);
+  border: 3px solid var(--ink); border-radius: 4px;
+  box-shadow: 0 10px 0 rgba(43,29,18,.4), inset 0 0 46px rgba(184,134,11,.14);
+  padding: 18px 24px 24px; color: var(--ink);
+}
+.gatehead h2 { font-family: 'Uncial Antiqua', serif; font-size: 27px; letter-spacing: .04em; }
+.gatehead p { color: var(--ink-soft); font-size: 18px; margin: 2px 0 16px; }
+.projlabel, .jvlabel {
+  font-family: 'Uncial Antiqua', serif; font-size: 16px; letter-spacing: .04em;
+  color: var(--ink-soft); margin: 6px 0 8px;
+}
+
+.clientCard {
+  border: 2px solid var(--ink); border-radius: 4px;
+  background: rgba(184,134,11,.08);
+  padding: 12px 14px; margin-bottom: 16px;
+  box-shadow: 3px 3px 0 rgba(43,29,18,.22);
+}
+.ctop { display: flex; align-items: center; gap: 9px; }
+.cname { font-family: 'Uncial Antiqua', serif; font-size: 21px; cursor: pointer; }
+.cname:hover { color: var(--wax); }
+.ckind { font-size: 14px; color: var(--ink-soft); border: 1px solid var(--ink-soft); border-radius: 8px; padding: 0 7px; }
+.cage { margin-left: auto; color: var(--ink-soft); font-size: 16px; }
+.cstats { display: flex; gap: 14px; flex-wrap: wrap; margin: 10px 0 2px; font-size: 18px; }
+.cstat b { font-size: 20px; color: var(--gold); }
+
+.jvwrap { margin-top: 12px; border-top: 2px dashed rgba(43,29,18,.28); padding-top: 9px; }
+.jvgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.jvcard {
+  border: 2px solid var(--ink); border-radius: 3px;
+  background: linear-gradient(178deg, #efe0b4, #e3d199);
+  padding: 8px 10px 9px; cursor: pointer;
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.jvcard:hover { transform: translateY(-2px); box-shadow: 0 4px 0 rgba(43,29,18,.3); }
+.jvtop { display: flex; align-items: center; gap: 7px; }
+.jvname { font-size: 18px; font-weight: bold; line-height: 1.05; }
+.jage { margin-left: auto; color: var(--ink-soft); font-size: 14px; white-space: nowrap; }
+.jfacts { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 5px; font-size: 15px; color: var(--ink-soft); }
+.jfacts b { color: var(--ink); font-size: 16px; }
+.jtags { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
+.jtag { font-size: 13px; background: rgba(95,138,74,.22); border: 1px solid #5f8a4a; border-radius: 8px; padding: 0 7px; color: #3a5a2c; }
+
+.pdot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; border: 1px solid var(--ink); flex: none; }
+.pdot.hot { background: var(--glow); box-shadow: 0 0 6px var(--glow); }
+.pdot.warm { background: var(--gold); }
+.pdot.quiet { background: var(--cold); }
+
+.syncPanel { margin-top: 20px; border: 2px solid var(--ink); border-radius: 4px; padding: 12px 14px; }
+.synchead { font-family: 'Uncial Antiqua', serif; font-size: 16px; letter-spacing: .04em; color: var(--ink-soft); margin-bottom: 6px; }
+.syncverdict { font-size: 21px; line-height: 1.3; }
+.syncfacts { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 8px; font-size: 17px; color: var(--ink-soft); }
+.syncfacts b { color: var(--ink); }
+.syncactions { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
+.syncfetch { font: 16px 'VT323', monospace; background: var(--panel); border: 2px solid var(--ink); border-radius: 3px; padding: 2px 10px; cursor: pointer; }
+.syncfetch:hover { background: var(--glow); }
+.syncfetch:disabled { opacity: .6; cursor: default; }
+.syncfetch-age { color: var(--ink-soft); font-size: 16px; }
+.syncnote { margin-top: 10px; font-size: 15px; color: var(--ink-soft); line-height: 1.35; }
+.tone-good { background: rgba(95,138,74,.18); }
+.tone-good .syncverdict { color: #3a5a2c; }
+.tone-warn { background: rgba(184,134,11,.18); }
+.tone-warn .syncverdict { color: #8a5a12; }
+.tone-bad  { background: rgba(160,51,37,.15); }
+.tone-bad .syncverdict { color: var(--wax); }
+.tone-quiet { background: rgba(74,90,120,.14); }
+.gateempty { padding: 24px; text-align: center; color: var(--ink-soft); }
+
 /* ---------- office interior ---------- */
 #office-wrap {
   position: fixed; inset: 0; z-index: 1;
