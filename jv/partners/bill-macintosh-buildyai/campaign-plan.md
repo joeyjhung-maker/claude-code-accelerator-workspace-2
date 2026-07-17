@@ -6,37 +6,54 @@ Status key: 🟢 ready · 🟡 in progress · ⬜ not started · 🔒 blocked (n
 
 ---
 
-## THE #1 DECISION — what offer do we sell their audience? (locks everything)
-Two different things are on the table and they haven't been reconciled:
-- **Asana/Gavin:** "ROYA Rainmaker — happy in principle." (The full, higher-ticket program, like we sold Ryan.)
-- **Joey's Slack (13 Jul):** a **~$497 client-getting offer** — the "whiskey campaign system," land a client + deliver value, + bonuses.
+## THE #1 DECISION — what offer do we sell their audience? — 🔒 LOCKED (Joey, 16 Jul)
 
-**Recommendation: a $497–$997 reversible front-end sold OVER the webinar that ascends toward ROYA — not the full Rainmaker cold, and NOT the book.** (Earned from the Ryan post-mortem — see [losers/2026-07-16-jv-webinar-straight-to-highticket-no-ladder.md](../../../losers/2026-07-16-jv-webinar-straight-to-highticket-no-ladder.md) and the JV ladder rules in [JV-map.md](../../JV-map.md).) Why:
-- Their audience is **beginner / no-list** and has *just* been pitched BAPP at **~$4,788 + $299/mo** (see sales-page teardown). A second big-ticket "get clients" pitch competes and confuses — but a $497–$997 offer reads as *safe and small* against that anchor.
-- Travis's steer: their unanswered pain is **"how do I actually SELL AI / get a client"** — sell that outcome, commission-only/low-risk. A fast "get your first client" system is the perfect wedge.
-- **$500–1K is the safe-yes zone:** high enough to make a real buyer who *consumes* it (so the indoctrination lands + it self-selects the serious), low enough to be a reversible yes at emotional peak. Needs a real Dan-true guarantee — reversibility is the spine at this price.
-- **The book is NOT the webinar offer** — too low-ticket, wastes the event, barely indoctrinates. Book = pre-frame lead magnet or order bump only. Never sold over a webinar.
-- **The front-end's real job is indoctrination, not revenue:** first dollar to *us* (trust transfers to Dan), belief in the ROYA mechanism before the big ask, a real win that qualifies them, and self-selection.
-- **Close mechanism follows price:** the $497–$997 rung self-serves off the webinar (price matches trust); **ROYA is the ascension, co-closed WITH Bill in conversation** — never a cold link. Engineer the warm close that only happened by accident with Ryan.
-- **Package structure (undecided):** possibly **two packages** at this tier — TBD, pending Russell's price-point intel.
+**FINAL: no ladder, no tiers, no new price point. Sell the SAME ROYA program, same angles, same pricing — 12-pay at $467/mo (≈ $5,604 total).** Travis explicitly poo-poo'd the tiered/decoy idea (see below). The fix is NOT the offer — it's the webinar STRUCTURE. See "Webinar structure" section below.
 
-**UPDATE (16 Jul) — Russell's intel is IN** (see `research/2026-07-16-russell-price-points-and-mechanism.md`). It moves the decision:
-- Russell's explicit steer: their audience buys **$997 / $1,497 / $4,994 + $99/mo** and **"I wouldn't go lower."** → **The $497 wedge is likely off** — it under-prices what they'll pay and clashes with premium framing.
-- **New lean: price OUR offer in their band (~$997–$1,497, the Lite/Premium anchors)**, positioned as the **"next logical step" partnership**, with a **custom ROYA bonus** Buildy buyers can't get elsewhere. Continuity ($99/mo-style) optional.
-- Positioning frame from Russell (use ~verbatim): *"For the first time ever, we're partnering with another brand to bring you an opportunity we believe is the next logical step for your business."*
-- Webinar style = **experiential / personalized** (their 3X–8X came from a 4-option quiz gate → personalized copy + email/SMS → "you just experienced it" reveal). Model it.
+<details><summary>Superseded thinking (kept for the record, not the plan)</summary>
 
-**DECISION (Joey, 16 Jul): 🔒 build a 3-TIER DECOY LADDER** (mirrors Russell's structure — let buyers choose what's included + how much to spend):
-- **Starter $997 +$99/mo** — land your first client yourself. No-Ad-Spend first-client system + Sales Wingman (3mo) + scripts/templates + over-the-shoulder.
-- **Pro $1,497 +$99/mo — TARGET TIER** — everything in Starter + Dead Lead Goldmine offer + Sales Wingman (12mo) + group coaching/live builds + Lightning Deal kit.
-- **Partner $4,994 +$99/mo** — everything in Pro + full ROYA Rainmaker + done-for-you (we close + fulfil) + 1-on-1 VIP. (This is the ascension tier — high-ticket upside without a cold high-ticket webinar pitch.)
-- **Decoy logic:** Partner anchors high → Pro is the real target (reversible front-end, satisfies our "never cold high-ticket on a webinar" rule).
+Three earlier positions were worked through and abandoned, in order:
+1. A $497 "whiskey campaign system" wedge (Joey's 13 Jul Slack note).
+2. A $497–$997 reversible front-end ascending to ROYA, reasoned from the Ryan post-mortem ([losers/2026-07-16-jv-webinar-straight-to-highticket-no-ladder.md](../../../losers/2026-07-16-jv-webinar-straight-to-highticket-no-ladder.md)) — the theory being that JV webinars must never sell high-ticket cold, so a cheap ladder rung was needed.
+3. A 3-tier decoy ladder ($997 / $1,497 / $4,994, mirroring Russell's own BAPP pricing) — built 16 Jul after Russell confirmed those exact price points and said "I wouldn't go lower."
 
-**REMAINING GATES — Dan must confirm before copy:**
-1. What real ROYA assets go in each tier (esp. the Partner **done-for-you close+fulfil** — does Dan's team actually deliver that, like Bill's does?).
-2. The **$99/mo continuity** — is there a ROYA software/community monthly? (matches their model; Dan's call.)
-3. **The proof** — a Dan-true "beginner/JV buyer got a client" result. Every tier promises "get clients"; this is make-or-break.
-4. Final tier prices/names sign-off.
+**Why #3 got killed:** Joey ran it past Travis, who "poo'd on the idea." Travis's actual diagnosis of why the Ryan webinar underperformed (see `../ryan-magdanz-leadbase/research/2026-07-16-travis-feedback-webinar-structure.md` and the real deck audit `../ryan-magdanz-leadbase/research/2026-07-16-ryan-webinar-deck-audit-and-restructure.md`) was **never about price or ladder structure** — it was entirely about webinar STRUCTURE: wrong narrative order, no objection-handling block, wrong content ratio (too much delivery/mechanism, not enough "how to get appointments and sell"), and not staying on longer to re-offer. **Note the tension:** this reopens the loser file's stated rule ("never sell high-ticket straight off a webinar, use a ladder") — Travis, who's actually run hundreds of these, locates the fix in structure/delivery instead. Going with Travis's read.
+
+Russell's price-point intel (`research/2026-07-16-russell-price-points-and-mechanism.md`) and positioning frame remain valid and useful — just not for pricing OUR offer:
+- Their BAPP ladder really is $997 / $1,497 / $4,994 + $99/mo (confirmed, "wouldn't go lower" — but that's THEIR product's pricing, not a mandate for ours).
+- **Positioning frame still stands** (use ~verbatim): *"For the first time ever, we're partnering with another brand to bring you an opportunity we believe is the next logical step for your business."*
+- Their 3X–8X mechanism (4-option quiz gate → personalized copy/email/SMS → "you just experienced it" reveal) is still worth modelling in OUR funnel's style — separate from the price/tier question.
+
+</details>
+
+**REMAINING GATES:**
+1. **The proof** — a Dan-true "beginner/JV buyer got a client" result. Same as before, still make-or-break, still open.
+2. Confirm Dan is fine selling the **standard ROYA offer, unmodified**, into this audience (vs. a bespoke package) — should be a fast yes given the decision above, but hasn't been said explicitly.
+3. **Awaiting the Zoom recording of Dan + Travis's call** (Joey to pull transcript once sent) for the verbatim strategy discussion — may add detail beyond the FB comment thread captured so far.
+
+---
+
+## Webinar structure 🔒 LOCKED (16 Jul) — this is where the actual fix lives
+Grounded in a real audit of the Ryan/Leadbase deck (161 slides — see `../ryan-magdanz-leadbase/research/2026-07-16-ryan-webinar-deck-audit-and-restructure.md`) against Travis's feedback. The Ryan webinar's failure mode was structural, not the offer — **do not repeat it for Bill's webinar.**
+
+**What was wrong (confirmed against the real deck):**
+- Three separate pitches stacked in one webinar instead of one clean arc.
+- Content ratio was ~7-to-1 delivery/mechanism vs. getting-appointments/selling — the *opposite* of what Travis wants (3-to-1 the other way).
+- The full 9-product feature catalog was dumped live — "two or three steps ahead of where the market is mentally" (Travis).
+- **No scripted objection-handling / re-offer block existed anywhere** — Travis's #1 lever (stay on longer, keep re-offering while people are still on) had nothing to hang on.
+- The close was fragmented across two unrelated CTA moments with a topic-pivot in between.
+
+**The build for Bill's webinar follows Travis's model, refined with Russell's outcome-first steer + the "Offer of the Century" frame (16 Jul, final):**
+
+| Beat | Content | Why |
+|---|---|---|
+| **1. Opportunity** | Outcome-first, curiosity-led open. No AI talk yet — lead with the destination: more leads, more clients, more money, "easier, faster, simpler than anything you've seen." Stay blind on the mechanism. | Russell's original voice-note steer: outcomes + curiosity beat a direct reveal — naming the mechanism early kills attendance ("oh I've seen this"). |
+| **2. Challenge (Old Plan)** | Why everything else in the market falls short — expensive tools, retainers, having to build/deliver it yourself, cold prospecting grind. Keep tight. | Sets up why a new plan is needed; this section already worked in Ryan's deck — don't bloat it. |
+| **3. New Plan — reveal the "Offer of the Century"** | **"This is the best offer out there — nothing beats it."** (Note: this is Dan's own coined phrase from the real Ryan deck, slide 62 — reuse it, don't reinvent.) ONE hero mechanism, not the full feature/android catalog. Live demo as proof. **Same beat, fold in the fulfilment reassurance: "once you've landed the client, AI does the work and delivery for you."** | Pre-empts the #1 objection ("but I can't deliver AI services") inside the reveal itself, before it's ever raised defensively. |
+| **4. Bulk of remaining time — objections + re-offers** | Dominated by **selling/appointment content, 3:1 over delivery content** (Travis's ratio). Script real "big sharks": can't get appointments, scared to spend, not technical (mostly pre-empted by step 3). 2–3 scripted re-offer beats, not one CTA drop. Presenter (Dan, solo) keeps going as long as people are on. | This is Travis's actual diagnosis of what killed Ryan's webinar — no scripted version existed at all. |
+| **5. Close** | One unified close. Reiterate outcome + Offer-of-the-Century framing. Single CTA. | Ryan's deck fragmented the close across two moments with a topic-pivot between — don't repeat it. |
+
+**Throughline:** outcome-led open → one best-in-market offer → AI removes the only real objection (delivery) before it's raised → the rest of the runtime goes to getting appointments and closing, not teaching AI.
 
 ---
 
