@@ -20,7 +20,8 @@ Each partner needs its own research (their avatar, their product, their sales pa
 
 - Ryan Magdanz — Leadbase: [jv/partners/ryan-magdanz-leadbase/](partners/ryan-magdanz-leadbase/partner.md)
 - Bill Macintosh — Buildy.ai: [jv/partners/bill-macintosh-buildyai/](partners/bill-macintosh-buildyai/partner.md)
-- Third partner — add when ready, copy `jv/partners/_partner-template.md` into a new folder.
+- Matt Leitz — BotBuilders: [jv/partners/matt-leitz-botbuilders/](partners/matt-leitz-botbuilders/partner.md)
+- Next partner — add when ready, copy `jv/partners/_partner-template.md` into a new folder.
 
 ## Per-partner structure
 
