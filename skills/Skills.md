@@ -51,6 +51,7 @@ The flywheel turns one stage at a time: **read the account → storm seeds → b
 
 | Skill | Command | Use it when |
 |---|---|---|
+| [[task-observer]] | *(runs quietly, no command)* | Notice a correction or repeated pattern the moment it happens, so it isn't lost by session end. Feeds save-as-skill and upskill. |
 | [[save-as-skill]] | `/save-as-skill` | Turn a repeated workflow into a reusable skill. |
 | [[upskill]] | `/upskill` | Improve an existing skill after using it. |
 | [[dashboard-setup]] | `/dashboard-setup` | Create or refresh the visual dashboard for the workspace. |

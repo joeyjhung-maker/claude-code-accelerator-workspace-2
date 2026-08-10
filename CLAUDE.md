@@ -15,6 +15,7 @@ Marketing director for coaching brands. My work is ad copy, hooks, and the strat
 - Start of session: check the most recent note in daily/ and open with what's still outstanding, instead of waiting to be told.
 - End of session: log a short entry to today's daily note automatically — what got made, what's still open. This is separate from promotion (see below); it happens every session, promotion only happens when something's actually worth keeping.
 - If asked about past work that isn't in memory or daily notes, search past session transcripts before saying you don't know.
+- When a correction reveals a skill got something wrong, or the same manual move happens a second time, log it to skills/observations.md (task-observer) instead of letting it evaporate.
 
 ## Where my stuff lives (open when relevant)
 Reference (feeds the work):

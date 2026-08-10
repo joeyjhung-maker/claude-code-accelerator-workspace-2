@@ -25,7 +25,7 @@ At the end of any session where you made or judged work. If the operator says "w
    - brand/voice.md usually links to `[[Memory Loop]]`
    - workflows/ usually links to `[[Promotion]]`
    - client notes usually link to the relevant workflow, swipe, winner, or loser if one exists
-6. Update today's daily note (daily/YYYY-MM-DD.md) with a one-line session summary and links to any notes that got promoted.
+6. Update today's daily note (daily/YYYY-MM-DD.md) with a one-line session summary and links to any notes that got promoted. If task-observer logged anything new this session, note the count with a link to skills/observations.md — don't duplicate its content here.
 7. **Commit to git.** Every close-out ends with a commit (the vault backs up to GitHub). First do a quick secrets scan (no real keys/tokens in the diff; `.env` and token files must stay gitignored), then `git add -A` and commit to `main` with a short summary of the session. This is a standing instruction — do it every day at close-out, no need to ask.
 8. Confirm what was promoted and where, and that the commit landed.
 

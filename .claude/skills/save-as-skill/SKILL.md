@@ -8,7 +8,7 @@ description: Turn a move you have done two or three times into a reusable skill,
 Productize a repeated move so you stop redoing it by hand. The "third time" trigger from the data dictionary.
 
 ## When to run
-When the operator or you notice the same multi-step move has happened two or three times. Do not skill a one-off.
+When the operator or you notice the same multi-step move has happened two or three times. Do not skill a one-off. Check `skills/observations.md` for "New skill candidate" entries logged by task-observer — that backlog is exactly this trigger, already counted.
 
 ## Process
 1. Name the move and confirm it has really repeated. Ask: how many times have you done this? Once is noise; do not graduate it.
@@ -17,6 +17,7 @@ When the operator or you notice the same multi-step move has happened two or thr
 4. Show the draft. The operator approves or edits.
 5. Write it to .claude/skills/{skill-name}/SKILL.md.
 6. Confirm the skill exists and how to invoke it.
+7. If this came from a logged observation, mark it `ACTIONED (YYYY-MM-DD) — [new skill name]` in skills/observations.md.
 
 ## Rules
 - Two or three times is the trigger. Once is noise.
