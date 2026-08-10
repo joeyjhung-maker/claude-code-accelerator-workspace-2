@@ -12,6 +12,9 @@ Marketing director for coaching brands. My work is ad copy, hooks, and the strat
 - When a move works twice, we promote it into memory. When something breaks, we fix the rule, not just today's output.
 - Use my voice and my swipes, not the model's average.
 - Use Fable subagents when you need more intelligence. Everyday sessions run on Opus; spawn a Fable subagent (Agent tool, model: fable) for the genuinely hard calls — deep strategy, the Lock, a gnarly build. Don't spawn one for routine work; each spawn starts cold and costs more than it saves.
+- Start of session: check the most recent note in daily/ and open with what's still outstanding, instead of waiting to be told.
+- End of session: log a short entry to today's daily note automatically — what got made, what's still open. This is separate from promotion (see below); it happens every session, promotion only happens when something's actually worth keeping.
+- If asked about past work that isn't in memory or daily notes, search past session transcripts before saying you don't know.
 
 ## Where my stuff lives (open when relevant)
 Reference (feeds the work):

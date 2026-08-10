@@ -70,3 +70,38 @@ detonates.
 Read the hook aloud. If a non-marketer doesn't wince, gasp, or say "damn" — it's
 too tame. Find the version that flinches, THEN dial back for compliance (never
 the reverse). See the rubric's hook-intensity gate for the compliance dial-back.
+
+## Define the core argument before you hook
+A hook without an argument behind it is just a headline — it might stop the
+scroll but it won't convert. Before briefing any creative, find the ARGUMENT:
+not the surface-level symptom, the mechanical root cause. What's the real
+friction stopping this person from getting what they want, underneath the thing
+they'd actually say out loud.
+
+**The pattern:** surface complaint → mechanical root cause → what they're
+actually looking for. Example (banked 2026-08-10, Instant AI Agency "Nice Guy
+Trap" ad): surface complaint is "I have too many clients and not enough
+profit." The real mechanism is that the agency model ties income to labor and
+headcount — no amount of skill moves that ceiling, and every dollar is rented
+from someone else's business. What they're actually looking for isn't more
+clients, it's permission to stop optimizing for the wrong metric. That argument
+— not the AI mechanism — is what the hook needs to land.
+
+**Lead with the argument, not the outcome.** A result-flip hook ("I went from
+10 clients to 1 and tripled my income") proves the argument happened but makes
+the reader do the work of inferring WHY. A paradox-first hook states the
+contradiction itself ("The harder you work, the less you get paid") and forces
+the reader to ask "wait, why?" before any proof shows up — a stronger open loop
+than any before/after result. (Modeled off a Dan Henry ad — see
+[[swipes/named-mechanism]].)
+
+**Name the mechanism as ownable IP.** Once the argument is found, naming it
+turns an abstract insight into something the reader can recognize themselves in
+— "the Nice Guy Trap," not "you're doing it wrong." Best names are INTERNAL
+(a reflex/instinct/wiring inside the reader, not an external trap set by the
+market) and feel like a diagnosis, not an insult — fixable, not a character
+flaw. Test: does the reader think "OHH that's my problem" or does it read like
+a generic marketing term? If it could headline an ad for a different
+profession entirely, it's not specific enough yet.
+
+Related: [[Promotion]]

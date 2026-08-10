@@ -44,6 +44,15 @@ X-Provider-Key: $ANTHROPIC_API_KEY      # the key that actually runs the model
 | Copy · body+headlines | `mariobot` | 700–1500w body, headlines in the SAME conversation |
 | Copy · swipes | `swiping-master-bot` | Faithful competitor swipe, run parallel to ad-hook-bot-1 |
 | Video script | `infeed-vsl-bot` | In-feed VSL/video-script style (if available) |
+| Strategy · mechanism naming | `characterizations-bot` | Names your mechanism: 20 curiosity-hook characterizations (UMP/UMS classified) + ranked top-3. Use this instead of hand-steering ad-hook-bot-1 toward a name. (Found 2026-08-10.) |
+| Strategy · mechanism finding | `universal-mechanism-bot` | Generates 36 candidate mechanisms, scores them, delivers top 3 with headlines/hooks/emails. |
+| Strategy · metaphors | `metaphors-bot` | Turns a UMP/UMS or belief into 50-100+ metaphor options. |
+
+**Note (banked 2026-08-10):** this table only lists 4 "most-used" bots but the live roster has 143+.
+Before hand-writing something a specialized bot likely already does well (naming, belief-mapping,
+angle-scoring, proof structuring), check the live list: `GET $GENESIS_BASE_URL/models` and grep the
+`_genesis.description` field for your task. Worth a quick check any time the job feels like "strategy"
+rather than raw copywriting.
 
 **Parallelization (multiple Anthropic keys):** up to 3 briefs at once (one key each); body-1 / body-2
 parallel; headlines wait for their body (same convo); swipe path parallel to hook path; sequential on
