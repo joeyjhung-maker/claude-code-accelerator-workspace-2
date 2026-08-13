@@ -22,6 +22,7 @@ Each partner needs its own research (their avatar, their product, their sales pa
 - Bill Macintosh — Buildy.ai: [jv/partners/bill-macintosh-buildyai/](partners/bill-macintosh-buildyai/partner.md)
 - Matt Leitz — BotBuilders: [jv/partners/matt-leitz-botbuilders/](partners/matt-leitz-botbuilders/partner.md)
 - Gary Capps — myCRMSIM: [jv/partners/gary-capps-mycrmsim/](partners/gary-capps-mycrmsim/partner.md)
+- Rich Schefren — Strategic Profits: [jv/partners/rich-schefren-strategicprofits/](partners/rich-schefren-strategicprofits/partner.md)
 - Next partner — add when ready, copy `jv/partners/_partner-template.md` into a new folder.
 
 ## Per-partner structure
