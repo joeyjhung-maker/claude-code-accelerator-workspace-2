@@ -83,7 +83,12 @@ Their framing: *"Partnership Supports the Mission. Membership Provides Access an
 
 **Top — stops dead at £3,990/yr.** `[OBSERVED]` No high-ticket, no 1:1, no done-with-you, no mastermind, no certification/licensing above The Hive.
 
-**Format problem** — via `[[hierarchy-of-value]]`: WATCH+ sells *courses and a library*. That's the high-customer-energy end of the format ladder — the member does all the work of reading, interpreting and applying. The doctrine is explicit that this caps price elasticity at the bottom. £49/mo for self-serve content is priced above what the format normally sustains, while The Hive at £399 delivers four founder touches a year. **The energy-to-price curve is inverted at both ends.**
+**Both ends are priced wrong** — via `[[hierarchy-of-value]]`:
+
+- **£49/mo gets you courses and a library.** You do all the work yourself — read it, understand it, apply it. Products where the customer does all the work are normally cheap. £49 a month is a lot to pay for "here's the material, get on with it."
+- **£399/mo gets you four Zoom calls with Tobi a year.** That's £4,788 for four calls.
+
+So the cheap tier asks too much of the member for what it costs, and the expensive tier gives too little contact for what it costs.
 
 ## 5. Attention engine
 
@@ -103,7 +108,7 @@ Their framing: *"Partnership Supports the Mission. Membership Provides Access an
 
 **(a) The attention is on the man, not the institution.** Tobi's personal channel launched in **2022**; the church channel launched in **2016**. The younger channel has **6.6x the subscribers and roughly 60x the monthly views.** `[INFERRED]` Six extra years of head start counted for nothing. This is `[[brand-vs-personality-and-recurring-problems]]` in hard numbers — and it means every acquisition lever runs through him personally.
 
-**(b) The Telegram is 2.7% of the Instagram following.** `[OBSERVED]` 7,500 vs 281K. The community that the £49 product is sold into is a rounding error against the audience that exists. Via `[[converting-audiences]]`, this is the already-in-motion audience the doctrine says is the cheapest thing in marketing to redirect — and 97% of it has never been asked.
+**(b) He sells to 7,500 people when 281,000 follow him.** `[OBSERVED]` 281K on Instagram. 7,500 in the Telegram. The £49 membership only ever gets put in front of the Telegram group. Everyone else follows him, watches him, and is never asked to buy anything. Via `[[converting-audiences]]`, people who already follow you are the cheapest sale there is — and 97% of his have never had the offer made to them.
 
 **(c) The church account out-engages the personal account 2.4:1** (1.1% vs 0.45% ER) on a tenth of the followers. `[INFERRED]` The 281K is broader and cooler; the 26K is smaller and hotter. Those two audiences want different things and should not receive the same message.
 
@@ -111,7 +116,7 @@ Their framing: *"Partnership Supports the Mission. Membership Provides Access an
 
 `[OBSERVED]` Owned: email list (size unknown), the sites. Rented: everything above.
 
-`[INFERRED]` The whole business is downstream of Tobi's speaking and media presence. Via `[[converting-audiences]]`, this is the classic already-in-motion audience — people who have done the hard work of getting into motion around the prophetic, and who follow him specifically. The doctrine's line is that redirecting existing motion is far cheaper than starting it. **The Watch exists precisely to do that. Whether it's actually doing it is unmeasurable from outside.**
+`[INFERRED]` Everything in the business depends on Tobi's speaking and media presence. These are people who already care about the prophetic and already follow him specifically. Via `[[converting-audiences]]`, selling to people like that is far cheaper than finding new ones. **That is what The Watch is for. Whether it's working can't be seen from outside.**
 
 `[OBSERVED]` The Telegram is described as carrying "prayer, fasting and prophetic live teachings" — i.e. **live, recurring, experiential contact with 7,500 people.** Via `[[levels-of-trust]]`, that is Level 5 (Experience), the most effective and most expensive level to reach. They already have it. It is not visibly wired to the ladder.
 
@@ -140,7 +145,11 @@ Total across the 25: **443,409 views, averaging 17,736** — **42% above the cha
 
 **The dominant content is geopolitical and discernment commentary, not prophetic training.** Iran, Tony Blair, Starmer/Davos, MKUltra, Fauci, Epstein, Tommy Robinson, "Who Actually Runs Britain." `[INFERRED]` The 281K/108K audience was largely assembled by a Christian-discernment-on-current-events promise. The product it's being sold — structured prophetic formation at £49/mo — is a different purchase. Via `[[criteria-of-markets]]` and `[[levels-of-awareness]]`, **there is a real gap between what the audience showed up for and what the store page asks them to buy.**
 
-**But the bridge exists, and it outperforms.** Both "Mastering Meditation" videos land in the top six (37,026 and 19,606). "Prophets Have Access To A Cloud System," "How I Meditate to Enter the Spirit," "You MUST know these truths when facing spiritual warfare" are all in the recent set. **This is the seam** — content that is both native to the channel and directly upstream of Prophet School. And the existing lead magnet, *"7 Ways God Speaks,"* is aimed at exactly this seam. `[INFERRED]` The magnet is right. What's missing is the routing from the videos that earn the attention to the magnet that captures it.
+**But some of his videos are about the exact thing he sells — and they do well.** Both "Mastering Meditation" videos are in his top six (37,026 and 19,606). So are "Prophets Have Access To A Cloud System," "How I Meditate to Enter the Spirit," and "You MUST know these truths when facing spiritual warfare."
+
+These matter because someone who watches a video about how to hear God is already interested in a school that teaches you to hear God. **They're the closest thing he has to a warm buyer, and they arrive for free.**
+
+And his ebook — *"7 Ways God Speaks"* — is about that exact topic. `[INFERRED]` So the ebook is the right thing to offer them. There's just nothing on those videos telling anyone the ebook exists.
 
 **Series drop-off is severe.** `[OBSERVED]` Islam Part One: 18,104. Part Two: 4,384. **A 76% fall between two halves of one argument.** Whatever is happening between parts — titling, thumbnail, no in-video handoff, gap between uploads — is losing three quarters of an already-committed audience.
 
@@ -231,7 +240,7 @@ Scored only where observable. Unscoreable dimensions say so rather than carry an
 | Dimension | /10 | Why |
 |---|---|---|
 | Offer ladder (structure) | 7 | Well-tiered middle; holes at both ends |
-| Offer ladder (format/price fit) | 4 | Energy-to-price curve inverted — see §4 |
+| Offer ladder (price vs what you get) | 4 | £49 makes you do all the work; £399 buys four calls a year — see §4 |
 | Money architecture | 4 | Two rails that cross; support money buys less than access money |
 | Attention engine (reach) | 9 | 281K IG + 108K YT, ~375K views/mo, high cadence, improving |
 | Attention engine (conversion of it) | 2 | Telegram is 2.7% of the IG following; AdSense ~$2–38/day; no visible route from video to magnet |
@@ -278,9 +287,9 @@ Scored only where observable. Unscoreable dimensions say so rather than carry an
 
 **M7 — Opt-in friction on the only capture page.** `[OBSERVED]` A required ~250-option country dropdown is the heaviest element on a two-field lead-magnet form. *(Likely there to drive Emerging Nations pricing — so the fix is to move it, not delete it.)*
 
-**M8 — 97% of the audience has never been asked.** `[OBSERVED]` 281K Instagram followers and 108K YouTube subscribers; 7,500 in the Telegram. Via `[[converting-audiences]]`, an already-in-motion audience is the cheapest conversion in marketing, and this one is 40x the size of the community the product is actually sold into. *This is now the single largest finding in the audit.*
+**M8 — 97% of his audience is never asked to buy.** `[OBSERVED]` 281,000 follow him on Instagram, 108,000 on YouTube. 7,500 are in the Telegram group. The £49 membership is only ever offered to the 7,500. Via `[[converting-audiences]]`, people who already follow you are the cheapest sale there is. *This is now the single largest finding in the audit.*
 
-**M9 — Audience/product mismatch, with the bridge sitting unused.** `[OBSERVED + INFERRED]` The channel's reach is built on geopolitical and discernment commentary; the store sells prophetic formation. The two "Mastering Meditation" videos (37,026 and 19,606 views, both top-six) are the seam between them, and the existing lead magnet is aimed squarely at it. Nothing observable routes viewers from those videos to that magnet.
+**M9 — His best videos for selling the school don't mention the school.** `[OBSERVED + INFERRED]` Most of his views come from politics and current-events videos. But the videos about hearing God and meditation — the exact subject Prophet School teaches — are two of his top six (37,026 and 19,606 views). Those viewers are the closest thing he has to warm buyers. Nothing on those videos points to the ebook or the school.
 
 **M10 — Nicola is an idle asset.** `[OBSERVED]` ~35K views per video across 28 videos — roughly 2.8x Tobi's lifetime per-video average, on 1/24th the output. Via `[[brand-vs-personality-and-recurring-problems]]`, she's also the most obvious hedge against the key-man exposure in M6/§9.
 
@@ -336,7 +345,7 @@ Two halves of one motion:
 **Why this one, over everything else on the list:**
 
 - Every other lever requires something to be built. This requires nothing that doesn't already exist — the audience, the magnet, the product, the price and the trust are all in place. The only missing component is **the ask**, and the ask is the thing he'd be hiring for.
-- **The size of the gap is arithmetic, not opinion.** 281K Instagram followers and ~375K monthly video views feed a 7,500-person Telegram. Whatever the right conversion rate turns out to be, it is being applied to 2.7% of the available audience.
+- **The size of the gap is a fact, not a judgement call.** 281,000 follow him on Instagram. ~375,000 people watch his videos every month. 7,500 are in the Telegram group he sells to. Whatever percentage of people would buy, right now that percentage only gets a chance to buy on 7,500 of them.
 - The current monetisation of that attention is **$2–38/day of AdSense.**
 
 **The arithmetic of the gap** — *illustrative only, using their observed traffic against explicitly assumed rates. These are not projections and must never be presented to him as forecasts:*
