@@ -1,0 +1,482 @@
+<!--
+  ============================================================================
+  WATCH+ / PROPHET SCHOOL — SALES PAGE
+  Paste-ready for Kajabi Custom Code Block.
+  Prepared by Heuromi Media · draft for The Watch Global · 2026-08-14
+
+  HOW TO INSTALL
+  1. Website → Pages → the /store page → Customize
+  2. Delete (or hide) the existing pricing section
+  3. Add Section → blank/one-column → Add block → Custom Code
+  4. Paste this entire file into the Code field, save, preview
+  5. To remove: delete the Custom Code block. Nothing else is touched.
+
+  WHAT IS NOT IN HERE, AND WHY
+  - No form elements. A hand-rolled form does NOT feed Kajabi's CRM or list.
+    Where a form is wanted, add a NATIVE Kajabi form block in its own section.
+    The slot is marked below.
+  - Checkout is not replaced. The buttons link to the real Kajabi offers.
+  - Every claim about students/results is left blank and marked. Nothing
+    invented. Search this file for "NEEDS TOBI" before publishing.
+
+  CSS is namespaced under .wgp- and scoped inside #wgp. It will not leak into
+  the theme, and theme styles are neutralised only inside this block.
+  ============================================================================
+-->
+
+<style>
+#wgp{
+  --wgp-ink:#0B0E14; --wgp-deep:#141A26; --wgp-panel:#1B2230; --wgp-line:#2C3547;
+  --wgp-text:#C9D2E0; --wgp-bright:#FFFFFF; --wgp-dim:#8593A8;
+  --wgp-gold:#C9A55C; --wgp-gold-dim:#8A7340;
+  --wgp-display:"Archivo Narrow","Archivo",Impact,sans-serif;
+  --wgp-body:"Karla",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:var(--wgp-ink); color:var(--wgp-text);
+  font-family:var(--wgp-body); font-size:17px; line-height:1.65;
+  margin:0 calc(50% - 50vw); padding:0; width:100vw; overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+#wgp *,#wgp *::before,#wgp *::after{box-sizing:border-box;}
+#wgp p,#wgp h1,#wgp h2,#wgp h3,#wgp h4,#wgp ul,#wgp ol,#wgp li{margin:0;padding:0;}
+#wgp ul{list-style:none;}
+#wgp a{text-decoration:none;color:inherit;}
+
+.wgp-wrap{max-width:64rem;margin:0 auto;padding:0 1.4rem;}
+.wgp-narrow{max-width:44rem;margin:0 auto;}
+.wgp-sec{padding:clamp(3rem,7vw,5.5rem) 0;}
+.wgp-sec--panel{background:var(--wgp-deep);}
+.wgp-sec--line{border-top:1px solid var(--wgp-line);}
+
+#wgp h1,#wgp h2,#wgp h3{
+  font-family:var(--wgp-display); color:var(--wgp-bright);
+  line-height:1.1; letter-spacing:-.01em; text-wrap:balance; font-weight:700;
+}
+#wgp h1{font-size:clamp(2.3rem,6.2vw,4rem);text-transform:uppercase;}
+#wgp h2{font-size:clamp(1.7rem,4vw,2.5rem);text-transform:uppercase;}
+#wgp h3{font-size:1.15rem;}
+.wgp-eyebrow{
+  font-family:var(--wgp-body); font-size:.72rem; font-weight:700;
+  letter-spacing:.22em; text-transform:uppercase; color:var(--wgp-gold);
+}
+.wgp-lede{font-size:clamp(1.05rem,2.2vw,1.3rem);color:var(--wgp-text);}
+.wgp-stack{display:flex;flex-direction:column;gap:1.15rem;}
+.wgp-stack--lg{gap:2.2rem;}
+#wgp strong{color:var(--wgp-bright);font-weight:700;}
+
+/* rule under headings */
+.wgp-rule{width:3.5rem;height:2px;background:var(--wgp-gold);}
+
+/* hero */
+.wgp-hero{
+  background:linear-gradient(180deg,var(--wgp-ink) 0%,var(--wgp-deep) 100%);
+  padding:clamp(3.5rem,9vw,6.5rem) 0 clamp(3rem,7vw,5rem);
+  border-bottom:1px solid var(--wgp-line);
+}
+.wgp-hero .wgp-lede{max-width:38rem;}
+
+/* buttons */
+#wgp .wgp-cta{
+  display:inline-flex;align-items:center;justify-content:center;
+  font-family:var(--wgp-body);font-weight:700;font-size:.95rem;
+  letter-spacing:.06em;text-transform:uppercase;
+  padding:1rem 2.1rem;border-radius:2px;border:2px solid var(--wgp-gold);
+  background:var(--wgp-gold);color:var(--wgp-ink);
+  transition:background .15s ease,color .15s ease;cursor:pointer;
+}
+#wgp .wgp-cta:hover,#wgp .wgp-cta:focus-visible{background:transparent;color:var(--wgp-gold);}
+#wgp .wgp-cta--ghost{background:transparent;color:var(--wgp-bright);border-color:var(--wgp-line);}
+#wgp .wgp-cta--ghost:hover,#wgp .wgp-cta--ghost:focus-visible{border-color:var(--wgp-gold);color:var(--wgp-gold);}
+#wgp .wgp-cta--sm{padding:.8rem 1.5rem;font-size:.85rem;width:100%;}
+#wgp :focus-visible{outline:2px solid var(--wgp-gold);outline-offset:3px;}
+.wgp-ctarow{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center;}
+.wgp-under{font-size:.85rem;color:var(--wgp-dim);}
+
+/* for/not-for */
+.wgp-two{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1.5rem;}
+.wgp-card{
+  background:var(--wgp-panel);border:1px solid var(--wgp-line);
+  border-radius:3px;padding:1.6rem 1.7rem;
+}
+.wgp-card ul{display:flex;flex-direction:column;gap:.7rem;margin-top:1rem;}
+.wgp-card li{position:relative;padding-left:1.6rem;font-size:.97rem;}
+.wgp-card li::before{position:absolute;left:0;top:0;font-weight:700;}
+.wgp-yes li::before{content:"✓";color:var(--wgp-gold);}
+.wgp-no li::before{content:"—";color:var(--wgp-dim);}
+.wgp-no li{color:var(--wgp-dim);}
+
+/* symptom lines */
+.wgp-quotes{display:flex;flex-direction:column;gap:.9rem;margin:1.6rem 0;}
+#wgp .wgp-quotes li{
+  border-left:2px solid var(--wgp-gold-dim);padding:.15rem 0 .15rem 1.2rem;
+  font-size:1.06rem;color:var(--wgp-bright);font-style:italic;
+}
+
+/* rhythm steps */
+.wgp-steps{display:flex;flex-direction:column;gap:0;margin-top:1.5rem;}
+.wgp-step{
+  display:grid;grid-template-columns:3.2rem 1fr;gap:1.2rem;
+  padding:1.3rem 0;border-top:1px solid var(--wgp-line);
+}
+.wgp-step:last-child{border-bottom:1px solid var(--wgp-line);}
+.wgp-step-n{
+  font-family:var(--wgp-display);font-size:1.5rem;font-weight:700;
+  color:var(--wgp-gold);line-height:1;padding-top:.15rem;
+}
+
+/* pricing */
+.wgp-tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(16.5rem,1fr));gap:1.4rem;align-items:start;}
+.wgp-tier{
+  background:var(--wgp-panel);border:1px solid var(--wgp-line);border-radius:3px;
+  padding:1.8rem 1.6rem;display:flex;flex-direction:column;gap:1.1rem;height:100%;
+}
+.wgp-tier--feat{border-color:var(--wgp-gold);position:relative;}
+.wgp-flag{
+  position:absolute;top:-.72rem;left:1.6rem;background:var(--wgp-gold);color:var(--wgp-ink);
+  font-size:.66rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+  padding:.25rem .7rem;border-radius:2px;
+}
+.wgp-price{font-family:var(--wgp-display);font-size:2.5rem;font-weight:700;color:var(--wgp-bright);line-height:1;}
+.wgp-price span{font-family:var(--wgp-body);font-size:.95rem;font-weight:400;color:var(--wgp-dim);}
+.wgp-annual{font-size:.85rem;color:var(--wgp-gold);}
+.wgp-tier ul{display:flex;flex-direction:column;gap:.6rem;flex:1;}
+.wgp-tier li{position:relative;padding-left:1.5rem;font-size:.94rem;}
+.wgp-tier li::before{content:"✓";position:absolute;left:0;color:var(--wgp-gold);font-weight:700;}
+.wgp-tier li.wgp-inherit{color:var(--wgp-dim);font-style:italic;}
+.wgp-tier li.wgp-inherit::before{content:"+";color:var(--wgp-dim);}
+
+/* faq */
+.wgp-faq{display:flex;flex-direction:column;gap:0;margin-top:1.5rem;}
+.wgp-faq details{border-top:1px solid var(--wgp-line);padding:1.1rem 0;}
+.wgp-faq details:last-of-type{border-bottom:1px solid var(--wgp-line);}
+#wgp .wgp-faq summary{
+  font-family:var(--wgp-display);font-size:1.08rem;color:var(--wgp-bright);
+  cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;
+}
+.wgp-faq summary::-webkit-details-marker{display:none;}
+.wgp-faq summary::after{content:"+";color:var(--wgp-gold);font-size:1.3rem;line-height:1;}
+.wgp-faq details[open] summary::after{content:"–";}
+.wgp-faq p{margin-top:.8rem;font-size:.97rem;}
+
+/* placeholder — impossible to miss */
+.wgp-todo{
+  border:2px dashed #E0533F;background:rgba(224,83,63,.09);
+  padding:1.2rem 1.4rem;border-radius:3px;color:#F2A79A;font-size:.92rem;
+  display:flex;flex-direction:column;gap:.5rem;
+}
+.wgp-todo b{color:#FF8C78;font-family:var(--wgp-body);letter-spacing:.06em;text-transform:uppercase;font-size:.72rem;}
+
+.wgp-fine{font-size:.85rem;color:var(--wgp-dim);}
+#wgp .wgp-link{color:var(--wgp-gold);text-decoration:underline;text-underline-offset:3px;}
+#wgp .wgp-link:hover{color:var(--wgp-bright);}
+.wgp-center{text-align:center;}
+.wgp-center .wgp-rule{margin:0 auto;}
+.wgp-center .wgp-ctarow{justify-content:center;}
+@media(max-width:560px){
+  .wgp-step{grid-template-columns:2.4rem 1fr;gap:.9rem;}
+  #wgp{font-size:16px;}
+}
+</style>
+
+<div id="wgp">
+
+  <!-- ================= HERO ================= -->
+  <section class="wgp-hero">
+    <div class="wgp-wrap wgp-stack">
+      <span class="wgp-eyebrow">Prophet School · The Watch Global</span>
+      <h1>Learn to hear God clearly — and know that it's Him</h1>
+      <p class="wgp-lede">A structured school for believers who already sense God is speaking, and want to stop second-guessing what they're hearing.</p>
+      <div class="wgp-ctarow" style="margin-top:.6rem;">
+        <a class="wgp-cta" href="/resource_redirect/offers/LJrpNoY6">Join Prophet School — £49/month</a>
+        <a class="wgp-cta wgp-cta--ghost" href="#wgp-inside">See what's inside</a>
+      </div>
+      <p class="wgp-under">Monthly membership. Cancel any time. Regionally adjusted pricing available.</p>
+    </div>
+  </section>
+
+  <!-- ================= THE PROBLEM (symptom language, not diagnosis) ================= -->
+  <section class="wgp-sec">
+    <div class="wgp-wrap wgp-narrow wgp-stack">
+      <span class="wgp-eyebrow">If this sounds familiar</span>
+      <h2>You're not unsure whether God speaks. You're unsure whether it was Him</h2>
+      <div class="wgp-rule"></div>
+      <ul class="wgp-quotes">
+        <li>"I get impressions — but I can't tell what's God and what's me."</li>
+        <li>"I've had dreams I know meant something, and no idea how to read them."</li>
+        <li>"I've said something I believed was a word, and then quietly wondered if I'd got it wrong."</li>
+        <li>"I've been in church for years and nobody ever actually taught me how this works."</li>
+      </ul>
+      <p>None of that means you aren't hearing. It usually means <strong>nobody sat you down and taught you the mechanics</strong> — how God speaks, how to test it, and how to grow in it without guessing.</p>
+      <p>That's the entire purpose of this school.</p>
+    </div>
+  </section>
+
+  <!-- ================= THE RHYTHM — their strongest asset, currently invisible ================= -->
+  <section class="wgp-sec wgp-sec--panel wgp-sec--line">
+    <div class="wgp-wrap wgp-narrow wgp-stack">
+      <span class="wgp-eyebrow">How it works</span>
+      <h2>We meet every month, and we teach in public first</h2>
+      <div class="wgp-rule"></div>
+      <p>Prophet School runs on the <strong>first Saturday of the month</strong>, hosted by Apostle Tobi Arayomi with Prophet Mutsa Samuwi.</p>
+      <div class="wgp-steps">
+        <div class="wgp-step"><span class="wgp-step-n">01</span><div>
+          <h3>A free, open session — first</h3>
+          <p class="wgp-fine" style="margin-top:.35rem;">One hour of real teaching, in public, before anything is asked of you. You can watch, take notes, and decide for yourself whether this is the room you want to be in.</p>
+        </div></div>
+        <div class="wgp-step"><span class="wgp-step-n">02</span><div>
+          <h3>Then the school session itself</h3>
+          <p class="wgp-fine" style="margin-top:.35rem;">Members go deeper on the same subject — the mechanics, the practice, and the questions you can't ask in a public room.</p>
+        </div></div>
+        <div class="wgp-step"><span class="wgp-step-n">03</span><div>
+          <h3>The rest of the month, you have the library</h3>
+          <p class="wgp-fine" style="margin-top:.35rem;">Every past session and course stays available, so you're not starting from the month you happened to join.</p>
+        </div></div>
+      </div>
+      <div class="wgp-todo" style="margin-top:1.6rem;">
+        <b>Needs Tobi — confirm before publishing</b>
+        <span>Is the free session always the first Saturday, and always one hour before? If the timing varies, soften to "each month" and remove the specific hour. <strong>Accuracy here matters more than the copy.</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHO IT'S FOR ================= -->
+  <section class="wgp-sec">
+    <div class="wgp-wrap wgp-stack">
+      <div class="wgp-narrow wgp-stack" style="margin-bottom:.5rem;">
+        <span class="wgp-eyebrow">Before you join</span>
+        <h2>This is built for a specific person</h2>
+        <div class="wgp-rule"></div>
+      </div>
+      <div class="wgp-two">
+        <div class="wgp-card wgp-yes">
+          <h3>It's for you if…</h3>
+          <ul>
+            <li>You believe God still speaks and you want to grow in hearing Him</li>
+            <li>You've had impressions, dreams or words you couldn't interpret</li>
+            <li>You want structure and practice, not just more inspiration</li>
+            <li>You're willing to show up monthly and do the work between sessions</li>
+            <li>You want to carry this into your work and your city, not only church</li>
+          </ul>
+        </div>
+        <div class="wgp-card wgp-no">
+          <h3>It isn't for you if…</h3>
+          <ul>
+            <li>You're looking for someone to prophesy over you rather than learn to hear for yourself</li>
+            <li>You want a one-off event rather than an ongoing school</li>
+            <li>You're not able to give it time each month</li>
+            <li>You're after predictions about the news rather than training in the prophetic</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHAT'S INSIDE ================= -->
+  <section class="wgp-sec wgp-sec--panel wgp-sec--line" id="wgp-inside">
+    <div class="wgp-wrap wgp-narrow wgp-stack">
+      <span class="wgp-eyebrow">The curriculum</span>
+      <h2>What you'll actually learn</h2>
+      <div class="wgp-rule"></div>
+      <div class="wgp-todo">
+        <b>Needs Tobi — the single most important gap on the current page</b>
+        <span>The live store page lists "Access to All Courses" and "Member Library" and names <strong>not one course</strong>. A buyer cannot value what they cannot see.</span>
+        <span>Supply: <strong>the course names, roughly how many sessions each, and one line on what a member can do afterwards.</strong> Six to ten named courses turns an abstract library into a thing worth £49.</span>
+        <span>Frame each as an outcome, not a topic — "Test a word before you speak it," not "Module 4: Discernment."</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STORY ================= -->
+  <section class="wgp-sec">
+    <div class="wgp-wrap wgp-narrow wgp-stack">
+      <span class="wgp-eyebrow">Who's teaching</span>
+      <h2>Apostle Tobi Arayomi</h2>
+      <div class="wgp-rule"></div>
+      <p>Tobi is the founder of <strong>Light London</strong>, launched in 2017, and of <strong>The Watch Global</strong>, which began in 2022 as a place for believers who wanted to go further in prayer and the prophetic than a Sunday allows.</p>
+      <p>He teaches alongside <strong>Prophet Mutsa Samuwi</strong>, who has served under him for more than a decade and leads the school day to day.</p>
+      <div class="wgp-todo">
+        <b>Needs Tobi — the origin story</b>
+        <span>Two or three paragraphs in his own words: <strong>how he learned to hear God, what he got wrong early, and why he decided to teach it rather than keep doing it.</strong></span>
+        <span>The mistake beat matters most — it's what makes a reader believe this is learnable for them rather than a gift he happens to have.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROOF SLOT ================= -->
+  <section class="wgp-sec wgp-sec--panel wgp-sec--line">
+    <div class="wgp-wrap wgp-narrow wgp-stack">
+      <span class="wgp-eyebrow">From members</span>
+      <h2>What's changed for people in the school</h2>
+      <div class="wgp-rule"></div>
+      <div class="wgp-todo">
+        <b>Needs Tobi — nothing invented here</b>
+        <span>The current store page carries <strong>zero</strong> testimonials or student outcomes. This section is deliberately left empty rather than filled with anything made up.</span>
+        <span>Ask for <strong>3–5 members</strong>, with first name, country and one specific sentence about what they can do now that they couldn't before. Country matters — it proves the global claim.</span>
+        <span>Specific beats glowing. "I finally understood a dream I'd had for three years" is worth more than "This school changed my life."</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRICING ================= -->
+  <section class="wgp-sec">
+    <div class="wgp-wrap wgp-stack">
+      <div class="wgp-narrow wgp-stack wgp-center" style="margin-bottom:1.2rem;">
+        <span class="wgp-eyebrow">Membership</span>
+        <h2>Choose how close you want to be</h2>
+        <div class="wgp-rule"></div>
+        <p>Every tier includes the full school. What changes above it is <strong>access to people</strong>.</p>
+      </div>
+
+      <div class="wgp-tiers">
+        <div class="wgp-tier">
+          <div>
+            <h3>WATCH+</h3>
+            <p class="wgp-fine">The school itself</p>
+          </div>
+          <div>
+            <p class="wgp-price">£49<span> /month</span></p>
+            <p class="wgp-annual">or £490 a year — two months free</p>
+          </div>
+          <ul>
+            <li>Every course in the school</li>
+            <li>The full member library</li>
+            <li>Monthly Prophet School session</li>
+          </ul>
+          <a class="wgp-cta wgp-cta--sm" href="/resource_redirect/offers/LJrpNoY6">Join WATCH+</a>
+        </div>
+
+        <div class="wgp-tier wgp-tier--feat">
+          <span class="wgp-flag">Most chosen</span>
+          <div>
+            <h3>WATCH Community</h3>
+            <p class="wgp-fine">The school, plus the room</p>
+          </div>
+          <div>
+            <p class="wgp-price">£149<span> /month</span></p>
+            <p class="wgp-annual">or £1,490 a year — two months free</p>
+          </div>
+          <ul>
+            <li class="wgp-inherit">Everything in WATCH+</li>
+            <li>Private Zoom with Prophet Mutsa and team, twice a month</li>
+            <li>Activations and live Q&amp;A</li>
+            <li>Priority prayer and testimony room</li>
+            <li>Challenges and cohorts</li>
+          </ul>
+          <a class="wgp-cta wgp-cta--sm" href="/offers/aTuygraW">Join WATCH Community</a>
+        </div>
+
+        <div class="wgp-tier">
+          <div>
+            <h3>The Hive</h3>
+            <p class="wgp-fine">The inner circle</p>
+          </div>
+          <div>
+            <p class="wgp-price">£399<span> /month</span></p>
+            <p class="wgp-annual">or £3,990 a year — two months free</p>
+          </div>
+          <ul>
+            <li class="wgp-inherit">Everything in WATCH Community</li>
+            <li>Quarterly private Zoom with Apostle Tobi and guests</li>
+            <li>Priority hot seat and direct Q&amp;A</li>
+            <li>Early access to new series</li>
+            <li>Behind-the-scenes briefings</li>
+          </ul>
+          <a class="wgp-cta wgp-cta--sm wgp-cta--ghost" href="/resource_redirect/offers/FUkNb5Lx">Join The Hive</a>
+        </div>
+      </div>
+
+      <p class="wgp-fine wgp-center" style="margin-top:1.6rem;">Every membership is monthly and you can cancel any time from your account.</p>
+    </div>
+  </section>
+
+  <!-- ================= EMERGING NATIONS ================= -->
+  <section class="wgp-sec wgp-sec--panel wgp-sec--line">
+    <div class="wgp-wrap wgp-narrow wgp-stack wgp-center">
+      <span class="wgp-eyebrow">Global access</span>
+      <h2>Cost shouldn't decide who gets trained</h2>
+      <div class="wgp-rule"></div>
+      <p>If you live in a lower-income economy, or you're going through genuine financial hardship, regionally adjusted pricing is available by application. Geography doesn't restrict access here.</p>
+      <div class="wgp-ctarow">
+        <a class="wgp-cta wgp-cta--ghost" href="/store#emerging-nations">Apply for Emerging Nations Access</a>
+      </div>
+      <div class="wgp-todo" style="text-align:left;margin-top:1rem;">
+        <b>Link check</b>
+        <span>Point this at wherever the Emerging Nations application actually lives. If it's a Kajabi form, put a <strong>native form block</strong> in its own section — a hand-coded form will not reach your CRM.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="wgp-sec">
+    <div class="wgp-wrap wgp-narrow wgp-stack">
+      <span class="wgp-eyebrow">Before you decide</span>
+      <h2>Questions people ask</h2>
+      <div class="wgp-rule"></div>
+      <div class="wgp-faq">
+        <details>
+          <summary>What if I'm not sure I'm called to be a prophet?</summary>
+          <p>Most people who join aren't sure. The school is about learning to hear God clearly — which every believer is invited into. What you're called to becomes clearer as you learn to listen, not before.</p>
+        </details>
+        <details>
+          <summary>I've never done anything like this. Am I too far behind?</summary>
+          <p>No. The courses start from the beginning, and the library means you can go at your own pace rather than the group's. You are not joining halfway through something.</p>
+        </details>
+        <details>
+          <summary>What if I can't make the live session?</summary>
+          <p>Sessions are kept in the member library, so you can watch afterwards. The live room is better if you can make it, but nothing is lost if you can't.</p>
+        </details>
+        <details>
+          <summary>Can I cancel?</summary>
+          <p>Yes — it's a monthly membership and you can cancel any time from your account. You keep access until the end of the period you've paid for.</p>
+        </details>
+        <details>
+          <summary>How is this different from watching the free teaching on YouTube?</summary>
+          <p>The public teaching shows you that this is real. The school teaches you how to do it — in order, with practice, and with somewhere to ask when you get stuck.</p>
+        </details>
+        <details>
+          <summary>I'm outside the UK. Does that matter?</summary>
+          <p>No. The school runs online and members join from every continent. If cost is the barrier rather than distance, see the Emerging Nations section above.</p>
+        </details>
+      </div>
+      <div class="wgp-todo" style="margin-top:1.4rem;">
+        <b>Needs Tobi — verify these answers are true</b>
+        <span>Written from what the site states plus reasonable inference. <strong>Confirm each one — particularly the cancellation terms and whether sessions are always recorded.</strong> A wrong answer here is worse than no answer.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CLOSE ================= -->
+  <section class="wgp-sec wgp-sec--panel wgp-sec--line">
+    <div class="wgp-wrap wgp-narrow wgp-stack wgp-center">
+      <h2>You've been hearing something. Learn what it is</h2>
+      <div class="wgp-rule"></div>
+      <p class="wgp-lede">Join the school, come to the next session, and start putting language and structure around what God has already been saying to you.</p>
+      <div class="wgp-ctarow" style="margin-top:.5rem;">
+        <a class="wgp-cta" href="/resource_redirect/offers/LJrpNoY6">Join Prophet School — £49/month</a>
+      </div>
+      <p class="wgp-under">Cancel any time · Regionally adjusted pricing available · Members on every continent</p>
+      <p class="wgp-fine" style="margin-top:1.4rem;">
+        Want to support the mission rather than join the school?
+        <a class="wgp-link" href="/store">Partnership is here</a>.
+      </p>
+    </div>
+  </section>
+
+</div>
+
+<!--
+  ============================================================================
+  BEFORE PUBLISHING — CHECKLIST
+  [ ] Search this file for "NEEDS TOBI" — 5 blocks. All must be filled or the
+      section deleted. They render as loud red dashed boxes so they cannot
+      ship unnoticed.
+  [ ] Confirm the three offer URLs are correct for the right tiers:
+        WATCH+            /resource_redirect/offers/LJrpNoY6
+        WATCH Community   /offers/aTuygraW          <-- VERIFY, not confirmed
+        The Hive          /resource_redirect/offers/FUkNb5Lx
+  [ ] Confirm "cancel any time" is genuinely true before it stays on the page.
+  [ ] Fix the typos still live elsewhere on the site: CIRRICULUM → CURRICULUM,
+      Watchen → Watchmen, INTERCESORS → INTERCESSORS.
+  [ ] Add a native Kajabi form block for Emerging Nations if it needs one.
+  [ ] Test on mobile — Kajabi previews desktop by default.
+  ============================================================================
+-->
