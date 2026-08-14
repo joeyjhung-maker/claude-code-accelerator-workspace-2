@@ -73,7 +73,7 @@ Their framing: *"Partnership Supports the Mission. Membership Provides Access an
 
 **Access equity:** "Emerging Nations Access" — regionally adjusted pricing by application for lower-income economies or genuine hardship.
 
-**Load-bearing rail:** `[INFERRED]` Rail A. It's the only one with structure, tiering, and a product behind it. `[UNKNOWN]` — actual revenue split.
+**Which rail carries the business:** `[INFERRED]` Rail A. It's the only one with structure, tiering, and a product behind it. `[UNKNOWN]` — actual revenue split.
 
 ## 4. Offer ladder
 
@@ -86,9 +86,11 @@ Their framing: *"Partnership Supports the Mission. Membership Provides Access an
 **Both ends are priced wrong** — via `[[hierarchy-of-value]]`:
 
 - **£49/mo gets you courses and a library.** You do all the work yourself — read it, understand it, apply it. Products where the customer does all the work are normally cheap. £49 a month is a lot to pay for "here's the material, get on with it."
-- **£399/mo gets you four Zoom calls with Tobi a year.** That's £4,788 for four calls.
+- **£399/mo is £250/mo more than the £149 tier — £3,000 a year — and what that extra buys is four Zoom calls with Tobi, a hot seat, and early access.**
 
-So the cheap tier asks too much of the member for what it costs, and the expensive tier gives too little contact for what it costs.
+So the cheap tier asks too much of the member for what it costs, and the top tier charges £3,000 a year for four contacts.
+
+> **Say it this way, not the other way.** The tiers are additive — The Hive includes everything in WATCH+ and WATCH COMMUNITY. So "£4,788 for four calls" is false and he will correct you instantly. The honest version is the **delta**: what does the step up from £149 to £399 actually buy? Four calls a year. That point stands and can't be argued with.
 
 ## 5. Attention engine
 
@@ -126,7 +128,9 @@ So the cheap tier asks too much of the member for what it costs, and the expensi
 
 `[OBSERVED — yt-dlp, full long-form catalogue: 117 videos, 2024-04-07 → 2026-08-12, 3,878,435 views, mean 33,149]`
 
-### His top 5 videos of all time
+### His top 5 uploaded videos
+
+> **Scope, stated up front because the claim depends on it:** this is the `/videos` tab only — 117 long-form uploads, Apr 2024 → Aug 2026. The channel started July 2022, Social Blade counts 674 videos and 8.4M lifetime views against 3.88M here. **So 54% of the channel's views are in Shorts and live streams, and 21 months of history isn't in this ranking.** Never say "of all time" or "your biggest video ever" to him — he knows his own channel, and if a live stream beat it you lose the room. Say **"your biggest uploaded video."**
 
 | Views | Date | Length | Title |
 |---:|---|---|---|
@@ -136,20 +140,26 @@ So the cheap tier asks too much of the member for what it costs, and the expensi
 | **117,448** | Oct 2025 | 25m | How I Learnt To Travel In The Spirit |
 | **103,143** | Jan 2025 | 23m | 2025 WORD OF THE LORD: This is Critical! |
 
-**Four of his five biggest videos are step-by-step prophetic training.** Not commentary, not prophecy-about-the-news — *how to do the thing.* Which is exactly what Prophet School sells.
+**Four of his five biggest uploads are step-by-step prophetic training.** Not commentary, not prophecy-about-the-news — *how to do the thing.* Which is exactly what Prophet School sells.
 
 It continues past the top 5: HOW TO HAVE VISIONS ON PURPOSE (90,814) · How I Meditate to Enter the Spirit (81,479) · How To Locate Your Spouse In The Spirit (60,420) · HOW TO BELIEVE GOD FOR ANYTHING (42,409) · How To Know Peoples Thoughts (41,489) · HOW TO ENTER THE SPIRIT REALM (41,169) · How To Have Dreams From God (38,401) · HOW TO RECOGNISE THE VOICE OF GOD (35,909).
 
-### Training beats everything else he makes, roughly 3 to 1
+### Training beats everything else he makes — two to three times over, depending how you count
 
-| | Videos | Mean views |
-|---|---:|---:|
-| Training / how-to | 21 | **71,534** |
-| Everything else | 96 | 24,752 |
+Using a rule anyone can re-run — **does the title contain "how to" or "how I"**:
 
-His best geopolitical video — *What Western Media Won't Tell You About Iran* — got 82,702. His best training video got **419,928. Five times more.**
+| | Videos | Mean views | Median |
+|---|---:|---:|---:|
+| Training / how-to | 16 | **78,663** | 41,329 |
+| Everything else | 101 | 25,938 | 17,793 |
 
-**And this isn't just old videos having longer to accumulate.** Within 2026 alone, comparing like with like: training videos average **35,974**, everything else averages **18,498**. Still about double, in the same year.
+That's **3.0x on the mean, 2.3x on the median.**
+
+**Deliberately stress-testing it:** one video (*HOW TO SEE IN THE SPIRIT REALM*, 419,928) is 11% of the entire catalogue. Remove it and the gap falls to **2.2x** — 55,912 vs 25,938. So the honest claim is **"two to three times, depending how you count,"** not a flat 3:1. It holds under every cut, which is why it's worth saying out loud.
+
+**And it isn't just old videos having longer to accumulate.** Within 2026 alone: training averages **35,974**, everything else **18,498** — still about double, same year, same conditions.
+
+His best video that *isn't* training is *2025 WORD OF THE LORD* at 103,143. Against 419,928, that's **4x** like-for-like. *(An earlier version said "five times" by comparing against his best geopolitical video specifically — a narrower slice that flattered the number.)*
 
 ### He has almost stopped making it
 
@@ -157,15 +167,19 @@ His best geopolitical video — *What Western Media Won't Tell You About Iran* �
 
 Meanwhile the channel's performance is falling hard:
 
-| Year | Videos | Mean views |
-|---|---:|---:|
-| 2024 | 17 | **82,617** |
-| 2025 | 55 | 28,574 |
-| 2026 | 45 | **20,052** |
+| Year | Videos | Per month | Mean views | **Median views** |
+|---|---:|---:|---:|---:|
+| 2024 *(Apr–Dec)* | 17 | 1.9 | 82,617 | **43,138** |
+| 2025 | 55 | 4.6 | 28,574 | **20,109** |
+| 2026 *(Jan–Aug)* | 45 | 6.1 | 20,052 | **12,444** |
 
-**Views per video are down 76% since 2024, while he nearly tripled how much he publishes.** `[INFERRED]` He is working roughly three times as hard for a quarter of the result per video, and the shift away from how-to content toward current-events commentary tracks that decline closely.
+**Lead with the median: views per video are down 71% since 2024, while output went from ~2 a month to ~6 a month.**
 
-*Caveat: 2026 videos have had less time to accumulate, so some of that gap closes with age. But the 2026-only training-vs-rest comparison above controls for that, and the gap holds.*
+The mean says 76%, but that's inflated by the one 419,928 video sitting in 2024 — strip it and the mean decline is 67%. **The median (71%) is the number to say out loud: it can't be attacked, and it tells the same story.**
+
+`[INFERRED]` He is publishing three times as often for roughly a third of the result per video, and the shift away from how-to content tracks that decline.
+
+*Both 2024 and 2026 are partial years, which is why the table uses videos-per-month rather than raw counts. 2026 videos have also had less time to accumulate — but the 2026-only training-vs-rest comparison above controls for that, and the gap holds.*
 
 ### What this means for the pitch
 
@@ -173,7 +187,9 @@ His best content and his product are the same subject. He doesn't need a new con
 
 And the ebook, *"7 Ways God Speaks,"* is about hearing God's voice — the subject of his #2 video of all time (227,822 views). `[INFERRED]` The magnet is right. Nothing on those videos tells anyone it exists.
 
-**Series drop-off is severe.** `[OBSERVED]` Islam Part One: 18,104. Part Two: 4,384. **A 76% fall between two halves of one argument.** Whatever happens between parts — titling, thumbnail, no handoff in the video, a gap between uploads — loses three quarters of an audience that had already committed.
+**Series drop-off is severe.** `[OBSERVED]` *"I was the child of the illuminati" — a conversation with an ex-satanist*: **98,882 views. Part 2: 20,146. An 80% fall — 78,736 people who watched part one did not come back for part two.** Near-identical titles, so this is a clean test: they knew it was the same series and still didn't return.
+
+*(The Islam pair drops similarly — 18,104 → 4,380 — but the two parts have completely different titles, so a viewer wouldn't recognise them as connected. That's a titling problem, not a proven retention problem. Use the ex-satanist pair as the evidence.)*
 
 *Scope note: this covers 117 long-form videos. Social Blade counts 674, and lifetime channel views are 8.4M against 3.88M here — so Shorts and live streams account for well over half the channel's views. The YouTube `/videos` tab excludes them, so they can't be ranked this way.*
 
@@ -307,7 +323,7 @@ Scored only where observable. Unscoreable dimensions say so rather than carry an
 
 **M5 — The club is sold as a pricing table.** `[OBSERVED]` Via `[[deep-positioning-and-club-membership]]`: levels, a room, an inner circle, gated access to the founder — every ingredient of access-gated positioning, presented as three columns of bullet points. Silent qualifiers replaced with feature lists.
 
-**M6 — The only stated audience number is on rented land.** `[OBSERVED]` 7,500 on Telegram — a platform with no export, no segmentation, and no ownership. `[UNKNOWN]` email list size. Via `[[list-management-as-relationship-management]]`, the relationship at scale is being held somewhere they don't control.
+**M6 — The whole audience sits on rented land.** `[OBSERVED]` 281K Instagram, 108K YouTube, 31K TikTok, 7,500 Telegram — every one of them on a platform he doesn't own, with no export and no segmentation. `[UNKNOWN]` email list size, which is the one owned asset that would change this. Via `[[list-management-as-relationship-management]]`, the relationship at scale is being held somewhere they don't control.
 
 **M7 — Opt-in friction on the only capture page.** `[OBSERVED]` A required ~250-option country dropdown is the heaviest element on a two-field lead-magnet form. *(Likely there to drive Emerging Nations pricing — so the fix is to move it, not delete it.)*
 
@@ -325,7 +341,7 @@ Scored only where observable. Unscoreable dimensions say so rather than carry an
 
 **M15 — One ad has a real hook; the rest are announcements.** `[OBSERVED]` Three July variants open with statements — *"The role of the prophetic in the Church cannot be underestimated."* One opens with *"Woman in shock as prophet enters her dream 😳"* and is the only creative the library records as being reused across more than one ad. `[INFERRED]` That's the one with curiosity in it, and it's outnumbered three to one by announcements. The April ads were pure engagement bait — *"Type 'MOVE' if you're ready"* — sending traffic to an Instagram profile rather than a funnel.
 
-**M10 — Nicola is an idle asset.** `[OBSERVED]` ~35K views per video across 28 videos — roughly 2.8x Tobi's lifetime per-video average, on 1/24th the output. Via `[[brand-vs-personality-and-recurring-problems]]`, she's also the most obvious hedge against the key-man exposure in M6/§9.
+**M10 — Nicola is an idle asset.** `[OBSERVED]` ~35K views per video across 28 videos — roughly 2.8x Tobi's lifetime per-video average, on 1/24th the output. Via `[[brand-vs-personality-and-recurring-problems]]`, she's also the most obvious hedge against the key-man exposure in §9.
 
 **M11 — Series drop-off of 76%.** `[OBSERVED]` Islam Part One 18,104 views → Part Two 4,384. Three quarters of an audience that had already committed to a two-part argument did not come back for the conclusion.
 
@@ -375,13 +391,13 @@ Every lever above clears the §10 mission-fit boundary. Nothing touches the chur
 
 Two halves of one motion:
 
-1. **Route the traffic.** ~375K monthly views currently exit to nothing. End screens, pinned comments, descriptions and Shorts CTAs pointed at "7 Ways God Speaks" — **starting with the back catalogue of training videos, which are still earning views today.** *HOW TO SEE IN THE SPIRIT REALM* (419,928) and *HOW I LEARNED TO HEAR THE VOICE OF GOD* (227,822) alone have over 640,000 views between them, and both are about precisely what Prophet School teaches. Those two videos are the warmest traffic he owns and they currently point nowhere.
+1. **Route the traffic.** ~375K monthly views currently exit to nothing. End screens, pinned comments, descriptions and Shorts CTAs pointed at "7 Ways God Speaks" — **starting with the back catalogue of training videos.** `[INFERRED — needs his YouTube Studio 28-day figure to confirm they're still pulling views today; asking for it is itself a good pitch move]` *HOW TO SEE IN THE SPIRIT REALM* (419,928) and *HOW I LEARNED TO HEAR THE VOICE OF GOD* (227,822) alone have over 640,000 views between them, and both are about precisely what Prophet School teaches. Those two videos are the warmest traffic he owns and they currently point nowhere.
 2. **Convert the capture.** An email + Telegram sequence written to the helpless-dominant belief the magnet already selects for, moving those people into WATCH+.
 
 **Why this one, over everything else on the list:**
 
 - Every other lever requires something to be built. This requires nothing that doesn't already exist — the audience, the magnet, the product, the price and the trust are all in place. The only missing component is **the ask**, and the ask is the thing he'd be hiring for.
-- **The size of the gap is a fact, not a judgement call.** 281,000 follow him on Instagram. ~375,000 people watch his videos every month. 7,500 are in the Telegram group he sells to. Whatever percentage of people would buy, right now that percentage only gets a chance to buy on 7,500 of them.
+- **The size of the gap is a fact, not a judgement call.** 281,000 follow him on Instagram. his videos get ~375,000 views a month (views, not people — and that estimate includes Shorts). 7,500 are in the Telegram group he sells to. Whatever percentage of people would buy, right now that percentage only gets a chance to buy on 7,500 of them.
 - The current monetisation of that attention is **$2–38/day of AdSense.**
 
 **The arithmetic of the gap** — *illustrative only, using their observed traffic against explicitly assumed rates. These are not projections and must never be presented to him as forecasts:*
@@ -397,19 +413,34 @@ Two halves of one motion:
 
 ## The case — say it out loud
 
-> "Your TAP Institute site is down — `www` doesn't resolve at all, so every Google result for it is a dead link. That's a ten-minute fix and I'm not charging you for it.
+Four beats. **Hold the decline data, the 97% figure and the 45-videos line for the second conversation** — they're the strongest material and the most dangerous thing to lead with.
+
+> **1. The free finding.**
+> "Your TAP Institute site is down — `www` doesn't resolve at all, so every Google result for it is a dead link. Ten-minute fix, and I'm not charging you for it."
 >
-> Now the real thing. Your biggest video ever is *How To See In The Spirit Realm* — 420,000 views. Second is *How I Learned To Hear The Voice Of God*, 228,000. Four of your top five are you teaching people how to do this.
+> **2. One observation, framed as his win.**
+> "The uploads of yours that travel furthest are the ones where you teach people *how* — seeing in the spirit, hearing the voice. Hundreds of thousands of views each. That's the same thing Prophet School teaches."
 >
-> That's the same subject Prophet School teaches. Those are the people who'd pay £49 a month for it.
+> **3. The gap as a question, not a verdict.**
+> "Can I ask — when someone finishes one of those, where do they go?"
 >
-> This year you made 45 videos. Four of them were that. And your views per video are down about three quarters since 2024.
->
-> Meanwhile 281,000 people follow you on Instagram, and 7,500 are in the Telegram — which is the only place the membership gets offered.
->
-> You don't need a new audience or a new product. Your best work and the thing you sell are the same subject. Let me put a route from those videos to your ebook, and write the sequence that turns readers into members. No build, nothing on your calendar.
->
-> Then we look at the numbers and decide what's next."
+> **4. A specific, small, priced ask.**
+> "Give me two weeks and access to the channel and the ebook. I'll wire the back catalogue to the opt-in and write the sequence behind it. Then we look at two numbers — how many opt in, how many join — and decide together whether there's more to do. [Fee.]"
+
+**Why beat 3 is a question.** A prospect who says the finding out loud owns it. A prospect who is told the finding defends against it.
+
+**What the earlier version got wrong:** six of its ten lines were numbers about him, delivered by a stranger. To a church leader that reads as presumption, not insight. The worst line was *"this year you made 45 videos, four of them were that"* — that criticises his ministry output before any relationship exists, and he almost certainly experiences those content choices as obedience to what he's told to preach, not as a marketing decision. **You'd be telling a prophet he's preaching the wrong things.**
+
+### What a sceptical Tobi says back
+
+| He says | Do we have an answer? |
+|---|---|
+| "The Telegram isn't the only place — we email too." | **No.** List size is still unknown, and the 97% claim depends on it. **Ask, don't assert.** |
+| "How many of those 281K are church people who already give?" | **No.** Nothing estimates audience overlap or quality. |
+| "The Hive isn't four calls, it's everything else plus four calls." | **Now yes** — use the £250/mo delta framing (§4). |
+| "The prophetic content isn't a strategy, it's what I'm given to say." | **No.** Lever 1c walks straight into this. It's the mission-fit boundary and §10 didn't anticipate it. **Needs an answer before the meeting.** |
+| "People have tried to monetise my audience before. Why are you different?" | **Partly** — the free TAP finding *is* the answer. Currently used as a warm-up rather than as the reply to the real objection. |
+| "What does it cost and what do you need from me?" | **No.** Name a fee and a timeframe before the call. |
 
 ---
 
