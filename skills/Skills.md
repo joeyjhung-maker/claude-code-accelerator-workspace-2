@@ -66,6 +66,8 @@ These run off the NHB/FF market-research doctrine, so they live next to it in `S
 | Skill | Use it when |
 |-------|-------------|
 | `business-teardown` | Deconstruct a whole business or personal brand — surfaces, money map, offer ladder, funnel leaks, positioning, key-man risk — then a severity-tiered ledger and ranked levers ending in one pitchable wedge. For auditing a prospect before you pitch them. First run: `clients/tobi-arayomi/`. |
+| `offer-audit` | Score one product that already exists — uniform-solution test, problem quality /40, standards /20, tangibility /50, customer understanding /25. Produces real numbers and a ranked fix list. Runs inside a teardown on the product that carries the money. |
+| `offer-research` | Research a market *before* the offer exists — demand signals, question mining, the commercial landscape, community language, then a filled Market Criteria assessment and one ICP per awareness stage. Delegates its research passes to hook-miner, mechanism-finder, last30days and defuddle. |
 | `copy-breakdown` | Doctrinal map of a **single piece** of copy (18 sections, descriptive not prescriptive). Run it inside a teardown on the one asset that deserves the depth. |
 
 The CRO critique workflow (prescriptive, one piece, severity-tiered) lives in `Second Brain/CLAUDE.md`, not as a skill.
