@@ -87,11 +87,66 @@ Their framing: *"Partnership Supports the Mission. Membership Provides Access an
 
 ## 5. Attention engine
 
-`[OBSERVED]` Owned: email list (size unknown), the sites. Rented: Telegram 7,500+, YouTube, IG, TikTok, Spotify.
+`[OBSERVED — Social Blade, 2026-08-14]` The audience is far larger than the recon assumed.
+
+| Surface | Size | Activity |
+|---|---|---|
+| **Instagram @tobiarayomi** | **281K followers** | 2.8K posts · 0.45% ER · ~1.2K avg likes, 66 avg comments |
+| **YouTube "Tobi Arayomi"** (@tobiarayomiproductions) | **108K subs · 8.4M lifetime views · 674 videos** | Created **Jul 2022** · ~375K views/mo · 13 uploads in 14 days |
+| Instagram @lightldn | 26K followers | 2.3K posts · **1.1% ER** · 263 avg likes |
+| YouTube "Light Ldn" (@lightldn) | 16.3K subs · 912K views · 301 videos | Created **Nov 2016** · ~6K views/mo — near dormant |
+| YouTube "Nicola Arayomi" (@nickellabian) | 15.8K subs · 993K views · **28 videos** | Created 2011 · dormant · **~35K views/video** |
+| Telegram (The Watch) | 7,500+ | Live prayer, fasting, teaching |
+| @thetapinstitute (IG) | Not indexed by Social Blade | — |
+
+**Three things fall straight out of this table.**
+
+**(a) The attention is on the man, not the institution.** Tobi's personal channel launched in **2022**; the church channel launched in **2016**. The younger channel has **6.6x the subscribers and roughly 60x the monthly views.** `[INFERRED]` Six extra years of head start counted for nothing. This is `[[brand-vs-personality-and-recurring-problems]]` in hard numbers — and it means every acquisition lever runs through him personally.
+
+**(b) The Telegram is 2.7% of the Instagram following.** `[OBSERVED]` 7,500 vs 281K. The community that the £49 product is sold into is a rounding error against the audience that exists. Via `[[converting-audiences]]`, this is the already-in-motion audience the doctrine says is the cheapest thing in marketing to redirect — and 97% of it has never been asked.
+
+**(c) The church account out-engages the personal account 2.4:1** (1.1% vs 0.45% ER) on a tenth of the followers. `[INFERRED]` The 281K is broader and cooler; the 26K is smaller and hotter. Those two audiences want different things and should not receive the same message.
+
+**Nicola is an idle asset.** `[OBSERVED]` 28 videos, 993K views — ~35K views per video, versus Tobi's ~12.5K lifetime average. **Roughly 2.8x his per-video pull, on 1/24th the output.** Whatever she does on camera works, and she does almost none of it.
+
+`[OBSERVED]` Owned: email list (size unknown), the sites. Rented: everything above.
 
 `[INFERRED]` The whole business is downstream of Tobi's speaking and media presence. Via `[[converting-audiences]]`, this is the classic already-in-motion audience — people who have done the hard work of getting into motion around the prophetic, and who follow him specifically. The doctrine's line is that redirecting existing motion is far cheaper than starting it. **The Watch exists precisely to do that. Whether it's actually doing it is unmeasurable from outside.**
 
 `[OBSERVED]` The Telegram is described as carrying "prayer, fasting and prophetic live teachings" — i.e. **live, recurring, experiential contact with 7,500 people.** Via `[[levels-of-trust]]`, that is Level 5 (Experience), the most effective and most expensive level to reach. They already have it. It is not visibly wired to the ladder.
+
+## 5b. What the audience was actually built on
+
+`[OBSERVED — yt-dlp, 25 most recent long-form uploads, 2026-04-18 → 2026-08-12]`
+
+| Views | Date | Title |
+|---:|---|---|
+| 82,702 | Apr 18 | What Western Media Won't Tell You About Iran |
+| 46,814 | Aug 4 | They Took Our Crown \| The Queen of Warri Tells Her Story |
+| **37,026** | Jul 1 | **Mastering Meditation: Everything You Need to Know** |
+| 29,099 | Jul 2 | What God Showed Me About Tommy Robinson |
+| 19,763 | Jun 11 | What God Told Me About Aliens Will Shock You |
+| **19,606** | Jul 4 | **Mastering Meditation: I Met a Man of God in the Spirit…** |
+| 18,104 | Jul 22 | Islam's Own Sources vs. the 'Religion of Peace' Narrative \| Part One |
+| 17,276 | May 8 | KIER STARMER: Child Of Davos |
+| 16,611 | May 13 | The Demonic System Behind Labour's Collapse |
+| … | | |
+| 4,384 | Aug 5 | Is the Quran 'Letter Perfect'? Ask the Ashes \| **Part Two** |
+| 4,198 | Aug 7 | Fauci LIED To The World and Now He's In Trouble |
+
+Total across the 25: **443,409 views, averaging 17,736** — **42% above the channel's 12,472 lifetime average.** The channel is getting better, not decaying.
+
+*Caveat: raw view counts favour older videos. April uploads have had four months to accumulate; August uploads have had days. Treat the ordering as directional, not a clean ranking.*
+
+**The dominant content is geopolitical and discernment commentary, not prophetic training.** Iran, Tony Blair, Starmer/Davos, MKUltra, Fauci, Epstein, Tommy Robinson, "Who Actually Runs Britain." `[INFERRED]` The 281K/108K audience was largely assembled by a Christian-discernment-on-current-events promise. The product it's being sold — structured prophetic formation at £49/mo — is a different purchase. Via `[[criteria-of-markets]]` and `[[levels-of-awareness]]`, **there is a real gap between what the audience showed up for and what the store page asks them to buy.**
+
+**But the bridge exists, and it outperforms.** Both "Mastering Meditation" videos land in the top six (37,026 and 19,606). "Prophets Have Access To A Cloud System," "How I Meditate to Enter the Spirit," "You MUST know these truths when facing spiritual warfare" are all in the recent set. **This is the seam** — content that is both native to the channel and directly upstream of Prophet School. And the existing lead magnet, *"7 Ways God Speaks,"* is aimed at exactly this seam. `[INFERRED]` The magnet is right. What's missing is the routing from the videos that earn the attention to the magnet that captures it.
+
+**Series drop-off is severe.** `[OBSERVED]` Islam Part One: 18,104. Part Two: 4,384. **A 76% fall between two halves of one argument.** Whatever is happening between parts — titling, thumbnail, no in-video handoff, gap between uploads — is losing three quarters of an already-committed audience.
+
+**The channel is monetised at approximately zero.** `[OBSERVED]` Social Blade estimates $2–$38/day in ad revenue against ~375K monthly views. `[INFERRED]` That attention is currently worth more as a traffic asset than it will ever be worth as AdSense, and it is not being used as one.
+
+**They are not short of production capacity.** `[OBSERVED]` 13 uploads in 14 days per Social Blade, against 5 long-form videos in the same window per yt-dlp. `[INFERRED]` The difference is Shorts and live streams — so there's an existing high-cadence content operation. Creative testing would not be starting from zero.
 
 ## 6. Funnel joins
 
@@ -178,7 +233,8 @@ Scored only where observable. Unscoreable dimensions say so rather than carry an
 | Offer ladder (structure) | 7 | Well-tiered middle; holes at both ends |
 | Offer ladder (format/price fit) | 4 | Energy-to-price curve inverted — see §4 |
 | Money architecture | 4 | Two rails that cross; support money buys less than access money |
-| Attention engine | — | `[UNKNOWN]` — no audience numbers |
+| Attention engine (reach) | 9 | 281K IG + 108K YT, ~375K views/mo, high cadence, improving |
+| Attention engine (conversion of it) | 2 | Telegram is 2.7% of the IG following; AdSense ~$2–38/day; no visible route from video to magnet |
 | Funnel integrity | 3 | Named path to the product 404s; no paid step before subscription |
 | Positioning clarity | 8 | Ownable argument, real moat, correct register |
 | Market fit of message | 7 | Correctly aimed at a helpless-dominant, identity-level market |
@@ -192,9 +248,11 @@ Scored only where observable. Unscoreable dimensions say so rather than carry an
 | Tier | Count |
 |---|---|
 | Critical | 3 |
-| Major | 7 |
+| Major | 11 |
 | Minor | 4 |
-| **Total** | **14** |
+| **Total** | **18** |
+
+*Revised 2026-08-14 after audience data landed (M8–M11 added).*
 
 ### CRITICAL
 
@@ -220,6 +278,14 @@ Scored only where observable. Unscoreable dimensions say so rather than carry an
 
 **M7 — Opt-in friction on the only capture page.** `[OBSERVED]` A required ~250-option country dropdown is the heaviest element on a two-field lead-magnet form. *(Likely there to drive Emerging Nations pricing — so the fix is to move it, not delete it.)*
 
+**M8 — 97% of the audience has never been asked.** `[OBSERVED]` 281K Instagram followers and 108K YouTube subscribers; 7,500 in the Telegram. Via `[[converting-audiences]]`, an already-in-motion audience is the cheapest conversion in marketing, and this one is 40x the size of the community the product is actually sold into. *This is now the single largest finding in the audit.*
+
+**M9 — Audience/product mismatch, with the bridge sitting unused.** `[OBSERVED + INFERRED]` The channel's reach is built on geopolitical and discernment commentary; the store sells prophetic formation. The two "Mastering Meditation" videos (37,026 and 19,606 views, both top-six) are the seam between them, and the existing lead magnet is aimed squarely at it. Nothing observable routes viewers from those videos to that magnet.
+
+**M10 — Nicola is an idle asset.** `[OBSERVED]` ~35K views per video across 28 videos — roughly 2.8x Tobi's lifetime per-video average, on 1/24th the output. Via `[[brand-vs-personality-and-recurring-problems]]`, she's also the most obvious hedge against the key-man exposure in M6/§9.
+
+**M11 — Series drop-off of 76%.** `[OBSERVED]` Islam Part One 18,104 views → Part Two 4,384. Three quarters of an audience that had already committed to a two-part argument did not come back for the conclusion.
+
 ### MINOR
 
 **m1 — Three typos on the revenue page.** `[OBSERVED]` "CIRRICULUM" (curriculum), "Watchen" (Watchmen), "INTERCESORS" (Intercessors). All on `/store`. Small, but they sit on the page where money changes hands, and one of them misspells the audience's own identity word.
@@ -239,6 +305,7 @@ Scored only where observable. Unscoreable dimensions say so rather than carry an
 | # | Lever | Impact | Speed to cash | Effort | Needs him? | Joey's competency? |
 |---|---|---|---|---|---|---|
 | 1 | Reactivate the existing free audience into the existing £49 tier | High | **Days** | Low | No | **Yes — pure copy** |
+| 1b | Route the 375K monthly video views to the existing lead magnet (end screens, pinned comments, descriptions, Shorts CTAs) | **Very high** | **Days** | Low | No | **Yes** |
 | 2 | Fix the 404 + typos + state the annual saving | Low-med | Immediate | Trivial | No | Yes |
 | 3 | Restore the TAP site | High (for TAP) | Immediate | Trivial | No | No — dev/DNS |
 | 4 | Build a low-ticket paid entry (£19–£47) from existing content | High | Weeks | Med | No | **Yes** |
@@ -259,23 +326,43 @@ Every lever above clears the §10 mission-fit boundary. Nothing touches the chur
 
 ## The wedge
 
-**Reactivate the existing free audience into the existing £49 tier. Copy only. No new product, no new tech, no founder time.**
+**Capture and convert the audience he already has. Copy and routing only — no new product, no new tech, no founder time.**
 
-- **What it is:** an email + Telegram sequence written to the helpless-dominant belief the "7 Ways God Speaks" opt-in already selects for, moving people who have consumed free teaching for months into WATCH+.
-- **Why this one:** every other lever needs something built. This needs nothing. The audience exists, the product exists, the price exists, the trust exists at Level 5 already. The only missing component is the ask — and the ask is the thing he's hiring for.
-- **What it costs him:** no build, no dev, no calendar time. One approval pass on the copy so the theology is right.
-- **What it proves:** a conversion rate and an EPC on his own list. That number is what justifies levers 4, 5 and 8 — and without it, all three are guesses.
+Two halves of one motion:
+
+1. **Route the traffic.** ~375K monthly views currently exit to nothing. End screens, pinned comments, descriptions and Shorts CTAs pointed at "7 Ways God Speaks" — starting with the two "Mastering Meditation" videos, which are top-six performers *and* topically upstream of Prophet School.
+2. **Convert the capture.** An email + Telegram sequence written to the helpless-dominant belief the magnet already selects for, moving those people into WATCH+.
+
+**Why this one, over everything else on the list:**
+
+- Every other lever requires something to be built. This requires nothing that doesn't already exist — the audience, the magnet, the product, the price and the trust are all in place. The only missing component is **the ask**, and the ask is the thing he'd be hiring for.
+- **The size of the gap is arithmetic, not opinion.** 281K Instagram followers and ~375K monthly video views feed a 7,500-person Telegram. Whatever the right conversion rate turns out to be, it is being applied to 2.7% of the available audience.
+- The current monetisation of that attention is **$2–38/day of AdSense.**
+
+**The arithmetic of the gap** — *illustrative only, using their observed traffic against explicitly assumed rates. These are not projections and must never be presented to him as forecasts:*
+
+> 375,000 monthly views × 1% opt-in = 3,750 leads/month.
+> 3,750 × 2% to WATCH+ = 75 members × £49 = **£3,675 in new MRR per month, compounding.**
+>
+> Both rates are placeholders. **The point is not the number — it's that no rate is currently being applied at all**, because there is no route from the video to the magnet.
+
+- **What it costs him:** no build, no dev, no calendar time. One approval pass so the theology is right.
+- **What it proves:** an opt-in rate and a subscription conversion rate on his own traffic. Those two numbers are what turn levers 4, 5 and 8 from guesses into decisions.
 - **What it opens onto:** the low-ticket entry offer (lever 4), then paid traffic against a funnel with known economics (lever 8).
 
 ## The case — say it out loud
 
 > "Your TAP Institute site is down — `www` doesn't resolve at all, so every Google result for it is a dead link. That's a ten-minute fix and I'm not charging you for it.
 >
-> The bigger thing: you've got 7,500 people praying and fasting with you live every week, and a school those exact people would pay £49 a month for. Between the free ebook and that £49, there's nothing at all. No small step, and the main link to the school on your homepage is broken.
+> The bigger thing. You've got 281,000 people on Instagram and about 375,000 views a month on YouTube. Your Telegram has 7,500 in it. That's under 3% of the people who already follow you.
 >
-> You don't have a traffic problem. You've got people who already trust you further than most brands ever get, and nobody's asking them.
+> And the videos that pull hardest are the ones closest to what you actually sell — both Mastering Meditation videos are in your top six. Those are the people who'd pay £49 a month for Prophet School. Right now they finish the video and there's nowhere for them to go.
 >
-> Let me write the sequence that asks. No new product, no build, nothing on your calendar. Then we both look at the number and decide what's next."
+> YouTube is paying you a few pounds a day for that attention.
+>
+> You don't have a traffic problem. You've got people who trust you further than most brands ever get near, and nobody's asking them. Let me build the route from the video to the ebook and write the sequence that asks. No new product, no build, nothing on your calendar.
+>
+> Then we look at the two numbers that come back and decide what's next."
 
 ---
 
@@ -283,7 +370,7 @@ Every lever above clears the §10 mission-fit boundary. Nothing touches the chur
 
 | # | To establish | Blocks |
 |---|---|---|
-| 1 | Email list size and platform | Sizing the wedge |
+| 1 | ~~Audience sizes~~ — **closed 2026-08-14.** 281K IG · 108K YT · ~375K views/mo. Email list size still unknown | Sizing the wedge |
 | 2 | Do they run paid ads anywhere? | Lever 8 |
 | 3 | WATCH+ current conversion rate | Baseline for the wedge |
 | 4 | Is TAP dormant by choice or broken by accident? | Whether TAP is in scope at all |
