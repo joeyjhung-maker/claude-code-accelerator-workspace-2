@@ -59,6 +59,17 @@ The flywheel turns one stage at a time: **read the account → storm seeds → b
 | [[dashboard-setup]] | `/dashboard-setup` | Create or refresh the visual dashboard for the workspace. |
 | [[create-workflow-diagram]] | `/create-workflow-diagram` | Turn a process into a diagram. This one may need Node the first time. |
 
+## Lives in the other vault (Second Brain)
+
+These run off the NHB/FF market-research doctrine, so they live next to it in `Second Brain/.claude/skills/` rather than here. Their **output** still lands in this workspace — client audits go to `clients/<slug>/`.
+
+| Skill | Use it when |
+|-------|-------------|
+| `business-teardown` | Deconstruct a whole business or personal brand — surfaces, money map, offer ladder, funnel leaks, positioning, key-man risk — then a severity-tiered ledger and ranked levers ending in one pitchable wedge. For auditing a prospect before you pitch them. First run: `clients/tobi-arayomi/`. |
+| `copy-breakdown` | Doctrinal map of a **single piece** of copy (18 sections, descriptive not prescriptive). Run it inside a teardown on the one asset that deserves the depth. |
+
+The CRO critique workflow (prescriptive, one piece, severity-tiered) lives in `Second Brain/CLAUDE.md`, not as a skill.
+
 ## The simple model
 
 The skills are not separate apps.
