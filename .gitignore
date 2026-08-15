@@ -3,3 +3,8 @@
 scripts/.gh-token
 clients/.env
 .studio/server.log
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
