@@ -2,6 +2,7 @@
 status: final
 copy:
   - copy/2026-08-17-flexxable-iaa-48hr-dialled-to-death-TEXT-FINAL.md (FINAL, locked 2026-08-17)
+  - copy/2026-08-17-flexxable-iaa-48hr-dialled-to-death-POST-TEXT-FINAL.md (FINAL, long-form offer body, locked 2026-08-17)
   - copy/2026-08-17-flexxable-iaa-48hr-dialled-to-death-scene-fb-ad-MARIOBOT.md (hooks 12a lead / 18a variant)
   - copy/2026-08-17-flexxable-iaa-48hr-dialled-to-death-belief-fb-ad-MARIOBOT.md (hooks 13a lead / 13b variant)
 video_branch: clients/flexxable/briefs/ESCAPE_BurntAgencyOwner_Belief_DialledToDeath_VIDEO_v01.md
