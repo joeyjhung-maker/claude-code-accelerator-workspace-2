@@ -104,4 +104,37 @@ flaw. Test: does the reader think "OHH that's my problem" or does it read like
 a generic marketing term? If it could headline an ad for a different
 profession entirely, it's not specific enough yet.
 
+## The four-beat contrast hook — UNCONFIRMED, banked 2026-08-17
+
+The shape: **anomaly → peer contrast → rule out the obvious → tease the real
+cause.** As in: "Here's how I turned X into Y… while most people get Z… and it's
+not because I'm smarter or work harder… it's because I stopped doing this ONE
+mistake."
+
+Three rules came out of building one for the 48-Hour Android ad. They have good
+reasoning behind them and Joey's instinct confirmed the first, but **none has run
+yet** — confirm or kill them on that ad's numbers before treating them as law.
+
+**Beat 2 needs INVERSION, not a loser.** If beat 1 is worthless-input →
+big-money, beat 2 cannot be worthless-input → no-money. That's just "I win, they
+lose," and it carries no tension. Beat 2 has to invert: they get the input that
+looks BETTER than yours, and it pays them worse. Dead leads into six figures,
+against fancy builds for peanuts. The contrast is the whole line — without it the
+hook is a brag with a second sentence.
+
+**Beat 2 is a gut punch, not an argument.** Four to eight words, one idea, no
+subordinate clause, no comparison, no cleverness. A relative clause in that slot
+makes the reader parse instead of feel, and he's gone before beat 4 arrives.
+"Pitching themselves as a faster version of the team the client already trusts"
+was strategically correct and structurally dead. The argument is beat 4's job;
+beat 2 only has to sting.
+
+**Peers must read as wrong-turned, never useless.** Beat 3 explicitly says it
+isn't talent or effort — so any beat 2 that makes the peer group look pathetic
+(begging, can't make rent, can't get a reply) fights the line directly after it.
+They took a wrong turn. They are not worse than the reader.
+
+Source: [[2026-08-17-flexxable-iaa-48hr-dialled-to-death-TEXT-FINAL]].
+Arguments the hooks sit on: [[argument-bank]].
+
 Related: [[Promotion]]
