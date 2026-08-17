@@ -165,6 +165,18 @@ Admitting a failure while visibly competent buys enormous trust. The reader reco
 
 # Part 2 — Mined from cross-niche corpus
 
+> ## ⚠️ SUSPECT — corpus condemned 2026-08-17
+>
+> The scrape behind this section is structurally broken: no follower data on 528 of 530 authors,
+> and **1.07 posts per author**, so the top-vs-median delta this section claims to measure was
+> never computable. Full diagnosis: [[2026-08-17-threads-swipe-corpus-broken]].
+>
+> **Treat #11–17 as untested hypotheses, not evidence.** The engagement numbers quoted below are
+> real, but they are raw like-counts with no follower normalisation — which means a big number may
+> just mean a big account. Re-derive after the deep re-scrape.
+>
+> **Part 1 (#1–10) is unaffected** — that came from Joey's own archive with real metrics.
+
 203 posts across sobriety · addiction recovery · stoicism · discipline · money · wealth · debt free · fitness · weight loss · writing. 193 distinct authors.
 **Read the "corpus health" note at the bottom of this section before trusting any of it.**
 
@@ -264,6 +276,39 @@ Replies weigh heavily in distribution, and a real question is the cheapest way t
 Manufactures an antagonist and lets the audience side with the speaker against them.
 
 **⚠️ Flag** · This is the one structure here that sits close to Joey's reject list. It doesn't target a real person, so it isn't dunking — but it *works* by generating friction, and the line between "strong opinion" and "picking a fight with an imaginary hater" is thin. Included for completeness, not recommended.
+
+---
+
+---
+
+# Part 3 — Swiped, in use
+
+## 18. The Optimal-Decision Release
+**Origin: @growwithcolby (general self-improvement) · Swiped 17 Aug 2026 · Posted, result pending**
+
+**Skeleton**
+> [Label:] [outcome improves when you stop needing every X to be optimal]. [Three imperatives, one
+> clause each, escalating toward the concrete and costly.] We waste an absurd amount of life
+> [doing A] instead of [doing B]. [A good X done quickly] is worth more than [the perfect X you
+> spent (specific time) on].
+
+**Mechanism**
+The label pre-frames the line as a contrarian gift rather than an opinion, so the reader accepts it
+before evaluating it. The three imperatives turn an abstract claim into something doable in the
+next hour. The diagnosis says **we**, not you — which lands an accusation while staying inside the
+no-shaming rule. The close is a comparative with a specific time marker on the losing side, and
+that specificity ("three years") is what makes it sting rather than sound wise.
+
+**Lane fit** · Both. The secular version is decision paralysis; the faith version is
+confirmation-seeking, which is live and under-addressed in prophetic culture.
+
+**Length** · 60–75 words.
+
+**Note on the imperatives** · Joey's rewrite escalated toward the material ("Start the project")
+rather than the devotional. Naming actions the audience genuinely avoids is what makes the stack
+work — praying is not one of those. See [[2026-08-17-stop-needing-confirmation]].
+
+**Source swipe** — 12.9K likes, 1K reposts on the original.
 
 ---
 

@@ -16,6 +16,10 @@ This is not a task list. It is the small map that helps Claude and you find the 
 
 Separate line of work from core Flexxable copy. Map lives at [[JV Partnerships Map]] (`jv/JV-map.md`), with its own partner folders under `jv/partners/`. Same rules as everywhere else.
 
+## Threads (personal)
+
+Joey's own account, not client work. Home is [[threads-README]] (`threads/`). Own voice file ([[threads-voice]]), own structure bank ([[structure-bank]]), own testimony bank ([[testimony-bank]]). **Different rules from the Flexxable lane — do not carry Dan's voice in.**
+
 ## Daily use
 
 1. Start in `CLAUDE.md`.
