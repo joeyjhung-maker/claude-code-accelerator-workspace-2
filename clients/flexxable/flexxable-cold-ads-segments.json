@@ -1,0 +1,187 @@
+{
+  "brand": "Flexxable",
+  "product": "ROYA",
+  "outcomes": [
+    {
+      "name": "Get out of the job",
+      "lens": "Severity",
+      "subs": [
+        "bored, know I'm capable of more",
+        "counting down the days, hate it",
+        "burnt out, need out now",
+        "role under review / redundancy round",
+        "already been let go"
+      ]
+    },
+    {
+      "name": "Money without more hours",
+      "lens": "Moment",
+      "subs": [
+        "need cash this month",
+        "building a cushion",
+        "replacing my salary",
+        "FU money — never worry again"
+      ]
+    },
+    {
+      "name": "Stop grinding the agency for peanuts",
+      "lens": "Severity",
+      "subs": [
+        "busy but flat",
+        "revenue going backwards",
+        "clients cancelling retainers",
+        "ready to shut it down and start again"
+      ]
+    },
+    {
+      "name": "Get clients without chasing or pitching",
+      "lens": "Function",
+      "subs": [
+        "land the first one",
+        "get a yes without a sales call",
+        "stop hearing 'send me references'",
+        "charge $20k a deal instead of $197/mo",
+        "keep them paying every month"
+      ]
+    },
+    {
+      "name": "Prove I can actually pull this off",
+      "lens": "Severity",
+      "subs": [
+        "think it's hype / a scam",
+        "curious but not convinced",
+        "ready but scared to start",
+        "tried before, it died on me"
+      ]
+    },
+    {
+      "name": "Not get replaced by AI",
+      "lens": "Moment",
+      "subs": [
+        "watching it come for my industry",
+        "AI just landed in my role",
+        "clients doing it themselves now",
+        "already been cut because of it"
+      ]
+    },
+    {
+      "name": "Get my time back",
+      "lens": "Moment",
+      "subs": [
+        "no weekends",
+        "missing the kids' stuff",
+        "can't take a holiday without it breaking",
+        "on my phone at 10pm every night"
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "name": "Buyer",
+      "values": [
+        "self",
+        "self — needs partner's sign-off on the money",
+        "owner spending from the business"
+      ]
+    },
+    {
+      "name": "Gender",
+      "values": ["men", "women"]
+    },
+    {
+      "name": "Age",
+      "values": [
+        "22–29 (early career)",
+        "30–44 (mortgage + kids)",
+        "45–59 (peak earner, feeling replaceable)",
+        "60+ (retirement won't cover it)"
+      ]
+    },
+    {
+      "name": "Race / Ethnicity",
+      "values": []
+    },
+    {
+      "name": "Identity",
+      "values": [
+        "9-5er in a corporate job",
+        "sales rep / BDM on commission",
+        "agency owner with staff",
+        "solo freelancer / consultant",
+        "coach or service provider",
+        "parent with dependents",
+        "just made redundant",
+        "already running a side hustle"
+      ]
+    }
+  ],
+  "facets": [
+    {
+      "name": "Belief",
+      "values": [
+        "AI is the biggest opportunity of my lifetime",
+        "AI is coming for my job",
+        "you have to be technical to do AI",
+        "agencies are dying — pivot or die",
+        "my job will never pay me what I'm worth",
+        "every business already has an AI guy",
+        "you need money up front to start anything",
+        "paid ads are a gamble I can't afford",
+        "this online business stuff is all scams",
+        "the money is in monthly retainers"
+      ]
+    },
+    {
+      "name": "Identity",
+      "values": [
+        "corporate escapee",
+        "side-hustler",
+        "course buyer / self-improver",
+        "sales guy",
+        "ChatGPT power user / tinkerer",
+        "proudly non-technical",
+        "provider / family first"
+      ]
+    },
+    {
+      "name": "State",
+      "values": [
+        "never built a business",
+        "tried an agency or freelancing, it stalled",
+        "already using ChatGPT every day",
+        "running an agency with flat revenue",
+        "losing clients to AI",
+        "sitting in a job under review",
+        "has a network of past clients to call",
+        "no spare cash to invest up front",
+        "no spare time — 50+ hour weeks"
+      ]
+    },
+    {
+      "name": "Value",
+      "values": [
+        "no risk / nothing up front",
+        "speed to first money",
+        "simple — one offer, one client",
+        "proof from people like me",
+        "no cold pitching, no sales calls",
+        "done-with-you, not DIY",
+        "not another software subscription"
+      ]
+    },
+    {
+      "name": "Occasion",
+      "values": [
+        "layoffs announced at work",
+        "role put under review",
+        "a bad month or quarter",
+        "a client just cancelled",
+        "watched AI do their job in front of them",
+        "another review, no raise",
+        "new baby / school fees landed",
+        "milestone birthday",
+        "watched a mate quit their job"
+      ]
+    }
+  ]
+}
