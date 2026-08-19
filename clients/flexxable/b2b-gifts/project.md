@@ -104,8 +104,14 @@ the argument, so don't just trim the NAP down.
 
 ---
 
+## Platform notes
+
+**2026-08-19 — Skool text fields cap at ~1000 characters, and the in-app counter isn't a plain character count.** Wrote the About-page description at 1148 chars by a straight Python `len()` count; Skool's own counter read 1148 too on the *original swipe* length but landed differently once emoji/dashes were swapped — budget roughly 2% under whatever your own count says, or just paste into the field and read the live counter before calling it done. Bit us once on the About-page description draft — check before writing long-form for any Skool text field (About page, post body, bio).
+
+---
+
 ## Open questions
 1. **Who owns Shorts/Longs?** No name on that line.
 2. **"SRL event"** — what is SRL? (Not my lane, low priority.)
 
-Related: [[Flexxable]] [[ROYA]]
+Related: [[Flexxable]] [[ROYA]] [[2026-08-19-image-request-goes-to-prompt-not-mockup]]
