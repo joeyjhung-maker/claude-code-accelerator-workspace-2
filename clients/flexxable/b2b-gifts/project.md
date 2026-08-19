@@ -84,6 +84,26 @@ The end-of-Oct paid launch is the deadline everything upstream is feeding. Filli
 
 ---
 
+---
+
+## Work log
+
+**2026-08-19 — Sales-call clip NAP. DONE, ready to send.**
+`copy/2026-08-19-b2b-gifts-skool-post-sales-call-clip.md`
+A **NAP for the B2B Gifts group** (not a plain community post, and not an AAA send).
+Dan's clip of a real call's last few minutes, positioned as proof the close is the easy bit once
+the gift has done its work. Handraiser CTA splits the room into "already crush sales" vs "excited
+to land clients without selling." P.S. names AI Automation and demotes it to one example of eight,
+which is what stops the group drifting into an AI-automation group.
+
+**PENDING — AAA Ninjas teaser post pointing at the above.** Joey's call, later.
+Separate piece, teaser style, lives in the AAA Ninjas group and drives people over to B2B Gifts.
+This is the cross-group recruitment move: the NAP lands in B2B Gifts, the teaser sits in AAA Ninjas
+and points at it. Note the teaser has a different job to the NAP — it sells the *click across*, not
+the argument, so don't just trim the NAP down.
+
+---
+
 ## Open questions
 1. **Who owns Shorts/Longs?** No name on that line.
 2. **"SRL event"** — what is SRL? (Not my lane, low priority.)
