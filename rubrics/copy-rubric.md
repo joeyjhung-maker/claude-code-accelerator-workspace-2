@@ -272,3 +272,27 @@ Related: [[dan-truth-constraint]] [[naps-nurture-and-picks]] [[b2b-gifts-project
 - **A direct reader-bridge can be beaten by a scene.** I preserved "maybe you can relate" because the
   new opener had no invitation in it. Joey cut it and let the HAPPY/EXCITED block do that job instead.
   Showing the reader something recognisable pulls harder than asking them if they recognise it.
+
+### Dan Skool posts — round 3 corrections (2026-08-19, final pass on the same post)
+
+- **A Skool title should say plainly what the reader is about to watch, then undercut it.** Joey took
+  none of my ten titles whole. He fused the two mechanics he wanted and made the result far more
+  literal: **"Watch me close a PRE-sold lumpy mail lead (so easy)"**. Mine were oblique and
+  curiosity-led ("The Whiskey Close", "The box does the selling…"); his states the asset, the
+  mechanism and the verdict in one line. **Plain-over-clever governs headlines too, not just body
+  copy.** The undersell lives in the parenthetical, where it can't cost clarity.
+- **Put the mechanism's NAME in the title when the group is built on that mechanism.** I danced around
+  "lumpy mail" with box/whiskey metaphors. For a community whose whole identity is lumpy mail, the
+  term itself is the draw, not a thing to find a fresh angle on.
+- **Hedge the absolute claim.** "make the close irrelevant" → "make the close **basically**
+  irrelevant." The voice still runs at a 10; only the claim gets the hedge. (Reinforces the existing
+  calibrated-hedges rule — apply it to Dan's confident lines, not just to proof claims.)
+- **Present tense for a standing contrast.** "what I **was** used to" → "what I'm used to." The old
+  way is still how everyone else's leads behave, so the contrast is ongoing, not a closed episode.
+- **Drop "Because" as a line-opener.** "Because these leads weren't ANYTHING like…" → "These leads
+  weren't ANYTHING like…". Leading with a conjunction is an essay move; the bare statement is how he
+  actually talks.
+- **Don't over-apply the ellipsis.** I banked "ellipsis is Dan's main connector" and that risks
+  becoming a tic. Joey converted "It all started by sending lumpy mail…" to a full stop. **The ladder
+  is for beats that genuinely trail INTO the next one. A line that completes its own thought takes a
+  full stop.** Check every "…" is doing continuation work, not decoration.

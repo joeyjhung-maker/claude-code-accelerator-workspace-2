@@ -1,21 +1,23 @@
-# B2B Gifts Skool post — sales call clip (as Dan) — FINAL v3 · APPROVED
+# B2B Gifts Skool NAP — sales-call clip (as Dan) — SHIPPED v4
 
-*2026-08-19 · Joey's revision. This is the version that ships. Video: vimeo.com/1218897471*
-*Brief from Dan: post the clip, coffee dates not closes, don't let it become an "AI Automation" group.*
+*2026-08-19 · Joey's final. Headline is Joey's own. Video: vimeo.com/1218897471*
+*A NAP for the B2B Gifts group. Handraiser CTA. AAA Ninjas teaser to follow separately.*
 
 ---
 
+**HL: Watch me close a PRE-sold lumpy mail lead (so easy)**
+
 I blame being Aussie for this but I have NEVER been able to do the hard sell thing... 
 
-So I'm THRILLED we figured out a way to make the close irrelevant.
+So I'm THRILLED we figured out a way to make the close basically irrelevant.
 
-It all started by sending lumpy mail…
+It all started by sending lumpy mail.
 
 And after taking a bunch of calls with these leads… 
 
 …I realised something kinda embarrassing.
 
-Because these leads weren't ANYTHING like what I was used to. 
+These leads weren't ANYTHING like what I'm used to. 
 
 They were HAPPY we got in touch with 'em.
 
@@ -62,9 +64,5 @@ P.S If you think outside the box… you'll see how this could be used to sell LI
 AI Automation is just ONE example
 
 You could sell media buying… copywriting… pitch your startup idea to investors… POS systems… insurance… SaaS… anything with a decently high price point would clean up
-
----
-
-*Both open flags from v2 are closed: the causality now runs forwards, and the "with at a" typo is fixed.*
 
 Related: [[b2b-gifts-project]] [[dan-skool-voice]]
