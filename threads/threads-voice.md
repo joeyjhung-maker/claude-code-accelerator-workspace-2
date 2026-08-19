@@ -10,10 +10,52 @@ first-person about his own life. Do not merge the two files.
 
 ---
 
+## The hard limit: 500 characters per post
+
+**Threads caps a post at 500 characters.** This is mechanical, not stylistic. The archive proves
+it — max is exactly 500, **zero posts over**, and 38 sitting in the 480–500 band. Joey already
+writes to the cap.
+
+**For Joey's writing, 500 characters ≈ 91 words** (his archive runs 5.45 chars/word).
+
+**Always count characters, never words, and always state the count.**
+
+### One post or two — say which, every time
+
+Every draft must declare **ONE POST** or **SPLIT**, with the character count of each part.
+Never hand over copy that silently exceeds 500 — it gets truncated or rejected at post time.
+
+- **Under 500** → one post. Default. Most ideas should fit; the median post is 246 characters.
+- **Over 500** → a split, and then the cliffhanger rule below is mandatory.
+
+### THE CLIFFHANGER RULE — for any split
+
+*Banked 2026-08-17 on Joey's instruction.*
+
+**When a post splits, part 1 must end mid-sentence, cut at the point of maximum incompletion.**
+
+The reader has to click through to part 2 to find out what happened. A part 1 that ends on a
+complete thought gives them permission to stop, and the rest of the thread dies unread.
+
+Joey's own examples:
+
+| Part 1 ends… | Part 2 opens… |
+|---|---|
+| "…and nothing I did worked. So I just" | "stopped." |
+| "…what we built here in intimacy away from the world became" | "the foundation of my faith." |
+
+**How to cut well:**
+- Break mid-clause, ideally one word before the payoff — "So I just" / "became"
+- Never end part 1 on a full stop
+- Never end on a complete image the reader can walk away satisfied with
+- The word you withhold should be the one carrying the meaning
+
+Threads shows a `1/n` counter, so the reader knows there's more. The cliffhanger makes them care.
+
 ## Shape on the page
 
-- **Median post: 45 words.** Quartiles: 22 / 45 / 71. Longest in 403 posts: 103.
-  If a draft passes ~75 words it needs a reason.
+- **Median post: 246 characters / 45 words.** That's the *style* number. Quartiles 22 / 45 / 71
+  words. The 103-word maximum in the archive is the 500-char ceiling, not a preference.
 - **Line break between every idea.** Blank line, not a paragraph. Almost no post in the archive
   is a block of text.
 - **Lists use `•`, `-`, or `1.`** — all three appear. Short items, no sub-clauses.

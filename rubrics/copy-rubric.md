@@ -170,3 +170,105 @@ When in doubt on a taste call (not a mechanical one), flag it for me rather than
 <!-- Next time a draft makes me wince, add a row:
 | YYYY-MM-DD | "the thing I said once" | the permanent rule |
 -->
+
+---
+
+## DAN — SKOOL COMMUNITY POSTS (added 2026-08-19)
+
+*Built by diffing my draft against Joey's rewrite of the B2B Gifts sales-call post. This is a
+DIFFERENT register from ad copy. Dan in his own room is looser, warmer and more spoken than Dan in
+a Meta ad. Grade Skool posts against this section, not the ad rules above, wherever the two clash.*
+
+### Register
+- **Dan is AUSSIE, not British.** Correcting the standing "British-inflected" note — that's the
+  residue of him living in the UK. His background is Australian and he says so in copy
+  ("Maybe it's because of my Aussie background?"). Aussie casual, not London casual.
+- **Spoken contractions are mandatory.** ya, 'em, gonna. "To show ya…" not "To show you." "Nobody
+  has ever done this to 'em" not "to them."
+- **Conversational filler earns its place here.** "You know…" on its own line is a spoken beat, not
+  padding. The no-filler-fragments rule from the ad section does NOT apply to Dan's spoken asides.
+- **Double exclamation marks on the punchline.** "you will be disappointed!!" "I was never really
+  good at it!" One "!" is flat for him.
+- **CAPS for emphasis, roughly one word every few lines.** CLOSE, EASY, SIMPLE, WAY, WITHOUT,
+  LITERALLY, ONE. Not shouting — vocal stress written down.
+- **Scare quotes signal irony and distance.** "pitch", "persuasion", "me". Dan uses them to hold a
+  word at arm's length. Keep them.
+- **Sign off with his name.** Dan.
+
+### Structure
+- **THE ELLIPSIS LADDER IS A DAN DEVICE — exempt from the fragment-stack FAIL.** I joined three
+  beats into one comma'd flowing line per the flow-over-staccato rule. Joey split them back out:
+  > It happens when they open the box…
+  > When they read the letter…
+  > And when they realise nobody has ever done this to 'em before.
+  Three lines, each trailing on "…", building to an "And". This is spoken cadence, not manufactured
+  staccato. **Test to tell them apart:** if the beats trail INTO each other and a person would pause
+  between them out loud, it's a ladder — keep it. If they're clipped full stops performing punch
+  ("Two people chatting. One of them agrees. Done."), it's still a FAIL. The ellipsis is the tell.
+- **Ellipsis is Dan's main connector — it replaces commas AND full stops.** The ad rule ("ellipsis
+  only for trailing between beats, never glue inside a clause") is relaxed for him. He even runs
+  ellipsis-separated lists: "media buying… copywriting… POS systems… insurance… SaaS…"
+- **P.S. is a structural element, not an afterthought.** Dan uses it to widen the market after the
+  main post has done its job. Expect one.
+
+### Persuasion
+- **Lead with a weakness before the flex.** The strongest thing Joey added was Dan admitting he was
+  never good at closing, and pinning it on his Aussie discomfort with hard selling — then handing
+  the reader an out: "maybe you can relate." Confession first, proof second. A Dan post that only
+  flexes is missing its best beat.
+- **ASK FOR THE SPECIFIC PROOF. Don't write around the gap.** My draft had zero numbers because I
+  had no facts, and I wrote elegantly around the hole. Joey dropped in *"We've closed 5 adventure
+  park clients now"* and it carries the whole post. **New standing rule: when a post needs proof I
+  don't have, stop and ask for the number and the niche before drafting, rather than producing a
+  version that works without them.** The vague version is not a safe default, it's a weak one.
+- **The engagement ask should SEGMENT, not just ask.** My CTA was one flat question. Joey's splits
+  the room and makes them self-identify:
+  > Where are ya at…
+  > Do ya crush sales already…
+  > Or does this get you excited… now that you will be able to land clients WITHOUT having to do much selling?
+  That's the handraiser mechanic from [[naps-nurture-and-picks]] — it sorts the list while it
+  engages. Default to a two-camp question on any Skool post meant to drive comments.
+
+### Positioning
+- **"Don't make it about X" → NAME X and DEMOTE it. Don't scrub it.** Dan's brief said be careful
+  not to make this an "AI Automation" B2B group. I scrubbed every mention. Joey named it in the P.S.
+  and reduced it to one item on a list: *"AI Automation is just ONE example. You could sell media
+  buying… copywriting… pitch your startup idea to investors… POS systems… insurance… SaaS…"*
+  **Scrubbing leaves the reader's existing assumption intact. Demoting actually corrects it.** This
+  is the better read of a "don't position it as X" instruction and it generalises beyond this post.
+- **Widen the market at the end, never at the top.** The post earns attention on one concrete story
+  (adventure parks), then the P.S. tells everyone else it applies to them too.
+
+Related: [[dan-truth-constraint]] [[naps-nurture-and-picks]] [[b2b-gifts-project]]
+
+### Dan Skool posts — round 2 corrections (2026-08-19, same post)
+
+- **SHOW THE CHANGE BEFORE YOU NAME IT. This was my biggest miss on the whole piece.** Both my draft
+  and mariobot's went straight from the mechanism ("I started sending lumpy mail") to the conclusion
+  ("the close is the EASY bit"). Nothing in between. Joey inserted the evidence:
+  > Because these leads weren't ANYTHING like what I was used to.
+  > They were HAPPY we got in touch with 'em.
+  > They were EXCITED to get on a call.
+  Only THEN does the close-is-easy line land. **A mechanism claim needs the felt difference dramatised
+  between the cause and the payoff.** Without it the reader is asked to take the conclusion on trust.
+  Ask on every draft: have I shown WHAT CHANGED, or have I only asserted that something did?
+- **Two beats, not three.** That block is a doublet (HAPPY / EXCITED). Dan's anaphora runs in pairs.
+  A third would have tipped it into the stacked-triplet FAIL.
+- **LEADING ellipsis is a Dan device too.** Not just trailing. A line that OPENS on "…" continues the
+  previous breath: "…I realised something kinda embarrassing." / "…and when it came to the close…
+  that was the EASY bit." Reads as one long spoken thought broken across lines.
+- **Proof lands better as a consequence clause than as its own boast.** Joey changed my
+  *"We've closed 5 adventure park clients now - you won't believe how SIMPLE it's been"* into
+  *"Which has meant we've closed 5 adventure park clients now with many more in the pipeline."*
+  Hanging the number off "which has meant" makes it the RESULT of the argument instead of a brag
+  interrupting it. This also dissolves the never-open-with-proof tension — subordinated proof can sit
+  anywhere.
+- **Name what the asset proves in the handoff line.** "To show ya…" became "To show ya how easy it
+  is…". Tell the reader what to watch FOR, not just that something is coming.
+- **When causality runs backwards, restructure the thought — don't word-swap.** I offered to change
+  "Then" to "So". Joey rebuilt the beat instead: *"So I'm THRILLED we figured out a way to make the
+  close irrelevant. / It all started by sending lumpy mail…"* Outcome, then origin, both pointing
+  forwards. Reach for the restructure before the connector swap.
+- **A direct reader-bridge can be beaten by a scene.** I preserved "maybe you can relate" because the
+  new opener had no invitation in it. Joey cut it and let the HAPPY/EXCITED block do that job instead.
+  Showing the reader something recognisable pulls harder than asking them if they recognise it.

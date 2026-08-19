@@ -19,6 +19,8 @@ The rules Claude follows when writing in this brand's voice. Add to this every t
   - Banned in analysis writing too: "rounding error," "load-bearing," "downstream of," "the seam," "inverted curve," "X, not opinion," "structurally capped."
   - Test before writing any finding: *would this sentence survive being read aloud to the prospect?* If it needs a translation, rewrite it.
 
+- (2026-08-19) **Dan is Australian, not British.** The standing "British-inflected" note is wrong at the root — Dan writes from an Aussie background and says so in his own copy ("Maybe it's because of my Aussie background? Hard selling doesn't feel like 'me'"). Keep the casual register, fix the accent. In Skool community posts he's looser again: "ya", "'em", double exclamation marks, CAPS for vocal stress, ellipses instead of commas. Full breakdown in the rubric's **Dan — Skool community posts** section. Related: [[dan-skool-voice]]
+
 ## Words we use / words we never use
 Use: get, cut, ship, proof, show.
 Never: leverage, synergy, seamless, effortless.
