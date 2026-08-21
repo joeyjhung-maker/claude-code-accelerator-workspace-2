@@ -4,6 +4,10 @@ scripts/.gh-token
 clients/.env
 .studio/server.log
 
+# Obsidian per-machine layout (open panes/tabs) — stays local; real settings still sync
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
 # Secrets — never commit
 .env
 .env.*
