@@ -1,7 +1,7 @@
-# B2B Gifts Skool NAP — sales-call clip (as Dan) — SHIPPED v4
+# B2B Leads Lab Skool NAP — sales-call clip (as Dan) — SHIPPED v4
 
 *2026-08-19 · Joey's final. Headline is Joey's own. Video: vimeo.com/1218897471*
-*A NAP for the B2B Gifts group. Handraiser CTA. AAA Ninjas teaser to follow separately.*
+*A NAP for the B2B Leads Lab group. Handraiser CTA. AAA Ninjas teaser to follow separately.*
 
 ---
 
@@ -65,4 +65,4 @@ AI Automation is just ONE example
 
 You could sell media buying… copywriting… pitch your startup idea to investors… POS systems… insurance… SaaS… anything with a decently high price point would clean up
 
-Related: [[b2b-gifts-project]] [[dan-skool-voice]]
+Related: [[b2b-leads-lab-project]] [[dan-skool-voice]]

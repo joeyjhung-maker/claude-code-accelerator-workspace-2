@@ -45,12 +45,15 @@ bots via the stateless prime→instruct protocol (`scripts/run_*.py`):
 
 - **regular** (hook bot → body → headlines):
   1. **Hooks** — `scripts/run_hookbot.py` (`ad-hook-bot-1`, 20 hooks via the
-     mandatory double-pass). Present **all 20** in one flat list. Joey picks
-     one or steers. **Never pick the hook for him.** Judge them for intensity
-     against the rubric's flinch test and the 8 vicious-hook principles
-     (`brand/hooks.md`) — a too-polite hook is a fail, not a safe default. If the
-     whole set reads tame, say so and push for a hotter pass rather than
-     presenting 20 timid ones. The hook is 80% of the ad — spend the time here.
+     mandatory double-pass). Grade all 20 against **`rubrics/hook-rubric.md`**
+     (the Four Moves, the Loop/Ineffective gates, the flinch test, the 8
+     vicious-hook principles) before presenting them — a too-polite or
+     fully-disclosed hook is a FAIL, not a safe default. Present **all 20** in
+     one flat list regardless of grade. Joey picks one or steers. **Never pick
+     the hook for him.** If the whole set reads tame or naff, say so and push
+     for a hotter pass — or run it through the rubric's Four Moves yourself —
+     rather than presenting 20 timid ones. The hook is 80% of the ad — spend
+     the time here.
   2. **Body** — `scripts/run_mario.py` (`mariobot`) from the chosen hook. It
      prepends the style contract automatically.
   3. **Headlines** — mariobot writes them in the SAME conversation as a
@@ -126,4 +129,4 @@ we learned?"
 - **Save now, promote later.** The lesson goes to winners/losers/brand via
   /reflect, not here.
 
-Related: [[always-use-mariobot-to-write]] [[run-judge-before-showing-copy]] [[flexxable-output-format]] [[judge-provenance-rule]]
+Related: [[always-use-mariobot-to-write]] [[run-judge-before-showing-copy]] [[flexxable-output-format]] [[judge-provenance-rule]] [[hook-rubric]]

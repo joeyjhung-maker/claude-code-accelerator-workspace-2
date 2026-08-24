@@ -2,6 +2,12 @@
 
 Source: Derived from top 10 winning ads. To be updated as more data comes in.
 
+**2026-08-24 update:** Diversity Decoder audit ran against the live account (75 active
+ads, GB Ad Library) — see the dated section near the bottom for real awareness-skew
+numbers, a data-driven segment read from the actual ad set, and the current gap ranking.
+The conceptual segments/personas below still hold for brief-writing; the audit refines
+the awareness table and gap list with what the account is actually running today.
+
 ---
 
 ## The offer
@@ -161,6 +167,66 @@ open territory still.
 2. Mechanism hook — lead with dead leads / SMS angle
 3. Contrarian hook — challenge what they believe about building an agency
 4. Niche-specific angle — pick one vertical (e.g. home services) and speak directly to it
+
+---
+
+## Diversity Decoder audit — 2026-08-24 (live account, source of truth)
+
+Ran `/diversity-decoder:decode` against the live GB Ad Library account
+(`view_all_page_id=105168211848225`, page "Dan Wardrope"). Uncapped pull: 75 active ads,
+44 distinct creatives after asset-dedup, all 37 video reps actually watched (Gemini, none
+inferred). Full run + raw data: `decoder-runs/flexxable-2026-08-24/` (raw_ads.json,
+classified_ads.json, decode_report.json, decode-report.html, report.md). Re-run this
+audit periodically (monthly, or before a big push) so this section doesn't go stale —
+structural proxies only (longevity/variation/format), never CTR/CPA/ROAS.
+
+**Diversity score: 64/100.** Matrix coverage 11/25 cells. Concentration 60% — six in ten
+ads sit in one single cell (aspiring beginner × Solution-Aware).
+
+**Awareness skew (replaces the estimated table above — this is measured, not estimated):**
+
+| Awareness | Count | % |
+|---|---|---|
+| Unaware | 2 | 2.7% |
+| Problem-aware | 21 | 28.0% |
+| Solution-aware | 51 | 68.0% |
+| Product-aware | 1 | 1.3% |
+| Most-aware | 0 | 0% |
+
+The account is almost entirely mid-funnel. Confirms gap #1 (unaware) below, and adds a
+finding the old table didn't have: there is effectively **no closing content** for people
+who already know the book (Product/Most-Aware combined = 1.3%).
+
+**Segments the live ad set actually casts for** (data-driven, from reading all 44
+creatives — cross-reference to the conceptual segments above):
+
+| Decoder segment | Ad count | Maps to |
+|---|---|---|
+| Aspiring beginner AI side-hustler (no agency yet) | 60 | Segment 2 / Segment 4 above |
+| Burnt-out agency owner escaping churn-and-burn retainers | 5 | Segment 1 above / "Pivot Pete" |
+| Active lead-gen/marketing agency owner adding a new offer for existing clients | 6 | new — a Segment 1 variant: NOT burnt out, already running ads for clients, upsells this as an add-on service rather than a replacement |
+| Employee wanting an AI side-hustle to replace 9-5 income | 2 | Segment 2 above / "Redundancy Randy" |
+| General / not persona-specific | 2 | — |
+
+The beginner persona is 80% of the account by volume; the two agency-owner personas
+(the more qualified, higher-LTV buyer) are a rounding error — 11 ads combined.
+
+**Top funnel page (most-tested, most-confident destination):** `book.flexxable.com/optin`
+— 54 of 75 ads, 37 proven, page score 163 (way ahead of the other two destinations at 45
+and 18). Route new ads here unless there's a specific reason not to.
+
+**Current gap ranking (highest-probability tests, replaces the list above):**
+1. **Cold-open the two agency-owner personas.** A proven cold format (long-form static —
+   Notes-app / chat-screenshot style) already works for the beginner persona at Unaware;
+   it has never been pointed at the burnt-out agency owner or the active-agency-owner
+   persona. Same proven play, untapped audience — the single highest-probability move.
+2. **Build a Product-Aware closer.** Only 1 ad in the account talks to someone who already
+   knows the book. No urgency/deadline/"why now" content exists at all.
+3. **Weight agency-owner personas up.** 11 ads combined vs. 60 for the beginner persona,
+   despite agency owners being the more qualified buyer.
+4. Everything in the "Gaps" list above (pain-first hooks, contrarian hooks, niche cuts,
+   mechanism-led hooks) still holds — this audit sharpens WHO to point them at, not
+   whether they're needed.
 
 ---
 

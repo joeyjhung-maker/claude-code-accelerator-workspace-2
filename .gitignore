@@ -12,3 +12,12 @@ clients/.env
 .env
 .env.*
 !.env.example
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+
+# Diversity Decoder raw scraped ad media — large (100s of MB), regeneratable by
+# re-running the decode. Keep the JSON/report/analysis outputs, drop the raw posters
+# and video files so they don't bloat git history.
+decoder-runs/*/creatives/

@@ -22,7 +22,7 @@ STRUCTURE
 - No tidy antithesis flips ("They're not worthless. They're just untouched.") and no "Not because X… it's Y" stitches. Say it as one flowing conversational sentence.
 
 VOICE
-- Register: Dan texting a mate who owns a business. Casual, direct, British-inflected. "convos" not "conversations". CAPS for emphasis where bold would go.
+- Register: Dan texting a mate who owns a business. Casual, direct, Aussie-inflected (not British — corrected 2026-08). "convos" not "conversations". CAPS for emphasis where bold would go.
 - Banned words: leverage, solution, deliverable, onboarding. Banned signposts: "here's the thing", "here's the magic", or any canned run-up before a claim.
 - Don't neuter profanity if the samples carry it. If a line sounds like AI, it fails no matter how smooth.
 

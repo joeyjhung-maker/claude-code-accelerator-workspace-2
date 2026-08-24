@@ -72,6 +72,20 @@ Which model matters as much as the prompt:
 - Wired in `scripts/run_image.py`: `--model nano-banana-2` flips to Pro; default is base for photo work.
   `python3 scripts/run_image.py "<prompt>" --model nano-banana-2 --out <path.png>`.
 
+## Iterative edits — one fix per pass, not several (banked 2026-08-24)
+A 9-render saga on a Flexxable static taught this the hard way: asking one edit pass to
+fix multiple things at once (pose + text legibility + add a person) reliably fails —
+each pass satisfies some instructions and silently drops or corrupts others (wrong
+composition, garbled text reappearing, an added element vanishing). **Chain edits one
+targeted fix at a time**, using the best prior output as the next `--ref`, and re-check
+the WHOLE frame after each pass — "keep everything else unchanged" does not reliably
+hold; a pass aimed at fixing text can quietly drift the room, add accessories, etc.
+`--ref` + `--model nano-banana-2` together IS supported (undocumented elsewhere) — but
+stacking the reference constraint with the text-quality model seems to raise the odds of
+deviating from the reference vs. `--ref` alone. If a real reference photo is available
+and 1-2 verbal-description attempts haven't matched it, stop re-describing and pass the
+actual photo via `--ref` immediately rather than continuing to iterate blind.
+
 ## Plain-English explainer
 We turn a winning ad's message into native-looking static images. Feed a real reference photo + a prompt
 into an image model (KIE / nano-banana). Two things make or break it: **(a)** get the reference onto a

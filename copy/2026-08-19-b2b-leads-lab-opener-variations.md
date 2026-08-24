@@ -1,4 +1,4 @@
-# B2B Gifts sales-call post — 10 opening line variations
+# B2B Leads Lab sales-call post — 10 opening line variations
 
 *2026-08-19 · ad-hook-bot-1, primed on Dan's Skool voice + double-passed to Level 3.*
 *20 generated, 5 killed for invented facts, 2 repaired. Ranked strongest first.*
@@ -57,4 +57,4 @@
 - **4** opens on the number, which brushes the never-open-with-proof rule. It survives because the number is immediately reframed rather than flexed, but it's the closest to the line of the ten.
 - **10** mocks "sales bros." The reader is likely to think of themselves as decent at sales, so there's a small risk it lands on them rather than past them.
 
-Related: [[b2b-gifts-project]] [[hooks]] [[dan-skool-voice]]
+Related: [[b2b-leads-lab-project]] [[hooks]] [[dan-skool-voice]]

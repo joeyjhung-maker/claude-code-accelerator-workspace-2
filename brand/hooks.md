@@ -4,9 +4,12 @@ The craft reference for hooks. The hook is 80% of the game — a bad hook can't 
 rescued by good body copy, and good body copy is the part AI does well anyway.
 So this is where the time goes.
 
-Source: the "How to Write Vicious Hooks" training (Luke). The rubric grades
-against this; /produce and hook-miner draw from it.
-Related: [[voice]] [[The Lock]] — the hook is the door; the Lock is the room.
+Two sources feed this doc: the "How to Write Vicious Hooks" training (Luke) below, and
+Joey's Genesis "Hook Amplification" training (the Four Moves — Worst Truth, Their
+Moment, The Face, The Itch). **Grading against both lives in [[hook-rubric]]**
+(`rubrics/hook-rubric.md`) — this file is teaching depth, that file is the PASS/FAIL
+scorecard /produce and hook-miner actually run.
+Related: [[voice]] [[The Lock]] [[hook-rubric]] — the hook is the door; the Lock is the room.
 
 ## Vicious ≠ mean. Vicious = it flinches.
 Most people hedge — they start the ad 3 or 4 sentences in, with throat-clearing

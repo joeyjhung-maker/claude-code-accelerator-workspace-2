@@ -1,0 +1,22 @@
+{
+  "source_file": "decoder-runs/flexxable-2026-08-24/raw_ads.json",
+  "page_name": "Dan Wardrope",
+  "total_ads": 75,
+  "proven_ads": 58,
+  "media_type_distribution": {
+    "video": 56,
+    "static": 19
+  },
+  "distinct_destinations": 3,
+  "top_destination": {
+    "destination_url": "https://book.flexxable.com/optin",
+    "destination_domain": "book.flexxable.com",
+    "ad_count": 54,
+    "proven_ads": 37,
+    "max_days_active": 104,
+    "page_score": 163.14,
+    "page_name": "Dan Wardrope"
+  },
+  "images_downloaded": 75,
+  "date_range_first_seen": "2026-03-10"
+}

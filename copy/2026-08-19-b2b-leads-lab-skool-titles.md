@@ -62,4 +62,4 @@ coffee" is the group's own language.
 it is genuinely good though — excited about cold outreach is the counterintuitive bit, and it's the
 exact beat you added to the body.
 
-Related: [[b2b-gifts-project]] [[dan-skool-voice]]
+Related: [[b2b-leads-lab-project]] [[dan-skool-voice]]

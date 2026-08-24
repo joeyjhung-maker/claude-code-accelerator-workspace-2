@@ -73,29 +73,13 @@ When in doubt on a taste call (not a mechanical one), flag it for me rather than
 - **Proof TYPE must match the claim.** A real number attached to the wrong kind of claim still FAILS. A "6-figure commission checks" hook can't be backed by Rob Brown's $341,042 *profit* or Jack's $15,000 *install fee* — it needs a commission number ($222,600 commission, Scott's $27k deal, Katarrey's $4,250). Right numbers, wrong proof type = Joey has to fix it by hand. Match the category, not just the magnitude. (Banked 2026-07-06 — the no-ad-spend WINNER edit.)
 - **Check live dates against the calendar.** Any "Wednesday, Sept 17th"-style date: verify the weekday actually matches the date. Flag mismatches and placeholders (`Xpm`, `EST` in summer = EDT). Numbers must also stay consistent across pieces in the same campaign. (Banked 2026-06-10 — caught a Wed/Thu error on the Hulk Reveal email.)
 
-### Substance gates (from the 37 Rapid-Fire tips, banked 2026-07-10)
-*Three fast pass/fail tests. Run them on the HOOK first, then the lead. A fail here isn't a line to polish — it's a line that says nothing yet.*
+### Hook grading moved to its own rubric (2026-08-24)
 
-- **The Product Swap Test.** Could this hook sell a different product? If a mattress, a coffee, a supplement, and an app could all run your exact line, it's not specific enough — FAIL. "I used to crush mornings, now I'm just surviving them" fits fifty products. Find the angle only THIS product can own. (Lesson 2 / 36.)
-- **The Step-Back Bullshit Detector.** Strip the adjectives and dramatic wrapping, say the bare claim out loud. If the bare idea is a platitude the reader already believes ("you are what you eat," "your body can heal itself," "there's a gene") — FAIL, no matter how good the language sounds. The writing can't rescue an idea that isn't worth writing about. Test: interrupt someone at dinner and say ONLY the bare claim. If they'd say "yeah, I know" or "so what?", it's dead. (Lesson 2.)
-- **One curiosity thread, not three.** One open loop the reader has to close — not three competing ones. Three threads dilute; the reader can't hold them and picks none. Pick the single most magnetic question and starve the rest. (Lesson 7.)
-
-### Hook intensity — too polite is a FAIL (Lesson 1 + 22, banked 2026-07-10)
-*The hook's job is to stop the scroll against the reader's will. Discomfort is the signal you're at the right level — not cleverness, not beauty.*
-
-- **The flinch test.** Read the hook aloud. If it doesn't make you (or a non-marketer) visibly react — wince, laugh, say "damn" — it's too tame. FAIL. Most people write 3–4 levels too polite and dial back way too early. "Your shower water contains chemicals" is flat; "most people's shower water is so toxic it'd kill a goldfish" is the level.
-- **Escalate first, dial back second — never the reverse.** Find the version that makes YOU uncomfortable (life-or-death, social stakes, identity confrontation), THEN decide how far to pull back for compliance. You can't find the ceiling by starting at the floor.
-- **Compliance is a spectrum, not a wall.** Aim for a 7/10 aggression. Write 1–2 points ABOVE the comfort line and let it get pulled back — writing at a 4 when a 5 is fine is killing yourself for nothing. This is a judge-flag, not an auto-cut: flag the risk level, don't neuter on sight.
-- **Third-person the scary claim.** Don't point the knife straight at the reader ("YOUR liver is shutting down"). Let them observe it: "most guys have no idea their liver is 18 months from shutting down." Same fear, no feeling of being attacked, softer compliance profile.
-- **Empathy, not accusation, on the tender stuff.** She FEELS like a burden — she doesn't say she IS one. The small shift turns an attack into empathy. (The softener move.)
-
-**Vicious-hook checklist — grade every hook against the 8 principles ([[hooks]]).** Full craft in `brand/hooks.md`; these are the pass/fail gates:
-- **Relevance in the first line.** Something relevant to the reader in the first 10–20 words (pain/condition call-out, belief call-out, or general intrigue). If line 1 is throat-clearing, FAIL.
-- **Protect the charged word.** The detonating word IS the hook — "sexless" not "unfulfilling," "killing" not "hurting," "panties" not "pajamas." If a softer/clinical synonym crept in, FAIL and restore the charged word.
-- **Caveman / Germanic language.** Short, blunt, five-year-old-simple. Fabrics→cloth, excessive→too much, insomnia→sleeplessness, perspire→sweat. Latinate/clinical word where a Germanic one exists = FAIL.
-- **Consequence before mechanism.** Lead with the wound, not the scalpel. A hook that opens on HOW it works ("silver releases ions…", "this spikes cortisol") before WHY they should care = FAIL — flip it, mechanism is body copy.
-- **Reads like information, not an ad.** Story, news, confession, or promised insight — the payoff is catharsis/intrigue/insight, never a pitch. If it reads like an ad, dead on arrival.
-- **Push to the edge of reality.** Comfortable and plausible = not on the edge. The best hooks make the reader think "there's no way…" and then need to find out. (Banked 2026-07-10, Lesson: vicious hooks.)
+**Hooks are graded by [[hook-rubric]] (`rubrics/hook-rubric.md`), not here.** It carries
+the substance gates, the flinch test / hook-intensity gates, the 8 vicious-hook
+principles, AND the newer Four Moves framework (Worst Truth / Their Moment / The Face /
+The Itch) from Joey's Genesis Hook Amplification training. Run it on every hook before
+this file's rules ever see them — this file grades body copy and headlines only.
 
 ---
 
@@ -175,7 +159,7 @@ When in doubt on a taste call (not a mechanical one), flag it for me rather than
 
 ## DAN — SKOOL COMMUNITY POSTS (added 2026-08-19)
 
-*Built by diffing my draft against Joey's rewrite of the B2B Gifts sales-call post. This is a
+*Built by diffing my draft against Joey's rewrite of the B2B Leads Lab sales-call post. This is a
 DIFFERENT register from ad copy. Dan in his own room is looser, warmer and more spoken than Dan in
 a Meta ad. Grade Skool posts against this section, not the ad rules above, wherever the two clash.*
 
@@ -239,7 +223,7 @@ a Meta ad. Grade Skool posts against this section, not the ad rules above, where
 - **Widen the market at the end, never at the top.** The post earns attention on one concrete story
   (adventure parks), then the P.S. tells everyone else it applies to them too.
 
-Related: [[dan-truth-constraint]] [[naps-nurture-and-picks]] [[b2b-gifts-project]]
+Related: [[dan-truth-constraint]] [[naps-nurture-and-picks]] [[b2b-leads-lab-project]]
 
 ### Dan Skool posts — round 2 corrections (2026-08-19, same post)
 
@@ -296,3 +280,121 @@ Related: [[dan-truth-constraint]] [[naps-nurture-and-picks]] [[b2b-gifts-project
   becoming a tic. Joey converted "It all started by sending lumpy mail…" to a full stop. **The ladder
   is for beats that genuinely trail INTO the next one. A line that completes its own thought takes a
   full stop.** Check every "…" is doing continuation work, not decoration.
+
+### Dan Skool posts — philosophy/stance posts (2026-08-20, "ANTI-AI direct mail" post)
+
+*First time Dan posted pure stance with no product pitch attached. My brief told mariobot (and
+myself as judge) to skip the headline and the CTA, on the theory — borrowed from Travis Sago's
+Hopper Millions framework — that philosophy posts don't need an ask. Joey rejected that premise on
+the actual post. Diffing his rewrite against mariobot's draft below.*
+
+- **A philosophy/stance post still gets a headline and a closing hand-raiser — "philosophy posts
+  don't need a CTA" does NOT override Dan's house pattern.** My brief explicitly said no headline,
+  no CTA — Joey added both. Headline: "The ANTI-AI way to land high profile clients is working
+  better than anything else…". Close: "Anyway that's what we're going all in on and why this group
+  exists - so we can crush this together, land WHALE clients and set off into the sunset with our
+  millions / You in??" **Standing correction: every Dan Skool post gets a hook headline and a direct
+  engagement question at the close, even one whose main job is stance, not pitch.** Treat the
+  Travis-style "no ask needed" idea as a theory to weigh, never a default to apply here without
+  checking first.
+- **Currency: B2B Leads Lab Skool copy runs in $ (USD), even when the source material is in £ (GBP).**
+  Dan's own training deck (the source facts for this post) quotes everything in £ — his real UK
+  costs. My draft inherited "£10M+ company" straight from the deck. Joey corrected it to "$10M+"
+  to match the About page's established currency. Always convert £ source-deck numbers to $ before
+  they reach a Skool post.
+- **Give a repeated group of items a named identity instead of a bare list.** "Cold email, LinkedIn,
+  FB DMs" became "Across the 'Big 4' channels… / Email, LinkedIn, FB, IG." — a fourth channel added
+  AND the group given a handle. Mirrors "Dream 100" already established on the About page. Bank as a
+  general technique: when a list of things gets referenced more than once, name the group.
+- **Deck/training-material proof numbers go stale fast — confirm the CURRENT live number with Joey
+  before it ships, don't treat the source deck as final.** My brief's numbers (22 sent / 8 replied /
+  1 closed) came from Dan's June 2026 class deck. By the time this post shipped (Aug 2026) the real
+  campaign had moved to 70 sent / 20 coffee dates / 5 closed / ~10 more in the pipeline. Using the
+  only numbers I had wasn't wrong — the fix is upstream: flag deck-sourced proof as time-stamped and
+  check it's still current before it goes in a live post.
+- **State proof as a conservative floor, then let one payoff word carry the boast.** Joey added
+  "Even if we end up with 10 clients off of 70 outreach messages… that hit rate is BONKERS" — framing
+  the claim as a worst case keeps it credible, and the CAPS payoff word does the actual bragging
+  instead of the number alone. Refines the existing calibrated-hedges rule: the hedge can live in the
+  FRAME of the claim ("even if…"), not just in word choice.
+- **Reframe obligation into desire.** "they basically HAVE to deal with it" → "they are COMPELLED to
+  open it (who doesn't like receiving packages)". "Have to deal with" reads as a burden on the
+  prospect; "compelled to open" reads as an itch they can't resist — same mechanism, opposite
+  emotional charge. The parenthetical also stacks the WHY in the same breath, per the existing
+  benefit-needs-its-WHY rule.
+- **Prefer a known idiom over an original extended metaphor when it lands the same point faster.** I
+  built an "empty motorway / traffic on the same three roads" metaphor across two clauses. Joey cut
+  it for "ZIGGING when everyone's ZAGGING. / Direct mail is the way." — a recognizable idiom in one
+  line, CAPS on the mechanism-words, then a flat declarative. Don't reach for an original metaphor
+  when a punchy idiom says the same thing in less space.
+- **A witty short parenthetical beats a hedge-explainer tail.** "or anything that dramatic"
+  (explaining the hedge) → "(not yet anyway)" (an aside that implies a prediction instead). When
+  softening a claim, prefer a punchy aside over an explanatory tail-clause.
+- **"Protect the charged word" applies to Dan's Skool voice, not just ad hooks.** "already automating"
+  → "spamming" — sharper, more judgmental word for the same idea. The ad-rubric's charged-word
+  principle generalises to Skool posts.
+- **Compress an over-built logic chain into one reactive exclamation when the reader already gets
+  it.** My draft spent three lines diagnosing why the channel is full and what it costs ("The channel
+  isn't broken… it's just FULL" + a line on rising cost-per-standout). Joey cut all three for: "We
+  need to stand out!" Don't over-explain economic logic the reader will infer unprompted — the
+  shorter reactive line can do more work than the full chain.
+- **Single "!" is fine for a reactive mid-post beat — doubling is reserved for wherever the post's
+  actual climax lands, not every exclamation.** Refines the earlier "one '!' is flat for him" note,
+  which was drawn from post-ending punchlines specifically. Here "We need to stand out!" runs a
+  single "!" mid-post, while the closing "You in??" (a doubled question mark, not "!!") carries the
+  real climax. Track punctuation intensity to where the peak of THIS post actually is.
+- **Use the literal current calendar position when it's more specific than a vague forward-looking
+  phrase.** "going into 2026" → "half way thru 2026" — more specific, and literally true for a post
+  shipping in August. Prefer the dated phrase over the generic one when it's available.
+
+Flagged, not banked as a rule — Joey's own line, his call: "When things are EASY… EVERYONE's does it"
+reads grammatically loose ("EVERYONE's does it"). Could be intentional spoken looseness or a fast-draft
+typo — not touching it, just noting it in case it wasn't deliberate.
+
+### Dan Skool posts — member-submission teardown posts (2026-08-20, Craig McKay whiskey-letter teardown)
+
+*First Dan Skool post built around critiquing a real member's real submission, using Dan's actual
+line-by-line feedback (given live in the group) as the teaching content. Diffing mariobot's draft
+against two rounds of Joey correction below — the first asked to soften one line, the second was a
+structural instruction ("don't repeatedly poke at Craig"), the third was Joey's own full rewrite.*
+
+- **When the subject of a teardown is a real, named person, don't let each teaching point read as a
+  fresh callout of them.** mariobot's draft opened every one of the 6 points with "Craig claimed…",
+  "He wrote…", "Craig dropped…" — accurate to the source material, but it re-exposes the same person
+  six times in one post. Joey's instruction: *"I feel like repeatedly poking at craig might make him
+  feel bad. Just teach the points."* Fix: name the real person ONCE at the open (why this post
+  exists) and ONCE at the close (credit for posting publicly) — teach the six points as patterns
+  ("A lot of letters drop this ask too early…") rather than re-tagging him per point. The concrete
+  example lines can stay (show, don't summarize still applies) — only the repeated personal
+  attribution needs to go. **New standing rule: a member-submission teardown gets the person's name
+  at most twice — open and close — never once per lesson.**
+- **Soften violence/finality metaphors when critiquing real work, even lightly.** "landmines that
+  would've blown the deal" → Joey's ask, then landed on "leaks that would've cost him replies." Same
+  stakes (this letter had real problems), lower drama. A teardown post still needs real tension to be
+  worth reading — the fix is dialing the METAPHOR down, not the substance.
+- **Validate before you correct, on each point, not just once at the top.** mariobot's points opened
+  straight on the fix ("Craig claimed X with nothing supporting it"). Joey's rewrite of point 1 added
+  a beat first: *"If you state specific numbers like '12+ lost service calls a month'… This is good,
+  but it needs to be grounded in evidence."* Naming what's RIGHT about the instinct before naming the
+  gap reads as coaching, not correcting. Apply this per-point in a teardown, not just as one
+  disclaimer at the top of the post.
+- **Turn a "don't do X" instruction into the full alternative sequence, not just "move it."**
+  mariobot's point 3 fix was "move it to the end or cut it." Joey expanded it into an actual formula:
+  *"hit them with problems, what its costing them, the solution, how you solve it, a case study if
+  you can, and then ask for a call at the end."* A teaching post should hand over the replacement
+  structure, not just flag where the old one broke.
+- **After a public teardown, don't immediately ask everyone else to expose their own draft for the
+  same treatment.** mariobot's close was "drop your letter draft in the comments, I'll give it the
+  same treatment" + "which of these six mistakes is hiding in yours?" — a reasonable handraiser in
+  isolation, but stacked right after watching someone else get picked apart, it raises the stakes at
+  exactly the moment trust needs rebuilding. Joey's P.S. instead: *"Have you picked your niche yet and
+  started writing your letter?"* — a lower-commitment, earlier-funnel question. **When the post itself
+  just publicly critiqued someone, close on an onboarding-level ask, not a "submit yourself for the
+  same treatment" ask.**
+- **A count mentioned in the setup ("six fixes") must match the actual number of points that ship.**
+  Joey's rewrite cut what had been point 5 (the "prove you're different" case-study point) but the
+  setup line still said "share the six fixes publicly" over what's now 5 numbered points. Whenever a
+  post promises a count up front, recount after any edit that adds or removes a point — this is an
+  easy miss precisely because it's not wrong on the line you're editing.
+
+Related: [[2026-08-19-b2b-leads-lab-skool-post-sales-call-clip]] [[2026-08-20-b2b-leads-lab-skool-post-anti-ai-direct-mail]]

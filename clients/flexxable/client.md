@@ -20,6 +20,6 @@ Target audience: people in jobs they want to escape, and existing agency owners 
 - Only results that are documented and approved. If it is not here, do not claim it.
 
 ## Projects
-- **B2B Gifts** — `b2b-gifts/project.md`. Dan's Skool community for landing 8/9/10-figure meetings with "AI Enriched" Lumpy Mail. Free now, paid tier end of Oct. My lane: fill the free group Sep/Oct, plus shorts/longs.
+- **B2B Leads Lab** — `b2b-leads-lab/project.md`. Dan's Skool community for landing 8/9/10-figure meetings with "AI Enriched" Lumpy Mail. Free now, paid tier end of Oct. My lane: fill the free group Sep/Oct, plus shorts/longs.
 
 Related: [[Flexxable]] [[Winners]]

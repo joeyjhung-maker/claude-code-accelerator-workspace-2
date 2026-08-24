@@ -1,4 +1,4 @@
-# B2B Gifts About-page infographic — ChatGPT image-gen prompt
+# B2B Leads Lab About-page infographic — ChatGPT image-gen prompt
 
 Paste the block below into ChatGPT (image gen). Built from the same real facts as [The Whale File](../../../.) draft — no invented stats.
 

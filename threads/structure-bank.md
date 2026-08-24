@@ -312,6 +312,32 @@ work — praying is not one of those. See [[2026-08-17-stop-needing-confirmation
 
 ---
 
+## 19. The Cleared Suspect
+**Origin: @sun.yi (general self-improvement) · Swiped 2026-08-21 · 15 drafted, none posted yet**
+
+**Skeleton**
+> [Obvious thing the reader assumes is the real failure] is not [the category]. But [the subtle,
+> easy-to-miss thing] is.
+
+**Mechanism**
+Names the culprit the reader already suspects, then acquits it — which buys trust because it feels
+fair rather than accusatory. The real charge lands on the second clause, which is quieter and
+therefore harder to see coming. Two lines only; the whole post is the twist, so any extra words
+before or after dilute it. The elided final "is" (referring back to the category named in line 1)
+is what makes it read as a single thought instead of two separate claims.
+
+**Source swipe** — "Stupidity is not a sin. / But ignorance is." — 1.8K likes, 248 reposts, 26
+replies on the original.
+
+**For Joey** · Fifteen drafted from the wiki in one pass (repentance, essence, wounds, thankfulness,
+authority, Joseph's bitterness, mastery, times and seasons, glory, hearing God's voice,
+consecration, dabar, appetite, rank and order, guarding the mind) — see chat 2026-08-21. Untested
+on the account; the source account's 1.8K/248 suggests this shape travels. Watch reply count
+specifically — the "which one is it, then" framing tends to bait a defence of the "obvious" thing
+in the replies.
+
+---
+
 ## Corpus health — read this before trusting the above
 
 **The corpus is noisy.** Of 203 posts, a meaningful share is unusable:

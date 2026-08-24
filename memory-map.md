@@ -16,6 +16,10 @@ This is not a task list. It is the small map that helps Claude and you find the 
 
 Separate line of work from core Flexxable copy. Map lives at [[JV Partnerships Map]] (`jv/JV-map.md`), with its own partner folders under `jv/partners/`. Same rules as everywhere else.
 
+## Mentors
+
+External frameworks worth leveraging in strategy, kept separate from client work so they don't get buried in one folder. [[travis-sago]] (`mentors/travis-sago/`) — Dan's mentor, material spans JV, B2B Leads Lab, and ROYA. [[alex-hormozi]] (`mentors/alex-hormozi/`) — book ingestion, not a personal mentor; all three $100M books now fully ingested: *$100M Offers* (value equation, Grand Slam Offer build), *$100M Leads* (Core Four / lead-getter vocabulary), *$100M Money Models* (Attraction/Upsell/Downsell/Continuity offer sequencing). Read a mentor's `synthesis.md` when planning, not their raw transcripts.
+
 ## Threads (personal)
 
 Joey's own account, not client work. Home is [[threads-README]] (`threads/`). Own voice file ([[threads-voice]]), own structure bank ([[structure-bank]]), own testimony bank ([[testimony-bank]]). **Different rules from the Flexxable lane — do not carry Dan's voice in.**
