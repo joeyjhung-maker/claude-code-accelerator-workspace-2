@@ -48,12 +48,18 @@ bots via the stateless prime→instruct protocol (`scripts/run_*.py`):
      mandatory double-pass). Grade all 20 against **`rubrics/hook-rubric.md`**
      (the Four Moves, the Loop/Ineffective gates, the flinch test, the 8
      vicious-hook principles) before presenting them — a too-polite or
-     fully-disclosed hook is a FAIL, not a safe default. Present **all 20** in
-     one flat list regardless of grade. Joey picks one or steers. **Never pick
-     the hook for him.** If the whole set reads tame or naff, say so and push
-     for a hotter pass — or run it through the rubric's Four Moves yourself —
-     rather than presenting 20 timid ones. The hook is 80% of the ad — spend
-     the time here.
+     fully-disclosed hook is a FAIL, not a safe default. **Then run Gate 9**:
+     tag each hook's dominant vehicle (Curiosity/Call-Out/Authority/Proof/
+     Emotion/Contrarian/Urgency) and check the spread across the batch — fewer
+     than 4 vehicles represented, or any one vehicle over 50%, is a batch-level
+     FAIL even if every individual hook passed. On a Gate 9 fail, run a second
+     targeted pass naming the missing/thin vehicles specifically, don't blindly
+     regenerate 20 more. Present **all 20** (or the combined set after a
+     targeted pass) in one flat list regardless of grade. Joey picks one or
+     steers. **Never pick the hook for him.** If the whole set reads tame or
+     naff, say so and push for a hotter pass — or run it through the rubric's
+     Four Moves yourself — rather than presenting 20 timid ones. The hook is
+     80% of the ad — spend the time here.
   2. **Body** — `scripts/run_mario.py` (`mariobot`) from the chosen hook. It
      prepends the style contract automatically.
   3. **Headlines** — mariobot writes them in the SAME conversation as a
@@ -129,4 +135,4 @@ we learned?"
 - **Save now, promote later.** The lesson goes to winners/losers/brand via
   /reflect, not here.
 
-Related: [[always-use-mariobot-to-write]] [[run-judge-before-showing-copy]] [[flexxable-output-format]] [[judge-provenance-rule]] [[hook-rubric]]
+Related: [[always-use-mariobot-to-write]] [[run-judge-before-showing-copy]] [[flexxable-output-format]] [[judge-provenance-rule]] [[hook-rubric]] [[creative-coverage]]

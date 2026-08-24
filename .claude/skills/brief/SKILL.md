@@ -22,6 +22,18 @@ him pick. Never pick for him. He can steer ("T3 but aim it at 9-5 escapees
 instead").
 
 ### 2. SPECIFY — lock the DNA per seed
+
+**The sequence is CONCEPT → ANGLE → HOOK, in that order, every time (banked
+2026-08-24).** A seed arrives with a hook already attached, which tempts you to
+reverse-engineer Concept and Angle to justify it after the fact — don't. Lock the
+Concept first (what this ad is actually about, named from the proven library, not
+invented), then the Angle (the named psychological door delivering it), and only
+THEN treat the hook — whether it's the seed's own or one hook-bot writes in /produce
+— as the thing that has to embody the Concept+Angle you already locked. If the
+seed's hook doesn't cleanly fit any proven Concept type, that's a signal: either
+you've found a genuinely new concept type (name it, flag it as a candidate to add),
+or the seed is a hook with no real concept under it yet — don't brief it as-is.
+
 For each picked seed, propose the full DNA **pre-filled** from the seed's
 tags and the client file, then he confirms or edits. One block per ad:
 
@@ -34,10 +46,42 @@ tags and the client file, then he confirms or edits. One block per ad:
   someone gets it") or CHALLENGES ("that's wrong"). Carried from the seed's R-door
   tag; if it's blank, you don't have an unaware ad yet — you have a hook floating
   in space.
-- **Concept** — the flat fact underneath (no spin, no villain, no "you").
-- **Angle** — the door in (fear, contrarian, discovery, remove-the-blame…).
-  Concept and Angle are named SEPARATELY — if you can't state the concept
-  flat, you don't have one yet.
+- **Concept** — the flat fact underneath (no spin, no villain, no "you") AND a
+  named concept TYPE from [[creative-coverage]]'s Concepts-by-Awareness-Level
+  library, matched to this brief's Awareness field — these are Luke's proven,
+  highest-hit-rate concept shapes per level, not a menu to browse past:
+  - Unaware → Hidden Villain, Impossible Question, Body Check, Demonstration,
+    Quick Quiz, Warning List, Strange Fact, Unusual Method, Expert Contradiction,
+    Pattern Recognition, Secret Shortcut, Magic Phrase.
+  - Problem-Aware → The Real Cause (test first — highest-hit concept at this
+    level), Why Nothing Else Worked, Flipped Cause, The Metaphor, Authority
+    Confirmation, Demonstration Through Story, Compounding Damage, Suppressed
+    Truth, Bold Statement, Origin Story, Hidden Bottleneck, Domino Chain.
+  - Solution-Aware → Full Mechanism Explanation, Fastest Simplest Path,
+    Side-by-Side, Discovery Journey, Proof Through Testing, Specific
+    Transformation, Evidence Stack, Transformation Timeline, The One Thing
+    Nobody Else Does, Outsider Who Cracked It, Credibility Stack, The "What If"
+    Reframe.
+  - Product-Aware → Barrier Destroyer, Person Just Like Me, Transformation
+    Proof, Objection Crusher, Safety Net, Founder's Story, Value Inventory,
+    Segment Match, The Numbers, Permission Slip, Cost of Waiting.
+  - Most-Aware → Real Deadline, Real Limit, Price Reframe, Bonus Pile, Regret
+    Prevention, Guarantee Spotlight, Momentum, Daily Cost of Doing Nothing, Last
+    Objection, Special Deal.
+  Name the type explicitly in the brief (e.g. "Concept type: Hidden Villain").
+  Stay inside the matched awareness level's list first; only reach outside it
+  (or invent a new type) when nothing there fits, and say so when you do.
+- **Angle** — the door in, named from a controlled vocabulary, not improvised
+  each time. Pull from [[creative-coverage]]'s 24 named angles (Paradox,
+  Forgotten Answer, Conspiracy, Warning Sign, Everyday Threat, Story, Big Win,
+  Deep Fear, Simple Call-Out, Sacred Cow, Credentialed Expert, Hidden Truth,
+  Myth Buster, Outsider Expert, Head-to-Head, Experiment, Confession,
+  Permission, Personalization, Dare, Countdown, Movement, Underdog, Reluctant
+  Endorsement, Vindication) or [[concepts-and-angles]]'s taxonomy — state the
+  NAME, not a vibe ("Myth Buster," not "kind of contrarian-ish"). If nothing on
+  either list fits, name the new angle and flag it as a candidate to add to one
+  of the lists. Concept and Angle are named SEPARATELY — if you can't state the
+  concept flat, you don't have one yet.
 - **Mechanism** — client default unless the seed says otherwise (Flexxable:
   AI + SMS revives the business's dead leads; performance-based, 30-50% of
   profits).
@@ -121,7 +165,14 @@ which brief first?" Do not start writing.
 
 ## Rules that bite here
 - Never pick the seed, the hook, or the angle FOR him. Propose, he decides.
+- **Concept before Angle before Hook, always in that order.** Don't reverse-engineer
+  the Concept from a seed's existing hook — lock what the ad is actually about
+  first, from the awareness-matched library, then pick the Angle that delivers it.
 - Concept stated flat or it isn't a concept. Angle named or it's not locked.
+- **Both Concept and Angle carry a NAME from a controlled list, not a description.**
+  "Hidden Villain" + "Myth Buster," not "kind of a reveal thing with an edge to it."
+  A brief with unnamed Concept/Angle fields isn't locked yet, even if the seed's
+  hook is great.
 - Push hard for The Image. "Can you draw it on a whiteboard? Can a 10-year-old
   picture it?" If no, push the mechanism — a half-baked, un-picturable mechanism
   is the #1 killer of otherwise good copy. But like the Lock, it's an aim: if
@@ -131,3 +182,5 @@ which brief first?" Do not start writing.
 - Defaults are allowed everywhere — but say what default you applied.
 - The plan yields to a great idea, never the reverse.
 - No copy. Not even a "sample line to show the direction."
+
+Related: [[creative-coverage]] [[concepts-and-angles]] [[hook-rubric]] [[The Lock]] [[dan-truth-constraint]]

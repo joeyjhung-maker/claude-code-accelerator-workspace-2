@@ -56,7 +56,11 @@ passes; the first pass is always the boring one.
     and fears on the table, then aim: VALIDATE their worldview (nodding, "finally
     someone gets it") or CHALLENGE it (heated, "that's wrong") — both drive
     engagement, flat neither. For unaware seeds, tag the belief the seed is
-    validating or challenging so /brief can lock it.
+    validating or challenging so /brief can lock it. `brand/concepts-and-angles.md`'s
+    Avatar Facts (self-concept beliefs, pain matrix, core wound) and Psychology
+    Toolkit (the 7 critical beliefs) sections are the structured version of this
+    step when nothing's pasted yet — use them to shape WHICH beliefs to go dig
+    for, not to invent beliefs wholesale.
   - **Go deep on the trigger words.** Pull `clients/{name}/trigger-words.md`
     (the words that keep earning engagement — /account-read fills the
     conversion side, the Monday competitor sweep fills the spend side; a word
@@ -110,6 +114,28 @@ and 30 angles.
 
 Run a working mechanism through 4–5 families in one pass; that's 4–5 seeds,
 each tagged with its family, none of them a new mechanism.
+
+### The fact-pantry move — one FACT, many angles
+A second multiplication engine, parallel to the saffron move. Where saffron milks a
+proven MECHANISM across angle families, this one milks a single AVATAR/MARKET/PRODUCT
+FACT across the full angle taxonomy in `brand/concepts-and-angles.md` — the fact-
+collection + angles system (Avatar Facts, Market Facts, Product Facts, Psychology
+Toolkit, and a large Angles Taxonomy with worked examples like Conspiracy, Geographic,
+Accidental Discovery, Countdown, Enemy Admission).
+
+Use it when the R or M doors need fresh raw material and nothing's been pasted yet:
+1. Pick ONE already-established fact for this client — a pain/desire outcome from
+   strategy-map.md, a belief from a research pull, a core-wound read if one exists.
+   Never invent a fact that isn't already grounded in something the client said or
+   something pasted from the market.
+2. Run that ONE fact through 4–5 angle types from the taxonomy (pick types that fit
+   the fact, don't force all of them).
+3. Tag each resulting seed `[family: <angle-type-name>]`, same convention as saffron
+   families, so /brief can see which angle did the work.
+
+This is a technique, not a 9th door — it feeds seeds into whichever door you're
+already walking (usually R for belief-mapping, M for gap-filling), never invents
+market language on its own.
 
 ### 3. Save the seeds
 Every seed, no matter the door, lands in

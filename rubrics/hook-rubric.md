@@ -11,7 +11,7 @@ principles" (Luke's training, previously embedded in copy-rubric.md) and Joey's 
 lives in [[hooks]] (`brand/hooks.md`) — this file is the compressed PASS/FAIL scorecard.
 
 Scope: hooks only (the first line/first ~20 words of any ad — text, video, or static).
-Related: [[hooks]] [[Promotion]] [[winners]] [[losers]]
+Related: [[hooks]] [[creative-coverage]] [[Promotion]] [[winners]] [[losers]]
 
 ---
 
@@ -233,6 +233,45 @@ whatever structure fits the product.
 
 ---
 
+## GATE 9 — Vehicle variety across the batch (grade the SET, not one hook at a time)
+
+*Added 2026-08-24 from Joey's Creative Coverage doc. Every other gate in this rubric
+grades ONE hook. This one grades the whole 20-hook batch at once — a batch can pass
+every other gate hook-by-hook and still fail here if it's twenty versions of the same
+move.*
+
+**The 7 vehicles** (full worked examples in [[creative-coverage]]):
+- **Curiosity** — withholds, promises a reveal ("Why do smokers in Japan outlive...")
+- **Call-Out** — names the reader/their exact situation directly ("If you wake up at
+  3am every night...")
+- **Authority** — a credentialed source carries the claim ("Harvard cardiologist
+  says...")
+- **Proof** — a result, a test, a before/after ("I tested 12 diets for 30 days...")
+- **Emotion** — a felt moment, a confession ("I wish someone had told me...")
+- **Contrarian** — attacks a trusted thing or belief ("Stop taking probiotics...")
+- **Urgency** — a clock or a limit ("This deal is gone Friday at midnight")
+
+**How to grade:** tag each of the 20 hooks with its lead vehicle (one hook can lean
+on more than one, but pick the dominant one for this tally). Then check the spread.
+
+**FAIL the batch** (not any single hook) if:
+- Fewer than 4 of the 7 vehicles are represented across the 20.
+- Any single vehicle is more than 50% of the batch.
+- The Gate 3 Four Moves mostly repeat between hooks even where vehicle labels
+  differ — the same Worst Truth reworded ten times isn't variety.
+
+**On a FAIL, don't silently re-roll the whole batch.** Tell Joey which vehicles are
+missing or thin, and run a second, targeted pass aimed specifically at the gap
+("write 5 more — Authority and Urgency vehicles, nothing else") rather than
+regenerating 20 fresh hooks and hoping the spread improves by chance.
+
+**Workflow this locks in:** `ad-hook-bot-1` drafts the first pass as usual → tag
+vehicles → grade Gates 1-9 → if variety is thin, targeted second pass on the missing
+vehicles → present the combined, varied set. This is the standing hook workflow going
+forward, not a one-off check.
+
+---
+
 ## THE LIVING LOG — banked, dated, permanent
 
 *Same discipline as copy-rubric.md: every entry is the raw reaction, then the rule it
@@ -242,6 +281,7 @@ hardened into.*
 |---|---|---|
 | 2026-08-24 | Joey called a 5-hook batch "still a bit naff" and supplied the sunscreen-batch templates from his Genesis Hook Amplification doc | Built this rubric's Gates 1-5 from that doc. Default to running weak hooks through the Four Moves before presenting a second draft, rather than doing a generic polish pass. |
 | 2026-08-24 | Amplified hooks using the sunscreen batch's structure (trust token + crime verb + a same-day clock) produced a dramatically stronger set than a verbal-only amplification pass | The trust-token pattern (something the market is TOLD is good, revealed as secretly the crime) is a reusable vehicle — for Flexxable, "the retainer" played sunscreen's role. Look for the category's own trust-token before defaulting to a generic villain. |
+| 2026-08-24 | Joey: "we want a variety of different hooks so we dont just test 3 of the same type" | Added Gate 9 — grade the 20-hook BATCH for vehicle spread (Curiosity/Call-Out/Authority/Proof/Emotion/Contrarian/Urgency), not just each hook individually. A batch can pass every per-hook gate and still be one move repeated 20 times. |
 
 <!-- Next time a hook makes me wince (or a batch gets called naff), add a row:
 | YYYY-MM-DD | "the thing I said once" | the permanent rule |

@@ -9,7 +9,8 @@ Joey's Genesis "Hook Amplification" training (the Four Moves — Worst Truth, Th
 Moment, The Face, The Itch). **Grading against both lives in [[hook-rubric]]**
 (`rubrics/hook-rubric.md`) — this file is teaching depth, that file is the PASS/FAIL
 scorecard /produce and hook-miner actually run.
-Related: [[voice]] [[The Lock]] [[hook-rubric]] — the hook is the door; the Lock is the room.
+Related: [[voice]] [[The Lock]] [[hook-rubric]] [[concepts-and-angles]] — the hook is the
+door, [[concepts-and-angles]] is the fact-pantry the hook pulls from, the Lock is the room.
 
 ## Vicious ≠ mean. Vicious = it flinches.
 Most people hedge — they start the ad 3 or 4 sentences in, with throat-clearing
