@@ -228,6 +228,14 @@ and 18). Route new ads here unless there's a specific reason not to.
    mechanism-led hooks) still holds — this audit sharpens WHO to point them at, not
    whether they're needed.
 
+**Segment Surgeon Bot cross-check (2026-08-24):** ran `segment-surgeon-bot` on the 4
+data-driven segments above — full desire/constraint/awareness%/demographic briefs in
+[[2026-08-24-segment-surgeon]] (`clients/flexxable/segment-surgeon-2026-08-24.md`).
+Independently estimates the burnt-out agency owner's underlying MARKET (not just this
+account's ad coverage) skews ~45% Product-Aware / 40% Solution-Aware / ~0% Unaware —
+reinforcing gap #2 above (Product-Aware closer) as likely the single highest-leverage
+next move for that specific segment, on top of gap #1's cold-open work.
+
 ---
 
 Related: [[Flexxable]] [[Strategy Map]]
