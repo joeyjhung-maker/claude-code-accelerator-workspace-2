@@ -20,6 +20,15 @@ Separate line of work from core Flexxable copy. Map lives at [[JV Partnerships M
 
 External frameworks worth leveraging in strategy, kept separate from client work so they don't get buried in one folder. [[travis-sago]] (`mentors/travis-sago/`) — Dan's mentor, material spans JV, B2B Leads Lab, and ROYA. [[alex-hormozi]] (`mentors/alex-hormozi/`) — book ingestion, not a personal mentor; all three $100M books now fully ingested: *$100M Offers* (value equation, Grand Slam Offer build), *$100M Leads* (Core Four / lead-getter vocabulary), *$100M Money Models* (Attraction/Upsell/Downsell/Continuity offer sequencing). Read a mentor's `synthesis.md` when planning, not their raw transcripts.
 
+## Heuromi Media (Joey's own agency)
+
+Joey's own business, not client work — same status as Threads below. Home is
+[[heuromi-media/agency.md]]. Current: ~$10k/mo (Flexxable + commissions), now also owns all
+creative strategy for the IAA book. Goal: $20k/mo via one more client, then a business
+acquisition next year. **Different rules from the Flexxable lane** — this is Joey's own P&L, not
+billable client work, even though the frameworks used to plan it (pricing, positioning,
+client-acquisition) are the same agency-shaped ones covered elsewhere.
+
 ## Threads (personal)
 
 Joey's own account, not client work. Home is [[threads-README]] (`threads/`). Own voice file ([[threads-voice]]), own structure bank ([[structure-bank]]), own testimony bank ([[testimony-bank]]). **Different rules from the Flexxable lane — do not carry Dan's voice in.**

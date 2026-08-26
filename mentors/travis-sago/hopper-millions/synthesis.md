@@ -15,7 +15,7 @@ Related: [[travis-sago]] [[b2b-leads-lab-project]] [[The Lock]]
 - **Crock pot hopper** — the always-on, slow-simmer group (an existing owned audience). Cold prospects self-warm just by scrolling old posts before you ever talk to them.
 - **Microwave hopper** — a tighter, hotter, purpose-built spin-off group for one specific offer, split off once that offer is proven in the crock pot.
 - **CDDC (Clearly Different Desirable Concept)** — your positioning must be visibly different from what the prospect is already doing, explainable in seconds, not five minutes.
-- **T1 / T2 / T3** — the tap sequence. T1 = public hook/awareness post. T2 = qualifying conversation. T3 = the actual offer/pitch. Write the T3 first — it forces clarity and exposes what proof is missing.
+- **T1 / T2 / T3** — the tap sequence. T1 = public hook/awareness post. T2 = qualifying conversation. T3 = the actual offer/pitch. Write the T3 first — it forces clarity and exposes what proof is missing. Real example: [[t3-phoneless-sales-machine-fb-msgr]] (`swipes/t3-phoneless-sales-machine-fb-msgr.md`).
 - **CAP (Cause, Action, Payoff)** — the copy structure for individual posts: state the situation/threat or promise, tell them what to do, describe the outcome. Nests recursively.
 - **The 5 Ps** — Problem, Personality, Philosophy, Plan, Price. Pre-sell all five before pitching the product and conversion can hit 90%+; skip straight from Problem to Product and you're stuck near 10%.
 - **ACO (Access, Control, Ownership)** — the leverage ladder for someone else's audience: guest into it (access) → spin off your own group from it (control) → it's fully yours (ownership).
@@ -42,7 +42,7 @@ Then pre-sell the 5 Ps, in roughly this order of leverage: Plan first (biggest l
 
 ## Running the group
 
-Write the T3 (the actual offer post) before any T1s — it's a forcing function that reveals what proof or benefit you're missing before you post anything live. A strong invite post: identity-based hook → pre-handle the obvious objection → a single reframing insight backed by credible proof → benefit stacking → a low-friction CTA ("type X below").
+Write the T3 (the actual offer post) before any T1s — it's a forcing function that reveals what proof or benefit you're missing before you post anything live. A strong invite post: identity-based hook → pre-handle the obvious objection → a single reframing insight backed by credible proof → benefit stacking → a low-friction CTA ("type X below"). See [[t3-phoneless-sales-machine-fb-msgr]] for a real specimen and its skeleton broken down.
 
 Cycle post types rather than repeating one: what's-different-now (contrast), proof (before/after, name the assumption that got busted), what's-really-stopping-them (reframe the obstacle as a symptom — throw rocks at generic villains, never the customer), why-now (real cost of waiting, not manufactured urgency), how-it-works (sixth-grade simple).
 

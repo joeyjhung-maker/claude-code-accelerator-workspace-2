@@ -7,6 +7,8 @@ Related: [[travis-sago]] [[b2b-leads-lab-project]] [[Promotion]]
 ## Status
 **Digested 2026-08-20.** All 15 available modules (of 19 listed) processed: raw per-module extraction in `digests/`, curated strategic version — including where it matches, extends, or conflicts with the current B2B Leads Lab plan — in `synthesis.md`. Read `synthesis.md` first; drop into `digests/` only when you need the full detail behind a bullet. Modules 3, 4, 14, 17 are still missing (see below) — not blocking, but worth tracking down if they turn out to matter.
 
+**`swipes/`** — real specimens of Travis's framework in action (not course transcripts — actual sent copy), each with a structure/why-it-worked/what-to-steal breakdown. Started 2026-08-25 with the first real T3 example ([[t3-phoneless-sales-machine-fb-msgr]]).
+
 ## Module list (as seen on the platform, not yet transcribed)
 
 Housekeeping:

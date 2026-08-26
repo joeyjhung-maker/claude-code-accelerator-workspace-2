@@ -25,5 +25,14 @@ MarioBot is STATELESS. It remembers nothing between runs. It writes in whatever 
 
 5. **On a REVISION turn, re-run the whole judge pass. It does not inherit the last turn's fixes.** (Added 2026-08-13.) When you send a second `--turn` asking the bot to revise its own draft, it re-writes from its own turn-1 output — not from the corrected version you edited by hand after the judge pass. So every fix that lived only in your edit gets silently reverted. On the long-form IAA swipe, turn 2 re-broke five rules turn 1 had already been cleaned of: the treadmill metaphor Joey killed weeks earlier, a "No X. No Y." fragment stack, "167 pages", the Chesky quote, and US "skeptical" for British "sceptical". Two ways to handle it, use both: put the already-fixed items into the revision brief as explicit "keep it this way" lines, and re-run linter + full scorecard on the new turn as if it were a fresh draft. Never diff-only.
 
+6. **A strict structural swipe ("match line for line, don't deviate") needs explicit per-line word
+   caps in the brief, or the bot drifts long.** (Added 2026-08-26.) Asking mariobot to swipe a
+   winning ad's exact structure without a length constraint reliably produces expanded lines — extra
+   clauses, added explanation, sometimes whole new beats. Happened twice on the same session: a
+   short banner-ad swipe first (top banner went from 6 words to 12+), then a long-form 14-line swipe
+   (every line 2-4x longer than source). Both times, adding an explicit word-count cap per line/block
+   in the instruction — matched to the source's actual word count — fixed it on the next pass. State
+   the cap as a number, not "keep it short."
+
 ## What good looks like
 copy/2026-06-24-flexxable-hulk-student-rollcall-fb-ads.md — 3 roll-call→Hulk ads at ~200w, on-voice, that Dan then amended lightly rather than rewrote.

@@ -141,4 +141,25 @@ They took a wrong turn. They are not worse than the reader.
 Source: [[2026-08-17-flexxable-iaa-48hr-dialled-to-death-TEXT-FINAL]].
 Arguments the hooks sit on: [[argument-bank]].
 
+## A paradox hook has to be surprising for THIS segment, not just structurally reused — banked 2026-08-26
+
+Swiping a working hook's structure onto a new segment doesn't automatically swipe its power. Joey's
+own diagnosis: "The harder you work, the less you get paid" is a genuine gut-punch for a burned-out
+agency owner — it's a private blind spot about a business model they thought they controlled. Same
+sentence pointed at a 9-5 employee lands flat, because "hard work doesn't get rewarded at a job" is
+already a saturated online cliché — agreeing with it costs the reader nothing, so there's no "wait,
+WHAT" moment.
+
+**The fix isn't a sharper version of the same claim — it's finding a belief the new segment is
+actually WRONG about, in a domain they have no calibrated intuition for yet.** For the agency-owner
+segment, that domain was their own business model. For the 9-5/AI-side-income segment, it turned out
+to be what it actually takes to win at THIS specific opportunity (e.g. "the less AI you know, the
+more you get paid" — inverts an assumption about expertise, not effort, and the reader has no prior
+cliché to fall back on).
+
+Test before reusing a hook structure across segments: does agreeing with this claim cost the reader
+anything, or have they already heard it a hundred times? If it's already conventional wisdom for
+that audience, the structure survives the swap but the punch doesn't — go find the segment's actual
+blind spot instead of just re-skinning the words.
+
 Related: [[Promotion]]
