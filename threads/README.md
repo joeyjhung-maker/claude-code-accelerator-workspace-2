@@ -52,7 +52,11 @@ Nothing here needs inventing — it needs repeating.*
   Dan-truth constraint, and it matters more, because a fabricated testimony is not a copy error —
   it is a credibility kill.
 - **Never quote scripture from memory.** Joey supplies it, or the reference gets verified. A wrong
-  citation in a prophetic post destroys the authority the post depends on.
+  citation in a prophetic post destroys the authority the post depends on. **Verify against the
+  theology wiki at `/Users/joey/Documents/Second Brain/wiki/`** (a separate Obsidian vault, not
+  this one) — it holds the ingested teaching notes from Joshua Selman, Apostle Isi, Bishop Sinegal,
+  and others. Read from there directly when a draft needs a concept or citation checked; never
+  invent one. Second Brain's own `raw-sources/` is read-only — don't edit anything there.
 - **No guaranteed outcomes.** No prosperity promises, no "God will definitely", no claiming a word
   over the reader's specific situation.
 - **Structures travel, content doesn't.** Swiping a shape from fitness or stoicism is legitimate
