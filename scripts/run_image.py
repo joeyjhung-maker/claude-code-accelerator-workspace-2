@@ -47,6 +47,24 @@ UPLOAD_URL = "https://kieai.redpandaai.co/api/file-base64-upload"
 UA = "Mozilla/5.0"  # KIE's WAF 403s Python's default UA — mimic a browser.
 T2I_MODEL = "google/nano-banana"
 EDIT_MODEL = "google/nano-banana-edit"
+NANO_BANANA_2_MODEL = "nano-banana-2"
+GPT_IMAGE_T2I_MODEL = "gpt-image-2-text-to-image"
+GPT_IMAGE_I2I_MODEL = "gpt-image-2-image-to-image"
+
+# Every KIE image model uses different param names for size and reference
+# images — banked from docs.kie.ai on 2026-09-01 after each guess 422'd.
+# size_key: aspect/size param name. ref_key: reference-image array param
+# name (None = model has no image-input variant). output_format: whether
+# the model accepts an output_format param at all.
+MODEL_SCHEMAS = {
+    "google/nano-banana": {"size_key": "image_size", "ref_key": None, "output_format": True},
+    "google/nano-banana-edit": {"size_key": "image_size", "ref_key": "image_urls", "output_format": True},
+    "nano-banana-2": {"size_key": "aspect_ratio", "ref_key": "image_input", "output_format": True},
+    "gpt-image-2-text-to-image": {"size_key": "aspect_ratio", "ref_key": None, "output_format": False},
+    "gpt-image-2-image-to-image": {"size_key": "aspect_ratio", "ref_key": "input_urls", "output_format": False},
+}
+# Fallback schema for an unrecognized --model override (old default behavior).
+DEFAULT_SCHEMA = {"size_key": "image_size", "ref_key": "image_urls", "output_format": True}
 
 # curl reaches this host fine without cert verification; urllib otherwise
 # throws CERTIFICATE_VERIFY_FAILED. Mirror curl's behaviour.
@@ -120,6 +138,14 @@ def main():
     ap.add_argument("--ref", help="reference image (local path or URL) — flips to edit model")
     ap.add_argument("--aspect", default="4:5", help="4:5 (default) or 1:1 — feed-native only")
     ap.add_argument("--model", help="override the model id")
+    ap.add_argument(
+        "--gpt-image", action="store_true",
+        help="use KIE's gpt-image-2 instead of nano-banana (better on text-heavy renders)",
+    )
+    ap.add_argument(
+        "--nano-banana-2", action="store_true",
+        help="use KIE's nano-banana-2 (Pro) instead of base nano-banana",
+    )
     ap.add_argument("--timeout", type=int, default=300, help="poll timeout seconds")
     ap.add_argument("--dry-run", action="store_true", help="print payload, no API call")
     args = ap.parse_args()
@@ -127,19 +153,25 @@ def main():
     if args.aspect not in ("4:5", "1:1"):
         print(f"!! warning: {args.aspect} isn't feed-native (use 4:5 or 1:1)", file=sys.stderr)
 
-    model = args.model or (EDIT_MODEL if args.ref else T2I_MODEL)
-    payload = {
-        "model": model,
-        "input": {
-            "prompt": args.prompt,
-            "output_format": "png",
-            "image_size": args.aspect,
-        },
-    }
+    if args.model:
+        model = args.model
+    elif args.gpt_image:
+        model = GPT_IMAGE_I2I_MODEL if args.ref else GPT_IMAGE_T2I_MODEL
+    elif args.nano_banana_2:
+        model = NANO_BANANA_2_MODEL
+    else:
+        model = EDIT_MODEL if args.ref else T2I_MODEL
+    schema = MODEL_SCHEMAS.get(model, DEFAULT_SCHEMA)
+
+    payload = {"model": model, "input": {"prompt": args.prompt, schema["size_key"]: args.aspect}}
+    if schema["output_format"]:
+        payload["input"]["output_format"] = "png"
 
     if args.dry_run:
         if args.ref:
-            payload["input"]["image_urls"] = ["<uploaded-ref-url>"]
+            if not schema["ref_key"]:
+                sys.exit(f"{model} has no reference-image variant wired in — check docs.kie.ai")
+            payload["input"][schema["ref_key"]] = ["<uploaded-ref-url>"]
         print(json.dumps(payload, indent=2))
         return
 
@@ -149,8 +181,10 @@ def main():
         sys.exit(f"KIE_API_KEY missing from {ENV_FILE}")
 
     if args.ref:
+        if not schema["ref_key"]:
+            sys.exit(f"{model} has no reference-image variant wired in — check docs.kie.ai")
         ref_url = args.ref if args.ref.startswith("http") else upload_ref(args.ref, token)
-        payload["input"]["image_urls"] = [ref_url]
+        payload["input"][schema["ref_key"]] = [ref_url]
 
     print(f">>> createTask ({model}, {args.aspect})...", file=sys.stderr)
     created = post_json(CREATE_URL, payload, token)

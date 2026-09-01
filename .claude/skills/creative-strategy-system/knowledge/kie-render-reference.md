@@ -60,17 +60,44 @@ photo a regular guy posted to Facebook. NOT an ad, NOT a model, NOT studio, NOT 
 NOT AI-looking. 4:5.
 ```
 
-## Model selection — text-heavy vs photo (banked 2026-07-10)
+## Model selection — text-heavy vs photo (banked 2026-07-10, corrected 2026-09-01)
 Which model matters as much as the prompt:
 - **Text-heavy statics (screenshots, Notes app, texts, comments, search bars) → `nano-banana-2` (Pro).**
   The base model `google/nano-banana` garbles fine text — it duplicated a word ("chest chest tight") and
   invented junk UI labels ("Pladls / Blutn / Srams") on a Notes-app render. Re-running the exact same
   prompt on `nano-banana-2` came back clean and legible. Don't waste a render firing screenshot concepts
   at the base model.
-- **`nano-banana-2` ignores `image_size` and defaults to 1:1.** 1:1 is feed-native so it's fine; if you
-  specifically need 4:5 portrait, the param name differs for this model — sort it before relying on it.
-- Wired in `scripts/run_image.py`: `--model nano-banana-2` flips to Pro; default is base for photo work.
-  `python3 scripts/run_image.py "<prompt>" --model nano-banana-2 --out <path.png>`.
+- **Real model slug is `nano-banana-2` — no `google/` prefix.** Unlike base nano-banana, which IS
+  `google/nano-banana`. `google/nano-banana-2` 422s ("model name not supported"). Confirmed against
+  docs.kie.ai 2026-09-01 after the prefixed version failed live.
+- **Param schema for `nano-banana-2` differs from base nano-banana too**: `aspect_ratio` (not
+  `image_size`), reference images go in `image_input` (not `image_urls`). All three model families wired
+  in this workspace now use different param names — see the schema table in `scripts/run_image.py`
+  (`MODEL_SCHEMAS`) rather than re-deriving them by trial and error.
+- Wired in `scripts/run_image.py`: `--nano-banana-2` flips to Pro with the correct schema; default is
+  base nano-banana for photo work. `python3 scripts/run_image.py "<prompt>" --nano-banana-2 --out <path.png>`.
+
+## gpt-image-2 — tested 2026-09-01, does NOT fix the small-text garbling
+Same KIE key also serves OpenAI's model as `gpt-image-2-text-to-image` / `gpt-image-2-image-to-image`
+(reference-guided uses `input_urls`, param is `aspect_ratio`). **Note: the i2i variant's docs list `4:5`
+as an allowed `aspect_ratio` but it 422s live ("not within the range of allowed options") — use `auto`
+or another value from the list and let KIE pick, don't trust the doc's list at face value.**
+
+Ran a head-to-head against `nano-banana-2` on a real garbled specimen (a book-cover thumbnail whose
+foreword line had come out as "AUTHOR OF MAKE 'EM BOG TO BUY FROM YOU" in production, should read
+"BEG"). Same prompt, same reference image, both models:
+- **Large-print text (the main subtitle band) — both models nailed it exactly**, no difference.
+- **Small-print text (the foreword line) — `nano-banana-2` came back near-perfect** (one letter off:
+  "BOG" for "BEG"). **`gpt-image-2` fabricated a different phrase entirely**: "AUTHOR OF MAKE TEN KGS TO
+  BUY FROM YOU" — not a typo, a different sentence.
+
+**Conclusion: gpt-image is not a fix for this failure mode, and on this test it's worse than what's
+already in the pipeline.** The garbling is a small-text-at-scale limit that seems to hit every model in
+this family, not a nano-banana-specific weakness. Don't burn more render credits chasing a model-swap
+fix for tiny text — the reliable fix is to stop asking the image model to render small
+headline/proof/foreword-scale text at all: render the base visual clean, then overlay that text
+separately (Canva or similar) so it's never regenerated pixel-by-pixel. Large hero text (a headline,
+a book title) is fine to bake in — both models render that correctly and consistently.
 
 ## Iterative edits — one fix per pass, not several (banked 2026-08-24)
 A 9-render saga on a Flexxable static taught this the hard way: asking one edit pass to
