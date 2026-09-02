@@ -1,5 +1,15 @@
 {
   "enabledPlugins": {
-    "diversity-decoder@diversity-decoder": true
-  }
+    "diversity-decoder@diversity-decoder": true,
+    "claude-code-setup@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    }
+  },
+  "agentPushNotifEnabled": true
 }

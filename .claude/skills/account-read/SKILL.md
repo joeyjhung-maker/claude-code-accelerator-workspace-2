@@ -1,6 +1,6 @@
 ---
 name: account-read
-description: The weekly Analysis loop — the stage that starts the creative-strategy wheel. Use when Joey says "read the account", "account read", "weekly read", pastes a Meta reporting export, or wants to turn account results into hypotheses, gaps, and this week's production plan. Brackets ads by KPI, banks hypotheses, overlays coverage on the client's strategy map, re-ranks gaps, and ends with a Production Plan + Allocation Mix. Analysis only — no copywriting here (that is /produce territory).
+description: The weekly Analysis loop — the stage that starts the creative-strategy wheel. Use when Joey says "read the account", "account read", "weekly read", pastes a Meta reporting export, or wants to turn account results into hypotheses, gaps, and this week's production plan. Brackets ads by KPI, banks hypotheses, grades traceable briefs' predicted hypotheses against actual results, rolls up win rate by dimension, overlays coverage on the client's strategy map, re-ranks gaps, and ends with a Production Plan + Allocation Mix. Analysis only — no copywriting here (that is /produce territory).
 ---
 
 # /account-read — read the account until you can feel what to do
@@ -91,9 +91,32 @@ The plan guides ideation — it is never stamped onto a seed. If a great idea
 breaks the plan later, the plan yields.
 
 ### 6. Close the flywheel
-Any Winner not yet in `clients/{name}/primers/` → offer to promote it
-(full text, into the right primer). Any lesson worth keeping → offer
-winners/ or losers/ per the data dictionary. Offers, not actions.
+**Grade the hypotheses, not just the ads.** For each bracketed ad this week,
+check whether it traces back to a brief in `clients/{name}/briefs/` (by name
+or Joey's confirmation — don't guess a match). Where it does, pull that
+brief's **Hypothesis** field and compare it to the actual bracket (Winner /
+Traction / Loser): did the predicted opening actually pay off? Append one row
+per traceable ad to `clients/{name}/hypothesis-track-record.md` — date, ad,
+hypothesis, bracket, hit/miss. Ads with no traceable brief (older ads,
+pre-Hypothesis-field briefs, scaling variants) just skip this — don't
+retrofit a hypothesis after the fact.
+
+This is a running record, not a report to reread each week — the value is in
+Joey being able to ask "how's my hypothesis hit rate looking" months from now
+and get a real answer instead of a vibe.
+
+**Roll up the dimensions.** Same traceable ads, tally by the brief fields you
+already have — Awareness, Concept type, Angle, Format — against the bracket.
+Append/update `clients/{name}/dimension-scoreboard.md`: a running count per
+dimension value (e.g. "Awareness: solution-aware — 4 winners / 1 traction / 2
+losers"). Don't build a chart or compute a "score" — just keep the tally
+current so a pattern ("this account's winners cluster in Problem-Aware +
+Real-Cause concepts") becomes visible by eyeballing the file, not something
+buried across months of dated hypothesis entries.
+
+Then, as before: any Winner not yet in `clients/{name}/primers/` → offer to
+promote it (full text, into the right primer). Any lesson worth keeping →
+offer winners/ or losers/ per the data dictionary. Offers, not actions.
 
 ## Rules that bite here
 - Ask, don't invent — his KPI, his mix, his corrections at every gate.

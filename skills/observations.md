@@ -25,3 +25,14 @@ Related: [[Promotion]] [[Memory Loop]]
 **Skill:** `scripts/copy_lint.py` (used by /produce and every judge pass)
 **Issue:** `body_lines()` splits the file on `\n---\n` and lints only `parts[1]` — it assumes `---` means frontmatter delimiters. A 9-section long-form ad that uses `---` as its section breaks therefore linted as **"1 FAIL, 0 FLAG"** when the real count was 65 FAIL / 2 FLAG. The gate passed silently on a draft it should have stopped. Only caught it because the number looked implausibly good against a draft that had failed 72 times ten minutes earlier.
 **Suggested fix:** Treat `---` as frontmatter only when it appears in the first few lines of the file (or only when the file OPENS with `---`). Otherwise lint the whole body. Until it's fixed, any long-form/multi-section draft has to be linted with the breaks stripped: `sed 's/^---$/SECTIONBREAK/'`.
+
+---
+
+### Observation 3: `copy_lint.py` and the copy-rubric pass both missed long run-on sentences — only caught on Joey's read
+
+**Status:** OPEN
+**Date:** 2026-08-28
+**Skill:** `scripts/copy_lint.py` + `rubrics/copy-rubric.md` (used by /produce and every judge pass)
+**Issue:** Produced 7 Most-Aware static-ad copy pieces, ran `copy_lint.py` on all of them, all came back clean (0 FAIL / 0 FLAG or trivial flags only). Joey then flagged one on read: "sentences are too long" — e.g. "The book itself is the full blueprint for landing performance-based AI clients who pay you 30-50% of the revenue you generate, with no upfront cost to them." (26 words, 3 clauses, one period). `copy_lint.py`'s "two+ full sentences on one line" rule only fires when a line has multiple SENTENCES (multiple end-stops) — a single long compound/run-on sentence with one final period passes clean no matter how many clauses it stacks with commas, "and," or "who." The copy-rubric's taste pass (graded before this went to Joey) didn't catch it either — nothing in either gate explicitly checks clause-count or word-count per sentence against the Script's house rule ("Short punchy paragraphs. One idea per line. Each sentence earns its own line.").
+**Suggested fix:** Add a mechanical check to `copy_lint.py` — flag any line/sentence over ~15-18 words or containing 2+ comma-joined independent clauses, since that's almost always "one idea per line" being violated even when it's grammatically one sentence. Until fixed, the judge pass needs an explicit manual step: read each sentence and ask "is this one idea?" — not just check for multiple sentences per line.
+**Also noted:** the same production run showed `copy_lint.py` scanning a saved copy-file's ANNOTATION PROSE (the write-up above the `## Hook` section) as if it were ad copy, because that prose sits between the frontmatter `---` and the first section `---` — same root cause as Observation 2. Fix: lint only the isolated `## Body` section content, not the whole markdown file, until Observation 2 is fixed upstream.

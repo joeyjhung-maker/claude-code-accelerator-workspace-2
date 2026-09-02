@@ -238,4 +238,53 @@ next move for that specific segment, on top of gap #1's cold-open work.
 
 ---
 
+## Awareness-cycle framework — 2026-08-28
+
+Source: "Types of Meta Ads Crushing in 2026" (portfolio update, Notion, read
+2026-08-28). Core claim: only ONE ad type consistently scales past $100k spend on a
+single ad — Most-Aware. The model isn't "cover every awareness level evenly," it's a
+two-phase cycle:
+
+**Phase 1 — flood.** Problem-aware + Solution-aware ads at 70/30 or 80/20 of budget.
+Profitable, $5k-$30k each, fatigue in 2-3 weeks. The job isn't just revenue — it's
+building market awareness of the product and the face behind it.
+
+**Phase 2 — harvest.** Once the market's warmed, Most-Aware ads take over. Short
+copy, urgency/scarcity/social proof, usually a product-stack/icon-set format. These
+scale to six figures and stay profitable for months, with far less refreshing than
+Phase 1 needs.
+
+**The cycle:** flip the ratio to 60/40 or 50/50 toward Most-Aware once Phase 2 starts
+working, let it fatigue over 2-4 weeks, revert to 70/30, repeat.
+
+**Where Flexxable sits against this model** (from the 08-24 Decoder audit):
+
+| Phase | Levels | Flexxable's actual share |
+|---|---|---|
+| 1 — Flood | Unaware + Problem + Solution | 74/75 ads (98.7%) |
+| 2 — Harvest | Product + Most-Aware | 1/75 ads (1.3%) |
+
+Phase 2 isn't underweighted — it doesn't exist. Zero Most-Aware ads in the account.
+The one Product-Aware ad (vendor-vs-partner OBJECTION brief, 2026-08-25) is the only
+thing in the account that could feed a Most-Aware ad. This sharpens gap #2 from the
+08-24 audit: it isn't just "build a closer," it's "the account has never run the ad
+type this framework says is the actual scale lever."
+
+**Format gap:** the account's live formats are UGC Talking-Head, Product Hero,
+Problem-Solution Video, Founder Story — all long-form/story formats. Zero
+product-stack / icon-set format anywhere. That's the format Most-Aware ads live in
+per this framework — building from zero, not adapting an existing asset.
+
+**Funnel-page gap:** both live destinations (`book.flexxable.com/optin`,
+`learn.flexxable.com/instant-ai-agency`) are opt-in/webinar pages — built for
+cold-to-warm, not "you already know us, act now." No urgency/deadline page exists yet;
+route new Most-Aware ads to the proven optin page until one does.
+
+**Next move:** build Most-Aware briefs (product-stack/icon-set format — Bonus Pile /
+Guarantee Spotlight / Daily-Cost-of-Waiting concept types) so there's something to
+test in Phase 2. Once these prove out, revisit the account's budget split — right now
+there's no cycling logic at all because there's nothing to cycle TO.
+
+---
+
 Related: [[Flexxable]] [[Strategy Map]]

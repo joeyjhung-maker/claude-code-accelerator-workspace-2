@@ -281,6 +281,50 @@ Related: [[dan-truth-constraint]] [[naps-nurture-and-picks]] [[b2b-leads-lab-pro
   is for beats that genuinely trail INTO the next one. A line that completes its own thought takes a
   full stop.** Check every "…" is doing continuation work, not decoration.
 
+### Dan Skool posts — DFY waitlist push corrections (2026-09-01)
+
+*Diffing Joey's rewrite of the DFY beta waitlist push post against my draft. Several of these are
+general accuracy/craft fixes, not just voice — apply beyond Dan Skool posts where noted.*
+
+- **Name the real person/company behind a mechanism — don't default to generic "our team."** My
+  draft said "our fulfilment team handles ALL the packing and shipping." Joey named the actual
+  person and company: "Jonathan, founder of Topa.io, is building out an ENTIRE fulfilment team…"
+  The fact was already sitting in `project.md` — I should have used it without being asked. Real
+  names carry more credibility than a generic team reference.
+- **Match verb tense to the actual maturity of what's being described.** "Handles" (present,
+  implies fully operational) → "is building out" (present continuous, correctly reflects a BETA
+  that's still being staffed). Don't imply something is fully built when the post is explicitly
+  announcing early access to it.
+- **A proven line doesn't automatically transfer to a different post's specific value prop.** I
+  reused "Cold email gurus could never lol" — a proven line from the original landing page, where
+  the value prop is the outreach MECHANISM itself. Joey cut it here, because this post's actual
+  value prop is removing the SHIPPING/fulfilment hassle — a different specific argument. Check
+  what a proven line is actually arguing before reusing it in a differently-focused post, even one
+  for the same brand and offer family.
+- **Replace a vague personal reaction with the concrete fact that makes a number impressive.** "31
+  people joined, which honestly surprised me" (asserts a feeling, no information) → "31 peeps
+  joined and we haven't properly announced it yet" (gives the reader the actual reason to be
+  impressed — organic, unpromoted pull, not just Dan's say-so).
+- **Replace an abstract responsibility with the literal, concrete inputs the reader has to hand
+  over.** "You just focus on the list, the letter, and the sales" → "You just find the leads, give
+  us the letter, names + addresses and we'll handle the rest." Tangible inputs beat an abstract
+  "focus on X" — matches the existing specificity/tangibility principle, applied to a task
+  handoff instead of a hook.
+- **HARD RULE: "tap the link below" means the link must be the literal next thing.** My draft put
+  "Rooting for ya, Dan" between the "tap the link below" instruction and the actual URL — which
+  breaks the literal claim, since the sign-off sat below the instruction, not the link. Joey
+  reordered to CTA → timeline → link → sign-off. Never let anything sit between a "below"
+  reference and the thing it's pointing at.
+- **Give a concrete timeline right before the link/CTA when one exists.** Joey added "We should be
+  ready somewhere towards the end of the month/early Oct!" right before the link. Confirms the
+  existing Hulk-CTA-model rule (repeat critical logistics right where the reader is about to
+  click) generalizes beyond that one campaign — apply it anywhere a real date exists.
+- **A claim posed as a question can land softer than a flat assertion.** Cut "cos I only mentioned
+  it once in a P.S. a few weeks back" (unnecessary backstory) for "But I think you will love it?"
+  — a statement with a "?" reads as inviting rather than pushy. Independently confirms the same
+  device already logged in [[2026-09-01-temp-check-validation-post-swipe]] (Travis's "And it could
+  be LIFE CHANGING?").
+
 ### Dan Skool posts — philosophy/stance posts (2026-08-20, "ANTI-AI direct mail" post)
 
 *First time Dan posted pure stance with no product pitch attached. My brief told mariobot (and

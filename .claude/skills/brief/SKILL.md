@@ -1,6 +1,6 @@
 ---
 name: brief
-description: The inflection point — seeds become briefs with locked DNA. Use when Joey picks seeds by number from the seed bank ("brief T3, R1 and I2", "brief seeds 4 and 7"), or says "build briefs" after a /storm run. Locks Segment, Awareness, Mechanism, Problem-name, The Image, Spokesperson, CTA, Guidelines, and Source-routing per ad BEFORE any copy exists. One brief file per ad in clients/{name}/briefs/. No copywriting — the brief is the last cheap decision; /produce writes.
+description: The inflection point — seeds become briefs with locked DNA. Use when Joey picks seeds by number from the seed bank ("brief T3, R1 and I2", "brief seeds 4 and 7"), or says "build briefs" after a /storm run. Locks Segment, Awareness, Mechanism, Problem-name, The Image, Spokesperson, CTA, Guidelines, Hypothesis, and Source-routing per ad BEFORE any copy exists. One brief file per ad in clients/{name}/briefs/. No copywriting — the brief is the last cheap decision; /produce writes.
 ---
 
 # /brief — select, then specify. The last cheap decision.
@@ -82,9 +82,14 @@ tags and the client file, then he confirms or edits. One block per ad:
   either list fits, name the new angle and flag it as a candidate to add to one
   of the lists. Concept and Angle are named SEPARATELY — if you can't state the
   concept flat, you don't have one yet.
-- **Mechanism** — client default unless the seed says otherwise (Flexxable:
-  AI + SMS revives the business's dead leads; performance-based, 30-50% of
-  profits).
+- **Hypothesis** — one line: why THIS ad should win, tied to the specific
+  opening it's attacking. Name the opening from the account-read that spawned
+  it — a gap ("nothing in the solution-aware/burnout cell"), a hypothesis-driven
+  bet ("cortisol carried joints, testing it on skin"), or an external signal —
+  not vibes, not "it's a strong angle." No source read to point to yet
+  (cold-start, first brief for a client) → say so plainly rather than inventing
+  one. This is what the next account-read checks against the actual result —
+  it's the whole point of writing it down.
 - **Problem name** — give the enemy a name the market has never heard but
   instantly gets. "Estrogen leak." "Joint drought." "Cortisol belly." "Skinny
   bacteria." "Soft tallow." The formula: body-part/concept + dysfunction word,
@@ -179,6 +184,9 @@ which brief first?" Do not start writing.
   nothing lands after real pushing, flag it as the loosest dimension and let
   Joey decide. Never kill a brief over it.
 - Proof verified with a line reference or flagged. No exceptions.
+- Hypothesis names a real opening, not a restatement of the concept/angle.
+  "Hidden Villain concept" is not a hypothesis; "attacking the empty
+  solution-aware/burnout cell" is.
 - Defaults are allowed everywhere — but say what default you applied.
 - The plan yields to a great idea, never the reverse.
 - No copy. Not even a "sample line to show the direction."

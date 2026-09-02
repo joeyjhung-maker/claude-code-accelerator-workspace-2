@@ -91,9 +91,21 @@ dashes or signposts. ([[judge-provenance-rule]], [[dont-verify-user-written-clai
 2. **Scorecard** — grade the taste rules in `rubrics/copy-rubric.md` as an
    explicit rule-by-rule **PASS / FAIL tick-list — never a prose summary.**
    Any FAIL → rewrite that line, re-grade.
+3. **Brief-match check** — the copy can pass every taste rule and still have
+   drifted off what got locked. Check the draft against the brief's own DNA:
+   does it still deliver the locked Concept type and Angle (not just "on
+   topic" — the same named shape)? Does it hold the Awareness level (a
+   problem-aware brief that reads product-aware, or vice versa)? Does it use
+   The Image, or did a different picture creep in during drafting? Flag any
+   drift as its own PASS/FAIL line in the scorecard — a drift is not
+   automatically a rewrite (mariobot sometimes finds something better than the
+   brief), but it must be SEEN and named before Joey reads the copy, not
+   discovered later when the hypothesis grades out as a miss for the wrong
+   reason.
 
 Rewrites are edits to mariobot's draft, not you re-writing the ad — the writer
-already set the floor; the judge lifts it. Show the scorecard with the copy.
+already set the floor; the judge lifts it. Show the scorecard (rubric ticks +
+brief-match line) with the copy.
 
 ### 5. Save, then flip
 Two moves, both required:
@@ -126,7 +138,8 @@ we learned?"
   neuter while writing). Trying to be safe mid-draft produces the tepid copy
   that dies in the feed. (Lesson 22.)
 - **Scorecard or it didn't happen.** `copy_lint.py` first (mechanical), rubric
-  tick-list second (taste). A prose "judge pass" is not a grade.
+  tick-list second (taste), brief-match check third (did it stay on the
+  locked DNA). A prose "judge pass" is not a grade.
 - **Provenance holds.** Grade AI lines hard; only FLAG Joey's own. His dashes,
   his signposts, his call.
 - **Never invent a result, number, or quote.** The brief carries verified proof

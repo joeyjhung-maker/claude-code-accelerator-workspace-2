@@ -3,7 +3,7 @@
 - [Genesis has no judge bot](genesis-no-judge-bot.md) — the editor half is a local rubric we built
 - [Judge provenance rule](judge-provenance-rule.md) — grade AI's lines hard, only flag the user's own
 - [Flexxable output format](flexxable-output-format.md) — Arial 12 / H35 / sub30 / emails body-only
-- [Daily git commit on close-out](daily-git-commit-on-closeout.md) — always commit to git at wrap-up, no need to ask
+- [Daily git commit on close-out](daily-git-commit-on-closeout.md) — commit+push at wrap-up, pull at session start, no need to ask
 - [Flexxable offer doc](flexxable-offer-doc.md) — ROYA doc is the source of truth for all Flexxable copy
 - [Don't verify user-written claims](dont-verify-user-written-claims.md) — if Joey wrote it, it's real; only flag AI/bot-generated lines
 - [No stacked abstract triplet](no-stacked-abstract-triplet.md) — never write three abstract benefits in a row; hard rule
@@ -13,9 +13,27 @@
 - [JV additive framing](jv-additive-framing.md) — for partner audiences, add to their model, never dunk on it
 - [Rob first name only](rob-first-name-only.md) — never "Rob Brown," always just "Rob" in copy
 - [IAA mechanism = old leads](iaa-mechanism-old-leads.md) — reactivate OLD/dead leads over SMS, NOT new-lead gen
-- [Dan-truth constraint](dan-truth-constraint.md) — first-person claims must be true to Dan; no invented backstory
+- [Dan-truth constraint](dan-truth-constraint.md) — first-person claims must be true AND right tense (burnout pain = closed chapter, not now)
 - [Pain is amplifier not opener](pain-is-amplifier-not-opener.md) — lead with curiosity/novelty; pain amplifies after, opt-in per ad
 - [The Lock: aim not gate](the-lock-aim-not-gate.md) — brief is locked when dimensions rhyme (one-breath test); it's the dream, never a kill-switch
 - [Hooks are 80% / vicious = flinch](hooks-are-80-percent-vicious-flinch.md) — hook is most of the ad; craft lives in brand/hooks.md
 - [Show don't tell decisions](show-dont-tell-decisions.md) — render the actual thing to choose from; never abstract prose options he can't see
 - [JV webinar front-end ladder](jv-webinar-frontend-ladder.md) — webinar sells $500–1K reversible front-end, never book/cold high-ticket; price dictates the close
+- [Analogy angles need connective tissue](hedge-fund-angle-needs-connective-tissue.md) — explain WHY the analogy holds, delay naming the expert until idea lands
+- [Dead drafts are dead](dead-drafts-are-dead.md) — once Joey rewrites my draft, delete the old version, don't keep or cite it
+- [No unprompted Fable spawns](no-unprompted-fable-spawns.md) — only spawn Fable if Joey asks, or you ask him first
+- [Plain over clever in analysis](plain-over-clever-in-analysis.md) — findings must survive being read aloud; no metaphors
+- [NAPs = Nurture & Picks](naps-nurture-and-picks.md) — warming emails with polls/handraisers, never a direct sell
+- [B2B Leads Lab project](b2b-leads-lab-project.md) — Dan's lumpy-mail Skool; Joey owns AAA Ninjas NAPs, both funnels, posting as Dan
+- [Dan is Aussie, not British](dan-is-aussie-not-british.md) — corrects the standing voice note; Skool register is looser again
+- [Ask for proof, don't write around the gap](ask-for-proof-dont-write-around-gap.md) — get the number before drafting, vague isn't safe
+- [Name the specific noun](name-the-specific-noun.md) — never write "the thing," pull the actual term from the source
+- [Dan's book is a verified source](dans-book-is-verified-source.md) — material from his own book needs no re-check with Dan
+- [Hormozi 100M Leads synthesis](hormozi-100m-leads-synthesis.md) — full book digested into mentors/alex-hormozi/, read synthesis not raw epub
+- [Hormozi 100M Money Models synthesis](hormozi-100m-money-models-synthesis.md) — offer-sequencing book, read synthesis before structuring an offer
+- [Hormozi 100M Offers synthesis](hormozi-100m-offers-synthesis.md) — full book now digested (supersedes the earlier 13-page-checklist note), source of the value equation
+- [Fast PDF reading](fast-pdf-reading.md) — use ~/.claude/tools/pdf-venv (pypdf), never brew install poppler
+- [Joey runs Heuromi agency](joey-runs-heuromi-agency.md) — agency-shaped frameworks apply to Joey's own business, not just clients
+- [Travis Sago Make 'Em Beg synthesis](travis-sago-make-em-beg-synthesis.md) — 5 Ps origin book, TIMER objection framework, JV/endorsed-traffic playbook
+- [Travis call: engagement principles](travis-call-engagement-principles.md) — run people at their next obstacle, test the map vs terrain, polls that pre-sell themselves
+- [Travis Sago risk-free-offer outreach](travis-sago-risk-free-offer-outreach.md) — commission-only client-acquisition play for Heuromi's own new-biz, not a client asset

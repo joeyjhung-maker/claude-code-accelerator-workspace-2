@@ -21,6 +21,7 @@ Target audience: people in jobs they want to escape, and existing agency owners 
 
 ## Projects
 - **B2B Leads Lab** — `b2b-leads-lab/project.md`. Dan's Skool community for landing 8/9/10-figure meetings with "AI Enriched" Lumpy Mail. Free now, paid tier end of Oct. My lane: fill the free group Sep/Oct, plus shorts/longs.
+- **Scope (per `b2b-leads-lab/project.md`, corrected 2026-08-26): from 1st Sept, Joey takes over ALL content across four Skool groups** — AAA Ninjas, ROYA, Million Dollar AI Deals, and B2B Leads Lab — not just AAA Ninjas NAPs. A separate 2026-08-20 call with Travis on engagement/content principles (not this scope decision) is banked at [[2026-08-20-content-engagement-call]].
 - **Client Acquisition Calls** — `client-acquisition-calls/README.md`. Weekly ROYA client-getting Zoom calls, mined for daily-post content. Full Zoom history mined (25 calls, Mar–Aug 2026 — that's the whole retention window, not a sample; see [[gold-nuggets]] and [[common-questions]]). Banked as raw material, not yet drafted into posts.
 
 Related: [[Flexxable]] [[Winners]]

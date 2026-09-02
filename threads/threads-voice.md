@@ -149,6 +149,66 @@ Highest-rate posts (300+ views) are all one of three things:
 
 ---
 
+## Rewrite log — live signal from faith-thread skill drafts
+
+*Started 2026-08-28. Every time Joey posts an edited version of a draft (or posts one
+unchanged), log it here. Two independent instances of the same edit pattern = treat it
+as a standing rule in the next batch, not just a note.*
+
+**Pattern, confirmed twice (2026-08-28, keys-of-the-kingdom + identity-and-destiny
+rounds): cut further than the draft.** Both times Joey kept the opening reveal/flip
+and deleted the qualifying or mirrored second clause, replacing it with something
+flatter and shorter.
+- Draft: "The keys are waiting on you to answer the question only you were asked." →
+  Posted: "When you've already been given them. Stop waiting for permission. Move on
+  what God's put in your heart." (mirror clause cut, replaced with a Blunt Command)
+- Draft: "Confidence is the only one of the three that actually sets you free." →
+  Posted: "Faith sets you free." (qualifying clause cut entirely, word swapped)
+
+**Apply going forward:** default to the tighter cut. When a draft has a qualifying
+clause ("is the only one that actually...", "the question only you were asked"),
+write the shorter version as the primary option, not just the longer one.
+
+**Word-swap note:** "Confidence" → "Faith" on the identity-and-destiny draft. The wiki
+note itself used "Confidence" in that paragraph, but Joey pulled the post back to the
+note's own headline dichotomy (Faith vs. Identity) instead. Worth checking, when a
+note uses a word that isn't the note's central term, whether the central term reads
+better in the post — even if it's technically less precise to the specific paragraph
+being drawn from.
+
+**Confirmed unchanged (2026-08-28):** the Counter-Intuitive Method draft on
+identity-and-destiny ("You don't grow into a new season by trying harder in the old
+one...") posted verbatim. No correction needed — this structure and register are
+working as drafted.
+
+**Pattern, confirmed twice (2026-08-28, keys-of-the-kingdom + shalom rounds):
+Reversed Posture's "X is waiting on you to Y" mirror phrasing gets cut or replaced
+every time it's drafted.**
+- Draft: "The keys are waiting on you to answer the question only you were asked." →
+  kept the opener, cut the mirror, closed with a Blunt Command instead.
+- Draft: "Peace is waiting on your mind to stay on Him." → not kept at all — Joey
+  rewrote the whole post from scratch into a Counter-Intuitive Method flip ("True
+  peace doesn't come from just praying more. It comes when...").
+
+**Apply going forward:** treat structure #5's "waiting on" mirror construction as
+unconfirmed for this account, even though the structure bank's own evidence says it
+works in general. When the underlying idea is a passive-to-active reveal, draft it as
+a Counter-Intuitive Method (#4) or Definition Flip (#2) contrast first — "X doesn't
+come from Y, it comes from Z" — rather than defaulting to the mirror.
+
+**New signal (2026-08-28, shalom round): scripture belongs in the post, cited, not
+just in the source-line footnote.** Draft C left Isaiah 26:3 as an allusion; Joey's
+posted version quoted it directly with a citation: `"You will keep him in perfect
+peace, whose mind is stayed on you" - Isaiah 26:3`. Don't over-sanitize a verified
+quote out of the post body — if the note has the exact scripture text and it's
+directly relevant, quote it in-post with a `"[quote]" - [Book Ch:V]` citation.
+
+**New signal (2026-08-28, shalom round): named noun over pronoun.** Joey's posted
+version says "your mind is fixed on Jesus" where the draft said "stay on Him." Same
+[[name-the-specific-noun]] instinct that already governs other copy in this
+workspace — prefer the actual name over a pronoun when introducing the idea, even
+though the pronoun is doctrinally correct and capitalised properly either way.
+
 ## How to improve this file
 
 After each fortnightly measurement pull, add: any new opener that beat median, any word or phrase
