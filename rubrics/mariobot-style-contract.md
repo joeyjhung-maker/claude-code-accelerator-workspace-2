@@ -32,6 +32,7 @@ CLARITY & PERSUASION
 - Get the mechanism mechanically right. If you don't know HOW it works, say ASK — never paper over with a smooth vague line.
 - Calibrated hedges on the biggest claims ("probably", "at LEAST"). Naked superlatives read as hype.
 - Pain-point or world-level hook first. Never open on student proof or testimonials.
+- NEVER open the first line on a question. State the hook, don't ask it — a question mark in line one reads as a rhetorical crutch, not a hook. ("Ever tried to catch a ball with tense hands?" → "Grip a ball too early and your fingers go stiff… it bounces right off your palms.")
 
 PROOF (hard rules)
 - Use ONLY the numbers/names given in this brief, verbatim. Never invent or round a result, number, or quote.

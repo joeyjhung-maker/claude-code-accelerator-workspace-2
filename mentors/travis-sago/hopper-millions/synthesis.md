@@ -16,7 +16,7 @@ Related: [[travis-sago]] [[b2b-leads-lab-project]] [[The Lock]]
 - **Microwave hopper** — a tighter, hotter, purpose-built spin-off group for one specific offer, split off once that offer is proven in the crock pot.
 - **CDDC (Clearly Different Desirable Concept)** — your positioning must be visibly different from what the prospect is already doing, explainable in seconds, not five minutes.
 - **T1 / T2 / T3** — the tap sequence. T1 = public hook/awareness post. T2 = qualifying conversation. T3 = the actual offer/pitch. Write the T3 first — it forces clarity and exposes what proof is missing. Real example: [[t3-phoneless-sales-machine-fb-msgr]] (`swipes/t3-phoneless-sales-machine-fb-msgr.md`).
-- **CAP (Cause, Action, Payoff)** — the copy structure for individual posts: state the situation/threat or promise, tell them what to do, describe the outcome. Nests recursively.
+- **CAP (Child, Adult, Parent)** — Travis's buying-psychology model: a buyer processes a pitch through three simultaneous "tapes" — Child (emotion, reacts to an overt benefit), Adult (logic, wants proof), Parent (judges good/bad, wants a clear differentiator). Full breakdown in `../psm-btem/synthesis.md` (Call 5).
 - **The 5 Ps** — Problem, Personality, Philosophy, Plan, Price. Pre-sell all five before pitching the product and conversion can hit 90%+; skip straight from Problem to Product and you're stuck near 10%.
 - **ACO (Access, Control, Ownership)** — the leverage ladder for someone else's audience: guest into it (access) → spin off your own group from it (control) → it's fully yours (ownership).
 - **Fence tippers** — late-campaign messages that hit time/money objections and the deadline, not the offer itself — for people already sold, just stuck.

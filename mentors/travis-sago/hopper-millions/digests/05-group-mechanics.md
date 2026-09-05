@@ -12,7 +12,7 @@ A hopper (or "crock pot") group is a warm, curated group used to funnel a small,
 **Named framework/terms**
 - **Hopper / Crock pot group** — the smaller, purpose-built group people are funneled into to be sold to over time; "crock pot" = slow-simmer, always-warm, semi-permanent.
 - **Sales hopper** — a more structured, time-boxed version built around a specific launch (e.g., a 30-day arc), versus the crock pot's ongoing, evergreen nature.
-- **CAP (Cause/Concern, Action, Payoff — "hell island / heaven island")** — Travis's core copy structure. State the situation/threat or promise (cause), tell them what to do (action), describe the outcome (payoff). Stacks recursively — "cap inside of cap inside of cap."
+- **CAP (Child, Adult, Parent)** — Travis's buying-psychology model, from transactional analysis. A buyer runs three "tapes" at once: Child (emotional, reacts to an overt benefit), Adult (logical, wants proof/kitchen-table-logic), Parent (judges good/bad, wants a clear differentiator). See `../../psm-btem/synthesis.md` for the full breakdown (Call 5, "CAP Sales Mojo").
 - **Hell island / Heaven island** — shorthand for the negative consequence state vs. the desired outcome state.
 - **Fans and fortunes** — a demonstration/proof mechanism where the audience *sees* something work in real time, producing an implicit realization rather than being told.
 - **Implicit proof / kitchen table logic** — implicit proof is proof the prospect concludes for themselves by watching something happen; kitchen table logic is proof that "just makes sense" without needing hard data.
@@ -70,7 +70,7 @@ Grip too tightly on outcomes and you (and your group) stop enjoying the process,
 **Named framework/terms**
 - **"Twenty years from now" reframe** — most day-to-day setbacks won't matter in 20 years (or even 20 days); don't over-invest emotional energy in them.
 - **Turning disadvantage into advantage** — when something looks like a problem, actively reframe it as a feature instead of treating it as damage control.
-- **CAP is everywhere** — Cause/Action/Payoff embedded not just in big posts but in small daily interactions: comment replies, video intros, personal conversations.
+- **CAP is everywhere** — the Child/Adult/Parent lens applies not just to big posts but to small daily interactions: comment replies, video intros, personal conversations.
 - **Tapper / tapper link** — a Messenger-based CRM mechanism: a link opens Messenger to a managed inbox, letting a team member or bot handle and track hand-raiser responses rather than personal DMs.
 - **Business page vs. personal profile posting** — set up a Facebook Business Page to avoid Facebook flagging multiple people/IPs logging into one personal account.
 

@@ -177,6 +177,13 @@ a Meta ad. Grade Skool posts against this section, not the ad rules above, where
   LITERALLY, ONE. Not shouting — vocal stress written down.
 - **Scare quotes signal irony and distance.** "pitch", "persuasion", "me". Dan uses them to hold a
   word at arm's length. Keep them.
+- **Loose capitalization is deliberate, not an error to tidy up (2026-09-02).** Joey: "I am
+  purposefully being more lazy with my writing and using less caps... I want to make sure ppl know
+  i am not AI writing so its less polished." Don't title-case a category/niche name that reads more
+  natural lowercase ("Adventure Park Niche" → "adventure park niche"), and don't capitalize a new
+  line that's really a soft continuation of the sentence above, not a new sentence ("And it's
+  working like gangbusters!" → "and it's working like gangbusters!"). Runs counter to normal
+  instinct — resist "fixing" it. Full note at [[voice]].
 - **Sign off with his name.** Dan.
 
 ### Structure
@@ -441,4 +448,353 @@ structural instruction ("don't repeatedly poke at Craig"), the third was Joey's 
   post promises a count up front, recount after any edit that adds or removes a point — this is an
   easy miss precisely because it's not wrong on the line you're editing.
 
+### Dan Skool posts — AAA Ninjas Dream 100 teaser (2026-09-02)
+
+*mariobot's first draft passed the mechanical linter clean, and my own judge pass caught the
+stacked "How to…" quadruplet but missed a second AI tell in the same draft — Joey caught it,
+not me. Confirms the judge pass needs a dedicated fake-punchy-fragment check, not just the linter
++ anaphora-pairing check.*
+
+- **A "That's not X… that's Y" reversal fragment is an AI tell — cut it, don't soften it.**
+  mariobot wrote: *"Maybe run an ad and just work whoever replies. / That's not a list… that's a
+  lucky dip."* Joey: *"This is a bad AI slop."* The line does no new work — "lucky dip" restates
+  "whoever replies" without adding information, a turn, or a concrete image. Fix was a straight
+  cut, not a rewrite: the two lines either side of it already carry the point on their own.
+  Reinforces [[no-fake-punchy-fragments]] with a fresh concrete example — a short reversal line
+  needs to earn its place same as a short fragment does; "clever restatement" is not new
+  information. **When judging a mariobot draft, explicitly scan for "That's not X, that's Y" /
+  "Not X. Y." reversal constructions as a checklist item, not just fragment-stacking and
+  anaphora-tripling.**
+- **That same reversal-fragment scan has to cover the whole post, including the P.S. — not just the
+  body.** I caught and cut the body instance above, then missed the exact same construction two
+  lines later in the sign-off: *"P.S. This isn't theory, it's the same process we still run every
+  time we go after a new vertical."* Joey: *"you did it in the PS as well!"* Fix: *"P.S. We still
+  run this exact process every time we go after a new vertical."* — same fact, stated flat, no
+  reversal. **The mistake wasn't not knowing the rule, it was stopping the scan once the body read
+  clean. Treat headline, body, AND P.S. as one surface to check, not three, or a fixed pattern will
+  survive in whichever part gets checked last/least.**
+
+### Dan Skool posts — AAA Ninjas Dream 100 teaser, Joey's final edit (2026-09-02)
+
+*Diffing Joey's rewrite of the mariobot-drafted, Claude-judged version against what he shipped.
+None of this is correcting an error — the draft was clean by every mechanical/rubric check that
+ran on it. These are craft upgrades a human pass added on top. Bank as technique, not as fixes.*
+
+- **Skip the "most people build their list wrong" strawman opener — open on a direct, confident
+  claim that treats the reader as someone who already half-knows this.** My draft opened with
+  three lines describing the bad way (LinkedIn scroll, spreadsheet, ad-and-hope) before getting to
+  the point. Joey cut all of it for: *"If you're targeting B2B leads… / You'll know that 90% of
+  the game is WHO you reach out to. / Get this right and you will never go hungry for BOOKED
+  coffee dates."* Faster to the payoff, and "you'll know" flatters the reader's existing instinct
+  instead of correcting a strawman version of them. Prefer this over the "most people do X wrong"
+  setup when the direct claim + payoff can stand on its own.
+- **Ground even a pure-teaser post in ONE current, real, named example — not just an abstract
+  "process."** Joey inserted: *"We've been building a Dream 100 List in the adventure park niche /
+  and it's working like gangbusters!"* — a real, live campaign from the project file, dropped in
+  as a concrete anchor before the process gets described. My draft never named a live example at
+  all. A teaser about a process still needs one tangible "here's it working right now" beat.
+- **When broadening a claim across multiple channels/audiences, give EACH channel its own specific
+  stake — don't let one line try to cover all of them.** My draft had one generic line ("Guessing
+  who to target gets expensive fast"). Joey split it by channel: *"GUESSING who to target gets
+  expensive fast…. ESPECIALLY if you're sending lumpy mail. / (if you're cold emailing… it's just
+  a lotta wasted time and pain lol)"* — money risk for the mail crowd, time/pain for the email
+  crowd. Different channels have different real costs; naming both concretely lands harder than
+  one line meant to cover everyone.
+- **Repeat a "this works for every channel" message more than once, each time with a DIFFERENT
+  specific list of channels — don't trust one mention to land it.** Given the explicit brief to
+  "cast the net wide" for DBR/non-lumpy-mail readers, Joey reinforced it three separate times with
+  three different lists: "DBR, cold outreach, or lumpy mail" (body) → "lumpy mail" / "cold
+  emailing" (the split-consequence line) → "cold calling, cold emailing, cold DMing" (P.S., new
+  addition). When the whole point of a post is inclusivity across a specific set of readers, don't
+  settle for saying it once.
+- **Use the 👉🏻 emoji pointer before a key handoff/offer/CTA line — an established Dan Skool
+  device, not decoration.** Already present in the shipped body primer ("👉 One good letter + one
+  good gift = meetings with your Dream 100," "👉 Land high-profile meetings…"). My draft used it
+  nowhere; Joey added it twice — before the "we built a step-by-step process" offer reveal and
+  before the final CTA. **Standing rule: check the body primer for Dan's own visual devices, not
+  just his sentence-level voice — the arrow bullet is part of his house style on Skool.**
+- **Every "how to X" bullet needs its payoff stated in the same breath, not left implicit.**
+  Reinforces the existing benefit-needs-its-WHY rule. My line: *"How to pick the right sub-niche…
+  tighter than 'I do marketing for dentists.'"* stopped at the mechanism. Joey's: *"...so you get
+  better targeted results"* — added the explicit payoff clause. Apply the WHY rule to process
+  bullets, not just offer/proof lines.
+- **Replace an abstract qualifier with a concrete, self-interested payoff.** "companies actually
+  worth going after" (mine — abstract, unclear whose judgment "worth" is) → "companies who can
+  ACTUALLY pay ya" (Joey's — concrete, states the reader's own stake in dollars). Same instinct as
+  the existing specificity/tangibility rule, applied to a qualifier rather than a whole claim.
+- **Pull the single biggest concrete number from the source material into the tease as its own
+  bonus hook, even under a "don't over-explain" brief.** Joey added: *"(Also got a way for you to
+  get your hands on 350M+ records full of enriched mobiles, emails, addresses for FREE too)"* —
+  the real Topa database size from the source doc, which my draft never surfaced. This doesn't
+  violate "don't explain how they get it" (no tool/platform named) — it's proof-of-scale, not
+  mechanism. A teaser can still spend one line on the single most impressive real number available.
+- **Don't restack the same proof stat twice in one post once an earlier concrete example has
+  already done that job.** My draft repeated the "70 bottles sent, 20 coffee dates booked, 5
+  closed" number a second time near the close, after already establishing credibility. Joey cut
+  the whole block — "Same process, every channel. / It's what got us 70 bottles… / The targeting
+  comes FIRST, every time." — down to one line: *"Nail your targeting and everything else gets
+  easier."* The adventure-park mention earlier already did the proof job; repeating the bottle
+  stat was dead weight, not reinforcement.
+- **State the actual step count for concreteness, and keep it consistent with any number already
+  used in the headline.** "step by step" (mine, vague) → "5 detailed steps" (Joey's, matching the
+  headline's new "(5 steps)" tag). Extends the existing "a stated count must match what ships"
+  rule in the constructive direction: when you know the real number, use it instead of a vague
+  adjective phrase, and keep it consistent everywhere it appears.
+- **Turn a personal-practice P.S. into a direct prescription for the reader.** "We still run this
+  exact process every time we go after a new vertical" (mine — describes Dan's own habit) → same
+  line **plus** "and you should too" (Joey's addition) — converts observed proof into a direct
+  instruction. A closing P.S. built on "here's what we do" can often be strengthened by one clause
+  turning it into "here's what you should do."
+
+### Dan Skool posts — Two-Step CTA post (2026-09-02, Topa 350M+ database, first /produce-skool test)
+
+*First post run through the new /storm-skool → /brief-skool → /produce-skool pipeline, modeled
+explicitly on Taylor Welch's 2-Step structure ([[taylor-welch synthesis]]). Diffing Joey's rewrite
+against my judge-corrected draft — my own pass had already fixed a pain-first opener and two
+reversal-fragment AI-tells, but Joey's edit caught a further layer: I'd over-corrected the voice
+while fixing those, and stripped some of Dan's texture along with the AI-tells.*
+
+- **The loose-capitalization rule (banked above, same day) applies to CONTINUATION lines that
+  trail off a prior line's ellipsis — NOT a post's own opening line.** I lowercased "right, quick
+  one for ya…" as the very first line of the post. Joey capitalized it back to "Quick one for
+  ya…" and cut "right," entirely. A post still opens on a normal capital; the looseness rule is
+  about mid-post soft continuations, not the post's own first word. Don't over-apply a real rule
+  to a case it wasn't written for.
+- **"Bloke" reads British, not Aussie — use "dude."** Extends the standing Aussie-not-British
+  register correction: even a casual word for "guy" carries an accent. Check individual word
+  choices against the Aussie register, not just sentence rhythm and contractions.
+- **Drop the hedge-adverb propping up a soft reaction word — reach for the stronger word instead.**
+  "honestly a bit unfair" → "a bit insane." A hedge word ("honestly," "kind of," "sort of") in
+  front of a mild reaction is often covering for a reaction that isn't punchy enough on its own.
+  Fix the word, not the hedge.
+- **Don't restate an abstract summary immediately before showing the concrete evidence for it.**
+  I wrote "It fails earlier than that… when the list underneath it is half-wrong to begin with."
+  right before "Wrong emails… dead phone numbers… no mobile… no physical address…" — which
+  already demonstrates "half-wrong" concretely. Joey cut the abstract line to "It happens way
+  earlier" and let the concrete list carry the point alone. Extends the existing
+  show-don't-summarize rule: check whether the very next line already proves the claim you're
+  about to state abstractly.
+- **State the free-ness of a giveaway explicitly when it's the whole hook.** "giving away access
+  to this database" → "...for free." Don't leave the no-cost fact implied by context when it's
+  doing real persuasive work.
+- **STANDING RULE — a Two-Step qualifier condition should seed the NEXT proof-post, not just
+  filter for good behavior.** My qualifier #2 was "You'll actually run it through a real
+  targeting process… not let it collect dust" — a passive please-don't-waste-it condition, close
+  to Taylor's own swipe examples ("IMPLEMENT what's inside"). Joey replaced it with "Let us know
+  the results!" — an active report-back ask. This does double duty: it still filters for genuine
+  intent, AND it plants a standing reason for whoever takes the database to come back with a
+  result Dan can turn into the next domino/proof-post ([[hopper-millions synthesis]]'s
+  domino mechanic). **Default a Two-Step's second qualifier toward "report back" over "promise to
+  use it" whenever the mechanic allows — it's the same filter, but it also seeds future content.**
+  Banked into [[taylor-welch synthesis]] as well since it's a direct enhancement to his own
+  qualifier pattern.
+- **Match the pre-CTA framing line to what the qualifiers actually ask.** "If that's you…" fits
+  an identity-trait qualifier (are you this kind of person). "If you agree to this…" fits an
+  active-commitment qualifier (do you accept these terms). When qualifier #2 shifted from a
+  passive trait to an active promise, the framing line had to shift with it — check these stay
+  paired.
+- **Give the literal ask its own isolated line.** I trailed "comment DATABASE below…" directly
+  onto the qualifier-agreement line. Joey split it onto its own paragraph with a blank line
+  before it. The CTA earns its own visual beat, same principle as an ellipsis-ladder giving each
+  beat room, applied to the ask itself.
+
+### Dan Skool posts — cheeky enemy post, Joey's final edit (2026-09-04, "Trevor and Keith" ESP post)
+
+*First stance post deliberately steered toward a lighter, "doesn't take it too seriously" register
+— Joey's own framing: "Travis does this SO well, he doesn't take it too serious." mariobot's cheeky
+draft personified Gmail/Outlook as two petty office guys (Trevor and Keith) rather than a faceless
+corporate villain. My judge pass caught and fixed a fabricated "$12" USPS price and a banned
+three-beat fragment stack before Joey saw it. Diffing Joey's own rewrite against that judged draft
+below — several of these are new nuances, not corrections of mistakes.*
+
+- **A plain headline stays plain even when the body gets playful.** "There's a bloke at Google
+  whose whole job is to hate you" → **"This guy at Google hates you."** Personality belongs in the
+  body; the headline still states the plainest possible version of the hook. Don't let a fun
+  register bleed into headline length or cleverness.
+- **I missed my own already-banked rule: "bloke" reads British, not Aussie.** This exact word was
+  flagged in the 2026-09-02 Two-Step post's corrections ("'Bloke' reads British, not Aussie — use
+  'dude.'") and I used it again in the headline without checking. Joey's edit removed it by
+  rewriting the headline entirely, not by swapping the word — so the fix landed, but I should have
+  caught this myself at judge time. **Standing rule reinforced: check individual risky word
+  choices (bloke, mate-as-noun, etc.) against the register bank, not just sentence rhythm.**
+- **Spread a single reveal across leading-ellipsis lines for comic timing, not just for a
+  dramatic pivot.** My draft: one sentence — "Somewhere in a Google office there's a guy… probably
+  named Trevor… who grabs his flat white…". Joey split it into three separate lines each trailing
+  on its own "…": "Somewhere in a Google office there's a guy…" / "probably named Trevor…" /
+  "grabs his flat white every morning…" (and dropped "who"). The ellipsis ladder isn't only for
+  the big old-world-to-new-mechanism pivot already banked above — it also works as a comic-timing
+  device, giving a punchline its own beat to land.
+- **Drop "that" after "doesn't care" — spoken economy beats grammatical completeness.** "Trevor
+  doesn't care that you spent 45 minutes…" → "Trevor doesn't care you spent 45 minutes…". Same
+  drop on the next line ("your offer's actually good"). Small, but it's the difference between
+  written and spoken cadence — check for droppable "that"s on any line meant to sound tossed off.
+- **A scare-quoted corporate euphemism can land a joke without narrating it.** Joey added a whole
+  new beat mariobot's draft didn't have: "Better 'Customer experience' they call it" — right after
+  "Trevor gets PROMOTED when your email hits junk." The scare quotes do the ironic work; no need to
+  explain why it's funny. Matches the existing scare-quotes-for-irony register rule, but as a
+  generative technique (write the euphemism, quote it, stop) not just something to preserve.
+- **A bare reaction beats narrating the reaction — applies to humor, not just proof.** My draft
+  closed the Trevor/Keith bit with "I find the whole thing genuinely funny…" — stating that
+  something is funny. Joey cut that entirely and, earlier in the post, just dropped "LOL" on its
+  own line after the Keith beat. The existing show-don't-summarize rule (proven for proof and
+  mechanism claims) extends to tone itself: don't tell the reader something is funny, drop the
+  reaction a real person would actually type.
+- **Name the UK equivalent institution when the room's audience isn't US-only.** My draft only
+  said "USPS." Joey added "USPS… or Royal Mail over here…" — B2B Leads Lab's avatar (per
+  `project.md`) isn't US-specific, and Dan himself is UK-based. **Standing rule: any post naming a
+  US-specific institution (USPS, IRS, etc.) as the example should name the UK equivalent alongside
+  it, not assume the whole room is American.**
+- **Don't default to "whiskey" as the example gift — genericize to keep the door open.** My draft
+  said "a box of whiskey and a letter." Joey changed it to "a gift and a letter." This isn't just
+  variety — Jonathan's live alcohol-license question (can he even legally send bottles yet?) and
+  the Yeti/non-alcohol gift-type poll are both unresolved (see `project.md`). Naming "whiskey"
+  specifically in new copy commits to an example that might not hold. **Use "a gift" generically in
+  any NEW post until the alcohol-license question resolves** — reserve "whiskey" for posts
+  referencing the already-shipped adventure-park proof, where it's a real, specific fact.
+- **Quoted dialogue is exempt from the one-sentence-per-line structure rule.** The judged draft had
+  split "You wanna send a gift and a letter to a CEO? Sick, have a lovely day." across two lines to
+  satisfy the mechanical "two sentences, one line" lint FAIL. Joey put it back on one line. A
+  structural rule written for Dan's own narration doesn't automatically apply to a verbatim quoted
+  utterance — a person saying two short sentences in one breath IS how dialogue actually reads.
+  **New rubric exception: quoted/dialogue lines may carry more than one sentence if they read as
+  one spoken utterance; the lint FAIL on this pattern should be treated as a flag to review, not an
+  automatic rewrite, when the line is a direct quote.**
+- **A detached, confident stance post can close on a flex instead of a hand-raiser question —
+  this is a real option, not an oversight.** The standing rule (banked 2026-08-20) says every Dan
+  Skool post gets a closing engagement question, even a pure-stance post. Joey's final edit cut the
+  segmenting question ("Which one's been more annoying, Trevor or Keith?") entirely and replaced it
+  with a flat declaration: "And we land clients over and over / Trev and Keith will never stop us
+  again." No question, no ask. This fits the Travis "detachment" principle harder than a question
+  would have — someone genuinely unbothered by Trevor and Keith doesn't need the room's validation,
+  he just states the outcome. **Treat "always close on a hand-raiser" as the default, not an
+  absolute — a confident flex-close is the right call when the post's whole register is
+  detachment/not-being-fussed, and it has the side benefit of making the post a genuine
+  zero-ask post** (this one flipped B2B Leads Lab's cadence log from a 3rd-ask-in-a-row to its
+  first pure-value entry — see `skool-cta-cadence.md`).
+- **Nickname a running bit character by the close.** "Trevor" and "Keith" shorten to "Trev" in the
+  final line only, after both names have been used enough to be familiar. Reads like an inside
+  joke settling in — save the nickname for the payoff, don't use it on first mention.
+- **An ellipsis-trailed wager opener can replace a stated-reaction opener.** My draft opened "I
+  think about this sometimes and it cracks me up." — telling the reader Dan's reaction before the
+  story. Joey's opener: "Yo, I bet a pretty penny…" — a curiosity hook that promises a claim
+  without stating it yet, then cuts straight to the Trevor story. Consistent with the general
+  pain-is-amplifier/curiosity-first opener rule, applied to a stance post's tone-setting line.
+- **Open register question, not yet a rule: "pretty penny" reads more general-British-idiom than
+  distinctly Aussie.** Flagging, not correcting — this is Joey's own line, and the standing
+  Aussie-not-British correction (2026-08) may be more about avoiding STIFF/formal phrasing
+  ("conversations" vs "convos") than a literal ban on any British-origin idiom. Watch for more data
+  points before either tightening or loosening the register rule.
+
+### Dan pillar content — first co-written pillar (2026-09-04, Dream 100 Scorecard, Pillar 2)
+
+*New content type, not a short Skool post: "Pillar content" — long-form, highly tactical,
+weekly, replacing lead magnets (Joey's framing: AAA Ninjas teases it, comment-to-DM gates access
+to the actual pillar post, which lives as its own heading in the B2B Gifts monthly doc). Pillar 1
+("How to Build Your Dream 100 List") was Dan's own unassisted post, used here as the primer.
+Pillar 2 is the first one built through this pipeline — mariobot drafted from a scorecard
+framework I designed (5 checks: Right Person, Right Address, Verified Follow-Up Info, Buying
+Signal, Budget Fit), then Joey rewrote the draft directly. Diffing his edit below.*
+
+- **A scorecard/checklist gets ONE dense paragraph per item; a sequential how-to gets each beat
+  spread across its own line.** My draft copied Pillar 1's slow, spread-out step-by-step pacing
+  (3-4 short lines per check). Joey compressed every CHECK into a single tight paragraph. The
+  jobs are different: a STEP walkthrough is followed once, in order, so pacing it out aids
+  comprehension; a SCORECARD gets scanned repeatedly against a list of leads, so density and
+  scannability matter more than pacing. **Match paragraph density to whether the content is
+  walked-through-once or referenced-repeatedly, not to the previous pillar's formatting.**
+- **Pillar content should link back to the previous pillar, not just reference it by number.**
+  Joey added "👉🏻 Link if ya need it: XXX" right after mentioning last week's post, and stripped
+  out my inline "from Step 4" / "same process as Step 5 from last week" callbacks scattered
+  through the body. One link at the top does the job; repeated step-number callbacks throughout
+  a checklist just add friction. **Standing pattern for pillar content: one clear link-back near
+  the top, not scattered references to specific step numbers from the prior post.**
+- **Turn an abstract criterion into one vivid, specific, slightly personal example — don't just
+  restate it more strongly.** Check 2 ("a current physical address that reaches them personally")
+  got a real example bolted on: "(If their Linkedin says they live in Scotland but the company
+  head office is in London - I would not send)." Check 5 got "and 2 employees on Linkedin" added
+  to the existing website/reviews mismatch example. Both are the show-don't-summarize rule applied
+  to a RULE rather than a result — a hypothetical-but-concrete scenario does more work than a
+  more emphatic restatement of the abstract criterion.
+- **A binary "all boxes or nothing" bar beats a graduated scoring tier for a real person's actual
+  standard.** My draft scored 0-5 with three tiers (4-5 mail / 2-3 keep researching / 0-1 drop).
+  Joey cut all of it for one line: "I would only mail to peeps with all 5 points checked." Simpler,
+  and more honestly Dan's real bar — a manufactured-sounding tiered system reads like a framework
+  built to sound sophisticated, not like how someone actually decides. **Don't add graduated
+  scoring/tiers to a checklist unless the real person actually thinks in degrees — ask, or default
+  to the simpler binary bar.**
+- **Teaching content can close on "does this make sense?" instead of a segmenting hand-raiser.**
+  Joey's close: "Make sense? / Any questions let me know :-) / Happy hunting / -Dan" — a
+  comprehension check and an open door, not a two-camp question designed to drive comments. Extends
+  the lesson already banked on the ESP/enemy post (a confident flex can replace the hand-raiser) —
+  here the alternative is a genuine teaching close. **Pillar/teaching content doesn't need the
+  Skool-post segmenting-ask pattern; match the close to whether the post's job is to teach or to
+  engage.**
+- **He kept my flagged unverified estimate — by cutting it, not fixing it.** My draft's "this takes
+  maybe 10-15 minutes per company" (flagged as invented, not sourced) didn't survive his edit at
+  all. Confirms the right response to a flagged invented number is often just deleting the line,
+  not replacing it with a different guessed number.
+- **"Happy hunting" closes the loop on the post's own metaphor.** The whole mechanism is framed as
+  hunting/prospecting (Dream 100, "shortlist," scorecard-as-filter) — Joey's sign-off line ties
+  back to that instead of a generic "get cracking" or "lemme know." When a post's whole frame is a
+  metaphor, look for a sign-off that completes it rather than a stock closer.
+
+### Dan Skool posts — impossible-vantage-point catch (2026-09-04, "pre-sold prospect" post)
+
+- **A dramatized concrete moment has to be something the narrator could actually witness — check
+  the mechanism's real sequence before staging the scene.** mariobot's draft (which I passed at
+  judge time) had: "if you've ever sat across from someone who opened your box, read your letter,
+  and showed up GRINNING…" — but the student is never present for the box-opening; that happens
+  alone, at the prospect's desk, before any call. What the student actually witnesses is the
+  AFTERMATH — the prospect's demeanor once they're on the call. Fixed to "hopped on a call and
+  they were already grinning before you'd said a word." **Show-don't-summarize only works if the
+  shown moment is one the narrator could really have seen — verify the physical sequence of the
+  real mechanism (who is where, when) before dramatizing it, the same way a proof number gets
+  verified before it's used.** I missed this at judge time; Joey caught it.
+
+### Dan Skool posts — "Resistance Bear" rewrite (2026-09-04, pressure-to-close post, Joey's full pass)
+
+*Joey took the judged/condensed "pressure to close" draft and rewrote most of it himself —
+bigger than a line-edit, closer to a re-angle. Diffing his final version against mine.*
+
+- **A specific first-person NUMBER isn't the only way to make an opener feel grounded — and if
+  it's not a real verified figure, it's a liability, not flavor.** My opener was "Five clients in
+  and I still haven't done a single 'hard close.'" — "five" was never a verified fact, I invented
+  it to make the line feel personal after being told my openers were too generic. Joey replaced it
+  with "I can't remember the last time I ever had to hard close someone" — equally confident and
+  personal, zero invented number. **When fixing a "too generic" opener, reach for a sharper
+  idiom or a real fact, not a plausible-sounding invented statistic.**
+- **Don't over-trim a line that's doing characterization work, even in a "condense" pass.** My
+  condensing edit cut "I'm no zen master who transcended the need to sell…" down to "I'm no zen
+  master." — shorter, but it lost the ironic self-awareness the fuller phrase carried. Joey
+  restored the long version. Condensing should cut redundant words, not a phrase that's earning
+  its length through voice/character.
+- **Name the actual psychological principle, don't just describe its effect.** My draft explained
+  WHAT happens (the pressure disappears) but never said WHY in terms a reader could reuse. Joey
+  added "Reciprocity as the old marketing dogs call it" — naming a real, recognizable principle
+  gives a teaching post more weight than describing the phenomenon alone. Directly connects to the
+  named-frameworks approach all through `../../mentors/travis-sago/psm-btem/synthesis.md` — Travis
+  constantly names the mechanism, never just gestures at it.
+- **Personify the abstract obstacle as a character — second time this has worked.** "Resistance
+  Bear" joins "Trevor and Keith" (the ESP/spam-filter post) as the same move: turn an abstract
+  force (here, buyer defensiveness) into a nameable, slightly cartoonish character. "Disarm the
+  Resistance Bear" is more quotable and memorable than "reduce sales resistance." **Worth treating
+  as a standing Dan device now, not a one-off**: when a post argues against an abstract obstacle,
+  consider giving it a name.
+- **A single crisp instructive closing line can beat a proof stat plus a benefits list.** My
+  ending stacked a real proof number (70 letters/20 coffee dates/5 closed) AND a run of "you get
+  better at the conversation" bullets AND a callback to the opening line. Joey cut ALL of it for
+  one line: "Get this 'opener' right, the rest becomes easy." Extends the lesson already banked on
+  the Dream 100 Scorecard post (teaching content doesn't need a hand-raiser) one step further —
+  sometimes it doesn't need a big close at all, just one confident instruction.
+- **"Rooting for ya, Dan" is a valid alternate sign-off, not just bare "Dan."** Matches the
+  primer's own second shipped post exactly, and echoes Travis's own "Rooting For You, T Dub"
+  sign-off from the newly-ingested PSM+BTEM notes. Reach for it when the post's mood is warmer/
+  more encouraging than a flat sign-off suits.
+- **A list doesn't need a 4th item just because the anaphora pattern could stretch that far.**
+  I suggested adding "Give me your business" as a fourth line to "Give me a call / Give me a
+  meeting / Give me money." Joey left it at three. The existing Dan-runs-longer-lists pattern
+  (media buying… copywriting… POS systems… insurance… SaaS…) is a real option, not an
+  obligation — match the list length to what the moment needs, not to a default toward more.
+
 Related: [[2026-08-19-b2b-leads-lab-skool-post-sales-call-clip]] [[2026-08-20-b2b-leads-lab-skool-post-anti-ai-direct-mail]]
+[[storm-skool]] [[brief-skool]] [[produce-skool]] [[taylor-welch synthesis]]

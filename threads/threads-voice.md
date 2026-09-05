@@ -209,6 +209,29 @@ version says "your mind is fixed on Jesus" where the draft said "stay on Him." S
 workspace — prefer the actual name over a pronoun when introducing the idea, even
 though the pronoun is doctrinally correct and capitalised properly either way.
 
+**New signal (2026-09-02, core-practices/Unglamorous-Absolute round): the abstract
+closer gets swapped for a concrete comparative, not just cut.** Draft ended "...is
+actually the whole thing. No shortcuts. Just that, for long enough." Posted ended
+"...is actually more freeing than chasing my pleasures." This isn't the usual
+shorten-and-drop pattern (posted is only 17 characters shorter) — Joey replaced an
+abstract self-referential close ("the whole thing") with a specific trade-off the
+reader feels (freedom vs. chasing pleasure).
+
+**Apply going forward:** for the Unglamorous Absolute / Definition Flip family, when
+the draft's closer restates the premise abstractly ("is the whole thing," "is what
+actually works"), draft the tighter option as a concrete comparative instead ("more
+X than Y") rather than a flat intensifier.
+
+**New signal (2026-09-02, same round): match the swiped source's own punctuation.**
+The Codie Sanchez swipe used an ellipsis ("The older I get, the more I realize...").
+The draft substituted an em dash; Joey's posted version restored the ellipsis. When
+working directly from a screenshot swipe (not the structure-bank's paraphrased
+skeleton), match its punctuation, not just its shape.
+
+**Word-swap note:** "obeying quickly" → "living in obedience" on the same post —
+Joey prefers the state ("living in") over the clipped instruction ("obeying
+quickly") when the list is otherwise plain and unhurried.
+
 ## How to improve this file
 
 After each fortnightly measurement pull, add: any new opener that beat median, any word or phrase

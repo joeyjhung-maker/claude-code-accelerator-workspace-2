@@ -15,6 +15,7 @@ Each partner needs its own research (their avatar, their product, their sales pa
 
 - ROYA offer doc, source of truth: [clients/flexxable-offer-doc-ROYA.md](../clients/flexxable-offer-doc-ROYA.md)
 - Instant AI Agency book offer doc: [jv/shared/iaa-book-offer-doc.md](shared/iaa-book-offer-doc.md) — needs Joey to fill in, don't invent offer details.
+- Dan-voice primer for rewriting a partner's affiliate swipe into Dan's voice: [jv/shared/dan-voice-primer-excerpt.md](shared/dan-voice-primer-excerpt.md) — used as the `--primer` for `scripts/run_mario.py` on any "sell their offer to our audience" leg. Moved here 2026-09-05 after reuse across two partners (Rich Schefren, Matt Leitz).
 
 ## Partners
 

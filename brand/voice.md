@@ -21,6 +21,8 @@ The rules Claude follows when writing in this brand's voice. Add to this every t
 
 - (2026-08-19) **Dan is Australian, not British.** The standing "British-inflected" note is wrong at the root — Dan writes from an Aussie background and says so in his own copy ("Maybe it's because of my Aussie background? Hard selling doesn't feel like 'me'"). Keep the casual register, fix the accent. In Skool community posts he's looser again: "ya", "'em", double exclamation marks, CAPS for vocal stress, ellipses instead of commas. Full breakdown in the rubric's **Dan — Skool community posts** section. Related: [[dan-skool-voice]]
 
+- (2026-09-02) **Deliberately loose capitalization is part of the "not AI" signal — don't tidy it up.** Joey, on his own edit of the Dream 100 teaser: "I am purposefully being more lazy with my writing and using less caps... I want to make sure ppl know i am not AI writing so its less polished." Two concrete moves: (1) don't title-case a niche/category name that reads more natural lowercase — "Adventure Park Niche" → "adventure park niche"; (2) don't capitalize the first word of a new line if it's really a continuation of the sentence above (a soft line-break, not a new sentence) — "And it's working like gangbusters!" → "and it's working like gangbusters!". **This runs counter to normal instinct** (an AI or an editor would "fix" both of these as errors) — the looseness is the point, not a mistake to clean up. Apply this whenever drafting or editing Dan's Skool voice: resist the urge to capitalize line-starts and category names by default: check if a human writing fast actually would have.
+
 ## Words we use / words we never use
 Use: get, cut, ship, proof, show.
 Never: leverage, synergy, seamless, effortless.

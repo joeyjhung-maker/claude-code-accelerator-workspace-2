@@ -106,8 +106,11 @@ only, not a forecast Dan has signed off on, just the inputs Joey gave for planni
 **Anchor Course structure (2026-08-26):** drip-fed, not delivered all at once. The core course
 launches first (30th Sept, per Key Dates). Additional "mini courses" launch afterward over time
 to bring people back into the group repeatedly — see item 9 in Key Dates ("continued
-launch/promo of new mini courses," October, Joey/Nat). Full mechanics pending a Travis call
-transcript Joey is sharing — read it once available before building the drip sequence.
+launch/promo of new mini courses," October, Joey/Nat). **2026-09-03: this is very likely the
+Netflix Model, covered in the Travis call transcript now digested at
+`mentors/travis-sago/2026-09-03-netflix-model-training.md`** — read that before building the drip
+sequence; its core mechanic (announce each new content drop plainly, let the accumulating pile
+convert, no hard pitch needed) maps directly onto this plan.
 
 **Two ascension mechanisms run down the whole ladder, hitting every stage:**
 1. Email
@@ -310,11 +313,20 @@ the gift has done its work. Handraiser CTA splits the room into "already crush s
 to land clients without selling." P.S. names AI Automation and demotes it to one example of eight,
 which is what stops the group drifting into an AI-automation group.
 
-**PENDING — AAA Ninjas teaser post pointing at the above.** Joey's call, later.
-Separate piece, teaser style, lives in the AAA Ninjas group and drives people over to B2B Leads Lab.
-This is the cross-group recruitment move: the NAP lands in B2B Leads Lab, the teaser sits in AAA Ninjas
-and points at it. Note the teaser has a different job to the NAP — it sells the *click across*, not
-the argument, so don't just trim the NAP down.
+**2026-09-02 — AAA Ninjas teaser post, pointing at the Dream 100 pillar post. DONE, SHIPPED.**
+`copy/2026-09-02-aaa-ninjas-skool-post-dream100-teaser.md`
+Teases the B2B Leads Lab pillar post "How to Build Your Dream 100 List (Step by Step)" (Post 2,
+Sep tab) without naming the group or the access mechanism — high level, "comment DREAM 100 to get
+it" CTA, matching the same gated-comment mechanic already proven inside B2B Leads Lab itself.
+Body drafted via mariobot off `b2b-leads-lab-body.md`, brief banked at
+`briefs/skool-post-dream100-ninjas-teaser.md`, judged clean, then broadened per Joey's note that
+this targeting process is just as relevant to DBR as to lumpy mail — don't let it read as
+lumpy-mail-only. Joey then rewrote the judged draft further; that pass's craft upgrades (direct
+open over strawman, real adventure-park anchor, per-channel cost splits, 👉🏻 pointer emoji,
+concrete-over-abstract payoffs, the 350M+ records hook, cut duplicate proof, prescriptive P.S.)
+are banked in `rubrics/copy-rubric.md`. This is the cross-group recruitment move: the pillar post
+lives in B2B Leads Lab, the teaser sits in AAA Ninjas and points at it — different job to a NAP,
+sells the *click across* not the argument.
 
 **2026-08-20 — "ANTI-AI direct mail" philosophy post. DONE, shipped.**
 `copy/2026-08-20-b2b-leads-lab-skool-post-anti-ai-direct-mail.md`
@@ -344,4 +356,11 @@ that caught my first headline drafts running 2x too long.
 Related: [[Flexxable]] [[ROYA]] [[2026-08-19-image-request-goes-to-prompt-not-mockup]] [[travis-sago]]
 
 ## External framework: Hopper Millions (Travis Sago)
-Being absorbed at `mentors/travis-sago/hopper-millions/` — his course on building/monetizing a small warm Skool group, directly relevant to the free-to-paid ladder here. Not digested yet (transcripts pending). Once `synthesis.md` there has real content, check it against this project's NAPs/polls/auctions/handraisers growth strategies before locking Sep/Oct group-growth tactics.
+Digested at `mentors/travis-sago/hopper-millions/synthesis.md` (2026-08-20) — his course on
+building/monetizing a small warm Skool group, directly relevant to the free-to-paid ladder here.
+Already checked against this project's NAPs/polls/auctions/handraisers strategy — see that file's
+"Where this matches, extends, or conflicts" section. **Also see
+`mentors/travis-sago/2026-09-03-netflix-model-training.md`** — a separate live training on
+keeping a paid tier converting via continuous content drops, zero-CTA premium posts, VIP/Shogun
+tier design, and community-acquisition value assessment; its "Where this plugs into B2B Leads Lab"
+section maps directly onto the Anchor Course drip plan above.
