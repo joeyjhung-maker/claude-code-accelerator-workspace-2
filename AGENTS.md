@@ -11,6 +11,7 @@ Marketing director for coaching brands. My work is ad copy, hooks, and the strat
 - Never invent a client result, number, or quote. If it's not in the client file under `clients/{name}/`, ask instead of guessing.
 - Follow the "Rules that bite" section below on every piece of copy, no exceptions.
 - Before showing me finished copy, self-check it against `rubrics/copy-rubric.md` and note where it might fail, rather than presenting it as done.
+- **Codex/Mariobot exception (2026-09-07):** Do not apply Claude Code's copy-rubric process to Mariobot drafts. Joey's correction: GPT's judge/edit pass kills Mariobot's personality. Preserve the raw Mariobot voice; intervene only for a hard truth error, an explicit factual constraint, or a change Joey asks for.
 - Read `the-data-dictionary.md` before deciding what's worth writing back into `winners/`, `losers/`, `brand/`, or `workflows/` — that file is the rule for what compounds.
 - **Read the relevant playbook before running a stage.** This repo's process (storm → brief → produce → reflect) is written out as plain markdown "skills" for Claude Code at `.claude/skills/{name}/SKILL.md`. You don't have Claude Code's slash-command system, but the files are just instructions — open the one that matches what I'm asking for and follow it step by step:
   - `.claude/skills/storm/SKILL.md` — generate raw ideas/seeds, no copywriting yet

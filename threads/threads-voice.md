@@ -272,6 +272,34 @@ skeleton), match its punctuation, not just its shape.
 Joey prefers the state ("living in") over the clipped instruction ("obeying
 quickly") when the list is otherwise plain and unhurried.
 
+**Pattern, confirmed twice (2026-09-02 Codie Sanchez swipe + 2026-09-07 self-worth
+round): em dash → ellipsis, even on an organically-drafted post, not just when
+matching a swipe.** Draft: "...on your own — it's something the Father tells you
+first." → Posted: "...on your own... it's something the Father tells you first."
+The 2026-09-02 instance was explained as matching a swipe's punctuation, but this
+one wasn't swiped from anywhere — it's an original draft, and Joey still made the
+same substitution.
+
+**Apply going forward, promoted to a standing preference:** default to an ellipsis
+rather than an em dash when the pause is a soft trailing thought leading into the
+sentence's real point (as opposed to an em dash's harder interruption/aside). Still
+match a swipe's own punctuation exactly per the 2026-09-02 rule when working from
+one — this is now the fallback for organic drafts too, not only the swipe case.
+
+**Word-swap note (2026-09-07, self-worth/Moses round):** "That's still the order."
+→ "That's still true today." Joey swapped an abstract callback noun ("the order" —
+requires the reader to connect back to "the harder work was..." above) for a plain,
+immediate, colloquial phrase. Consistent with the general instinct logged
+2026-08-28 (word-swap note): when a note's own vocabulary isn't the clearest word
+for a given line, the plainer/more direct word wins even if it's less precise to
+the source paragraph.
+
+**Structural note, same round:** the transitional line ("That's still true today.")
+was given its own paragraph break in the posted version, where the draft had it
+open the next paragraph instead. Reinforces the existing "line break between every
+idea" rule — a short pivot sentence gets isolated as its own beat rather than
+leading into the sentence that follows it.
+
 ## How to improve this file
 
 After each fortnightly measurement pull, add: any new opener that beat median, any word or phrase
