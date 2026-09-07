@@ -1,18 +1,25 @@
-HL: LinkedIn keeps coming up in convos and I wanna know where everyone's actually at
+HL: Do you use Linkedin to get clients?
 
-Been noticing more members mentioning LinkedIn lately… some prospecting, some posting content, a few reckon it's a ghost town.
+I've been talking a lot about lumpy mail right now
 
-I'm trying to figure out if it's worth building proper LinkedIn training inside the group… only makes sense if enough of ya actually want help dialling it in.
+BUT…
 
-So vote below and gimme the honest read… this'll probably shape what we cover next.
+I know a bunch of you prefer to keep things lean & simple
 
-Dan
+SO we're cooking somethin' up in the Lab for LinkedIn
 
----
+This group is all about B2B LEADS after all
 
-Poll options (enter into Skool's native Poll feature, not the post body):
+I know a few of you use it already OR want to use it… if you can get better results?
 
-1. Using it for outreach/prospecting and getting results
-2. Building a personal brand / posting content
-3. On there but not getting much back honestly
-4. Not really using LinkedIn at all
+Can you help with me with below
+
+I'll get you priority access + a discount to our new tool when it's out
+
+Where you at right now? 👇
+
+1 - Sending DMs and booking calls from it
+2 - Posting content and building a personal brand
+3 - Both… but honestly not getting much back from either
+4 - Not really using it at all
+5 - Want to use, if there was an easier way

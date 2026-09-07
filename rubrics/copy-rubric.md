@@ -796,5 +796,30 @@ bigger than a line-edit, closer to a re-angle. Diffing his final version against
   (media buying… copywriting… POS systems… insurance… SaaS…) is a real option, not an
   obligation — match the list length to what the moment needs, not to a default toward more.
 
+### Dan Skool posts — LinkedIn poll, Joey's final edit (2026-09-04)
+
+- **When asking about something outside the group's stated core focus, name the mismatch before
+  asking.** B2B Leads Lab is a lumpy-mail group; LinkedIn is a different channel. Joey opened with
+  "I've been talking a lot about lumpy mail right now… BUT… I know a bunch of you prefer to keep
+  things lean & simple… This group is all about B2B LEADS after all" — addresses the "wait, why is
+  he asking about LinkedIn here" reaction head-on instead of just dropping the poll cold.
+- **Add a real incentive when one genuinely exists, rather than a pure research ask.** Joey added
+  "I'll get you priority access + a discount to our new tool when it's out" — turns a zero-stakes
+  poll into a soft pre-launch interest-capture list, without changing the actual ask (still just
+  "vote below"). I had no visibility into this tool, so I couldn't have added it — worth asking
+  next time whether an upcoming offer exists before finalizing a "pure value" poll.
+- **Concrete action-phrased poll options beat abstract category phrasing.** My second draft's
+  options read "Using it for outreach/prospecting and getting results" — Joey went back to the
+  first draft's plainer "Sending DMs and booking calls from it." Concrete verbs over abstract
+  nouns, even in a compact poll option.
+- **Don't forget the "not doing it yet, but would if it were easier" segment — often the most
+  valuable one.** Joey added a 5th option: "Want to use, if there was an easier way." My 4-option
+  version only had "not really using it at all," which conflates genuine disinterest with
+  friction-blocked interest — exactly the segment a new tool removing that friction should be
+  identifying. Check every poll for this segment whenever a solution to the blocker is coming.
+- **Possible typo, flagged not fixed (Joey's own line):** "Can you help with me with below" —
+  reads like it should be "Can you help me with the below" or similar. Left as written per
+  provenance rules; worth a glance before this ships.
+
 Related: [[2026-08-19-b2b-leads-lab-skool-post-sales-call-clip]] [[2026-08-20-b2b-leads-lab-skool-post-anti-ai-direct-mail]]
 [[storm-skool]] [[brief-skool]] [[produce-skool]] [[taylor-welch synthesis]]
