@@ -71,6 +71,54 @@ group's copy you're writing before reaching for identity/escape angles.
   relevant to the parked content-strategy tension, though he didn't address Joey's specific
   cannibalization worry.
 
+### Topa call — Dallas invite copy, LinkedIn automation demo, wine-over-whiskey pivot (2026-08-28,
+full transcript + summary in `topa-call-2026-08-28.md`)
+
+*Chronologically between the Travis call above and the launch-logistics call below.*
+
+- **Whiskey dropped in favour of wine + Stanley/Yeti tumblers** — Jonathan: "whiskey is the wrong
+  play," reads as "hardcore alcohol" versus wine, and people are already uneasy about alcohol
+  generally. This is the call where that shift was decided; it's why the later 09-04 call only
+  talks about wine and the Yeti.
+- **New internal fact: Dan is in discussions to take a shareholding in Topa itself** — separate
+  from the already-banked "Dan takes a 1/3 cut of the fulfilment business" (that's revenue share
+  on fulfilment; this is equity in Jonathan's company). Not for customer-facing copy.
+- **Positioning comps for LinkedIn automation content:** Hey Reach (~$50M valuation, 10,000
+  users, pure LinkedIn-outreach SaaS) and SalesFlow (20,000 users) — Jonathan's case to Dan (who
+  wasn't yet sold on LinkedIn automation as a product) that the category works.
+- **Rate limits as a legitimacy/safety selling point:** max 25 connection requests/day, ~500/month
+  per LinkedIn account, randomized timing, IP geo-matched to the account holder's real location via
+  a licensed third-party automation layer. Jonathan's own results targeting active LinkedIn
+  posters specifically: **60–70% connection-acceptance, ~50% reply rate.**
+- **Deliberate product stance, real content angle:** Jonathan is NOT building heavy AI
+  personalization or an AI auto-responder — cites the "AI slop" backlash on LinkedIn, prefers a
+  plain honest DBR-style pitch over fake "I noticed your company does X" personalization, and
+  wants a human on every reply. **Topa's is "undetectable automation," not "AI writes and replies
+  for you."**
+- **Feature gap, same one raised again on 09-04:** no negative-keyword/Boolean exclusion in the
+  lead-database search yet (Nat wanted "adventure park, NOT insurance"), and no duplicate-contact
+  exclusion across repeated searches.
+- **Real, unresolved copy tension:** B2B Leads Lab's whole pitch is "we don't do cold DMs/email/
+  ads" — so selling LinkedIn automation as a bonus needs careful framing (Jonathan's angle:
+  LinkedIn growth = authority-building, not "outreach that replaces lumpy mail," but this isn't a
+  finished line yet).
+- **Unverified claim, don't repeat as fact:** a member reportedly told Jonathan LinkedIn "cracked
+  down" on automated outreach tools recently — third-hand via Jack, Jonathan hadn't heard it and
+  pushed back citing Hey Reach/SalesFlow's scale as evidence the category is fine.
+- Dallas event bonus (at this point): free Topa (10,000 lead downloads/month) + free LinkedIn
+  automation seat, listed inconsistently on the call as both $99/mo and $79/mo for one account —
+  confirm the real current price before quoting.
+- Pricing reasoning behind the later-locked £39.99/£54.99: target ~£15–20 profit margin per send,
+  one all-in checkout price (both cited disliking "surprise shipping fee at checkout").
+- New tool flagged by Joey: **Endole** (UK company-data lookup — director names/LinkedIn links,
+  registered address) as a double-check alongside Topa before a physical send. UK-only.
+- Nat is planning to rebuild her own coffee-date/demo call script (currently "a feature dump," no
+  room to dig into pain first) and floated a bigger-ticket retainer tier for larger companies
+  (~£1,500/mo + £500 setup, unclear escalation mechanic) — separate from the core gift product,
+  unconfirmed, worth checking with Nat before citing.
+
+---
+
 ### Topa launch-logistics call — key facts (2026-09-04, full transcript + summary in `topa-call-launch-2026-09-04.md`)
 
 **Supersedes the dates in the "Key Dates (from Dan, 2026-08-26)" table below** — those were
