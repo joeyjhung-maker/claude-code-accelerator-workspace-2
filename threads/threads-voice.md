@@ -112,6 +112,46 @@ lowercase occurrence in the archive as an error, not as evidence.
 This applies to anything drafted from here on, including quotes pulled forward from old posts —
 if an old line gets reused, fix the casing.
 
+## Reading level — REVERSED 2026-09-05, no fixed target
+
+Locked at ~grade 2 earlier on 2026-09-05 after Joey preferred simplified variations of one
+specific draft. Reversed the same day once checked against the real archive: actual posts run
+grade 2.3 to 14.3, averaging ~5-6 — "Maturing is realising prayer fixes everything." alone
+scores 14.3. The grade-2 rule was a one-example overgeneralization, not a real pattern.
+
+**No fixed grade target.** Don't simplify vocabulary to hit a number. If a draft needs
+"proximity" or "meditation," use it — those are the account's own vocabulary (see the word
+frequency list above). Readability is a side effect of the voice register below, not a target
+to draft toward directly.
+
+## Default voice register: personal-processing, not manufactured structure
+
+**The actual gap, found 2026-09-05 against the real 190-post archive (not the mined
+structure-bank).** Drafts built purely from `structure-bank.md`'s named devices (Definition
+Flip, Cleared Suspect, Counter-Intuitive Method) came back rejected twice as "not sounding like
+me" — the twist-device shape reads as manufactured. The account's actual baseline post is
+someone thinking out loud and landing on a realisation, not a rhetorical device:
+
+> "The more I pray, the more I realise this: Our words carry so much power..."
+> "I used to pray for God to change my situation. Sometimes he did. But then I ended up in the
+> same mess a year later. It wasn't until I learned he changes US..."
+> "Something that took me far too long to learn: Quiet seasons aren't for moaning..."
+> "You're praying for God to change your situation. When he's waiting to change you so you can
+> change your own situation."
+
+**Default to this register first.** Reach for the "Openers that recur" list above (`The more
+I…`, `I used to…`, `Something I…`, `When you understand…`) as the primary shape for a
+faith-thread draft. Treat `structure-bank.md`'s named devices as a secondary option for when a
+note's content is genuinely a clean paradox or list — not the default lens every draft gets
+run through.
+
+**Watch the testimony line carefully here.** "I used to…" and "The more I…" are documented,
+approved recurring openers (not testimony) as long as they stay generic/interpretive — a stance
+on the teaching, not a specific dated event or experience. "I used to think meditation meant
+clearing your head" is fine. "Last Tuesday I sat down to meditate and…" is not — that's an
+invented event and crosses into testimony territory, which stays off-limits per the hard rule
+above.
+
 ## Biographical facts stated publicly
 
 Use these only as written. Anything not on this list gets asked for, never assumed.

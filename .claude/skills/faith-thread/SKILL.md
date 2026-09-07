@@ -36,29 +36,88 @@ in the session. If you can't point to the line it came from, don't write it.
 - If the wiki has nothing on the named topic, say so and ask — don't draft from
   general theological knowledge as a fallback.
 
-### 2. Read the source note(s) in full
-Read the whole matched note, not just a snippet — the draft's claims, framing, and
-any citation all have to come from what's actually written there. Note the file name;
-it gets cited in the saved draft.
+### 2. The wiki finds the topic. The raw source is what you draft from.
 
-### 3. Pick structures — non-testimony only
-Pull from `threads/structure-bank.md`, **restricted to this list**:
+**Never draft directly off a wiki note.** The wiki is a compressed, paraphrased
+summary — that's its job, and it's good at that job, but it strips out the specific
+quotes, images, and demonstrations that make a post actually land. Confirmed
+2026-09-05: drafted straight from `biblical-meditation.md`'s one-line paraphrase
+("Confidence in prayer is developed through proximity"); Joey rejected the whole
+batch as flat. The wiki note's own sources had the real material — a front-door/
+kitchen demonstration, a magnifying-glass image, a loud-vs-connected contrast — none
+of which survived into the summary.
+
+**2a. Read the matched wiki note in full** — same as before, this confirms the topic
+is real and surfaces cross-referenced concepts (`[[other-note]]` links) worth
+checking too.
+
+**2b. Read its raw source(s).** Every wiki note has a `sources:` line in its
+frontmatter listing the file(s) it was built from. Locate those files under
+`/Users/joey/Documents/Second Brain/raw-sources/` (search by filename — the folder
+structure varies by teacher/series, e.g. WASP sources sit under
+`raw-sources/Prophetic Notion Export/Prophetic/WASP/`) and **read them in full**,
+not just the section the wiki note cited. This is where the actual post language
+comes from: specific quotes, metaphors, demonstrations, contrasts. Note which raw
+file each drafted line traces to — it gets cited alongside the wiki note in the
+saved draft.
+
+If a `sources:` entry can't be found on disk (renamed, moved, or the wiki note
+predates this rule and cites something too vague to trace), say so and fall back to
+the wiki note — don't silently skip this step.
+
+### 3. Pick from three families — vary across ALL of them, not just within one
+
+Three shapes are all legitimate and evidenced. Draft across all three in a batch —
+**don't fill a 5-post batch with several posts from the same family**, even if
+they're technically different named structures. Confirmed 2026-09-05: three drafts
+that each opened with a personal realisation ("The more I…", "I used to…",
+"Something I…") got rejected as too similar even though they were three different
+structure-bank entries in theory — the opener SHAPE was the same three times.
+
+**Family A — Personal-processing register.** Someone thinking out loud and landing
+on a realisation. Pull from `threads-voice.md`'s recurring openers (`The more I…`,
+`I used to…`, `Something I…`, `When you understand…`), shaped around the raw
+source's teaching content. Use **at most one per batch** — this was the
+over-used family that triggered the 2026-09-05 correction.
+
+**Family B — Joey's own newly-mined structures (#20-23).** Supplied directly by
+Joey 2026-09-05 from his real archive, including the single highest engagement
+rate found in the account so far (#22, 14.53%). Treat these as first-class, not
+fallback:
+- **#20 Problem Illumination** — name a felt problem, reframe it, explain the
+  mechanism/why, close with the stakes.
+- **#21 Warning Command** — Never/Don't + a permission clause + urgency + a
+  scripture citation + a casual aside + a restated closing warning.
+- **#22 Diagnostic with Branching Outcomes** — "You know you've truly X when Y."
+  Two branching outcomes, both answered with the same calm. Highest-evidence
+  structure in the bank — reach for this one whenever the note supports a clean
+  internal-state definition.
+- **#23 Narrative Parallel (Typology)** — narrate a concrete Bible scene with real
+  dialogue/detail, let an object's transformation carry the metaphor, extract one
+  principle, close with a contemporary rally line. Only use when the wiki note or
+  raw source actually contains the Bible narrative in enough detail to narrate
+  concretely — don't reach for a Bible story from memory to force this structure.
+
+**Family C — Original mined structure-bank devices**, used only when a note's
+content genuinely calls for one (a clean paradox fits #4, a hard list fits #3 or
+#9, a sharp two-line distinction fits #19) — not as a default lens:
 
 **Eligible:** #1 Unglamorous Absolute · #2 Definition Flip · #3 Absurdly Simple List ·
 #4 Counter-Intuitive Method · #5 Reversed Posture · #6 Research Reveal · #8 Blunt
 Command · #9 Stacked Directive · #13 Compressed Aphorism · #15 Trait Redefinition ·
 #16 Open Question · #18 Optimal-Decision Release · #19 Cleared Suspect
 
-**Never use:** #7 Scene Testimony, #10 Confession-to-Principle, #11 Milestone Number,
-#12 Rock-Bottom List Promise, #14 Unresolved Confession (all require a personal
-story) — and #17 Pre-empted Critic (flagged do-not-use in the bank itself).
-
-Match structure to what the note actually offers — a definition-heavy note fits #2,
-a paradox fits #4, a list-based teaching fits #3 or #9, a subtle distinction fits
-#19. Vary the five structures across the batch; don't run the same shape five times
-unless the note genuinely only supports one shape well.
+**Never use, any family:** #7 Scene Testimony, #10 Confession-to-Principle, #11
+Milestone Number, #12 Rock-Bottom List Promise, #14 Unresolved Confession (all
+require a personal story) — and #17 Pre-empted Critic (flagged do-not-use in the
+bank itself).
 
 ### 4. Draft five — 3 short, 2 long
+- **No fixed reading-level target.** A grade-2 rule was tried and reversed
+  2026-09-05 — the real archive runs grade 2.3 to 14.3, averaging ~5-6. Don't
+  simplify vocabulary to hit a number; use the account's own words ("proximity,"
+  "meditation") where they fit. Readability follows from the voice register in step
+  3, not from a separate pass.
 - **3 short** — roughly 100–250 characters. Aphoristic weight, matches the account's
   246-char median. Best fit: #2, #13, #15, #16, #19.
 - **2 long** — pushed toward the cap, roughly 400–500 characters, single post.
@@ -92,7 +151,8 @@ unless the note genuinely only supports one shape well.
 From `threads/threads-voice.md` and `threads/README.md`:
 - No shaming, no manufactured antagonist/dunking
 - No invented spiritual experience (moot here — no testimony at all)
-- No scripture or doctrine quoted from memory — must trace to the wiki note
+- No scripture or doctrine quoted from memory — must trace to the raw source (or the
+  wiki note if the raw source couldn't be located, per step 2b's fallback)
 - No guaranteed outcomes or prosperity promises
 - No stacked abstract triplet (three abstract benefits in a row)
 - No corporate/marketing register
@@ -105,9 +165,9 @@ silently asserting it.
 ### 6. Save and hand off
 Save to `threads/posts/YYYY-MM-DD-{slug}.md`:
 - Header + `*Drafted [date]. Status: UNPOSTED — awaiting Joey's pick.*`
-- `*Sourced from Second Brain wiki: `{note-file}.md`*`
+- `*Wiki note: `{note-file}.md` · Raw source(s): `{raw-file-1}.md`, `{raw-file-2}.md`*`
 - Each option: structure name + number, character count, the post text, one line on
-  why it works / what it pulls from the note
+  why it works / what raw-source line or image it pulls from
 - The rubric table
 - A `Related:` line linking `[[threads-README]] [[threads-voice]] [[structure-bank]]`
 
@@ -136,6 +196,10 @@ get banked so the next draft is better, not just noted and dropped.
   story or first-person life claim. Joey adds that himself if he wants it.
 - **Wiki or nothing.** Every theological claim traces to a specific note in Second
   Brain. No topic in the wiki → say so, don't draft from memory.
+- **Wiki finds it, raw source writes it.** The wiki note confirms the topic exists;
+  the actual post language comes from the raw source(s) in its `sources:` frontmatter
+  (step 2b). Drafting straight off the wiki's paraphrase reads flat — confirmed
+  2026-09-05.
 - **No-topic ≠ invent one.** Suggest real note titles Joey hasn't drafted from yet,
   never a topic that isn't an actual note.
 - **5 drafts, 3 short + 2 long, varied structures** — not five of the same shape.

@@ -46,3 +46,39 @@ Related: [[Promotion]] [[Memory Loop]]
 **Skill:** `scripts/copy_lint.py` (used by /produce and every judge pass)
 **Issue:** The "two+ full sentences on one line" check splits on `(?<=[.!?])\s+` — any period followed by whitespace counts as a sentence end. On the BotBuilders JV email rewrites, this fired on genuinely single sentences that happen to contain an abbreviation: "They just hit #710 on the Inc. 5000 list of America's fastest-growing private companies in America." reads as two sentences to the regex because "Inc." ends in a period. Hit this twice in one session (Email 1 and Email 4 of the same JV sequence) — both had to be manually verified as false positives rather than rewritten.
 **Suggested fix:** Add a short abbreviation exception list to the split regex (Inc., vs., etc., Mr., Mrs., Dr., U.S., a.m., p.m.) so a period immediately after one of these doesn't count as a sentence boundary. Until fixed, any FAIL on a line containing an abbreviation needs a by-eye check before rewriting it — don't trust the count blindly.
+
+---
+
+### Observation 5: `faith-thread` drafted only from the Second Brain wiki note, not the raw source it summarises — Joey called the posts flat
+
+**Status:** ACTIONED (2026-09-05) — SKILL.md step 2 rewritten to require reading the raw source before drafting
+**Date:** 2026-09-05
+**Skill:** `faith-thread`
+**Issue:** Ran `/faith-thread Biblical Meditation`, drafted 5 options straight from `Second Brain/wiki/biblical-meditation.md`. Joey rejected all of them: "you are writing posts from these summarised notes and they miss all the nuance and depth of the full raw sources." Checked the wiki note's own `sources:` frontmatter and read the raw files it was built from (`Prophet School - Session 12 - August 26.md` + two YT transcript notes) — they contain the actual vivid, quotable, specific language (the front-door/kitchen demonstration, the magnifying-glass image, "Pentecostalism is loud: it's a cover-up for disconnection," "a man who starved to death locked inside a supermarket") that the wiki note had compressed into flat one-line paraphrases ("Confidence in prayer is developed through proximity" with none of the surrounding contrast that makes it land). The wiki is a *good* index — it's just not the thing to draft the actual post text from.
+**Fix applied:** `faith-thread/SKILL.md` step 2 now splits into (a) use the wiki note to confirm the topic exists and find its cross-references, then (b) look up that note's `sources:` frontmatter, locate the matching file(s) under `Second Brain/raw-sources/`, and read those in full — draft the actual post language from the raw source's specific quotes, images, and demonstrations, not from the wiki's paraphrase.
+
+---
+
+### Observation 6: `faith-thread` defaulted to `structure-bank.md` devices instead of the account's real voice — rejected a third time, plus a same-day reading-level rule reversed
+
+**Status:** ACTIONED (2026-09-05) — SKILL.md step 3 now leads with the personal-processing register; the grade-2 reading-level lock from earlier the same day was reversed
+**Date:** 2026-09-05
+**Skill:** `faith-thread`
+**Issue:** Even after fixing Observation 5 (raw source over wiki paraphrase), Joey rejected the redraft too: "its the way you are writing and explaining the concepts." He pointed at his real Google Sheets archive. Reading the actual 190-post archive (not `structure-bank.md`'s mined evidence, not `threads-voice.md`'s summary of it) showed the real gap: most real posts are first-person realisation/processing ("The more I pray, the more I realise this...", "I used to pray for God to change my situation. Sometimes he did. But then...", "Something that took me far too long to learn:") — not the named rhetorical devices (Definition Flip, Cleared Suspect, Counter-Intuitive Method) the skill was defaulting to for every draft. Those devices are real and evidenced, but they're a mined slice of high-rate outliers, not the baseline voice. `threads-voice.md` already listed the real recurring openers ("The more I…", "I used to…", "Something I…") but the skill never drew on them — it went straight to `structure-bank.md` every time.
+
+**Compounding finding, same session:** a `~grade 2` reading-level rule had just been locked (from one narrow example) earlier the same day. Checking it against the real archive showed actual posts run grade 2.3–14.3, averaging ~5-6 — the grade-2 rule was a one-example overgeneralization that would have kept pulling drafts away from the real voice. Reversed before it did more damage. General lesson for both: **a rule locked from a single example, or a summary file (wiki note, structure-bank, voice-file summary) built from a mined/curated slice, needs checking against the full raw underlying data before being trusted as "the pattern"** — this is the same root issue as Observation 5, recurring at a different layer (voice register and reading level, not source material).
+
+**Fix applied:** `faith-thread/SKILL.md` step 3 restructured to try the personal-processing register (pulling from `threads-voice.md`'s recurring-openers list, shaped around the raw source content) first, and treat `structure-bank.md` devices as a secondary option only when a note's content is a clean paradox/list/distinction. `threads-voice.md` gained a "Default voice register" section with the real quoted examples and a testimony-line caveat (generic "I used to…" framing is fine; an invented specific dated event is not). The grade-2 reading-level rule was reversed to no fixed target.
+
+---
+
+### Observation 7: `faith-thread` fix from Observation 6 overcorrected — 3 of 5 drafts used the same "realisation" opener shape under different structure-bank names
+
+**Status:** ACTIONED (2026-09-05) — SKILL.md step 3 now requires variety across three families, capped at one personal-processing post per batch
+**Date:** 2026-09-05
+**Skill:** `faith-thread`
+**Issue:** Observation 6's fix told the skill to default to the personal-processing register. Applied literally, that meant labelling three different drafts as three different structure-bank devices while all three actually opened with the same shape ("The more I…", "I used to…", "Something I…" — all realisation-openers). Joey: "options 1,2,3 are too similar in that they ALL start with a realisation. We only need 1 option for this." The fix for Observation 6 was correct about the register existing, but didn't say anything about capping how often it's used per batch — "vary the shape" was in the instructions but wasn't specific enough to catch three structurally-identical openers hiding under different names.
+
+Joey then supplied 4 more real posts from his own archive, unprompted, as models for structures the skill didn't have at all: a "problem illumination" post (name a felt problem, reframe it as training, explain why, 8.43% eng), a "never/don't" warning post (permission clause + urgency + scripture citation + casual aside, 8.85% eng, 13 reposts), a "you know you've truly X when Y" diagnostic with two branching outcomes (**14.53% eng — the highest confirmed rate in the account so far**), and a Bible-story typology post (Moses' staff, 7.58% eng). None of these were in `structure-bank.md` despite being real, evidenced, high-performing posts from his own archive — the mining pass that built the bank simply missed them.
+
+**Fix applied:** Added these four as structures #20-23 in `structure-bank.md` (Part 1, evidenced from Joey's own archive with real engagement numbers). `faith-thread/SKILL.md` step 3 rewritten around three families — personal-processing (Family A, capped at one per batch), Joey's newly-mined structures #20-23 (Family B, first-class not fallback), and the original mined devices (Family C, used only when content calls for one) — with an explicit instruction to vary across families, not just across named structures within one family.

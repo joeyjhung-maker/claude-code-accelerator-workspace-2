@@ -71,6 +71,62 @@ group's copy you're writing before reaching for identity/escape angles.
   relevant to the parked content-strategy tension, though he didn't address Joey's specific
   cannibalization worry.
 
+### Topa launch-logistics call — key facts (2026-09-04, full transcript + summary in `topa-call-launch-2026-09-04.md`)
+
+**Supersedes the dates in the "Key Dates (from Dan, 2026-08-26)" table below** — those were
+targets from three-plus weeks out; these are Jonathan's confirmed operational dates as of the
+call:
+- **14th Sept:** internal launch — fulfilment goes live for the wait list, Nat fulfils manually
+  as a one-week smoke test.
+- **21st Sept:** official UK launch, **Yeti Rambler only** (not licensed for alcohol in the UK
+  yet). Site flips from "wait list" to live-for-UK; still wait-list elsewhere. LinkedIn automation
+  also targeted for the same week.
+- Wait-list email to all Skool groups: Sunday 2026-09-06. Real group-seeding push starts Monday
+  14th, after the Rich Schefren and Matt Leitz/BotBuilders JV sends clear.
+
+**Pricing, locked: £39.99 wine / £54.99 Yeti Rambler** (pounds).
+
+**Dallas buyers get "priority access," not "first 10"** — deliberate copy choice since some
+Dallas ticket-holders are US-based and the US send isn't ready yet.
+
+**New Topa features, launch status:**
+- Ad-spend checker (Facebook/Google ad spend lookup) — **rushed** after member DMs asking when it
+  ships; Nat's read is this is the single biggest lever for pulling in AAA Ninjas members who have
+  no intention of doing lumpy mail but want better targeting generally.
+- Lead ranking (green/amber/red) — gated behind the **$99/mo LinkedIn automation signup**, not
+  the free lead database, as a deliberate retention/value-stack move.
+- Duplicate-send check (has this address already had a bottle?) — explicit selling point, avoids
+  members targeting the same lead in a popular niche.
+- Per-address letter upload (not one templated letter across a batch) — because members manually
+  QA every AI-drafted letter before sending (AI sometimes cites closed-down competitors).
+- Lock codes standardized to one shared code per batch, rotated roughly monthly.
+
+**Jonathan is deliberately not pushing "200 free leads/month" to the main AI Automation group
+yet** — wants LinkedIn automation + fulfilment live first so the free-lead funnel converts into
+paid signups rather than landing on a half-built feature set.
+
+**Standing rule surfaced by Nat, applies to any B2B Gifts/Topa post referencing ROYA:** don't
+frame free features as ROYA-conditional/paywalled ("only if you're on the $7 tier") — that reads
+as bait-and-switch to people who already paid. Frame it as ROYA having had early access
+("you've had this six months already") instead.
+
+**A second, distinct "guinea pig" idea surfaced (not yet actioned) — different from the Dallas
+pre-event guinea pig strategy below:** Nat proposed hand-raising US Dallas buyers post-event to
+see who wants to start sending Yetis early, 1:1 with Jonathan, to generate US case-study results
+before public launch. Jonathan wants to pick one person, not all five, to protect his time.
+
+**Action items for Joey out of this call, not yet built:**
+- Wait-list onboarding email (Sunday send + welcome email confirming position, with a link to
+  join the B2B Gifts Skool group while they wait) — nothing exists yet, Jonathan explicitly asked
+  for this.
+- Two separate webinars to plan/promote: one for LinkedIn automation, one for B2B Gifts DFY
+  fulfilment (~40 min each, kept separate, possible close-out deal on each).
+- Slot for Jonathan's two "start here" Looms (B2B Gifts walkthrough, LinkedIn automation
+  walkthrough) — refreshed each time he ships a feature update, doubling as the feature-announce
+  channel.
+- Content angle to weave in once the ad-spend checker ships: it's the highest-leverage hook per
+  Nat/Jonathan for pulling in AAA Ninjas members who have no intention of doing lumpy mail.
+
 ### What the group actually looks like inside
 Content is tactical and show-your-work. Two live examples:
 - Dan's "Three Pronged Attack Part 2" webby replay — the real-life "coffee date" close on tape.
@@ -261,6 +317,10 @@ not stated in this exchange, worth confirming if it matters before the event sel
 ---
 
 ## Key Dates (from Dan, 2026-08-26)
+
+**Superseded 2026-09-04 — see "Topa launch-logistics call" above for the dates actually being
+worked to now: 14th Sept internal launch, 21st Sept UK launch (Yeti only).** Kept below for
+history/context, but don't quote these dates in copy without checking the newer call notes first.
 
 *Transcribed from Dan's handwritten note, initials confirmed by Joey same day. GM appeared on
 two lines in the original but was called out as "not important" — dropped rather than guessed.*

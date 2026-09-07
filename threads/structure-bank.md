@@ -163,6 +163,95 @@ Admitting a failure while visibly competent buys enormous trust. The reader reco
 
 ---
 
+## 20. The Problem Illumination
+**Origin: Joey's own archive · Mined 2026-09-05, supplied directly by Joey as a model to use**
+
+**Skeleton**
+> If you're [in a specific, recognisable hard situation/feeling], it's not [the fear/assumption
+> the reader has]. It's [the true purpose/reframe]. [Explain the mechanism — what it's actually
+> training or teaching you]. Until [condition is met], [the next level/heaven] cannot [release
+> the outcome].
+
+**Mechanism**
+Names a real felt problem specifically enough that the reader recognises themselves in it, then
+reframes the assumed cause (punishment, abandonment, failure) into a purpose, then explains the
+mechanism — WHY this season exists structurally, not just that it does — and closes with the
+stakes of not learning the lesson. Diagnostic and purpose-giving, not just a truth-drop.
+
+**Evidence** · "If you're going through a season of isolation where you feel alone, God feels
+distant and you doubt if he even cares about you, it's not punishment. It's a season of
+training..." — 961 views, **8.43%**, 4 reposts (14 Dec 2025)
+
+---
+
+## 21. The Warning Command
+**Origin: Joey's own archive · Mined 2026-09-05, supplied directly by Joey as a model to use**
+
+**Skeleton**
+> Never/Don't [a specific misuse of a genuinely good thing]. If [a permission-granting
+> condition], [do the corrective action]. Do it fast. [Scripture reference] warns that [the
+> stakes]. In fact it says [emphasise the severity, with a casual aside that breaks the formal
+> register]. Don't [restate the warning differently, naming the tradeoff].
+
+**Mechanism**
+Opens with a blunt prohibition on misusing something good (not the same as #8 Blunt Command's
+two-line simplicity — this layers a permission clause, urgency, a scripture citation for
+authority, then a deliberately casual aside that undercuts the gravity before the closing
+restated warning). The mix of real spiritual stakes and throwaway phrasing ("That's a lotta
+people") is what keeps it from reading as a lecture.
+
+**Evidence** · "Never let your serving become a cover for lack of intimacy... Matt 7:21-23 warns
+that not everyone who says to me Lord, Lord will enter the kingdom. In fact it says MANY will
+not. That's a lotta people..." — 972 views, **8.85%**, **13 reposts** (highest repost count of
+the four structures logged this session) (22 Dec 2025)
+
+---
+
+## 22. The Diagnostic with Branching Outcomes
+**Origin: Joey's own archive · Mined 2026-09-05, supplied directly by Joey as a model to use ·
+Highest confirmed engagement rate in the account so far**
+
+**Skeleton**
+> You know you've truly [spiritual state] when [the internal marker — not an action]. If
+> [outcome A], [casual affirmation]. If [outcome B], [casual affirmation too]. [Reaffirm the
+> constant underneath both outcomes].
+
+**Mechanism**
+Defines a spiritual state by an internal marker rather than an external action, then proves the
+definition by showing it holds regardless of which way circumstances break — both branches get
+an equally relaxed answer. The casual language on each branch ("great," "all good") is what
+keeps it from reading as a test the reader can fail.
+
+**Evidence** · "You know you've truly surrendered when you no longer care about the outcome. If
+it goes how you want, great. If it doesn't, all good. God is still good..." — 750 views,
+**14.53%** — the highest engagement rate found in the account to date, above every Part 1
+structure previously logged (23 Dec 2025)
+
+---
+
+## 23. The Narrative Parallel (Typology)
+**Origin: Joey's own archive · Mined 2026-09-05, supplied directly by Joey as a model to use**
+
+**Skeleton**
+> When [Bible character] faced [a specific moment], [God/the text] asked or showed [a specific
+> detail]. [Character's specific, concrete answer]. This [object] represented [the character's
+> history — years, skill, brokenness]. It's through this exact thing that [the transformation
+> happens]. A few [verses/moments] later, [the object] becomes [something elevated]. [Extract
+> the universal principle]. [Contemporary rally-cry closer].
+
+**Mechanism**
+Narrates a concrete Bible scene with real dialogue and specific detail (not an abstract moral
+paraphrase) and lets the object's transformation carry the metaphor. The specificity of the
+narration — real dialogue, a real number ("40 years") — is what makes it land, not the moral
+itself, which only gets one line at the end.
+
+**Evidence** · "When Moses met God at the burning bush, the Lord asked Moses 'what's in your
+hand'. He replied with 'my staff'... A few verses later, Moses' staff becomes 'the staff of
+God'... Lock in for 2026!" — 1,188 views (highest view count of the four), **7.58%** (31 Dec
+2025)
+
+---
+
 # Part 2 — Mined from cross-niche corpus
 
 > ## ⚠️ SUSPECT — corpus condemned 2026-08-17
