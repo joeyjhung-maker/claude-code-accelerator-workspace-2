@@ -1,9 +1,10 @@
 # Organizing Swipes
 
-A swipe is a winning ad or landing page worth modeling. Two branches, two different reasons you reach for each:
+A swipe is a winning ad or landing page worth modeling. A reference bank is source material worth keeping for selective inspiration. Three branches, three different reasons you reach for each:
 
 - `named-mechanism/` — ads, organized by MECHANISM, not brand. You reach for a mechanism when you ideate.
 - `landing-pages/` — landing pages, organized by PAGE-TYPE (`events/`, `low-ticket/`, `workshops/`, `webinars/`). You reach for a landing page by what it's *for*, not by the psychological lever it uses.
+- `reference-banks/` — larger source collections that are useful to search or browse, but are not assumed winners and must not be copied blindly.
 
 ## Folders to create as you go (named-mechanism/)
 - curiosity-gap/    ads that withhold the answer

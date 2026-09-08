@@ -11,6 +11,7 @@ Marketing director for coaching brands. My work is ad copy, hooks, and the strat
 - For anything client-facing: decide the shape, build it, then check it. For throwaways, fast and loose is fine.
 - When a move works twice, we promote it into memory. When something breaks, we fix the rule, not just today's output.
 - Use my voice and my swipes, not the model's average.
+- For Dan Skool copy: run Mariobot without the legacy style contract, then use `rubrics/dan-skool-chatgpt-rubric.md` as the light judge. Preserve personality, prioritize selling power, make only 1–3 high-impact edits, and surface only hard factual uncertainties—not minor nitpicks.
 - Use Fable subagents when you need more intelligence. Everyday sessions run on Opus; spawn a Fable subagent (Agent tool, model: fable) for the genuinely hard calls — deep strategy, the Lock, a gnarly build. Don't spawn one for routine work; each spawn starts cold and costs more than it saves.
 - Start of session: `git pull` first (this is a two-machine setup — desktop and laptop — so the local copy may be behind), then check the most recent note in daily/ and open with what's still outstanding, instead of waiting to be told.
 - End of session: log a short entry to today's daily note automatically — what got made, what's still open. This is separate from promotion (see below); it happens every session, promotion only happens when something's actually worth keeping.
@@ -47,7 +48,7 @@ The real Claude Code skill instructions live in `.claude/skills/`. Obsidian hide
 
 ## Rules that bite
 - Short punchy paragraphs. One idea per line. Each sentence earns its own line. If it reads like an essay, rewrite it.
-- No corporate or agency language. Ban: "leverage," "solution," "deliverable," "onboarding." Write like Dan is texting a mate who happens to be a business owner. Casual, direct, British-inflected.
+- No corporate or agency language. Ban: "leverage," "solution," "deliverable," "onboarding." Write like Dan is texting a mate who happens to be a business owner. Casual, direct, Australian-inflected.
 - Never open copy with student proof or testimonials. And don't default to pain-first either — pain is white noise now. Lead with curiosity, novelty, a promise, or a world-level hook; use pain as the AMPLIFIER once you've earned attention. Proof comes after trust. (Ask me and I'll tell you when I want pain-led variations for a specific ad.)
 - Never write in blocks of text. Wall of text = instant delete.
 - Never invent a client result, number, or quote. If it is not in the client file, ask me.

@@ -1,0 +1,6405 @@
+[
+{
+"slug": "1.1-image-gen",
+"name": "1:1 Image Gen",
+"category": "Image Prompts \u2014 Statics",
+"description": "Finalizes any static ad concept into a locked 1:1, 300 DPI, high-contrast image-gen prompt; aspect override is absolute",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "static_ad_concept_brief",
+"type": "static-ad-concept"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"static-ad-concept"
+],
+"produces": [
+"image-prompt"
+]
+},
+{
+"slug": "75-ads-template-bot",
+"name": "75 Ads Template Bot",
+"category": "Copywriting \u2014 Ads",
+"description": "Mad-Libs-transforms your offer into 75 proven ad-template scripts in one pass (or 3-sample preview), preserving each template's structure and tone.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "source_materials",
+"type": "other:offer-source-dump"
+}
+],
+"optional_inputs": [
+{
+"name": "objective",
+"type": "other:mode-flag"
+},
+{
+"name": "perspective",
+"type": "brand-voice"
+},
+{
+"name": "tone_adjustments",
+"type": "creative-brief"
+},
+{
+"name": "output_mode",
+"type": "other:mode-flag"
+}
+],
+"consumes": [
+"product-info",
+"offer-details",
+"customer-reviews",
+"buyer-profile",
+"mechanism",
+"vsl-script",
+"landing-page-copy",
+"brand-voice",
+"creative-brief",
+"raw-notes"
+],
+"produces": [
+"ad-copy",
+"video-script"
+]
+},
+{
+"slug": "ad-hook-bot-1",
+"name": "Ad Hook Bot 1",
+"category": "Copywriting \u2014 Ads",
+"description": "Writes 10 emotionally vicious, curiosity-led FB ad hooks (first 10-20 words) from a creative brief, ranks top 3",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "The Brief",
+"type": "creative-brief"
+}
+],
+"optional_inputs": [
+{
+"name": "Model Hook",
+"type": "winning-ad"
+},
+{
+"name": "USER_HOOKS",
+"type": "winning-ad"
+},
+{
+"name": "BREAK vs MATCH lens",
+"type": "other:directive"
+},
+{
+"name": "Emotion-to-action lens",
+"type": "other:directive"
+}
+],
+"consumes": [
+"creative-brief",
+"winning-ad",
+"angle-big-idea",
+"product-info"
+],
+"produces": [
+"ad-hooks"
+]
+},
+{
+"slug": "ad-lottery-bot",
+"name": "Ad Lottery Bot",
+"category": "Strategy & Briefs",
+"description": "Randomly combines 190 concepts, 55 psych angles & 20+ styles into 10-100 wild ad-direction ideas to break creative ruts",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "specific_segment",
+"type": "buyer-profile"
+},
+{
+"name": "product_offer_brief",
+"type": "offer-details"
+},
+{
+"name": "additional_research",
+"type": "research-report"
+},
+{
+"name": "generation_type",
+"type": "other:parameter"
+},
+{
+"name": "double_combo_type",
+"type": "other:parameter"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"research-report"
+],
+"produces": [
+"angle-big-idea",
+"ad-hooks"
+]
+},
+{
+"slug": "ad-swiper-v2",
+"name": "Ad Swiper V2",
+"category": "Copywriting \u2014 Ads",
+"description": "Clones a winning ad's exact structure/rhythm for a new product \u2014 swaps only product details, keeps sentence count and skeleton locked.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "closeness_level",
+"type": "other:closeness-level-1-5"
+},
+{
+"name": "swipe_ad",
+"type": "winning-ad"
+},
+{
+"name": "brand_primer",
+"type": "product-info"
+}
+],
+"optional_inputs": [
+{
+"name": "additional_proof",
+"type": "product-info"
+}
+],
+"consumes": [
+"winning-ad",
+"product-info"
+],
+"produces": [
+"ad-copy",
+"video-script"
+]
+},
+{
+"slug": "ad-tagging-bot-",
+"name": "Ad Tagging Bot ",
+"category": "Research & Analysis",
+"description": "Tags any ad (yours or a competitor's) with its Concept, Angle, Style, and Hook using a fixed taxonomy \u2014 one ad or a batch, no rewriting.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "ad_content",
+"type": "winning-ad"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"winning-ad"
+],
+"produces": [
+"other:ad-tag-analysis",
+"angle-big-idea"
+]
+},
+{
+"slug": "advertorial-architect",
+"name": "Advertorial Architect",
+"category": "Pages & Funnels",
+"description": "Interviews you for product/audience/proof, then writes a full long-form advertorial in 1 of 10 news-disguised subtypes with refinement menu",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "product/offer details",
+"type": "product-info"
+},
+{
+"name": "target audience",
+"type": "buyer-profile"
+},
+{
+"name": "primary mechanism",
+"type": "mechanism"
+},
+{
+"name": "proof points",
+"type": "customer-reviews"
+},
+{
+"name": "traffic source",
+"type": "other:traffic-source"
+},
+{
+"name": "current market beliefs",
+"type": "other:market-awareness"
+}
+],
+"optional_inputs": [
+{
+"name": "competitor landscape",
+"type": "competitor-info"
+},
+{
+"name": "specific objections",
+"type": "other:objections"
+},
+{
+"name": "brand voice guidelines",
+"type": "brand-voice"
+},
+{
+"name": "existing creative",
+"type": "winning-ad"
+},
+{
+"name": "compliance/legal restrictions",
+"type": "other:compliance"
+}
+],
+"consumes": [
+"product-info",
+"buyer-profile",
+"mechanism",
+"customer-reviews",
+"competitor-info",
+"brand-voice",
+"winning-ad"
+],
+"produces": [
+"advertorial",
+"headline"
+]
+},
+{
+"slug": "advertorial-bot",
+"name": "Advertorial Bot",
+"category": "Copywriting \u2014 Long Form",
+"description": "Writes one 800-1500 word publication-ready advertorial from product info + audience + source ad + destination page, in 10 selectable formats",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "product_info",
+"type": "product-info"
+},
+{
+"name": "target_audience",
+"type": "buyer-profile"
+},
+{
+"name": "pre_click_context",
+"type": "winning-ad"
+},
+{
+"name": "destination_info",
+"type": "landing-page-url"
+}
+],
+"optional_inputs": [
+{
+"name": "copy_blocks",
+"type": "ad-copy"
+},
+{
+"name": "outcome_engineering",
+"type": "mechanism"
+},
+{
+"name": "advertorial_format",
+"type": "other:parameter"
+},
+{
+"name": "style_adjustments",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"product-info",
+"buyer-profile",
+"winning-ad",
+"landing-page-url",
+"ad-copy",
+"mechanism"
+],
+"produces": [
+"advertorial"
+]
+},
+{
+"slug": "ai-ads-character-casting-agent",
+"name": "AI Ads Character Casting Agent",
+"category": "Creative Direction",
+"description": "Brief in, full character cast out: 19-slot concept map, character dossiers w/ monologues, staging, and paired ad seeds.",
+"mode": "multi-phase",
+"required_inputs": [
+{
+"name": "product/offer brief",
+"type": "creative-brief"
+}
+],
+"optional_inputs": [
+{
+"name": "step 2 adjustments",
+"type": "other:selection-directive"
+},
+{
+"name": "concept/character/dramatization selection",
+"type": "other:selection-directive"
+},
+{
+"name": "multi-step instruction",
+"type": "other:selection-directive"
+}
+],
+"consumes": [
+"product-info",
+"offer-details",
+"buyer-profile",
+"creative-brief"
+],
+"produces": [
+"angle-big-idea",
+"static-ad-concept",
+"storyboard",
+"image-prompt",
+"video-script"
+]
+},
+{
+"slug": "animation-bot",
+"name": "Animation Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates 5 illustrated-hook static ad concepts (visual IS the hook, no photography) from your offer/buyer/copy inputs.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "other:sales-copy"
+}
+],
+"optional_inputs": [
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"landing-page-url"
+],
+"produces": [
+"static-ad-concept"
+]
+},
+{
+"slug": "autobrief-bot-",
+"name": "AutoBrief Bot ",
+"category": "Strategy & Briefs",
+"description": "Turns mechanism + buyer profile + copy blocks into a deep-research prompt, then compiles the research into a full Beat Map Brief for VSLs/sales letters.",
+"mode": "multi-phase",
+"required_inputs": [
+{
+"name": "Mechanism (UMP/UMS)",
+"type": "mechanism"
+},
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "raw-notes"
+}
+],
+"optional_inputs": [
+{
+"name": "Spokesperson Info",
+"type": "brand-voice"
+},
+{
+"name": "workflow_mode parameter (step 2 only)",
+"type": "other:config-flag"
+}
+],
+"consumes": [
+"mechanism",
+"buyer-profile",
+"raw-notes",
+"brand-voice",
+"research-report"
+],
+"produces": [
+"research-report",
+"creative-brief",
+"mechanism",
+"angle-big-idea"
+]
+},
+{
+"slug": "belief-alchemist-bot",
+"name": "Belief Alchemist Bot",
+"category": "Strategy & Briefs",
+"description": "Turns a belief-gap analysis into tactical Install/Uninstall/Reframe/Accommodate mini-scripts, one per belief, ready to drop into copy.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "belief_gap_analysis",
+"type": "other:belief-gap-analysis"
+}
+],
+"optional_inputs": [
+{
+"name": "Additional market/product/audience context",
+"type": "buyer-profile"
+},
+{
+"name": "processing_scope",
+"type": "other:parameter"
+},
+{
+"name": "specified_beliefs",
+"type": "other:parameter"
+},
+{
+"name": "specified_category",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"other:belief-gap-analysis",
+"buyer-profile"
+],
+"produces": [
+"other:belief-shift-script"
+]
+},
+{
+"slug": "belief-analyst-bot",
+"name": "Belief Analyst Bot",
+"category": "Strategy & Briefs",
+"description": "Maps 12-24 current-vs-required beliefs per Problem/Solution/Vendor plus 7 Critical Sales Beliefs from offer materials.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "marketing_materials",
+"type": "other:mixed-marketing-materials"
+}
+],
+"optional_inputs": [
+{
+"name": "beliefs_per_category",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"offer-details",
+"buyer-profile",
+"product-info",
+"brand-voice",
+"ad-copy",
+"landing-page-copy",
+"other:ump",
+"other:ums",
+"other:positioning-statement"
+],
+"produces": [
+"research-report"
+]
+},
+{
+"slug": "better-than-mario-micro-lead",
+"name": "Better Than Mario Micro-Lead",
+"category": "Copywriting \u2014 Long Form",
+"description": "Turns a hook + Promise/Pain/Proof/Curiosity copy blocks into a 200-350 word sales-letter opening.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "hook",
+"type": "headline"
+},
+{
+"name": "copy_blocks",
+"type": "other:copy-blocks"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"ad-hooks",
+"headline",
+"swipe-example"
+],
+"produces": [
+"landing-page-copy",
+"vsl-script"
+]
+},
+{
+"slug": "bionic-bullet-bot",
+"name": "Bionic Bullet Bot",
+"category": "Copywriting \u2014 Ads",
+"description": "Generate 220+30 curiosity-driven fascination bullets (10 per type across 22 types, plus 30 bonus) from product info.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "source_material",
+"type": "product-info"
+}
+],
+"optional_inputs": [
+{
+"name": "reference_bullets",
+"type": "swipe-example"
+},
+{
+"name": "tone_voice",
+"type": "brand-voice"
+},
+{
+"name": "formatting_preferences",
+"type": "other:parameter"
+},
+{
+"name": "environment",
+"type": "other:parameter"
+},
+{
+"name": "quantity_per_type",
+"type": "other:parameter"
+},
+{
+"name": "bonus_bullet_count",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"product-info",
+"swipe-example",
+"brand-voice"
+],
+"produces": [
+"ad-hooks"
+]
+},
+{
+"slug": "bold-typography-bot",
+"name": "Bold Typography Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates 5 bold, text-led static ad concepts (typography as hero) from any brief, swipe copy, or VSL/sales page.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "buyer_profile",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "swipe-example"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "sales_copy",
+"type": "vsl-script"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"swipe-example",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"landing-page-url"
+],
+"produces": [
+"static-ad-concept"
+]
+},
+{
+"slug": "bot-builder-bot",
+"name": "Bot Builder Bot",
+"category": "Utility",
+"description": "Designs a complete new bot system prompt from a concept (or surgically revises one with feedback) using an 8-block template system",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "bot_concept",
+"type": "creative-brief"
+}
+],
+"optional_inputs": [
+{
+"name": "domain_knowledge",
+"type": "research-report"
+},
+{
+"name": "examples",
+"type": "swipe-example"
+},
+{
+"name": "module_selections",
+"type": "other:parameter"
+},
+{
+"name": "preferences",
+"type": "other:parameter"
+},
+{
+"name": "mode",
+"type": "other:parameter"
+},
+{
+"name": "existing_prompt",
+"type": "other:bot-prompt"
+},
+{
+"name": "feedback",
+"type": "raw-notes"
+},
+{
+"name": "bot_type",
+"type": "other:parameter"
+},
+{
+"name": "template_complexity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"creative-brief",
+"research-report",
+"swipe-example",
+"raw-notes",
+"other:bot-prompt"
+],
+"produces": [
+"other:bot-prompt"
+]
+},
+{
+"slug": "branded-ads-image-prompt-generator",
+"name": "Branded Ads Image Prompt Generator",
+"category": "Image Prompts \u2014 Statics",
+"description": "Researches a brand's visual identity from its URL, then outputs 40 brand-consistent AI image-gen prompts across proven static ad templates.",
+"mode": "multi-phase",
+"required_inputs": [
+{
+"name": "brand_name",
+"type": "other:brand-name"
+},
+{
+"name": "target_url",
+"type": "other:brand-url"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+}
+],
+"optional_inputs": [
+{
+"name": "competitors",
+"type": "competitor-info"
+},
+{
+"name": "additional_context",
+"type": "buyer-profile"
+},
+{
+"name": "product_images",
+"type": "product-image-description"
+},
+{
+"name": "prompt_numbers + requested_changes",
+"type": "other:refinement-request"
+}
+],
+"consumes": [
+"product-info",
+"offer-details",
+"competitor-info",
+"buyer-profile",
+"product-image-description"
+],
+"produces": [
+"image-prompt",
+"brand-voice",
+"static-ad-concept"
+]
+},
+{
+"slug": "breakingauthority-transformer-bot-",
+"name": "Breaking/Authority Transformer Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns offer/proof info into 5 (or N) breaking-news/authority static ad concepts (lower third, news card, live, wildcard)",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "landing-page-copy"
+},
+{
+"name": "specific numbers/sources/timeframes",
+"type": "other:proof-data"
+},
+{
+"name": "quantity",
+"type": "other:quantity"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"landing-page-copy",
+"landing-page-url",
+"vsl-script"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "bridge-page-bot",
+"name": "Bridge Page Bot",
+"category": "Pages & Funnels",
+"description": "Turns a Build-a-Buyer + Copy Blocks + Offer Brief + ad + VSL/sales page into one 250-400 word bridge page that drives the click.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "ad-hooks"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "sales_asset",
+"type": "vsl-script"
+},
+{
+"name": "ad",
+"type": "winning-ad"
+},
+{
+"name": "include_comments",
+"type": "other:parameter"
+},
+{
+"name": "include_disclaimer",
+"type": "other:parameter"
+},
+{
+"name": "advertorial_framing",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-hooks",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"winning-ad",
+"landing-page-url"
+],
+"produces": [
+"advertorial",
+"landing-page-copy"
+]
+},
+{
+"slug": "build-a-buyer-elite-",
+"name": "Build a Buyer ELITE ",
+"category": "Research & Analysis",
+"description": "Generates raw, private-voice buyer psychology profiles plus 10 deep-dive formats (3am journal, confession, doom-scroll, etc.)",
+"mode": "menu",
+"required_inputs": [
+{
+"name": "target_market",
+"type": "buyer-profile"
+},
+{
+"name": "product",
+"type": "offer-details"
+}
+],
+"optional_inputs": [
+{
+"name": "additional_context",
+"type": "competitor-info"
+},
+{
+"name": "analysis_type",
+"type": "other:enum-param"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"competitor-info"
+],
+"produces": [
+"buyer-profile",
+"other:psych-deep-dive"
+]
+},
+{
+"slug": "carousel-static-ads",
+"name": "Carousel Static Ads",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns buyer/offer/sales copy into 5 multi-frame carousel or story ad concepts (4 structured + 1 wildcard), per-frame layout notes included.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "source material",
+"type": "other:mixed"
+}
+],
+"optional_inputs": [
+{
+"name": "quantity",
+"type": "other:number"
+},
+{
+"name": "carousel mode",
+"type": "other:enum"
+}
+],
+"consumes": [
+"buyer-profile",
+"creative-brief",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"landing-page-url",
+"ad-copy",
+"raw-notes"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "cash-analysisvariation-bot",
+"name": "Cash Analysis/Variation Bot",
+"category": "Research & Analysis",
+"description": "Tags any ad's Concept/Angle/Style/Hook, then generates up to 20 one-lever-at-a-time variation briefs.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "ad_content",
+"type": "winning-ad"
+}
+],
+"optional_inputs": [
+{
+"name": "creative_format",
+"type": "other:format-label"
+},
+{
+"name": "mode",
+"type": "other:parameter"
+},
+{
+"name": "variation_levers",
+"type": "other:parameter"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"winning-ad",
+"ad-copy",
+"swipe-example",
+"competitor-info"
+],
+"produces": [
+"research-report",
+"angle-big-idea",
+"creative-brief"
+]
+},
+{
+"slug": "cash-rewriter-bot",
+"name": "Cash Rewriter Bot",
+"category": "Copywriting \u2014 Ads",
+"description": "Rewrite a winning ad changing only one CASH lever (Concept/Angle/Style/Hook) you specify \u2014 output is a ready-to-test variation.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "winning_ad",
+"type": "winning-ad"
+},
+{
+"name": "cash_analysis",
+"type": "other:cash-analysis"
+},
+{
+"name": "variation_direction",
+"type": "other:variation-direction"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"winning-ad",
+"other:cash-analysis",
+"other:variation-direction"
+],
+"produces": [
+"ad-copy",
+"winning-ad"
+]
+},
+{
+"slug": "caveman-page-master-bot",
+"name": "Caveman Page Master Bot",
+"category": "Pages & Funnels",
+"description": "Writes a complete 8-18 question Q&A advertorial page from product/offer/buyer inputs, calibrated to price tier",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "product_info",
+"type": "product-info"
+},
+{
+"name": "offer_details",
+"type": "offer-details"
+},
+{
+"name": "sales_copy",
+"type": "other:sales-materials"
+},
+{
+"name": "additional_context",
+"type": "raw-notes"
+},
+{
+"name": "question_count",
+"type": "other:parameter"
+},
+{
+"name": "output_mode",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"product-info",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"competitor-info",
+"customer-reviews",
+"raw-notes"
+],
+"produces": [
+"advertorial"
+]
+},
+{
+"slug": "characterizations-bot",
+"name": "Characterizations Bot",
+"category": "Copywriting \u2014 Ads",
+"description": "Names your mechanism: 20 curiosity-hook characterizations (UMP/UMS classified) plus a ranked top-3 to test.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "mechanism_description",
+"type": "mechanism"
+}
+],
+"optional_inputs": [
+{
+"name": "market_context",
+"type": "buyer-profile"
+},
+{
+"name": "constraints_to_address",
+"type": "raw-notes"
+},
+{
+"name": "mechanism_type",
+"type": "other:parameter"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"mechanism",
+"product-info",
+"buyer-profile",
+"raw-notes"
+],
+"produces": [
+"angle-big-idea",
+"mechanism"
+]
+},
+{
+"slug": "checkout-page-bot",
+"name": "Checkout Page Bot",
+"category": "Pages & Funnels",
+"description": "Audits a checkout page and returns a prioritized fix list (Quick Wins/Tests/Strategic) or builds an ASCII wireframe blueprint for a new one.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "checkout_page",
+"type": "other:checkout-page-description"
+},
+{
+"name": "product_type",
+"type": "product-info"
+},
+{
+"name": "price_point",
+"type": "offer-details"
+},
+{
+"name": "brand_positioning",
+"type": "brand-voice"
+},
+{
+"name": "traffic_type",
+"type": "other:traffic-type"
+},
+{
+"name": "current_conversion_rate",
+"type": "other:metric"
+},
+{
+"name": "additional_context",
+"type": "raw-notes"
+},
+{
+"name": "mode",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"landing-page-url",
+"offer-details",
+"product-info",
+"brand-voice"
+],
+"produces": [
+"research-report",
+"other:checkout-wireframe"
+]
+},
+{
+"slug": "click-drivers-aem",
+"name": "Click Drivers AEM",
+"category": "Copywriting \u2014 Email",
+"description": "Turns a sales letter/offer brief into 20 click-driving teaser email angles or full 80-300 word send-ready emails.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "sales_materials",
+"type": "offer-details"
+}
+],
+"optional_inputs": [
+{
+"name": "avatar_details",
+"type": "buyer-profile"
+},
+{
+"name": "mode",
+"type": "other:parameter"
+},
+{
+"name": "selected_angles",
+"type": "other:parameter"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+},
+{
+"name": "email_to_analyze",
+"type": "email-copy"
+}
+],
+"consumes": [
+"offer-details",
+"landing-page-copy",
+"landing-page-url",
+"vsl-script",
+"buyer-profile",
+"email-copy"
+],
+"produces": [
+"ad-hooks",
+"email-copy"
+]
+},
+{
+"slug": "collage-bot",
+"name": "Collage Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates 5 curiosity-collage static ad concepts (item+proof photo pairings) across 5 layout archetypes for designers/image-gen",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "vsl-script"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"landing-page-url"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "comment-intel-1",
+"name": "comment intel 1",
+"category": "Research & Analysis",
+"description": "Mines raw audience comments into 4 layers of verbatim ad language + 5-10 traceable conceptual ad ideas with hooks",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "comment batch",
+"type": "raw-notes"
+}
+],
+"optional_inputs": [
+{
+"name": "product or offer type",
+"type": "offer-details"
+},
+{
+"name": "target market or niche",
+"type": "buyer-profile"
+}
+],
+"consumes": [
+"raw-notes",
+"customer-reviews",
+"offer-details",
+"buyer-profile"
+],
+"produces": [
+"research-report",
+"ad-hooks",
+"angle-big-idea"
+]
+},
+{
+"slug": "commentreview-transformer-bot-",
+"name": "Comment/Review Transformer Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns proof points/offer info into 5 (or N) platform-native review/comment/chat static ad concepts, incl. 1 Wildcard",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "landing-page-copy"
+},
+{
+"name": "quantity",
+"type": "other:quantity"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"landing-page-copy",
+"landing-page-url",
+"vsl-script",
+"customer-reviews"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "comparison-bot",
+"name": "Comparison Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates 5+ comparison static-ad concepts (us vs. competitor/category) across 6 layouts, ready for image-gen",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "other:copy-blocks"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "other:sales-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"other:copy-blocks",
+"offer-details",
+"other:sales-copy",
+"landing-page-url",
+"raw-notes"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "copy-blocks-extract",
+"name": "Copy Blocks Extract",
+"category": "Research & Analysis",
+"description": "Extracts every Pain/Promise/Proof/Constraint/Curiosity block from pasted copy as exact quotes, plus a strength critique.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "source_material",
+"type": "raw-notes"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"ad-copy",
+"landing-page-copy",
+"email-copy",
+"vsl-script",
+"advertorial",
+"transcript",
+"creative-brief",
+"swipe-example",
+"raw-notes"
+],
+"produces": [
+"other:copy-blocks",
+"research-report"
+]
+},
+{
+"slug": "cost-of-inaction-bot-",
+"name": "Cost of Inaction Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates 5 loss-aversion static ad concepts (price tags, receipts, cost timelines) making NOT buying feel costly",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-hooks"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "landing-page-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-hooks",
+"offer-details",
+"landing-page-copy",
+"vsl-script",
+"landing-page-url"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "curiosity-bait-bot-",
+"name": "Curiosity Bait Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates 5+ no-product-shown curiosity-bait static ad concepts (headline, scene, style, layout, color) from offer copy",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "landing-page-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"landing-page-copy",
+"vsl-script"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt",
+"headline"
+]
+},
+{
+"slug": "deep-dive-voice-analyzer",
+"name": "Deep Dive Voice Analyzer",
+"category": "Research & Analysis",
+"description": "Reverse-engineers a writer's voice from a 500+ word sample into a full dimensional report + signature patterns.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "writing_sample",
+"type": "brand-voice"
+}
+],
+"optional_inputs": [
+{
+"name": "context",
+"type": "raw-notes"
+}
+],
+"consumes": [
+"brand-voice",
+"raw-notes"
+],
+"produces": [
+"research-report",
+"brand-voice"
+]
+},
+{
+"slug": "direct-response-talking-head-script-bot-",
+"name": "Direct Response Talking Head Script Bot ",
+"category": "Video & VSL",
+"description": "Generates 3+ direct-response talking head video scripts (15-90s) per audience segment, with hook/reframe/CTA reasoning included",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "offer",
+"type": "offer-details"
+},
+{
+"name": "audience",
+"type": "buyer-profile"
+},
+{
+"name": "desired_action",
+"type": "other:cta"
+}
+],
+"optional_inputs": [
+{
+"name": "market_materials",
+"type": "buyer-profile"
+},
+{
+"name": "target_segments",
+"type": "other:audience-segment"
+},
+{
+"name": "script_lengths",
+"type": "other:duration"
+},
+{
+"name": "hook_preferences",
+"type": "other:hook-type"
+},
+{
+"name": "quantity",
+"type": "other:count"
+},
+{
+"name": "cta_details",
+"type": "offer-details"
+},
+{
+"name": "additional_constraints",
+"type": "brand-voice"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"brand-voice",
+"vsl-script",
+"landing-page-url"
+],
+"produces": [
+"video-script"
+]
+},
+{
+"slug": "downsell-bot",
+"name": "Downsell Bot",
+"category": "Pages & Funnels",
+"description": "Writes one full downsell page (headline/body/bullets/CTA), auto-picking the best downsell type from upsell details",
+"mode": "menu",
+"required_inputs": [
+{
+"name": "upsell_details",
+"type": "offer-details"
+},
+{
+"name": "build_a_buyer / target_audience",
+"type": "buyer-profile"
+}
+],
+"optional_inputs": [
+{
+"name": "copy_blocks",
+"type": "creative-brief"
+},
+{
+"name": "spokesperson_info",
+"type": "brand-voice"
+},
+{
+"name": "additional_context",
+"type": "raw-notes"
+},
+{
+"name": "downsell_type",
+"type": "other:parameter"
+},
+{
+"name": "downsell_price",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"offer-details",
+"buyer-profile",
+"creative-brief",
+"brand-voice",
+"vsl-script",
+"landing-page-copy"
+],
+"produces": [
+"landing-page-copy"
+]
+},
+{
+"slug": "epiphany-threshold-bot",
+"name": "Epiphany Threshold Bot",
+"category": "Strategy & Briefs",
+"description": "Builds a 100-idea Scale of Believability (levels 1-10) for your market, flagging the 6-8 Goldilocks Zone angles.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "target_market",
+"type": "buyer-profile"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"buyer-profile",
+"research-report"
+],
+"produces": [
+"angle-big-idea"
+]
+},
+{
+"slug": "google-doc-sales-letter-bot",
+"name": "Google Doc Sales Letter Bot",
+"category": "Copywriting \u2014 Long Form",
+"description": "Writes a full long-form Google-Doc-style sales letter for coaching/course/DFY/mastermind offers to warm traffic, with objection handling, proof, and CTA.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "offer_type",
+"type": "offer-details"
+},
+{
+"name": "core_transformation",
+"type": "offer-details"
+},
+{
+"name": "pricing_structure",
+"type": "offer-details"
+},
+{
+"name": "unique_mechanism",
+"type": "mechanism"
+},
+{
+"name": "delivery_format",
+"type": "offer-details"
+},
+{
+"name": "personal_results",
+"type": "customer-reviews"
+},
+{
+"name": "client_results",
+"type": "customer-reviews"
+},
+{
+"name": "ideal_client",
+"type": "buyer-profile"
+},
+{
+"name": "current_beliefs",
+"type": "buyer-profile"
+},
+{
+"name": "biggest_frustrations",
+"type": "buyer-profile"
+},
+{
+"name": "no_brainer_factors",
+"type": "offer-details"
+},
+{
+"name": "common_objections",
+"type": "buyer-profile"
+},
+{
+"name": "call_to_action",
+"type": "offer-details"
+}
+],
+"optional_inputs": [
+{
+"name": "case_studies_testimonials",
+"type": "customer-reviews"
+},
+{
+"name": "credentials_experience",
+"type": "brand-voice"
+},
+{
+"name": "previous_attempts",
+"type": "buyer-profile"
+},
+{
+"name": "traffic_type",
+"type": "buyer-profile"
+},
+{
+"name": "genuine_limitations",
+"type": "offer-details"
+},
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "outcome_engineer",
+"type": "creative-brief"
+},
+{
+"name": "voice_mod",
+"type": "brand-voice"
+},
+{
+"name": "additional_context",
+"type": "raw-notes"
+},
+{
+"name": "tone",
+"type": "brand-voice"
+},
+{
+"name": "length",
+"type": "brand-voice"
+},
+{
+"name": "emphasis",
+"type": "creative-brief"
+}
+],
+"consumes": [
+"offer-details",
+"buyer-profile",
+"customer-reviews",
+"mechanism",
+"brand-voice",
+"creative-brief",
+"raw-notes"
+],
+"produces": [
+"landing-page-copy"
+]
+},
+{
+"slug": "handwrittennote-transformer-bot-",
+"name": "Handwritten/Note Transformer Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns existing sales copy into 5 handwritten-note-style static ad image concepts (sticky note, journal, letter, etc.) plus one wildcard Collider variant.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "vsl-script"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"vsl-script",
+"landing-page-url"
+],
+"produces": [
+"image-prompt",
+"static-ad-concept"
+]
+},
+{
+"slug": "happy-avatar-bot",
+"name": "Happy Avatar Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates 5+ people-forward static ad concepts (7 layout archetypes) with full photo direction from copy inputs",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "creative-brief"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "landing-page-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"creative-brief",
+"offer-details",
+"landing-page-copy",
+"vsl-script",
+"customer-reviews"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "headline-bot-",
+"name": "Headline Bot ",
+"category": "Copywriting \u2014 Ads",
+"description": "Generate 10 VSL/TSL/TSL+ direct-response headline variations from copy blocks or a sales letter, tagged by rhetorical frame used.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "copy_materials",
+"type": "ad-copy"
+}
+],
+"optional_inputs": [
+{
+"name": "format",
+"type": "other:parameter"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"ad-copy",
+"other:copy-blocks"
+],
+"produces": [
+"headline"
+]
+},
+{
+"slug": "headline-image-bot",
+"name": "Headline + Image Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns a buyer profile, copy blocks, offer brief, and sales copy into 5+ headline+product static ad concepts across 6 layout archetypes.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-hooks"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "landing-page-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-hooks",
+"offer-details",
+"landing-page-copy",
+"vsl-script",
+"landing-page-url",
+"customer-reviews"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt",
+"headline"
+]
+},
+{
+"slug": "health-mechanism-matrix-bot",
+"name": "Health Mechanism Matrix Bot",
+"category": "Strategy & Briefs",
+"description": "Finds a supplement's unique mechanism-of-the-problem: builds a 12-mechanism deep-research prompt, then ranks the top 4 by 5 criteria.",
+"mode": "multi-phase",
+"required_inputs": [
+{
+"name": "target_health_condition",
+"type": "product-info"
+},
+{
+"name": "supplement_ingredients",
+"type": "product-info"
+}
+],
+"optional_inputs": [
+{
+"name": "target_market",
+"type": "buyer-profile"
+},
+{
+"name": "competitor_mechanisms",
+"type": "competitor-info"
+},
+{
+"name": "research_results",
+"type": "research-report"
+}
+],
+"consumes": [
+"product-info",
+"competitor-info",
+"research-report"
+],
+"produces": [
+"mechanism",
+"research-report"
+]
+},
+{
+"slug": "hero-bot-",
+"name": "Hero Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates 5 (scalable) HERO static ad concepts per batch \u2014 2 Command, 2 Stealth, 1 Wildcard \u2014 each with full image-gen asset notes.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "other:copy-blocks"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "sales_copy",
+"type": "other:sales-copy-or-url"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"creative-brief",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"landing-page-url"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "holding-sign-bot",
+"name": "Holding Sign Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates 5 (or N) person-holding-handwritten-sign UGC ad concepts with sign copy, emphasis, person, location details.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "vsl-script"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"vsl-script",
+"landing-page-url"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "hybrid-pdp-master-bot",
+"name": "Hybrid PDP Master Bot",
+"category": "Pages & Funnels",
+"description": "Builds a full ecom-style PDP sales page (headline through FAQ/CTA) blending brand aesthetics with DR persuasion; flags gaps instead of faking proof.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "product_details",
+"type": "product-info"
+},
+{
+"name": "target_audience",
+"type": "buyer-profile"
+},
+{
+"name": "proof_elements",
+"type": "customer-reviews"
+},
+{
+"name": "brand_voice",
+"type": "brand-voice"
+},
+{
+"name": "existing_assets",
+"type": "winning-ad"
+},
+{
+"name": "offer_details",
+"type": "offer-details"
+},
+{
+"name": "additional_context",
+"type": "competitor-info"
+},
+{
+"name": "page_depth",
+"type": "other:parameter"
+},
+{
+"name": "brand_style",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"product-info",
+"buyer-profile",
+"customer-reviews",
+"brand-voice",
+"winning-ad",
+"offer-details",
+"competitor-info"
+],
+"produces": [
+"landing-page-copy"
+]
+},
+{
+"slug": "in-feed-vsl-bot",
+"name": "In-Feed VSL Bot",
+"category": "Video & VSL",
+"description": "Generate 10 in-feed MicroVSL concepts + full 3-6 min scripts for 3 of them from a buyer profile and offer details.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "offer_intelligence",
+"type": "offer-details"
+}
+],
+"optional_inputs": [
+{
+"name": "additional_context",
+"type": "research-report"
+},
+{
+"name": "existing_vsl",
+"type": "vsl-script"
+},
+{
+"name": "mode",
+"type": "other:parameter"
+},
+{
+"name": "concept_count",
+"type": "other:parameter"
+},
+{
+"name": "scripts_to_develop",
+"type": "other:parameter"
+},
+{
+"name": "concept_selections",
+"type": "other:parameter"
+},
+{
+"name": "funnel_next_step",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"research-report",
+"vsl-script"
+],
+"produces": [
+"research-report",
+"video-script",
+"vsl-script"
+]
+},
+{
+"slug": "infinite-adcbwriter-bot",
+"name": "Infinite AdCB.Writer Bot",
+"category": "Video & VSL",
+"description": "Writes 120-sec cold-traffic teaser video ad scripts with cinematic shot direction, built to drive clicks not sales",
+"mode": "self-serve",
+"required_inputs": [
+{
+"name": "copy_blocks",
+"type": "mechanism"
+}
+],
+"optional_inputs": [
+{
+"name": "rhetorical_frame",
+"type": "other:param"
+},
+{
+"name": "additional_context",
+"type": "offer-details"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"mechanism",
+"offer-details"
+],
+"produces": [
+"video-script"
+]
+},
+{
+"slug": "infographic-bot-",
+"name": "Infographic Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns buyer profile, copy blocks, offer brief, and sales copy into 5 educational infographic ad concepts across 7 layout archetypes.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "at least one input source",
+"type": "other:any-of"
+}
+],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "vsl-script"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"landing-page-url"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt",
+"headline"
+]
+},
+{
+"slug": "insight-vectors-bot",
+"name": "Insight Vectors Bot",
+"category": "Strategy & Briefs",
+"description": "Generates 10 hidden-mechanism 'aha moment' epiphanies (with WHY IT WORKS breakdowns) from your market, mechanism, or buyer research.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "market_or_mechanism",
+"type": "mechanism"
+}
+],
+"optional_inputs": [
+{
+"name": "marketing_materials",
+"type": "research-report"
+},
+{
+"name": "specific_focus",
+"type": "raw-notes"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"mechanism",
+"buyer-profile",
+"vsl-script",
+"landing-page-copy",
+"creative-brief",
+"research-report"
+],
+"produces": [
+"angle-big-idea"
+]
+},
+{
+"slug": "lead-",
+"name": "Lead ",
+"category": "Copywriting \u2014 Long Form",
+"description": "Writes one long-form VSL/sales-letter opening hitting all 12 lead beats from spokesperson/offer/testimonial inputs.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "spokesperson_name",
+"type": "other:spokesperson-name"
+},
+{
+"name": "target_market",
+"type": "buyer-profile"
+},
+{
+"name": "pain_point",
+"type": "other:pain-point"
+},
+{
+"name": "desired_outcome",
+"type": "other:desired-outcome"
+},
+{
+"name": "solution_name",
+"type": "other:unique-mechanism-name"
+},
+{
+"name": "solution_description",
+"type": "mechanism"
+},
+{
+"name": "mechanism",
+"type": "mechanism"
+},
+{
+"name": "credibility",
+"type": "other:credibility-elements"
+},
+{
+"name": "personal_story_tease",
+"type": "other:personal-story"
+},
+{
+"name": "testimonials",
+"type": "customer-reviews"
+},
+{
+"name": "constraints",
+"type": "competitor-info"
+},
+{
+"name": "social_proof_numbers",
+"type": "other:social-proof-numbers"
+}
+],
+"optional_inputs": [
+{
+"name": "additional_context",
+"type": "raw-notes"
+}
+],
+"consumes": [
+"buyer-profile",
+"mechanism",
+"customer-reviews",
+"competitor-info",
+"raw-notes",
+"offer-details"
+],
+"produces": [
+"other:sales-letter-lead"
+]
+},
+{
+"slug": "linkedin-content-bot",
+"name": "Linkedin Content Bot",
+"category": "Utility",
+"description": "Builds a 10-concept LinkedIn hookboard, then drafts 3 voice-matched posts: engagement, authority, conversion.",
+"mode": "multi-phase",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "idea_or_content",
+"type": "content-topic"
+},
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "voice_guide",
+"type": "brand-voice"
+},
+{
+"name": "additional_context",
+"type": "raw-notes"
+},
+{
+"name": "lead_magnet",
+"type": "other:lead-magnet"
+},
+{
+"name": "post_goal",
+"type": "other:post-goal"
+},
+{
+"name": "product_service",
+"type": "product-info"
+},
+{
+"name": "expertise_topics",
+"type": "content-topic"
+},
+{
+"name": "selected_concept",
+"type": "other:concept-selection"
+},
+{
+"name": "hookboard_count / variation_count / target_length / voice_style / content_approach / mode",
+"type": "other:parameters"
+}
+],
+"consumes": [
+"content-topic",
+"buyer-profile",
+"brand-voice",
+"raw-notes",
+"product-info"
+],
+"produces": [
+"other:linkedin-post",
+"headline"
+]
+},
+{
+"slug": "lo-fi-ad-concept-generator-bot",
+"name": "Lo-Fi Ad Concept Generator Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates 5+ intentionally ugly, clashing-font 'rushed Canva slide' static ad concepts for pattern-interrupt scroll-stopping",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "ad-copy"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "sales_copy",
+"type": "landing-page-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"landing-page-copy"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "low-ticket-sales-page-bot",
+"name": "Low Ticket Sales Page Bot",
+"category": "Pages & Funnels",
+"description": "Generates a full modular low-ticket ($7-47) sales page: headline, problem, offer, risk-reversal, CTA modules.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "market_avatar_insights",
+"type": "buyer-profile"
+},
+{
+"name": "offer_details",
+"type": "offer-details"
+},
+{
+"name": "exact_deliverables",
+"type": "product-info"
+},
+{
+"name": "market_awareness_and_positioning",
+"type": "other:market-awareness"
+},
+{
+"name": "sales_page_goals",
+"type": "creative-brief"
+}
+],
+"optional_inputs": [
+{
+"name": "supporting_materials",
+"type": "raw-notes"
+},
+{
+"name": "output_type",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"product-info",
+"creative-brief",
+"raw-notes"
+],
+"produces": [
+"landing-page-copy"
+]
+},
+{
+"slug": "marcio-narrative-ads-bot-",
+"name": "Marcio Narrative Ads Bot ",
+"category": "Copywriting \u2014 Ads",
+"description": "Writes a cold-traffic long-form narrative ad (FB/VSL/prelander/hybrid) that hides the product inside an emotional story until the reveal.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "product_info",
+"type": "product-info"
+},
+{
+"name": "audience_info",
+"type": "buyer-profile"
+}
+],
+"optional_inputs": [
+{
+"name": "narrator",
+"type": "other:narrator-preference"
+},
+{
+"name": "format",
+"type": "other:format-selector"
+},
+{
+"name": "existing_assets",
+"type": "winning-ad"
+},
+{
+"name": "output_scope",
+"type": "other:scope-selector"
+},
+{
+"name": "num_catalysts",
+"type": "other:count"
+},
+{
+"name": "selected_catalyst",
+"type": "angle-big-idea"
+},
+{
+"name": "approved_arc",
+"type": "other:narrative-arc"
+},
+{
+"name": "revision instructions",
+"type": "other:revision-request"
+}
+],
+"consumes": [
+"product-info",
+"buyer-profile",
+"winning-ad",
+"angle-big-idea",
+"other:narrative-arc"
+],
+"produces": [
+"static-ad-concept",
+"angle-big-idea",
+"vsl-script",
+"advertorial"
+]
+},
+{
+"slug": "mario-bot-",
+"name": "Mario Bot ",
+"category": "Copywriting \u2014 Email",
+"description": "Writes finished emails/social posts/ad copy in copywriter Mario Castelli's raw, funny, direct-response voice",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "copy_type",
+"type": "other:format-spec"
+},
+{
+"name": "product_or_offer",
+"type": "offer-details"
+},
+{
+"name": "target_audience",
+"type": "buyer-profile"
+}
+],
+"optional_inputs": [
+{
+"name": "additional_context",
+"type": "brand-voice"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+},
+{
+"name": "tone_level",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"offer-details",
+"buyer-profile",
+"brand-voice"
+],
+"produces": [
+"email-copy",
+"ad-copy"
+]
+},
+{
+"slug": "mariobot",
+"name": "mariobot",
+"category": "Copywriting \u2014 Email",
+"description": "Write marketing emails in Mario Castelli's casual, confessional direct-response voice for any product, market, or CTA goal.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "product_or_offer",
+"type": "product-info"
+},
+{
+"name": "audience",
+"type": "buyer-profile"
+},
+{
+"name": "goal",
+"type": "other:parameter"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"optional_inputs": [
+{
+"name": "angle_or_topic",
+"type": "angle-big-idea"
+}
+],
+"consumes": [
+"product-info",
+"buyer-profile",
+"angle-big-idea"
+],
+"produces": [
+"email-copy"
+]
+},
+{
+"slug": "market-analyzer-bot",
+"name": "Market Analyzer Bot",
+"category": "Research & Analysis",
+"description": "Splits an audience into 2-5 psychological submarkets (Drive/Processing/Capacity/Field) with positioning + messaging each",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "avatar_manifold",
+"type": "buyer-profile"
+},
+{
+"name": "product_offer",
+"type": "offer-details"
+},
+{
+"name": "market_observations",
+"type": "raw-notes"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"raw-notes",
+"product-info"
+],
+"produces": [
+"research-report",
+"buyer-profile",
+"angle-big-idea"
+]
+},
+{
+"slug": "master-concept-bot",
+"name": "Master Concept Bot",
+"category": "Strategy & Briefs",
+"description": "Turns buyer profile + offer into full psych profile, market analysis, and 100+ angle/style ad concepts in one doc",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "product_offer_brief",
+"type": "offer-details"
+},
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+}
+],
+"optional_inputs": [
+{
+"name": "specific_segment",
+"type": "buyer-profile"
+},
+{
+"name": "additional_research",
+"type": "competitor-info"
+},
+{
+"name": "angle_variations",
+"type": "other:parameter"
+},
+{
+"name": "style_executions",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"competitor-info"
+],
+"produces": [
+"research-report",
+"angle-big-idea",
+"static-ad-concept",
+"ad-hooks",
+"creative-brief"
+]
+},
+{
+"slug": "media-buying-analysis-1",
+"name": "Media Buying Analysis 1",
+"category": "Research & Analysis",
+"description": "Turns a Meta Ads export + offer brief into an account-level profit diagnosis with ranked What/Why/Expected-outcome fixes",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "Product/offer description",
+"type": "offer-details"
+},
+{
+"name": "Price point or pricing structure",
+"type": "offer-details"
+},
+{
+"name": "Funnel type",
+"type": "offer-details"
+},
+{
+"name": "Target/breakeven metric",
+"type": "offer-details"
+},
+{
+"name": "Target audience",
+"type": "buyer-profile"
+},
+{
+"name": "Meta ad performance data",
+"type": "other:ad-performance-data"
+}
+],
+"optional_inputs": [
+{
+"name": "Additional offer context",
+"type": "raw-notes"
+}
+],
+"consumes": [
+"offer-details",
+"buyer-profile",
+"other:ad-performance-data"
+],
+"produces": [
+"research-report",
+"other:ad-account-diagnostic-report"
+]
+},
+{
+"slug": "media-buying-analysis-2",
+"name": "Media Buying Analysis 2",
+"category": "Research & Analysis",
+"description": "Turns a Meta Ads export + offer brief into a tiered account diagnosis with ranked issues, root causes, prioritized fixes",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "meta_data",
+"type": "other:ad-performance-data"
+}
+],
+"optional_inputs": [
+{
+"name": "deeper_analyses",
+"type": "other:parameter"
+},
+{
+"name": "compile",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"offer-details",
+"other:ad-performance-data"
+],
+"produces": [
+"research-report"
+]
+},
+{
+"slug": "meme-style-ad-concept-generator-bot",
+"name": "Meme-Style Ad Concept Generator Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates ready-to-render meme-format static ads (Impact font, 5 layout types) with on-image text and CTA, 5 at a time",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "mechanism"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "sales_copy",
+"type": "vsl-script"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"mechanism",
+"offer-details",
+"vsl-script"
+],
+"produces": [
+"image-prompt",
+"static-ad-concept"
+]
+},
+{
+"slug": "metaphors-bot",
+"name": "Metaphors Bot",
+"category": "Strategy & Briefs",
+"description": "Turn your UMP/UMS or sales beliefs into 50-100+ ready-to-use natural, mechanical, and object metaphors.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "marketing_materials",
+"type": "raw-notes"
+}
+],
+"optional_inputs": [
+{
+"name": "num_beliefs",
+"type": "other:parameter"
+},
+{
+"name": "metaphors_per_belief",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"mechanism",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"landing-page-url",
+"research-report",
+"raw-notes"
+],
+"produces": [
+"mechanism",
+"ad-copy"
+]
+},
+{
+"slug": "micro-lead-bot-",
+"name": "Micro-Lead Bot ",
+"category": "Video & VSL",
+"description": "Turns a sales letter/VSL + product & audience info into 20 Micro Lead concepts plus a full 90-120s scripted opener (script+visuals table).",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "sales_copy",
+"type": "landing-page-copy"
+},
+{
+"name": "copy_blocks_emphasis",
+"type": "other:copy-block-selection"
+},
+{
+"name": "product_details",
+"type": "product-info"
+},
+{
+"name": "target_audience",
+"type": "buyer-profile"
+},
+{
+"name": "rhetorical_frames",
+"type": "other:rhetorical-frame"
+},
+{
+"name": "concept_direction",
+"type": "angle-big-idea"
+},
+{
+"name": "generation_mode",
+"type": "other:parameter"
+},
+{
+"name": "quantity_concepts",
+"type": "other:parameter"
+},
+{
+"name": "quantity_micro_leads",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"landing-page-copy",
+"vsl-script",
+"product-info",
+"buyer-profile",
+"angle-big-idea"
+],
+"produces": [
+"video-script",
+"angle-big-idea",
+"storyboard"
+]
+},
+{
+"slug": "microscript",
+"name": "MicroScript",
+"category": "Strategy & Briefs",
+"description": "Generate 5 Dominant Selling Ideas plus 5 Micro-Scripts each (25 total) \u2014 short, memorable, word-of-mouth phrases for any offer.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "product_or_service_info",
+"type": "product-info"
+}
+],
+"optional_inputs": [
+{
+"name": "reference_materials",
+"type": "other:reference-doc"
+},
+{
+"name": "dsi_count",
+"type": "other:parameter"
+},
+{
+"name": "microscripts_per_dsi",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"product-info",
+"other:reference-doc"
+],
+"produces": [
+"angle-big-idea",
+"headline"
+]
+},
+{
+"slug": "microvsl",
+"name": "MicroVSL",
+"category": "Video & VSL",
+"description": "3-5 min in-feed VSL scripts: analyzes your buyer profile + offer, pitches 10 concepts, writes full scripts on request",
+"mode": "multi-phase",
+"required_inputs": [
+{
+"name": "buyer profile",
+"type": "buyer-profile"
+},
+{
+"name": "offer intelligence",
+"type": "offer-details"
+},
+{
+"name": "funnel context",
+"type": "other:funnel-context"
+}
+],
+"optional_inputs": [
+{
+"name": "existing VSL to adapt",
+"type": "vsl-script"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"transcript"
+],
+"produces": [
+"vsl-script",
+"angle-big-idea",
+"research-report"
+]
+},
+{
+"slug": "multi-testimonial-bot-",
+"name": "Multi-Testimonial Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns your reviews/testimonials into 5 multi-quote static ad concepts (3-6 quotes each) across 5 layout archetypes.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "other:sales-copy-with-testimonials"
+}
+],
+"optional_inputs": [
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"landing-page-url",
+"customer-reviews"
+],
+"produces": [
+"static-ad-concept"
+]
+},
+{
+"slug": "narrative-bot",
+"name": "Narrative Bot",
+"category": "Copywriting \u2014 Long Form",
+"description": "Writes the spokesperson's first-person VSL background-story opening (credibility>pain>hopelessness>solution hint)",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "spokesperson_details",
+"type": "buyer-profile"
+},
+{
+"name": "target_market",
+"type": "buyer-profile"
+},
+{
+"name": "pain_points",
+"type": "mechanism"
+},
+{
+"name": "product_offer",
+"type": "offer-details"
+},
+{
+"name": "story_elements",
+"type": "raw-notes"
+},
+{
+"name": "additional_context",
+"type": "research-report"
+}
+],
+"consumes": [
+"buyer-profile",
+"mechanism",
+"offer-details",
+"raw-notes",
+"research-report",
+"ad-copy"
+],
+"produces": [
+"video-script",
+"vsl-script"
+]
+},
+{
+"slug": "native-news-bot-",
+"name": "Native News Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates 10 fake-editorial 'native news' static ad concepts (publication, headline, image, insets, CTA) from offer copy",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "landing-page-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"landing-page-copy",
+"vsl-script"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt",
+"headline"
+]
+},
+{
+"slug": "new-hook-bot",
+"name": "New Hook Bot",
+"category": "Copywriting \u2014 Ads",
+"description": "Generates 5-20+ psychologically-engineered short-video hooks (IG Reels/TikTok/FB ads) via Lane x Archetype x Pattern formula, with strategy notes and scoring.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "content_details",
+"type": "creative-brief"
+},
+{
+"name": "target_audience",
+"type": "buyer-profile"
+},
+{
+"name": "platform",
+"type": "other:platform"
+},
+{
+"name": "strategic_goal",
+"type": "other:goal"
+},
+{
+"name": "brand_voice",
+"type": "brand-voice"
+},
+{
+"name": "audience_sophistication",
+"type": "other:sophistication-level"
+},
+{
+"name": "unique_angle",
+"type": "angle-big-idea"
+},
+{
+"name": "key_transformation",
+"type": "other:transformation"
+},
+{
+"name": "audience_beliefs",
+"type": "other:beliefs"
+},
+{
+"name": "failed_solutions",
+"type": "other:failed-solutions"
+},
+{
+"name": "competitive_context",
+"type": "competitor-info"
+},
+{
+"name": "avoid_list",
+"type": "other:avoid-list"
+},
+{
+"name": "additional_context",
+"type": "raw-notes"
+},
+{
+"name": "output_type",
+"type": "other:param"
+},
+{
+"name": "generation_style",
+"type": "other:param"
+},
+{
+"name": "quantity",
+"type": "other:param"
+},
+{
+"name": "include_strategy_analysis",
+"type": "other:param"
+},
+{
+"name": "include_scoring",
+"type": "other:param"
+},
+{
+"name": "enhancement_dimensions",
+"type": "other:param"
+}
+],
+"consumes": [
+"creative-brief",
+"buyer-profile",
+"brand-voice",
+"angle-big-idea",
+"competitor-info",
+"raw-notes"
+],
+"produces": [
+"ad-hooks"
+]
+},
+{
+"slug": "note-from-founder-bot-",
+"name": "Note From Founder Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns offer/VSL copy into 5 text-only 'Official Apology'/founder-note static ad concepts across 5 tone + visual archetypes",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-hooks"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "vsl-script"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-hooks",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"customer-reviews"
+],
+"produces": [
+"static-ad-concept",
+"ad-copy"
+]
+},
+{
+"slug": "offer-brief-bot",
+"name": "Offer Brief Bot",
+"category": "Strategy & Briefs",
+"description": "Compiles offer details, a sales page URL, or raw materials into one 11-section Offer Brief (promise, pricing, stack, bonuses, guarantee, spokesperson).",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "offer_details",
+"type": "offer-details"
+},
+{
+"name": "sales_page_url",
+"type": "landing-page-url"
+},
+{
+"name": "supplementary_materials",
+"type": "raw-notes"
+}
+],
+"consumes": [
+"offer-details",
+"landing-page-url",
+"raw-notes"
+],
+"produces": [
+"offer-details"
+]
+},
+{
+"slug": "opt-in-page-optimization-bot",
+"name": "Opt-In Page Optimization Bot",
+"category": "Pages & Funnels",
+"description": "Generates 10 opt-in page copy variations by traffic temperature, then a full text pack, then optional deployable HTML.",
+"mode": "multi-phase",
+"required_inputs": [
+{
+"name": "page_type",
+"type": "other:page-type-enum"
+},
+{
+"name": "audience",
+"type": "buyer-profile"
+},
+{
+"name": "traffic_sources",
+"type": "other:traffic-source"
+}
+],
+"optional_inputs": [
+{
+"name": "relationship_context",
+"type": "other:traffic-source"
+},
+{
+"name": "objections",
+"type": "other:objections"
+},
+{
+"name": "proof_assets",
+"type": "customer-reviews"
+},
+{
+"name": "mechanism",
+"type": "mechanism"
+},
+{
+"name": "brand",
+"type": "brand-voice"
+},
+{
+"name": "compliance",
+"type": "other:compliance-requirements"
+},
+{
+"name": "A_* fields (page_type=call)",
+"type": "offer-details"
+},
+{
+"name": "B_* fields (page_type=webinar)",
+"type": "offer-details"
+},
+{
+"name": "C_* fields (page_type=training)",
+"type": "offer-details"
+},
+{
+"name": "D_* fields (page_type=download)",
+"type": "offer-details"
+},
+{
+"name": "supporting_materials",
+"type": "other:supporting-materials"
+},
+{
+"name": "source_message_priority",
+"type": "ad-hooks"
+},
+{
+"name": "mobile_above_fold",
+"type": "other:layout-preference"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+},
+{
+"name": "frame_preferences",
+"type": "other:parameter"
+},
+{
+"name": "step2_selection",
+"type": "other:selection-instruction"
+},
+{
+"name": "step3_request",
+"type": "other:selection-instruction"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"customer-reviews",
+"mechanism",
+"brand-voice",
+"ad-hooks",
+"landing-page-copy",
+"email-copy"
+],
+"produces": [
+"landing-page-copy",
+"ad-copy",
+"headline",
+"other:html-page"
+]
+},
+{
+"slug": "organic-viral-to-paid-v2",
+"name": "Organic Viral to Paid V2",
+"category": "Copywriting \u2014 Ads",
+"description": "Turns a viral TikTok/Reel/tweet transcript into a paid ad: 5 swappable hooks + one shared body + transition + full assembled ad.",
+"mode": "multi-phase",
+"required_inputs": [
+{
+"name": "organic_content",
+"type": "swipe-example"
+},
+{
+"name": "brand primer summary",
+"type": "other:brand-primer"
+}
+],
+"optional_inputs": [
+{
+"name": "proof elements",
+"type": "other:proof-elements"
+},
+{
+"name": "topic-fit guidance",
+"type": "other:directive"
+}
+],
+"consumes": [
+"swipe-example",
+"other:brand-primer",
+"product-info",
+"other:proof-elements"
+],
+"produces": [
+"ad-copy",
+"ad-hooks"
+]
+},
+{
+"slug": "outcome-engineer-",
+"name": "Outcome Engineer ",
+"category": "Strategy & Briefs",
+"description": "Engineers the core transformation promise, mechanism, and proof architecture behind a sales message \u2014 the strategic brief a VSL/sales letter bot writes from.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "build_a_buyer_profile",
+"type": "buyer-profile"
+}
+],
+"optional_inputs": [
+{
+"name": "unique_approach_materials",
+"type": "other:methodology-materials"
+},
+{
+"name": "competitor_materials",
+"type": "competitor-info"
+},
+{
+"name": "mode",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"competitor-info",
+"raw-notes"
+],
+"produces": [
+"research-report",
+"mechanism",
+"angle-big-idea"
+]
+},
+{
+"slug": "pain-matrix-core-wound-bot-copy",
+"name": "Pain Matrix & Core Wound Bot (copy)",
+"category": "Research & Analysis",
+"description": "Scores a market on a 10-dim Pain Matrix + 12-resource Core Wound framework; predicts the core emotional wound",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "copy_blocks",
+"type": "ad-copy"
+},
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "target_market_description",
+"type": "product-info"
+},
+{
+"name": "additional_context",
+"type": "research-report"
+}
+],
+"consumes": [
+"ad-copy",
+"buyer-profile",
+"product-info",
+"research-report",
+"customer-reviews",
+"competitor-info",
+"raw-notes"
+],
+"produces": [
+"research-report",
+"mechanism"
+]
+},
+{
+"slug": "paradoxical-questions-bot",
+"name": "Paradoxical Questions Bot",
+"category": "Copywriting \u2014 Ads",
+"description": "Generates dozens of niche-specific paradoxical curiosity questions (5 violation types) for ad/VSL/email hooks.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "category",
+"type": "content-topic"
+}
+],
+"optional_inputs": [
+{
+"name": "product_context",
+"type": "product-info"
+},
+{
+"name": "target_audience",
+"type": "buyer-profile"
+},
+{
+"name": "additional_context",
+"type": "research-report"
+},
+{
+"name": "output_focus",
+"type": "other:parameter"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"content-topic",
+"product-info",
+"buyer-profile",
+"research-report"
+],
+"produces": [
+"ad-hooks"
+]
+},
+{
+"slug": "pig-idea-bot",
+"name": "PIG Idea Bot",
+"category": "Video & VSL",
+"description": "Generates 15 PIG (punch-in-the-gut) VSL nightmare-story concepts with Core Wound-based reasoning for each.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "market_niche",
+"type": "other:market-niche"
+}
+],
+"optional_inputs": [
+{
+"name": "buyer_profiles",
+"type": "buyer-profile"
+},
+{
+"name": "core_wound",
+"type": "other:core-wound"
+},
+{
+"name": "additional_context",
+"type": "raw-notes"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"raw-notes",
+"offer-details"
+],
+"produces": [
+"other:pig-story-ideas"
+]
+},
+{
+"slug": "post-it-note-bot",
+"name": "Post-It Note Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generate 5 sticky-note static ad concepts (note text, handwriting, color, placement, environment) from offer/buyer materials.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "other:copy-blocks"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "sales_copy",
+"type": "landing-page-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"other:copy-blocks",
+"offer-details",
+"landing-page-copy"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "primer-extractorsummarizer-v2",
+"name": "Primer Extractor/Summarizer v2",
+"category": "Research & Analysis",
+"description": "Condenses a brand's ad/transcript library into a 400-600 word fact primer (mechanism, pricing, proof, voice) for other copy bots.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "brand material library",
+"type": "raw-notes"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"raw-notes",
+"winning-ad",
+"transcript"
+],
+"produces": [
+"other:brand-primer",
+"mechanism",
+"brand-voice"
+]
+},
+{
+"slug": "primer-prompt-builder",
+"name": "Primer Prompt Builder",
+"category": "Utility",
+"description": "Sorts a batch of winning ads verbatim into 4 primers (2 awareness buckets, hooks, headlines) for writer bots.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "winning ads batch",
+"type": "winning-ad"
+}
+],
+"optional_inputs": [
+{
+"name": "brand name",
+"type": "other:brand-name"
+},
+{
+"name": "ad headlines",
+"type": "headline"
+}
+],
+"consumes": [
+"winning-ad",
+"headline"
+],
+"produces": [
+"winning-ad",
+"ad-hooks",
+"headline"
+]
+},
+{
+"slug": "problem-solution-bot",
+"name": "Problem-Solution Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns buyer/offer/copy inputs into 5+ problem-solution static ad concepts across 6 layout archetypes, ready for design or image-gen.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "landing-page-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"landing-page-url"
+],
+"produces": [
+"static-ad-concept"
+]
+},
+{
+"slug": "product-breakdown-static-generator",
+"name": "Product Breakdown Static Generator",
+"category": "Image Prompts \u2014 Statics",
+"description": "Collects buyer/offer/sales materials, asks quantity, then makes N product-breakdown static ad concepts in 7 layouts",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "at least one of: Build a Buyer / Copy Blocks / Offer Brief / Sales Copy",
+"type": "other:mixed"
+},
+{
+"name": "quantity selection",
+"type": "other:parameter"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"landing-page-copy",
+"vsl-script",
+"landing-page-url"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt",
+"headline"
+]
+},
+{
+"slug": "promo-bot",
+"name": "Promo Bot",
+"category": "Copywriting \u2014 Email",
+"description": "Turns a sales letter/VSL + promo terms into 30+ promo angles and full 3-7 day launch emails (Awareness, Belief, Urgency).",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "sales_letter",
+"type": "vsl-script"
+},
+{
+"name": "promo_details",
+"type": "offer-details"
+}
+],
+"optional_inputs": [
+{
+"name": "segment_focus",
+"type": "other:segment-selector"
+},
+{
+"name": "selected_angle",
+"type": "angle-big-idea"
+},
+{
+"name": "outline_request",
+"type": "other:mode-flag"
+}
+],
+"consumes": [
+"vsl-script",
+"landing-page-copy",
+"offer-details",
+"angle-big-idea"
+],
+"produces": [
+"ad-hooks",
+"angle-big-idea",
+"email-copy",
+"email-sequence"
+]
+},
+{
+"slug": "proof-page-master-bot",
+"name": "Proof Page Master Bot",
+"category": "Strategy & Briefs",
+"description": "Turn raw testimonials/studies/credentials into a page blueprint: proof inventory, objection map, and section-by-section placement plan.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "proof_materials",
+"type": "customer-reviews"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"customer-reviews",
+"landing-page-copy",
+"advertorial"
+],
+"produces": [
+"research-report"
+]
+},
+{
+"slug": "quiz-bot-master-bot",
+"name": "Quiz Bot Master Bot",
+"category": "Pages & Funnels",
+"description": "Turns your offer + buyer profile into a full annotated quiz funnel: every question, panel, pop-up, and results page.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "product_offer",
+"type": "offer-details"
+},
+{
+"name": "target_audience",
+"type": "buyer-profile"
+}
+],
+"optional_inputs": [
+{
+"name": "quiz_length",
+"type": "other:parameter"
+},
+{
+"name": "niche_intensity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"offer-details",
+"buyer-profile",
+"vsl-script",
+"landing-page-copy"
+],
+"produces": [
+"other:quiz-funnel",
+"landing-page-copy"
+]
+},
+{
+"slug": "quizinteractive-bot",
+"name": "Quiz/Interactive Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates 5+ quiz/poll-style static ad concepts (grid, binary, poll, spectrum, persona types) from buyer/offer/copy inputs",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "creative-brief"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "landing-page-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"creative-brief",
+"offer-details",
+"landing-page-copy",
+"landing-page-url"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "receipt-bot",
+"name": "Receipt Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns offer/sales copy into 5 receipt-style static ad concepts (line items, pricing, paper style) across 5 archetypes, ready for design or image-gen.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "at least one input source",
+"type": "other:any-of"
+}
+],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "ad-copy"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "sales_copy",
+"type": "landing-page-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"landing-page-copy",
+"landing-page-url",
+"vsl-script"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "reptile-triggers",
+"name": "Reptile Triggers",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns ad copy into 20 visceral native-feeling static image concepts across 12 trigger types, ranks top 10",
+"mode": "multi-phase",
+"required_inputs": [
+{
+"name": "ad copy",
+"type": "ad-copy"
+}
+],
+"optional_inputs": [
+{
+"name": "follow-up directive",
+"type": "other:followup-selector"
+}
+],
+"consumes": [
+"ad-copy"
+],
+"produces": [
+"static-ad-concept"
+]
+},
+{
+"slug": "reptile-triggers-bot",
+"name": "Reptile Triggers Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns pasted ad copy into 20 native-feeling, primal/reptile-brain static image concepts (10 hook + 10 body), ranked top-10, no product shots.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "ad_copy",
+"type": "ad-copy"
+}
+],
+"optional_inputs": [
+{
+"name": "prior_concepts",
+"type": "static-ad-concept"
+},
+{
+"name": "mode",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"ad-copy",
+"static-ad-concept"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "reverse-brief-bot",
+"name": "Reverse Brief Bot",
+"category": "Research & Analysis",
+"description": "Deconstructs a pasted sales letter/VSL transcript into a full persuasion-beat-map brief (mechanisms, hooks, proof, metaphors) with verbatim quotes.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "sales_letter",
+"type": "vsl-script"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"vsl-script",
+"transcript"
+],
+"produces": [
+"research-report",
+"swipe-example"
+]
+},
+{
+"slug": "rhetorical-frames",
+"name": "Rhetorical Frames",
+"category": "Strategy & Briefs",
+"description": "Ranks the 10 best persuasion frames for a marketing idea from a 7-category taxonomy, with reasoning + worked examples",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "ideas",
+"type": "raw-notes"
+}
+],
+"optional_inputs": [
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"raw-notes",
+"creative-brief",
+"product-info",
+"offer-details",
+"angle-big-idea"
+],
+"produces": [
+"angle-big-idea"
+]
+},
+{
+"slug": "salespromotional-offer-bot-",
+"name": "Sales/Promotional Offer Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns offer/buyer/sales-copy input into 5 static promo ad concepts across 6 layouts, with visual, layout & color notes.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "landing-page-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"landing-page-copy",
+"landing-page-url"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "scientific-study-bot",
+"name": "Scientific Study Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates clinical/medical-imagery static ad concepts (scans, X-rays, thermal maps) across 8 layout archetypes, 5 at a time",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "mechanism"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "sales_copy",
+"type": "vsl-script"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"mechanism",
+"offer-details",
+"vsl-script"
+],
+"produces": [
+"image-prompt",
+"static-ad-concept"
+]
+},
+{
+"slug": "screenshotchatnotification-transformer-bot",
+"name": "Screenshot/Chat/Notification Transformer Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns product/offer/copy into 5 fake-chat or notification-stack static ad concepts (4 variants + 1 wildcard) with full design notes.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-hooks"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "landing-page-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-hooks",
+"offer-details",
+"landing-page-copy",
+"vsl-script"
+],
+"produces": [
+"static-ad-concept"
+]
+},
+{
+"slug": "segment-surgeon-bot",
+"name": "Segment Surgeon Bot",
+"category": "Strategy & Briefs",
+"description": "Turns product/offer/research/VOC input into 2-5 markdown segment briefs: desire, constraints, awareness %, demographics.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "product_info",
+"type": "product-info"
+},
+{
+"name": "market_research",
+"type": "research-report"
+},
+{
+"name": "voice_of_customer",
+"type": "customer-reviews"
+},
+{
+"name": "additional_context",
+"type": "raw-notes"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"product-info",
+"research-report",
+"competitor-info",
+"customer-reviews",
+"raw-notes"
+],
+"produces": [
+"buyer-profile",
+"other:segment-brief"
+]
+},
+{
+"slug": "segmentmech-swapper-bot",
+"name": "Segment/Mech Swapper Bot",
+"category": "Copywriting \u2014 Ads",
+"description": "Swap an ad's target segment or its problem/solution mechanism while keeping the winning structure and the other element intact.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "winning_ad",
+"type": "winning-ad"
+},
+{
+"name": "swap_type",
+"type": "other:parameter"
+}
+],
+"optional_inputs": [
+{
+"name": "segment_brief",
+"type": "buyer-profile"
+},
+{
+"name": "target_segment",
+"type": "other:parameter"
+},
+{
+"name": "mechanism_type",
+"type": "other:parameter"
+},
+{
+"name": "new_mechanism",
+"type": "mechanism"
+}
+],
+"consumes": [
+"winning-ad",
+"buyer-profile",
+"mechanism"
+],
+"produces": [
+"ad-copy",
+"mechanism"
+]
+},
+{
+"slug": "side-by-sidebefore-and-after-bot-",
+"name": "Side by Side/Before and After Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns buyer profile, offer brief, copy blocks & sales copy into 5+ before/after static ad concepts across 7 layouts.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "other:sales-copy-any-form"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"landing-page-url",
+"customer-reviews"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "social-proof-compilerstrengthen-bot",
+"name": "Social Proof Compiler/Strengthen Bot",
+"category": "Research & Analysis",
+"description": "Classifies all proof in your copy/offer docs into a 22-type framework by strength, rewrites weak proof as strong before/after examples.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "ad-copy"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "sales_copy",
+"type": "landing-page-copy"
+},
+{
+"name": "additional_proof",
+"type": "customer-reviews"
+},
+{
+"name": "enhance_weak_proof",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"landing-page-copy",
+"landing-page-url",
+"customer-reviews",
+"vsl-script"
+],
+"produces": [
+"research-report"
+]
+},
+{
+"slug": "social-proof-deep-research-bot",
+"name": "Social Proof Deep Research Bot",
+"category": "Research & Analysis",
+"description": "Builds a 22-type proof inventory from your materials, generates research prompts for gaps, and strengthens evidence with 7 manipulation tactics",
+"mode": "multi-phase",
+"required_inputs": [
+{
+"name": "marketing materials",
+"type": "creative-brief"
+}
+],
+"optional_inputs": [
+{
+"name": "raw research results",
+"type": "research-report"
+},
+{
+"name": "step trigger keywords",
+"type": "other:control-flag"
+}
+],
+"consumes": [
+"creative-brief",
+"customer-reviews",
+"research-report",
+"offer-details"
+],
+"produces": [
+"research-report",
+"customer-reviews"
+]
+},
+{
+"slug": "static-ad-concept-expander-bot",
+"name": "Static Ad Concept Expander Bot",
+"category": "Strategy & Briefs",
+"description": "Generates 3-5 distinct strategic static-ad concept ideas (title + 1-2 sentence angle) from offer details \u2014 no copy or visuals, pure strategy layer.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Product/Service",
+"type": "product-info"
+},
+{
+"name": "Target Audience",
+"type": "buyer-profile"
+},
+{
+"name": "Main Problem/Desire",
+"type": "other:problem-desire"
+},
+{
+"name": "Primary Message/Promise",
+"type": "angle-big-idea"
+},
+{
+"name": "Price/Offer Details",
+"type": "offer-details"
+},
+{
+"name": "Call to Action",
+"type": "other:cta"
+},
+{
+"name": "Tone/Style Hints",
+"type": "brand-voice"
+}
+],
+"consumes": [
+"product-info",
+"buyer-profile",
+"angle-big-idea",
+"offer-details",
+"brand-voice"
+],
+"produces": [
+"static-ad-concept"
+]
+},
+{
+"slug": "static-ad-info-extractor-bot",
+"name": "Static Ad Info Extractor Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Extracts an 8-field static-ad brief (product, audience, problem, promise, price, CTA, visuals, tone) from raw notes",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "marketing_materials",
+"type": "raw-notes"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"raw-notes",
+"product-info",
+"offer-details",
+"transcript"
+],
+"produces": [
+"creative-brief"
+]
+},
+{
+"slug": "static-ad-sign",
+"name": "Static Ad (Sign)",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns buyer/offer/sales-copy inputs into N 'person holding sign' UGC static ad concepts (person, sign copy, location)",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "any one of: Build a Buyer / Copy Blocks / Offer Brief / Sales Copy",
+"type": "buyer-profile | offer-details | ad-copy | landing-page-copy | landing-page-url"
+}
+],
+"optional_inputs": [
+{
+"name": "quantity",
+"type": "other:quantity"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"ad-copy",
+"landing-page-copy",
+"landing-page-url",
+"vsl-script"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "static-ad-specialist",
+"name": "Static Ad Specialist",
+"category": "Image Prompts \u2014 Statics",
+"description": "Brief + 1 of 20 concept styles \u2192 one image-gen-ready static ad prompt: visual scene, <10-word headline, layout specs",
+"mode": "self-serve",
+"required_inputs": [
+{
+"name": "tier_1_mandate",
+"type": "creative-brief"
+},
+{
+"name": "target_concept_style",
+"type": "other:concept-style-name"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"creative-brief",
+"angle-big-idea",
+"ad-hooks"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt",
+"headline"
+]
+},
+{
+"slug": "static-swipe-bot-",
+"name": "Static Ad Swiper Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Upload a winning static ad; get its layout/psychology blueprint rebuilt into a full image-gen concept brief for your product.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "ad_image",
+"type": "swipe-example"
+}
+],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "ad-copy"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "sales_copy",
+"type": "landing-page-copy"
+}
+],
+"consumes": [
+"swipe-example",
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"landing-page-copy",
+"landing-page-url",
+"vsl-script"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "statistic-ad-generator-bot",
+"name": "Statistic Ad Generator Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns offer/buyer/sales copy into 10 statistic-led static ad concepts (stat, claim, layout, disclaimer) for designers.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "source material containing statistics",
+"type": "other:raw-notes"
+}
+],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-copy"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "other:vsl-script-or-url"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-copy",
+"offer-details",
+"landing-page-copy",
+"landing-page-url",
+"vsl-script",
+"raw-notes"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "step-by-step-bot-",
+"name": "Step By Step Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates 5 step-by-step static ad concepts (numbered routines/protocols) across 8 layout archetypes, ready for design or image-gen.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "other:copy-blocks"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "other:sales-copy"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"other:copy-blocks",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"landing-page-url"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "storm-bot",
+"name": "STORM Bot",
+"category": "Strategy & Briefs",
+"description": "Generates a 30-50 angle retargeting campaign brief (ads and/or emails) mapped to a 4-Pillars framework for copywriters to execute.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "product_service",
+"type": "product-info"
+},
+{
+"name": "target_audience",
+"type": "buyer-profile"
+},
+{
+"name": "funnel_type",
+"type": "creative-brief"
+},
+{
+"name": "retargeting_window",
+"type": "creative-brief"
+},
+{
+"name": "conversion_goal",
+"type": "creative-brief"
+},
+{
+"name": "existing_assets",
+"type": "raw-notes"
+},
+{
+"name": "top_objections",
+"type": "customer-reviews"
+},
+{
+"name": "false_beliefs",
+"type": "buyer-profile"
+},
+{
+"name": "failed_attempts",
+"type": "buyer-profile"
+},
+{
+"name": "buying_trigger",
+"type": "mechanism"
+},
+{
+"name": "differentiators",
+"type": "competitor-info"
+},
+{
+"name": "negative_feedback",
+"type": "customer-reviews"
+},
+{
+"name": "results_transformations",
+"type": "customer-reviews"
+},
+{
+"name": "identity_shift",
+"type": "buyer-profile"
+},
+{
+"name": "secret_fears",
+"type": "buyer-profile"
+},
+{
+"name": "status_symbols",
+"type": "buyer-profile"
+},
+{
+"name": "testimonials_proof",
+"type": "customer-reviews"
+},
+{
+"name": "sales_call_questions",
+"type": "raw-notes"
+},
+{
+"name": "output_type",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"product-info",
+"buyer-profile",
+"customer-reviews",
+"competitor-info",
+"mechanism",
+"creative-brief",
+"raw-notes"
+],
+"produces": [
+"creative-brief",
+"angle-big-idea",
+"ad-hooks"
+]
+},
+{
+"slug": "strategic-allocation-bot",
+"name": "Strategic Allocation Bot",
+"category": "Strategy & Briefs",
+"description": "Turns awareness split + risk level + ad count into a 5-category testing allocation matrix with 3 rounding options",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "awareness_distribution",
+"type": "other:awareness-stage-percentages"
+},
+{
+"name": "risk_tolerance",
+"type": "other:risk-level"
+},
+{
+"name": "total_ads",
+"type": "other:ad-count"
+}
+],
+"consumes": [
+"other:awareness-stage-percentages",
+"other:risk-level",
+"other:ad-count"
+],
+"produces": [
+"other:creative-testing-allocation-matrix"
+]
+},
+{
+"slug": "subject-line-bot",
+"name": "Subject Line Bot",
+"category": "Copywriting \u2014 Email",
+"description": "Generates 10 (adjustable) high-variety, curiosity-driven email subject lines from your Copy Blocks + a required core idea, with reasoning.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "copy_blocks",
+"type": "other:copy-blocks"
+},
+{
+"name": "core_ideas",
+"type": "other:core-idea"
+}
+],
+"optional_inputs": [
+{
+"name": "additional_info",
+"type": "product-info"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"other:copy-blocks",
+"product-info"
+],
+"produces": [
+"headline"
+]
+},
+{
+"slug": "surprising-culprit-bot",
+"name": "Surprising Culprit Bot",
+"category": "Creative Direction",
+"description": "Generate 15 'surprising villain' marketing angles (unexpected everyday culprit + pseudo-science mechanism) for a product's problem.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "marketing_materials",
+"type": "product-info"
+}
+],
+"optional_inputs": [
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"product-info",
+"buyer-profile",
+"other:copy-blocks"
+],
+"produces": [
+"angle-big-idea"
+]
+},
+{
+"slug": "swiping-bot-master-bot",
+"name": "Swiping Bot Master Bot",
+"category": "Copywriting \u2014 Ads",
+"description": "Rebuilds a winning ad for your product by swapping only product details, keeping structure/rhythm/length locked sentence-for-sentence.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "swipe_ad",
+"type": "winning-ad"
+},
+{
+"name": "product_info",
+"type": "product-info"
+}
+],
+"optional_inputs": [
+{
+"name": "output_mode",
+"type": "other:parameter"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+},
+{
+"name": "include_annotation",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"winning-ad",
+"product-info",
+"buyer-profile",
+"creative-brief",
+"vsl-script",
+"video-script"
+],
+"produces": [
+"ad-copy",
+"video-script"
+]
+},
+{
+"slug": "swiping-master-bot",
+"name": "Swiping Master Bot",
+"category": "Copywriting \u2014 Ads",
+"description": "Clones a winning ad's exact sentence structure/rhythm/length onto a new product \u2014 swaps only product-specific content, never rewrites.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "swipe_ad",
+"type": "winning-ad"
+},
+{
+"name": "product_info",
+"type": "product-info"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"winning-ad",
+"product-info",
+"buyer-profile",
+"landing-page-copy",
+"vsl-script"
+],
+"produces": [
+"ad-copy",
+"swipe-example"
+]
+},
+{
+"slug": "testable-proof-bot",
+"name": "Testable Proof Bot",
+"category": "Strategy & Briefs",
+"description": "Turns product/offer material into 12 self-verifiable 'testable proof' hooks that create instant belief-shift aha moments",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "marketing_material",
+"type": "other:marketing-material-dump"
+}
+],
+"optional_inputs": [
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"product-info",
+"offer-details",
+"vsl-script",
+"buyer-profile",
+"raw-notes",
+"landing-page-copy"
+],
+"produces": [
+"other:testable-proof-concepts"
+]
+},
+{
+"slug": "testimonial-bot-",
+"name": "Testimonial Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns real customer quotes/reviews into 5 (or N) testimonial static-ad concepts across 7 layout archetypes, ready for a designer.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "material containing real customer testimonials",
+"type": "customer-reviews"
+}
+],
+"optional_inputs": [
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"customer-reviews",
+"creative-brief",
+"vsl-script",
+"landing-page-copy",
+"landing-page-url"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "the-listicle-lab-master-bot",
+"name": "The Listicle Lab Master Bot",
+"category": "Pages & Funnels",
+"description": "Turns offer+buyer+proof inputs into a complete listicle advertorial (Warning Signs/Reasons Why/Tips) with CTAs & FAQs",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "other:copy-blocks"
+},
+{
+"name": "sales_copy",
+"type": "landing-page-copy"
+}
+],
+"optional_inputs": [
+{
+"name": "submarket",
+"type": "buyer-profile"
+},
+{
+"name": "voice",
+"type": "brand-voice"
+},
+{
+"name": "listicle_type",
+"type": "other:parameter"
+},
+{
+"name": "output_style",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"offer-details",
+"buyer-profile",
+"other:copy-blocks",
+"landing-page-copy",
+"vsl-script",
+"landing-page-url",
+"brand-voice",
+"customer-reviews"
+],
+"produces": [
+"advertorial",
+"landing-page-copy",
+"headline"
+]
+},
+{
+"slug": "top-5-affiliate-bot",
+"name": "Top 5 Affiliate Bot",
+"category": "Pages & Funnels",
+"description": "Builds a 'Top 5' comparison advertorial ranking your product #1; emits a competitor-research prompt if rivals missing",
+"mode": "multi-phase",
+"required_inputs": [
+{
+"name": "product_1_materials",
+"type": "product-info"
+},
+{
+"name": "products_2_through_5",
+"type": "competitor-info"
+}
+],
+"optional_inputs": [
+{
+"name": "additional_context",
+"type": "research-report"
+},
+{
+"name": "aggressiveness",
+"type": "other:parameter"
+},
+{
+"name": "length",
+"type": "other:parameter"
+},
+{
+"name": "scannability",
+"type": "other:parameter"
+},
+{
+"name": "template",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"product-info",
+"competitor-info",
+"research-report"
+],
+"produces": [
+"advertorial",
+"research-report"
+]
+},
+{
+"slug": "top-5-products-bot",
+"name": "Top 5 Products Bot",
+"category": "Pages & Funnels",
+"description": "Builds a Top 5 competitor-ranking bridge page that teases a #1 pick and drives clicks to your VSL",
+"mode": "multi-phase",
+"required_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "mechanism"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "sales_copy",
+"type": "vsl-script"
+}
+],
+"optional_inputs": [
+{
+"name": "competitor_products",
+"type": "competitor-info"
+},
+{
+"name": "include_social_proof",
+"type": "other:boolean-param"
+},
+{
+"name": "include_disclaimer",
+"type": "other:boolean-param"
+},
+{
+"name": "length",
+"type": "other:param"
+},
+{
+"name": "mechanism_depth",
+"type": "other:param"
+},
+{
+"name": "emotional_intensity",
+"type": "other:param"
+},
+{
+"name": "ranking_harshness",
+"type": "other:param"
+}
+],
+"consumes": [
+"buyer-profile",
+"mechanism",
+"offer-details",
+"vsl-script",
+"competitor-info"
+],
+"produces": [
+"advertorial",
+"other:research-prompt"
+]
+},
+{
+"slug": "ugc-bot-",
+"name": "UGC Bot ",
+"category": "Image Prompts \u2014 Statics",
+"description": "Generates organic-looking UGC static ad concepts (phone-photo style, casual voice) across 10 layout archetypes, 5 at a time",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "mechanism"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "sales_copy",
+"type": "vsl-script"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"mechanism",
+"offer-details",
+"vsl-script",
+"customer-reviews"
+],
+"produces": [
+"image-prompt",
+"static-ad-concept"
+]
+},
+{
+"slug": "ump-bot",
+"name": "UMP BOT",
+"category": "Copywriting \u2014 Long Form",
+"description": "Writes the VSL 'Unique Mechanism of the Problem' section \u2014 the surprising real cause of the pain; stops pre-solution.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "audience_identification",
+"type": "buyer-profile"
+},
+{
+"name": "ump_explanation",
+"type": "mechanism"
+},
+{
+"name": "ump_cause",
+"type": "mechanism"
+}
+],
+"optional_inputs": [
+{
+"name": "copy_blocks_pain_matrix",
+"type": "other:pain-matrix"
+},
+{
+"name": "speaker_background",
+"type": "other:speaker-background"
+},
+{
+"name": "myths_and_mistakes",
+"type": "other:myths-and-mistakes"
+},
+{
+"name": "ump_preview",
+"type": "other:discovery-narrative"
+},
+{
+"name": "ump_elaboration",
+"type": "other:ump-elaboration"
+},
+{
+"name": "self_reflection",
+"type": "other:self-reflection"
+},
+{
+"name": "additional_context",
+"type": "raw-notes"
+}
+],
+"consumes": [
+"buyer-profile",
+"mechanism",
+"raw-notes",
+"other:pain-matrix"
+],
+"produces": [
+"vsl-script"
+]
+},
+{
+"slug": "ums-bot",
+"name": "UMS BOT",
+"category": "Video & VSL",
+"description": "Writes the UMS (solution-mechanism) section of a VSL script from audience, pain-matrix, speaker, and proof inputs.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "audience_identification",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks_and_pain_matrix",
+"type": "creative-brief"
+},
+{
+"name": "speaker_background_and_credibility",
+"type": "other:speaker-bio"
+},
+{
+"name": "ums_preview",
+"type": "mechanism"
+},
+{
+"name": "ums_explanation",
+"type": "mechanism"
+},
+{
+"name": "ums_characterization",
+"type": "mechanism"
+},
+{
+"name": "ums_tips_and_secrets",
+"type": "mechanism"
+},
+{
+"name": "ums_proof_and_verification",
+"type": "other:proof-points"
+}
+],
+"optional_inputs": [],
+"consumes": [
+"buyer-profile",
+"creative-brief",
+"mechanism",
+"raw-notes"
+],
+"produces": [
+"vsl-script"
+]
+},
+{
+"slug": "unaware-bot-master-bot",
+"name": "Unaware Bot Master Bot",
+"category": "Copywriting \u2014 Ads",
+"description": "Analyzes audience emotional drivers, then writes unaware-prospect ad hooks (3 batches of ~5) or full ad scripts.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "product_offer",
+"type": "offer-details"
+},
+{
+"name": "copy_blocks",
+"type": "other:copy-blocks"
+}
+],
+"optional_inputs": [
+{
+"name": "winning_ads",
+"type": "winning-ad"
+},
+{
+"name": "sales_materials",
+"type": "landing-page-copy"
+},
+{
+"name": "customer_research",
+"type": "customer-reviews"
+},
+{
+"name": "competitor_examples",
+"type": "competitor-info"
+},
+{
+"name": "output_type",
+"type": "other:parameter"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+},
+{
+"name": "hook_types",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"other:copy-blocks",
+"winning-ad",
+"landing-page-copy",
+"customer-reviews",
+"competitor-info"
+],
+"produces": [
+"ad-hooks",
+"ad-copy"
+]
+},
+{
+"slug": "unaware-static-image-ads-bot",
+"name": "Unaware Static Image Ads Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Ranks 5-7 native reptile-brain image concepts from ad copy, then generates copy-paste MidJourney phone-photo prompts.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "ad_copy",
+"type": "ad-copy"
+},
+{
+"name": "reference_image",
+"type": "other:reference-image"
+}
+],
+"optional_inputs": [
+{
+"name": "escalation_direction",
+"type": "other:parameter"
+},
+{
+"name": "context",
+"type": "static-ad-concept"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"ad-copy",
+"static-ad-concept",
+"image-prompt"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "unhinged-ad-bot-",
+"name": "Unhinged Ad Bot ",
+"category": "Video & VSL",
+"description": "Turns an offer/avatar/existing ads into 10 absurdist 8-sec cinematic video-hook concepts with full camera specs + belief bridge, then a style menu for more.",
+"mode": "multi-phase",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "existing_ads",
+"type": "winning-ad"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"winning-ad",
+"ad-hooks"
+],
+"produces": [
+"image-prompt",
+"ad-hooks",
+"video-script"
+]
+},
+{
+"slug": "universal-email-bot",
+"name": "Universal Email Bot",
+"category": "Copywriting \u2014 Email",
+"description": "Clones a client's voice from sample emails and writes 10 persuasion emails, 3 subject lines each; tunable via ~30 dials.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "voice_reference",
+"type": "brand-voice"
+},
+{
+"name": "product_or_topic",
+"type": "offer-details"
+}
+],
+"optional_inputs": [
+{
+"name": "marketing_materials",
+"type": "raw-notes"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+},
+{
+"name": "subject_lines_per_email",
+"type": "other:parameter"
+},
+{
+"name": "adjustment_dimensions",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"brand-voice",
+"email-copy",
+"offer-details",
+"product-info",
+"landing-page-url",
+"content-topic",
+"angle-big-idea",
+"buyer-profile",
+"raw-notes"
+],
+"produces": [
+"email-copy",
+"email-sequence",
+"headline"
+]
+},
+{
+"slug": "universal-mechanism-bot",
+"name": "Universal Mechanism Bot",
+"category": "Strategy & Briefs",
+"description": "Generates 36 candidate direct-response mechanisms, scores them, and delivers top 3 with headlines/VSL hooks/ad copy/email subjects.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "market_niche",
+"type": "other:market-niche"
+},
+{
+"name": "product_service",
+"type": "product-info"
+},
+{
+"name": "target_audience",
+"type": "buyer-profile"
+},
+{
+"name": "key_differentiator",
+"type": "product-info"
+}
+],
+"optional_inputs": [
+{
+"name": "competitive_landscape",
+"type": "competitor-info"
+},
+{
+"name": "market_sophistication",
+"type": "other:market-sophistication"
+},
+{
+"name": "causal_clarity",
+"type": "other:causal-clarity"
+},
+{
+"name": "existing_mechanism",
+"type": "mechanism"
+},
+{
+"name": "research_results",
+"type": "research-report"
+},
+{
+"name": "additional_context",
+"type": "raw-notes"
+},
+{
+"name": "mode",
+"type": "other:parameter"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+},
+{
+"name": "top_count",
+"type": "other:parameter"
+},
+{
+"name": "narrative_preference",
+"type": "other:parameter"
+},
+{
+"name": "competitor_strategy",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"product-info",
+"buyer-profile",
+"competitor-info",
+"mechanism",
+"research-report",
+"raw-notes",
+"offer-details"
+],
+"produces": [
+"mechanism",
+"research-report",
+"headline",
+"email-copy",
+"ad-copy",
+"video-script"
+]
+},
+{
+"slug": "universal-static-bot",
+"name": "Universal Static Ad Idea Bot",
+"category": "Strategy & Briefs",
+"description": "Recommends the 3-5 best-fit static ad formats (of 21) for a product and tells you which generator bot to run next",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "copy_blocks",
+"type": "ad-hooks"
+},
+{
+"name": "offer_brief",
+"type": "offer-details"
+},
+{
+"name": "sales_copy",
+"type": "vsl-script"
+},
+{
+"name": "additional_assets",
+"type": "raw-notes"
+},
+{
+"name": "recommendation_count",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-hooks",
+"offer-details",
+"vsl-script",
+"customer-reviews",
+"product-info",
+"competitor-info",
+"raw-notes"
+],
+"produces": [
+"research-report"
+]
+},
+{
+"slug": "universal-static-idea-generator",
+"name": "Universal Static Idea Generator",
+"category": "Strategy & Briefs",
+"description": "Diagnoses your assets, recommends 3-5 of 21 static ad formats plus which bot to run next; won't write concepts",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "product/offer assets (any combination)",
+"type": "other:mixed"
+}
+],
+"optional_inputs": [
+{
+"name": "product images",
+"type": "product-image-description"
+},
+{
+"name": "testimonials",
+"type": "customer-reviews"
+},
+{
+"name": "founder story",
+"type": "brand-voice"
+}
+],
+"consumes": [
+"buyer-profile",
+"creative-brief",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"landing-page-url",
+"customer-reviews",
+"product-image-description",
+"brand-voice"
+],
+"produces": [
+"other:format-recommendation"
+]
+},
+{
+"slug": "upsell-bot",
+"name": "Upsell Bot",
+"category": "Copywriting \u2014 Ads",
+"description": "Ranks 5-7 post-purchase upsell ideas by category, then writes a full 11-15min video OTO script for your pick",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "product",
+"type": "product-info"
+},
+{
+"name": "problem_solution",
+"type": "offer-details"
+},
+{
+"name": "buyer_avatar",
+"type": "buyer-profile"
+}
+],
+"optional_inputs": [
+{
+"name": "additional_context",
+"type": "other:mixed-materials"
+},
+{
+"name": "output_mode",
+"type": "other:parameter"
+},
+{
+"name": "script_type",
+"type": "other:parameter"
+},
+{
+"name": "upsell_selection",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"product-info",
+"offer-details",
+"buyer-profile",
+"vsl-script",
+"landing-page-copy",
+"ad-copy",
+"competitor-info"
+],
+"produces": [
+"ad-hooks",
+"video-script"
+]
+},
+{
+"slug": "upsells-bot",
+"name": "Upsells Bot",
+"category": "Video & VSL",
+"description": "Ranks 5-7 post-purchase upsell ideas by AOV potential, then writes a full 11-15min video upsell/downsell script for the pick.",
+"mode": "multi-phase",
+"required_inputs": [
+{
+"name": "product",
+"type": "product-info"
+},
+{
+"name": "problem_solution",
+"type": "product-info"
+},
+{
+"name": "buyer_avatar",
+"type": "buyer-profile"
+}
+],
+"optional_inputs": [
+{
+"name": "additional_context",
+"type": "other:supplementary-material"
+},
+{
+"name": "output_mode",
+"type": "other:parameter"
+},
+{
+"name": "script_type",
+"type": "other:parameter"
+},
+{
+"name": "upsell_selection",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"product-info",
+"buyer-profile",
+"offer-details",
+"vsl-script",
+"landing-page-copy",
+"competitor-info"
+],
+"produces": [
+"video-script",
+"ad-hooks"
+]
+},
+{
+"slug": "upwork-freelancer-bot-",
+"name": "Upwork Freelancer Bot ",
+"category": "Copywriting \u2014 Ads",
+"description": "Turns an Upwork job post or client message into a psychologically-profiled proposal/reply, or a reusable Voice Guide",
+"mode": "multi-phase",
+"required_inputs": [
+{
+"name": "job_posting",
+"type": "other:job-posting"
+},
+{
+"name": "client_message",
+"type": "other:client-message"
+}
+],
+"optional_inputs": [
+{
+"name": "output_type",
+"type": "other:parameter"
+},
+{
+"name": "context",
+"type": "raw-notes"
+},
+{
+"name": "objective",
+"type": "other:parameter"
+},
+{
+"name": "freelancer_guide",
+"type": "brand-voice"
+},
+{
+"name": "voice_guide",
+"type": "brand-voice"
+},
+{
+"name": "relevant_experience",
+"type": "raw-notes"
+},
+{
+"name": "results_and_case_studies",
+"type": "customer-reviews"
+},
+{
+"name": "availability",
+"type": "other:parameter"
+},
+{
+"name": "rate_info",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"other:job-posting",
+"other:client-message",
+"brand-voice",
+"customer-reviews",
+"raw-notes"
+],
+"produces": [
+"ad-copy",
+"brand-voice",
+"other:freelancer-guide"
+]
+},
+{
+"slug": "video-adscript-bot",
+"name": "Video Adscript Bot",
+"category": "Video & VSL",
+"description": "Writes 5 alternate 45-60s talking-head video ad scripts (different hooks/angles) from any marketing materials, zero questions asked",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "marketing_materials",
+"type": "other:mixed-marketing-materials"
+},
+{
+"name": "target_segment",
+"type": "buyer-profile"
+},
+{
+"name": "cta_destination",
+"type": "other:cta-destination"
+},
+{
+"name": "desired_action",
+"type": "other:desired-action"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+},
+{
+"name": "script_length",
+"type": "other:parameter"
+},
+{
+"name": "meta_compliance",
+"type": "other:parameter"
+},
+{
+"name": "copy_chief_adjustments",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"vsl-script",
+"landing-page-url",
+"landing-page-copy",
+"raw-notes"
+],
+"produces": [
+"video-script"
+]
+},
+{
+"slug": "video-brief-bot",
+"name": "Video Brief Bot",
+"category": "Video & VSL",
+"description": "Turns a finished ad script into a copy-paste production brief with per-beat visual + editor shorthand notes",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "ad_script",
+"type": "video-script"
+}
+],
+"optional_inputs": [
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "product_info",
+"type": "offer-details"
+},
+{
+"name": "platform",
+"type": "other:param"
+},
+{
+"name": "ad_type",
+"type": "other:param"
+},
+{
+"name": "goal",
+"type": "other:param"
+},
+{
+"name": "brief_type",
+"type": "other:param"
+}
+],
+"consumes": [
+"video-script",
+"buyer-profile",
+"offer-details"
+],
+"produces": [
+"storyboard"
+]
+},
+{
+"slug": "viral-to-paid-converter-master-bot",
+"name": "Viral-To-Paid Converter Master Bot",
+"category": "Copywriting \u2014 Ads",
+"description": "Swipes a viral clip's hook/structure into your product ad: 5 interchangeable hooks + 1 shared body + assembled ad.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "organic_content",
+"type": "winning-ad"
+},
+{
+"name": "product_info",
+"type": "product-info"
+}
+],
+"optional_inputs": [
+{
+"name": "hook_quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"winning-ad",
+"transcript",
+"product-info",
+"buyer-profile",
+"offer-details",
+"ad-copy"
+],
+"produces": [
+"ad-copy",
+"ad-hooks"
+]
+},
+{
+"slug": "voice-mod-bot",
+"name": "Voice Mod Bot",
+"category": "Strategy & Briefs",
+"description": "Builds a reusable hybrid brand-voice spec (archetype + scored parameters + tone samples) from a buyer profile.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "buyer_profile",
+"type": "buyer-profile"
+}
+],
+"optional_inputs": [
+{
+"name": "expert_content",
+"type": "brand-voice"
+},
+{
+"name": "expert_personality",
+"type": "other:expert-personality"
+},
+{
+"name": "archetype_preference",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"brand-voice",
+"other:expert-personality"
+],
+"produces": [
+"brand-voice"
+]
+},
+{
+"slug": "vsl-bot",
+"name": "VSL Bot",
+"category": "Video & VSL",
+"description": "Writes complete 10-20 min VSL scripts from your market + offer info; can also break down and adapt an existing VSL.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "market_information",
+"type": "buyer-profile"
+},
+{
+"name": "offer_information",
+"type": "offer-details"
+}
+],
+"optional_inputs": [
+{
+"name": "environmental_factors",
+"type": "other:market-conditions"
+},
+{
+"name": "expert_brand_position",
+"type": "brand-voice"
+},
+{
+"name": "cta_goal",
+"type": "offer-details"
+},
+{
+"name": "additional_context",
+"type": "research-report"
+},
+{
+"name": "existing_vsl",
+"type": "vsl-script"
+},
+{
+"name": "analysis_scope",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"offer-details",
+"product-info",
+"brand-voice",
+"research-report",
+"vsl-script",
+"transcript"
+],
+"produces": [
+"vsl-script"
+]
+},
+{
+"slug": "write-like-luke-bot",
+"name": "Write Like Luke Bot",
+"category": "Copywriting \u2014 Email",
+"description": "Writes emails (or social/sales copy) in Luke Iha's street-smart-professor voice using stacked Pain/Promise/Curiosity/Proof/Constraints blocks.",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "copy_type",
+"type": "other:format-selector"
+},
+{
+"name": "product_or_offer",
+"type": "product-info"
+},
+{
+"name": "market_or_audience",
+"type": "buyer-profile"
+},
+{
+"name": "key_message_or_angle",
+"type": "angle-big-idea"
+},
+{
+"name": "tone_adjustment",
+"type": "brand-voice"
+},
+{
+"name": "additional_context",
+"type": "raw-notes"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"product-info",
+"buyer-profile",
+"angle-big-idea",
+"brand-voice",
+"raw-notes",
+"ad-hooks",
+"offer-details",
+"competitor-info"
+],
+"produces": [
+"email-copy",
+"email-sequence",
+"ad-copy"
+]
+},
+{
+"slug": "write-like-maria",
+"name": "Write Like Maria",
+"category": "Copywriting \u2014 Email",
+"description": "Writes one piece of copy (email, ad, sales page, VSL script) in a warm story-driven 'Maria' voice from whatever product/audience context you give it.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "copy_type",
+"type": "other:copy-type-request"
+}
+],
+"optional_inputs": [
+{
+"name": "context",
+"type": "raw-notes"
+},
+{
+"name": "voice_gender",
+"type": "other:voice-setting"
+},
+{
+"name": "additional_materials",
+"type": "other:supporting-docs"
+}
+],
+"consumes": [
+"raw-notes",
+"buyer-profile",
+"product-info",
+"offer-details",
+"customer-reviews",
+"competitor-info"
+],
+"produces": [
+"email-copy",
+"ad-copy",
+"landing-page-copy",
+"vsl-script",
+"video-script"
+]
+},
+{
+"slug": "writing-on-body-bot",
+"name": "Writing On Body Bot",
+"category": "Image Prompts \u2014 Statics",
+"description": "Turns offer/VSL copy into 5 handwritten-on-skin static ad concepts (comparison, transformation claim, or audience callout) with body-part rationale",
+"mode": "needs-input",
+"required_inputs": [],
+"optional_inputs": [
+{
+"name": "Build a Buyer",
+"type": "buyer-profile"
+},
+{
+"name": "Copy Blocks",
+"type": "ad-hooks"
+},
+{
+"name": "Offer Brief",
+"type": "offer-details"
+},
+{
+"name": "Sales Copy",
+"type": "vsl-script"
+},
+{
+"name": "quantity",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"buyer-profile",
+"ad-hooks",
+"offer-details",
+"vsl-script",
+"customer-reviews"
+],
+"produces": [
+"static-ad-concept",
+"image-prompt"
+]
+},
+{
+"slug": "youtube-research-bot-",
+"name": "YouTube Research Bot ",
+"category": "Research & Analysis",
+"description": "Turns a video idea into a deep-research prompt (+ optional interview Qs, resource list, first-principles lenses), then compiles gathered findings into one structured doc.",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "video_concept",
+"type": "content-topic"
+}
+],
+"optional_inputs": [
+{
+"name": "target_audience",
+"type": "buyer-profile"
+},
+{
+"name": "video_goal",
+"type": "raw-notes"
+},
+{
+"name": "current_year",
+"type": "raw-notes"
+},
+{
+"name": "creator_expertise",
+"type": "raw-notes"
+},
+{
+"name": "specific_points",
+"type": "raw-notes"
+},
+{
+"name": "youtube_strategy_doc",
+"type": "raw-notes"
+},
+{
+"name": "components",
+"type": "other:parameter"
+},
+{
+"name": "resource_type",
+"type": "other:parameter"
+},
+{
+"name": "gathered_research",
+"type": "research-report"
+}
+],
+"consumes": [
+"content-topic",
+"buyer-profile",
+"research-report",
+"raw-notes"
+],
+"produces": [
+"research-report"
+]
+},
+{
+"slug": "youtube-script-bot",
+"name": "Youtube Script Bot",
+"category": "Video & VSL",
+"description": "One-shot: video idea in, full retention-engineered YouTube script or outline out (hooks, 3 CTAs, no timestamps).",
+"mode": "needs-input",
+"required_inputs": [
+{
+"name": "video_idea",
+"type": "content-topic"
+}
+],
+"optional_inputs": [
+{
+"name": "video_length",
+"type": "other:duration"
+},
+{
+"name": "most_interesting_element",
+"type": "angle-big-idea"
+},
+{
+"name": "credibility_reason",
+"type": "brand-voice"
+},
+{
+"name": "credibility_statement",
+"type": "brand-voice"
+},
+{
+"name": "specific_content",
+"type": "content-topic"
+},
+{
+"name": "best_evidence",
+"type": "customer-reviews"
+},
+{
+"name": "unique_opinion",
+"type": "angle-big-idea"
+},
+{
+"name": "content_breakdown",
+"type": "content-topic"
+},
+{
+"name": "viewer_outcome",
+"type": "offer-details"
+},
+{
+"name": "audience_knowledge_level",
+"type": "buyer-profile"
+},
+{
+"name": "tone_of_voice",
+"type": "brand-voice"
+},
+{
+"name": "target_emotion",
+"type": "brand-voice"
+},
+{
+"name": "tone_of_voice_guide",
+"type": "brand-voice"
+},
+{
+"name": "build_a_buyer",
+"type": "buyer-profile"
+},
+{
+"name": "youtube_strategy",
+"type": "other:channel-strategy"
+},
+{
+"name": "previous_script",
+"type": "video-script"
+},
+{
+"name": "output_type",
+"type": "other:parameter"
+},
+{
+"name": "humor_level",
+"type": "other:parameter"
+},
+{
+"name": "information_density",
+"type": "other:parameter"
+},
+{
+"name": "energy_pace",
+"type": "other:parameter"
+},
+{
+"name": "hook_intensity",
+"type": "other:parameter"
+},
+{
+"name": "voice_style",
+"type": "other:parameter"
+},
+{
+"name": "anti_ai_level",
+"type": "other:parameter"
+},
+{
+"name": "adjustment_instructions",
+"type": "other:parameter"
+}
+],
+"consumes": [
+"content-topic",
+"buyer-profile",
+"brand-voice",
+"customer-reviews",
+"video-script",
+"angle-big-idea"
+],
+"produces": [
+"video-script"
+]
+}
+]

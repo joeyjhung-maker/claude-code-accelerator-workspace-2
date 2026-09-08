@@ -22,7 +22,7 @@ picture of a working ROYA business.
 ## Anchor proof
 
 - **Erik — Jul 2026, accounting:** signed an accounting firm for a **$2,000 monthly retainer** for client re-engagement and upsell. “Their staff are too busy to do follow-ups and sell more services, so we take that off their plate.”
-- **Redacted member — Aug 2024, cold LinkedIn:** a Friday-morning cold connection became a 20-minute demo that afternoon and **$20,000 in the bank by Monday**, plus a **$1,000 monthly retainer**.
+- **Jay — Aug 2024, cold LinkedIn:** a Friday-morning cold connection became a 20-minute demo that afternoon and **$20,000 in the bank by Monday**, plus a **$1,000 monthly retainer**. Joey confirmed the formerly redacted name from the supplied screenshot on 2026-09-08.
 - **Redacted member — Jun 2024, solar:** a client referral produced **$2,500/mo** plus a **$400/mo** review bot, taking total ROYA retainers to **$8,000/mo**.
 
 ## Scale roster

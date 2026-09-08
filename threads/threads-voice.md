@@ -300,6 +300,39 @@ open the next paragraph instead. Reinforces the existing "line break between eve
 idea" rule — a short pivot sentence gets isolated as its own beat rather than
 leading into the sentence that follows it.
 
+**Posted with edits (2026-09-07, hearing-God's-voice round):** the Definition Flip
+draft kept its four-beat argument but Joey simplified the technical metaphor and
+joined the closing two lines into one paragraph.
+- Draft: "God's voice isn't always absent... Sometimes the signal is there, but the
+  receiver is crowded... The answer isn't always more volume. / Sometimes it's
+  stillness."
+- Posted: "God isn’t always silent... Sometimes He is speaking, but your mind is too
+  full to hear... The answer isn’t to get louder. Sometimes you just need to be
+  still."
+
+**Voice signal:** concrete human wording beat the transmitter metaphor: "absent" →
+"silent," "signal/receiver" → "He is speaking/your mind," "more volume" → "get
+louder," and "stillness" → "be still." The final explanation and instruction
+belong together when they form one simple cause-and-response beat; a new paragraph
+isn't required between every short sentence.
+
+**Posted with edits (2026-09-07, hearing-God's-voice/Stacked-Directive round):**
+Joey made the practical list more concrete, recast the closing diagnostic around the
+reader's felt urgency, and deleted the final abstract explanation.
+- "Remove external noise" → "Get into a quiet place"
+- "Pray without rushing" → "Never rush, ignore the clock"
+- "Pay attention to repeated impressions" → "Pay attention to impressions & thoughts"
+- "When you feel yourself going faster than God, slow down" → "When you feel
+  yourself NEEDING an answer now, slow down"
+- Deleted: "God's voice isn't made clearer by volume. The receiver becomes clearer
+  through stillness, attention and use."
+
+**Apply going forward:** in practical lists, name the physical behaviour or setting
+instead of the category (`get into a quiet place`, not `remove external noise`). Once
+the post has landed its instruction through a concrete image or felt behaviour, stop;
+do not add an abstract closer that explains the mechanism again. Strategic capitals
+can carry the emotional pressure point (`NEEDING`) when used once.
+
 ## How to improve this file
 
 After each fortnightly measurement pull, add: any new opener that beat median, any word or phrase

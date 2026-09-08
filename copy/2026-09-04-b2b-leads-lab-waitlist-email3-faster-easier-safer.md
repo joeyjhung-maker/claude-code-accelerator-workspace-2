@@ -1,35 +1,65 @@
-HL: Doing your own lumpy mail fulfilment is like doing your own dentistry
+HL: Lumpy mail clients the EASY way
 
 Dan here…
 
-Look, sending lumpy mail WORKS.
+Look, lumpy mail WORKS.
 
-We've proven that over and over at this point.
+We’ve proven that enough times now.
 
-But actually fulfilling the damn things yourself?
+But fulfilling the darn thing yourself?
 
-Sourcing bottles, printing letters, packing boxes, driving to the post office…
+It gets tedious, reeeealll quick.
 
-It's tedious, it eats your evening, and you WILL eventually mess something up.
+You’re sourcing bottles…
 
-I know because I've done it.
+Printing letters…
 
-You send a bottle to the wrong address… or to someone another member of the group already hit last month… and now you look like an amateur instead of the premium operator the whole play is designed to position you as.
+Packing boxes…
 
-And that's the real danger honestly, not the cost of a wasted bottle, but the fact that one sloppy send can torch the impression before you even get the coffee date.
+Sorting lock codes…
 
-So we're building a DFY fulfilment service specifically for this group.
+THEN driving to the post office like you’ve accidentally opened an Etsy shop.
 
-Once you've got your leads and written your letter, you just hand over the names, addresses, and the letter itself.
+The most nail biting part?
 
-The fulfilment team handles sourcing, packing, lock codes, shipping… all of it.
+Hoping ya don’t screw up somewhere
 
-They run a duplicate-check system that flags if a prospect has already received a bottle from someone else in the group, so there's zero chance of double-sending.
+Maybe the bottle goes to the wrong address.
 
-And because this is literally their full-time process running the same way every time, the accuracy is going to be WAY higher than you squeezing it in between client work at 9pm.
+Maybe you didn’t secure the packaging tight enough.
 
-You just focus on booking the coffee dates and closing.
+Now I don't want this to stop you from pulling off one of THE most successful client-getting strategies I’ve ever seen…
 
-The waitlist's already open… tap the link below and get on it.
+So we’re building a DONE-FOR-YOU fulfilment service specifically for this group.
+
+Once you’ve found your leads and written the letter…
+
+You hand over the names, addresses, and copy.
+
+That’s it.
+
+Our fulfilment team handles the sourcing, packing, lock codes, and shipping.
+
+They’ll also run a duplicate check to flag prospects who’ve already received a bottle from someone else inside the group.
+
+No awkward double-sends.
+
+No late-night packing sessions.
+
+No wondering whether Gary from roofing just received Sarah from accounting’s letter.
+
+And because this is their full-time process…
+
+Accuracy should be WAY higher than you trying to squeeze fulfilment between client work and dinner at 9pm.
+
+You focus on booking coffee dates.
+
+Then closing the people who show up.
+
+We’ll handle the bottles.
+
+The waitlist is already open…
+
+[Tap this link and get your name on it.](https://b2bgifts.ai/lander/)
 
 Dan

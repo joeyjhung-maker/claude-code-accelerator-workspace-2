@@ -82,3 +82,23 @@ Related: [[Promotion]] [[Memory Loop]]
 Joey then supplied 4 more real posts from his own archive, unprompted, as models for structures the skill didn't have at all: a "problem illumination" post (name a felt problem, reframe it as training, explain why, 8.43% eng), a "never/don't" warning post (permission clause + urgency + scripture citation + casual aside, 8.85% eng, 13 reposts), a "you know you've truly X when Y" diagnostic with two branching outcomes (**14.53% eng — the highest confirmed rate in the account so far**), and a Bible-story typology post (Moses' staff, 7.58% eng). None of these were in `structure-bank.md` despite being real, evidenced, high-performing posts from his own archive — the mining pass that built the bank simply missed them.
 
 **Fix applied:** Added these four as structures #20-23 in `structure-bank.md` (Part 1, evidenced from Joey's own archive with real engagement numbers). `faith-thread/SKILL.md` step 3 rewritten around three families — personal-processing (Family A, capped at one per batch), Joey's newly-mined structures #20-23 (Family B, first-class not fallback), and the original mined devices (Family C, used only when content calls for one) — with an explicit instruction to vary across families, not just across named structures within one family.
+
+---
+
+### Observation 8: The old Skool judge optimized technical cleanliness and flattened Mariobot's selling voice
+
+**Status:** ACTIONED (2026-09-08) — added a Dan-specific light judge and removed the legacy style-contract/lint gate from the Dan Skool route
+**Date:** 2026-09-08
+**Skill:** `produce-skool` + `scripts/run_mario.py`
+**Issue:** Joey repeatedly found that raw general-model copy and his own edits sold harder than the output from the full Mariobot production setup. The bottleneck was not missing notes. The generation prompt was over-constrained by a legacy style contract, then the judge optimized for compliance, lint cleanliness, and a visible scorecard. This selected against the cheeky lines, concrete micro-scenes, uneven rhythm, and purposeful roughness that make Dan's copy feel human. The process was protecting rules instead of protecting the sale.
+**Fix applied:** Added `rubrics/dan-skool-chatgpt-rubric.md`, added `run_mario.py --no-style-contract`, and rewrote both copies of `produce-skool` so truth and the brief remain hard gates while the style judge makes only one to three high-impact edits. Mechanical lint and the old copy rubric are no longer automatic gates for Dan Skool drafts.
+
+---
+
+### Observation 9: The light judge preserved voice but missed the emotional bridge
+
+**Status:** ACTIONED (2026-09-08) — added the resistance-then-disarm check to the Dan Skool judge
+**Date:** 2026-09-08
+**Skill:** `produce-skool`
+**Issue:** The mobile-follow-up draft correctly explained that calling is more powerful than email or LinkedIn, but it stopped at rational advice. Joey's edit named why readers avoid the call (“need some cojones”) and immediately made it feel safer by explaining that the gift has already opened the door. He also restored a functional headline and Dan sign-off despite requesting an informal FYI note.
+**Fix applied:** The Dan judge now checks whether practical advice names the reader's emotional resistance and disarms it with the mechanism. It also no longer interprets “informal FYI” as an automatic instruction to remove the headline and sign-off.

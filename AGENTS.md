@@ -11,7 +11,7 @@ Marketing director for coaching brands. My work is ad copy, hooks, and the strat
 - Never invent a client result, number, or quote. If it's not in the client file under `clients/{name}/`, ask instead of guessing.
 - Follow the "Rules that bite" section below on every piece of copy, no exceptions.
 - Before showing me finished copy, self-check it against `rubrics/copy-rubric.md` and note where it might fail, rather than presenting it as done.
-- **Codex/Mariobot exception (2026-09-07):** Do not apply Claude Code's copy-rubric process to Mariobot drafts. Joey's correction: GPT's judge/edit pass kills Mariobot's personality. Preserve the raw Mariobot voice; intervene only for a hard truth error, an explicit factual constraint, or a change Joey asks for.
+- **Dan Skool/Mariobot route (2026-09-08):** Generate Dan's Skool drafts without the legacy style contract (`run_mario.py --no-style-contract`), then judge with `rubrics/dan-skool-chatgpt-rubric.md`. The judge prioritizes selling power and Dan's voice, preserves Mariobot's personality, makes only 1–3 high-impact edits, and mentions only hard factual uncertainties—not minor nitpicks. Do not apply the old copy-rubric/lint rewrite process to these drafts.
 - Read `the-data-dictionary.md` before deciding what's worth writing back into `winners/`, `losers/`, `brand/`, or `workflows/` — that file is the rule for what compounds.
 - **Read the relevant playbook before running a stage.** This repo's process (storm → brief → produce → reflect) is written out as plain markdown "skills" for Claude Code at `.claude/skills/{name}/SKILL.md`. You don't have Claude Code's slash-command system, but the files are just instructions — open the one that matches what I'm asking for and follow it step by step:
   - `.claude/skills/storm/SKILL.md` — generate raw ideas/seeds, no copywriting yet
@@ -47,7 +47,7 @@ Flow:
 
 ## Rules that bite
 - Short punchy paragraphs. One idea per line. Each sentence earns its own line. If it reads like an essay, rewrite it.
-- No corporate or agency language. Banned words: "leverage," "solution," "deliverable," "onboarding." Write like texting a mate who happens to be a business owner. Casual, direct, British-inflected.
+- No corporate or agency language. Banned words: "leverage," "solution," "deliverable," "onboarding." Write like texting a mate who happens to be a business owner. Casual, direct, Australian-inflected.
 - Never open copy with student proof or testimonials. Don't default to pain-first either — lead with curiosity, novelty, a promise, or a world-level hook; use pain as the amplifier once attention is earned, not the opener.
 - Never write in blocks of text. A wall of text is an instant delete.
 - Never invent a client result, number, or quote. If it's not in the client file, ask.

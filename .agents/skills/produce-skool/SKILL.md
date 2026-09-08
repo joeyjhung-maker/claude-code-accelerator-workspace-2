@@ -1,12 +1,12 @@
 ---
 name: produce-skool
-description: The writing stage for Skool community posts — a locked skool-brief becomes the actual post. This is the community-post analog to /produce, which writes Facebook/Meta ads — do not use /produce for Skool posts or this skill for ads. Use when Joey says "produce skool", "write the skool post", names a skool brief, or says "write skool brief X" after a /brief-skool run. mariobot drafts in Dan's Skool voice, the copy-rubric's "Dan — Skool Community Posts" section judges BEFORE Joey reads it, then it saves to copy/ and flips the brief to written. This is the ONLY stage where Skool post copy gets written. No new strategy — the brief already locked Room/Job/Mechanic/Ask.
+description: The writing stage for Skool community posts — a locked skool-brief becomes the actual post. Mariobot drafts in Dan's voice, then the light Dan-specific ChatGPT judge protects selling power and personality before the post is saved.
 ---
 
-# /produce-skool — the brief becomes the post. mariobot writes, the judge grades, then you read.
+# /produce-skool — the brief becomes the post. Mariobot writes, the light judge aligns.
 
-Same two-brain trick as /produce: **mariobot drafts the floor, the judge
-grades it, and only the clean version reaches Joey.**
+Mariobot creates the voice and surprise. The ChatGPT judge makes a small number
+of high-impact corrections using `rubrics/dan-skool-chatgpt-rubric.md`.
 
 **mariobot writes or NO ONE writes.** Never draft the copy yourself. If the
 Genesis route is down or the keys are blank, STOP and escalate — see step 1.
@@ -54,6 +54,11 @@ All routes go through Genesis bots via the stateless prime→instruct protocol
 (`scripts/run_*.py`). **mariobot** (`scripts/run_mario.py`) writes the whole
 post in one pass, primed with the Tap-position shape and the brief's Mechanic:
 
+For Dan Skool posts, invoke `run_mario.py` with `--no-style-contract`. The
+legacy contract over-constrains the draft and strips out the personality this
+route is meant to produce. Put essential truth and format constraints in the
+brief itself.
+
 - **real-event / UGC source route** → keep the brief's real names, numbers,
   and quotes exactly as given; mariobot writes connective tissue only. If
   mariobot's draft embellishes a real fact, that's a FAIL at the judge stage,
@@ -73,54 +78,26 @@ post in one pass, primed with the Tap-position shape and the brief's Mechanic:
 - **DM script** → short, conversational, no headline — this is a message,
   not a post.
 
-### 4. Judge BEFORE showing — the gate
-Nothing reaches Joey ungraded. **If the scorecard isn't shown, the grading
-didn't happen.**
+### 4. Judge BEFORE showing — the light alignment pass
 
-Provenance first: grade and auto-fix **mariobot's** lines hard. Any line
-**Joey** wrote gets FLAGGED for him, never silently corrected.
-([[judge-provenance-rule]], [[dont-verify-user-written-claims]].)
+Read `rubrics/dan-skool-chatgpt-rubric.md` and judge the raw Mariobot draft
+against Joey's final specimens.
 
-1. **Lint** — `python3 scripts/copy_lint.py <draft>` FIRST for the mechanical
-   STRUCTURE rules. Remember the Skool-specific exemptions already banked in
-   `rubrics/copy-rubric.md`: the ellipsis ladder (three trailing lines
-   building to an "and") is a Dan device, not a fragment-stack FAIL — check
-   the trailing-`…` test before flagging it. Rewrite every genuine FAIL,
-   re-lint until clean.
-2. **Scorecard** — grade against `rubrics/copy-rubric.md`'s **"Dan — Skool
-   Community Posts"** section specifically, not the general ad VOICE/
-   PERSUASION rules above it. As an explicit rule-by-rule PASS/FAIL
-   tick-list, check at minimum:
-   - Register: Aussie (not British), spoken contractions (ya/'em/gonna),
-     double `!!` reserved for the actual climax, CAPS roughly one word every
-     few lines, scare quotes for irony, loose capitalization left alone.
-   - Structure: ellipsis ladder used correctly (trailing beats, not
-     decoration), P.S. present as a structural beat where the brief calls
-     for one, sign-off "Dan".
-   - Persuasion: weakness/confession before the flex where it fits, the
-     WHAT-CHANGED shown before the conclusion is named (not just asserted),
-     asked-for proof present (never write around a proof gap — stop and ask
-     Joey for the number instead), the engagement ask SEGMENTS the room
-     rather than asking flatly, name-and-demote rather than scrub a thing
-     the brief says not to center.
-   - The reversal-fragment scan: check headline, body, AND P.S. separately
-     for "That's not X… it's Y" / "Not X. Y." constructions — these survive
-     in whichever section gets checked last, so check all three.
-3. **Brief-match check** — does the draft still deliver the locked Room, Job,
-   Mechanic, and The Ask? Did the Tap position hold (a T1 that's drifted into
-   a hard T3 pitch, or a T3 that's gone too soft to actually ask)? Does it
-   respect the Room's locked avatar/framing rule? If a CTA type was locked,
-   does the draft actually follow that shape (e.g. a `two-step` brief that
-   drifted into a bare `direct-promo` with no qualifier framing)? Does an
-   asking post still deliver real, substantial value BEFORE the ask, per
-   [[taylor-welch synthesis]]'s "never a bare ask" rule? Flag any drift as
-   its own PASS/FAIL line — a drift isn't automatically a rewrite, but it
-   must be SEEN and named before Joey reads it.
-4. **Cross-seed check** — if the brief flagged one, restate it here as a
-   reminder before the post ships, not just at brief time.
+Truth, the explicit ask, and brief match are hard gates. After those, judge
+five things: opening, concreteness, sales spine, Dan voice, and reader action.
 
-Rewrites are edits to mariobot's draft, not you re-writing the post — show
-the scorecard (rubric ticks + brief-match + cross-seed line) with the copy.
+Make only the **one to three edits** that most improve attention, desire,
+clarity, or voice. Preserve jokes, odd phrasing, fragments, ellipses, loose
+capitalization, and deliberate roughness when they add personality. Do not
+run `copy_lint.py` or the legacy `copy-rubric.md` as an automatic rewrite gate.
+
+Do not show Joey a technical scorecard or narrate minor faults. Show the best
+finished copy. Mention only a hard factual uncertainty or a decision that
+genuinely blocks the copy.
+
+Provenance still holds: never silently rewrite wording Joey supplied as final.
+When Joey returns an edited version, save it, compare it with what he received,
+and update the judge only when the correction is repeated or consequential.
 
 ### 5. Save, then flip
 Two moves, both required:
@@ -143,7 +120,7 @@ Two moves, both required:
 worked/died are separate moves — promotion is /reflect at session end.
 
 ### 6. Hand off
-Show the clean copy + the scorecard. Close with the saved path, confirm the
+Show the clean copy. Close with the saved path, confirm the
 brief flipped to `written`, and: "Another skool brief, or /reflect to
 promote what we learned?"
 
@@ -151,11 +128,9 @@ promote what we learned?"
 - **mariobot writes or no one writes.** Blank/missing keys → STOP and
   escalate. Never self-draft as a fallback (unless Joey asks for
   fast-and-loose).
-- **Grade against the Skool section of the rubric, not the ad rules above
-  it.** Different register, different structural devices, different
-  persuasion checklist.
-- **Scorecard or it didn't happen.** Lint first, Skool-rubric tick-list
-  second, brief-match + cross-seed check third.
+- **Use the Dan-specific light judge.** Selling power and personality matter
+  more than technical cleanliness.
+- **One to three high-impact edits.** Do not polish Mariobot flat.
 - **Never write around a missing proof number.** Stop and ask Joey for the
   real figure or niche before drafting — a vague version is not a safe
   default.

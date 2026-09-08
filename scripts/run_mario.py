@@ -109,6 +109,8 @@ def main():
     ap.add_argument("--out", help="write the draft here as well as stdout")
     ap.add_argument("--dry-run", action="store_true",
                     help="print payloads, no API call")
+    ap.add_argument("--no-style-contract", action="store_true",
+                    help="send the brief without prepending the legacy style contract")
     args = ap.parse_args()
 
     primer = "\n\n---\n\n".join(Path(p).read_text() for p in args.primer)
@@ -117,13 +119,17 @@ def main():
         "and patterns of these winning ads. Reply only that you've absorbed "
         "the patterns.\n\n" + primer
     )
-    instruction = (
-        "Before you write, these are the hard rules. They override any "
-        "structural pattern in the sample ads you absorbed.\n\n"
-        + style_contract()
-        + "\n\n---\n\nNow the brief:\n\n"
-        + Path(args.instruction).read_text()
-    )
+    brief = Path(args.instruction).read_text()
+    if args.no_style_contract:
+        instruction = brief
+    else:
+        instruction = (
+            "Before you write, these are the hard rules. They override any "
+            "structural pattern in the sample ads you absorbed.\n\n"
+            + style_contract()
+            + "\n\n---\n\nNow the brief:\n\n"
+            + brief
+        )
 
     if args.dry_run:
         print("=== STEP 1: PRIME ===\n")

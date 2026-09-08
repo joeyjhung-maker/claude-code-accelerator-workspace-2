@@ -821,5 +821,32 @@ bigger than a line-edit, closer to a re-angle. Diffing his final version against
   reads like it should be "Can you help me with the below" or similar. Left as written per
   provenance rules; worth a glance before this ships.
 
+### Dan Skool posts — DFY fulfilment waitlist, Joey's final edit (2026-09-08)
+
+*Joey rewrote the faster/easier/safer DFY fulfilment draft. Preserve these moves when writing
+process-relief copy for Dan.*
+
+- **Lead with the desired outcome, then earn it through the operational problem.** The generated
+  headline made fulfilment itself the subject ("Doing your own lumpy mail fulfilment is like doing
+  your own dentistry"). Joey used "Lumpy mail clients the EASY way" — the audience wants clients,
+  while fulfilment is merely the obstacle being removed.
+- **Make tedious work funny through a familiar identity mistake.** "Driving to the post office
+  like you've accidentally opened an Etsy shop" turns a list of chores into one vivid, cheeky
+  picture. For process-heavy offers, look for the ridiculous job the buyer feels they have
+  accidentally taken on.
+- **Sell reliability with plausible micro-disasters, not abstract warnings.** Wrong address,
+  insecure packaging, and "Gary from roofing" receiving "Sarah from accounting's letter" make
+  the risk concrete. Named hypothetical people are especially effective when the humour comes
+  from an obviously mixed-up workflow, not from inventing a client fact.
+- **Use uncertainty honestly when the service is not yet live.** Joey changed the absolute claim
+  that accuracy "is going to be WAY higher" to "Accuracy should be WAY higher." Pre-launch copy
+  can promise the designed advantage without pretending the operational result has already been
+  proven.
+- **Compress the handoff into a relieving scene.** "You hand over the names, addresses, and copy.
+  That's it" followed by "You focus on booking coffee dates… We'll handle the bottles" makes the
+  division of labour instantly legible. This is stronger than merely listing what the service does.
+- **A direct waitlist CTA should contain the real link.** Joey replaced the placeholder instruction
+  with the live destination: `https://b2bgifts.ai/lander/`.
+
 Related: [[2026-08-19-b2b-leads-lab-skool-post-sales-call-clip]] [[2026-08-20-b2b-leads-lab-skool-post-anti-ai-direct-mail]]
 [[storm-skool]] [[brief-skool]] [[produce-skool]] [[taylor-welch synthesis]]
