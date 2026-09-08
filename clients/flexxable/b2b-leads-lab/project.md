@@ -175,6 +175,60 @@ before public launch. Jonathan wants to pick one person, not all five, to protec
 - Content angle to weave in once the ad-spend checker ships: it's the highest-leverage hook per
   Nat/Jonathan for pulling in AAA Ninjas members who have no intention of doing lumpy mail.
 
+### Topa call — content stories and cock-up angles (2026-09-08, full transcript + summary in
+`topa-call-2026-09-08-content-stories.md`)
+
+*Not a strategy/logistics call like the two above — Joey asked Jonathan directly for raw story
+material to spin into B2B Gifts content.*
+
+- **Cock-up story: sent a bottle to a registered office (Tom Wood, owner of Car & Classic).**
+  Address was a registered office, not a real one — bottle never arrived, cold call afterward
+  didn't recover it. **Jonathan's own content angle:** ties directly to the Topa/B2B Gifts lead
+  score — a registered-office address should flag **red**.
+- **Cock-up story: went too senior at a large company (an owner of John Pye Auctions).** Told on
+  the follow-up call the owner was "on his yacht" and would never see it — should have targeted
+  COO/CMO instead. **Jonathan's own content angle:** another lead-score input — flag when the
+  target's seniority is too high for the company's staff count. His own rough rule of thumb:
+  **100+ staff, stop targeting the owner.**
+- **Cock-up story: bought the wrong bottle shape, didn't fit the lockbox.** 12 bottles of
+  Châteauneuf-du-Pape (~£25-30 each), too broad at the top for the lockbox. Not wasted — drunk /
+  given to friends — but delayed the send. **He fixed his own process on the next run:**
+  taste-tested and fit-checked a small batch before ordering the full 96-bottle order. Good
+  "we already ate this mistake for you" fulfilment-trust angle.
+- **Cock-up story, and the origin of an existing standing rule: don't send to a lead with no
+  mobile number.** Sent to office-landline-only contacts, got fobbed off by reception, no way to
+  follow up. Not a new rule — it's where the existing "verified mobile required" standard came
+  from. Framing to use: **you're 3x more likely to land a meeting when you can follow up with a
+  direct call** instead of routing back through the office. Jonathan noted people push back on
+  this rule when he posts it — worth addressing the objection directly in copy, not just stating
+  the rule.
+- **Multichannel/LinkedIn-first positioning (Jonathan's current thinking, not yet in copy):**
+  frame Topa's upcoming LinkedIn automation as "know who you've already connected with, so the
+  bottle or the call isn't cold" — not "automate your LinkedIn." Demo flow: search inside Topa →
+  see everyone reached out to → "get cell phone" button (in progress) → call referencing the
+  LinkedIn connection. Line to use: **"we're not cold pitching anymore — they already know who you
+  are before you reach out."** Also planned: automated pre-outreach engagement (liking posts,
+  endorsing skills, viewing profile).
+- **"Why direct mail beats every other channel" — Jonathan's own comparison argument, not yet
+  written up.** Core claim: with email/LinkedIn/cold-call at volume, **you're not the chooser —
+  you deal with whoever replies**; with direct mail, **you pick the exact company**. Illustrative
+  numbers he used (not verified client stats, just his own framing): ~£3k/month buys ~80 gift
+  sends vs. ~100,000 cold emails for the same spend, but that email volume needs infrastructure
+  ("a million inboxes") most small operators don't have. On niching down: in a small niche (his
+  example — UK car leasing, ~500 addressable companies), cold email dies after one pass, but
+  direct mail to the same list can still convert a meaningful share (his estimate: up to 30 of
+  500). **Line worth using: direct mail beats every other channel MOST when the niche is small —
+  the opposite of the usual "too niche = not enough people" objection.**
+- **Waitlist as of this call:** ~52 signups, 11 UK. Sunday sends underperforming other days
+  (Jonathan's impression, not hard data). Next push scheduled Thursday.
+- **Caveat:** the lead-score ideas (registered-office red flag, seniority-vs-staff-count flag) are
+  Jonathan's own proposals from this call, not confirmed as built or scheduled — frame as "a
+  mistake that's shaping what we're building," not as a live feature, unless confirmed separately.
+  No specific figures/names beyond what's stated above (Tom Wood, John Pye Auctions) — don't
+  invent additional specifics when writing this up.
+
+---
+
 ### What the group actually looks like inside
 Content is tactical and show-your-work. Two live examples:
 - Dan's "Three Pronged Attack Part 2" webby replay — the real-life "coffee date" close on tape.
