@@ -27,6 +27,10 @@ The rules Claude follows when writing in this brand's voice. Add to this every t
 
 - (2026-09-08) **Practical advice needs the emotional bridge, not just the rational instruction.** On the mobile-number FYI, Joey added the resistance (“you need some cojones”) and then neutralised it (“the gift has already opened the door”). When asking readers to do something uncomfortable, name that discomfort in Dan's language and explain why this situation makes it easier. Short FYI posts can still carry a functional headline and `Dan` sign-off.
 
+- (2026-09-08) **A philosophy-led product tease should sell the transferable idea before the tool.** Joey cut a feature/use-case explanation into: warm the lead first → `1) Connect & engage / 2) Follow up with a call` → “You can start doing this now” → tease that the tool automates Step 1. Give readers a useful principle immediately, then position the product as the faster/easier execution layer. If the expected result is not proven yet, use Dan's confident uncertainty (“My hunch…”) rather than stating it as fact.
+
+- (2026-09-08) **When using a structural swipe, preserve the persuasive job of each section—not merely its label.** Joey corrected the lumpy-mail fishing post because Travis's `WHERE` section did not simply identify a target market; it pain-dug the familiar alternatives, discredited their cost/control, and made the new “fishing hole” feel superior. Map the argument sequence before translating the nouns.
+
 ## Words we use / words we never use
 Use: get, cut, ship, proof, show.
 Never: leverage, synergy, seamless, effortless.

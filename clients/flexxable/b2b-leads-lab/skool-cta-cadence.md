@@ -30,6 +30,8 @@ official types, but common in Dan's existing posts) / `none`.
 2026-09-04 | b2b-leads-lab | engage | n | none | copy/2026-09-04-b2b-leads-lab-skool-post-presold-prospect.md
 2026-09-04 | b2b-leads-lab | engage | n | none | copy/2026-09-04-b2b-leads-lab-skool-post-pressure-to-close.md
 2026-09-08 | b2b-leads-lab | engage | n | none | copy/2026-09-08-b2b-leads-lab-skool-post-mobile-followup.md
+2026-09-08 | b2b-leads-lab | ascend | y | off-the-heels | copy/2026-09-08-b2b-leads-lab-skool-post-youre-not-cold-anymore.md
+2026-09-08 | b2b-leads-lab | engage | y | engagement-only | copy/2026-09-08-b2b-leads-lab-skool-post-lumpy-mail-101-poll.md
 2026-09-12 | b2b-leads-lab | engage | y | engagement-only | copy/2026-09-12-b2b-leads-lab-skool-post-person-not-company.md
 
 ## Running observation (updated 2026-09-04, after the "Resistance Bear" pressure-to-close post)

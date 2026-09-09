@@ -22,6 +22,7 @@ Marketing director for coaching brands. My work is ad copy, hooks, and the strat
 - **No persistent memory across sessions.** Claude Code keeps an auto-memory file outside this repo (`~/.claude/projects/.../memory/`) that you can't see. Anything durable that should survive between sessions with you needs to live in this repo instead — in `brand/voice.md`, a client's `client.md`, or this AGENTS.md file. If you learn something that should stick, say so explicitly so it gets written into one of those files rather than assumed remembered.
 - Start of session: check the most recent file in `daily/` for what was still outstanding before starting new work.
 - End of session: log a short entry to today's daily note (`daily/YYYY-MM-DD.md`) — what got made, what's still open.
+- **Concurrent Git ownership:** Claude Code and Codex may work against this repo at the same time. Never run `git add -A`, `git add .`, or `git commit -a`. When committing, stage only the specific files Codex created or modified in the current session, named explicitly. Leave every other modified or untracked file untouched. If ownership of an unstaged file is uncertain, ask Joey before staging it.
 
 ## Where things live
 Reference (feeds the work):

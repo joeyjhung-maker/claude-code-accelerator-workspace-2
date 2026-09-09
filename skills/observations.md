@@ -102,3 +102,23 @@ Joey then supplied 4 more real posts from his own archive, unprompted, as models
 **Skill:** `produce-skool`
 **Issue:** The mobile-follow-up draft correctly explained that calling is more powerful than email or LinkedIn, but it stopped at rational advice. Joey's edit named why readers avoid the call (“need some cojones”) and immediately made it feel safer by explaining that the gift has already opened the door. He also restored a functional headline and Dan sign-off despite requesting an informal FYI note.
 **Fix applied:** The Dan judge now checks whether practical advice names the reader's emotional resistance and disarms it with the mechanism. It also no longer interprets “informal FYI” as an automatic instruction to remove the headline and sign-off.
+
+---
+
+### Observation 10: Product teases need a transferable principle, not a use-case tour
+
+**Status:** ACTIONED (2026-09-08) — added a philosophy-first product-tease pattern to the Dan judge
+**Date:** 2026-09-08
+**Skill:** `produce-skool`
+**Issue:** The LinkedIn-first draft explained lumpy-mail and non-lumpy-mail paths separately, which made the second half feel like a feature/use-case tour. Joey collapsed both into one philosophy (“warm up leads before the pitch”), a two-step method readers can use now, and a tease that the upcoming tool automates Step 1. He also replaced an implied performance claim with “My hunch,” keeping the anticipation without pretending the lift is proven.
+**Fix applied:** The judge now prefers principle → steps → immediate manual action → automated-step tease, and requires confident uncertainty for unproven expected outcomes.
+
+---
+
+### Observation 11: Swipe adaptation copied the label but missed the section's argumentative function
+
+**Status:** ACTIONED (2026-09-08) — added an argument-function check to the Dan judge
+**Date:** 2026-09-08
+**Skill:** `produce-skool`
+**Issue:** In the fishing swipe adaptation, `WHERE` was mapped literally to niche and Dream 100 targeting. Travis's original section actually uses `WHERE` to pain-dig the crowded alternatives, discredit their fees and platform control, and position a different channel as the better fishing hole. The adapted nouns were relevant, but the persuasion sequence had disappeared.
+**Fix applied:** The Dan judge now requires swipe adaptations to map the rhetorical job of every section—pain, enemy, contrast, proof, or payoff—before translating surface labels into the client's market.

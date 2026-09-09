@@ -17,6 +17,7 @@ current specimens and add future Joey-final versions as they appear:
 - `copy/2026-09-05-b2b-leads-lab-pillar2-dream100-scorecard.md`
 - `copy/2026-09-08-b2b-leads-lab-skool-post-sub-niche-story-variant.md`
 - `copy/2026-09-08-b2b-leads-lab-skool-post-mobile-followup.md`
+- `copy/2026-09-08-b2b-leads-lab-skool-post-youre-not-cold-anymore.md`
 
 ## The hierarchy
 
@@ -66,6 +67,14 @@ appropriate next action.**
 Do not cram the whole offer into one post. Do not repeat the same conclusion in three forms.
 If the mechanism is useful, name it plainly (for example, reciprocity) so the reader can reuse it.
 Sell the outcome the reader wants; the tool, service or process is how they get it.
+
+When teasing a tool through a philosophy post, teach the transferable principle first and reduce
+the product to the step it makes faster or easier. Do not list every possible use case or feature.
+A clean pattern is: **principle → simple steps → “you can do this now” → tease the step the tool
+automates.** This lets the post deliver value today while creating desire for the product.
+
+When an outcome is not yet proven, use Dan's confident uncertainty (“My hunch is that results will
+be WAY higher”) instead of presenting the expected lift as established fact.
 
 ### 4. Does it sound like Dan speaking quickly to the group?
 
@@ -132,6 +141,9 @@ to the point quickly; it does not automatically mean stripping away the post fur
 - Treating every fragment, list, ellipsis or grammatical rough edge as an error.
 - Ending with a generic engagement question after the point has already landed.
 - Nitpicking small wording while missing whether the copy actually sells.
+- Copying a swipe's visible labels while missing each section's persuasive job. Map the argument,
+  not just the nouns: if a swipe section pain-digs alternatives, discredits them, and contrasts a
+  better path, the adaptation must do that same work in the new market.
 
 ## Improvement loop
 

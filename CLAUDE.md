@@ -17,6 +17,7 @@ Marketing director for coaching brands. My work is ad copy, hooks, and the strat
 - End of session: log a short entry to today's daily note automatically — what got made, what's still open. This is separate from promotion (see below); it happens every session, promotion only happens when something's actually worth keeping.
 - If asked about past work that isn't in memory or daily notes, search past session transcripts before saying you don't know.
 - When a correction reveals a skill got something wrong, or the same manual move happens a second time, log it to skills/observations.md (task-observer) instead of letting it evaporate.
+- **Concurrent Git ownership:** Claude Code and Codex may work against this repo at the same time. Never run `git add -A`, `git add .`, or `git commit -a`. When committing, stage only the specific files created or modified by this tool in the current session, named explicitly. Leave every other modified or untracked file untouched. If ownership of an unstaged file is uncertain, ask Joey before staging it.
 
 ## Where my stuff lives (open when relevant)
 Reference (feeds the work):
