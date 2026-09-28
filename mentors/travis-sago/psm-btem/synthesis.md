@@ -213,25 +213,33 @@ space, sometimes just one word or a few words per line.
 
 ## CAP Sales Mojo — Child / Adult / Parent (Call 5, "Big Ticket Email Mojo")
 
-- Buying runs through three "tapes" simultaneously, per transactional-analysis theory:
-  - **Child** — primarily emotional. Reacts to an overt, unambiguous, easily-understood benefit.
-    Hits the heart; can't be cloudy or clever-but-vague.
-  - **Adult** — primarily logical. Wants proof (testimonials) and "kitchen table logic" — plain
-    metaphors/analogies that make the mechanism make sense. If the logic doesn't hold, the process
-    stops here.
-  - **Parent** — judges good/bad, will-work/won't-work. Responds to a dramatic, clearly-different
-    USP and to obstacles being directly addressed. Two modes: Nurturing Parent (same-side-of-the-
-    table, "I understand") and Critical Parent (judgmental — avoid unless you really know how to
-    wield it without alienating the reader).
-- **Buying sequence:** headline hits Child first (an "oh wow" reaction) → Adult processes it
-  logically (stops here if it doesn't add up) → Parent gets skeptical ("will this work for ME
-  specifically, not just in general") → only then does a purchase happen.
+- CAP describes three buying mindsets the same prospect moves through:
+  - **Child** — dopamine and desire. It does not care how the offer works; it sees the BIG outcome
+    and reacts, “I want, I want, I want.” Give it a high-outcome, emotionally obvious Heaven
+    Island it can want immediately.
+  - **Adult** — mechanism and process. It asks HOW the result happens and wants the steps, plan and
+    practical route from the current state to the outcome.
+  - **Parent** — skepticism. It begins nitpicking, raises objections, asks why the method works and
+    demands proof and results from other people before trusting the crossing.
+- **Micro application:** one ad, email or post can move through Child → Adult → Parent inside the
+  same piece. But a short T1-style email can be deliberately pure Child: high dopamine, almost no
+  process or proof, built to maximise replies rather than close the entire argument.
+- **Macro application:** structure campaigns in the same sequence. Begin with Child posts that
+  dramatise the large desired outcome. Move into Adult content that shows the mechanism, process
+  and steps. Finish by hitting the Parent's “sharks”: objections, skepticism, proof and results.
+- **Hell Island → Heaven Island → Boat:** the prospect wants to escape Hell Island and reach a
+  vivid Heaven Island. The dangerous water between them is full of Parent-level sharks. The
+  solution is the boat; the campaign must make the boat and the crossing visual enough that the
+  Adult understands the route and the Parent trusts it to arrive safely.
+- **Buying sequence:** Child wants the destination → Adult understands the boat and crossing →
+  Parent tests whether the boat is safe and proven → only then does the purchase happen.
 - **Tonality rule:** write as the Nurturing Parent roughly 70% of the time, Adult roughly 30%.
   Avoid Critical Parent almost entirely.
 - **A usable judging checklist for any finished piece of copy** (candidate addition to
   `copy-rubric.md`, distinct from its existing checks): does it hit an overt Child-level benefit?
-  Does it satisfy Adult logic with real proof or a clear metaphor? Does it survive Parent
-  skepticism with a genuine, specific differentiator?
+  Does the Adult understand the mechanism and steps? Does it survive Parent skepticism with proof
+  and the relevant objections answered? For a deliberately pure-Child T1, judge it on desire and
+  reply-generation rather than penalising it for withholding process and proof.
 - **Rainmaker Campaign — a 10-14 day launch structure:** needs a hero (the prospect) with a
   worthwhile goal, a simple, non-personal enemy/obstacle (ideally "no time," "no knowledge" — NOT
   a group of people, avoid blaming gurus/government/other people), and a resolution. A strong
