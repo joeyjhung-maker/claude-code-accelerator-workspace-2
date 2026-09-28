@@ -1,7 +1,10 @@
 # Flexxable — Lumpy Mail Bottle Coaching Call Primer
 
-Distilled from a Dan interview with Matt (salesedge.ai), a community student running the
-bottle-with-lock lumpy-mail campaign. Full raw transcript at
+Distilled from Dan's YouTube interview with Matt (salesedge.ai), a community student running the
+bottle-with-lock lumpy-mail campaign. Dan invited Matt on to learn how he booked four coffee dates
+and to show the audience proof that the method worked for a member too. The interview naturally
+turned into Dan diagnosing Matt's mistakes after they discussed why none of the four closed. It was
+not arranged as a coaching call. Full raw transcript at
 `clients/flexxable/primers/transcripts/2026-09-09-lumpy-mail-bottle-coaching-call-transcript.md`.
 This is real, sourced case-study/coaching material — use the numbers and quotes as-is, do
 not round up or embellish. Related: [[IAA mechanism = old leads]] [[Dan-truth constraint]]

@@ -24,6 +24,10 @@ Related: [[joey-runs-heuromi-agency]] [[clients/flexxable/client.md]] [[hormozi-
   standard reference for this term) into a `mentors/`-style synthesis once Joey wants to start
   planning this seriously, same pattern as the Hormozi books.
 
+## Portfolio (for creative-strategy gigs)
+
+- 2026-09-25 — peer feedback on the portfolio doc: front-load creative-strategy wins, bullets first, best ROAS screenshots first. See `portfolio/2026-09-25-portfolio-feedback-voice-note.md`.
+
 ## Open questions
 1. What does the second client need to look like (industry, budget, working style) to be worth
    taking on without cannibalizing Flexxable capacity?

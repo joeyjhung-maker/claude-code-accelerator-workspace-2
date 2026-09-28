@@ -9,6 +9,8 @@ The rules Claude follows when writing in this brand's voice. Add to this every t
 - Short sentences carry the weight. Let one idea land before the next.
 
 ## Corrected from a miss (the gold)
+- (2026-09-25) **Choose plain spoken instruction over compressed cleverness in Dan's conclusions.** “So don’t blindly accept someone else’s diagnosis” lands faster than “Don’t inherit someone else’s diagnosis” because the action is explicit and the connective “So” makes it follow naturally from the argument.
+- (2026-09-25) **Use “ya” no more than twice in any single Dan post.** It is a light voice tell, not a replacement for every “you” or “your”; cap it at two so the copy stays natural rather than becoming a caricature.
 - (date) Stopped using "imagine if." Client said it felt like a webinar. Lead with the claim instead.
 - (2026-06-24) One ad = 1–2 core ideas. Don't pack the whole offer in. Joey killed a Hulk ad for cramming master-conductor + one-click + orchestra + add-androids + landlord + 3 proofs + two-blocks + self-optimise into one piece. Cut to ONE spine, build everything off that. Related: [[Memory Loop]]
 - (2026-07-02) "Makes everything we were doing back then look like finger painting" → "takes it to the next level." Joey cut the clever metaphor for the plain line, on a JV email. Plain over clever holds even when the metaphor is a good one.
@@ -30,6 +32,12 @@ The rules Claude follows when writing in this brand's voice. Add to this every t
 - (2026-09-08) **A philosophy-led product tease should sell the transferable idea before the tool.** Joey cut a feature/use-case explanation into: warm the lead first → `1) Connect & engage / 2) Follow up with a call` → “You can start doing this now” → tease that the tool automates Step 1. Give readers a useful principle immediately, then position the product as the faster/easier execution layer. If the expected result is not proven yet, use Dan's confident uncertainty (“My hunch…”) rather than stating it as fact.
 
 - (2026-09-08) **When using a structural swipe, preserve the persuasive job of each section—not merely its label.** Joey corrected the lumpy-mail fishing post because Travis's `WHERE` section did not simply identify a target market; it pain-dug the familiar alternatives, discredited their cost/control, and made the new “fishing hole” feel superior. Map the argument sequence before translating the nouns.
+
+- (2026-09-11) **For click-to-watch emails, use the P.S. to open a second, specific curiosity loop.** Joey's final Matt interview email added the coffee-date roleplay and Sales Wingman “use AI to sell AI” demonstration after the main CTA. Don't merely repeat “watch now” in the P.S.; name another concrete moment inside the video and give it its own direct link.
+
+- (2026-09-20) **For Dan's Skool product-release drops, prove the NEW delta without dumping the feature list.** Joey replaced a generic prospect → demo → setup → optimisation lifecycle (which sounded like the original Wingman launch) with: quantify the scale of the release, organise it around the four reader outcomes, then dramatise a small chain of unmistakably new capabilities. Credit the builder, let the short demo video carry the exhaustive detail, and direct the only CTA to existing owners; non-owners should see what owners just received and create their own FOMO without being pitched. Related: [[2026-09-03-netflix-model-training]] [[2026-09-20-aaa-ninjas-skool-post-wingman-2-live-release]]
+
+- (2026-09-20) **In an early-result Skool post, celebrate the operator first, then explain what the controlled test unlocked.** Joey changed Pierre's post from a narrow “the commission is less valuable than the proof” reframe into: shout out the student → show the small batch and positive signal → establish that both the system and client's close worked → scale the same campaign → move into fresh leads and adjacent Androids → reuse the result on future coffee dates. The result matters because it de-risks several next moves, not merely because it makes a good testimonial. Related: [[2026-09-20-aaa-ninjas-skool-post-pierre-first-result-proof]] [[ROYA Scale Proof Bank]]
 
 ## Words we use / words we never use
 Use: get, cut, ship, proof, show.

@@ -113,7 +113,7 @@ the five currencies your plan has to pay back. Use it twice:
 The **elastic gap** rule: the more genuinely different your plan is, the smaller the objection gap
 (fewer sharks). The more it resembles something they've already seen and rejected, the wider the
 gap — meaning more words, more objection-handling, more convincing needed. This is a sharper,
-more mechanical version of the CDDC principle already known — worth adding TIMER as a literal
+more mechanical version of the CDCDCD principle already known — worth adding TIMER as a literal
 objection-handling checklist to the copy-rubric.
 
 **This is directly usable for B2B Leads Lab right now.** The real objections to "send a physical

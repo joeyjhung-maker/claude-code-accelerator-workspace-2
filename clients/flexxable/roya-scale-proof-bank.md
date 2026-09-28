@@ -36,6 +36,7 @@ picture of a working ROYA business.
 - **Redacted member — Sep 2023:** first client at **$5,500/mo** from a list of only 138 leads; the member had spoken to roughly 10.
 - **Redacted member — Apr 2024, insurance broker:** **$3,500/mo** retainer against 20,000 contacts.
 - **Abhi — Jul 2026, legal:** **$3,200 from a 110-lead test**; updated result was **52% response rate** and **20% booked-call rate**. Initial result in one day, then updated over following days.
+- **Pierre — Sep 2026, niche unverified:** a client supplied only **100 leads** and signed one case that morning. Joey confirmed the economics as **around $5K for the client** and **$500 commission for Pierre**. The positive test showed Pierre's system worked and that the client could close, giving him the confidence to scale to more leads. The client's message, signed Andrew: “A very small case, but we signed it up this morning. Very nice to see the possibilities here!” Source: ROYA Wins screenshot supplied by Joey on 2026-09-20, with currency and interpretation confirmed in Joey's final edit. Preserve `around` and do not name the niche or campaign until verified.
 - **Redacted member — Apr 2024, chiropractor:** closed at **$1,000/mo**.
 - **Redacted member — May 2024, solar:** **$497/mo**, **$100 per appointment**, and **25% commission**. Deal structure, not total income.
 - **Redacted member — Apr 2024, implant dentist:** **$497 setup + $497/mo** for dead-lead reactivation and unfinished treatment quotes; closed after a technically troubled demo the day before.

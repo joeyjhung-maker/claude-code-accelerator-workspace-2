@@ -6,6 +6,7 @@ Shared source of truth across all campaigns: [[flexxable-offer-doc-ROYA]] · voi
 
 ## Campaigns
 - **2026-06-rainmaker-hulk/** — June 2026. Theme: **The Hulk Android** (run every android at once) + Rent Out Your Android. → [brief](2026-06-rainmaker-hulk/brief.md)
+- **2026-09-topa-linkedin-automation/** — Sept 2026. 7-day mini-Rainmaker pre-selling Topa's new $79/99/mo LinkedIn Automation tool, kicking off with a YouTube walkthrough Tue 29 Sept. → [brief](2026-09-topa-linkedin-automation/brief.md) · [CDCDCD worksheet](2026-09-topa-linkedin-automation/cddc-worksheet.md)
 
 ## Per-campaign folder shape
 - `brief.md` — the Script for that campaign: core theme, offer frame, structure, open questions.

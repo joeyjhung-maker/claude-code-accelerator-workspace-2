@@ -1,6 +1,6 @@
-# Digest: Foundations (Cliff Notes, 5 Ps, CDDC, 3 Step UN-Plan)
+# Digest: Foundations (Cliff Notes, 5 Ps, CDCDCD, 3 Step UN-Plan)
 
-*Raw extraction, not yet cross-referenced against B2B Leads Lab. See `../../synthesis.md` for the curated strategic version. Covers modules: Hopper Millions Cliff Notes, The 5 Ps in Pre-Selling, Module 1 (CDDC), Module 2 (3 Step UN-Plan).*
+*Raw extraction, not yet cross-referenced against B2B Leads Lab. See `../../synthesis.md` for the curated strategic version. Covers modules: Hopper Millions Cliff Notes, The 5 Ps in Pre-Selling, Module 1 (CDCDCD), Module 2 (3 Step UN-Plan).*
 
 ---
 
@@ -13,7 +13,7 @@ A "hopper" is a Facebook group (or any warm community) used to pre-sell an offer
 - **Crock Pot Hopper** — a long-running, low-heat group (main community, e.g. an existing FB group) you can scoop sales out of anytime by dropping a T1 invite post. Good default for testing a new/newish offer.
 - **Microwave Hopper** — a shorter, hotter, segmented spin-off group built around one specific offer/topic, used once a crock pot offer is proven (e.g., made 5 figures) and you want to scale it into a dedicated push. Also used when the crock pot is too busy (posts get buried fast) or the topic is off-brand for the main group.
 - **Five Piece Sale Sandwich** — the two "bread" pieces are present pain (top) and price (bottom); the "meat" is the plan (what's new/different); the "condiments" are personality and philosophy.
-- **CDDC (Clearly Different and Desirable Concept)** — the plan/meat must be immediately, visibly different from what the prospect is already doing — different enough to draw as a before/after a "fifth grader" could understand in seconds, not something that needs 5 minutes of explaining.
+- **CDCDCD (Clearly Desirable, Clearly Doable, Clearly Different)** — formerly CDDC; three separate bars, all required (Doable added on the 2026-09-24 call). Original two: *Clearly different*: the plan/meat must be immediately, visibly different from what the prospect is already doing — different enough to draw as a before/after a "fifth grader" could understand in seconds, not something that needs 5 minutes of explaining. *Clearly desirable*: checked independently — the outcome has to be something the market already wants, not assumed just because the mechanism is novel.
 - **T1 / T2 / T3** — tiered invite/offer posts (T1 = initial invite/insight post; T3 = the pitch/price reveal), used to segment interest and cherry-pick before a full rollout.
 - **The Domino** — the one specific action/belief you need people to prove to themselves before they'll buy (e.g., "send this template to 5 people and see what happens").
 
@@ -64,13 +64,13 @@ Most sellers try to jump straight from stating the *problem* to pitching the *pr
 
 ---
 
-## Module 1: Clearly Different Desirable Concept (CDDC) & T1 Idea Stimulator Worksheet
+## Module 1: Clearly Different, Clearly Desirable (module title; now CDCDCD) & T1 Idea Stimulator Worksheet
 
 **Core teaching**
-Before writing any copy, map out what's actually stopping your prospect (their tangible, felt constraint), the false assumptions holding that constraint in place, your breakthrough (a reversal or challenge of that assumption), and the resulting implications — external and internal — of removing the constraint. The implications are where your CDDC lives, and where your T1 ideas and hopper names are born. Specificity ("skin on the bones") is what actually converts.
+Before writing any copy, map out what's actually stopping your prospect (their tangible, felt constraint), the false assumptions holding that constraint in place, your breakthrough (a reversal or challenge of that assumption), and the resulting implications — external and internal — of removing the constraint. The implications are where your CDCDCD lives, and where your T1 ideas and hopper names are born. Specificity ("skin on the bones") is what actually converts.
 
 **Named framework/terms**
-- **CDDC (Clearly Different Desirable Concept)** — replacement for "the big idea." Doesn't need to be huge or novel, just visibly different and desirable versus what the prospect is doing now. If it takes 5 minutes to explain, it isn't one.
+- **CDCDCD (Clearly Desirable, Clearly Doable, Clearly Different; originally taught as CDDC, two tests)** — replacement for "the big idea." Doesn't need to be huge or novel, just visibly different AND desirable versus what the prospect is doing now — check both independently, don't assume one buys the other. If it takes 5 minutes to explain, it isn't clearly different.
 - **The Constraint** — the tangible thing that's actually stopping the prospect (tactile/specific, not abstract).
 - **Assumptions** — beliefs the prospect holds about the constraint and about how to remove it; these are the actual source of the "problem."
 - **The Breakthrough (leverage)** — almost always a direct challenge or reversal of the prospect's core assumption.
@@ -90,7 +90,7 @@ Before writing any copy, map out what's actually stopping your prospect (their t
 - Prefer favoring your partner in ongoing revenue-share (e.g., 30% forever) over squeezing a bigger one-time cut (70% for one year).
 
 **Notable examples**
-- The Rudolph breakdown: Rudolph's shiny nose (the constraint) is assumed shameful; Santa's breakthrough reframes it as the very thing that guides the sleigh (CDDC); implications are external (all reindeer love him) and internal (self-respect, history).
+- The Rudolph breakdown: Rudolph's shiny nose (the constraint) is assumed shameful; Santa's breakthrough reframes it as the very thing that guides the sleigh (CDCDCD); implications are external (all reindeer love him) and internal (self-respect, history).
 - A general "relationship handbook" that wouldn't sell became a focused product once targeted at "women looking for commitment" with the insight "respect and love get entangled in a man's mind" — $1M in sales the first year.
 
 ---

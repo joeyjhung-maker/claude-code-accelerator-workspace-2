@@ -18,6 +18,12 @@ current specimens and add future Joey-final versions as they appear:
 - `copy/2026-09-08-b2b-leads-lab-skool-post-sub-niche-story-variant.md`
 - `copy/2026-09-08-b2b-leads-lab-skool-post-mobile-followup.md`
 - `copy/2026-09-08-b2b-leads-lab-skool-post-youre-not-cold-anymore.md`
+- `copy/2026-09-20-aaa-ninjas-skool-post-wingman-2-live-release.md`
+- `copy/2026-09-20-aaa-ninjas-skool-post-dream100-scorecard-teaser.md`
+- `copy/2026-09-24-b2b-leads-lab-skool-post-ai-slop-letter-warning.md`
+- `copy/2026-09-24-b2b-leads-lab-skool-post-sunday-dream-five.md`
+- `copy/2026-09-24-aaa-ninjas-skool-post-bad-market-stronger-offer.md`
+- `copy/2026-09-25-aaa-ninjas-skool-post-copywriters-first-bot-builders-second.md`
 
 ## The hierarchy
 
@@ -29,6 +35,25 @@ Apply these in order. A later preference never overrides an earlier requirement.
 3. **Selling power:** earn attention, make the idea easy to get, create desire or action.
 4. **Dan's voice:** make it sound spoken, playful and confidently imperfect.
 5. **Polish:** fix only what obstructs meaning. Never polish the life out of the copy.
+
+## Standing structural rule: one sentence per line
+
+Every finished post gets reformatted so each sentence sits on its own line (blank line between).
+This is a mechanical reformat, not a content edit — it does not count against the 1-3 high-impact
+edit budget and it never touches wording, jokes, fragments, or rough edges. It just breaks lines.
+
+- An ellipsis-joined run of beats ("Pulled the address off Companies House… sent it out… and then
+  nothing.") stays ONE line — the ellipsis marks a continuing breath, not a sentence break.
+- A genuine full stop starts a new line, even for a short fragment ("Crickets.", "Never opened
+  it.").
+- A single sentence joined by an em dash or "and" stays one line if it reads as one breath — don't
+  split a clause mid-thought just to shorten a line.
+- Do this reformat every time, regardless of whether Mariobot's raw draft already did it —
+  Mariobot does not reliably apply this on its own, especially when run with
+  `--no-style-contract`.
+- After reformatting, run a rhythm scan. Three or more consecutive sentences under roughly six
+  words is a warning that “one sentence per line” has become machine-gun copy. Combine related
+  thoughts into a fuller spoken sentence unless the short run is an intentional closing crescendo.
 
 ## The five-question judge
 
@@ -73,6 +98,11 @@ the product to the step it makes faster or easier. Do not list every possible us
 A clean pattern is: **principle → simple steps → “you can do this now” → tease the step the tool
 automates.** This lets the post deliver value today while creating desire for the product.
 
+For a **gated lead-magnet teaser**, protect the information gap. Explain why the problem matters,
+make the cost of getting it wrong concrete, name the asset, and tease the depth or number of parts.
+Do not reveal the checklist labels, framework steps, answers, or mechanism the reader is meant to
+request. If the teaser gives them the usable payload, the comment gate has lost its purpose.
+
 When an outcome is not yet proven, use Dan's confident uncertainty (“My hunch is that results will
 be WAY higher”) instead of presenting the expected lift as established fact.
 
@@ -81,6 +111,7 @@ be WAY higher”) instead of presenting the expected lift as established fact.
 Positive voice targets:
 
 - Aussie conversational register: ya, 'em, peeps, kinda, wanna, somethin'.
+- Cap “ya” at two uses per post. More than that makes Dan's voice feel forced; use normal “you” and “your” everywhere else.
 - Short lines and deliberate line breaks that sound spoken aloud.
 - Ellipses for pauses and pivots.
 - CAPS on the words Dan would stress vocally.
@@ -127,7 +158,9 @@ to the point quickly; it does not automatically mean stripping away the post fur
    preference.
 5. Rewrite locally where possible. Do a full rewrite only when the hook or sales spine is wrong.
 6. Do not run the old `copy-rubric.md` or mechanical lint as an automatic style gate for Mariobot.
-7. Do not narrate minor flaws to Joey. Show the strongest finished version. Mention only a hard
+7. Reformat to one sentence per line (see the standing structural rule above) — always, as a
+   final mechanical pass, separate from the 1-3 content edits above.
+8. Do not narrate minor flaws to Joey. Show the strongest finished version. Mention only a hard
    factual uncertainty or a decision that genuinely needs him.
 
 ## Recurring failure modes to catch
@@ -144,6 +177,21 @@ to the point quickly; it does not automatically mean stripping away the post fur
 - Copying a swipe's visible labels while missing each section's persuasive job. Map the argument,
   not just the nouns: if a swipe section pain-digs alternatives, discredits them, and contrasts a
   better path, the adaptation must do that same work in the new market.
+- Giving away a gated asset's checklist or framework inside the teaser instead of preserving the
+  information gap that makes the reader comment for access.
+- Letting a clever self-referential callback become more memorable than the lesson. When Dan says
+  readers do not need to copy his full-volume personality, a plain spoken line can land better than
+  another Trevor/YUGE joke. Use a P.S. to broaden a narrow example across adjacent channels when
+  that extension is genuinely useful rather than cramming it into the main spine.
+- Ending a domino assignment without asking members to report back with the work. The report-back
+  creates accountability and seeds future proof. Dan may add a strong qualified prediction in the
+  P.S.; preserve it as personal conviction, but never harden it into a guarantee or invented stat.
+- For serious mindset posts, forcing a playful voice tell into every paragraph can weaken the
+  conviction. Use Dan’s roughness selectively, and prefer an aspirational identity/outcome headline
+  over a merely descriptive threat headline when the post is meant to rally the room.
+- Do not let a compressed, clever phrase make the final instruction less immediate. Prefer plain
+  spoken actions with causal connective tissue: “So don’t blindly accept someone else’s diagnosis”
+  is clearer and more natural than “Don’t inherit someone else’s diagnosis.”
 
 ## Improvement loop
 

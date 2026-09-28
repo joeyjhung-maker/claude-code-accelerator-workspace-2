@@ -37,7 +37,7 @@ Don't just work for one-off sale income — work to build ownership/control of a
 - **ACO — Access, Control, Ownership** — a leverage hierarchy. Access = allowed into someone else's asset. Control = can direct it without owning it. Ownership = fully yours. Progression: guest expert into someone's group → spin off a narrower group of your own.
 - **Crock pot hopper vs. microwave hopper** — the crock pot is always-on, slow-simmer; cold prospects self-warm by scrolling old posts. The microwave is the tighter, faster sales-focused group people get moved into to close quickly.
 - **The apple analogy** — buying an apple, eating it, tossing the core is one-shot income. The "Mojo way" extracts compounding derivative value from one input (license a photo, core it, photograph again, plant seeds, write a book about the process).
-- **CDDC** — strongest CDDCs point at something *external* to the person, not an internal change.
+- **CDCDCD** — strongest CDCDCDs point at something *external* to the person, not an internal change.
 - **"Mental masturbation gallery"** — any sales letter, however well-researched, is still an untested set of guesses — a hopper group replaces guessing with live tested data before the formal asset gets built.
 
 **Concrete actionable rules**

@@ -33,8 +33,19 @@ official types, but common in Dan's existing posts) / `none`.
 2026-09-08 | b2b-leads-lab | ascend | y | off-the-heels | copy/2026-09-08-b2b-leads-lab-skool-post-youre-not-cold-anymore.md
 2026-09-08 | b2b-leads-lab | engage | y | engagement-only | copy/2026-09-08-b2b-leads-lab-skool-post-lumpy-mail-101-poll.md
 2026-09-12 | b2b-leads-lab | engage | y | engagement-only | copy/2026-09-12-b2b-leads-lab-skool-post-person-not-company.md
+2026-09-08 | b2b-leads-lab | engage | n | none | copy/2026-09-08-b2b-leads-lab-skool-post-registered-office-address-check.md
+2026-09-11 | b2b-leads-lab | engage | n | none | copy/2026-09-11-b2b-leads-lab-skool-post-decision-maker-proximity.md
+2026-09-11 | aaa-ninjas | engage | n | none | copy/2026-09-11-aaa-ninjas-skool-post-land-and-expand-ai-offer-350w.md
+2026-09-20 | aaa-ninjas | engage | y | direct-promo | copy/2026-09-20-aaa-ninjas-skool-post-wingman-2-live-release.md
+2026-09-20 | aaa-ninjas | engage | n | none | copy/2026-09-20-aaa-ninjas-skool-post-pierre-first-result-proof.md
+2026-09-20 | aaa-ninjas | recruit | y | two-step | copy/2026-09-20-aaa-ninjas-skool-post-dream100-scorecard-teaser.md
+2026-09-25 | aaa-ninjas | engage | n | none | copy/2026-09-25-aaa-ninjas-skool-post-scale-their-existing-process.md
+2026-09-25 | aaa-ninjas | engage | n | none | copy/2026-09-25-aaa-ninjas-skool-post-give-prospect-what-they-want.md
+2026-09-25 | aaa-ninjas | engage | n | none | copy/2026-09-25-aaa-ninjas-skool-post-copywriters-first-bot-builders-second.md
+2026-09-25 | b2b-leads-lab | engage | n | none | copy/2026-09-25-b2b-leads-lab-skool-post-japanese-gift-giving.md
+2026-09-26 | roya | ascend | y | two-step | copy/2026-09-26-roya-skool-post-linkedin-automation-early-access.md
 
-## Running observation (updated 2026-09-04, after the "Resistance Bear" pressure-to-close post)
+## Running observation (updated 2026-09-11, after the AAA Ninjas land-and-expand NAP)
 
 7 posts shipped through this pipeline so far. B2B Leads Lab's first 2 (sales-call clip, ANTI-AI
 direct mail) both carried an ask. Every B2B Leads Lab post since — the ESP/spam-filter "Trevor and
@@ -42,5 +53,6 @@ Keith" post, the pre-sold-prospect post, and the "Resistance Bear" pressure-to-c
 as pure value, zero ask. All three started life with an ask or a segmenting question in mariobot's
 draft and had it cut at judge or Joey's-edit stage. B2B Leads Lab's ratio is now genuinely healthy
 (2 asks, then 3 straight pure-value posts) — a real, not accidental, run of teaching/stance content.
-AAA Ninjas still has 2 asks in a row (Dream100 teaser, then the Topa database 2-Step) with nothing
-pure-value between them — that one's still an open flag, not resolved by anything in this room.
+AAA Ninjas had 2 asks in a row (Dream100 teaser, then the Topa database 2-Step). The land-and-expand
+AI-offer NAP is the first pure-value AAA Ninjas post logged after that run, so the tracked cadence
+now has a non-asking teaching post between those asks and whatever comes next.

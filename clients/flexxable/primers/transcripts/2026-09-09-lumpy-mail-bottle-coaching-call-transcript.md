@@ -1,9 +1,10 @@
-# Transcript — Dan x Matt (salesedge.ai) lumpy-mail bottle coaching call
+# Transcript — Dan x Matt (salesedge.ai) lumpy-mail bottle YouTube interview
 
 Raw YouTube transcript, pasted 2026-09-09. Source: Dan interviewing Matt, a community
-student, about his results running the lumpy-mail bottle-with-lock campaign — what worked,
-what he changed that killed his response rate, and where he lost the close on 4 coffee
-dates with $20–80M businesses. See the distilled version at
+student, to learn how he booked 4 coffee dates with $20–80M businesses using the lumpy-mail
+bottle-with-lock campaign and show the audience proof that it works. During the interview,
+the conversation naturally expanded into what Matt changed that killed his response rate and
+where he lost the close. This was not arranged as a coaching call. See the distilled version at
 `clients/flexxable/primers/lumpy-mail-bottle-coaching-call.md` for what to actually pull
 into copy.
 

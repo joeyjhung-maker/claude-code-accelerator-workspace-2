@@ -4,6 +4,8 @@
 Flexxable sells infoproducts and coaching that teaches 9-5ers and agency owners how to start an AI automation agency.
 Target audience: people in jobs they want to escape, and existing agency owners looking to add AI automation as a service.
 
+Reusable wants and outcome language for the ROYA / AAA / AI-agency-operator audience: [[clients/flexxable/target-market-desire-bank|Flexxable Target-Market Desire Bank]].
+
 ## Voice and rules
 - Casual, direct, British-inflected — write like Dan is texting a business owner mate.
 - Short punchy lines. One idea per line. Never blocks of text.

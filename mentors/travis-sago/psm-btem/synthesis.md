@@ -233,6 +233,39 @@ space, sometimes just one word or a few words per line.
   Adult understands the route and the Parent trusts it to arrive safely.
 - **Buying sequence:** Child wants the destination → Adult understands the boat and crossing →
   Parent tests whether the boat is safe and proven → only then does the purchase happen.
+- **Reconciling Joey's model with Travis's Call 5 satisfiers (2026-09-28).** The states above are
+  Joey's working doctrine and stand. Travis's own buying-process description on the same call
+  matches them: Child says "oh wow"; Adult asks "how does it work? If no logic, the process
+  stops"; Parent asks "will this work? Maybe not for me. Sounds like a scam." Only two of his
+  "what satisfies it" tools looked misfiled, and both slot in once you split the question each
+  state is asking:
+
+  | State | The question it asks | Tools that answer it (Joey + Travis merged) |
+  |---|---|---|
+  | **Child** | "Do I want that?" | Overt, blatant, clear benefit. Hit the heart. Never cloudy. Meaningful AND instantly understood. Find the exact wording that triggers the want. |
+  | **Adult** | "How does it work? Does it make sense?" | The mechanism and steps (UMP/UMS). **Kitchen-table logic:** "it's like this…" metaphors that make the boat visible. **Proof that shows the process:** a case study walking through how someone actually crossed. |
+  | **Parent** | "Will it work *for me*? Is it a scam?" | Two different sharks, two answers. **"Is it proven?"** needs results from people like me, objections and obstacles answered. **"Haven't I seen this before?"** needs dramatic difference: a USP, something clearly new, "I'm the only one doing X without Y." It breaks the pattern-match to the last thing that burned them. |
+
+  - **Testimonials do double duty.** A how-it-happened story feeds the Adult; a it-worked-for-
+    someone-like-me result feeds the Parent. Travis filed proof under Adult (proof as logic);
+    Joey files it under Parent (proof as trust). Both are right. Decide which job each proof
+    piece is doing.
+  - **Dramatic difference is Parent work, not Adult work.** The Parent judges "work / won't work"
+    by comparing against past experience. More proof won't beat "I've tried this before." Only
+    a visibly different boat does.
+  - **CAP = CDCDCD, seen from the buyer's side.** Travis's offer tests (Clearly Desirable, Clearly
+    Doable, Clearly Different; see `../hopper-millions/synthesis.md`) are the same three states
+    from the seller's side. **Clearly Desirable** feeds the Child. **Clearly Doable** feeds the
+    Adult: the boat is visible and the crossing is easy ("we handle the packages, just ship us
+    the Excel file"). **Clearly Different** answers the Parent's "haven't I seen this before?"
+    CDCDCD is how you build the offer. CAP is the order you sell it in. Proof is the one extra
+    piece CAP needs: the Parent's "is it proven?" shark.
+  - **Travis's worked example**, "sell big ticket $1–5k without the phone": Child = the overt
+    benefit; Adult = the UMP/UMS; Parent = "I'm the only person doing/teaching X without Y."
+- **Two different "Parents" — don't mix them up.** The reader's Parent *state* (skepticism) is
+  separate from the writer's Parent *voice* (tone). All three tapes run in the reader's head
+  at once. Nurturing Parent = same side of the table ("I get it, I understand"). Critical
+  Parent = judging or scolding.
 - **Tonality rule:** write as the Nurturing Parent roughly 70% of the time, Adult roughly 30%.
   Avoid Critical Parent almost entirely.
 - **A usable judging checklist for any finished piece of copy** (candidate addition to
@@ -242,7 +275,10 @@ space, sometimes just one word or a few words per line.
   reply-generation rather than penalising it for withholding process and proof.
 - **Rainmaker Campaign — a 10-14 day launch structure:** needs a hero (the prospect) with a
   worthwhile goal, a simple, non-personal enemy/obstacle (ideally "no time," "no knowledge" — NOT
-  a group of people, avoid blaming gurus/government/other people), and a resolution. A strong
+  a group of people, avoid blaming gurus/government/other people), and a resolution. One-line
+  plot: "Pat's on Hell Island. He wants to get to Heaven Island. What's stopping him?" Plot
+  questions: What do they want? What's stopping them (the enemy, simple to see)? What's missing?
+  Can it tie into a current event? A strong
   candidate structure for the B2B Leads Lab Sept 30 paid-conversion push
   (`clients/flexxable/b2b-leads-lab/project.md`).
 

@@ -14,7 +14,10 @@ Related: [[travis-sago]] [[b2b-leads-lab-project]] [[The Lock]]
 - **Hopper** — a group used to pre-sell an offer over time by giving people small proof tasks instead of pitching cold.
 - **Crock pot hopper** — the always-on, slow-simmer group (an existing owned audience). Cold prospects self-warm just by scrolling old posts before you ever talk to them.
 - **Microwave hopper** — a tighter, hotter, purpose-built spin-off group for one specific offer, split off once that offer is proven in the crock pot.
-- **CDDC (Clearly Different Desirable Concept)** — your positioning must be visibly different from what the prospect is already doing, explainable in seconds, not five minutes.
+- **CDCDCD (Clearly Desirable, Clearly Doable, Clearly Different)** — formerly CDDC; three separate bars, all required (Doable added on the 2026-09-24 call). Original two: *Clearly different*: visibly different from what the prospect is already doing, explainable in seconds, not five minutes. *Clearly desirable*: the outcome itself has to be something the market already wants — desirability isn't inherited from novelty, it has to be checked on its own.
+  *Clearly doable* = the crossing looks easy and handled ("we handle the packages, just ship us the
+  Excel file"). The three map onto CAP: Desirable → Child, Doable → Adult, Different → Parent (see
+  `../psm-btem/synthesis.md`, CAP section).
 - **T1 / T2 / T3** — the tap sequence. T1 = public hook/awareness post. T2 = qualifying conversation. T3 = the actual offer/pitch. Write the T3 first — it forces clarity and exposes what proof is missing. Real example: [[t3-phoneless-sales-machine-fb-msgr]] (`swipes/t3-phoneless-sales-machine-fb-msgr.md`).
 - **CAP (Child, Adult, Parent)** — Travis's buying-psychology model: the same prospect moves through three buying mindsets — Child wants the big dopamine-rich outcome, Adult wants to understand the mechanism/process/steps, and Parent becomes skeptical and wants proof, results and objections answered. Apply CAP on the micro scale inside one piece or on the macro scale across a campaign: Child → Adult → Parent. Full breakdown in `../psm-btem/synthesis.md` (Call 5).
 - **The 5 Ps** — Problem, Personality, Philosophy, Plan, Price. Pre-sell all five before pitching the product and conversion can hit 90%+; skip straight from Problem to Product and you're stuck near 10%.
@@ -34,7 +37,7 @@ Groups go stale when only the same handful of people engage — the fix isn't mo
 
 ## Positioning the offer
 
-Work the CDDC exercise before writing any copy: what's the prospect's tangible constraint → their assumptions about it → your breakthrough (almost always a direct reversal of that assumption) → the implications, external and internal, of removing it. The implications are where hopper names and hooks come from — not the mechanism itself.
+Work the CDCDCD exercise before writing any copy: what's the prospect's tangible constraint → their assumptions about it → your breakthrough (almost always a direct reversal of that assumption) → the implications, external and internal, of removing it. The implications are where hopper names and hooks come from — not the mechanism itself.
 
 Reduce the offer to a 3-step plan from the customer's point of view, not your feature list. Step 1 has to be counterintuitive — it should contradict something the niche currently believes. Cap it at 3 steps.
 
@@ -70,7 +73,7 @@ Hold the investor mindset through the dip: a string of no-replies is expected va
 
 ### Matches — already on the right track
 - **The crock pot / microwave structure is already the shape of the plan**, even without the vocabulary: AAA Ninjas (large, existing, owned audience, Joey takes over NAPs there in September) is the crock pot; B2B Leads Lab Skool (the qualified, self-selected slice who want this specific mechanism) is the microwave spin-off. This validates the existing AAA → B2B Leads Lab recruitment structure — it isn't just a traffic funnel, it's the exact pattern Module 5 describes for when a big group goes stale and needs a qualified slice carved out.
-- **"AI Enriched Lumpy Mail" already functions as a real CDDC** — it's visibly different from conventional B2B outreach, and explainable in one line ("a whiskey bottle and a letter, not another cold email that gets deleted"). No rework needed here, just confidence it's the right shape.
+- **"AI Enriched Lumpy Mail" already functions as a real CDCDCD** — it's visibly different from conventional B2B outreach, and explainable in one line ("a whiskey bottle and a letter, not another cold email that gets deleted"). No rework needed here, just confidence it's the right shape.
 - **The 3-step plan already has a counterintuitive Step 1** — sending a physical gift instead of scaling cold email volume directly contradicts what the niche currently believes works. Good fit with the 3 Step UN-Plan rule.
 - **The group's organic culture is already running the "prove it to yourself" mechanic** — the member's "My Whiskey Letter — Group Feedback" post (tracked numbers, real campaign, posted for group feedback) is exactly the domino/self-proof loop Travis describes, and it emerged without anyone engineering it. Worth making deliberate rather than leaving to chance (see Extends, below).
 - **Targeting 8/9/10-figure companies specifically is the "chum the water for the whales" move**, not a mistake to soften — Travis's rule is to speak to the most valuable prospect even if it repels everyone else. Don't dilute this positioning to sound more broadly reassuring.

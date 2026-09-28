@@ -122,3 +122,153 @@ Joey then supplied 4 more real posts from his own archive, unprompted, as models
 **Skill:** `produce-skool`
 **Issue:** In the fishing swipe adaptation, `WHERE` was mapped literally to niche and Dream 100 targeting. Travis's original section actually uses `WHERE` to pain-dig the crowded alternatives, discredit their fees and platform control, and position a different channel as the better fishing hole. The adapted nouns were relevant, but the persuasion sequence had disappeared.
 **Fix applied:** The Dan judge now requires swipe adaptations to map the rhetorical job of every section—pain, enemy, contrast, proof, or payoff—before translating surface labels into the client's market.
+
+---
+
+### Observation 12: The Dan light judge missed clipped negation contrasts that read as AI slop
+
+**Status:** OPEN
+**Date:** 2026-09-11
+**Skill:** `produce-skool`
+**Issue:** A shortened Skool draft passed the light judge with several adjacent contrast fragments: a claim followed by “Not because…,” “Not the most technically impressive… / The thing that…,” and “One X. Not a Y.” Joey flagged the clusters as obvious AI-slop tells. The judge currently protects purposeful fragments but does not distinguish human roughness from templated negation/reversal beats, especially when several appear in one post.
+**Suggested fix:** Add a repetition-level check to the Dan judge: scan for clustered `Not X / Y`, `X. Not Y.`, and `Not because / But because` constructions. Preserve a single earned contrast if it sounds natural, but cut or rewrite repeated instances before showing the draft.
+
+---
+
+### Observation 13: Video-analysis skills have no caption fallback when Gemini is unavailable
+
+**Status:** OPEN
+**Date:** 2026-09-14
+**Skill:** `ad-creative-analysis` + `facebook-transcriber`
+**Issue:** Both skills depend on `GEMINI_API_KEY`. When the key was missing even after loading the normal shell config, the documented path stopped despite the Instagram reel having clean burned-in captions that could recover the full script. The workaround was manual: download the reel, sample it at 2 fps, crop the caption band, tile the frames by time, and reconstruct the incremental captions.
+**Suggested fix:** Add a documented no-key fallback for captioned videos: use ffmpeg to sample and crop the subtitle band into timed contact sheets, then reconstruct the transcript from the incremental captions. Check for the key before attempting the Gemini route so the fallback starts immediately.
+
+---
+
+### Observation 14: Genesis streaming helpers can fail without producing a usable artifact
+
+**Status:** OPEN
+**Date:** 2026-09-14
+**Skill:** `genesis-bots`
+**Issue:** The bundled Node streaming helper exited successfully without invoking its CLI entry point, leaving no output. The Python fallback printed its model/provider preflight but then left a zero-byte destination file without a completion or error message. A direct streaming request to the same Genesis endpoint succeeded and produced the full Message Isolator report, so the bot and credentials were healthy; the failure was in the helper path or its session handling.
+**Suggested fix:** Normalize the Node entry-point paths before comparing `import.meta.url` with `process.argv[1]`, and make both helpers treat a missing/empty stream as a non-zero failure with a clear diagnostic. Add an end-to-end smoke test that asserts the destination file contains content before reporting success.
+
+---
+
+### Observation 15: `produce-skool` started writing before source gathering was closed
+
+**Status:** OPEN
+**Date:** 2026-09-20
+**Skill:** `produce-skool` + `brief-skool`
+**Issue:** A request to “go through” an initial resource bundle and pull notes/key points also mentioned the eventual post. The workflow treated that as permission to lock a brief and produce immediately, but Joey was still feeding a much larger product-update source set and explicitly did not want copy yet. This created a premature draft based on an incomplete, pre-release picture.
+**Suggested fix:** Add a research-close gate before briefing or producing from a user-supplied source bundle: if the user frames the current action as gathering/pulling notes, stay in research mode and ask or wait for an explicit “that's everything / now write” signal before creating copy, even when the eventual deliverable has already been named.
+
+---
+
+### Observation 16: Product-release copy described the lifecycle instead of dramatizing the new delta
+
+**Status:** OPEN
+**Date:** 2026-09-20
+**Skill:** `produce-skool`
+**Issue:** The Wingman 2.0 release draft used a generic prospect → demo → setup → optimisation sequence. Joey flagged that the same broad lifecycle had already been used when Wingman first launched, so it did not make Version 2.0 feel new. The copy was accurate but failed the release's real job: make the reader feel the product has materially changed.
+**Suggested fix:** Add a product-release check to the Dan judge: compare the proposed explanation with prior launch positioning and replace generic category/lifecycle language with one concrete new capability chain that could not have been written about the old version. For Wingman 2.0, a proof → pre-launch validation → post-launch improvement sequence (The Wall → Gauntlet → A/B testing) communicates the delta without becoming a feature list.
+
+---
+
+### Observation 17: Proof posts can over-narrate the testimonial instead of extracting the commercial lesson
+
+**Status:** OPEN
+**Date:** 2026-09-20
+**Skill:** `produce-skool`
+**Issue:** The first Pierre proof-post draft spent too much space explaining that both Pierre and his client called the result small, reproducing both reactions and then interpreting their understatement. Joey asked for a completely different version with less narration. The screenshot already carries the voices; the post should add a useful strategic meaning rather than retell what the attached image says.
+**Suggested fix:** Add a proof-post check to the Dan judge: when the testimonial screenshot is attached, quote only when a phrase carries the hook or mechanism. Otherwise extract one transferable commercial lesson from the verified result and let the image supply the play-by-play.
+
+---
+
+### Observation 18: Early-result proof posts should map the full commercial optionality
+
+**Status:** OPEN
+**Date:** 2026-09-20
+**Skill:** `produce-skool`
+**Issue:** The second Pierre draft improved on testimonial narration but reduced the value of a positive 100-lead test to immediate commission and reusable credibility. Joey pointed out that the result also creates confidence to scale the original campaign, access to the client's fresh leads, and a path to stack more Androids inside the same account. Focusing on only the next pitch made the opportunity feel much smaller than it is.
+**Suggested fix:** Add an early-result check to the Dan judge: after a successful test, map every evidence-backed expansion path before choosing the post's argument—scale the same campaign, expand into fresh demand, add adjacent products inside the account, and reuse the proof in new-business conversations. The post need not list every path, but it should not accidentally collapse a land-and-expand result into testimonial value alone.
+
+---
+
+### Observation 19: Gated lead-magnet teasers must not publish the payload
+
+**Status:** ACTIONED (2026-09-20) — added an information-gap check to the Dan Skool judge
+**Date:** 2026-09-20
+**Skill:** `produce-skool`
+**Issue:** A teaser correctly established the cost of mailing the wrong prospect, then listed all five labels from the gated scorecard. Joey removed the list: the post had given away the very mechanism people were meant to comment to access. The old instruction to “preview enough to feel concrete” was too permissive for a compact checklist asset.
+**Suggested fix:** For gated assets, teach the stakes and name the asset, but keep its framework steps, checklist labels, answers, and mechanism behind the gate. Tease the number or depth of the asset without making the teaser independently usable as a substitute.
+
+---
+
+### Observation 20: The Dan judge still confuses one-sentence-per-line with tiny sentences
+
+**Status:** ACTIONED (2026-09-24) — added a final rhythm scan to the Dan Skool judge
+**Date:** 2026-09-24
+**Skill:** `produce-skool`
+**Issue:** The bad-market mindset post passed through the judge with repeated runs of two-to-five-word lines even though the client voice notes already required varied sentence lengths. The judge made the raw Mariobot draft worse by splitting related ideas into isolated beats.
+**Suggested fix:** After the mechanical one-sentence-per-line pass, flag any run of three or more sentences under roughly six words and combine related thoughts unless the run is a deliberate closing crescendo.
+
+---
+
+### Observation 21: Genesis helpers silently swallow streamed provider errors
+
+**Status:** OPEN
+**Date:** 2026-09-25
+**Skill:** `genesis-bots`
+**Issue:** `run_mario.py` received HTTP 200 and an initial empty assistant chunk, followed by a streamed provider-error event explaining that the Anthropic key was not workspace-scoped. The parser ignored the error event, exited zero and returned an empty draft, making a credential-scope problem look like Mariobot produced nothing.
+**Suggested fix:** Parse SSE error objects explicitly, print the provider message, exit non-zero when no content is returned, and document that Genesis BYOK calls require a workspace-scoped Anthropic key unless the workspace ID header is supplied.
+
+---
+
+### Observation 22: Explicit bot names must override the default writer route
+
+**Status:** OPEN
+**Date:** 2026-09-25
+**Skill:** `produce` + `genesis-bots`
+**Issue:** A request for “marciobot” was automatically routed to Mariobot because `/produce` treats Mariobot as the mandatory default writer. Joey had explicitly named Marcio Narrative Ads Bot, so the near-identical bot names caused the wrong workflow to start.
+**Suggested fix:** Before applying `/produce`'s default writer rule, check whether the user named a Genesis bot explicitly. Treat close bot-name spellings as distinct, verify the live slug, and route through `genesis-bots` when a non-Mariobot writer was requested.
+
+---
+
+### Observation 23: A full-draft bot route must not bypass the hook-first gate
+
+**Status:** OPEN
+**Date:** 2026-09-25
+**Skill:** `produce` + `genesis-bots` + `creative-strategy-system`
+**Issue:** Marcio’s full-ad pass was judged for factual accuracy and mechanical copy quality, but its opening reached Joey without a separate vicious-hook gate. “Ten clients gave me ten bosses” carried contrast but no sharp emotional pain in the first line, so it passed the broad scorecard while still failing the actual scroll-stop standard.
+**Suggested fix:** Any bot that outputs a full ad must still be stopped at hooks first. Grade the opening independently for a first-line emotional wound, a charged word, a lived moment and the flinch test, then wait for hook selection before accepting or editing the body.
+
+---
+
+### Observation 24: Hook amplification must preserve the ad's POV and genre
+
+**Status:** OPEN
+**Date:** 2026-09-25
+**Skill:** `produce` + `creative-strategy-system`
+**Issue:** The vicious-hook pass improved pain but transformed a first-person chronological story about the narrator into ten second-person reader accusations. The hooks matched the offer argument while breaking the creative's narrative contract.
+**Suggested fix:** Add POV and genre to the hook gate before intensity grading. A story ad stays in the narrator's established pronouns and causal sequence; amplification can sharpen the opening but cannot turn it into advice, diagnosis, accusation or a different ad format.
+
+---
+
+### Observation 25: Dan Skool drafts can hide removable filler inside contrast beats
+
+**Status:** OPEN
+**Date:** 2026-09-26
+**Skill:** `produce-skool`
+**Issue:** A ROYA draft inserted a canned “not because X… but because Y” explanation followed by tiny reaction lines (“So ya just… don't. Fair enough.”). Joey deleted the entire section without weakening the argument. The passage created artificial rhythm and performed empathy without adding a fact, belief, desire or necessary transition.
+**Suggested fix:** Add a deletion pass to the Dan judge: test every multi-line contrast beat by removing it. If the logic and desire still land, cut it. Scrutinise “not X, but Y” constructions especially when X is a negative label the reader never raised and the next lines are disposable fragments. Keep ROYA's broader plain-language tendency observational until more Joey-written samples establish a real room-specific pattern.
+
+---
+
+### Observation 26: Campaign workflows reduce CAP to a finished-copy checklist
+
+**Status:** OPEN
+**Date:** 2026-09-28
+**Skill:** `storm` + `brief` + `produce` and Skool variants
+**Issue:** The workspace treated Child/Adult/Parent mainly as three checks inside one finished piece, and misrouted proof toward Adult. Joey clarified that CAP also governs campaign sequencing: Child outcome/dopamine first, Adult mechanism/process second, Parent proof/objections last; a short T1 may intentionally be pure Child.
+**Suggested fix:** Add a CAP-position field or campaign-stage check to ideation and briefing workflows. Judge a piece against its intended CAP job rather than requiring every asset to contain all three, while retaining Child → Adult → Parent as the default sequence for full pieces and campaigns.
