@@ -1,0 +1,150 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800;900&family=Caveat:wght@600;700&display=block" rel="stylesheet">
+<style>
+  :root{--paper:#F5EFE3;--ink:#1C1B1F;--blue:#2F5BFF;--red:#D9483B;--green:#18A058;}
+  html,body{margin:0;padding:0;background:var(--paper);}
+  .frame{width:1080px;height:1920px;position:relative;overflow:hidden;background:var(--paper);}
+  svg.stage{position:absolute;inset:0;width:1080px;height:1920px;}
+  .t{font-family:Poppins,sans-serif;}
+  .h{font-family:Caveat,cursive;}
+  svg.stage{fill:#1C1B1F;}
+  .badge{position:absolute;left:70px;top:1300px;width:190px;height:190px;border-radius:50%;overflow:hidden;
+         border:7px solid var(--ink);box-shadow:8px 8px 0 var(--ink);background:#222;}
+  .badge img{width:100%;height:100%;object-fit:cover;object-position:52% 22%;transform:scale(1.9);transform-origin:52% 26%;}
+  .badgelabel{position:absolute;left:300px;top:1365px;font-family:Caveat,cursive;font-size:64px;color:var(--ink);transform:rotate(-4deg);}
+  .safe{display:none;}
+  body.showsafe .safe{display:block;position:absolute;left:0;right:0;background:rgba(217,72,59,.12);outline:2px dashed var(--red);}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4"/>
+    </filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="2"/>
+      <feColorMatrix values="0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.22  0 0 0 0.08 0"/></filter>
+    <!-- THE SALES ANDROID — origin at feet centre, ~430px tall -->
+    <g id="android" stroke="#1C1B1F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="0" y1="-395" x2="0" y2="-430"/><circle cx="0" cy="-442" r="13" fill="#2F5BFF"/>
+      <rect x="-95" y="-395" width="190" height="150" rx="55" fill="#F5EFE3"/>
+      <rect x="-70" y="-365" width="140" height="62" rx="31" fill="#2F5BFF"/>
+      <circle cx="-30" cy="-334" r="11" fill="#fff" stroke="none"/><circle cx="30" cy="-334" r="11" fill="#fff" stroke="none"/>
+      <path d="M-28 -278 Q0 -258 28 -278" fill="none"/>
+      <rect x="-80" y="-232" width="160" height="150" rx="34" fill="#F5EFE3"/>
+      <circle cx="0" cy="-165" r="20" fill="#2F5BFF"/>
+      <path d="M-40 -110 H40" fill="none" opacity=".5"/>
+      <path d="M-50 -82 L-55 -10 M50 -82 L55 -10" fill="none"/>
+      <path d="M-78 -10 H-32 M32 -10 H78" fill="none" stroke-width="10"/>
+    </g>
+    <g id="cheque">
+      <rect x="0" y="0" width="560" height="250" rx="14" fill="#fff" stroke="#1C1B1F" stroke-width="7"/>
+      <text x="32" y="62" class="t" font-size="34" font-weight="800" fill="#18A058" stroke="none">COMMISSION</text>
+      <path d="M32 120 H420 M32 170 H300" stroke="#1C1B1F" stroke-width="5" opacity=".35" fill="none"/>
+      <rect x="420" y="140" width="110" height="70" rx="10" fill="none" stroke="#18A058" stroke-width="6"/>
+      <path d="M440 190 q15 -30 30 -8 q15 20 40 -18" stroke="#18A058" stroke-width="6" fill="none"/>
+      <path d="M300 222 q40 -20 80 0 t80 0" stroke="#1C1B1F" stroke-width="5" fill="none"/>
+    </g>
+  </defs>
+</svg>
+
+<!-- ================= FRAME 1 — HOOK ================= -->
+<div class="frame" id="f1">
+<svg class="stage" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" filter="url(#grain)"/>
+  <text x="90" y="360" class="h" font-size="72" font-weight="700">We're earning</text>
+  <text x="90" y="470" class="t" font-size="104" font-weight="900">hefty</text>
+  <path d="M92 492 q150 -18 300 6" stroke="#18A058" stroke-width="14" fill="none" stroke-linecap="round" filter="url(#rough)"/>
+  <text x="90" y="590" class="t" font-size="104" font-weight="900">commission</text>
+  <text x="90" y="705" class="t" font-size="104" font-weight="900" fill="#18A058">checks</text>
+  <!-- shopfront -->
+  <g filter="url(#rough)" stroke="#1C1B1F" stroke-width="7" fill="none" stroke-linejoin="round">
+    <rect x="600" y="820" width="400" height="530" fill="#F5EFE3"/>
+    <path d="M580 820 L1020 820 L990 740 L610 740 Z" fill="#F5EFE3"/>
+    <path d="M630 740 v80 M700 740 v80 M770 740 v80 M840 740 v80 M910 740 v80 M980 740 v80" stroke-width="5"/>
+    <rect x="640" y="880" width="130" height="110"/><rect x="820" y="1040" width="140" height="310" fill="#EFE5D2"/>
+    <circle cx="840" cy="1200" r="8" fill="#1C1B1F"/>
+    <text x="705" y="865" class="h" font-size="40" fill="#1C1B1F" stroke="none">BUSINESS</text>
+  </g>
+  <!-- android walking out of the door, cheque held out to the side -->
+  <g transform="translate(760 1350)" filter="url(#rough)"><use href="#android"/></g>
+  <path d="M680 1160 C640 1150 610 1140 585 1120 M680 1200 C640 1215 610 1210 585 1190" stroke="#1C1B1F" stroke-width="7" fill="none" stroke-linecap="round" filter="url(#rough)"/>
+  <g transform="translate(60 1010) rotate(-6) scale(.95)" filter="url(#rough)"><use href="#cheque"/></g>
+  <text x="430" y="1480" class="h" font-size="56" font-weight="700" fill="#2F5BFF">AI “sales androids”</text>
+  <path d="M760 1440 q60 -10 70 -60" stroke="#2F5BFF" stroke-width="5" fill="none" filter="url(#rough)"/>
+  <path d="M812 1395 l18 -18 l10 24" stroke="#2F5BFF" stroke-width="5" fill="none"/>
+</svg>
+<div class="badge"><img src="dan2.png"></div><div class="badgelabel" style="top:1360px;left:278px">Dan</div>
+<div class="safe" style="top:0;height:269px"></div><div class="safe" style="bottom:0;height:384px"></div>
+</div>
+
+<!-- ================= FRAME 2 — SELLING AI (PEAK 1) ================= -->
+<div class="frame" id="f2">
+<svg class="stage" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" filter="url(#grain)"/>
+  <text x="540" y="350" class="h" font-size="64" font-weight="700" text-anchor="middle">The real opportunity will be for those who are…</text>
+  <!-- faded columns -->
+  <g opacity=".22" filter="url(#rough)">
+    <text x="190" y="470" class="t" font-size="46" font-weight="800" text-anchor="middle">USING AI</text>
+    <rect x="90" y="500" width="200" height="140" rx="12" fill="none" stroke="#1C1B1F" stroke-width="6"/>
+    <text x="890" y="470" class="t" font-size="46" font-weight="800" text-anchor="middle">BUILDING AI</text>
+    <path d="M800 520 l-40 40 l40 40 M980 520 l40 40 l-40 40 M915 510 l-50 130" stroke="#1C1B1F" stroke-width="6" fill="none"/>
+  </g>
+  <path d="M80 520 L300 640 M300 520 L80 640" stroke="#D9483B" stroke-width="10" opacity=".7" filter="url(#rough)"/>
+  <path d="M770 510 L1010 650 M1010 510 L770 650" stroke="#D9483B" stroke-width="10" opacity=".7" filter="url(#rough)"/>
+  <!-- hero -->
+  <ellipse cx="540" cy="820" rx="440" ry="150" fill="none" stroke="#2F5BFF" stroke-width="12" filter="url(#rough)" transform="rotate(-3 540 820)"/>
+  <text x="540" y="870" class="t" font-size="150" font-weight="900" text-anchor="middle" fill="#2F5BFF">SELLING AI</text>
+  <!-- handshake scene -->
+  <g filter="url(#rough)" stroke="#1C1B1F" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- person left (you) -->
+    <circle cx="300" cy="1085" r="55" fill="#F5EFE3"/>
+    <path d="M300 1140 V1320 M300 1320 L260 1440 M300 1320 L340 1440 M300 1190 L230 1260 M300 1190 L420 1230"/>
+    <!-- owner right -->
+    <circle cx="660" cy="1085" r="55" fill="#F5EFE3"/>
+    <path d="M630 1060 h60" stroke-width="5"/>
+    <path d="M660 1140 V1320 M660 1320 L620 1440 M660 1320 L700 1440 M660 1190 L730 1260 M660 1190 L540 1230"/>
+    <path d="M660 1155 l-12 40 l12 20 l12 -20 z" fill="#D9483B" stroke-width="4"/>
+    <path d="M455 1225 q25 -22 50 0 q-25 22 -50 0z" fill="#F5EFE3"/>
+  </g>
+  <g transform="translate(900 1440) scale(.62)" filter="url(#rough)"><use href="#android"/></g>
+</svg>
+<div class="safe" style="top:0;height:269px"></div><div class="safe" style="bottom:0;height:384px"></div>
+</div>
+
+<!-- ================= FRAME 3 — UP TO 50% (PEAK 3) ================= -->
+<div class="frame" id="f3">
+<svg class="stage" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" filter="url(#grain)"/>
+  <text x="90" y="360" class="h" font-size="68" font-weight="700">we just simply ask for a cut of the profits.</text>
+  <!-- pie -->
+  <g filter="url(#rough)" stroke="#1C1B1F" stroke-width="8" stroke-linejoin="round">
+    <path d="M360 800 L360 560 A240 240 0 0 0 360 1040 Z" fill="#F5EFE3"/>
+    
+    <path d="M440 800 L440 560 A240 240 0 0 1 440 1040 Z" fill="#18A058" transform="translate(40 0)"/>
+  </g>
+  <!-- the stat -->
+  <text x="100" y="1170" class="h" font-size="96" font-weight="700" fill="#18A058">up to</text>
+  <text x="80" y="1440" class="t" font-size="290" font-weight="900" fill="#18A058" letter-spacing="-8">50%</text>
+  <text x="95" y="1505" class="t" font-size="54" font-weight="800">commission</text>
+  <!-- android + calculator -->
+  <g transform="translate(900 1100) scale(.55)" filter="url(#rough)"><use href="#android"/></g>
+  <g filter="url(#rough)" stroke="#1C1B1F" stroke-width="6" fill="#F5EFE3">
+    <rect x="800" y="1150" width="190" height="270" rx="18"/>
+    <rect x="825" y="1175" width="140" height="60" rx="6" fill="#DDE6D0"/>
+    <g stroke-width="4"><rect x="830" y="1255" width="36" height="30" rx="5"/><rect x="878" y="1255" width="36" height="30" rx="5"/><rect x="926" y="1255" width="36" height="30" rx="5"/>
+    <rect x="830" y="1300" width="36" height="30" rx="5"/><rect x="878" y="1300" width="36" height="30" rx="5"/><rect x="926" y="1300" width="36" height="30" rx="5"/>
+    <rect x="830" y="1345" width="36" height="30" rx="5"/><rect x="878" y="1345" width="36" height="30" rx="5"/><rect x="926" y="1345" width="36" height="30" rx="5"/></g>
+  </g>
+  <text x="895" y="1220" class="h" font-size="40" text-anchor="middle">??</text>
+  <text x="895" y="1480" class="h" font-size="48" font-weight="700" text-anchor="middle" transform="rotate(-5 895 1480)">you do the math</text>
+</svg>
+<div class="safe" style="top:0;height:269px"></div><div class="safe" style="bottom:0;height:384px"></div>
+</div>
+<script>
+  const q=new URLSearchParams(location.search);
+  const f=q.get('f')||'f1'; document.querySelectorAll('.frame').forEach(el=>{if(el.id!==f)el.style.display='none'});
+  if(q.get('safe'))document.body.classList.add('showsafe');
+</script>
+</body></html>

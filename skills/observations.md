@@ -272,3 +272,13 @@ Joey then supplied 4 more real posts from his own archive, unprompted, as models
 **Skill:** `storm` + `brief` + `produce` and Skool variants
 **Issue:** The workspace treated Child/Adult/Parent mainly as three checks inside one finished piece, and misrouted proof toward Adult. Joey clarified that CAP also governs campaign sequencing: Child outcome/dopamine first, Adult mechanism/process second, Parent proof/objections last; a short T1 may intentionally be pure Child.
 **Suggested fix:** Add a CAP-position field or campaign-stage check to ideation and briefing workflows. Judge a piece against its intended CAP job rather than requiring every asset to contain all three, while retaining Child → Adult → Parent as the default sequence for full pieces and campaigns.
+
+---
+
+### Observation 27: Winner variations drifted off the winner's core concept
+
+**Status:** OPEN
+**Date:** 2026-09-28
+**Skill:** `produce` + `creative-strategy-system` (variation / iteration path)
+**Issue:** The 2026-09-25 Marcio variation of the Hedge Fund winner produced 10 hooks, 9 of which dropped the "copied the hedge fund managers' model" concept and ran on the one-vs-ten payoff instead. Joey rejected all of them: a variation that loses the winner's concept isn't a variation. Message Isolator later showed that line is the ad's ONLY carrier of the mechanism, so it is FROZEN twice over.
+**Suggested fix:** Before varying any winner, run Genesis `message-isolator` first and treat its FROZEN column as a hard constraint on every downstream writer (Cash Rewriter, Segment/Mech Swapper, Marcio, mariobot). Change one lever at a time (`cash-analysisvariation-bot` → `cash-rewriter-bot`); never let a hook pass re-pick the concept.
