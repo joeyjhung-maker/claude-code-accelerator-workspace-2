@@ -1,0 +1,110 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500;1,600&family=Inter:wght@500;600;700&display=block" rel="stylesheet">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}video{display:none}</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas><video id="v" src="build/base.mp4" muted preload="auto" playsinline></video>
+<script>
+// Heist version: base picture track (build/base.mp4, cut by build/edit.py) + documentary title layer, grain, light leaks, real cover.
+const W=1080,H=1920,cv=document.getElementById('c'),x=cv.getContext('2d'),vid=document.getElementById('v');
+const cl=(v,a=0,b=1)=>Math.max(a,Math.min(b,v)),P=(t,s,d)=>cl((t-s)/d),eo=v=>1-Math.pow(1-v,3),eio=v=>v<.5?4*v*v*v:1-Math.pow(-2*v+2,3)/2,L=(a,b,v)=>a+(b-a)*v;
+const cover=new Image();cover.src='../iaa-book-cover.png';
+window.ready=Promise.all([new Promise(r=>{if(vid.readyState>=2)r();else vid.addEventListener('loadeddata',r,{once:true})}),new Promise(r=>{cover.complete?r():cover.onload=r}),
+  document.fonts.load('600 64px "Cormorant Garamond"'),document.fonts.load('italic 600 64px "Cormorant Garamond"'),document.fonts.load('700 64px "Cormorant Garamond"'),document.fonts.load('600 40px Inter'),document.fonts.load('700 40px Inter')]).then(()=>document.fonts.ready);
+// cut points (from edit.py) for warm light-leak flashes
+const CUTS=[3.0,5.0,7.7,9.6,11.2,15.0,18.4,21.1,22.0,27.0,31.6,37.25,43.25,47.6,50.95,59.55,64.35,71.4,75.55];
+// grain tiles
+const GR=[];for(let k=0;k<4;k++){const g=document.createElement('canvas');g.width=540;g.height=960;const gx=g.getContext('2d'),id=gx.createImageData(540,960);
+  for(let i=0;i<id.data.length;i+=4){const n=Math.random()*255;id.data[i]=id.data[i+1]=id.data[i+2]=n;id.data[i+3]=255;}gx.putImageData(id,0,0);GR.push(g);}
+const GOLD=()=>{const g=x.createLinearGradient(0,-120,0,60);g.addColorStop(0,'#fbe7b0');g.addColorStop(.55,'#e2b25a');g.addColorStop(1,'#a8701f');return g};
+const ST={
+  cap:{font:'600 44px Inter',ls:10,col:'#f4efe6',up:1},
+  capS:{font:'600 34px Inter',ls:8,col:'#e8dcc4',up:1},
+  list:{font:'600 31px Inter',ls:2,col:'#f4efe6',up:1},
+  serif:{font:'italic 600 70px "Cormorant Garamond"',ls:0,col:'#f4efe6'},
+  serifG:{font:'italic 600 84px "Cormorant Garamond"',ls:0,col:'gold'},
+  num:{font:'700 230px "Cormorant Garamond"',ls:-4,col:'gold',glow:1},
+  numM:{font:'700 150px "Cormorant Garamond"',ls:-2,col:'gold',glow:1},
+};
+function textW(s,st){x.font=st.font;x.letterSpacing=st.ls+'px';return x.measureText(s).width;}
+// draw one line with fade/blur/rise in, fade out
+function line(s,st,cx,y,t,t0,t1,o={}){const qi=P(t,t0,.45),qo=1-P(t,t1-.3,.3),q=Math.min(qi,qo);if(q<=0)return;const S=ST[st];
+  x.save();x.font=S.font;x.letterSpacing=S.ls+'px';x.textAlign=o.align||'center';x.textBaseline='alphabetic';
+  const sc=o.pop?L(1.18,1,eo(qi)):1;x.translate(cx,y+(1-eo(qi))*26);x.scale(sc,sc);
+  x.globalAlpha=q;x.filter=qi<1?`blur(${((1-eo(qi))*14).toFixed(1)}px)`:'none';
+  x.shadowColor='rgba(0,0,0,.75)';x.shadowBlur=28;x.shadowOffsetY=4;
+  if(S.glow){x.shadowColor='rgba(226,178,90,.55)';x.shadowBlur=60;x.shadowOffsetY=0;}
+  x.fillStyle=S.col==='gold'?GOLD():S.col;x.fillText(S.up?s.toUpperCase():s,0,0);
+  if(o.strike&&t>o.strike){const w=textW(s,S),p=eo(P(t,o.strike,.3));x.filter='none';x.shadowBlur=0;x.fillStyle='#d9483b';x.fillRect(-w/2,-26,w*p,7);}
+  x.restore();}
+function rule(cx,y,w,t,t0,t1){const q=Math.min(eo(P(t,t0,.5)),1-P(t,t1-.3,.3));if(q<=0)return;x.save();x.globalAlpha=q*.85;const g=x.createLinearGradient(cx-w/2,0,cx+w/2,0);g.addColorStop(0,'rgba(226,178,90,0)');g.addColorStop(.5,'#e2b25a');g.addColorStop(1,'rgba(226,178,90,0)');x.fillStyle=g;x.fillRect(cx-w/2*q,y,w*q,2);x.restore();}
+function scrim(t,t0,t1,a=.55,top=1150){const q=Math.min(P(t,t0,.4),1-P(t,t1-.3,.3));if(q<=0)return;const g=x.createLinearGradient(0,top,0,H);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(.35,`rgba(0,0,0,${a*q})`);g.addColorStop(1,`rgba(0,0,0,${a*q})`);x.fillStyle=g;x.fillRect(0,top,W,H-top);}
+function flash(t,t0,a,col='255,255,255'){const g=t-t0;if(g<0||g>.35)return;x.fillStyle=`rgba(${col},${a*(1-g/.35)})`;x.fillRect(0,0,W,H);}
+function leak(t){for(const c of CUTS){const g=t-c;if(g<0||g>.4)continue;const a=.28*(1-g/.4);const rg=x.createRadialGradient(W*.85,H*.2,50,W*.85,H*.2,1100);rg.addColorStop(0,`rgba(255,170,80,${a})`);rg.addColorStop(1,'rgba(255,120,40,0)');x.globalCompositeOperation='screen';x.fillStyle=rg;x.fillRect(0,0,W,H);x.globalCompositeOperation='source-over';}}
+function drawCover(cx,ybot,w,t,t0,sweepT){const q=eo(P(t,t0,.7));if(q<=0)return;const h=w*cover.height/cover.width,y=ybot-h+(1-q)*60+Math.sin(t*1.3)*6;
+  x.save();x.globalAlpha=q;x.translate(cx,y+h/2);const s=L(.92,1,q)*(1+.02*P(t,t0,6));x.scale(s,s);
+  x.shadowColor='rgba(0,0,0,.8)';x.shadowBlur=70;x.shadowOffsetY=30;x.drawImage(cover,-w/2,-h/2,w,h);x.shadowBlur=0;
+  // light sweep across the cover
+  const sp=P(t,sweepT,1.1);if(sp>0&&sp<1){x.save();x.beginPath();x.rect(-w/2,-h/2,w,h);x.clip();const sx=L(-w,w,sp);const g=x.createLinearGradient(sx-120,-h/2,sx+120,h/2);g.addColorStop(0,'rgba(255,255,255,0)');g.addColorStop(.5,'rgba(255,245,220,.45)');g.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=g;x.fillRect(-w/2,-h/2,w,h);x.restore();}
+  x.restore();}
+function arrow(cx,y,t,t0){const q=P(t,t0,.3);if(q<=0)return;const b=Math.abs(Math.sin((t-t0)*5))*14;x.save();x.globalAlpha=q;x.strokeStyle='#e2b25a';x.lineWidth=6;x.lineCap='round';x.beginPath();x.moveTo(cx,y+b);x.lineTo(cx,y+60+b);x.moveTo(cx-22,y+38+b);x.lineTo(cx,y+60+b);x.lineTo(cx+22,y+38+b);x.stroke();x.restore();}
+
+function titles(t){const cx=W/2,Y=1400;
+  // hook
+  scrim(t,0,7.65);
+  line('I sent this','cap',cx,Y-60,t,.3,2.95);line('bottle of whiskey','serifG',cx,Y+40,t,1.0,2.95);
+  line('with this little','cap',cx,Y-60,t,3.05,4.95);line('combination code','serifG',cx,Y+40,t,3.3,4.95);line('and a letter','capS',cx,Y+110,t,4.3,4.95);
+  line('to a','capS',cx,Y-130,t,5.05,7.6);line('$10 million','numM',cx,Y+20,t,5.2,7.6,{pop:1});line('business','cap',cx,Y+100,t,5.6,7.6);rule(cx,Y+130,420,t,5.6,7.6);
+  line('When they dial the number','serif',cx,Y-10,t,7.85,9.55);line('in that letter…','serif',cx,Y+70,t,8.6,9.55);
+  scrim(t,7.7,22.0,.5);
+  line('One single offer','cap',cx,Y+20,t,9.65,11.15);rule(cx,Y+60,360,t,9.8,11.15);
+  line('“Do you have any old leads','serif',cx,Y-60,t,11.3,14.95);line('sitting in your database','serif',cx,Y+20,t,12.9,14.95);
+  line('that we can turn into','serif',cx,Y-40,t,15.0,16.6);line('sales?”','serifG',cx,Y+60,t,15.6,16.6,{pop:1});line('AI + SMS','capS',cx,Y+140,t,15.9,16.6);
+  line('On a performance basis','cap',cx,Y+20,t,16.7,18.35);
+  line("If you don't get paid,",'cap',cx,Y-20,t,18.45,21.05);line("we don't get paid.",'serifG',cx,Y+80,t,19.6,21.05);
+  // chyron on Dan's first appearance
+  if(t>=21.1&&t<22.0){const q=Math.min(P(t,21.12,.25),1-P(t,21.8,.2));x.save();x.globalAlpha=q;x.fillStyle='#e2b25a';x.fillRect(80,1356,6,96);x.restore();
+    line('Dan Wardrope','cap',104,1396,t,21.12,22.0,{align:'left'});line('Author · The Instant AI Agency','capS',104,1444,t,21.2,22.0,{align:'left'});}
+  // money
+  scrim(t,22.0,31.6,.5,900);
+  line('An extra','cap',cx,Y-220,t,24.9,27.0);line('$1.2M','num',cx,Y,t,25.3,27.0,{pop:1});line('from this offer','serif',cx,Y+100,t,26.2,27.0);
+  line('And as a thank you…','serif',cx,Y+20,t,27.2,29.75);
+  line('over','cap',cx,Y-220,t,29.85,31.55);line('$225,000','num',cx,Y,t,30.1,31.55,{pop:1});rule(cx,Y+50,620,t,30.3,31.55);
+  // old leads
+  scrim(t,31.6,64.35,.5);
+  line('Just old leads','cap',cx,Y-40,t,32.3,34.3);line('already paid for.','serifG',cx,Y+60,t,33.2,34.3);
+  line('Money from these old leads','cap',cx,Y-40,t,34.9,37.2);line('they already own.','serifG',cx,Y+60,t,36.1,37.2);
+  line('Ridiculously','cap',cx,Y-40,t,38.4,41.5);line('easy to sell.','serifG',cx,Y+60,t,39.1,41.5,{pop:1});
+  line('Understands the pain','cap',cx,Y-20,t,41.6,43.2);line('immediately.','serifG',cx,Y+80,t,42.3,43.2);
+  const LI=[["They paid for those leads",43.4],["They've forgotten about leads",44.8],["They don't have the resource to call",46.3],["But they want money from those old leads",48.9]];
+  LI.forEach(([s,t0],i)=>line('— '+s,'list',cx,1250+i*68,t,t0,50.9));
+  line('The easiest AI offer','cap',cx,Y-40,t,51.3,54.3);line('on the planet.','serifG',cx,Y+60,t,52.8,54.3);
+  line('Never going to go','cap',cx,Y-40,t,54.8,57.2);line('out of fashion.','serifG',cx,Y+60,t,55.6,57.2);
+  line('Never going to run out','cap',cx,Y-40,t,57.3,59.45);line('of old leads.','serifG',cx,Y+60,t,58.3,59.45);
+  line("You don't have to be a",'cap',cx,Y-40,t,59.8,62.9);line('tech guru.','serifG',cx,Y+60,t,60.9,62.9,{strike:61.8});
+  line('Very, very simple.','serifG',cx,Y+20,t,63.0,64.3,{pop:1});
+  // book
+  if(t>=64.35&&t<71.4){const d=eo(P(t,66.0,.6));x.fillStyle=`rgba(0,0,0,${.45*d})`;x.fillRect(0,0,W,H);}
+  line("I'm so pumped about this offer…",'serif',cx,Y+20,t,64.6,66.0);
+  if(t<71.4)drawCover(cx,1300,560,t,66.2,66.9);
+  line('I wrote a book on it','cap',cx,400,t,66.1,71.35);
+  line('The Instant AI Agency','serifG',cx,1420,t,67.4,69.1);
+  line('Grab it below','cap',cx,1400,t,69.2,71.35);line('only $14.40','serifG',cx,1500,t,69.9,71.35,{pop:1});if(t<71.4)arrow(cx,1560,t,69.6);
+  // refund over Dan
+  scrim(t,71.4,75.5,.55);
+  line("If you don't love it,",'cap',cx,Y-40,t,71.6,75.5);line('you can keep it','serifG',cx,Y+60,t,72.5,75.5);line("and I'll refund you your money.",'capS',cx,Y+130,t,73.3,75.5);
+  // end card
+  if(t>=75.55){const q=P(t,75.6,.5);scrim(t,75.55,99,.7,900);drawCover(cx,1380,300,t,75.7,76.3);
+    line('The Instant AI Agency','serifG',cx,1480,t,75.9,99);line('$14.40 · grab it below','cap',cx,1550,t,76.2,99);}
+}
+function vignette(){const g=x.createRadialGradient(W/2,H/2,H*.35,W/2,H/2,H*.75);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(0,0,0,.5)');x.fillStyle=g;x.fillRect(0,0,W,H);}
+window.seek=async function(t){
+  await new Promise(r=>{const tt=Math.min(77.59,t+1/60);if(Math.abs(vid.currentTime-tt)<1e-4&&vid.readyState>=2)return r();vid.addEventListener('seeked',r,{once:true});vid.currentTime=tt;});
+  x.filter='none';x.globalAlpha=1;x.drawImage(vid,0,0,W,H);
+  leak(t);vignette();
+  titles(t);
+  flash(t,25.3,.55);flash(t,30.1,.45);flash(t,75.6,.35,'255,220,160');
+  x.globalAlpha=.07;x.globalCompositeOperation='overlay';x.drawImage(GR[Math.floor(t*24)%4],0,0,W,H);x.globalCompositeOperation='source-over';x.globalAlpha=1;
+};
+const q=new URLSearchParams(location.search);window.ready.then(()=>seek(parseFloat(q.get('t')||'0')));
+</script>
+</body></html>

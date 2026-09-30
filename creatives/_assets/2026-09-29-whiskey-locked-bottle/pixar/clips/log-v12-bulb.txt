@@ -1,0 +1,5 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/v12-bulb.png
+>>> createTask veo-3-1 6s 9:16 1080p (credits before: 2106.0)
+>>> taskId 15ee7a4fb15312b2d8104b683c32bbd4
+>>> saved 3171280 bytes -> /Users/joey/Documents/claude-code-accelerator-workspace/creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/v12-bulb.mp4 in 316s, 65.0 credits (balance now: 1456.0)
+/Users/joey/Documents/claude-code-accelerator-workspace/creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/v12-bulb.mp4

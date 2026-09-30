@@ -1,0 +1,19 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/v07-wake.png
+>>> createTask veo-3-1 6s 9:16 1080p (credits before: 691.0)
+>>> taskId 61d45b02914ea01678b0f9767fd5b758
+Traceback (most recent call last):
+  File "/Users/joey/Documents/claude-code-accelerator-workspace/scripts/run_video.py", line 91, in <module>
+    main()
+    ~~~~^^
+  File "/Users/joey/Documents/claude-code-accelerator-workspace/scripts/run_video.py", line 59, in main
+    poll(tid, token, args.out)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joey/Documents/claude-code-accelerator-workspace/scripts/run_video.py", line 80, in poll
+    n = download(urls[0], out_path)
+  File "/Users/joey/Documents/claude-code-accelerator-workspace/scripts/run_image.py", line 129, in download
+    data = resp.read()
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 510, in read
+    s = self._safe_read(self.length)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 684, in _safe_read
+    raise IncompleteRead(data.getvalue(), amt - data.tell())
+http.client.IncompleteRead: IncompleteRead(5714048 bytes read, 2205392 more expected)

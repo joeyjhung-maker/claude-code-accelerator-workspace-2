@@ -1,0 +1,4 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/k04-ceo-seal.png
+>>> createTask veo-3-1 6s 9:16 1080p (credits before: 335.0)
+>>> saved 5160556 bytes -> creatives/_assets/2026-09-29-whiskey-locked-bottle/heist/clips/c04-seal.mp4 in 138s, 65.0 credits (balance now: 75.0)
+creatives/_assets/2026-09-29-whiskey-locked-bottle/heist/clips/c04-seal.mp4

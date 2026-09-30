@@ -1,0 +1,315 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800;900&family=Caveat:wght@600;700&display=block" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#F5EFE3;overflow:hidden;}
+  #wrap{width:1080px;height:1920px;position:relative;overflow:hidden;background:#F5EFE3;}
+  #st{position:absolute;inset:0;width:1080px;height:1920px;}
+  .t{font-family:Poppins,sans-serif;} .h{font-family:Caveat,cursive;}
+  text{white-space:pre;}
+  .badge{position:absolute;left:70px;top:1330px;width:190px;height:190px;border-radius:50%;overflow:hidden;
+         border:7px solid #1C1B1F;box-shadow:8px 8px 0 #1C1B1F;background:#222;transform-origin:95px 95px;}
+  .badge img{width:100%;height:100%;object-fit:cover;object-position:52% 22%;transform:scale(1.9);transform-origin:52% 26%;}
+  .badgelabel{position:absolute;left:278px;top:1390px;font-family:Caveat,cursive;font-size:64px;color:#1C1B1F;transform:rotate(-4deg);}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="r0" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="4"/></filter>
+    <filter id="r1" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="9" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="4"/></filter>
+    <filter id="r2" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="17" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="4"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="2"/>
+      <feColorMatrix values="0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.22  0 0 0 0.08 0"/></filter>
+    <g id="android" stroke="#1C1B1F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="0" y1="-395" x2="0" y2="-430"/><circle cx="0" cy="-442" r="13" fill="#2F5BFF"/>
+      <rect x="-95" y="-395" width="190" height="150" rx="55" fill="#F5EFE3"/>
+      <rect x="-70" y="-365" width="140" height="62" rx="31" fill="#2F5BFF"/>
+      <circle cx="-30" cy="-334" r="11" fill="#fff" stroke="none"/><circle cx="30" cy="-334" r="11" fill="#fff" stroke="none"/>
+      <path d="M-28 -278 Q0 -258 28 -278" fill="none"/>
+      <rect x="-80" y="-232" width="160" height="150" rx="34" fill="#F5EFE3"/>
+      <circle cx="0" cy="-165" r="20" fill="#2F5BFF"/>
+      <path d="M-40 -110 H40" fill="none" opacity=".5"/>
+      <path d="M-50 -82 L-55 -10 M50 -82 L55 -10" fill="none"/>
+      <path d="M-78 -10 H-32 M32 -10 H78" fill="none" stroke-width="10"/>
+    </g>
+    <g id="cheque">
+      <rect x="0" y="0" width="560" height="250" rx="14" fill="#fff" stroke="#1C1B1F" stroke-width="7"/>
+      <text x="32" y="62" class="t" font-size="34" font-weight="800" fill="#18A058">THANK YOU</text>
+      <path d="M32 120 H420 M32 170 H300" stroke="#1C1B1F" stroke-width="5" opacity=".35" fill="none"/>
+      <rect x="420" y="140" width="110" height="70" rx="10" fill="none" stroke="#18A058" stroke-width="6"/>
+      <path d="M440 190 q15 -30 30 -8 q15 20 40 -18" stroke="#18A058" stroke-width="6" fill="none"/>
+      <path d="M300 222 q40 -20 80 0 t80 0" stroke="#1C1B1F" stroke-width="5" fill="none"/>
+    </g>
+  </defs>
+</svg>
+<div id="wrap">
+  <svg id="st" viewBox="0 0 1080 1920"></svg>
+  <div class="badge" id="badge"><img src="../dan2.png"></div><div class="badgelabel" id="blabel">Dan</div>
+</div>
+<script>
+const INK='#1C1B1F',PAPER='#F5EFE3',BLUE='#2F5BFF',RED='#D9483B',GREEN='#18A058',AMBER='#C9822B';
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const P=(t,s,d)=>cl((t-s)/d);
+const eo=x=>1-Math.pow(1-x,3);
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const bk=x=>{if(x<=0)return 0;if(x>=1)return 1;const c1=1.9,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const L=(a,b,x)=>a+(b-a)*x;
+let RF='r0',UID=0;
+const rf=()=>`filter="url(#${RF})"`;
+const dv=q=>q<=0?'opacity="0"':`pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="${(1-cl(q)).toFixed(4)}"`;
+const pop=(q,cx,cy,inner,rot=0)=>{if(q<=0)return '';const s=bk(q);return `<g transform="translate(${cx} ${cy}) scale(${s.toFixed(4)}) rotate(${rot*(1-q)}) translate(${-cx} ${-cy})" opacity="${cl(q*3).toFixed(3)}">${inner}</g>`};
+const fade=(q,inner)=>q<=0?'':`<g opacity="${cl(q).toFixed(3)}">${inner}</g>`;
+const G=(tr,inner)=>`<g transform="${tr}">${inner}</g>`;
+
+function T(txt,x,y,o={}){const c=o.h?'h':'t';return `<text x="${x}" y="${y}" class="${c}" font-size="${o.s||60}" font-weight="${o.w||(o.h?700:800)}" fill="${o.f||INK}" text-anchor="${o.a||'start'}"${o.ls?` letter-spacing="${o.ls}"`:''}${o.rot?` transform="rotate(${o.rot} ${x} ${y})"`:''}>${txt}</text>`}
+// words appear one by one between t0 and t1
+function W(txt,x,y,o,t,t0,t1){if(t<t0)return '';const ws=txt.split(' '),n=ws.length;
+  const sp=ws.map((w,i)=>{const s=t0+(t1-t0)*i/n;const q=eo(P(t,s,.15));return `<tspan opacity="${q.toFixed(3)}">${w}${i<n-1?' ':''}</tspan>`}).join('');return T(sp,x,y,o)}
+// handwriting reveal (left-to-right wipe)
+function H(txt,x,y,o,t,t0,dur){if(t<t0)return '';const q=P(t,t0,dur),s=o.s||60;const w=txt.length*s*(o.h?0.45:0.64)+60;
+  const x0=o.a==='middle'?x-w/2:(o.a==='end'?x-w:x);const id='c'+(UID++);const rot=o.rot?` transform="rotate(${o.rot} ${x} ${y})"`:'';
+  return `<clipPath id="${id}"><rect x="${x0-30}" y="${y-s*1.3}" width="${((w+60)*q).toFixed(1)}" height="${s*2}"${rot}/></clipPath><g clip-path="url(#${id})">${T(txt,x,y,o)}</g>`}
+function rnd(i){const x=Math.sin(i*127.1+311.7)*43758.5453;return x-Math.floor(x)}
+
+// ---------- props ----------
+function bottle(o={}){const d=o.d??1,fill=o.fill??1,lock=o.lock??1,open=o.open??0,dg=o.digits||['?','?','?'],dc=o.dcol||INK,id='b'+(UID++);
+  let s=`<g stroke="${INK}" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">`;
+  s+=`<path d="M-150 0 H150 V-380 Q150 -470 60 -520 V-640 H-60 V-520 Q-150 -470 -150 -380 Z" fill="${PAPER}" fill-opacity="${cl(d*2-1)}" ${dv(d)}/>`;
+  if(fill>0)s+=`<clipPath id="${id}"><rect x="-160" y="${-8-380*fill}" width="320" height="${380*fill+8}"/></clipPath><path clip-path="url(#${id})" d="M-142 -8 H142 V-360 Q142 -380 100 -380 H-100 Q-142 -380 -142 -360 Z" fill="${AMBER}" stroke="none" opacity=".85"/>`;
+  const lab=cl((fill-.6)/.4);
+  if(lab>0)s+=`<g opacity="${lab}"><path d="M-110 -330 H110 V-160 H-110 Z" fill="#fff"/><text x="0" y="-270" class="t" font-size="44" font-weight="900" text-anchor="middle" fill="${RED}" stroke="none">WHISKEY</text><path d="M-70 -230 H70 M-50 -200 H50" stroke-width="5" opacity=".35"/></g>`;
+  if(d>=1)s+=`<path d="M-100 -470 Q-40 -500 -30 -440" stroke="#fff" stroke-width="10" opacity=".7" fill="none"/>`;
+  s+=`<rect x="-45" y="-690" width="90" height="55" rx="8" fill="#A9743A" opacity="${cl(d*2-1)}"/>`;
+  if(lock>0){const ly=-(1-bk(lock))*420,oy=-80*eio(open),orr=-20*eio(open);
+    s+=`<g transform="translate(0 ${ly+oy}) rotate(${orr} 0 -690)" opacity="${cl(lock*4)}"><rect x="-78" y="-760" width="156" height="140" rx="18" fill="${INK}"/><rect x="-62" y="-725" width="124" height="60" rx="8" fill="${PAPER}"/><path d="M-21 -725 V-665 M21 -725 V-665" stroke-width="5"/>`+
+      [-41,0,41].map((x,i)=>`<text x="${x}" y="-680" class="t" font-size="36" font-weight="900" text-anchor="middle" stroke="none" fill="${dc}">${dg[i]}</text>`).join('')+`</g>`;}
+  return s+'</g>'}
+const android=(x,y,sc,q)=>pop(q,x,y-200*sc,`<g transform="translate(${x} ${y}) scale(${sc})" ${rf()}><use href="#android"/></g>`);
+function cabinet(cx,top,w,h,q,open=0,dust=1){const x=cx-w/2,dh=(h-60)/2,q2=cl((q-.4)/.6);
+  let s=`<g ${rf()} stroke="${INK}" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">`;
+  s+=`<rect x="${x}" y="${top}" width="${w}" height="${h}" fill="#EFE5D2" fill-opacity="${cl(q*2-1)}" ${dv(q)}/>`;
+  if(q2>0){const oy=26*open;
+    if(open>0)s+=`<rect x="${x+20}" y="${top+20}" width="${w-40}" height="${oy+4}" fill="${INK}" opacity=".85" stroke="none"/>`;
+    s+=`<rect x="${x+20}" y="${top+20+oy}" width="${w-40}" height="${dh}" fill="${PAPER}" ${dv(q2)}/><rect x="${x+20}" y="${top+40+dh}" width="${w-40}" height="${dh}" fill="${PAPER}" ${dv(q2)}/>`;
+    s+=`<rect x="${cx-45}" y="${top+20+oy+dh*.35}" width="90" height="26" rx="8" fill="${INK}" opacity="${q2}"/><rect x="${cx-45}" y="${top+40+dh+dh*.35}" width="90" height="26" rx="8" fill="${INK}" opacity="${q2}"/>`;}
+  if(dust>0&&q2>0)s+=`<path d="M${x+30} ${top-12} q30 -12 60 0 M${x+w*.55} ${top-8} q30 -12 60 0 M${x+w*.3} ${top-26} q20 -8 40 0" fill="none" stroke-width="4" opacity="${.45*dust*q2}"/>`;
+  return s+'</g>'}
+const coin=(x,y,r=18)=>`<g><circle cx="${x}" cy="${y}" r="${r}" fill="${GREEN}" stroke="${INK}" stroke-width="4"/><text x="${x}" y="${y+r*.45}" class="t" font-size="${r*1.2}" font-weight="900" text-anchor="middle" fill="#fff">$</text></g>`;
+
+// ---------- ACTS ----------
+function actA(t){let s='';const out=1-P(t,6.0,.35);
+  let head=H('I sent this',90,350,{h:1,s:72},t,.3,.5)+W('bottle of',90,465,{s:112,w:900},t,1.0,1.5)+
+    pop(P(t,1.7,.35),300,550,T('whiskey',90,585,{s:112,w:900,f:AMBER}))+
+    `<path d="M92 610 q200 -18 420 6" stroke="${AMBER}" stroke-width="14" fill="none" stroke-linecap="round" ${rf()} ${dv(P(t,2.05,.4))}/>`+
+    H('little combination code',90,770,{h:1,s:54,f:BLUE,rot:-4},t,3.2,.8)+
+    `<path d="M470 770 q80 -20 130 20" stroke="${BLUE}" stroke-width="5" fill="none" ${dv(P(t,3.9,.3))}/><path d="M578 772 l24 18 l-22 14" stroke="${BLUE}" stroke-width="5" fill="none" ${dv(P(t,4.15,.15))}/>`;
+  s+=fade(out,head);
+  // tower (destination)
+  const tq=P(t,6.1,.7);
+  if(tq>0){s+=`<g ${rf()} stroke="${INK}" stroke-width="8" fill="none" stroke-linejoin="round">
+    <rect x="360" y="820" width="360" height="600" fill="${PAPER}" fill-opacity="${cl(tq*2-1)}" ${dv(tq)}/>`;
+    for(let r=0;r<5;r++)for(let c=0;c<3;c++){const q=P(t,6.3+(r*3+c)*.025,.2);s+=`<rect x="${400+c*100}" y="${860+r*95}" width="70" height="60" stroke-width="5" ${dv(q)}/>`;}
+    s+=`<rect x="490" y="1330" width="100" height="90" fill="#EFE5D2" ${dv(P(t,6.6,.2))}/></g>`;
+    s+=H('to get their attention',540,440,{h:1,s:84,a:'middle'},t,6.25,.7);
+    const eq=P(t,6.95,.3);
+    s+=pop(eq,540,700,`<g stroke="${INK}" stroke-width="7"><ellipse cx="490" cy="700" rx="42" ry="56" fill="#fff"/><ellipse cx="590" cy="700" rx="42" ry="56" fill="#fff"/><circle cx="${500+8*Math.sin(t*3)}" cy="715" r="18" fill="${INK}"/><circle cx="${600+8*Math.sin(t*3)}" cy="715" r="18" fill="${INK}"/></g>`);}
+  // package (bottle + letter + tag), flies into the tower door
+  const f=eio(P(t,6.1,.7));
+  let pk='';
+  const eq=eo(P(t,4.2,.4));
+  if(eq>0)pk+=`<g transform="translate(${120-600*(1-eq)} 950) rotate(-8)" ${rf()} stroke="${INK}" stroke-width="7" stroke-linejoin="round"><rect x="0" y="0" width="380" height="270" fill="#fff"/><path d="M0 0 L190 140 L380 0" fill="none"/><text x="190" y="228" class="h" font-size="46" text-anchor="middle" stroke="none" fill="${INK}">+ a letter</text></g>`;
+  pk+=`<g transform="translate(760 1440) scale(.95)" ${rf()}>${bottle({d:eo(P(t,.4,1.2)),fill:eio(P(t,1.6,1.0)),lock:P(t,3.0,.45)})}</g>`;
+  const gq=P(t,5.0,.35);
+  if(gq>0){const a=t>5?10*Math.sin((t-5)*7)*Math.exp(-(t-5)*1.6):0;
+    pk+=`<path d="M640 1265 Q690 1060 712 935" stroke="${INK}" stroke-width="4" fill="none" ${dv(gq)}/>`+
+      pop(gq,495,1295,`<g transform="rotate(${4+a} 640 1265)" ${rf()}><rect x="330" y="1250" width="330" height="90" rx="10" fill="${PAPER}" stroke="${INK}" stroke-width="6"/><circle cx="640" cy="1265" r="7" fill="${INK}"/><text x="485" y="1310" class="t" font-size="38" font-weight="800" text-anchor="middle" fill="${GREEN}">$10M business</text></g>`);}
+  if(f>0)pk=`<g transform="translate(${L(0,25,f)} ${L(0,305,f)}) translate(515 1070) scale(${L(1,.06,f)}) translate(-515 -1070)" opacity="${1-P(f,.75,.25)}">${pk}</g>`;
+  s+=pk;return s}
+
+function actB(t){let s='';
+  s+=H('when they dial the number',540,380,{h:1,s:70,a:'middle'},t,7.9,1.1);
+  s+=H('in that letter',540,470,{h:1,s:60,a:'middle',f:BLUE},t,8.85,.5);
+  const q=eo(P(t,7.75,.5));
+  s+=`<g ${rf()} stroke="${INK}" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M330 1010 L385 830 H695 L750 1010 Z" fill="${PAPER}" ${dv(q)}/>
+    <path d="M330 800 q0 -60 60 -60 H690 q60 0 60 60 v25 h-120 v-25 H450 v25 H330 Z" fill="${INK}" opacity="${cl(q*2-1)}"/>`;
+  const ang=t>8.2&&t<9.3?80*Math.sin((t-8.2)*6):0;
+  s+=`<g transform="rotate(${ang} 540 920)"><circle cx="540" cy="920" r="78" fill="#fff" ${dv(q)}/>`;
+  for(let i=0;i<8;i++){const a=i/8*Math.PI*2;s+=`<circle cx="${540+52*Math.cos(a)}" cy="${920+52*Math.sin(a)}" r="11" fill="${INK}" opacity="${q}" stroke="none"/>`;}
+  s+=`</g><path d="M400 1080 q20 -24 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" fill="none" stroke-width="6" ${dv(P(t,8.6,.7))}/></g>`;
+  const sp=eo(P(t,9.4,.5));
+  if(sp>0){const id='m'+(UID++);s+=`<mask id="${id}"><rect width="1080" height="1920" fill="#fff"/><circle cx="540" cy="1250" r="${L(1000,400,sp)}" fill="#000"/></mask><rect width="1080" height="1920" fill="${INK}" opacity="${.55*sp}" mask="url(#${id})"/>`;}
+  const cq=eo(P(t,9.5,.4));
+  if(cq>0)s+=`<g transform="translate(${L(900,0,cq)} 0) rotate(-3 540 1250)" ${rf()}><rect x="240" y="1070" width="600" height="360" rx="12" fill="#fff" stroke="${INK}" stroke-width="7"/><path d="M280 1330 H800 M280 1380 H700" stroke="${INK}" stroke-width="4" opacity=".25"/></g>`;
+  s+=H('one single offer',540,1270,{h:1,s:84,a:'middle',rot:-3},t,9.95,.7);
+  return s}
+
+function actC(t){let c='';
+  c+=T('one single offer:',540,340,{h:1,s:62,a:'middle'});
+  const bq=eo(P(t,11.2,.4));
+  c+=`<rect x="80" y="390" width="920" height="420" rx="24" fill="#fff" fill-opacity="${bq}" stroke="${INK}" stroke-width="8" ${rf()} ${dv(bq)}/>`;
+  c+=W('Do you have any old leads',540,500,{s:54,a:'middle'},t,11.3,12.8);
+  c+=W('sitting in your database',540,575,{s:58,a:'middle'},t,12.9,14.4);
+  c+=W('that we can turn into',540,650,{s:58,a:'middle'},t,15.0,15.5);
+  c+=pop(P(t,15.65,.3),540,730,T('SALES?',540,755,{s:92,w:900,f:GREEN,a:'middle'}));
+  c+=cabinet(260,1000,300,360,P(t,12.0,1.0),0,1-P(t,14.0,.6));
+  c+=H('OLD LEADS',260,975,{h:1,s:50,a:'middle'},t,13.0,.5);
+  const ax=L(1250,890,eo(P(t,15.0,.5)));
+  c+=t>=15.0?`<g transform="translate(0 ${-Math.abs(Math.sin((t-15)*9))*(t<15.5?14:0)})">${android(ax,1400,.6,1)}</g>`:'';
+  c+=pop(P(t,15.9,.3),595,1100,`<g ${rf()}><path d="M470 1040 h250 a24 24 0 0 1 24 24 v70 a24 24 0 0 1 -24 24 h-200 l-40 30 v-30 h-10 a24 24 0 0 1 -24 -24 v-70 a24 24 0 0 1 24 -24z" fill="${BLUE}" stroke="${INK}" stroke-width="6"/></g><text x="595" y="1115" class="t" font-size="38" font-weight="800" text-anchor="middle" fill="#fff">AI + SMS</text>`);
+  if(t>=16.3){let dots='';for(let i=0;i<3;i++){const o=.3+.7*Math.max(0,Math.sin((t*6-i*.9)));dots+=`<circle cx="${525+i*35}" cy="1265" r="10" fill="${INK}" opacity="${o.toFixed(2)}"/>`;}
+    c+=pop(P(t,16.3,.3),560,1265,`<g ${rf()}><path d="M470 1210 h180 a24 24 0 0 1 24 24 v60 a24 24 0 0 1 -24 24 h-180 a24 24 0 0 1 -24 -24 v-60 a24 24 0 0 1 24 -24z" fill="#fff" stroke="${INK}" stroke-width="6"/></g>${dots}`);}
+  c+=fade(1-P(t,18.2,.25),H('on a performance basis',540,1580,{h:1,s:66,a:'middle',f:BLUE},t,16.7,.9));
+  c+=W("If you don't get paid,",540,1560,{s:50,w:900,a:'middle'},t,18.45,19.4);
+  c+=W("we don't get paid.",540,1630,{s:50,w:900,a:'middle',f:BLUE},t,19.6,20.5);
+  const k=eio(P(t,21.05,.45));
+  let s=k>0?`<g transform="translate(540 900) scale(${L(1,.15,k)}) translate(-540 -900)" opacity="${1-P(t,21.3,.2)}">${c}</g>`:c;
+  s+=H("that's the whole pitch.",540,960,{h:1,s:96,a:'middle'},t,21.3,.6);
+  return s}
+
+function actD(t){let s='';
+  s+=fade(1-P(t,24.6,.25),H('just done this for a client',90,350,{h:1,s:66},t,22.2,1.0));
+  s+=H('an extra',90,350,{h:1,s:66},t,24.9,.4);
+  s+=pop(P(t,25.3,.4),300,500,T('$1.2M',70,580,{s:250,w:900,f:GREEN,ls:-8}));
+  s+=W('from this offer',95,650,{s:50},t,26.2,26.8);
+  s+=fade(1-P(t,26.6,.4),cabinet(540,1000,320,380,P(t,22.1,.6),eio(P(t,23.1,.3)),0));
+  for(let i=0;i<12;i++){const st=23.4+i*.13,q=P(t,st,.9);if(q<=0||q>=1)continue;
+    const e=eio(q),x=L(540,160+(i%5)*110,e),y=L(1060,480,e)-Math.sin(e*Math.PI)*120,r=(rnd(i)-.5)*60+e*180;
+    s+=`<g transform="translate(${x} ${y}) rotate(${r})" opacity="${1-P(q,.8,.2)}"><rect x="-38" y="-20" width="76" height="40" rx="5" fill="${GREEN}" stroke="${INK}" stroke-width="4"/><circle cx="0" cy="0" r="10" fill="none" stroke="#fff" stroke-width="3"/></g>`;}
+  const f=eo(P(t,27.3,.7));
+  if(f>0)s+=`<g transform="translate(${L(1200,90,f)} ${L(-300,830,f)-Math.sin(f*Math.PI)*120}) rotate(${L(30,-5,f)})" ${rf()}><use href="#cheque"/></g>`;
+  s+=H('and as a thank you…',120,1180,{h:1,s:60,rot:-5},t,27.4,1.0);
+  s+=pop(P(t,28.3,.35),900,950,`<g transform="translate(900 1120) scale(.45)" ${rf()}>${bottle()}</g>`);
+  s+=pop(P(t,29.85,.3),200,1320,T('over',90,1360,{s:130,w:900,ls:-4}));
+  s+=pop(P(t,30.1,.35),400,1450,T('$225,000',90,1500,{s:150,w:900,f:GREEN,ls:-6}));
+  s+=`<path d="M92 1530 q330 -20 690 8" stroke="${GREEN}" stroke-width="14" fill="none" stroke-linecap="round" ${rf()} ${dv(P(t,30.5,.4))}/>`;
+  return s}
+
+function actE(t){let s='';
+  s+=H('just old leads',90,360,{h:1,s:66},t,32.3,.6);
+  s+=W('already paid for',90,470,{s:90,w:900},t,33.2,34.0);
+  s+=`<path d="M60 1245 H1020" stroke="${INK}" stroke-width="6" ${rf()} ${dv(P(t,31.7,.5))}/>`;
+  s+=cabinet(540,700,420,540,P(t,31.7,.6),0,1-P(t,32.6,.6));
+  s+=pop(P(t,33.5,.3),540,840,`<g transform="rotate(6 540 840)" ${rf()}><rect x="430" y="775" width="220" height="130" rx="6" fill="#fff" stroke="${INK}" stroke-width="6"/><path d="M455 770 v20 M625 770 v20" stroke="${INK}" stroke-width="6"/><text x="540" y="860" class="t" font-size="44" font-weight="900" text-anchor="middle" fill="${GREEN}">PAID ✓</text></g>`);
+  const tq=P(t,34.4,.4);
+  if(tq>0){const hr=eio(P(t,34.9,.4))*90;
+    s+=`<g ${rf()} stroke="${INK}" stroke-width="7" stroke-linejoin="round"><path d="M750 985 H835 Q860 985 860 1010 V1060 H830 V1015 H750 Z" fill="#B9B9B9" ${dv(tq)}/>
+      <g transform="rotate(${hr} 800 975)" opacity="${tq}"><path d="M800 985 V955 M770 955 H830" stroke-width="10" stroke-linecap="round"/></g></g>`;}
+  if(t>35.1){const n=Math.floor((t-35.1)/.11);let landed=0;
+    for(let i=0;i<=n;i++){const age=t-(35.1+i*.11);const fy=1060+1400*age*age;const top=1225-Math.min(landed,24)*0;
+      if(fy<1222){s+=coin(845+(rnd(i)-.5)*10,fy,16);}else landed++;}
+    for(let k=0;k<Math.min(landed,40);k++){const col=k%4,row=Math.floor(k/4);s+=`<ellipse cx="${800+col*34+(row%2)*16}" cy="${1232-row*12}" rx="18" ry="8" fill="${GREEN}" stroke="${INK}" stroke-width="3"/>`;}}
+  s+=W('money from these old leads',540,1420,{s:56,a:'middle'},t,35.0,36.0);
+  s+=W('that they already own.',540,1500,{s:56,w:900,a:'middle',f:GREEN},t,36.1,36.9);
+  return s}
+
+function actF(t){let s='';
+  s+=pop(P(t,38.4,.3),540,390,T('ridiculously',540,420,{s:96,w:900,a:'middle'}));
+  s+=W('easy to sell',540,540,{s:96,w:900,a:'middle',f:GREEN},t,39.1,39.9);
+  const wq=P(t,37.3,.7);
+  s+=`<g ${rf()} stroke="${INK}" stroke-width="7" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="240" y="640" width="600" height="720" fill="#EAF0F7" fill-opacity="${cl(wq*2-1)}" ${dv(wq)}/>
+    <path d="M440 640 V1360 M640 640 V1360" stroke-width="5" ${dv(P(t,37.6,.4))}/>
+    <path d="M250 1200 h60 v-120 h70 v80 h60 v-200 h80 v140 h60 v-90 h90 v160 h70 v-60 h70 v90" stroke-width="4" opacity=".35" ${dv(P(t,37.7,.8))}/>`;
+  const fq=P(t,38.0,.8);
+  s+=`<circle cx="540" cy="920" r="55" fill="${PAPER}" ${dv(fq)}/><path d="M540 975 V1180 M540 1180 L500 1330 M540 1180 L580 1330 M540 1030 L470 1110 M540 1030 L615 1100" ${dv(fq)}/>
+    <path d="M540 990 l-12 40 l12 20 l12 -20 z" fill="${RED}" stroke-width="4" opacity="${fq}"/></g>`;
+  s+=pop(P(t,40.8,.3),650,1090,`<g transform="rotate(-10 650 1090)"><rect x="600" y="1055" width="110" height="72" rx="6" fill="#fff" stroke="${INK}" stroke-width="5"/><path d="M615 1080 H695 M615 1100 H670" stroke="${INK}" stroke-width="3" opacity=".4"/></g>`);
+  const lq=P(t,42.4,.3);
+  if(lq>0){s+=pop(lq,540,780,`<g stroke="${INK}" stroke-width="6"><circle cx="540" cy="770" r="50" fill="#FFE9A8"/><rect x="518" y="815" width="44" height="28" rx="5" fill="#B9B9B9"/></g>`);
+    for(let i=0;i<7;i++){const a=-Math.PI+i*Math.PI/6,x1=540+70*Math.cos(a),y1=770+70*Math.sin(a),x2=540+110*Math.cos(a),y2=770+110*Math.sin(a);
+      s+=`<path d="M${x1} ${y1} L${x2} ${y2}" stroke="${AMBER}" stroke-width="7" stroke-linecap="round" ${dv(P(t,42.6,.2))}/>`;}}
+  s+=H('understands the pain immediately',540,1490,{h:1,s:64,a:'middle'},t,41.6,1.2);
+  return s}
+
+function actG(t){let s='';
+  const bq=P(t,43.3,.4);
+  s+=pop(bq,540,970,`<g ${rf()} stroke="${INK}" stroke-width="7" stroke-linejoin="round"><rect x="100" y="470" width="880" height="1000" rx="24" fill="#D8B98A"/><rect x="140" y="540" width="800" height="900" fill="#fff"/><rect x="420" y="440" width="240" height="90" rx="14" fill="${INK}"/></g>`);
+  const items=[["They paid for those leads.",43.4,44.3],["They've forgotten about leads",44.8,46.1],["don't have the resource to call",46.4,48.3],["want money from those old leads",48.9,50.5]];
+  items.forEach(([txt,t0,tk],i)=>{const y=720+i*200;if(bq<1)return;
+    s+=`<rect x="180" y="${y-58}" width="72" height="72" rx="8" fill="#fff" stroke="${INK}" stroke-width="6" ${rf()}/>`;
+    s+=H(txt,290,y,{h:1,s:54,f:i===3?GREEN:INK},t,t0,.9);
+    s+=`<path d="M192 ${y-26} l24 28 l48 -66" stroke="${GREEN}" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round" ${dv(P(t,tk,.22))}/>`;});
+  return s}
+
+function actH(t){let s='';
+  s+=W('the easiest AI offer',540,400,{s:84,w:900,a:'middle'},t,51.3,52.6);
+  s+=H('on the planet',540,490,{h:1,s:66,a:'middle',f:BLUE},t,52.8,.6);
+  const a=(t-51)*1.6,ox=540+430*Math.cos(a),oy=900+140*Math.sin(a);
+  const card=pop(P(t,51.4,.3),ox,oy,`<g transform="translate(${ox} ${oy}) rotate(-8)"><rect x="-60" y="-38" width="120" height="76" rx="6" fill="#fff" stroke="${INK}" stroke-width="5"/><path d="M-42 -12 H42 M-42 8 H24" stroke="${INK}" stroke-width="4" opacity=".4"/></g>`);
+  if(Math.sin(a)<0)s+=card;
+  const gq=P(t,51.0,.7),sp=Math.cos((t-51)*.8);
+  s+=`<g ${rf()} stroke="${INK}" stroke-width="8" fill="none"><circle cx="540" cy="900" r="300" fill="#E4EAF7" fill-opacity="${cl(gq*2-1)}" ${dv(gq)}/>
+    <ellipse cx="540" cy="900" rx="${Math.abs(150*sp)+4}" ry="300" stroke-width="5" opacity=".5" ${dv(P(t,51.3,.5))}/>
+    <ellipse cx="540" cy="900" rx="300" ry="110" stroke-width="5" opacity=".5" ${dv(P(t,51.4,.5))}/>
+    <path d="M360 780 q40 -60 110 -30 q50 30 20 80 q-40 50 -100 20 z M600 900 q60 -40 110 10 q30 60 -30 110 q-60 20 -80 -40 z M430 1040 q40 -20 70 20 q10 40 -40 50 z" fill="${GREEN}" fill-opacity=".25" stroke-width="5" opacity="${cl(gq*2-1)}"/></g>`;
+  if(Math.sin(a)>=0)s+=card;
+  for(let i=0;i<22;i++){const r=270*Math.sqrt(rnd(i*3+1)),th=rnd(i*3+2)*Math.PI*2,x=540+r*Math.cos(th),y=900+r*Math.sin(th),q=P(t,54.6+i*.1,.25);
+    if(q>0)s+=pop(q,x,y,`<circle cx="${x}" cy="${y}" r="22" fill="${AMBER}" opacity=".25"/><circle cx="${x}" cy="${y}" r="10" fill="${AMBER}" stroke="${INK}" stroke-width="3"/>`);}
+  s+=W('never going to go out of fashion',540,1330,{s:52,a:'middle'},t,54.8,56.3);
+  s+=W('never going to run out of old leads',540,1410,{s:52,w:900,a:'middle',f:GREEN},t,57.3,59.0);
+  s+=`<path d="M470 1490 c0 -40 60 -40 70 0 c10 40 70 40 70 0 c0 -40 -60 -40 -70 0 c-10 40 -70 40 -70 0" stroke="${BLUE}" stroke-width="12" fill="none" stroke-linecap="round" ${rf()} ${dv(P(t,58.4,.6))}/>`;
+  return s}
+
+function actI(t){let s='';
+  s+=H("you don't have to be a",540,380,{h:1,s:70,a:'middle'},t,59.8,1.0);
+  s+=pop(P(t,60.9,.3),540,470,T('tech guru',540,500,{s:110,w:900,a:'middle',f:RED}));
+  s+=`<path d="M250 470 L830 482" stroke="${RED}" stroke-width="14" stroke-linecap="round" ${rf()} ${dv(P(t,61.8,.3))}/>`;
+  const hq=P(t,60.3,.35),e=eio(P(t,61.8,.6));
+  if(hq>0&&e<1)s+=G(`translate(${L(0,-900,e)} ${L(0,-200,e)}) rotate(${L(0,-70,e)} 540 850)`,pop(hq,540,850,`<g ${rf()} stroke="${INK}" stroke-width="7" stroke-linejoin="round"><path d="M410 1000 L540 640 L670 1000 Z" fill="#2B2A4A"/><ellipse cx="540" cy="1000" rx="210" ry="42" fill="#2B2A4A"/><path d="M510 760 l8 16 l18 2 l-13 12 l4 18 l-17 -9 l-17 9 l4 -18 l-13 -12 l18 -2z" fill="#FFD447" stroke-width="3"/></g><text x="540" y="930" class="t" font-size="36" font-weight="900" text-anchor="middle" fill="#fff">TECH GURU</text>`));
+  const bx=[[60,'old leads',62.4],[415,'SMS',62.8],[770,'sales',63.2]];
+  bx.forEach(([x,l,t0],i)=>{s+=pop(P(t,t0,.3),x+125,885,`<g ${rf()}><rect x="${x}" y="820" width="250" height="130" rx="18" fill="${i===1?BLUE:'#fff'}" stroke="${INK}" stroke-width="7"/></g>`+T(l,x+125,903,{h:1,s:56,a:'middle',f:i===1?'#fff':(i===2?GREEN:INK)}));
+    if(i<2)s+=`<path d="M${x+258} 885 H${x+348} M${x+328} 868 L${x+350} 885 L${x+328} 902" stroke="${INK}" stroke-width="7" fill="none" stroke-linecap="round" ${dv(P(t,t0+.2,.2))}/>`;});
+  s+=android(540,1390,.55,P(t,62.5,.35));
+  s+=W('very, very simple.',540,1500,{s:72,w:900,a:'middle',f:GREEN},t,63.0,63.9);
+  return s}
+
+function actJ(t){let s='';
+  s+=fade(1-P(t,65.8,.25),H("I'm so pumped",540,380,{h:1,s:76,a:'middle'},t,64.6,.8));
+  s+=H('I wrote a book on it',540,380,{h:1,s:76,a:'middle'},t,66.1,.8);
+  const xq=P(t,64.7,.3),xo=eio(P(t,66.0,.3));
+  if(xq>0&&xo<1)s+=G(`translate(540 1000) scale(${1-xo}) translate(-540 -1000)`,pop(xq,540,1000,`<g ${rf()} stroke="${INK}" stroke-width="7" stroke-linejoin="round"><rect x="340" y="880" width="400" height="300" fill="#D8B98A"/><path d="M340 880 L290 800 L490 800 L540 880 M740 880 L790 800 L590 800 L540 880" fill="#C9A474"/><path d="M340 960 H740" opacity=".3"/></g>`));
+  const bq=eo(P(t,66.2,.45));
+  if(bq>0){const by=5*Math.sin(t*2.2);s+=`<g transform="translate(540 ${870+by}) scale(${bq} 1) translate(-540 -870)"><rect x="300" y="530" width="500" height="687" fill="${INK}" opacity=".18" transform="translate(12 14)"/><image href="../iaa-book-cover.png" x="290" y="520" width="500" height="687"/></g>`;}
+  s+=fade(1-P(t,68.7,.25),H('The Instant AI Agency',540,1330,{h:1,s:66,a:'middle'},t,67.4,.8));
+  const g2=1-P(t,71.45,.2);
+  s+=fade(g2,H('grab it below',540,1330,{h:1,s:72,a:'middle',f:BLUE},t,69.2,.6)+
+    (t>69.6?`<g transform="translate(0 ${Math.abs(Math.sin((t-69.6)*6))*14})"><path d="M540 1365 V1440 M510 1410 L540 1440 L570 1410" stroke="${BLUE}" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round" ${dv(P(t,69.6,.3))}/></g>`:''));
+  const tq=P(t,70.3,.35);
+  if(tq>0){const a=10*Math.sin((t-70.3)*6)*Math.exp(-(t-70.3)*1.5);
+    s+=`<path d="M770 900 L800 965" stroke="${INK}" stroke-width="4" ${dv(tq)}/>`+pop(tq,900,1000,`<g transform="rotate(${-8+a} 800 960)" ${rf()}><rect x="780" y="960" width="250" height="100" rx="12" fill="${PAPER}" stroke="${INK}" stroke-width="6"/><circle cx="800" cy="975" r="7" fill="${INK}"/><text x="905" y="1033" class="t" font-size="58" font-weight="900" text-anchor="middle" fill="${GREEN}">$14.40</text></g>`);}
+  s+=W("If you don't love it,",540,1330,{s:52,a:'middle'},t,71.6,72.4);
+  s+=W('you can keep it',540,1400,{s:56,w:900,a:'middle',f:GREEN},t,72.5,73.1);
+  s+=W("and I'll refund you your money.",540,1470,{s:52,a:'middle'},t,73.3,74.4);
+  const cq=P(t,73.6,.7);
+  if(cq>0&&cq<1){const e=eio(cq);s+=`<g transform="translate(${L(820,200,e)} ${L(1060,1250,e)-Math.sin(e*Math.PI)*260}) scale(${L(1,2.4,e)})" opacity="${1-P(cq,.75,.25)}">${coin(0,0,22)}</g>`;}
+  return s}
+
+function actK(t){let s='';
+  s+=H('Take care.',540,400,{h:1,s:120,a:'middle'},t,74.8,.6);
+  s+=pop(P(t,74.7,.35),330,860,`<rect x="120" y="570" width="440" height="604" fill="${INK}" opacity=".18" transform="translate(12 14)"/><image href="../iaa-book-cover.png" x="110" y="560" width="440" height="604"/>`);
+  const open=P(t,75.7,.4);
+  let dg=['?','?','?'],dc=INK;
+  if(t>=75.0&&t<75.6)dg=[0,1,2].map(i=>String(Math.floor(rnd(Math.floor(t*24)+i*7)*10)));
+  if(t>=75.6){dg=['✓','✓','✓'];dc=GREEN;}
+  if(open>0)for(let i=0;i<9;i++){const a=-Math.PI*.95+i*Math.PI*.9/8,cx=820,cy=820;
+    s+=`<path d="M${cx+80*Math.cos(a)} ${cy+80*Math.sin(a)} L${cx+150*Math.cos(a)} ${cy+150*Math.sin(a)}" stroke="${AMBER}" stroke-width="8" stroke-linecap="round" ${dv(P(t,75.8,.3))}/>`;}
+  s+=pop(P(t,74.8,.35),820,1100,`<g transform="translate(820 1330) scale(.7)" ${rf()}>${bottle({open,digits:dg,dcol:dc})}</g>`);
+  return s}
+
+const ACTS=[[0,7.7,actA],[7.7,11.2,actB],[11.2,22.0,actC],[22.0,31.6,actD],[31.6,37.25,actE],[37.25,43.25,actF],[43.25,50.95,actG],[50.95,59.55,actH],[59.55,64.35,actI],[64.35,74.65,actJ],[74.65,78,actK]];
+const XF=.2;
+const badge=document.getElementById('badge'),blabel=document.getElementById('blabel');
+window.seek=function(t){UID=0;RF='r'+(Math.floor(t*8)%3);
+  let out=`<rect width="1080" height="1920" fill="${PAPER}"/><rect width="1080" height="1920" filter="url(#grain)"/>`;
+  ACTS.forEach(([s,e,f],i)=>{if(t<s||t>=e+XF)return;let o=1;if(i>0)o=Math.min(o,P(t,s,XF));if(t>=e)o=Math.min(o,1-P(t,e,XF));
+    const body=f(t);out+=o>=1?body:`<g opacity="${o.toFixed(3)}">${body}</g>`;});
+  document.getElementById('st').innerHTML=out;
+  let bo=0,bs=1;
+  if(t<6.4){const q=P(t,.4,.3);bo=cl(q*3)*(1-P(t,6.0,.3));bs=bk(q);}
+  else if(t>=74.9){const q=P(t,74.9,.35);bo=cl(q*3);bs=1.25*bk(q);}
+  badge.style.opacity=bo;badge.style.transform=`scale(${bs})`;blabel.style.opacity=bo;blabel.style.left=(t>=74.9?320:278)+'px';
+};
+const q=new URLSearchParams(location.search);if(q.get('t'))seek(parseFloat(q.get('t')));else seek(0);
+</script>
+</body></html>

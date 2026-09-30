@@ -1,0 +1,5 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/g02-dials.png
+>>> createTask veo-3-1 4s 9:16 1080p (credits before: 1045.0)
+>>> taskId 222e387fc944adad68e96a3c4e6aa297
+>>> saved 3138460 bytes -> creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/g02-dials.mp4 in 201s, 65.0 credits (balance now: 867.0)
+creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/g02-dials.mp4

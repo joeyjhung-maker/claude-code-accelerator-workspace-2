@@ -1,0 +1,4 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/g01-slide.png
+>>> createTask veo-3-1 4s 9:16 1080p (credits before: 1045.0)
+>>> taskId 9fe1c10dbb593e1e5547df52227197b6
+render failed: {"taskId": "9fe1c10dbb593e1e5547df52227197b6", "model": "veo-3-1", "state": "fail", "param": "{\"input\":\"{\\\"duration\\\":4,\\\"aspect_ratio\\\":\\\"9:16\\\",\\\"image_urls\\\":[\\\"https://tempfile.redpandaai.co/kieai/11351685/images/refs/g01-slide.png\\\"],\\\"model\\\":\\\"veo3_fast\\\",\\\"prompt\\\":\\\"3D animated Pixar-style shot. The whisky bottle with the brass padlock slides fast down the long glossy table straight at the camera, spinning slightly, and screeches to a stop right in front of the lens with a little wobble. At the far end the cartoon man throws his arms up and grins p

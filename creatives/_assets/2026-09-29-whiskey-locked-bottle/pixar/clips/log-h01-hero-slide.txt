@@ -1,0 +1,5 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/h01-hero-slide.png
+>>> createTask veo-3-1 6s 9:16 1080p (credits before: 1407.0)
+>>> taskId 96c2df1a07a762b6896de26c160159a5
+>>> saved 4165979 bytes -> creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/h01-hero-slide.mp4 in 358s, 65.0 credits (balance now: 1147.0)
+creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/h01-hero-slide.mp4

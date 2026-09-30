@@ -1,0 +1,157 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800;900&family=Caveat:wght@600;700&display=block" rel="stylesheet">
+<style>
+  :root{--paper:#F5EFE3;--ink:#1C1B1F;--blue:#2F5BFF;--red:#D9483B;--green:#18A058;--amber:#C9822B;}
+  html,body{margin:0;padding:0;background:var(--paper);}
+  .frame{width:1080px;height:1920px;position:relative;overflow:hidden;background:var(--paper);}
+  svg.stage{position:absolute;inset:0;width:1080px;height:1920px;fill:#1C1B1F;}
+  .t{font-family:Poppins,sans-serif;}
+  .h{font-family:Caveat,cursive;}
+  .badge{position:absolute;left:70px;top:1330px;width:190px;height:190px;border-radius:50%;overflow:hidden;
+         border:7px solid var(--ink);box-shadow:8px 8px 0 var(--ink);background:#222;}
+  .badge img{width:100%;height:100%;object-fit:cover;object-position:52% 22%;transform:scale(1.9);transform-origin:52% 26%;}
+  .badgelabel{position:absolute;left:278px;top:1390px;font-family:Caveat,cursive;font-size:64px;color:var(--ink);transform:rotate(-4deg);}
+  .safe{display:none;}
+  body.showsafe .safe{display:block;position:absolute;left:0;right:0;background:rgba(217,72,59,.12);outline:2px dashed var(--red);}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4"/>
+    </filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="2"/>
+      <feColorMatrix values="0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.22  0 0 0 0.08 0"/></filter>
+    <!-- THE SALES ANDROID (series hero, unchanged from Sales Androids) — origin at feet centre, ~430px tall -->
+    <g id="android" stroke="#1C1B1F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="0" y1="-395" x2="0" y2="-430"/><circle cx="0" cy="-442" r="13" fill="#2F5BFF"/>
+      <rect x="-95" y="-395" width="190" height="150" rx="55" fill="#F5EFE3"/>
+      <rect x="-70" y="-365" width="140" height="62" rx="31" fill="#2F5BFF"/>
+      <circle cx="-30" cy="-334" r="11" fill="#fff" stroke="none"/><circle cx="30" cy="-334" r="11" fill="#fff" stroke="none"/>
+      <path d="M-28 -278 Q0 -258 28 -278" fill="none"/>
+      <rect x="-80" y="-232" width="160" height="150" rx="34" fill="#F5EFE3"/>
+      <circle cx="0" cy="-165" r="20" fill="#2F5BFF"/>
+      <path d="M-40 -110 H40" fill="none" opacity=".5"/>
+      <path d="M-50 -82 L-55 -10 M50 -82 L55 -10" fill="none"/>
+      <path d="M-78 -10 H-32 M32 -10 H78" fill="none" stroke-width="10"/>
+    </g>
+    <!-- THE LOCKED BOTTLE (this ad's hero prop) — origin at base centre, ~760px tall -->
+    <g id="bottle" stroke="#1C1B1F" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M-150 0 H150 V-380 Q150 -470 60 -520 V-640 H-60 V-520 Q-150 -470 -150 -380 Z" fill="#F5EFE3"/>
+      <path d="M-142 -8 H142 V-360 Q142 -380 100 -380 H-100 Q-142 -380 -142 -360 Z" fill="#C9822B" stroke="none" opacity=".85"/>
+      <path d="M-110 -330 H110 V-160 H-110 Z" fill="#fff"/>
+      <text x="0" y="-270" class="t" font-size="44" font-weight="900" text-anchor="middle" fill="#D9483B" stroke="none">WHISKEY</text>
+      <path d="M-70 -230 H70 M-50 -200 H50" stroke-width="5" opacity=".35"/>
+      <path d="M-100 -470 Q-40 -500 -30 -440" stroke="#fff" stroke-width="10" opacity=".7" fill="none"/>
+      <!-- combination lock clamped over the cork -->
+      <rect x="-78" y="-760" width="156" height="140" rx="18" fill="#1C1B1F"/>
+      <rect x="-62" y="-725" width="124" height="60" rx="8" fill="#F5EFE3"/>
+      <path d="M-21 -725 V-665 M21 -725 V-665" stroke-width="5"/>
+      <text x="-41" y="-680" class="t" font-size="36" font-weight="800" text-anchor="middle" stroke="none">?</text>
+      <text x="0" y="-680" class="t" font-size="36" font-weight="800" text-anchor="middle" stroke="none">?</text>
+      <text x="41" y="-680" class="t" font-size="36" font-weight="800" text-anchor="middle" stroke="none">?</text>
+    </g>
+    <g id="cheque">
+      <rect x="0" y="0" width="560" height="250" rx="14" fill="#fff" stroke="#1C1B1F" stroke-width="7"/>
+      <text x="32" y="62" class="t" font-size="34" font-weight="800" fill="#18A058" stroke="none">THANK YOU</text>
+      <path d="M32 120 H420 M32 170 H300" stroke="#1C1B1F" stroke-width="5" opacity=".35" fill="none"/>
+      <rect x="420" y="140" width="110" height="70" rx="10" fill="none" stroke="#18A058" stroke-width="6"/>
+      <path d="M440 190 q15 -30 30 -8 q15 20 40 -18" stroke="#18A058" stroke-width="6" fill="none"/>
+      <path d="M300 222 q40 -20 80 0 t80 0" stroke="#1C1B1F" stroke-width="5" fill="none"/>
+    </g>
+  </defs>
+</svg>
+
+<!-- ================= FRAME 1 — HOOK (0:00–0:07) ================= -->
+<div class="frame" id="f1">
+<svg class="stage" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" filter="url(#grain)"/>
+  <text x="90" y="350" class="h" font-size="72" font-weight="700">I sent this</text>
+  <text x="90" y="465" class="t" font-size="112" font-weight="900">bottle of</text>
+  <text x="90" y="585" class="t" font-size="112" font-weight="900" fill="#C9822B">whiskey</text>
+  <path d="M92 610 q200 -18 420 6" stroke="#C9822B" stroke-width="14" fill="none" stroke-linecap="round" filter="url(#rough)"/>
+  <!-- bottle -->
+  <g transform="translate(760 1440) scale(.95)" filter="url(#rough)"><use href="#bottle"/></g>
+  <!-- note pointing at the lock -->
+  <text x="90" y="770" class="h" font-size="54" font-weight="700" fill="#2F5BFF" transform="rotate(-4 90 770)">little combination code</text>
+  <path d="M470 770 q80 -20 130 20" stroke="#2F5BFF" stroke-width="5" fill="none" filter="url(#rough)"/>
+  <path d="M578 772 l24 18 l-22 14" stroke="#2F5BFF" stroke-width="5" fill="none"/>
+  <!-- the letter, tucked beside the bottle -->
+  <g transform="translate(120 950) rotate(-8)" filter="url(#rough)" stroke="#1C1B1F" stroke-width="7" stroke-linejoin="round">
+    <rect x="0" y="0" width="380" height="270" fill="#fff"/>
+    <path d="M0 0 L190 140 L380 0" fill="none"/>
+    <text x="190" y="228" class="h" font-size="46" text-anchor="middle" stroke="none">+ a letter</text>
+  </g>
+  <!-- addressed tag -->
+  <g transform="translate(330 1250) rotate(4)" filter="url(#rough)">
+    <rect x="0" y="0" width="330" height="90" rx="10" fill="#F5EFE3" stroke="#1C1B1F" stroke-width="6"/>
+    <text x="165" y="60" class="t" font-size="38" font-weight="800" text-anchor="middle" fill="#18A058">$10M business</text>
+  </g>
+</svg>
+<div class="badge"><img src="dan2.png"></div><div class="badgelabel">Dan</div>
+<div class="safe" style="top:0;height:269px"></div><div class="safe" style="bottom:0;height:384px"></div>
+</div>
+
+<!-- ================= FRAME 2 — THE ONE PITCH (0:11–0:21) ================= -->
+<div class="frame" id="f2">
+<svg class="stage" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" filter="url(#grain)"/>
+  <text x="540" y="340" class="h" font-size="62" font-weight="700" text-anchor="middle">one single offer:</text>
+  <!-- offer card -->
+  <g filter="url(#rough)">
+    <rect x="80" y="390" width="920" height="420" rx="24" fill="#fff" stroke="#1C1B1F" stroke-width="8"/>
+  </g>
+  <text x="540" y="500" class="t" font-size="54" font-weight="800" text-anchor="middle">Do you have any old leads</text>
+  <text x="540" y="575" class="t" font-size="58" font-weight="800" text-anchor="middle">sitting in your database</text>
+  <text x="540" y="650" class="t" font-size="58" font-weight="800" text-anchor="middle">that we can turn into</text>
+  <text x="540" y="755" class="t" font-size="92" font-weight="900" text-anchor="middle" fill="#18A058">SALES?</text>
+  <!-- dusty lead cards -> android with phone -->
+  <g filter="url(#rough)" stroke="#1C1B1F" stroke-width="6" stroke-linejoin="round">
+    <rect x="110" y="1000" width="300" height="360" fill="#EFE5D2"/>
+    <rect x="130" y="1030" width="260" height="140" fill="#F5EFE3"/>
+    <rect x="130" y="1200" width="260" height="140" fill="#F5EFE3"/>
+    <rect x="215" y="1080" width="90" height="26" rx="8" fill="#1C1B1F"/>
+    <rect x="215" y="1250" width="90" height="26" rx="8" fill="#1C1B1F"/>
+    <path d="M150 1010 q30 -10 60 0 M300 1015 q30 -10 60 0" opacity=".4" stroke-width="4"/>
+  </g>
+  <text x="260" y="975" class="h" font-size="50" font-weight="700" text-anchor="middle">OLD LEADS</text>
+  <!-- SMS bubbles -->
+  <g filter="url(#rough)">
+    <path d="M470 1040 h250 a24 24 0 0 1 24 24 v70 a24 24 0 0 1 -24 24 h-200 l-40 30 v-30 h-10 a24 24 0 0 1 -24 -24 v-70 a24 24 0 0 1 24 -24z" fill="#2F5BFF" stroke="#1C1B1F" stroke-width="6"/>
+    <path d="M470 1210 h180 a24 24 0 0 1 24 24 v60 a24 24 0 0 1 -24 24 h-180 a24 24 0 0 1 -24 -24 v-60 a24 24 0 0 1 24 -24z" fill="#fff" stroke="#1C1B1F" stroke-width="6"/>
+  </g>
+  <text x="595" y="1115" class="t" font-size="38" font-weight="800" text-anchor="middle" fill="#fff">AI + SMS</text>
+  <text x="560" y="1285" class="t" font-size="60" font-weight="900" text-anchor="middle">• • •</text>
+  <g transform="translate(890 1400) scale(.6)" filter="url(#rough)"><use href="#android"/></g>
+  <!-- performance line -->
+  <text x="540" y="1560" class="t" font-size="50" font-weight="900" text-anchor="middle">If you don't get paid,</text>
+  <text x="540" y="1630" class="t" font-size="50" font-weight="900" text-anchor="middle" fill="#2F5BFF">we don't get paid.</text>
+</svg>
+<div class="safe" style="top:0;height:269px"></div><div class="safe" style="bottom:0;height:384px"></div>
+</div>
+
+<!-- ================= FRAME 3 — $1.2M / $225K (PEAK) ================= -->
+<div class="frame" id="f3">
+<svg class="stage" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" filter="url(#grain)"/>
+  <text x="90" y="350" class="h" font-size="66" font-weight="700">an extra</text>
+  <text x="70" y="580" class="t" font-size="250" font-weight="900" fill="#18A058" letter-spacing="-8">$1.2M</text>
+  <text x="95" y="650" class="t" font-size="50" font-weight="800">from this offer</text>
+  <!-- thank-you cheque tied to a bottle, callback to the hook -->
+  <g transform="translate(90 830) rotate(-5)" filter="url(#rough)"><use href="#cheque"/></g>
+  <text x="120" y="1180" class="h" font-size="60" font-weight="700" transform="rotate(-5 120 1180)">and as a thank you…</text>
+  <text x="90" y="1360" class="t" font-size="130" font-weight="900" letter-spacing="-4">over</text>
+  <text x="90" y="1500" class="t" font-size="150" font-weight="900" fill="#18A058" letter-spacing="-6">$225,000</text>
+  <path d="M92 1530 q330 -20 690 8" stroke="#18A058" stroke-width="14" fill="none" stroke-linecap="round" filter="url(#rough)"/>
+  <g transform="translate(900 1120) scale(.45)" filter="url(#rough)"><use href="#bottle"/></g>
+</svg>
+<div class="safe" style="top:0;height:269px"></div><div class="safe" style="bottom:0;height:384px"></div>
+</div>
+<script>
+  const q=new URLSearchParams(location.search);
+  const f=q.get('f')||'f1'; document.querySelectorAll('.frame').forEach(el=>{if(el.id!==f)el.style.display='none'});
+  if(q.get('safe'))document.body.classList.add('showsafe');
+</script>
+</body></html>

@@ -1,0 +1,5 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/g20-dan-talk.png
+>>> audio uploaded: https://tempfile.redpandaai.co/kieai/11351685/audio/refs/refund-line.mp3
+>>> createTask kling/ai-avatar-pro (credits before: 915.0)
+>>> taskId a23d6c15a9d9feb30e670f73d9ef5e29
+timed out, taskId a23d6c15a9d9feb30e670f73d9ef5e29

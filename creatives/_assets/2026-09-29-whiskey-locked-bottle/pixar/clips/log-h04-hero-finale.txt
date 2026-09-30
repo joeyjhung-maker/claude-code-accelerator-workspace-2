@@ -1,0 +1,5 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/h04-hero-finale.png
+>>> createTask veo-3-1 6s 9:16 1080p (credits before: 1407.0)
+>>> taskId 4ad2d185d1ec7299b88ff332069fe7d0
+>>> saved 13744471 bytes -> creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/h04-hero-finale.mp4 in 194s, 65.0 credits (balance now: 1147.0)
+creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/h04-hero-finale.mp4

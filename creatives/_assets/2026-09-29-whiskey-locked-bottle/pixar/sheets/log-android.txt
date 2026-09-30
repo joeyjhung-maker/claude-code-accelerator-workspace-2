@@ -1,0 +1,18 @@
+!! warning: 9:16 isn't feed-native (use 4:5 or 1:1)
+Traceback (most recent call last):
+  File "/Users/joey/Documents/claude-code-accelerator-workspace/scripts/run_image.py", line 220, in <module>
+    main()
+    ~~~~^^
+  File "/Users/joey/Documents/claude-code-accelerator-workspace/scripts/run_image.py", line 186, in main
+    ref_url = args.ref if args.ref.startswith("http") else upload_ref(args.ref, token)
+                                                           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/joey/Documents/claude-code-accelerator-workspace/scripts/run_image.py", line 111, in upload_ref
+    b64 = base64.b64encode(p.read_bytes()).decode()
+                           ~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 777, in read_bytes
+    with self.open(mode='rb', buffering=0) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'creatives/_assets/2026-09-29-whiskey-locked-bottle/2026-09-29-sales-androids-styleframe-f1.png'

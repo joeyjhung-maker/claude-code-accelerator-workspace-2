@@ -1,0 +1,5 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/v14b-pockets.png
+>>> createTask veo-3-1 6s 9:16 1080p (credits before: 1846.0)
+>>> taskId c3ce25c9c798d58d785814db50920d3f
+>>> saved 6949006 bytes -> /Users/joey/Documents/claude-code-accelerator-workspace/creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/v14b-pockets.mp4 in 348s, 65.0 credits (balance now: 1456.0)
+/Users/joey/Documents/claude-code-accelerator-workspace/creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/v14b-pockets.mp4

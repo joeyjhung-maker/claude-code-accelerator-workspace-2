@@ -1,0 +1,5 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/v13-avalanche.png
+>>> createTask veo-3-1 6s 9:16 1080p (credits before: 1976.0)
+>>> taskId 9a3e9892fc96a276a3993a6342a4ba8e
+>>> saved 6243022 bytes -> /Users/joey/Documents/claude-code-accelerator-workspace/creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/v13-avalanche.mp4 in 197s, 65.0 credits (balance now: 1521.0)
+/Users/joey/Documents/claude-code-accelerator-workspace/creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/v13-avalanche.mp4

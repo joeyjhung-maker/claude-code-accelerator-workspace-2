@@ -1,0 +1,4 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/k09-cash.png
+>>> createTask veo-3-1 6s 9:16 1080p (credits before: 335.0)
+>>> saved 4590578 bytes -> creatives/_assets/2026-09-29-whiskey-locked-bottle/heist/clips/c09-cash.mp4 in 137s, 65.0 credits (balance now: 75.0)
+creatives/_assets/2026-09-29-whiskey-locked-bottle/heist/clips/c09-cash.mp4

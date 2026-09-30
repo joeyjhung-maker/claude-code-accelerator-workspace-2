@@ -1,0 +1,5 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/h03-hero-reveal.png
+>>> createTask veo-3-1 6s 9:16 1080p (credits before: 1407.0)
+>>> taskId a5e4bfcbea012727d2c457d3323277ac
+>>> saved 9043706 bytes -> creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/h03-hero-reveal.mp4 in 362s, 65.0 credits (balance now: 1147.0)
+creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/h03-hero-reveal.mp4

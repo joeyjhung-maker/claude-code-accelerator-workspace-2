@@ -21,3 +21,13 @@ __pycache__/
 # re-running the decode. Keep the JSON/report/analysis outputs, drop the raw posters
 # and video files so they don't bloat git history.
 decoder-runs/*/creatives/
+
+# Whiskey animation builds: rebuildable intermediates (picture tracks, stems, raw frames).
+# Kept in git: clips, keyframes, overlays, scripts, VO masters, pixar final mix.
+creatives/_assets/2026-09-29-whiskey-locked-bottle/*/build/base.mp4
+creatives/_assets/2026-09-29-whiskey-locked-bottle/*/build/*.raw
+creatives/_assets/2026-09-29-whiskey-locked-bottle/build/*.wav
+creatives/_assets/2026-09-29-whiskey-locked-bottle/game/*.wav
+creatives/_assets/2026-09-29-whiskey-locked-bottle/heist/build/*.wav
+creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/build/*.wav
+!creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/build/mix-final.wav

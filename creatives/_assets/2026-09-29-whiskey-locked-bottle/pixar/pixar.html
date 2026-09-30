@@ -1,0 +1,84 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=block" rel="stylesheet">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}video{display:none}</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas><video id="v" src="build/base.mp4" muted preload="auto" playsinline></video>
+<script src="mograph.js"></script>
+<script>
+// Pixar version: base picture track (build/base.mp4, cut by build/edit.py) + big bouncy cartoon words + comic bursts + the real book cover.
+const W=1080,H=1920,cv=document.getElementById('c'),x=cv.getContext('2d'),vid=document.getElementById('v');
+const cl=(v,a=0,b=1)=>Math.max(a,Math.min(b,v)),P=(t,s,d)=>cl((t-s)/d),eo=v=>1-Math.pow(1-v,3),L=(a,b,v)=>a+(b-a)*v;
+const bk=v=>{if(v<=0)return 0;if(v>=1)return 1;const c1=2.2,c3=c1+1;return 1+c3*Math.pow(v-1,3)+c1*Math.pow(v-1,2)};
+const cover=new Image();cover.src='../iaa-book-cover.png';
+window.ready=Promise.all([new Promise(r=>{if(vid.readyState>=2)r();else vid.addEventListener('loadeddata',r,{once:true})}),new Promise(r=>{cover.complete?r():cover.onload=r}),
+  document.fonts.load('100px "Luckiest Guy"')]).then(()=>document.fonts.ready);
+const Y='#FFD447',G='#4BE37E',B='#6FB6FF',Wt='#FFFFFF';
+// chunks: [t0, t1, [[text, colour], ...lines], opts]
+const CH=[
+ [.3,1.65,[['I SENT THIS',Wt]],{y:470}],[1.7,2.95,[['BOTTLE OF',Wt],['WHISKEY',Y]],{y:470}],
+ [3.0,4.2,[['COMBINATION',Y],['CODE',Wt]],{y:1640}],[4.2,4.95,[['+ A LETTER',Wt]],{y:1640}],
+ [5.0,7.6,[['TO A',Wt],['$10 MILLION',Y],['BUSINESS',Wt]]],
+ [7.8,9.5,[['THEY DIAL',Wt],['THE NUMBER',Wt]]],[9.6,11.15,[['ONE SINGLE',Wt],['OFFER',Y]]],
+ [11.3,12.85,[['ANY OLD',Wt],['LEADS?',Y]]],[12.9,14.95,[['SITTING IN YOUR',Wt],['DATABASE',Wt]]],
+ [15.0,16.0,[['TURN INTO',Wt],['SALES?',G]]],[16.0,16.6,[['AI + SMS',B]]],
+ [16.7,18.35,[['PERFORMANCE',Y],['BASIS',Wt]]],
+ [18.45,19.5,[["YOU DON'T",Wt],['GET PAID,',Wt]]],[19.6,21.05,[["WE DON'T",Y],['GET PAID.',Y]]],
+ [21.1,22.0,[["THAT'S THE",Wt],['WHOLE PITCH',Wt]]],
+ [22.15,24.8,[['DONE THIS FOR',Wt],['A CLIENT',Wt]]],
+ [24.9,25.3,[['AN EXTRA',Wt]]],[25.3,27.0,[['AN EXTRA',Wt],['$1.2M',G,1.9]],{burst:G}],
+ [27.2,29.75,[['AS A',Wt],['THANK YOU...',Y]],{y:1560}],
+ [29.85,31.55,[['OVER',Wt],['$225,000',G,1.5]],{burst:Y}],
+ [32.3,33.15,[['JUST OLD',Wt],['LEADS',Wt]]],[33.2,34.3,[['ALREADY',Y],['PAID FOR',Y]]],
+ [34.4,37.2,[['PULLING MONEY',G],['FROM THESE',Wt],['OLD LEADS',Wt]]],
+ [37.4,39.0,[['RIDICULOUSLY',Wt]]],[39.0,41.5,[['RIDICULOUSLY',Wt],['EASY',Y,1.5],['TO SELL',Wt]]],
+ [41.6,43.2,[['UNDERSTANDS',Wt],['THE PAIN',Wt],['IMMEDIATELY',Y]]],
+ [43.4,44.7,[['THEY PAID FOR',Wt],['THOSE LEADS',Wt]]],[44.8,46.2,[["THEY'VE",Wt],['FORGOTTEN',Y],['ABOUT LEADS',Wt]]],
+ [46.3,48.8,[["DON'T HAVE",Wt],['THE RESOURCE',Wt],['TO CALL',Wt]]],[48.9,50.9,[['BUT THEY WANT',Wt],['MONEY',G,1.5]]],
+ [51.1,54.3,[['THE EASIEST',Wt],['AI OFFER',Y],['ON THE PLANET',Wt]]],
+ [54.4,57.2,[['NEVER GOING',Wt],['OUT OF',Wt],['FASHION',Y]]],
+ [57.3,59.45,[['NEVER RUN OUT',Wt],['OF OLD LEADS',Y]]],
+ [59.7,62.2,[["YOU DON'T",Wt],['HAVE TO BE A',Wt],['TECH GURU',Y]],{strike:61.8}],
+ [62.3,64.25,[['VERY, VERY',Wt],['SIMPLE',G,1.5]]],
+ [64.5,66.0,[["I'M SO",Wt],['PUMPED!',Y,1.3]]],
+ [66.1,67.3,[['I WROTE A',Wt],['BOOK ON IT',Y]],{top:1}],
+ [67.4,68.8,[['THE INSTANT',Wt],['AI AGENCY',Y]],{top:1}],
+ [68.9,71.5,[['ONLY',Wt],['$14.40',G,1.5]],{top:1}],
+ [71.6,72.45,[["IF YOU DON'T",Wt],['LOVE IT',Y]]],[72.5,73.25,[['KEEP IT',Y,1.3]]],[73.3,74.55,[["I'LL REFUND",Wt],['YOUR MONEY',G]]],
+ [74.75,76.0,[['TAKE CARE!',Y,1.3]],{y:1110}],
+ [76.0,77.6,[['THE INSTANT',Wt],['AI AGENCY',Y],['$14.40',G]],{y:1130}],
+];
+function fitSize(lines){x.font='100px "Luckiest Guy"';let s=118;for(const [tx,,m] of lines){const w=x.measureText(tx).width*(m||1)*1.18;s=Math.min(s,118*980/w);}return s;}
+function burst(cx,cy,r,col,t,t0){const q=bk(P(t,t0,.3));if(q<=0)return;x.save();x.translate(cx,cy);x.rotate(t*.6);x.scale(q,q);x.beginPath();
+  for(let i=0;i<32;i++){const a=i/32*Math.PI*2,rr=i%2?r*.62:r;x.lineTo(Math.cos(a)*rr,Math.sin(a)*rr);}x.closePath();
+  x.fillStyle=col;x.globalAlpha=.9;x.fill();x.lineWidth=14;x.strokeStyle='#1b1b24';x.stroke();x.restore();}
+function chunk(t,[t0,t1,lines,o={}]){if(t<t0||t>=t1)return;const out=P(t,t1-.14,.14),s0=fitSize(lines);
+  const lh=s0*1.02,tot=lines.reduce((a,l)=>a+lh*(l[2]||1),0);let y=(o.y??(o.top?560:(o.end?1300:1420)))-tot/2;
+  if(o.burst)burst(W/2,y+tot-lh*.9,330,o.burst,t,t0+.05);
+  lines.forEach(([tx,col,m],j)=>{const sz=s0*(m||1),q=bk(P(t,t0+j*.09,.28));y+=lh*(m||1);if(q<=0)return;
+    const wob=Math.sin((t-t0)*7+j)*1.6,sc=q*(1-out)*(1+.02*Math.sin((t-t0)*9));
+    x.save();x.translate(W/2,y-sz*.35);x.rotate((wob+(1-q)*(j%2?9:-9))*Math.PI/180);x.scale(sc,sc);
+    x.font=`${sz}px "Luckiest Guy"`;x.textAlign='center';x.textBaseline='middle';x.lineJoin='round';
+    x.shadowColor='rgba(0,0,0,.45)';x.shadowOffsetY=sz*.09;x.shadowBlur=0;x.lineWidth=sz*.2;x.strokeStyle='#1b1b24';x.strokeText(tx,0,0);
+    x.shadowColor='transparent';x.fillStyle=col;x.fillText(tx,0,0);
+    if(o.strike&&t>o.strike&&j===lines.length-1){const w=x.measureText(tx).width,p=eo(P(t,o.strike,.25));x.fillStyle='#ff3b3b';x.strokeStyle='#1b1b24';x.lineWidth=8;x.beginPath();x.rect(-w/2-10,-sz*.08,(w+20)*p,sz*.16);x.fill();x.stroke();}
+    x.restore();});}
+function drawCover(t){const t0=66.25;if(t<t0||t>=71.55)return;const q=bk(P(t,t0,.45)),w=470,h=w*cover.height/cover.width,cx=W/2,bot=1600+Math.sin(t*2)*10;
+  x.save();x.translate(cx,bot-h/2);x.rotate(Math.sin(t*1.4)*.025);x.scale(q,q);
+  const g=x.createRadialGradient(0,0,100,0,0,620);g.addColorStop(0,'rgba(255,220,120,.55)');g.addColorStop(1,'rgba(255,200,80,0)');x.fillStyle=g;x.fillRect(-700,-700,1400,1400);
+  x.shadowColor='rgba(0,0,0,.6)';x.shadowBlur=50;x.shadowOffsetY=24;x.fillStyle='#1b1b24';x.fillRect(-w/2-10,-h/2-10,w+20,h+20);x.shadowBlur=0;
+  x.drawImage(cover,-w/2,-h/2,w,h);
+  const sp=P(t,66.8,1.0);if(sp>0&&sp<1){x.beginPath();x.rect(-w/2,-h/2,w,h);x.clip();const sx=L(-w,w,sp),gg=x.createLinearGradient(sx-110,-h/2,sx+110,h/2);gg.addColorStop(0,'rgba(255,255,255,0)');gg.addColorStop(.5,'rgba(255,250,230,.55)');gg.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=gg;x.fillRect(-w/2,-h/2,w,h);}
+  x.restore();
+  if(t>69.2){const b=Math.abs(Math.sin((t-69.2)*5))*16;x.save();x.fillStyle=Y;x.strokeStyle='#1b1b24';x.lineWidth=10;x.beginPath();const ax=W/2,ay=1660+b;x.moveTo(ax-44,ay);x.lineTo(ax+44,ay);x.lineTo(ax,ay+50);x.closePath();x.stroke();x.fill();x.restore();}}
+window.seek=async function(t){
+  await new Promise(r=>{const tt=Math.min(77.59,t+1/60);if(Math.abs(vid.currentTime-tt)<1e-4&&vid.readyState>=2)return r();vid.addEventListener('seeked',r,{once:true});vid.currentTime=tt;});
+  const [cs,cdx,cdy]=MG.camera(t);x.save();x.translate(W/2+cdx,H/2+cdy);x.scale(cs,cs);x.drawImage(vid,-W/2-8,-H/2-8,W+16,H+16);x.restore();
+  MG.draw(x,t);
+  drawCover(t);
+  for(const c of CH)chunk(t,c);
+  // white pop flash on the two big money moments
+  for(const [t0,a] of [[25.3,.45],[30.1,.4],[66.25,.3]]){const g=t-t0;if(g>=0&&g<.25){x.fillStyle=`rgba(255,255,255,${a*(1-g/.25)})`;x.fillRect(0,0,W,H);}}
+};
+const q=new URLSearchParams(location.search);window.ready.then(()=>seek(parseFloat(q.get('t')||'0')));
+</script>
+</body></html>

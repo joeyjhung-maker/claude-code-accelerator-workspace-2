@@ -93,7 +93,7 @@ def post_json(url, payload, token):
             "User-Agent": UA,
         },
     )
-    with urllib.request.urlopen(req, context=_CTX) as resp:
+    with urllib.request.urlopen(req, context=_CTX, timeout=90) as resp:
         return json.loads(resp.read().decode())
 
 
@@ -101,7 +101,7 @@ def get_json(url, token):
     req = urllib.request.Request(
         url, headers={"Authorization": f"Bearer {token}", "User-Agent": UA}
     )
-    with urllib.request.urlopen(req, context=_CTX) as resp:
+    with urllib.request.urlopen(req, context=_CTX, timeout=90) as resp:
         return json.loads(resp.read().decode())
 
 
@@ -125,7 +125,7 @@ def upload_ref(local_path, token):
 
 def download(url, out_path):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, context=_CTX) as resp:
+    with urllib.request.urlopen(req, context=_CTX, timeout=90) as resp:
         data = resp.read()
     Path(out_path).write_bytes(data)
     return len(data)
@@ -135,7 +135,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("prompt", help="the render prompt")
     ap.add_argument("--out", required=True, help="where to save the .png")
-    ap.add_argument("--ref", help="reference image (local path or URL) — flips to edit model")
+    ap.add_argument("--ref", help="reference image(s), comma-separated (local path or URL) — flips to edit model")
     ap.add_argument("--aspect", default="4:5", help="4:5 (default) or 1:1 — feed-native only")
     ap.add_argument("--model", help="override the model id")
     ap.add_argument(
@@ -183,8 +183,9 @@ def main():
     if args.ref:
         if not schema["ref_key"]:
             sys.exit(f"{model} has no reference-image variant wired in — check docs.kie.ai")
-        ref_url = args.ref if args.ref.startswith("http") else upload_ref(args.ref, token)
-        payload["input"][schema["ref_key"]] = [ref_url]
+        # comma-separated --ref passes several references (e.g. a character + a prop)
+        refs = [r.strip() for r in args.ref.split(",") if r.strip()]
+        payload["input"][schema["ref_key"]] = [r if r.startswith("http") else upload_ref(r, token) for r in refs]
 
     print(f">>> createTask ({model}, {args.aspect})...", file=sys.stderr)
     created = post_json(CREATE_URL, payload, token)

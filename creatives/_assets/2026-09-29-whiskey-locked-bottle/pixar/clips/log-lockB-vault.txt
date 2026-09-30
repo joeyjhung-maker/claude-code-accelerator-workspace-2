@@ -1,0 +1,5 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/lockB-vault.png
+>>> createTask veo-3-1 6s 9:16 1080p (credits before: 691.0)
+>>> taskId 214b607eb31d3d921b77ff07dfa59d6c
+>>> saved 5155027 bytes -> /Users/joey/Documents/claude-code-accelerator-workspace/creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/lockB-vault.mp4 in 204s, 65.0 credits (balance now: 2106.0)
+/Users/joey/Documents/claude-code-accelerator-workspace/creatives/_assets/2026-09-29-whiskey-locked-bottle/pixar/clips/lockB-vault.mp4

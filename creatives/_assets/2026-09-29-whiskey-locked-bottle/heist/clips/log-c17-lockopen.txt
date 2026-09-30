@@ -1,0 +1,4 @@
+>>> reference uploaded: https://tempfile.redpandaai.co/kieai/11351685/images/refs/k17-lock-open.png
+>>> createTask veo-3-1 6s 9:16 1080p (credits before: 1677.0)
+>>> saved 4569982 bytes -> creatives/_assets/2026-09-29-whiskey-locked-bottle/heist/clips/c17-lockopen.mp4 in 117s, 65.0 credits (balance now: 1287.0)
+creatives/_assets/2026-09-29-whiskey-locked-bottle/heist/clips/c17-lockopen.mp4
