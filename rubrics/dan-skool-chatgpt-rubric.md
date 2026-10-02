@@ -24,6 +24,9 @@ current specimens and add future Joey-final versions as they appear:
 - `copy/2026-09-24-b2b-leads-lab-skool-post-sunday-dream-five.md`
 - `copy/2026-09-24-aaa-ninjas-skool-post-bad-market-stronger-offer.md`
 - `copy/2026-09-25-aaa-ninjas-skool-post-copywriters-first-bot-builders-second.md`
+- `copy/2026-09-28-dan-skool-post-supercharged-cold-outreach.md`
+- `copy/2026-09-29-dan-skool-post-network-asset-hvac.md`
+- `copy/2026-09-29-dan-skool-post-hunters-vs-farmers.md`
 
 ## The hierarchy
 
@@ -141,6 +144,11 @@ Use an appropriate close:
 
 Do not bolt on a question just because it is a Skool post.
 
+**Standing CTA (Joey, 2026-09-28): every post ends with** "If you're ready to [outcome matching the
+post's theme], comment "[KEYWORD]" and we'll get the deets to ya." The keyword is one themed word in
+caps, personalised to the post. The line before it must flow into it. No video/link pushes unless
+Joey asks for a click-driver. A post without this close FAILS the ask.
+
 For practical advice, do not stop at the instruction. Name the bit the reader is reluctant to do,
 then disarm it with the mechanism that makes it easier. Example: calling takes “some cojones,” BUT
 gift recipients are among the easiest cold leads to call because the gift has already opened the
@@ -192,6 +200,21 @@ to the point quickly; it does not automatically mean stripping away the post fur
 - Do not let a compressed, clever phrase make the final instruction less immediate. Prefer plain
   spoken actions with causal connective tissue: “So don’t blindly accept someone else’s diagnosis”
   is clearer and more natural than “Don’t inherit someone else’s diagnosis.”
+
+- Missing the reluctance-disarm on a feared step. If a route asks the reader to CALL someone (or any
+  step they dread), the next line must name the fear and flip it ("It takes balls but if you're
+  hungry, this is the FASTEST way to book calls"). Joey added this by hand on 2026-09-28 even though
+  the rule above already existed. Check for it explicitly.
+- Dismissing step one to set up the "real magic". Credit it first ("That by itself is a huge
+  gamechanger"), then escalate.
+
+- Stopping at a benefit without cashing it out to the booked call. For LinkedIn/Topa posts, check
+  that the payoff runs through to coffee dates, ideally via a "which means…" ladder that threads
+  lumpy mail back in and names the follow-up asset (network PLUS enriched database). Joey has added
+  this by hand twice (2026-09-28, 2026-09-29).
+
+- BANNED phrases (hard fail, Joey 2026-09-29): "Fair question…" and "So yeah…". Cut or replace on
+  sight, including in Mariobot drafts.
 
 ## Improvement loop
 

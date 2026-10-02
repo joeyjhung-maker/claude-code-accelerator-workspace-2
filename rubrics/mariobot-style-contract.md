@@ -24,6 +24,7 @@ STRUCTURE
 VOICE
 - Register: Dan texting a mate who owns a business. Casual, direct, Aussie-inflected (not British — corrected 2026-08). "convos" not "conversations". CAPS for emphasis where bold would go.
 - Banned words: leverage, solution, deliverable, onboarding. Banned signposts: "here's the thing", "here's the magic", or any canned run-up before a claim.
+- Banned fillers: "Fair question…", "So yeah…". Never open or bridge with them.
 - Don't neuter profanity if the samples carry it. If a line sounds like AI, it fails no matter how smooth.
 
 CLARITY & PERSUASION

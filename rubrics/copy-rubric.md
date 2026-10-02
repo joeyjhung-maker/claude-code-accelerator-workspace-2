@@ -157,6 +157,9 @@ this file's rules ever see them — this file grades body copy and headlines onl
 | 2026-07-21 | Joey changed "more than TEN retainer clients" → "3 retainer clients" | **Dial numbers DOWN for believability.** A smaller, credible multiple beats an impressive-but-suspicious one — even when the bigger number is technically supported. Overclaiming raises the guard. |
 | 2026-07-21 | "Why are you writing like this: It's not another tool. / It's not another course. / It's not 'just hustle harder.'" | **Lint-fix must FLOW, not CHOP.** When `copy_lint.py` flags "two sentences on one line," the fix is NOT to reflexively split each onto its own line — that manufactures the exact staccato fragment-stack the rubric bans. If splitting creates clipped fragments, JOIN with commas / restructure into one breathing line instead. (Recurring miss this session — the mechanical split was creating AI-tell cadence in the emails.) |
 
+| 2026-09-28 | "…it's not in your head." → "…it's because it has (if you're going after ice-cold leads)" (Topa pre-sell email) | **Confirm and scope the pain, don't soothe it.** In a pain-led opener, validate that it really is harder and name the cause in a parenthetical, so the fix has a target and warm readers aren't accused. |
+| 2026-09-28 | Replaced the cryptic "it reaches them somewhere their inbox can't touch" tease with a numbered "If you… 1) have a network… 2) DON'T have one yet…" outcome split | **A pre-sell tease segments and promises outcomes.** Before "details tomorrow", give each reader situation its own concrete outcome (coffee dates & sales / a network of your perfect ICP). Hold back the mechanism, not the payoff. A mystery line alone FAILS. |
+
 <!-- Next time a draft makes me wince, add a row:
 | YYYY-MM-DD | "the thing I said once" | the permanent rule |
 -->

@@ -6,6 +6,15 @@ main deliverable right now, not this brief.*
 
 Related: [[b2b-leads-lab-project]] [[topa-call-launch-2026-09-04]] [[the-lock-aim-not-gate]]
 
+**Pricing + competitor claims:** use `pricing-and-competitor-proof.md` (safe lines vs. ones Jonathan pulled back).
+
+**Standing campaign rules (Joey, 2026-09-30):**
+- **No free leads / coupon code in this campaign.** The 200-free-leads code is a freebie we don't want people taking now. We want them to PAY.
+- **The paid plan includes:** full search of the 350M+ database, plus **10,000 downloads a month**. That lets them enrich the data to get mobiles, emails, addresses, etc.
+- **Say "Topa". No more "Topa (our new LinkedIn Automation tool)" brackets.** This overrides the first-mention bracket lesson from the network-asset post.
+- **Never use Dan's "I'm a very resourceful person" phone line.** Joey doesn't like it. Don't suggest it again.
+- **Sales Nav price in copy: "$100/mo"** (Joey's call; the actual list price is $99.99 annual / $119.99 monthly).
+
 ## What this is
 A **7-day mini-Rainmaker pre-sell** for Topa's new **LinkedIn Automation** tool. Kickoff
 **Tuesday 29 Sept 2026**, running 7 days (provisionally through **Monday 5 Oct**) — dates hold
@@ -211,3 +220,8 @@ folder yet is client-facing copy.
 ## Status
 Set up 2026-09-24, ahead of the Travis call (2am HK time same night). No copy written. This
 folder exists to carry the offer-strategy prep into that call, then the week of production after.
+
+## Standing copy rules for this campaign (from Joey's edits, 2026-09-28/29)
+- Every Skool post ends with: If you're ready to [themed outcome], comment "[THEMED KEYWORD]" and we'll get the deets to ya. No more YouTube pushes.
+- Every LinkedIn piece threads lumpy mail back in and cashes out to coffee dates (network PLUS enriched database → follow up across channels until they book).
+- First mention: "Topa (our new LinkedIn Automation tool)".

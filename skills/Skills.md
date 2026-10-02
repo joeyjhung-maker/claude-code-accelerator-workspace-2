@@ -35,6 +35,7 @@ If you want to change how a skill works, ask Claude to edit the real skill in `.
 | Skill | Command | Use it when |
 |---|---|---|
 | [[creative-strategy-system]] | `/creative-strategy-system` | Build a full creative strategy — from hook to production plan to first winning ad. Strategy-first, then execution. |
+| [[curiosity-headlines]] | `/curiosity-headlines` | Get 10 curiosity headlines or email subject lines for a finished post or email, using a surprising lens (culture, history, enemies, reversals). |
 
 ### The weekly pipeline (run in order)
 

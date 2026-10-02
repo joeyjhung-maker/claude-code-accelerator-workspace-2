@@ -44,6 +44,8 @@ official types, but common in Dan's existing posts) / `none`.
 2026-09-25 | aaa-ninjas | engage | n | none | copy/2026-09-25-aaa-ninjas-skool-post-copywriters-first-bot-builders-second.md
 2026-09-25 | b2b-leads-lab | engage | n | none | copy/2026-09-25-b2b-leads-lab-skool-post-japanese-gift-giving.md
 2026-09-26 | roya | ascend | y | two-step | copy/2026-09-26-roya-skool-post-linkedin-automation-early-access.md
+2026-09-29 | topa-linkedin (dan) | ascend | y | comment-keyword | copy/2026-09-29-dan-skool-post-big-deals-automate-consistency.md
+2026-09-30 | topa-linkedin (dan) | ascend | y | comment-keyword | copy/2026-09-30-dan-skool-post-linkedin-gatekeeping.md (replaced cancel-sales-nav v1)
 
 ## Running observation (updated 2026-09-11, after the AAA Ninjas land-and-expand NAP)
 
