@@ -53,6 +53,7 @@ The real Claude Code skill instructions live in `.claude/skills/`. Obsidian hide
 - Never open copy with student proof or testimonials. And don't default to pain-first either — pain is white noise now. Lead with curiosity, novelty, a promise, or a world-level hook; use pain as the AMPLIFIER once you've earned attention. Proof comes after trust. (Ask me and I'll tell you when I want pain-led variations for a specific ad.)
 - Never write in blocks of text. Wall of text = instant delete.
 - Never invent a client result, number, or quote. If it is not in the client file, ask me.
+- Video ads: the first frame (0:00, before play) must already show the first line of the script over the hero visual — no fade-in or blank opener. Full rules (every word captioned, product is the hero, voice-first mix): workflows/2026-10-03-video-ad-rules.md. Check frame 0 of the finished file before showing me.
 - If you are unsure what good looks like, ask for an example before guessing.
 - SAVE work into copy/ or creatives/. PROMOTE the lesson (why it won or died) into winners/, losers/, brand/, or workflows/. Two moves, not one. Never delete from archive/.
 - At the end of a session, ask me what is worth promoting into memory and where it goes. That is how the workspace compounds.
