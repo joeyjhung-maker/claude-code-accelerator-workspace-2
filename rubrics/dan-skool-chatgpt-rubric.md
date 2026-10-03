@@ -27,6 +27,7 @@ current specimens and add future Joey-final versions as they appear:
 - `copy/2026-09-28-dan-skool-post-supercharged-cold-outreach.md`
 - `copy/2026-09-29-dan-skool-post-network-asset-hvac.md`
 - `copy/2026-09-29-dan-skool-post-hunters-vs-farmers.md`
+- `copy/2026-10-02-dan-skool-post-bonus-profile-optimiser.md`
 
 ## The hierarchy
 

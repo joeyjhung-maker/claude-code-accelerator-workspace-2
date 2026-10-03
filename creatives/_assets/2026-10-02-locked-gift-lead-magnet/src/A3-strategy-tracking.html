@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>A3 · The Locked Gift Strategy as parcel tracking</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#1C1A17; --red:#C23B22; --paper:#FFFFFF; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; background:var(--paper); }
+  .card { width:1600px; height:716px; padding:48px 56px; color:var(--ink); display:flex; flex-direction:column; gap:40px; }
+  .mono { font-family:'IBM Plex Mono', monospace; font-weight:600; letter-spacing:.12em; font-size:17px; }
+  .top { display:flex; justify-content:space-between; align-items:center; padding-bottom:14px; border-bottom:3px dashed var(--ink); }
+  .pill { background:var(--red); color:#FFFFFF; padding:9px 16px; }
+  .body { display:flex; gap:72px; }
+  h2 { margin:0; width:520px; flex-shrink:0; font-family:Anton, sans-serif; font-weight:400; font-size:128px; line-height:.95; }
+  .line { position:relative; flex-grow:1; display:flex; flex-direction:column; gap:26px; }
+  .rail { position:absolute; left:20px; top:22px; bottom:44px; width:5px; background:var(--ink); }
+  .stop { position:relative; display:flex; align-items:center; gap:30px; }
+  .dot-col { width:45px; display:flex; justify-content:center; flex-shrink:0; }
+  .dot { width:26px; height:26px; border-radius:50%; border:5px solid var(--ink); background:var(--paper); }
+  .name { flex-grow:1; font-family:Anton, sans-serif; font-size:46px; line-height:1; }
+  .status { font-size:16px; }
+  .final .dot { width:52px; height:52px; border:none; background:var(--red); display:flex; align-items:center; justify-content:center; }
+  .final .dot svg { width:30px; height:30px; fill:none; stroke:#FFFFFF; stroke-width:3.2; stroke-linecap:round; stroke-linejoin:round; }
+  .final .name { font-size:88px; color:var(--red); }
+  .final .status { color:var(--red); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top mono"><span>TRACKING NO. LG-DREAM-100</span><span class="pill">STATUS: DELIVERED</span></div>
+  <div class="body">
+    <h2>THE<br>LOCKED<br>GIFT<br>STRATEGY</h2>
+    <div class="line">
+      <div class="rail"></div>
+      <div class="stop"><div class="dot-col"><div class="dot"></div></div><div class="name">DREAM 100 PROSPECT</div><div class="mono status">ADDRESS VERIFIED</div></div>
+      <div class="stop"><div class="dot-col"><div class="dot"></div></div><div class="name">PHYSICAL GIFT</div><div class="mono status">PACKED</div></div>
+      <div class="stop"><div class="dot-col"><div class="dot"></div></div><div class="name">LOCK + CURIOSITY</div><div class="mono status">LOCKED. CAN'T OPEN IT.</div></div>
+      <div class="stop"><div class="dot-col"><div class="dot"></div></div><div class="name">THE LETTER</div><div class="mono status">ENCLOSED</div></div>
+      <div class="stop"><div class="dot-col"><div class="dot"></div></div><div class="name">CLEAR REASON TO RESPOND</div><div class="mono status">CALL TO UNLOCK</div></div>
+      <div class="stop"><div class="dot-col"><div class="dot"></div></div><div class="name">CONVERSATION</div><div class="mono status">PHONE RINGING</div></div>
+      <div class="stop final"><div class="dot-col"><div class="dot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div></div><div class="name">CLIENT</div><div class="mono status">DELIVERED</div></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

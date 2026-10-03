@@ -31,7 +31,7 @@ Running 24/7 like a robot that doesn't sleep, eat, or take a piss.
 
 THAT'S what trips the alarms.
 
-Topa (our new LinkedIn Automation tool) does it different.
+Topa does it different.
 
 Send times are randomised… not fired off at robot speed.
 

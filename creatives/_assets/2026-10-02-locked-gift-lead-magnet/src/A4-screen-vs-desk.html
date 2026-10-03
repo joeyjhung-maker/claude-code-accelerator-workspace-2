@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>A4 · Screen vs desk</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@600&family=Libre+Franklin:wght@500;800&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#1C1A17; --red:#C23B22; --paper:#FFFFFF; --kraft:#CDAA7D; --box:#B98A55; --tape:#EADDBF;
+          --screen:#17181B; --card:#2A2C31; --cardtext:#EDEDF0; --meta:#9097A3; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; background:var(--paper); }
+  .card { width:1600px; height:860px; padding:40px 56px; display:flex; position:relative; }
+  .panel { flex:1; padding:44px 48px; display:flex; flex-direction:column; gap:28px; position:relative; overflow:hidden; }
+  .mono { font-family:'IBM Plex Mono', monospace; font-weight:600; letter-spacing:.14em; font-size:17px; }
+
+  /* OLD WAY: cold, digital, on a screen */
+  .old { background:var(--screen); color:var(--cardtext); border-radius:28px 0 0 28px; }
+  .old .mono { color:var(--meta); display:flex; justify-content:space-between; align-items:center; }
+  .badge { background:#E5484D; color:#FFFFFF; font-family:'Libre Franklin', sans-serif; font-weight:800; font-size:17px; letter-spacing:0; border-radius:999px; padding:5px 11px; }
+  .stack { display:flex; flex-direction:column; gap:14px; flex-grow:1; justify-content:space-between; }
+  .note { display:flex; align-items:center; gap:18px; background:var(--card); border-radius:18px; padding:16px 22px; }
+  .note:nth-child(2) { margin-left:22px; transform:rotate(.6deg); }
+  .note:nth-child(3) { margin-left:6px; transform:rotate(-.5deg); }
+  .note:nth-child(4) { margin-left:30px; transform:rotate(.4deg); }
+  .note:nth-child(5) { margin-left:12px; }
+  .app { width:46px; height:46px; flex-shrink:0; border-radius:12px; background:#3B3F48; display:flex; align-items:center; justify-content:center; }
+  .app svg { width:24px; height:24px; fill:none; stroke:#C5CAD3; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .meta { font-family:'Libre Franklin', sans-serif; font-weight:500; font-size:15px; color:var(--meta); }
+  .step { font-family:'Libre Franklin', sans-serif; font-weight:800; font-size:33px; line-height:1.1; letter-spacing:-.01em; }
+  .seen { font-family:'IBM Plex Mono', monospace; font-weight:600; font-size:15px; letter-spacing:.12em; color:#E5484D; margin-top:4px; }
+
+  /* LOCKED GIFT: warm, physical, on a desk */
+  .new { background:var(--kraft); color:var(--ink); border-radius:0 28px 28px 0; padding-left:72px; }
+  .cascade { display:flex; flex-direction:column; gap:4px; font-family:Anton, sans-serif; font-size:58px; line-height:1.05; }
+  .arrow { color:var(--red); font-family:'Libre Franklin', sans-serif; font-weight:800; font-size:40px; margin-right:14px; }
+  .stamp { align-self:flex-start; margin-top:14px; border:6px solid var(--red); color:var(--red); font-family:Anton, sans-serif; font-size:76px; line-height:1; padding:8px 22px 12px; transform:rotate(-3deg); background:rgba(255,255,255,.35); }
+
+  .parcel { position:absolute; right:44px; bottom:40px; width:250px; height:190px; }
+  .parcel .b { position:absolute; inset:0; background:var(--box); border:3px solid var(--ink); }
+  .parcel .tv { position:absolute; left:110px; top:3px; bottom:3px; width:30px; background:var(--tape); }
+  .parcel .th { position:absolute; left:3px; right:3px; top:70px; height:30px; background:var(--tape); }
+  .parcel .lbl { position:absolute; left:18px; bottom:16px; width:130px; background:#FFFFFF; border:2px solid var(--ink); padding:6px 9px; transform:rotate(-4deg); font-family:Anton, sans-serif; font-size:19px; line-height:1.05; }
+  .parcel .lbl small { display:block; font-family:'IBM Plex Mono', monospace; font-size:9px; letter-spacing:.14em; }
+  .parcel .lock { position:absolute; right:-20px; top:-26px; width:72px; height:72px; border-radius:50%; background:var(--red); border:3px solid var(--ink); display:flex; align-items:center; justify-content:center; transform:rotate(8deg); }
+  .parcel .lock svg { width:34px; height:34px; fill:none; stroke:#FFFFFF; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+
+  .vs { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:96px; height:96px; border-radius:50%; background:var(--paper); border:4px solid var(--ink); display:flex; align-items:center; justify-content:center; font-family:Anton, sans-serif; font-size:40px; color:var(--ink); z-index:2; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="panel old">
+    <div class="mono"><span>OLD WAY · FIGHT FOR THE SCREEN</span><span class="badge">99+</span></div>
+    <div class="stack">
+      <div class="note">
+        <div class="app"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+        <div><div class="meta">Lead list</div><div class="step">Thousands of prospects</div></div>
+      </div>
+      <div class="note">
+        <div class="app"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></div>
+        <div><div class="meta">Outbox · sending…</div><div class="step">Thousands of messages</div></div>
+      </div>
+      <div class="note">
+        <div class="app"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <div><div class="meta">Inbox · 99+ unread</div><div class="step">Fight for attention</div></div>
+      </div>
+      <div class="note">
+        <div class="app"><svg viewBox="0 0 24 24"><path d="M9 17l-5-5 5-5"/><path d="M20 18v-2a4 4 0 0 0-4-4H4"/></svg></div>
+        <div><div class="meta">Follow-up #4</div><div class="step">Chase replies</div></div>
+      </div>
+      <div class="note">
+        <div class="app"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <div><div class="meta">Waiting…</div><div class="step">Hope someone talks to you</div><div class="seen">SEEN · NO REPLY</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel new">
+    <div class="mono">LOCKED GIFT STRATEGY · GET ON THEIR DESK</div>
+    <div class="cascade">
+      <div>DREAM 100</div>
+      <div><span class="arrow">↓</span>RIGHT DECISION MAKER</div>
+      <div><span class="arrow">↓</span>REMARKABLE PACKAGE</div>
+      <div><span class="arrow">↓</span>ATTENTION + CURIOSITY</div>
+    </div>
+    <div class="stamp">THEY CALL YOU</div>
+    <div class="parcel">
+      <div class="b"></div><div class="tv"></div><div class="th"></div>
+      <div class="lbl"><small>TO</small>YOUR NAME<br>ON IT</div>
+      <div class="lock"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+    </div>
+  </div>
+
+  <div class="vs">VS</div>
+</div>
+</body>
+</html>

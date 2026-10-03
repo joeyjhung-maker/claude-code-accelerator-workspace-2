@@ -224,4 +224,4 @@ folder exists to carry the offer-strategy prep into that call, then the week of 
 ## Standing copy rules for this campaign (from Joey's edits, 2026-09-28/29)
 - Every Skool post ends with: If you're ready to [themed outcome], comment "[THEMED KEYWORD]" and we'll get the deets to ya. No more YouTube pushes.
 - Every LinkedIn piece threads lumpy mail back in and cashes out to coffee dates (network PLUS enriched database → follow up across channels until they book).
-- First mention: "Topa (our new LinkedIn Automation tool)".
+- Just say "Topa". No bracketed "(our new LinkedIn Automation tool)" explainer (Joey, 2026-10-02).

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>A2 · 70 packages to 6 closed clients</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@600&family=Libre+Franklin:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#1C1A17; --red:#C23B22; --tint:#F3EBDD; --paper:#FFFFFF; --mute:#6E665A; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; background:var(--paper); }
+  .card { width:1600px; height:900px; padding:48px 56px; color:var(--ink); display:flex; flex-direction:column; gap:30px; }
+  .mono { font-family:'IBM Plex Mono', monospace; font-weight:600; letter-spacing:.12em; font-size:17px; }
+  .top { display:flex; justify-content:space-between; padding-bottom:14px; border-bottom:3px dashed var(--ink); }
+  h2 { margin:0; font-family:Anton, sans-serif; font-weight:400; font-size:120px; line-height:.95; }
+  .body { display:flex; gap:80px; align-items:stretch; }
+  .grid { display:grid; grid-template-columns:repeat(10, 56px); gap:12px; flex-shrink:0; }
+  .sq { width:56px; height:56px; border:2.5px solid var(--ink); background:var(--tint); }
+  .sq.closed { background:var(--red); }
+  .side { display:flex; flex-direction:column; justify-content:space-between; }
+  .big { font-family:Anton, sans-serif; font-size:210px; line-height:.88; color:var(--red); }
+  .legend { display:flex; align-items:center; gap:12px; font-family:'Libre Franklin', sans-serif; font-size:19px; margin-top:16px; }
+  .legend .sq { width:24px; height:24px; border-width:2px; }
+  .strike { font-family:'Libre Franklin', sans-serif; font-weight:500; font-size:28px; line-height:1.35; color:var(--mute); text-decoration:line-through; }
+  .closed-line { font-family:Anton, sans-serif; font-size:64px; line-height:1.05; color:var(--red); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top mono"><span>ACROSS OUR FIRST 70 OPPORTUNITIES</span><span>THE LOCKED GIFT STRATEGY</span></div>
+  <h2>70 PACKAGES.<br>6 CLOSED CLIENTS.</h2>
+  <div class="body">
+    <div class="grid" id="grid"></div>
+    <div class="side">
+      <div>
+        <div class="big">8.6%</div>
+        <div class="mono" style="margin-top:14px">PACKAGE-TO-CLOSE</div>
+        <div class="legend"><span class="sq closed"></span><span>= one closed client</span></div>
+      </div>
+      <div>
+        <div class="strike">Not an email open rate.</div>
+        <div class="strike">Not a reply rate.</div>
+        <div class="strike">Not even a booked-call rate.</div>
+        <div class="closed-line">CLOSED CLIENTS.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const closedAt = [4, 17, 29, 38, 51, 63];
+  document.getElementById('grid').innerHTML = [...Array(70)].map((_, i) =>
+    `<div class="sq${closedAt.includes(i) ? ' closed' : ''}"></div>`).join('');
+</script>
+</body>
+</html>
