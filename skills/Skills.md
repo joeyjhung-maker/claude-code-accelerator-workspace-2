@@ -48,6 +48,20 @@ The flywheel turns one stage at a time: **read the account → storm seeds → b
 | 3. [[brief]] | `/brief` | Collapse chosen seeds into locked briefs — Segment, Awareness, Mechanism, CTA, Source route. The last cheap decision. No copywriting. |
 | 4. [[produce]] | `/produce` | Write the ad from a locked brief. mariobot drafts, the copy-rubric grades, then it saves and flips the brief to written. The only stage that writes. |
 
+### Structure-specific builds
+
+One process per ad structure. Each runs its own brief-then-write loop, so you don't need /brief and /produce separately.
+
+| Skill | Command | Use it when |
+|---|---|---|
+| [[timeline-ad]] | `/timeline-ad` | Build a Timeline Ad ("this is what happens if X does Y for 30 days"). Collects the avatar's real day, writes the last rung first, builds the claim ladder, shows it as a table for approval, then mariobot writes and the judge runs the five timeline checks. Built from the Genesis timeline training. Not yet run on a live brief. |
+| [[multiply]] | `/multiply` | The router. Hand it a winner and it tags the ad's genome, helps pick ONE part to swap, then hands off to one of the five Genesis workflows below. Adds the house rules they don't know (Mariobot writes, the judge grades first). |
+| [[horizontal-scaling]] | "find new segments", "who else is out there" | Genesis workflow 1. Find new people with the outcome / demographic / facet grammar, then aim an existing winner at them. Installed as shipped. |
+| *(styles list)* | via `/multiply` | Genesis workflow 2. Same script, new picture. 183 named styles, with public examples. Lives in `.claude/skills/multiply/styles/`. |
+| [[formats-conceits]] | "re-stage this ad", "turn this into a podcast" | Genesis workflow 3. Pull the message out of a winner and re-tell it in a new format or conceit. Installed as shipped, with its two lists. |
+| [[comment-goldmine]] | "mine my comments" | Genesis workflow 4. Sort the comments under an ad into lenses, list the raw ideas, write the uninhibited versions. Installed as shipped. |
+| [[organic-hooks]] | "organic hooks", "write from this reel" | Genesis workflow 5. Burner account, spot outliers, pull hooks word for word, weld onto a proven body. Installed as shipped. |
+
 ## Building the system
 
 | Skill | Command | Use it when |

@@ -28,6 +28,10 @@ Related: [[joey-runs-heuromi-agency]] [[clients/flexxable/client.md]] [[hormozi-
 
 - 2026-09-25 — peer feedback on the portfolio doc: front-load creative-strategy wins, bullets first, best ROAS screenshots first. See `portfolio/2026-09-25-portfolio-feedback-voice-note.md`.
 
+## Delivery (for when client #2 lands)
+
+- 2026-10-03 — draft onboarding checklist for a new creative-strategy client, built from Johnny Kam's series and resources doc. Not run yet. See `cs-client-onboarding-DRAFT.md`. Swipe links by format: `swipes/reference-banks/2026-10-03-kam-ryze-format-swipes.md`.
+
 ## Open questions
 1. What does the second client need to look like (industry, budget, working style) to be worth
    taking on without cannibalizing Flexxable capacity?
