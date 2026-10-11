@@ -1,0 +1,71 @@
+{
+ "song-FULL-A-sea-shanty-1.mp3": {
+  "dur": 224.0,
+  "tempo": 123.0,
+  "heard_words": 644,
+  "script_words": 659,
+  "script_covered_pct": 95,
+  "first_word": 0.0,
+  "last_word": 218.9,
+  "last_heard": "the button below to get started",
+  "missing_runs": 1,
+  "missing_words": 11,
+  "extra_runs": 0,
+  "missing": [
+   "one hundred and fifty seven thousand five hundred and seventy nine"
+  ],
+  "extra": []
+ },
+ "song-FULL-A-sea-shanty-2.mp3": {
+  "dur": 217.6,
+  "tempo": 123.0,
+  "heard_words": 629,
+  "script_words": 659,
+  "script_covered_pct": 93,
+  "first_word": 1.3,
+  "last_word": 208.7,
+  "last_heard": "the button below to get started",
+  "missing_runs": 1,
+  "missing_words": 25,
+  "extra_runs": 0,
+  "missing": [
+   "one hundred and fifty seven thousand five hundred and seventy nine men"
+  ],
+  "extra": []
+ },
+ "song-FULL-C-trap-talk-1.mp3": {
+  "dur": 249.2,
+  "tempo": 129.2,
+  "heard_words": 653,
+  "script_words": 659,
+  "script_covered_pct": 94,
+  "first_word": 8.2,
+  "last_word": 246.8,
+  "last_heard": "oh baby oh baby oh baby",
+  "missing_runs": 1,
+  "missing_words": 11,
+  "extra_runs": 0,
+  "missing": [
+   "one hundred and fifty seven thousand five hundred and seventy nine"
+  ],
+  "extra": []
+ },
+ "song-FULL-C-trap-talk-2.mp3": {
+  "dur": 223.9,
+  "tempo": 129.2,
+  "heard_words": 632,
+  "script_words": 659,
+  "script_covered_pct": 92,
+  "first_word": 6.6,
+  "last_word": 214.8,
+  "last_heard": "the button below to get started",
+  "missing_runs": 2,
+  "missing_words": 24,
+  "extra_runs": 0,
+  "missing": [
+   "reindeer cattle stand in a field get fed barely move and break down",
+   "one hundred and fifty seven thousand five hundred and seventy nine"
+  ],
+  "extra": []
+ }
+}
