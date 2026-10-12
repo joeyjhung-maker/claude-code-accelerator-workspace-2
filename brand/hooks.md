@@ -162,4 +162,26 @@ anything, or have they already heard it a hundred times? If it's already convent
 that audience, the structure survives the swap but the punch doesn't — go find the segment's actual
 blind spot instead of just re-skinning the words.
 
+## Grab them by the throat, then grease the slide — banked 2026-10-06
+
+A hook does not pass merely because it is accurate, sharp or brief-matched. It must make the reader
+think **“wait… WHAT?”** and WANT to keep reading or watching. Show the shocking contradiction and
+the consequence, but hide the explanation: give them A and Z while withholding B through Y. If the
+line explains why the twist is true, names both sides neatly or otherwise closes its own loop, it
+fails. The body earns the right to resolve the tension.
+
 Related: [[Promotion]]
+
+## Tease the core benefit in the first few lines — banked 2026-10-12
+
+A story hook can hold attention and still lose the sale. Tom McCann on the Primal Viking Viking ad
+(2026-10-10): "What's the core benefit / pain point? That's the through line it's missing." It needs
+to arrive in the first few lines, "otherwise engagement will be high and then people will drop off
+like a cliff and not buy." It only needs teasing, not explaining.
+
+The fix that worked: straight after the hook, one short payoff promise that says what he is about
+to find out and what it does for him, in his own words (energy, drive, staying lean), then hand back
+to the story. Later in the ad, one line must come back and pay that promise off.
+
+Related: [[Promotion]]
+

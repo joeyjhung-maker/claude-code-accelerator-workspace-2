@@ -22,6 +22,7 @@ Related: [[2026-08-24-produce-flexxable-video-ad]] [[Promotion]] [[hook-rubric]]
 - Get word-level timestamps from a local Whisper pass on the master audio.
 - Hand-set the page breaks at natural phrase boundaries. Auto-breaking splits thoughts and leaves orphan words.
 - Highlight the word being spoken.
+- **Amended 2026-10-12, for song ads and fast cuts:** drop the word-by-word highlight. Show 3 to 4 words on ONE line, sized and placed like the reference ad (capital letters about 2.7% of frame height, about 63% down). Joey asked for this on the Primal Viking song cut after comparing with the RYZE mummy ad. Every sung word still appears on screen.
 - Make the build fail if the captions don't match the transcript word for word.
 - Where transcripts disagree, check the captions burned into the original footage.
 
@@ -47,6 +48,19 @@ Related: [[2026-08-24-produce-flexxable-video-ad]] [[Promotion]] [[hook-rubric]]
 - SFX and music 7–8 LU under it.
 - Master at -14 LUFS.
 - Always use the original master audio, never a platform rip.
+
+## 6. Measure a pacing reference before you build
+
+**The rule:** pick a reference ad and measure it first. Then decide spoken or sung. Then lock the audio. Only then render motion.
+
+- Targets from the RYZE mummy song ad: average shot 2 to 2.5 seconds, nothing over 6, almost no pauses, cuts on the beat.
+- "Sluggish" is not slow talking. Our spoken cut ran at about 180 words a minute against their 142 and still dragged, because shots averaged 5.9 seconds, there were 39 pauses, and the voice, music bed and picture were three unlocked layers.
+- If the script can't be cut into short lines, make it a song. The words then sit on a beat and the picture can be cut to it.
+- Order of work: reference and measurements, script, audio locked, stills, a three-clip motion test, then the batch.
+
+**Why:** on the Primal Viking ad (2026-10-10) the voice-over and 16 clips were made before the pacing was compared with anything. Joey said it "doesn't hit right in the flow", and the whole edit was rebuilt around a sea shanty. Numbers: [[2026-10-10-ryze-mummy-song-ad-pacing]].
+
+**The check:** before any paid render, write down average shot length, longest shot and number of pauses over 0.4 seconds, next to the reference's.
 
 ## What good looks like
 

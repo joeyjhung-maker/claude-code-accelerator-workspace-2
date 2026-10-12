@@ -9,6 +9,7 @@ The rules Claude follows when writing in this brand's voice. Add to this every t
 - Short sentences carry the weight. Let one idea land before the next.
 
 ## Corrected from a miss (the gold)
+- (2026-10-06) **Key hook and problem-name words need physical mouthfeel, not clean marketing nouns.** Joey: “We need Germanic wording like sweat, moist, dunk. Yours are too clean.” Reach for blunt, wet, rough words a reader can feel — bite, bleed, rip, suck, chew, claw, gut, rot, leech — and reject accurate-but-sanitised labels built from words like commission, margin or protection racket.
 - (2026-09-25) **Choose plain spoken instruction over compressed cleverness in Dan's conclusions.** “So don’t blindly accept someone else’s diagnosis” lands faster than “Don’t inherit someone else’s diagnosis” because the action is explicit and the connective “So” makes it follow naturally from the argument.
 - (2026-09-25) **Use “ya” no more than twice in any single Dan post.** It is a light voice tell, not a replacement for every “you” or “your”; cap it at two so the copy stays natural rather than becoming a caricature.
 - (date) Stopped using "imagine if." Client said it felt like a webinar. Lead with the claim instead.
@@ -38,6 +39,8 @@ The rules Claude follows when writing in this brand's voice. Add to this every t
 - (2026-09-20) **For Dan's Skool product-release drops, prove the NEW delta without dumping the feature list.** Joey replaced a generic prospect → demo → setup → optimisation lifecycle (which sounded like the original Wingman launch) with: quantify the scale of the release, organise it around the four reader outcomes, then dramatise a small chain of unmistakably new capabilities. Credit the builder, let the short demo video carry the exhaustive detail, and direct the only CTA to existing owners; non-owners should see what owners just received and create their own FOMO without being pitched. Related: [[2026-09-03-netflix-model-training]] [[2026-09-20-aaa-ninjas-skool-post-wingman-2-live-release]]
 
 - (2026-09-20) **In an early-result Skool post, celebrate the operator first, then explain what the controlled test unlocked.** Joey changed Pierre's post from a narrow “the commission is less valuable than the proof” reframe into: shout out the student → show the small batch and positive signal → establish that both the system and client's close worked → scale the same campaign → move into fresh leads and adjacent Androids → reuse the result on future coffee dates. The result matters because it de-risks several next moves, not merely because it makes a good testimonial. Related: [[2026-09-20-aaa-ninjas-skool-post-pierre-first-result-proof]] [[ROYA Scale Proof Bank]]
+
+- (2026-10-12) **Give each ingredient one job the reader can feel.** On the Primal Viking ad the ingredient block read like a label ("B vitamins and iron fuel red blood cell production") and Joey called it slow. Naming what the reader lacks didn't fix it either: "I don't care if modern men are starving for it. WHY do I need it." What worked: one job per ingredient, ending on something he can do or feel, tied to the hero of the story (the liver is why he could row from dawn until dark). Test every ingredient line with "so what does that do for me?"
 
 ## Words we use / words we never use
 Use: get, cut, ship, proof, show.
