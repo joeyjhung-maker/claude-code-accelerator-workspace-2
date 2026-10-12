@@ -76,6 +76,15 @@ const MG = (() => {
     outlined(() => { x.beginPath(); x.arc(0, 0, r, 0, Math.PI * 2); }, glossy('#F5B82E', -r, r), 5);
     x.strokeStyle = 'rgba(160,100,10,.8)'; x.lineWidth = r * .12; x.beginPath(); x.arc(0, 0, r * .7, 0, Math.PI * 2); x.stroke();
     x.fillStyle = '#FFF7C9'; x.font = `${r * 1.1}px "Luckiest Guy"`; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText('$', 0, r * .08); x.restore(); }
+  // compliance cut: glossy reply bubbles + booked-call ticks rising, instead of coins
+  function chatRain(t, t0, t1, n = 12) { const q = vis(t, t0, t1, .15, .4); if (q <= 0) return; const cols = ['#4BA3FF', '#4BE37E', '#7CC8FF'];
+    for (let i = 0; i < n; i++) { const sp = 420 + rnd(i) * 420, ph = ((t - t0) * sp / 2200 + rnd(i * 9)) % 1, w = 150 + rnd(i * 3) * 110, h = 70;
+      x.save(); x.globalAlpha = q * Math.sin(ph * Math.PI); x.translate(80 + rnd(i * 3.7) * 920 + Math.sin(t * 2 + i) * 16, 1980 - ph * 2100); x.rotate((rnd(i * 5) - .5) * .2);
+      outlined(() => { x.beginPath(); x.roundRect(-w / 2, -h / 2, w, h, 30); x.moveTo(-w / 4, h / 2 - 2); x.lineTo(-w / 4 - 16, h / 2 + 26); x.lineTo(-w / 4 + 24, h / 2 - 2); }, glossy(cols[i % 3], -h / 2, h / 2), 5);
+      x.strokeStyle = 'rgba(255,255,255,.85)'; x.lineWidth = 9; x.lineCap = 'round';
+      if (i % 4 === 0) { x.beginPath(); x.moveTo(-18, 0); x.lineTo(-4, 14); x.lineTo(22, -14); x.stroke(); }
+      else { x.beginPath(); x.moveTo(-w / 2 + 28, -10); x.lineTo(w / 2 - 28, -10); x.moveTo(-w / 2 + 28, 12); x.lineTo(w / 6, 12); x.stroke(); }
+      x.restore(); } }
   function coinRain(t, t0, t1, n = 34) { const q = vis(t, t0, t1, .1, .4); if (q <= 0) return; x.save(); x.globalAlpha = q;
     for (let i = 0; i < n; i++) { const sp = 700 + rnd(i) * 700, ph = ((t - t0) * sp / 2300 + rnd(i * 9)) % 1; coin(60 + rnd(i * 3.7) * 960, -80 + ph * 2100, 26 + rnd(i * 5) * 22, t * 6 + i); } x.restore(); }
   function coinBurst(cx, cy, t, t0, n = 26, dur = 1.4) { const a = t - t0; if (a < 0 || a > dur) return;
@@ -151,13 +160,15 @@ const MG = (() => {
     // 18.4-22: jelly handshake
     impact(459, 1028, 'DEAL!', '#FFD447', t, 18.5, .8, 170); wobbleLines(700, 700, 240, t, 18.7, 21.0); sparkles(460, 1030, 200, 8, t, 19.0, 21.9);
     // 22-27: money rain
-    coinRain(t, 22.3, 27.0); rays(540, 1080, 1100, '#FFE68A', t, 25.25, 27.0); coinBurst(540, 1080, t, 25.3, 30); bang(760, 880, t, 25.5, 26.9, '!', '#FF4D4D');
+    if (window.SAFE) { chatRain(t, 22.3, 27.0); sparkles(540, 1080, 420, 16, t, 25.3, 27.0); } else { coinRain(t, 22.3, 27.0); coinBurst(540, 1080, t, 25.3, 30); }
+    rays(540, 1080, 1100, '#FFE68A', t, 25.25, 27.0); bang(760, 880, t, 25.5, 26.9, '!', '#FF4D4D');
     // 27-31.6: the vault opens, thank-you envelope
     rays(540, 900, 1000, '#FFE68A', t, 27.05, 29.2, 20); sparkles(540, 900, 300, 16, t, 27.05, 29.2); rays(432, 487, 700, '#FFE68A', t, 29.2, 31.5); arrow(150, 1250, 380, 960, 1, '#4BE37E', t, 27.3, 29.15); 
-    coinBurst(756, 1244, t, 30.1, 30); shock(756, 1244, t, 30.1, '#FFD447', 600);
+    if (window.SAFE) sparkles(756, 1244, 320, 16, t, 30.1, 31.5); else coinBurst(756, 1244, t, 30.1, 30);
+    shock(756, 1244, t, 30.1, '#FFD447', 600);
     // 31.6-37.25: proud old leads, paid for
     [150, 320, 490, 660, 840].forEach((cx, i) => check(cx, 1080, 56, t, 33.3 + i * .12, 37.2));
-    for (let i = 0; i < 10; i++) coinArc(150 + (i % 5) * 170, 1150, 940, 200, t, 35.0 + i * .18, .9);
+    if (!window.SAFE) for (let i = 0; i < 10; i++) coinArc(150 + (i % 5) * 170, 1150, 940, 200, t, 35.0 + i * .18, .9);
     // 37.25-43.25: lightbulb moment
     rays(540, 270, 900, '#FFF3A0', t, 37.4, 43.2, 20); ring(540, 270, 170, '#FFD447', t, 37.6, 43.2); sparkles(540, 300, 320, 14, t, 37.6, 43.2); impact(820, 760, 'DING!', '#FFD447', t, 42.3, .7, 150);
     // 43.25-50.95: the pain
@@ -176,7 +187,8 @@ const MG = (() => {
     rays(540, 1284, 1000, '#FFE68A', t, 66.25, 71.5, 22); sparkles(540, 1284, 380, 20, t, 66.3, 71.5); shock(540, 1284, t, 66.25, '#FFD447', 700);
     arrow(150, 1760, 300, 1450, 1, '#4BE37E', t, 69.0, 71.5); arrow(930, 1760, 780, 1450, -1, '#4BE37E', t, 69.1, 71.5);
     // 71.55-74.65: refund
-    coinArc(540, 1500, 675, 780, t, 73.4, .9); sparkles(675, 780, 220, 10, t, 72.4, 74.6); check(880, 560, 62, t, 72.55, 74.6);
+    if (!window.SAFE) coinArc(540, 1500, 675, 780, t, 73.4, .9);
+    sparkles(675, 780, 220, 10, t, 72.4, 74.6); check(880, 560, 62, t, 72.55, 74.6);
     // 74.65-77.6: finale
     confetti(t, 74.7, 77.6); shock(540, 540, t, 74.7, '#FFD447', 900); rays(540, 540, 1100, '#FFE68A', t, 74.7, 77.6); sparkles(540, 540, 300, 14, t, 74.8, 77.6); sparkles(594, 1515, 300, 12, t, 74.9, 77.6);
   }

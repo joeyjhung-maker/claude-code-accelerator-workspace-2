@@ -50,8 +50,6 @@ Do ya crush sales already…
 
 Or does this get you excited… now that you will be able to land clients WITHOUT having to do much selling? 👇
 
-Dan
-
 P.S If you think outside the box… you'll see how this could be used to sell LITERALLY anything.
 
 AI Automation is just ONE example
@@ -125,5 +123,3 @@ Direct mail is the way.
 Anyway that's what we're going all in on and why this group exists - so we can crush this together, land WHALE clients and set off into the sunset with our millions
 
 You in??
-
-Dan

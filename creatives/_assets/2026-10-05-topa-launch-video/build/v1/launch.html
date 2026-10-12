@@ -1,0 +1,537 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Topa launch video / mini VSL. 1920x1080, frame-accurate: window.seek(t) renders any moment.
+     Every animation is keyed to word times in timing.js (built by build/align.py from the VO). -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="timing.js"></script>
+<style>
+:root{--bg:#0a0a1a;--txt:#f7f4f0;--mut:#a09dc0;--line:rgba(255,255,255,.13);--panel:#121130;--green:#34d399;
+--grad:linear-gradient(135deg,#a855f7 0%,#c084fc 15%,#d8b4fe 25%,#ff66d4 35%,#ff66a3 50%,#ff8866 65%,#ffa366 80%,#ffc966 100%)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--bg);font-family:Inter,sans-serif;color:var(--txt);-webkit-font-smoothing:antialiased}
+#stage{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden}
+#bg{position:absolute;inset:0;background:var(--bg)}
+.blob{position:absolute;width:1500px;height:1500px;border-radius:50%;left:0;top:0}
+#b1{background:radial-gradient(closest-side,rgba(140,70,240,.42),rgba(140,70,240,0))}
+#b2{background:radial-gradient(closest-side,rgba(255,102,163,.26),rgba(255,102,163,0))}
+#b3{background:radial-gradient(closest-side,rgba(255,163,102,.16),rgba(255,163,102,0))}
+#grid{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1.5px,transparent 1.5px);background-size:48px 48px}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(10,10,26,0) 45%,rgba(10,10,26,.78) 100%)}
+.scene,.view{position:absolute;inset:0;visibility:hidden;opacity:0}
+.gt{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.gb{background:linear-gradient(var(--panel),var(--panel)) padding-box,var(--grad) border-box;border:3px solid transparent;box-shadow:0 0 90px rgba(190,100,255,.28),0 30px 80px rgba(0,0,0,.5)}
+.card{background:rgba(22,20,52,.9);border:1.5px solid var(--line);border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.av{border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;flex:none;letter-spacing:-.02em}
+.chip{display:inline-flex;align-items:center;gap:10px;border:1.5px solid rgba(255,255,255,.4);border-radius:999px;padding:10px 24px;font-size:26px;font-weight:600;white-space:nowrap}
+.ok{color:var(--green);border-color:rgba(52,211,153,.5);background:rgba(52,211,153,.12)}
+.sup{position:absolute;left:0;right:0;text-align:center;font-weight:300;letter-spacing:-.025em;font-size:76px;line-height:1.08}
+.sup b{font-weight:800}
+.abs{position:absolute}
+#logo{position:absolute;left:56px;top:44px;display:flex;align-items:center;gap:14px;font-size:38px;font-weight:600;letter-spacing:-.02em}
+#logo svg{width:50px;height:50px}#logo .io{opacity:.6;font-weight:400}
+/* captions */
+#cap{position:absolute;left:0;right:0;bottom:44px;text-align:center}
+#cap .in{display:inline-block;background:rgba(8,8,22,.82);border:1.5px solid rgba(255,255,255,.1);border-radius:22px;padding:14px 34px;font-size:46px;font-weight:800;letter-spacing:-.015em;white-space:nowrap}
+#cap .w{color:#fff}#cap .w.on{color:#ffb866}#cap .w.fut{color:rgba(255,255,255,.62)}
+/* s1 */
+#hl0{position:absolute;left:0;right:0;top:120px;text-align:center;font-size:118px;line-height:1.08;font-weight:800;letter-spacing:-.035em}
+#hl0 .hw{display:inline-block;margin:0 .13em}
+#comp{position:absolute;left:400px;top:690px;width:1120px;height:150px;border-radius:44px;display:flex;align-items:center;padding:0 26px 0 30px;gap:26px}
+#comp .field{flex:1;font-size:56px;font-weight:600;display:flex;align-items:center;height:100%}
+.ph i{display:inline-block;height:20px;border-radius:10px;background:rgba(255,255,255,.2);margin-right:22px}
+.caret{display:inline-block;width:5px;height:64px;background:#ff66d4;margin-left:6px;border-radius:3px}
+.send{width:98px;height:98px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;flex:none}
+.bub{background:var(--grad);color:#150a2a;font-weight:800;border-radius:40px 40px 10px 40px;padding:24px 44px;font-size:56px;display:inline-block;white-space:nowrap;box-shadow:0 20px 60px rgba(255,102,163,.35)}
+.bub.in{background:#23214d;color:#fff;border-radius:40px 40px 40px 10px;box-shadow:none;font-weight:600}
+.node{position:absolute;transform:translate(-50%,-50%)}
+.node .tag{position:absolute;left:50%;top:100%;transform:translateX(-50%);margin-top:8px;background:#ffc966;color:#1a1030;font-weight:800;font-size:22px;border-radius:999px;padding:5px 16px;white-space:nowrap}
+.node .first{position:absolute;right:-12px;top:-10px;background:#fff;color:#1a1030;font-weight:900;font-size:19px;border-radius:999px;padding:3px 10px}
+.ring{position:absolute;inset:-9px;border-radius:50%;border:4px solid #ffc966;box-shadow:0 0 34px rgba(255,201,102,.75)}
+/* app window */
+#app{position:absolute;left:150px;top:128px;width:1620px;height:782px;border-radius:32px;overflow:hidden;display:flex}
+#side{width:300px;background:rgba(8,8,24,.75);border-right:1.5px solid var(--line);padding:30px 22px;flex:none}
+#side .lg{display:flex;align-items:center;gap:10px;font-size:28px;font-weight:600;margin-bottom:34px}#side .lg svg{width:36px;height:36px}
+#side .ni{font-size:24px;color:var(--mut);padding:13px 18px;border-radius:14px;margin-bottom:6px;font-weight:500}
+#main{position:relative;flex:1}
+.vh{font-size:40px;font-weight:700;letter-spacing:-.02em;position:absolute;left:50px;top:36px}
+.steppill{position:absolute;right:44px;top:34px;font-size:26px;font-weight:700;border-radius:999px;padding:10px 26px;background:rgba(192,132,252,.2);border:1.5px solid rgba(192,132,252,.6)}
+.btn{display:inline-flex;align-items:center;gap:12px;border-radius:999px;padding:18px 36px;font-size:30px;font-weight:700;background:var(--grad);color:#170a2c;white-space:nowrap}
+.row{display:flex;align-items:center;gap:22px;background:rgba(255,255,255,.045);border:1.5px solid var(--line);border-radius:22px;padding:18px 26px}
+.row .nm{font-size:30px;font-weight:700}.row .sub{font-size:23px;color:var(--mut);margin-top:3px}
+.opt{position:absolute;width:590px;height:540px;border-radius:30px;background:rgba(255,255,255,.045);border:2px solid var(--line);padding:46px}
+.opt h4{font-size:46px;font-weight:800;letter-spacing:-.02em;margin-bottom:14px}.opt p{font-size:30px;color:var(--mut);line-height:1.35}
+.glow{position:absolute;inset:-3px;border-radius:32px;border:4px solid #ff66d4;box-shadow:0 0 60px rgba(255,102,212,.55)}
+.mono{font-variant-numeric:tabular-nums}
+#cursor{position:absolute;width:44px;height:44px;left:0;top:0;z-index:50}
+.stamp{border:8px solid #ff5d7a;color:#ff5d7a;font-weight:900;font-size:74px;letter-spacing:.02em;padding:10px 34px;border-radius:18px;white-space:nowrap;background:rgba(10,10,26,.6)}
+.big{font-weight:900;letter-spacing:-.05em;line-height:.9}
+.tile{width:104px;height:84px;border-radius:16px;background:rgba(255,255,255,.06);border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;color:var(--mut);position:relative;overflow:hidden}
+.tile i{position:absolute;inset:0;background:var(--grad)}.tile span{position:relative}
+</style></head>
+<body><div id="stage">
+<div id="bg"><div class="blob" id="b1"></div><div class="blob" id="b2"></div><div class="blob" id="b3"></div><div id="grid"></div><div id="vig"></div></div>
+<div id="scenes"></div>
+<div id="logo"></div>
+<div id="cap"><span class="in" id="capin"></span></div>
+</div>
+<script>
+/* ---------- helpers ---------- */
+const norm = w => w.toLowerCase().replace(/[^a-z0-9]/g, '');
+const Ls = TIMING.lines, DUR = TIMING.dur;
+const ls = i => Ls[i].s, le = i => Ls[i].e;
+const wt = (i, word, n = 0) => { const k = Ls[i].words.filter(w => norm(w.w).includes(norm(word)))[n]; if (!k) throw new Error(`word "${word}" not in line ${i}`); return k.s; };
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const eo = x => 1 - Math.pow(1 - clamp(x), 3);
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out', duration: .5 } });
+const DYN = []; const dyn = f => DYN.push(f);
+window.CUES = []; const cue = (t, name, gain = -18, o = {}) => CUES.push({ t: +t.toFixed(3), name, gain, ...o });
+let gid = 0;
+const mark = () => { const g = 'tg' + (gid++); return `<svg viewBox="0 0 32 32" fill="none"><defs><linearGradient id="${g}" x1="4" y1="3" x2="28" y2="29" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#a855f7"/><stop offset=".25" stop-color="#d8b4fe"/><stop offset=".35" stop-color="#ff66d4"/><stop offset=".5" stop-color="#ff66a3"/><stop offset=".65" stop-color="#ff8866"/><stop offset="1" stop-color="#ffc966"/></linearGradient></defs><path d="M7.4 5.6 L5.8 2.5" stroke="url(#${g})" stroke-width="2.7" stroke-linecap="round"/><path d="M24.6 5.6 L26.2 2.5" stroke="url(#${g})" stroke-width="2.7" stroke-linecap="round"/><path fill-rule="evenodd" fill="url(#${g})" d="M8.6 4.8 H23.4 A5 5 0 0 1 28.4 9.8 V25.4 A5 5 0 0 1 23.4 30.4 H8.6 A5 5 0 0 1 3.6 25.4 V9.8 A5 5 0 0 1 8.6 4.8 Z M9.4 8 H22.6 A2.6 2.6 0 0 1 25.2 10.6 V23.6 L26.4 28 L22.4 27.2 H9.4 A2.6 2.6 0 0 1 6.8 24.6 V10.6 A2.6 2.6 0 0 1 9.4 8 Z"/><rect x="9.55" y="15.35" width="3.5" height="4.7" rx="1.75" fill="url(#${g})"/><rect x="18.95" y="15.35" width="3.5" height="4.7" rx="1.75" fill="url(#${g})"/></svg>`; };
+const PAL = [['#a855f7', '#ff66d4'], ['#ff66a3', '#ffa366'], ['#38bdf8', '#818cf8'], ['#34d399', '#22d3ee'], ['#f59e0b', '#ef4444'], ['#c084fc', '#60a5fa'], ['#fb7185', '#f472b6'], ['#4ade80', '#22c55e']];
+const av = (ini, k = 0, size = 72) => `<div class="av" style="width:${size}px;height:${size}px;font-size:${Math.round(size * .36)}px;background:linear-gradient(135deg,${PAL[k % 8][0]},${PAL[k % 8][1]})">${ini}</div>`;
+const PEOPLE = [['Sarah M.', 'Founder · Marketing agency', 'SM'], ['David K.', 'CEO · HVAC group', 'DK'], ['Priya S.', 'MD · Logistics firm', 'PS'], ['Tom H.', 'Owner · Dental group', 'TH'], ['Aisha B.', 'COO · Software company', 'AB'], ['Marcus L.', 'Director · Recruitment', 'ML'], ['Elena R.', 'Founder · Law firm', 'ER'], ['James O.', 'CEO · Manufacturing', 'JO']];
+const INI = ['SM', 'DK', 'PS', 'TH', 'AB', 'ML', 'ER', 'JO', 'RC', 'NW', 'LB', 'KP', 'HG', 'OF', 'VT', 'ZA', 'BD', 'CM', 'EJ', 'FY'];
+const CHECK = '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>';
+const ARROW = '<svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#170a2c" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+const PHONE = (c = '#fff', s = 44) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="${c}"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>`;
+const add = html => { const d = document.createElement('div'); d.innerHTML = html.trim(); const el = d.firstChild; $('#scenes').appendChild(el); return el; };
+function show(el, s, e, first) {            // scene in/out
+  if (first) gsap.set(el, { autoAlpha: 1 }); else { tl.fromTo(el, { autoAlpha: 0, scale: .955, y: 36 }, { autoAlpha: 1, scale: 1, y: 0, duration: .5 }, s - .06); cue(s - .16, 'whoosh', -21); }
+  if (e < DUR - .2) tl.to(el, { autoAlpha: 0, scale: 1.045, duration: .26, ease: 'power2.in' }, e - .24);
+}
+function view(el, s, e, last) {             // sub-view inside a scene
+  tl.fromTo(el, { autoAlpha: 0, y: 44 }, { autoAlpha: 1, y: 0, duration: .42 }, s);
+  if (!last) tl.to(el, { autoAlpha: 0, y: -36, duration: .22, ease: 'power2.in' }, e - .22);
+}
+const pop = (sel, t, o = {}) => tl.fromTo(sel, { autoAlpha: 0, scale: o.from ?? .6, y: o.y ?? 24 }, { autoAlpha: 1, scale: 1, y: 0, duration: o.d ?? .5, ease: o.ease ?? 'back.out(1.7)', stagger: o.stagger ?? 0 }, t);
+const fade = (sel, t, o = {}) => tl.fromTo(sel, { autoAlpha: 0, y: o.y ?? 18 }, { autoAlpha: 1, y: 0, duration: o.d ?? .4, stagger: o.stagger ?? 0 }, t);
+function typeText(el, str, t0, d, sfx = true) { dyn(t => { el.textContent = str.slice(0, Math.round(clamp((t - t0) / d) * str.length)); }); if (sfx) cue(t0, 'typing', -25, { dur: d }); }
+function count(el, a, b, t0, d, fmt = v => Math.round(v).toLocaleString('en-US')) { dyn(t => { el.textContent = fmt(a + (b - a) * eo((t - t0) / d)); }); }
+function swap(el, t0, txt) { const a = el.textContent; dyn(t => { const v = t >= t0 ? txt : (el._sw && t >= el._sw[0] ? el._sw[1] : a); if (t >= t0 || !el._sw || t < el._sw[0]) el.textContent = t >= t0 ? txt : a; }); }
+const B = { s2: ls(2) - .12, s3: ls(4) - .14, s4: ls(8) - .5, s5: ls(12) - .2, s6: ls(15) - .2, s7: ls(21) - .2, s8: ls(25) - .2, s9: ls(29) - .2 };
+
+/* ---------- persistent logo ---------- */
+$('#logo').innerHTML = mark() + '<span>topa<span class="io">.io</span></span>';
+tl.to('#logo', { autoAlpha: 0, duration: .25 }, B.s4).to('#logo', { autoAlpha: 1, duration: .4 }, ls(9) - .1);
+tl.to('#logo', { autoAlpha: 0, duration: .25 }, ls(30) - .25);
+
+/* ---------- S1 hook ---------- */
+(() => {
+  const el = add(`<div class="scene" id="s1"><div id="s1nodes"></div><div id="hl0"></div>
+   <div class="gb" id="comp">${av('You', 0, 96)}<div class="field"><span class="ph" id="ph"><i style="width:210px"></i><i style="width:330px"></i></span><span id="typed"></span><span class="caret" id="caret"></span></div><div class="send" id="send">${ARROW}</div></div>
+   <div class="abs" id="sentwrap" style="right:400px;top:512px;text-align:right"><div class="bub" id="sent">How's business?</div><div style="font-size:26px;color:var(--mut);margin-top:12px;font-weight:600" id="sentok">Sent ✓</div></div></div>`);
+  show(el, 0, B.s2, true);
+  const r = rng(7); let h = '';
+  [[150, 250], [240, 470], [200, 800], [1740, 230], [1660, 660], [1760, 850], [520, 930], [1380, 940], [110, 620], [1810, 470]].forEach((p, i) => { h += `<div class="node s1n" style="left:${p[0]}px;top:${p[1]}px;opacity:.5">${av(INI[i], i, 70 + Math.round(r() * 30))}</div>`; });
+  $('#s1nodes').innerHTML = h;
+  dyn(t => $$('.s1n').forEach((n, i) => { n.style.transform = `translate(-50%,-50%) translate(${Math.sin(t * .6 + i * 1.7) * 14}px,${Math.cos(t * .5 + i * 2.3) * 12}px)`; }));
+  const W = Ls[0].words;
+  $('#hl0').innerHTML = W.map((w, i) => `${i === 3 || i === 7 ? '<br>' : ''}<span class="hw ${i >= W.length - 2 ? 'gt' : ''}" data-i="${i}">${w.w}</span>`).join('');
+  const hw = $$('#hl0 .hw');
+  dyn(t => hw.forEach((s, i) => { const k = clamp(1 - Math.abs((t - (W[i].s + W[i].e) / 2)) / .28); const on = t >= W[i].s - .03 && t < W[i].e + .05; s.style.transform = `translateY(${on ? -7 : 0}px) scale(${1 + .06 * k})`; if (i < W.length - 2) s.style.color = on ? '#ffc966' : '#f7f4f0'; }));
+  dyn(t => { $('#caret').style.opacity = (t * 2 % 1) < .55 ? 1 : 0; });
+  const t0 = le(0) + .12, td = .78, ts = ls(1) + .62;
+  tl.to('#ph', { autoAlpha: 0, duration: .08 }, t0);
+  typeText($('#typed'), "How's business?", t0, td);
+  tl.fromTo('#comp', { scale: 1 }, { scale: 1.035, duration: .22, yoyo: true, repeat: 1, ease: 'sine.inOut' }, wt(0, 'two') - .05);
+  tl.to('#send', { scale: .82, duration: .1, yoyo: true, repeat: 1 }, ts - .1);
+  tl.to('#typed', { autoAlpha: 0, duration: .1 }, ts);
+  tl.fromTo('#sentwrap', { autoAlpha: 0, y: 170, scale: .7, transformOrigin: 'right bottom' }, { autoAlpha: 1, y: 0, scale: 1, duration: .45, ease: 'back.out(1.5)' }, ts);
+  cue(ts, 'swish', -17); cue(ts + .3, 'pop', -18);
+})();
+
+/* ---------- S2 desire: budgets on LinkedIn, they know your name ---------- */
+(() => {
+  const el = add(`<div class="scene" id="s2"><svg class="abs" id="s2svg" width="1920" height="1080" style="left:0;top:0"></svg><div id="s2nodes"></div>
+   <div class="sup" id="s2a" style="top:150px">The <b>real budgets</b> are on <b class="gt">LinkedIn.</b></div>
+   <div class="sup" id="s2b" style="top:150px">And they <b class="gt">already know your name.</b></div>
+   <div class="node" id="you" style="left:960px;top:560px">${av('YOU', 0, 190)}<div class="ring" style="border-color:#ff66d4;box-shadow:0 0 50px rgba(255,102,212,.8)"></div></div></div>`);
+  show(el, B.s2, B.s3);
+  const r = rng(11), pts = [];
+  for (let k = 0; k < 6000 && pts.length < 38; k++) { const x = 100 + r() * 1720, y = 320 + r() * 560; if (Math.hypot((x - 960) / 1.5, y - 560) < 215) continue; if (pts.some(p => Math.hypot(p[0] - x, p[1] - y) < 112)) continue; pts.push([x, y]); }
+  const roles = ['CEO', 'Founder', 'Managing Director', 'Owner', 'COO', 'Founder'];
+  const budget = [2, 7, 13, 21, 28, 33].filter(i => i < pts.length), first = pts.map((p, i) => i).filter(i => i % 5 !== 3).slice(0, 24);
+  let h = '', sv = '';
+  pts.forEach((p, i) => { const b = budget.indexOf(i); h += `<div class="node s2n" id="n${i}" style="left:${p[0]}px;top:${p[1]}px">${av(INI[i % 20], i, b >= 0 ? 104 : 74)}${b >= 0 ? `<div class="ring"></div><div class="tag">${roles[b]}</div>` : ''}<div class="first">1st</div></div>`; });
+  first.forEach(i => { sv += `<line class="ln" x1="960" y1="560" x2="${pts[i][0]}" y2="${pts[i][1]}" stroke="rgba(255,102,212,.5)" stroke-width="2.5"/>`; });
+  $('#s2nodes').innerHTML = h; $('#s2svg').innerHTML = sv;
+  tl.fromTo('.s2n', { autoAlpha: 0, scale: 0 }, { autoAlpha: 1, scale: 1, duration: .45, ease: 'back.out(2)', stagger: { each: .03, from: 'random' } }, B.s2 + .05);
+  gsap.set('.s2n .first,.s2n .ring,.s2n .tag,#you,#s2b', { autoAlpha: 0 });
+  const tb = wt(2, 'budgets') - .25;
+  budget.forEach((i, k) => { tl.to(`#n${i} .ring`, { autoAlpha: 1, duration: .25 }, tb + k * .09).fromTo(`#n${i} .tag`, { autoAlpha: 0, y: -14 }, { autoAlpha: 1, y: 0, duration: .3 }, tb + k * .09).fromTo(`#n${i}`, { scale: 1 }, { scale: 1.18, duration: .18, yoyo: true, repeat: 1 }, tb + k * .09); cue(tb + k * .09, 'plink', -24, { step: k }); });
+  fade('#s2a', B.s2 + .15, { y: -20 });
+  const t3 = ls(3) - .05;
+  tl.to('#s2a', { autoAlpha: 0, y: -24, duration: .25 }, t3 - .2); fade('#s2b', t3 + .1, { y: 24 });
+  pop('#you', t3, { from: 0 }); cue(t3, 'pop', -17);
+  const tk = wt(3, 'already') - .5;
+  $$('.ln').forEach((l, k) => { const len = Math.hypot(l.x2.baseVal.value - 960, l.y2.baseVal.value - 560); gsap.set(l, { strokeDasharray: len, strokeDashoffset: len }); tl.to(l, { strokeDashoffset: 0, duration: .5, ease: 'power2.out' }, tk + k * .035); });
+  first.forEach((i, k) => tl.to(`#n${i} .first`, { autoAlpha: 1, duration: .2 }, tk + .35 + k * .035));
+  pts.forEach((p, i) => { if (!first.includes(i)) tl.to(`#n${i}`, { opacity: .22, duration: .4 }, tk); });
+  cue(tk, 'shimmer', -24);
+  dyn(t => $$('.s2n').forEach((n, i) => { n.style.marginLeft = Math.sin(t * .7 + i) * 7 + 'px'; n.style.marginTop = Math.cos(t * .6 + i * 1.3) * 7 + 'px'; }));
+})();
+
+/* ---------- S3 problem ---------- */
+(() => {
+  const el = add(`<div class="scene" id="s3">
+   <div class="view" id="p1"><canvas id="dots" width="1920" height="1080" class="abs" style="left:0;top:0"></canvas>
+     <div class="abs" style="left:0;right:0;top:250px;text-align:center"><div style="display:inline-block;padding:44px 90px 40px;background:rgba(10,10,26,.93);border-radius:64px;border:1.5px solid var(--line);box-shadow:0 0 120px 60px rgba(10,10,26,.7)"><div class="big gt mono" id="cnt" style="font-size:300px">0</div><div style="font-size:54px;font-weight:300;margin-top:14px">connections, <b style="font-weight:800">sitting there</b></div></div></div></div>
+   <div class="view" id="p2"><div class="card abs" style="left:480px;top:150px;width:960px;padding:44px 50px;transform:scale(1.16);transform-origin:top center">
+       <div style="display:flex;align-items:center;gap:28px">${av('SM', 1, 124)}<div><div style="font-size:48px;font-weight:800">${PEOPLE[0][0]}</div><div style="font-size:30px;color:var(--mut);margin-top:4px">${PEOPLE[0][1]}</div></div><div class="chip" style="margin-left:auto">1st</div></div>
+       <div style="margin-top:34px;display:flex;flex-direction:column;gap:18px">
+         <div class="row p2r"><span class="chip ok">${CHECK} Accepted your request</span><span style="margin-left:auto;color:var(--mut);font-size:26px">3 years ago</span></div>
+         <div class="row p2r"><span style="font-size:40px">👍</span><span style="font-size:30px;font-weight:600">Liked your post</span><span style="margin-left:auto;color:var(--mut);font-size:26px">once</span></div>
+         <div class="row p2r" style="height:150px;justify-content:center;color:var(--mut);font-size:30px;border-style:dashed">Messages: none</div></div></div>
+     <div class="abs stamp" id="stamp" style="left:820px;top:660px">NEVER MESSAGED</div></div>
+   <div class="view" id="p3"><div class="sup" style="top:140px">By hand, it lasts <b class="gt">three days.</b></div>
+     <div class="abs" id="week" style="left:360px;top:330px;width:1200px;height:500px;display:flex;gap:30px;align-items:flex-end"></div></div>
+   <div class="view" id="p4"><div class="card abs" style="left:420px;top:150px;width:1080px;height:740px;padding:40px 50px">
+       <div style="display:flex;align-items:center;gap:22px;padding-bottom:26px;border-bottom:1.5px solid var(--line)">${av('DK', 4, 84)}<div><div style="font-size:36px;font-weight:800">${PEOPLE[1][0]}</div><div style="font-size:25px;color:var(--mut)">${PEOPLE[1][1]}</div></div></div>
+       <div style="text-align:right;margin-top:36px"><div class="bub" id="p4a" style="font-size:40px;padding:20px 36px">Hey David, how's things?</div></div>
+       <div style="margin-top:28px" id="p4bw"><div class="bub in" id="p4b" style="font-size:40px;padding:20px 36px">Good thanks! Busy year. You?</div></div>
+       <div id="p4c" style="margin-top:34px;text-align:center;font-size:30px;color:var(--mut);font-weight:600">Seen · 3 weeks ago</div>
+       <div id="p4d" style="position:absolute;left:0;right:0;bottom:44px;display:flex;justify-content:center;gap:22px;align-items:center"><div style="position:relative;width:100px;height:100px;border-radius:50%;background:rgba(255,93,122,.16);border:3px solid #ff5d7a;display:flex;align-items:center;justify-content:center">${PHONE('#ff5d7a', 50)}<div style="position:absolute;width:110px;height:6px;background:#ff5d7a;transform:rotate(-45deg);border-radius:3px"></div></div><div style="font-size:44px;font-weight:800;color:#ff8da1">Nobody picks up the phone</div></div></div></div></div>`);
+  show(el, B.s3, B.s4);
+  // p1 counter + dot field
+  view($('#p1'), B.s3, ls(5) - .1);
+  const cv = $('#dots'), cx = cv.getContext('2d'), r = rng(3), inner = [], outer = [];
+  for (let c = 0; c < 72; c++) for (let w = 0; w < 40; w++) (c >= 20 && c < 52 && w >= 12 && w < 28 ? inner : outer).push([c, w, r()]);
+  inner.sort((a, b) => a[2] - b[2]); outer.sort((a, b) => a[2] - b[2]);
+  const tA = wt(4, 'five') - .5, tB = wt(4, 'maybe') - .05;
+  dyn(t => {
+    if (t < B.s3 - .2 || t > ls(5) + .2) return;
+    const nA = Math.round(inner.length * eo((t - tA) / 1.2)), nB = Math.round(outer.length * eo((t - tB) / 1.2)), z = 1 - .5 * eo((t - tB) / 1.1);
+    cx.clearRect(0, 0, 1920, 1080);
+    const draw = (list, n, al) => { for (let k = 0; k < n; k++) { const d = list[k]; cx.fillStyle = PAL[(d[0] * 7 + d[1] * 3) % 8][0]; cx.globalAlpha = al; cx.beginPath(); cx.arc(960 + (d[0] - 35.5) * 50 * z, 520 + (d[1] - 19.5) * 50 * z, 14 * z, 0, 6.3); cx.fill(); } };
+    draw(inner, nA, .9); draw(outer, nB, .7); cx.globalAlpha = 1;
+  });
+  const cnt = $('#cnt');
+  dyn(t => { const v = t < tB ? 500 * eo((t - tA) / 1.2) : 500 + 1500 * eo((t - tB) / .8); cnt.textContent = Math.round(v).toLocaleString('en-US') + (v > 499 ? '+' : ''); });
+  cue(tA, 'blips', -24); cue(tB, 'riser', -27, { dur: 1.0 });
+  // p2 never messaged
+  view($('#p2'), ls(5) - .1, ls(6) - .2);
+  gsap.set('.p2r,#stamp', { autoAlpha: 0 });
+  [wt(5, 'accepted') - .1, wt(5, 'liked') - .1, wt(5, 'never') - .45].forEach((t, k) => { tl.fromTo($$('.p2r')[k], { autoAlpha: 0, x: -50 }, { autoAlpha: 1, x: 0, duration: .35 }, t); cue(t, 'pop', -21, { f0: 420 + k * 90 }); });
+  const tS = wt(5, 'never') + .15;
+  tl.fromTo('#stamp', { autoAlpha: 0, scale: 2.6, rotation: -22 }, { autoAlpha: 1, scale: 1, rotation: -7, duration: .22, ease: 'power4.in' }, tS); cue(tS + .2, 'stamp', -14);
+  // p3 three days
+  view($('#p3'), ls(6) - .2, ls(7) - .08);
+  const hts = [400, 270, 120, 0, 0], msg = [14, 9, 3, 0, 0];
+  $('#week').innerHTML = hts.map((hh, i) => `<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%"><div class="wn" style="font-size:40px;font-weight:800;margin-bottom:12px">${msg[i] ? msg[i] + ' sent' : '<span style="color:#ff8da1">0</span>'}</div><div class="wb" style="width:100%;height:${Math.max(hh * .86, 10)}px;border-radius:18px 18px 6px 6px;background:${hh ? 'var(--grad)' : 'rgba(255,255,255,.14)'};transform-origin:bottom"></div><div style="font-size:32px;color:var(--mut);margin-top:16px;font-weight:600">Day ${i + 1}</div></div>`).join('');
+  const tW = ls(6) + .25, tT = wt(6, 'tedious') - .5;
+  [0, 1, 2].forEach(i => { tl.fromTo($$('.wb')[i], { scaleY: 0 }, { scaleY: 1, duration: .5, ease: 'back.out(1.4)' }, tW + i * .5); fade($$('.wn')[i], tW + i * .5 + .2); cue(tW + i * .5, 'plink', -22, { step: 4 - i * 2 }); });
+  [3, 4].forEach(i => { tl.fromTo($$('.wb')[i], { scaleY: 0 }, { scaleY: 1, duration: .3 }, tT + (i - 3) * .3); fade($$('.wn')[i], tT + (i - 3) * .3); cue(tT + (i - 3) * .3, 'thump', -20, { f0: 80 - (i - 3) * 14 }); });
+  // p4 convo dies
+  view($('#p4'), ls(7) - .08, B.s4, true);
+  gsap.set('#p4b,#p4c,#p4d', { autoAlpha: 0 });
+  const tR = wt(7, 'reply') - .25, tD = wt(7, 'dies') - .1, tP = wt(7, 'nobody') - .15;
+  pop('#p4b', tR, { from: .7 }); cue(tR, 'bubble', -17);
+  fade('#p4c', tD); tl.to('#p4a,#p4b', { filter: 'grayscale(1)', opacity: .38, duration: .8 }, tD);
+  pop('#p4d', tP, { from: .8 }); cue(tP, 'thump', -17);
+})();
+
+/* ---------- S4 mechanism ---------- */
+(() => {
+  const el = add(`<div class="scene" id="s4">
+   <div class="view" id="m1"><div class="sup" id="m1pre" style="top:200px;font-size:64px">That's why we built</div><div class="abs" id="m1ring" style="left:960px;top:470px;width:0;height:0"><div style="position:absolute;left:-330px;top:-330px;width:660px;height:660px;border-radius:50%;border:5px solid #ff66d4;box-shadow:0 0 120px rgba(255,102,212,.7)"></div></div>
+     <div class="abs" id="m1logo" style="left:0;right:0;top:330px;display:flex;justify-content:center;align-items:center;gap:36px"><div style="width:230px;height:230px" id="m1mark">${mark()}</div><div style="font-size:250px;font-weight:700;letter-spacing:-.04em">topa<span style="opacity:.55;font-weight:400">.io</span></div></div>
+     <div class="sup" id="m1sub" style="top:660px;font-size:58px">LinkedIn automation that starts <b class="gt">real conversations</b></div></div>
+   <div class="view" id="m2"><div class="sup" style="top:130px;font-size:62px">A casual opener, to people you <b class="gt">already know</b></div>
+     <div class="card abs" style="left:150px;top:300px;width:640px;padding:36px 40px"><div style="font-size:32px;font-weight:800;margin-bottom:22px">LinkedIn Accounts</div>
+       <div class="row">${av('You', 0, 80)}<div><div class="nm">Your account</div><div class="sub" id="m2st">Not connected</div></div><div class="chip ok" id="m2ok" style="margin-left:auto">● Active</div></div>
+       <div class="btn" id="m2btn" style="margin-top:26px">Connect LinkedIn Account</div>
+       <div style="margin-top:26px;text-align:right"><div class="bub" id="m2src" style="font-size:38px;padding:18px 32px">How's business?</div></div></div>
+     <div class="abs" id="m2list" style="left:1010px;top:290px;width:760px;display:flex;flex-direction:column;gap:14px"></div>
+     <div id="m2fly"></div></div>
+   <div class="view" id="m3"><div class="abs" style="left:0;right:0;top:170px;text-align:center"><div class="bub" id="m3b" style="font-size:110px;padding:40px 80px;border-radius:70px 70px 18px 70px">How's business?</div></div>
+     <div class="abs" id="m3np" style="left:0;right:0;top:416px;text-align:center"><span class="chip" style="font-size:38px;padding:14px 34px">No pitch in it</span></div>
+     <div class="abs" id="m3h" style="left:0;right:0;top:600px;display:flex;justify-content:center;gap:70px"></div>
+     <div class="sup" id="m3t" style="top:790px;font-size:84px;font-weight:900"><span class="gt" style="font-weight:900">THE HAND RAISER</span></div></div>
+   <div class="view" id="m4"><div class="sup" style="top:150px;font-size:62px">No reply? It <b class="gt">follows up</b> for you.</div>
+     <div class="abs" style="left:260px;top:520px;width:1400px;height:8px;border-radius:4px;background:rgba(255,255,255,.14)"><div id="m4bar" style="height:100%;width:100%;border-radius:4px;background:var(--grad);transform-origin:left"></div></div>
+     <div id="m4n"></div></div></div>`);
+  show(el, B.s4, B.s5);
+  // m1 logo reveal
+  const tL = wt(8, 'Topa') - .12;
+  view($('#m1'), B.s4, ls(9) - .12);
+  cue(tL - 1.15, 'riser', -20, { dur: 1.15 }); cue(tL, 'impact', -12); cue(tL + .05, 'shimmer', -20);
+  tl.fromTo('#m1logo', { autoAlpha: 0, scale: .3 }, { autoAlpha: 1, scale: 1, duration: .5, ease: 'back.out(1.8)' }, tL - .12);
+  tl.fromTo('#m1mark', { rotation: -40 }, { rotation: 0, duration: .7, ease: 'elastic.out(1,.5)' }, tL - .12);
+  gsap.set('#m1ring', { autoAlpha: 0 }); tl.fromTo('#m1ring', { autoAlpha: .9, scale: .2 }, { autoAlpha: 0, scale: 2.6, duration: 1.0, ease: 'power2.out', immediateRender: false }, tL); fade('#m1pre', ls(8) - .05);
+  fade('#m1sub', tL + .35);
+  // m2 connect + sends
+  const m2s = ls(9) - .12, m2e = ls(10) - .15;
+  view($('#m2'), m2s, m2e);
+  const times = ['09:14', '09:52', '10:31', '11:07', '13:48'];
+  $('#m2list').innerHTML = times.map((tm, i) => `<div class="row m2row">${av(PEOPLE[i + 1][2], i + 2, 70)}<div><div class="nm">${PEOPLE[i + 1][0]}</div><div class="sub">${PEOPLE[i + 1][1]}</div></div><div class="m2msg" style="margin-left:auto;text-align:right"><div class="bub" style="font-size:24px;padding:10px 20px;border-radius:22px 22px 6px 22px;box-shadow:none">How's business?</div><div style="font-size:20px;color:var(--mut);margin-top:5px">Sent ${tm}</div></div></div>`).join('');
+  $('#m2fly').innerHTML = times.map((_, i) => `<div class="bub abs m2f" style="left:520px;top:640px;font-size:30px;padding:12px 24px">How's business?</div>`).join('');
+  gsap.set('#m2ok,.m2msg,.m2f,#m2src', { autoAlpha: 0 });
+  const tC = wt(9, 'connects') + .05, tS = wt(9, 'sends') - .1;
+  tl.to('#m2btn', { scale: .93, duration: .1, yoyo: true, repeat: 1 }, tC).to('#m2btn', { autoAlpha: .35, duration: .2 }, tC + .2); pop('#m2ok', tC + .2); cue(tC, 'click', -16); cue(tC + .25, 'ding', -22);
+  swap($('#m2st'), tC + .2, 'Connected');
+  pop('#m2src', tS - .35, { from: .7 });
+  times.forEach((_, i) => { const t = tS + .25 + i * .42; tl.fromTo($$('.m2f')[i], { autoAlpha: 1, x: 0, y: 0, scale: 1 }, { x: 900, y: -300 + i * 120, scale: .6, autoAlpha: 0, duration: .5, ease: 'power2.in', immediateRender: false }, t); pop($$('.m2msg')[i], t + .45, { from: .5, d: .3 }); cue(t, 'swish', -22, { seed: i }); cue(t + .45, 'pop', -22, { f0: 480 + i * 60 }); });
+  // m3 hand raiser
+  const m3s = m2e, m3e = ls(11) - .18;
+  view($('#m3'), m3s, m3e);
+  $('#m3h').innerHTML = [1, 3, 6].map((k, i) => `<div class="m3p" style="position:relative">${av(PEOPLE[k][2], k + 1, 150)}<div class="m3hand" style="position:absolute;right:-46px;top:-64px;font-size:96px">✋</div></div>`).join('');
+  gsap.set('#m3np,.m3p,.m3hand,#m3t', { autoAlpha: 0 });
+  pop('#m3np', wt(10, 'pitch') - .15); cue(wt(10, 'pitch') - .15, 'pop', -20);
+  const tH = wt(10, 'hand') - .55;
+  pop('.m3p', tH - .2, { stagger: .1, from: .4 });
+  $$('.m3hand').forEach((h, i) => { tl.fromTo(h, { autoAlpha: 0, y: 70, rotation: -30 }, { autoAlpha: 1, y: 0, rotation: 8, duration: .4, ease: 'back.out(2.2)' }, tH + i * .14); cue(tH + i * .14, 'plink', -20, { step: i * 2 + 2 }); });
+  tl.fromTo('#m3t', { autoAlpha: 0, scale: 1.5 }, { autoAlpha: 1, scale: 1, duration: .35, ease: 'power4.out' }, wt(10, 'hand') - .02); cue(wt(10, 'hand') - .02, 'thump', -15);
+  // m4 follow-ups
+  view($('#m4'), m3e, B.s5, true);
+  const lab = [['Message 1', "How's business?"], ['Message 2', 'A gentle nudge'], ['Message 3', 'One last check-in']];
+  $('#m4n').innerHTML = lab.map((l, i) => `<div class="abs m4n" style="left:${260 + i * 700 - 170}px;top:400px;width:340px;text-align:center"><div class="m4dot" style="width:120px;height:120px;border-radius:50%;margin:64px auto 0;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:54px;font-weight:900;color:#170a2c;box-shadow:0 0 60px rgba(255,102,212,.5)">${i + 1}</div><div style="font-size:40px;font-weight:800;margin-top:28px">${l[0]}</div><div style="font-size:28px;color:var(--mut);margin-top:6px">${l[1]}</div></div>`).join('') + [0, 1].map(i => `<div class="abs chip m4w" style="left:${260 + i * 700 + 240}px;top:440px;font-size:24px;color:var(--mut)">no reply…</div>`).join('');
+  gsap.set('.m4n,.m4w', { autoAlpha: 0 }); gsap.set('#m4bar', { scaleX: 0 });
+  const t1 = m3e + .15, t2 = wt(11, 'second') - .25, t3 = wt(11, 'third') - .2;
+  [t1, t2, t3].forEach((t, i) => { pop($$('.m4n')[i], t, { from: .5 }); cue(t, 'plink', -19, { step: i * 2 }); if (i) { tl.to('#m4bar', { scaleX: i / 2, duration: .5, ease: 'power2.inOut' }, t - .45); fade($$('.m4w')[i - 1], t - .5); } });
+})();
+
+/* ---------- S5 proof ---------- */
+(() => {
+  const el = add(`<div class="scene" id="s5">
+    <div class="abs chip" id="s5who" style="left:150px;top:150px;font-size:30px;padding:10px 26px 10px 10px">${av('J', 5, 58)} Jonathan · runs Topa · his own campaign</div>
+    <div class="abs" id="s5grid" style="left:150px;top:250px;width:900px;display:grid;grid-template-columns:repeat(12,1fr);gap:15px"></div>
+    <div class="abs" style="left:150px;top:812px;display:flex;gap:70px;align-items:baseline">
+      <div id="s5a"><span class="big mono" id="c84" style="font-size:120px">0</span><span style="font-size:36px;color:var(--mut);margin-left:16px">existing connections messaged</span></div></div>
+    <div class="abs" id="s5b" style="left:1130px;top:170px;width:640px;text-align:center">
+      <div><span class="big gt mono" id="c23" style="font-size:210px">0</span></div><div style="font-size:44px;font-weight:300;margin-top:6px"><b style="font-weight:800">replied</b></div></div>
+    <div class="abs" id="s5c" style="left:1130px;top:500px;width:640px;text-align:center">
+      <svg width="400" height="400" viewBox="0 0 400 400" style="position:absolute;left:120px;top:0"><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a855f7"/><stop offset=".5" stop-color="#ff66a3"/><stop offset="1" stop-color="#ffc966"/></linearGradient></defs><circle cx="200" cy="200" r="168" stroke="rgba(255,255,255,.12)" stroke-width="30" fill="none"/><circle id="ringp" cx="200" cy="200" r="168" stroke="url(#rg)" stroke-width="30" fill="none" stroke-linecap="round" transform="rotate(-90 200 200)"/></svg>
+      <div style="position:relative;padding-top:108px"><span class="big mono" id="c27" style="font-size:150px">0</span><span class="big" style="font-size:80px">%</span><div style="font-size:34px;color:var(--mut);font-weight:600;margin-top:4px">reply rate</div></div></div></div>`);
+  show(el, B.s5, B.s6);
+  const r = rng(21), idx = [...Array(84).keys()], hit = new Set(idx.map(i => [r(), i]).sort((a, b) => a[0] - b[0]).slice(0, 23).map(a => a[1]));
+  $('#s5grid').innerHTML = idx.map(i => `<div class="d84" style="position:relative;aspect-ratio:1"><div class="av" style="width:100%;height:100%;background:rgba(255,255,255,.14);font-size:20px;color:rgba(255,255,255,.55)">${INI[i % 20]}</div>${hit.has(i) ? `<div class="av dhit" style="position:absolute;inset:0;font-size:20px;background:linear-gradient(135deg,${PAL[i % 8][0]},${PAL[i % 8][1]});box-shadow:0 0 22px ${PAL[i % 8][0]}">${INI[i % 20]}</div>` : ''}</div>`).join('');
+  gsap.set('.dhit,#s5b,#s5c', { autoAlpha: 0 });
+  const t84 = wt(12, 'sent') - .2, d84 = wt(12, '84') + .35 - t84;
+  fade('#s5who', B.s5 + .1); tl.fromTo('.d84', { autoAlpha: 0, scale: 0 }, { autoAlpha: 1, scale: 1, duration: .25, ease: 'back.out(2)', stagger: d84 / 84 }, t84);
+  count($('#c84'), 0, 84, t84, d84 + .1); cue(t84, 'typing', -27, { dur: d84 });
+  const t23 = ls(13) - .1; pop('#s5b', t23, { from: .7 }); count($('#c23'), 0, 23, t23, 1.1);
+  $$('.dhit').forEach((d, k) => { const t = t23 + .05 + k * .05; tl.fromTo(d, { autoAlpha: 0, scale: 2.2 }, { autoAlpha: 1, scale: 1, duration: .3, ease: 'back.out(2)' }, t); if (k % 2 === 0) cue(t, 'bubble', -24, { f0: 420 + k * 26 }); });
+  const t27 = wt(14, '27') - .3, C = 2 * Math.PI * 168; pop('#s5c', t27 - .1, { from: .7 }); count($('#c27'), 0, 27, t27, .9);
+  gsap.set('#ringp', { strokeDasharray: C, strokeDashoffset: C }); tl.to('#ringp', { strokeDashoffset: C * (1 - .27), duration: .9, ease: 'power2.out' }, t27); cue(t27, 'riser', -24, { dur: .8 }); cue(t27 + .85, 'ding', -15);
+})();
+
+/* ---------- S6 how it works (app window) ---------- */
+(() => {
+  const nav = ['Inbox', 'Dashboard', 'Accounts', 'Campaigns', 'Lead Database'];
+  const el = add(`<div class="scene" id="s6"><div class="gb" id="app"><div id="side"><div class="lg">${mark()}<span>topa<span style="opacity:.55;font-weight:400">.io</span></span></div>${nav.map((n, i) => `<div class="ni" id="ni${i}">${n}</div>`).join('')}</div><div id="main">
+   <div class="view" id="h1"><div class="vh">LinkedIn Accounts</div><div class="steppill">Step 1 · Connect</div>
+     <div class="btn abs" id="h1btn" style="left:50px;top:130px">+ Connect LinkedIn Account</div>
+     <div class="row abs" id="h1row" style="left:50px;top:250px;width:1180px;padding:26px 32px">${av('You', 0, 96)}<div><div class="nm" style="font-size:38px">Your LinkedIn account</div><div class="sub" style="font-size:27px">Securely connected</div></div><div class="chip ok" style="margin-left:auto;font-size:30px">● Active</div></div></div>
+   <div class="view" id="h2"><div class="vh">New campaign · Who do you want to message?</div><div class="steppill">Step 2 · Pick who</div>
+     <div class="opt" id="o1" style="left:50px;top:150px"><div class="glow" id="g1"></div><h4>Existing connections</h4><p>People who already know your name. The low-hanging fruit.</p><div style="display:flex;margin-top:70px">${[0, 1, 2, 3, 4].map(i => `<div style="margin-right:-20px">${av(PEOPLE[i][2], i + 1, 112)}</div>`).join('')}</div></div>
+     <div class="opt" id="o2" style="left:680px;top:150px"><div class="glow" id="g2"></div><h4>New connections</h4><p>From the built-in lead database.</p><div class="big gt mono" id="c350" style="font-size:74px;margin-top:84px">0</div><div style="font-size:30px;font-weight:700;margin-top:8px">contacts, built in</div></div></div>
+   <div class="view" id="h3"><div class="vh">Write messaging · Set hours</div><div class="steppill" id="h3pill">Step 3 · Message</div>
+     <div class="card abs" style="left:50px;top:130px;width:620px;height:520px;padding:30px"><div style="display:flex;align-items:center;justify-content:space-between"><div style="font-size:30px;font-weight:800">Message 1</div><div class="chip" id="aih" style="background:var(--grad);color:#170a2c;border:none;font-weight:800">✦ Ai Helper</div></div>
+       <div style="margin-top:22px;height:300px;border-radius:20px;background:rgba(0,0,0,.3);border:1.5px solid var(--line);padding:26px;font-size:40px;font-weight:600;line-height:1.3"><span id="h3msg"></span><span class="caret" style="height:40px;vertical-align:middle"></span></div><div style="margin-top:18px;font-size:23px;color:var(--mut)">+ Message 2 · + Message 3 follow-ups</div></div>
+     <div class="card abs" id="sched" style="left:700px;top:130px;width:570px;height:350px;padding:30px"><div style="font-size:30px;font-weight:800;margin-bottom:18px">Campaign hours</div><div id="schedg" style="display:grid;grid-template-columns:repeat(7,1fr);gap:10px"></div><div style="font-size:24px;color:var(--mut);margin-top:16px">Mon to Fri · 9 to 5 · your timezone</div></div>
+     <div class="card abs" id="auto" style="left:700px;top:500px;width:570px;height:150px;padding:0 34px;display:flex;align-items:center;gap:26px"><div style="width:130px;height:70px;border-radius:35px;background:rgba(255,255,255,.14);position:relative" id="tog"><div id="togbg" style="position:absolute;inset:0;border-radius:35px;background:var(--green)"></div><div id="knob" style="position:absolute;left:6px;top:6px;width:58px;height:58px;border-radius:50%;background:#fff"></div></div><div><div style="font-size:36px;font-weight:800">Autopilot</div><div style="font-size:25px;color:var(--mut)" id="autost">Campaign running</div></div></div></div>
+   <div class="view" id="h4"><div class="vh">Inbox <span class="chip ok" id="unread" style="margin-left:16px;vertical-align:middle;font-size:26px">0 replies</span></div><div class="steppill">Step 4 · Replies</div>
+     <div class="abs" id="inbox" style="left:50px;top:124px;width:760px;display:flex;flex-direction:column;gap:13px"></div>
+     <div class="card abs" id="detail" style="left:840px;top:124px;width:430px;height:608px;padding:32px;text-align:center">
+        <div style="display:flex;justify-content:center;position:relative">${av('SM', 1, 130)}</div><div style="font-size:38px;font-weight:800;margin-top:16px">${PEOPLE[0][0]}</div><div style="font-size:24px;color:var(--mut);margin-top:4px">${PEOPLE[0][1]}</div>
+        <div class="btn" id="gcp" style="margin-top:30px;font-size:30px;padding:20px 30px">${PHONE('#170a2c', 34)} Get Cell Phone</div>
+        <div id="spin" style="margin:26px auto 0;width:56px;height:56px;border-radius:50%;border:6px solid rgba(255,255,255,.18);border-top-color:#ff66d4"></div>
+        <div id="num" style="position:absolute;left:24px;right:24px;top:392px"><div class="chip ok mono" style="font-size:36px;padding:16px 26px;font-weight:800">+44 7700 900 142</div></div>
+        <div id="seven" style="position:absolute;left:0;right:0;top:494px"><div style="display:flex;justify-content:center;gap:9px">${[...Array(10).keys()].map(i => `<div class="sd" style="width:27px;height:27px;border-radius:50%;background:${i < 7 ? 'var(--green)' : 'rgba(255,255,255,.16)'}"></div>`).join('')}</div><div style="font-size:24px;color:var(--mut);margin-top:12px;font-weight:600">a mobile for about 7 in 10</div></div></div>
+     <div class="abs" id="call" style="left:0;top:0;right:0;bottom:0;background:#0f0e26;display:flex;flex-direction:column;align-items:center;justify-content:center">
+        <div style="position:relative;width:190px;height:190px"><div class="rip" style="position:absolute;inset:0;border-radius:50%;border:4px solid var(--green)"></div><div class="rip" style="position:absolute;inset:0;border-radius:50%;border:4px solid var(--green)"></div><div style="position:absolute;inset:0;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center">${PHONE('#07221a', 92)}</div></div>
+        <div style="font-size:54px;font-weight:800;margin-top:34px">Calling ${PEOPLE[0][0]}</div><div style="font-size:28px;color:var(--mut);margin-top:6px">Replied to you 4 minutes ago</div>
+        <div style="margin-top:34px;width:700px;height:34px;border-radius:17px;background:rgba(255,255,255,.12);overflow:hidden;position:relative"><div id="warmbar" style="position:absolute;inset:0;background:linear-gradient(90deg,#38bdf8,#a855f7 40%,#ff66a3 70%,#ffa366);transform-origin:left"></div></div>
+        <div style="width:700px;display:flex;justify-content:space-between;font-size:26px;font-weight:800;margin-top:10px"><span style="color:#7dd3fc">COLD CALL</span><span id="warmtx" style="color:#ffb866">WARM CALL</span></div></div>
+     <div class="abs" id="gift" style="left:0;top:0;right:0;bottom:0;background:#0f0e26">
+        <div class="vh">Hottest replies</div>
+        <div class="abs" id="hot" style="left:50px;top:124px;width:620px;display:flex;flex-direction:column;gap:14px"></div>
+        <div class="abs" id="giftbox" style="left:760px;top:130px;width:460px;text-align:center"><div style="font-size:230px;line-height:1">🎁</div><div style="font-size:34px;font-weight:800;margin-top:6px">A gift on their desk</div></div>
+        <div class="abs card" id="coffee" style="left:730px;top:530px;width:520px;padding:26px 30px;display:flex;align-items:center;gap:22px"><div style="font-size:74px">☕</div><div><div style="font-size:36px;font-weight:800">Coffee date</div><div style="font-size:26px;color:var(--mut)">Thursday · 10:00</div></div><div class="chip ok" style="margin-left:auto">${CHECK} Booked</div></div></div>
+     <svg id="cursor" viewBox="0 0 24 24"><path d="M4 2l15 9-7 1.8L9 20z" fill="#fff" stroke="#170a2c" stroke-width="1.6" stroke-linejoin="round"/></svg>
+   </div></div></div></div>`);
+  show(el, B.s6, B.s7);
+  const act = (i, t) => { tl.set('#side .ni', { background: 'transparent', color: '#a09dc0' }, t).set('#ni' + i, { background: 'rgba(192,132,252,.22)', color: '#fff' }, t); };
+  gsap.set('#ni2', { background: 'rgba(192,132,252,.22)', color: '#fff' });
+  const cur = (x, y, t, d = .45) => tl.to('#cursor', { x, y, duration: d, ease: 'power2.inOut' }, t);
+  const click = t => { tl.to('#cursor', { scale: .78, duration: .08, yoyo: true, repeat: 1 }, t); cue(t, 'click', -15); };
+  gsap.set('#cursor', { x: 900, y: 600 });
+  // h1 connect
+  const h1e = wt(15, 'pick') - .25; view($('#h1'), B.s6, h1e); act(2, B.s6);
+  gsap.set('#h1row', { autoAlpha: 0 });
+  const tc = wt(15, 'LinkedIn') - .1; cur(250, 160, B.s6 + .2, .5); click(tc); tl.to('#h1btn', { scale: .95, duration: .08, yoyo: true, repeat: 1 }, tc);
+  tl.fromTo('#h1row', { autoAlpha: 0, y: 30 }, { autoAlpha: 1, y: 0, duration: .4, ease: 'back.out(1.6)' }, tc + .22); cue(tc + .3, 'ding', -20);
+  // h2 pick who
+  const h2e = ls(16) - .2; view($('#h2'), h1e, h2e); act(3, h1e);
+  gsap.set('#g1,#g2', { autoAlpha: 0 });
+  const te = wt(15, 'existing') - .12, tn = wt(15, 'new') - .12, t350 = wt(15, '350') - .45;
+  cur(340, 430, te - .4); tl.to('#g1', { autoAlpha: 1, duration: .2 }, te).fromTo('#o1', { scale: 1 }, { scale: 1.04, duration: .18, yoyo: true, repeat: 1 }, te); cue(te, 'pop', -19);
+  cur(980, 440, tn - .4); tl.to('#g1', { autoAlpha: 0, duration: .2 }, tn).to('#g2', { autoAlpha: 1, duration: .2 }, tn).fromTo('#o2', { scale: 1 }, { scale: 1.04, duration: .18, yoyo: true, repeat: 1 }, tn); cue(tn, 'pop', -19, { f0: 640 });
+  count($('#c350'), 0, 350000000, t350, 1.25); cue(t350, 'blips', -24); cue(t350 + 1.25, 'ding', -20);
+  // h3 message, hours, autopilot
+  const h3e = ls(17) - .2; view($('#h3'), h2e, h3e);
+  const ta = wt(16, 'AI') - .1, th = wt(16, 'set') - .2, tp = wt(16, 'autopilot') - .35;
+  cur(560, 180, h2e + .1, .4); click(ta); tl.fromTo('#aih', { scale: 1 }, { scale: 1.15, duration: .14, yoyo: true, repeat: 1 }, ta); cue(ta + .05, 'sparkle', -21);
+  typeText($('#h3msg'), "Hi {firstname}, how's business?", ta + .2, 1.2);
+  const days = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+  $('#schedg').innerHTML = days.map((d, i) => `<div style="text-align:center"><div style="font-size:24px;font-weight:700;color:var(--mut);margin-bottom:8px">${d}</div><div style="height:150px;border-radius:12px;background:rgba(255,255,255,.08);position:relative;overflow:hidden">${i < 5 ? '<div class="sb" style="position:absolute;left:0;right:0;top:22%;bottom:22%;background:var(--grad);transform-origin:top"></div>' : ''}</div></div>`).join('');
+  gsap.set('#sched,#auto', { autoAlpha: 0 });
+  fade('#sched', th - .15); swap($('#h3pill'), tp - .25, 'Step 4 · Autopilot'); cur(980, 330, th - .1, .4);
+  tl.fromTo('.sb', { scaleY: 0 }, { scaleY: 1, duration: .3, stagger: .09, ease: 'power2.out' }, th + .1); [0, 1, 2, 3, 4].forEach(i => cue(th + .1 + i * .09, 'plink', -23, { step: i }));
+  fade('#auto', tp - .25); gsap.set('#togbg', { autoAlpha: 0 }); cur(780, 600, tp - .3, .35); click(tp);
+  tl.to('#knob', { x: 60, duration: .22, ease: 'power2.out' }, tp).to('#togbg', { autoAlpha: 1, duration: .22 }, tp); cue(tp + .12, 'ding', -18); cue(tp + .1, 'shimmer', -24);
+  // h4 inbox
+  const h4s = h3e; view($('#h4'), h4s, B.s7, true); act(0, h4s);
+  const rep = ['Not bad at all! You?', "Flat out, to be honest. How's yours?", 'Good thanks. What are you working on?', 'Steady! Been meaning to message you.', 'Busy. We should catch up properly.'];
+  $('#inbox').innerHTML = rep.map((m, i) => `<div class="row inr" style="padding:15px 22px">${av(PEOPLE[i][2], i + 1, 70)}<div style="min-width:0"><div class="nm" style="font-size:28px">${PEOPLE[i][0]} ${i === 0 ? '<span id="fire" style="font-size:30px">🔥</span>' : ''}</div><div class="sub" style="font-size:24px;color:#d8d6ee;white-space:nowrap">${m}</div></div><div style="margin-left:auto;width:16px;height:16px;border-radius:50%;background:#ff66d4;flex:none"></div></div>`).join('');
+  gsap.set('#detail,#num,#seven,#spin,#call,#gift,#fire', { autoAlpha: 0 });
+  const ti = ls(17) - .05, gap = (le(17) - ls(17) - .2) / 5;
+  $$('.inr').forEach((rw, i) => { const t = ti + i * gap; tl.fromTo(rw, { autoAlpha: 0, x: -70 }, { autoAlpha: 1, x: 0, duration: .32, ease: 'back.out(1.5)' }, t); cue(t, 'bubble', -18, { f0: 430 + i * 70 }); });
+  dyn(t => { const n = clamp(Math.floor((t - ti) / gap) + 1, 0, 5); $('#unread').textContent = n + (n === 1 ? ' reply' : ' replies'); });
+  tl.set('#cursor', { autoAlpha: 0 }, h4s).set('#cursor', { autoAlpha: 1, x: 700, y: 620 }, ls(18) - .3);
+  const tho = wt(18, 'hot') - .2, tcl = wt(18, 'click') + .12, tsev = wt(18, 'seven') - .15, tmob = wt(18, 'mobile') - .1;
+  cur(420, 170, tho - .35, .4); pop('#fire', tho, { from: 0 }); tl.to($$('.inr')[0], { borderColor: '#ff66d4', background: 'rgba(255,102,212,.14)', duration: .2 }, tho); cue(tho, 'pop', -19);
+  tl.fromTo('#detail', { autoAlpha: 0, x: 60 }, { autoAlpha: 1, x: 0, duration: .35 }, tho + .15);
+  cur(1150, 452, tcl - .45, .4); click(tcl); tl.to('#gcp', { scale: .93, duration: .08, yoyo: true, repeat: 1 }, tcl);
+  tl.to('#spin', { autoAlpha: 1, duration: .1 }, tcl + .15).to('#spin', { rotation: 360 * 4, duration: tmob - tcl, ease: 'none' }, tcl + .15).to('#spin', { autoAlpha: 0, duration: .1 }, tmob);
+  fade('#seven', tsev); tl.fromTo('.sd', { scale: 0 }, { scale: 1, duration: .2, stagger: .05, ease: 'back.out(3)' }, tsev); cue(tsev, 'typing', -27, { dur: .5 });
+  pop('#num', tmob, { from: .5 }); cue(tmob, 'ding', -13); cue(tmob, 'sparkle', -22);
+  // call
+  const tca = ls(19) - .12, tw = wt(19, 'warm') - .7;
+  tl.fromTo('#call', { autoAlpha: 0 }, { autoAlpha: 1, duration: .3 }, tca).set('#cursor', { autoAlpha: 0 }, tca);
+  cue(tca + .15, 'ring', -22); cue(tca + 1.35, 'ring', -24);
+  dyn(t => $$('.rip').forEach((rp, i) => { const k = ((t - tca) * .9 + i * .5) % 1; rp.style.transform = `scale(${1 + k * 1.3})`; rp.style.opacity = t > tca ? (1 - k) * .8 : 0; }));
+  gsap.set('#warmbar', { scaleX: .12 }); gsap.set('#warmtx', { autoAlpha: .3 });
+  tl.to('#warmbar', { scaleX: 1, duration: .9, ease: 'power2.inOut' }, tw).to('#warmtx', { autoAlpha: 1, scale: 1.25, transformOrigin: 'right center', duration: .3, ease: 'back.out(2)' }, tw + .7); cue(tw, 'riser', -25, { dur: .9 }); cue(tw + .85, 'pop', -17);
+  // gift + coffee
+  const tg = ls(20) - .08;
+  tl.fromTo('#gift', { autoAlpha: 0 }, { autoAlpha: 1, duration: .3 }, tg);
+  $('#hot').innerHTML = [0, 4, 2].map((k, i) => `<div class="row hotr" style="padding:20px 26px">${av(PEOPLE[k][2], k + 1, 84)}<div><div class="nm" style="font-size:32px">${PEOPLE[k][0]} 🔥</div><div class="sub" style="font-size:24px">${PEOPLE[k][1]}</div></div></div>`).join('');
+  gsap.set('.hotr,#giftbox,#coffee', { autoAlpha: 0 });
+  tl.fromTo('.hotr', { autoAlpha: 0, x: -50 }, { autoAlpha: 1, x: 0, duration: .3, stagger: .14 }, tg + .2);
+  const tgf = wt(20, 'gift') - .35, tco = wt(20, 'coffee') - .25;
+  tl.fromTo('#giftbox', { autoAlpha: 0, y: -260, rotation: -18 }, { autoAlpha: 1, y: 0, rotation: 0, duration: .55, ease: 'bounce.out' }, tgf); cue(tgf + .2, 'thump', -15); cue(tgf + .3, 'sparkle', -21);
+  pop('#coffee', tco, { from: .7 }); cue(tco, 'ding', -17);
+})();
+
+/* ---------- S7 objection ---------- */
+(() => {
+  const el = add(`<div class="scene" id="s7">
+   <div class="view" id="j1"><div class="abs" id="warn" style="left:0;right:0;top:230px;text-align:center"><div style="display:inline-flex;align-items:center;gap:24px;border:3px solid #ff5d7a;background:rgba(255,93,122,.12);border-radius:26px;padding:26px 50px;font-size:46px;font-weight:800;color:#ff8da1">⚠ Account restricted</div></div>
+     <div class="sup" id="j1a" style="top:430px;font-size:120px;font-weight:800">LinkedIn <span style="color:#ff8da1">is strict.</span></div><div class="sup" id="j1b" style="top:610px;font-size:60px">We're not going to pretend otherwise.</div></div>
+   <div class="view" id="j2"><div class="sup" id="j2t" style="top:130px;font-size:84px">So Topa keeps it <b class="gt">slow on purpose</b></div>
+     <div class="card abs jc" style="left:120px;top:350px;width:540px;height:440px;padding:36px"><div style="font-size:36px;font-weight:800">Randomised send times</div><div style="font-size:25px;color:var(--mut);margin-top:6px">Paced like a person</div>
+        <div style="position:relative;margin-top:60px;height:230px"><div style="position:absolute;left:0;right:0;top:110px;height:6px;border-radius:3px;background:rgba(255,255,255,.16)"></div><div id="ticks"></div><div style="position:absolute;left:0;top:150px;font-size:22px;color:var(--mut)">9:00</div><div style="position:absolute;right:0;top:150px;font-size:22px;color:var(--mut)">17:00</div></div></div>
+     <div class="card abs jc" style="left:690px;top:350px;width:540px;height:440px;padding:36px"><div style="font-size:36px;font-weight:800">Residential IP</div><div style="font-size:25px;color:var(--mut);margin-top:6px">In your own location</div>
+        <div style="margin-top:44px;display:flex;flex-direction:column;gap:18px"><div class="row" style="font-size:30px;font-weight:700"><span style="font-size:38px">📍</span>Your account<span style="margin-left:auto">London</span></div><div class="row" id="iprow" style="font-size:30px;font-weight:700"><span style="font-size:38px">🏠</span>Logs in from<span style="margin-left:auto">London</span></div><div style="text-align:center"><span class="chip ok" id="ipok" style="font-size:30px">${CHECK} Match</span></div></div></div>
+     <div class="card abs jc" style="left:1260px;top:350px;width:540px;height:440px;padding:36px"><div style="font-size:36px;font-weight:800">Low daily limits</div><div style="font-size:25px;color:var(--mut);margin-top:6px">To start with</div>
+        <div id="lim1" style="margin-top:36px"><div style="display:flex;align-items:center;gap:20px"><span class="big gt mono" id="c15" style="font-size:130px">0</span><div style="font-size:30px;font-weight:700;line-height:1.2">connection<br>requests a day</div></div></div>
+        <div id="lim2" style="margin-top:22px"><div style="display:flex;align-items:center;gap:20px"><span class="big gt mono" id="c20" style="font-size:130px">0</span><div style="font-size:30px;font-weight:700;line-height:1.2">messages<br>a day</div></div></div></div></div>
+   <div class="view" id="j3"><div class="sup" style="top:150px;font-size:76px">You still write <b class="gt">every reply yourself</b></div>
+     <div class="card abs" style="left:360px;top:350px;width:1200px;padding:40px 46px;transform:scale(1.12);transform-origin:top center"><div><div class="bub in" style="font-size:38px;padding:18px 32px">Not bad at all! You?</div></div>
+       <div style="margin-top:28px;display:flex;align-items:center;gap:22px;border:2.5px solid #ff66d4;border-radius:30px;padding:22px 28px;background:rgba(0,0,0,.3)">${av('You', 0, 76)}<div style="font-size:40px;font-weight:600;flex:1;height:52px"><span id="j3ty"></span><span class="caret" style="height:44px;vertical-align:middle"></span></div><span class="chip" style="font-size:24px">Typed by you</span></div></div></div>
+   <div class="view" id="j4"><div class="sup" id="j4a" style="top:170px;font-size:64px">No tool can promise what LinkedIn will do.</div>
+     <div class="sup" id="j4b" style="top:300px;font-size:96px"><b>We play it </b><b class="gt">slower than most.</b></div>
+     <div class="abs" id="j4s" style="left:360px;top:620px;width:1200px"><div style="height:26px;border-radius:13px;background:linear-gradient(90deg,#34d399,#facc15 55%,#ff5d7a)"></div><div id="j4k" style="position:absolute;top:-34px;left:0;width:94px;height:94px;margin-left:-47px;border-radius:50%;background:#fff;box-shadow:0 10px 40px rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;font-size:54px">🐢</div><div style="display:flex;justify-content:space-between;font-size:28px;font-weight:800;margin-top:44px"><span style="color:#6ee7b7">SLOW AND STEADY</span><span style="color:#ff8da1">BLAST EVERYONE</span></div></div></div></div>`);
+  show(el, B.s7, B.s8);
+  const j1e = ls(22) - .15; view($('#j1'), B.s7, j1e);
+  gsap.set('#j1b', { autoAlpha: 0 });
+  tl.fromTo('#warn', { autoAlpha: 0, y: -60 }, { autoAlpha: 1, y: 0, duration: .3, ease: 'back.out(2)' }, B.s7 + .1).to('#warn', { x: 12, duration: .05, yoyo: true, repeat: 7 }, B.s7 + .4); cue(B.s7 + .12, 'thump', -14); cue(B.s7 + .14, 'buzz', -21);
+  tl.fromTo('#j1a', { autoAlpha: 0, scale: 1.3 }, { autoAlpha: 1, scale: 1, duration: .3 }, wt(21, 'strict') - .35); fade('#j1b', wt(21, 'pretend') - .9);
+  const j2e = ls(23) - .12; view($('#j2'), j1e, j2e);
+  gsap.set('.jc,#ipok,#iprow', { autoAlpha: 0 });
+  const tr = wt(22, 'randomised') - .2, ti = wt(22, 'residential') - .25, tm = wt(22, 'limits') - .2, t15 = wt(22, '15') - .15, t20 = wt(22, '20') - .15;
+  const cards = $$('.jc'); [tr, ti, tm].forEach((t, k) => { tl.fromTo(cards[k], { autoAlpha: 0, y: 70, rotation: k - 1 }, { autoAlpha: 1, y: 0, rotation: 0, duration: .45, ease: 'back.out(1.5)' }, t); cue(t, 'whoosh', -22, { dur: .4 }); });
+  const tk = [[.06, '9:14'], [.19, '9:52'], [.37, '11:07'], [.44, '11:38'], [.66, '13:48'], [.9, '16:21']];
+  $('#ticks').innerHTML = tk.map((p, i) => `<div class="tick" style="position:absolute;left:${p[0] * 100}%;top:${i % 2 ? 22 : 54}px;margin-left:-40px;width:80px;text-align:center"><div style="font-size:21px;font-weight:700">${p[1]}</div><div style="width:18px;height:18px;border-radius:50%;background:#ff66d4;margin:${i % 2 ? 60 : 28}px auto 0;box-shadow:0 0 16px #ff66d4"></div></div>`).join('');
+  gsap.set('.tick', { autoAlpha: 0 }); const ord = [2, 0, 4, 1, 5, 3], off = [0, .2, .36, .62, .8, 1.06]; ord.forEach((o, k) => { const t = tr + .35 + off[k]; tl.fromTo($$('.tick')[o], { autoAlpha: 0, scale: 0 }, { autoAlpha: 1, scale: 1, duration: .22, ease: 'back.out(3)' }, t); cue(t, 'tik', -22, { seed: k }); });
+  tl.fromTo('#iprow', { autoAlpha: 0, x: -30 }, { autoAlpha: 1, x: 0, duration: .3 }, ti + .5); pop('#ipok', wt(22, 'location') - .1); cue(wt(22, 'location') - .1, 'ding', -20);
+  gsap.set('#lim1,#lim2', { autoAlpha: 0 }); fade('#lim1', t15 - .1); count($('#c15'), 0, 15, t15, .5); cue(t15 + .45, 'pop', -18);
+  fade('#lim2', t20 - .1); count($('#c20'), 0, 20, t20, .5); cue(t20 + .45, 'pop', -18, { f0: 640 });
+  const j3e = ls(24) - .2; view($('#j3'), j2e, j3e); typeText($('#j3ty'), 'Going well. Fancy a coffee next week?', wt(23, 'write') - .2, 1.5);
+  view($('#j4'), j3e, B.s8, true); gsap.set('#j4b,#j4s', { autoAlpha: 0 });
+  const tsl = wt(24, 'but') - .1; tl.fromTo('#j4b', { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: .4 }, tsl); fade('#j4s', tsl - .5);
+  tl.fromTo('#j4k', { x: 860 }, { x: 170, duration: 1.0, ease: 'power3.inOut' }, tsl); cue(tsl, 'whoosh', -22, { dur: .9 }); cue(tsl + 1.0, 'pop', -18);
+})();
+
+/* ---------- S8 price ---------- */
+(() => {
+  const el = add(`<div class="scene" id="s8">
+    <div class="gb abs" id="pc1" style="left:150px;top:160px;width:560px;height:440px;border-radius:36px;padding:44px;text-align:center"><div style="font-size:30px;font-weight:700;color:var(--mut);letter-spacing:.08em">1 LINKEDIN ACCOUNT</div><div style="margin-top:30px"><span class="big" style="font-size:90px;vertical-align:top;position:relative;top:22px">$</span><span class="big mono" id="c79" style="font-size:230px">0</span></div><div style="font-size:36px;font-weight:600;margin-top:16px">per month</div></div>
+    <div class="gb abs" id="pc2" style="left:760px;top:160px;width:560px;height:440px;border-radius:36px;padding:44px;text-align:center"><div style="font-size:30px;font-weight:700;color:var(--mut);letter-spacing:.08em">2 LINKEDIN ACCOUNTS</div><div style="margin-top:30px"><span class="big gt" style="font-size:90px;vertical-align:top;position:relative;top:22px">$</span><span class="big gt mono" id="c99" style="font-size:230px">0</span></div><div style="font-size:36px;font-weight:600;margin-top:16px">per month</div></div>
+    <div class="abs" id="pr" style="left:1380px;top:160px;width:400px;display:flex;flex-direction:column;gap:22px">
+      <div class="card" id="p8c" style="padding:30px;text-align:center"><div style="font-size:26px;color:var(--mut);font-weight:700">MOBILE NUMBERS</div><div class="big gt" style="font-size:96px;margin-top:12px">&lt; 8¢</div><div style="font-size:28px;font-weight:600;margin-top:6px">each</div></div>
+      <div class="card" id="snv" style="padding:26px 30px;position:relative"><div style="font-size:30px;font-weight:800">Sales Navigator</div><div style="font-size:44px;font-weight:900;margin-top:4px;color:#ff8da1">~$100<span style="font-size:26px;font-weight:600"> /month</span></div><div id="strike" style="position:absolute;left:18px;right:18px;top:50%;height:8px;border-radius:4px;background:#ff5d7a;transform-origin:left;transform:rotate(-5deg)"></div><div class="stamp" id="snst" style="position:absolute;right:-6px;bottom:-66px;font-size:29px;border-width:5px;padding:6px 16px;color:var(--green);border-color:var(--green)">DATABASE BUILT IN</div></div></div>
+    <div class="abs" id="yr" style="left:150px;top:660px;width:1630px"><div style="display:flex;gap:14px;align-items:center" id="tiles"></div></div>
+    <div class="abs" id="one" style="left:0;right:0;top:785px;text-align:center;font-size:66px;font-weight:300"><b style="font-weight:800">One client</b> this year <b class="gt" style="font-weight:800">covers it.</b></div></div>`);
+  show(el, B.s8, B.s9);
+  gsap.set('#pc2,#p8c,#snv,#strike,#snst,#yr,#one', { autoAlpha: 0 });
+  const t79 = wt(25, '79') - .3, t99 = wt(25, '99') - .3;
+  tl.fromTo('#pc1', { autoAlpha: 0, y: 80, scale: .9 }, { autoAlpha: 1, y: 0, scale: 1, duration: .45, ease: 'back.out(1.6)' }, B.s8 + .05); count($('#c79'), 0, 79, t79, .6); cue(t79, 'blips', -23); cue(t79 + .6, 'ding', -15);
+  tl.fromTo('#pc2', { autoAlpha: 0, x: -120, scale: .9 }, { autoAlpha: 1, x: 0, scale: 1, duration: .45, ease: 'back.out(1.6)' }, t99 - .25); count($('#c99'), 0, 99, t99, .6); cue(t99 - .25, 'swish', -20); cue(t99 + .6, 'ding', -15, { f: 1760 });
+  const t8 = wt(26, '8') - .5; tl.fromTo('#p8c', { autoAlpha: 0, rotationY: 90 }, { autoAlpha: 1, rotationY: 0, duration: .5, ease: 'back.out(1.5)' }, t8); cue(t8 + .2, 'coin', -19);
+  const tsn = wt(27, '100') - .5, tst = wt(27, 'Sales') + .1;
+  fade('#snv', tsn, { y: 40 }); cue(tsn, 'pop', -19);
+  tl.fromTo('#strike', { autoAlpha: 1, scaleX: 0 }, { scaleX: 1, duration: .3, ease: 'power3.in' }, tst); cue(tst, 'swish', -17); cue(tst + .3, 'thump', -17);
+  tl.fromTo('#snst', { autoAlpha: 0, scale: 2.2, rotation: -16 }, { autoAlpha: 1, scale: 1, rotation: -5, duration: .2, ease: 'power4.in' }, tst + .45); cue(tst + .63, 'stamp', -17);
+  $('#tiles').innerHTML = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].map(m => `<div class="tile" style="flex:1"><i></i><span>${m}</span></div>`).join('');
+  const t1c = ls(28) - .15; fade('#yr', t1c - .15); gsap.set('.tile i', { autoAlpha: 0 });
+  tl.to('.tile i', { autoAlpha: 1, duration: .15, stagger: .06 }, t1c + .2).to('.tile span', { color: '#170a2c', duration: .1, stagger: .06 }, t1c + .2);
+  [...Array(12).keys()].forEach(i => cue(t1c + .2 + i * .06, 'plink', -25, { step: i }));
+  fade('#one', t1c + .1, { y: 30 }); cue(wt(28, 'covers'), 'ding', -17);
+})();
+
+/* ---------- S9 CTA + end card ---------- */
+(() => {
+  const el = add(`<div class="scene" id="s9">
+   <div class="view" id="c1"><div class="gb abs" style="left:360px;top:190px;width:1200px;height:150px;border-radius:75px;display:flex;align-items:center;padding:0 50px;gap:24px"><div style="width:24px;height:24px;border-radius:50%;background:var(--green)"></div><div style="font-size:84px;font-weight:700;letter-spacing:-.02em"><span id="url"></span><span class="caret" style="height:84px;vertical-align:middle"></span></div></div>
+     <div class="abs" style="left:150px;top:450px;width:1620px;display:flex;gap:30px" id="steps"></div></div>
+   <div class="view" id="c2"><div class="sup" id="e1" style="top:104px;font-size:62px;line-height:1.2;font-weight:800;letter-spacing:-.03em"></div>
+     <div class="abs" id="ebub" style="left:0;right:0;top:372px;text-align:center"><div class="bub" style="font-size:74px;padding:28px 56px">How's business?</div></div>
+     <div class="abs" id="elogo" style="left:0;right:0;top:560px;display:flex;justify-content:center;align-items:center;gap:26px"><div style="width:150px;height:150px">${mark()}</div><div style="font-size:160px;font-weight:700;letter-spacing:-.04em">topa<span style="opacity:.55;font-weight:400">.io</span></div></div>
+     <div class="abs" id="eprice" style="left:0;right:0;top:770px;display:flex;justify-content:center;gap:26px"><span class="chip" style="font-size:36px;padding:14px 34px"><b>$79</b>/mo · 1 LinkedIn account</span><span class="chip" style="font-size:36px;padding:14px 34px"><b>$99</b>/mo · 2 accounts</span></div>
+     <div class="abs" id="ecta" style="left:0;right:0;top:880px;text-align:center"><span class="btn" style="font-size:44px;padding:24px 60px">Send your first hand raiser at topa.io →</span></div></div></div>`);
+  show(el, B.s9, DUR + 1);
+  const c1e = ls(30) - .22; view($('#c1'), B.s9, c1e);
+  typeText($('#url'), 'topa.io', wt(29, 'topa') - .25, .6);
+  const st = [['1', 'Go to topa.io'], ['2', 'Connect your LinkedIn account'], ['3', 'Send your first hand raiser ✋']];
+  $('#steps').innerHTML = st.map(s => `<div class="card cst" style="flex:1;padding:40px;text-align:center"><div style="width:110px;height:110px;border-radius:50%;margin:0 auto;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:56px;font-weight:900;color:#170a2c">${s[0]}</div><div style="font-size:42px;font-weight:800;margin-top:28px;line-height:1.15">${s[1]}</div></div>`).join('');
+  [wt(29, 'topa') - .1, wt(29, 'connect') - .2, wt(29, 'send') - .2].forEach((t, i) => { pop($$('.cst')[i], t, { from: .7 }); cue(t, 'plink', -18, { step: i * 2 + 1 }); });
+  view($('#c2'), c1e, DUR + 1, true);
+  const W = Ls[30].words;
+  $('#e1').innerHTML = W.map((w, i) => `${i && w.p !== W[i - 1].p ? '<br>' : ''}<span class="ew ${w.p ? 'gt' : ''}" style="display:inline-block;margin:0 .12em">${w.w}</span>`).join('');
+  $$('.ew').forEach((s, i) => tl.fromTo(s, { autoAlpha: 0, y: 30 }, { autoAlpha: 1, y: 0, duration: .3 }, Math.max(c1e + .1, W[i].s - .12)));
+  gsap.set('#ebub,#elogo,#eprice,#ecta', { autoAlpha: 0 });
+  const tn = wt(30, 'already') - .2;
+  pop('#ebub', wt(30, 'someone') - .2, { from: .6 }); cue(wt(30, 'someone') - .2, 'bubble', -16);
+  tl.fromTo('#elogo', { autoAlpha: 0, scale: .5 }, { autoAlpha: 1, scale: 1, duration: .5, ease: 'back.out(1.7)' }, le(30) - .25); cue(le(30) - .9, 'riser', -22, { dur: .7 }); cue(le(30) - .2, 'impact', -13); cue(le(30) - .15, 'shimmer', -19);
+  fade('#eprice', le(30) + .15); pop('#ecta', le(30) + .45, { from: .8 }); cue(le(30) + .45, 'ding', -17);
+  tl.to('#ecta .btn', { scale: 1.05, duration: .5, yoyo: true, repeat: 1, ease: 'sine.inOut' }, le(30) + 1.0);
+})();
+
+/* ---------- background + captions + seek ---------- */
+const CAPSKIP = new Set([0, 1, 30]); let capKey = '';
+function captions(t) {
+  let li = -1; for (let i = 0; i < Ls.length; i++) if (t >= Ls[i].s - .08) li = i;
+  const cap = $('#cap');
+  if (li < 0 || CAPSKIP.has(li) || t > Ls[li].e + .55) { cap.style.opacity = 0; return; }
+  const W = Ls[li].words; let cw = 0; W.forEach((w, i) => { if (t >= w.s - .04) cw = i; });
+  const pg = W[cw].p, key = li + ':' + pg;
+  if (key !== capKey) { capKey = key; $('#capin').innerHTML = W.map((w, i) => w.p === pg ? `<span class="w" data-i="${i}">${w.w}</span>` : '').filter(Boolean).join(' '); }
+  $$('#capin .w').forEach(s => { const i = +s.dataset.i; s.className = 'w' + (i === cw && t < W[i].e + .12 ? ' on' : i > cw ? ' fut' : ''); });
+  cap.style.opacity = 1;
+}
+function background(t) {
+  $('#b1').style.transform = `translate(${-380 + Math.sin(t * .11) * 260}px,${-520 + Math.cos(t * .09) * 160}px)`;
+  $('#b2').style.transform = `translate(${880 + Math.cos(t * .08) * 300}px,${60 + Math.sin(t * .1) * 200}px)`;
+  $('#b3').style.transform = `translate(${300 + Math.sin(t * .07 + 2) * 400}px,${260 + Math.cos(t * .06) * 120}px)`;
+  $('#grid').style.backgroundPosition = `${-t * 6}px ${-t * 3}px`;
+}
+window.seek = t => { t = Math.max(0, Math.min(DUR, t)); tl.time(t, false); DYN.forEach(f => f(t)); background(t); captions(t); };
+window.collectCues = () => CUES.slice().sort((a, b) => a.t - b.t);
+window.ready = document.fonts.ready.then(() => seek(0));
+const q = new URLSearchParams(location.search); if (q.get('t')) window.ready.then(() => seek(+q.get('t')));
+</script></body></html>

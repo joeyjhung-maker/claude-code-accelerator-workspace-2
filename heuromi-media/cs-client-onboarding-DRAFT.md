@@ -4,7 +4,7 @@
 
 *Standing instruction (Joey, 2026-10-03): when a new creative-strategy client lands, Claude sends this checklist as a reminder to use it. It's the starting point, built from what we have so far.*
 
-*Built from Johnny Kam's "$100M Creative Strategy" series and resources doc, the Ioannis, Kevin Just and Thomas Just videos, and (added later the same day) the Genesis "First Batch With a New Client" method. Every step links back to its page in the Second Brain marketing wiki (`~/Documents/Second Brain/marketing/wiki/`). Nothing here comes from Joey's own client results yet.*
+*Built from Johnny Kam's "$100M Creative Strategy" series and resources doc, the Ioannis, Kevin Just and Thomas Just videos, and (added later the same day) the Genesis "First Batch With a New Client" method. Stage 0 was extended on 2026-10-04 from the Volkwyn and Stephan vd Merwe hiring video. Every step links back to its page in the Second Brain marketing wiki (`~/Documents/Second Brain/marketing/wiki/`). Nothing here comes from Joey's own client results yet.*
 
 Kam's doc: https://docs.google.com/document/d/1O9OVXrF0twD_3GObbjT4Xq1M1qWQ89TuxLpPvgjERCA/edit
 
@@ -27,7 +27,35 @@ Then the deal.
 - [ ] Agree the tiers in writing. Kam's example: ~2% once an ad holds its numbers to $1k spend, 4–5% once it holds to $10k.
 - [ ] Agree what "net new" and "iteration" mean before agreeing a ratio.
 
-Wiki: `creative-production-infrastructure`, `creative-strategist-deal-structures`, `ltv-as-creative-headroom`
+Added 2026-10-04 from the Volkwyn and Stephan vd Merwe video (the recruiter's view).
+
+How they ran the hiring process tells me how they run the account.
+
+- [ ] **Speed.** Did they reply within a day or two, or go quiet for a week?
+- [ ] **The trial task.** Was it scoped, with a deadline? A very long one is free work.
+- [ ] **Day one.** Can they say what steps one, two and three are on Monday?
+- [ ] **Visibility.** A naming convention and a dashboard, or just the top ten ads in a reporting tool?
+- [ ] **The pay formula.** Simple enough to say in one sentence? A complicated one is a warning.
+
+More on the deal.
+
+- [ ] **Ask what qualifies.** If the percentage only counts ads over a ROAS line, get that line in writing.
+- [ ] **Counter on the percentage, not the base.** "I'd take a lower base for more upside." One strategist went from 3% to 5% that way.
+- [ ] **Exclusivity.** Ask the introducer to negotiate it away before I answer it myself.
+- [ ] **Terms changed after signing?** That's the exit sign.
+
+### Before any of that: the application
+
+- [ ] Every message is a writing sample. Short, clean, punctuated.
+- [ ] Read the role description twice. Never ask what it already answers.
+- [ ] CV passes the at-a-glance test: **where, what role, what value** on every entry.
+- [ ] One document. No folder of links.
+- [ ] Portfolio shows **top-of-funnel formats** and the **hypothesis** behind each ad. That's what gets checked, not the copy.
+- [ ] Old posting with 300 applicants? Apply anyway, properly.
+
+Portfolio notes: `heuromi-media/portfolio/`
+
+Wiki: `creative-production-infrastructure`, `creative-strategist-deal-structures`, `ltv-as-creative-headroom`, `hiring-and-keeping-creative-strategists`, `creative-strategy-job-applications`, `personal-brand-and-cv-presentation`
 
 ## 1. Day one: what to ask for
 

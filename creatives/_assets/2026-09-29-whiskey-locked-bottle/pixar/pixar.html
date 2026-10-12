@@ -2,7 +2,11 @@
 <html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=block" rel="stylesheet">
 <style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}video{display:none}</style></head>
-<body><canvas id="c" width="1080" height="1920"></canvas><video id="v" src="build/base.mp4" muted preload="auto" playsinline></video>
+<body><canvas id="c" width="1080" height="1920"></canvas><video id="v" muted preload="auto" playsinline></video>
+<script>
+// ?safe=1 = the ad-policy compliance cut: no money imagery, result numbers as plain captions, the book on screen early, an expectation line on the result beat.
+window.SAFE=new URLSearchParams(location.search).get('safe')==='1';document.getElementById('v').src=window.SAFE?'build/base-safe.mp4':'build/base.mp4';
+</script>
 <script src="mograph.js"></script>
 <script src="captions.js"></script>
 <script>
@@ -71,11 +75,16 @@ function drawCover(t){const t0=66.25;if(t<t0||t>=71.55)return;const q=bk(P(t,t0,
   const sp=P(t,66.8,1.0);if(sp>0&&sp<1){x.beginPath();x.rect(-w/2,-h/2,w,h);x.clip();const sx=L(-w,w,sp),gg=x.createLinearGradient(sx-110,-h/2,sx+110,h/2);gg.addColorStop(0,'rgba(255,255,255,0)');gg.addColorStop(.5,'rgba(255,250,230,.55)');gg.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=gg;x.fillRect(-w/2,-h/2,w,h);}
   x.restore();
   if(t>69.2){const b=Math.abs(Math.sin((t-69.2)*5))*16;x.save();x.fillStyle=Y;x.strokeStyle='#1b1b24';x.lineWidth=10;x.beginPath();const ax=W/2,ay=1660+b;x.moveTo(ax-44,ay);x.lineTo(ax+44,ay);x.lineTo(ax,ay+50);x.closePath();x.stroke();x.fill();x.restore();}}
+// compliance cut: cap expectations on the result beat
+function expectLine(t){if(t<24.2||t>=31.6)return;const q=Math.min(P(t,24.2,.3),1-P(t,31.3,.3)),y=(t>=27.0&&t<29.2)?1715:1600,s="ONE CLIENT'S RESULT. RESULTS VARY.";
+  x.save();x.globalAlpha=q;x.font='600 34px Arial, Helvetica, sans-serif';x.textAlign='center';x.textBaseline='middle';const w=x.measureText(s).width+48;
+  x.fillStyle='rgba(20,20,28,.72)';x.beginPath();x.roundRect(540-w/2,y-28,w,56,12);x.fill();x.fillStyle='#fff';x.fillText(s,540,y+2);x.restore();}
 window.seek=async function(t){
   await new Promise(r=>{const tt=Math.min(77.59,t+1/60);if(Math.abs(vid.currentTime-tt)<1e-4&&vid.readyState>=2)return r();vid.addEventListener('seeked',r,{once:true});vid.currentTime=tt;});
   const [cs,cdx,cdy]=MG.camera(t);x.save();x.translate(W/2+cdx,H/2+cdy);x.scale(cs,cs);x.drawImage(vid,-W/2-8,-H/2-8,W+16,H+16);x.restore();
   MG.draw(x,t);
   drawCover(t);
+  if(window.SAFE)expectLine(t);   // no book badge: Joey wants the book shown only at the reveal
   CAP.draw(x,t,burst);
   // title card after Dan finishes speaking (not a caption)
   chunk(t,[76.0,77.6,[['THE INSTANT',Wt],['AI AGENCY',Y],['$14.40',G]],{y:1130}]);

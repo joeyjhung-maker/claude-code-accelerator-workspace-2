@@ -11,6 +11,8 @@ Any client body copy where the hand-written version isn't landing, or you want f
 MarioBot is STATELESS. It remembers nothing between runs. It writes in whatever voice you prime it with on that call. So it works for ANY client — you just swap the two priming inputs. Never assume it "knows" a client.
 
 ## The steps
+For Dan's own-list opinion emails, follow the scoped override in `clients/flexxable/2026-10-08-email-voice-calibration.md`: clean approved examples only, `--no-style-contract`, and the Dan judge adapted to email. Joey requested this calibration after rewriting Email 12.3. The general steps below still apply to other formats. Do not prime from campaign files containing rejected versions or editorial notes; extract the approved copy first.
+
 1. **Build the prime (per client).** Best = that client's WINNING ADS (a real body primer). If they don't have a swipe of winners yet, use their offer doc + voice/emphasis fingerprint as the stand-in (that's what we did for Flexxable — no body primer existed, so the ROYA offer doc played the role of "winning ad"). Each client should grow their own body primer in `knowledge/primers/` over time.
 2. **Build the instruction (the brief).** This client's offer, avatar, mechanism, the selected hook (body MUST start from it), proof (verbatim numbers — never invent), CTA/destination, format rules, word count.
 3. **Run the 2-step Genesis protocol** (stateless — replay full history each call):

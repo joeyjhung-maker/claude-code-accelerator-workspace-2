@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Locked Gift Strategy</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@700&family=IBM+Plex+Mono:wght@500;600&family=Libre+Franklin:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#1C1A17; --red:#C23B22; --paper:#FFFFFF; --label:#FBF8F1; --tint:#F3EBDD; --kraft:#CDAA7D; --mute:#5A534A; }
+  @page { size: 8.5in 11in; margin: 0; }
+  * { box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  html, body { margin:0; background:var(--paper); color:var(--ink); }
+  #flow { display:none; }
+  @media screen { body.sheet { display:grid; grid-template-columns:repeat(4, 8.5in); background:#888; gap:6px; } }
+
+  /* ---------- page frame ---------- */
+  .page { width:8.5in; height:11in; padding:0.46in 0.67in 0.4in; display:flex; flex-direction:column; position:relative; overflow:hidden; page-break-after:always; background:var(--paper); }
+  .page:last-child { page-break-after:auto; }
+  .mono { font-family:'IBM Plex Mono', monospace; font-weight:600; letter-spacing:.14em; text-transform:uppercase; }
+  .hdr { display:flex; justify-content:space-between; font-size:9.5px; padding-bottom:9px; border-bottom:2px dashed var(--ink); margin-bottom:24px; flex-shrink:0; }
+  .ftr { padding-top:12px; display:flex; justify-content:space-between; align-items:center; font-size:9.5px; flex-shrink:0; }
+  .ftr .pg { background:var(--ink); color:#fff; padding:5px 9px; letter-spacing:.1em; }
+  .ftr .lock { display:flex; align-items:center; gap:7px; }
+  .ftr svg { width:12px; height:12px; fill:none; stroke:var(--red); stroke-width:2.6; stroke-linecap:round; stroke-linejoin:round; }
+  .body { flex:1 1 0; min-height:0; overflow:hidden; }
+  .body > :first-child { margin-top:0; }
+
+  /* ---------- type ---------- */
+  .body p { font-family:'Libre Franklin', sans-serif; font-size:15px; line-height:1.43; margin:0 0 7.5px; }
+  .tight p { margin-bottom:5px; line-height:1.36; }
+  .tight figure { margin:10px 0 16px; }
+  .tight .step { margin:16px 0 12px; }
+  .tight .pull { margin:8px 0 10px; }
+  .tight .sec { margin:18px 0 14px; }
+  .body p b { font-weight:800; }
+  .body a { color:var(--red); text-decoration:underline; text-underline-offset:2px; }
+  .red { color:var(--red); }
+  .hand { font-family:Caveat, cursive; font-weight:700; line-height:1.05; }
+  .yo { font-size:50px; margin:0 0 16px; transform:rotate(-2deg); transform-origin:left; }
+  .sign { font-size:54px; margin:6px 0 18px; transform:rotate(-3deg); transform-origin:left; }
+  .sec { font-family:Anton, sans-serif; font-weight:400; font-size:50px; line-height:1; margin:26px 0 20px; padding-top:16px; border-top:6px solid var(--ink); }
+  .pull { font-family:Anton, sans-serif; font-weight:400; font-size:36px; line-height:1.04; margin:12px 0 14px; }
+  .pull.big { font-size:45px; margin:10px 0 16px; }
+  .stamp { display:inline-block; margin:8px 0 18px 4px; border:5px solid var(--red); color:var(--red); font-family:Anton, sans-serif; font-size:38px; line-height:1; padding:8px 18px 11px; transform:rotate(-3deg); }
+  .closer { font-family:Anton, sans-serif; font-size:49px; line-height:1; margin:26px 0 22px; padding-top:18px; border-top:6px solid var(--ink); }
+
+  /* ---------- components ---------- */
+  .frame { border:3px solid var(--ink); box-shadow:9px 9px 0 var(--ink); display:block; }
+  figure { margin:14px 0 26px; }
+  figure.gfx img { width:100%; display:block; }
+  .pair { display:flex; gap:30px; align-items:center; margin:18px 0 28px; }
+  .pair img { flex:1 1 0; min-width:0; width:50%; }
+  .body > figure.photo:first-child, .body > .pair:first-child { margin-top:14px; }
+  figure.photo { display:flex; flex-direction:column; align-items:flex-start; gap:16px; }
+  figure.photo.side { flex-direction:row; align-items:center; gap:26px; }
+  figcaption.hand { font-size:29px; max-width:300px; transform:rotate(-3deg); }
+  figure.photo:not(.side) figcaption.hand { max-width:none; transform:rotate(-1.5deg); }
+  .step { display:inline-flex; align-items:center; gap:16px; margin:24px 0 18px; background:var(--label); border:3px solid var(--ink); box-shadow:7px 7px 0 var(--ink); padding:11px 20px 12px 16px; transform:rotate(-1deg); }
+  .step .mono { background:var(--red); color:#fff; font-size:11px; padding:6px 9px; }
+  .step b { font-family:Anton, sans-serif; font-weight:400; font-size:34px; line-height:1; }
+  .tried { display:grid; grid-template-columns:1fr 1fr; gap:7px 18px; margin:8px 0 18px; }
+  .tried div { display:flex; align-items:center; gap:10px; font-family:'IBM Plex Mono', monospace; font-weight:500; font-size:11px; line-height:1.3; background:var(--tint); border:2px solid var(--ink); padding:6px 9px; }
+  .tick { width:15px; height:15px; flex-shrink:0; background:var(--ink); display:flex; align-items:center; justify-content:center; }
+  .tick svg { width:10px; height:10px; fill:none; stroke:#fff; stroke-width:3.4; stroke-linecap:round; stroke-linejoin:round; }
+  .chain { margin:16px 0 18px; border:3px solid var(--ink); background:var(--label); box-shadow:9px 9px 0 var(--ink); }
+  .chain div { font-family:Anton, sans-serif; font-size:33px; line-height:1; padding:14px 18px; border-bottom:2px dashed var(--ink); display:flex; gap:14px; }
+  .chain div:last-child { border-bottom:none; }
+  .chain em { font-style:normal; color:var(--red); }
+  .act { display:flex; align-items:flex-start; gap:14px; margin:0 0 10px; background:var(--label); border:3px solid var(--ink); padding:12px 16px; font-family:Anton, sans-serif; font-size:25px; line-height:1.12; }
+  .act .n { width:38px; height:38px; flex-shrink:0; border-radius:50%; background:var(--ink); color:#fff; display:flex; align-items:center; justify-content:center; font-size:20px; margin-top:-2px; }
+
+  /* ---------- cover ---------- */
+  .kicker { font-size:11px; color:var(--red); margin-bottom:12px; }
+  h1 { font-family:Anton, sans-serif; font-weight:400; font-size:61px; line-height:1.12; margin:0; letter-spacing:.005em; }
+  h1 .ul { text-decoration:underline; text-decoration-thickness:6px; text-underline-offset:5px; text-decoration-skip-ink:none; }
+  .cover .stamp { align-self:flex-start; margin:20px 0 26px 4px; }
+  .hero { display:flex; gap:26px; align-items:flex-end; }
+  .hero img { width:500px; }
+  .tag { flex-grow:1; background:var(--label); border:3px solid var(--ink); display:flex; flex-direction:column; transform:rotate(2deg); margin-bottom:14px; }
+  .tag .row { padding:10px 12px; border-bottom:2px solid var(--ink); }
+  .tag .lbl { font-size:8.5px; display:block; margin-bottom:3px; }
+  .tag .big { font-family:Anton, sans-serif; font-size:23px; line-height:1.05; }
+  .tag .sm { font-family:'Libre Franklin', sans-serif; font-size:12px; }
+  .bars { height:40px; margin:12px 12px 8px; background:repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 4px, var(--ink) 4px 5px, transparent 5px 8px, var(--ink) 8px 11px, transparent 11px 13px); }
+  .tag .code { font-size:7.5px; text-align:center; padding-bottom:10px; }
+</style>
+</head>
+<body>
+
+<section class="page cover">
+  <div class="hdr mono"><span>Priority · Handle with curiosity</span><span>Free guide · Dan Wardrope</span></div>
+  <div class="kicker mono">The Locked Gift Strategy</div>
+  <h1>HOW WE’RE GETTING CEOs OF $20M-$80M COMPANIES TO CALL <span class="ul">US</span>… <span class="red">FOR JUST $40 BUCKS…</span></h1>
+  <div class="stamp">…USING “LOCKED GIFTS”!</div>
+  <div class="hero">
+    <img class="frame" src="img/image13.jpg" alt="Dan holding a locked bottle of whisky and the letter">
+    <div class="tag">
+      <div class="row"><span class="lbl mono">From</span><div class="big">DAN WARDROPE</div><div class="sm">B2B Leads Lab</div></div>
+      <div class="row"><span class="lbl mono">To</span><div class="big">YOUR DREAM 100</div></div>
+      <div class="bars"></div>
+      <div class="code mono">LG · Desk not screen</div>
+    </div>
+  </div>
+  <div style="flex:1"></div>
+  <div class="ftr mono"><span class="pg">01</span><span class="lock"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Get on their desk</span></div>
+</section>
+
+<div id="flow">
+<div class="hand yo">Yo yo!! Dan here :-)</div>
+<p class="">While most peeps are firing off hundreds of cold emails and DMs into the void… getting absolutely NOTHING back…</p>
+<div class="pull big">WE’RE GETTING MORE <span class="red">CLIENTS</span> THAN MOST GET REPLIES.</div>
+<p class="">Not from some fancy ad funnel.</p>
+<p class="">Not from spamming AI-generated messages all day.</p>
+<p class="">But from physical packages that cost about $40 each.</p>
+<figure class="gfx"><img src="img/image15.png" alt=""></figure>
+<p class="keep"><b>Now here's the thing…</b></p>
+<p class="">Everyone assumes the gift itself is the clever bit.</p>
+<p class="">It's not.</p>
+<p class="">The locked gift gets their ATTENTION, sure.</p>
+<p class="">But what actually gets a CEO running a $20M - 80M company to pick up the phone and call YOU like it was THEIR idea…</p>
+<p class="">There’s a LOT more that goes into it.</p>
+<p class="">I'll break it all down in a minute.</p>
+<p class="">But first… let me tell you why I’m worth listening to.</p>
+<p class="">My name’s Dan Wardrope.</p>
+<p class="">I've spent <b>7 </b><b>figures + on advertising directly </b><b>to business owners</b> over the last couple of years.</p>
+<p class="">And actively coaching 1288+ students on how to get in front of B2B businesses.</p>
+<figure class="photo side"><img class="frame" style="width:400px;" src="img/image7.jpg" alt=""><figcaption class="hand">Here’s one ad account we’re running.</figcaption></figure>
+<p class="">I've tried pretty much everything to generate leads.</p>
+<div class="tried"><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>Facebook ads.</span></div><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>Google ads.</span></div><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>Twitter Ads.</span></div><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>Instagram DMs with and without AI</span></div><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>Community (ie have multiple skool groups and FB groups)</span></div><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>AI Agents selling in “any niche” (yes I built multiple!)</span></div><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>Cold email (manual)</span></div><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>Cold email (automated)</span></div><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>LinkedIn DMs (manual)</span></div><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>LinkedIn DMs (automated)</span></div><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>Webinars (manual)</span></div><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>Webinars (automated)</span></div><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>Cold outreach (manual)</span></div><div><i class="tick"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></i><span>Cold outreach (automated)</span></div></div>
+<p class="">You name it. I’ve done it.</p>
+<p class="keep">Here’s the thing…</p>
+<div class="pull big">THEY ALL <span class="red">WORKED!</span></div>
+<p class="keep">But there's a small problem…</p>
+<h2 class="sec keep">EVERYONE’S FIGHTING FOR THE SAME<br>6 INCHES OF SCREEN</h2>
+<figure class="photo"><img class="frame" style="width:480px;" src="img/image20.jpg" alt=""></figure>
+<p class="">Let me give you a real example.</p>
+<p class="">One of my best mates is <b>Dr Moradi - Ziggy to me.</b></p>
+<p class="">He's a plastic surgeon in Sydney.</p>
+<p class="">Which also means he's basically a <b>catnip for marketers.</b></p>
+<p class="">Think about it.</p>
+<p class="">He's rich.</p>
+<p class="keep">In a valuable niche…</p>
+<p class="keep">Selling a high-ticket service…</p>
+<p class="">Which means every man and his dog wants to sell him something.</p>
+<p class="">His inbox?</p>
+<p class="">Forget Inbox Zero.</p>
+<p class=""><b>INBOX ARMAGEDDON.</b></p>
+<p class="">Every day someone is emailing him.</p>
+<p class="">Sliding into his LinkedIn DMs.</p>
+<p class="">Cold calling him.</p>
+<p class="">Retargeting him.</p>
+<p class="">Shooting over another <i>“personalised”</i> AI message telling him how much they loved his latest post.</p>
+<p class="">And someone is probably asking him to download another bloody PDF :-)</p>
+<figure class="photo side"><img class="frame" style="width:250px;" src="img/image1.jpg" alt=""><figcaption class="hand"><br>My mate Ziggy: Plastic surgeon. Professional deleter of cold outreach.</figcaption></figure>
+<p class="">And now AI has made this problem 100x worse.</p>
+<p class="">Because suddenly EVERYONE can MASS blast emails and DMs at higher and higher rates.</p>
+<p class="keep">The funny thing is…</p>
+<p class="">These AI messages are supposed to look clever.</p>
+<p class="">They're SUPPOSED to look personal.</p>
+<p class=""><i>But I can spot them a mile away.</i></p>
+<p class=""><b>So can Ziggy.</b></p>
+<p class="">Archive… Archive… Archive.</p>
+<p class=""><b>More bloody NOISE.</b></p>
+<p class="">And what do most marketers do when this stops working as well as it used to?</p>
+<p class="">They do MORE of it!!</p>
+<p class="">(I blame Hormozi lol)</p>
+<p class="keep">SO…</p>
+<p class="">We flipped the script entirely.</p>
+<p class="keep"><b>We stopped trying to get onto their SCREEN…</b></p>
+<p class="">…and started trying to get onto their <b>DESK.</b></p>
+<figure class="photo"><img class="frame" style="width:280px;transform:rotate(2deg);" src="img/image19.jpg" alt=""></figure>
+<p class="">And that's when things took off.</p>
+<h2 class="sec keep" data-break="1">HERE’S HOW IT ALL STARTED:</h2>
+<p class="">A few months ago, a “lumpy mail” package arrived for me.</p>
+<p class="">Inside was a nice bottle of champagne.</p>
+<p class="">Which is always a good start :-)</p>
+<p class="">There was just one problem.</p>
+<p class=""><b>I couldn't crack the bubbly open!!</b></p>
+<p class="">The bottle was locked away inside a cage.</p>
+<figure class="photo"><img class="frame" style="width:300px;transform:rotate(-2deg);" src="img/image3.jpg" alt=""></figure>
+<p class="">There was also a personalized letter addressed to me.</p>
+<p class="">Everyone in the office was buzzing.</p>
+<p class="">Who had sent it?</p>
+<p class="">Why was it locked?</p>
+<p class="keep">And most importantly…</p>
+<p class=""><b>HOW THE HELL DO WE OPEN IT?</b></p>
+<p class="">So I read the letter.</p>
+<p class="">It was from a British dude called Jonathan Matthews.</p>
+<p class="">Jonathan wanted to get my attention.</p>
+<p class="">And there was something I needed to do to unlock the bottle.</p>
+<p class=""><b>Call him.</b></p>
+<p class="">Guess what I did within about 3 mins?</p>
+<p class="">I picked up the phone and dialled the number on the letter.</p>
+<p class="">Mission accomplished :-)</p>
+<figure class="photo"><img class="frame" style="width:688px;" src="img/image17.jpg" alt=""><figcaption class="hand">"The bugger got me."</figcaption></figure>
+<p class="">Jonathan and I have since done quite a bit of biz together.</p>
+<p class="keep">Here’s the thing…</p>
+<p class="">I couldn't stop thinking about that bloody bottle.</p>
+<p class="">Because Jonathan had managed to do something that marketers spend BILLIONS trying to do every year.</p>
+<p class=""><b>He got the attention of the person he wanted to do business with.</b></p>
+<p class="">Me.</p>
+<p class="keep">So I started wondering…</p>
+<p class=""><i>"What happens if I send some bottles &amp; try to land some clients for my own agency?"</i></p>
+<h2 class="sec keep">SO WE TESTED IT</h2>
+<figure class="photo"><img class="frame" style="width:688px;" src="img/image16.jpg" alt=""></figure>
+<p class="keep">Now…</p>
+<p class="">At around the same time all this was happening, my brother had launched a business in the indoor adventure park space (it’s called <a href="http://www.truninja.com.au">www.truninja.com.au</a> - go visit and say “Hi” if you live in Australia)</p>
+<p class="">I'd invested in it too.</p>
+<p class="">And through my agency, we'd been helping him scale to 3 locations inside 12 months.</p>
+<p class="keep">Which got me thinking…</p>
+<p class="">“Hang on a minute.”</p>
+<p class="keep">If we can do this for my bro…</p>
+<p class="">Why don't we go and speak to a load of OTHER adventure parks?</p>
+<p class="">There was just one slight problem.</p>
+<p class=""><b>We needed to actually GET THEIR ATTENTION FIRST.</b></p>
+<p class="">And I didn't particularly fancy firing off 5,000 cold emails…</p>
+<p class="">Or getting someone on my team to spend their life “sliding” into LinkedIn DMs…</p>
+<p class="">Or paying Zuckerberg a small fortune and hoping the right adventure park owner happened to see one of our ads.</p>
+<p class="">Then I remembered how Jonathan’s “Locked Gift” method managed to get ME to call HIM!!</p>
+<p class="keep">And I thought…</p>
+<div class="pull keep">“WHY DON'T WE JUST DO THAT?”</div>
+<p class="">So we built a list of indoor adventure parks in the UK we absolutely must have as clients.</p>
+<p class="">Not 1,000 random leads.</p>
+<p class="">Not spray-and-pray.</p>
+<p class="">We built a list of 100 Adventure parks WITH MONEY… we'd luuuuv to work with.</p>
+<p class="keep">Then we found the decision makers…</p>
+<p class="">And started sending locked gifts, which we hoped would end up on their desk.</p>
+<p class="keep">But here's the important bit…</p>
+<p class="">We didn't just send the gift and expect them to magically call us begging to come on as a client!</p>
+<p class="keep">Every locked gift went out with this:</p>
+<div class="pull keep">THE “HOW TO UNLOCK” LETTER.</div>
+<figure class="photo"><img class="frame" style="width:380px;transform:rotate(-1.5deg);" src="img/image21.jpg" alt=""></figure>
+<p class="keep">The letter explains…</p>
+<p class="">Why we'd specifically chosen THEIR business.</p>
+<p class="">What we thought we KNEW we could help them with.</p>
+<p class="keep">And most importantly…</p>
+<p class=""><b>WHAT THEY NEEDED TO DO NEXT.</b></p>
+<p class="">So now imagine being on the receiving end.</p>
+<p class="">You're the owner of an indoor adventure park.</p>
+<p class="">You've already deleted 27 cold emails today.</p>
+<p class="">You've ignored another 14 LinkedIn messages.</p>
+<p class="">Then the postman knocks on your door, and hands you a lumpy package.</p>
+<p class="">There's a nice bottle of something inside.</p>
+<p class="">You can SEE it.</p>
+<p class="">You WANT it.</p>
+<p class="keep">But…</p>
+<div class="pull keep">YOU CAN'T OPEN IT.</div>
+<p class="">There's a letter with your name on it.</p>
+<p class="">And to find out what the hell is going on - and unlock your gift - you need to call the number at the top of the letter.</p>
+<p class="">It's almost the complete OPPOSITE of what everyone else is doing.</p>
+<p class="keep">Normally…</p>
+<p class="">YOU are chasing THEM.</p>
+<p class="keep">With this…</p>
+<p class="">THEY START CALLING YOU.</p>
+<p class="">And that's exactly what started happening.</p>
+<div class="pull keep">OUR FIRST 10 SENDS WENT LIKE THIS:</div>
+<figure class="gfx"><img src="img/image5.png" alt=""></figure>
+<div class="pair"><img class="frame" src="img/image6.jpg" style="transform:rotate(-1.5deg)" alt=""><img class="frame" src="img/image2.jpg" style="transform:rotate(1.5deg)" alt=""></div>
+<p class="">Read that again.</p>
+<p class="">We didn't send 1,000 emails or need 500 replies.</p>
+<p class="">We sent TEN physical packages to businesses we actually wanted to work with.</p>
+<p class="">Six turned into conversations. And three turned into sales.</p>
+<p class="keep">That's when I started thinking…</p>
+<p class="">“Holy shit. We might actually be onto something here.”</p>
+<p class="">So we kept going.</p>
+<p class="keep">And across our first 70 opportunities…</p>
+<div class="pull keep red">WE CLOSED AND ONBOARDED 6 CLIENTS.</div>
+<p class="">That's an <b>8.6% package-to-close rate</b>.</p>
+<figure class="gfx"><img src="img/image12.png" alt=""></figure>
+<p class="">I knew I was onto something so I showed this to a buddy of mine in America.</p>
+<p class="">Mateusz R decided to send a few bottles.</p>
+<p class="">He picked the home improvement niche, selling AI Automation.</p>
+<p class="keep">He sent…</p>
+<div class="pull keep">14 BOTTLES.</div>
+<p class="keep">And booked…</p>
+<div class="pull">4 COFFEE DATES.</div>
+<p class="">(You probably call these “Sales Calls”)</p>
+<p class="">…with <b>$20M-80M/Yr</b> businesses!</p>
+<figure class="photo"><img class="frame" style="width:330px;" src="img/image8.jpg" alt=""></figure>
+<p class="">Mateusz summed the whole thing up better than I probably could.</p>
+<p class="keep">After running the experiment, he basically said…</p>
+<p class=""><b>He didn't know another cold outreach method that could get the CEO of an $80M-a-year company to call HIM… and it cost him $40!</b></p>
+<p class="">And that really sums up why I think this works.</p>
+<p class="">It's not because there's something magical about a bottle of wine.</p>
+<p class="">Or because business owners have a strange obsession with combination locks :-)</p>
+<p class="keep">It's because we've managed to:</p>
+<div class="pull keep">GET THEIR ATTENTION.</div>
+<p class="keep">Instead of YOU desperately trying to get THEIR attention…</p>
+<div class="pull keep red">THEY'RE NOW CURIOUS ABOUT YOU.</div>
+<p class="keep">And THAT is the real idea behind…</p>
+<figure class="gfx"><img src="img/image9.png" alt=""></figure>
+<p class="">Simple.</p>
+<p class="">But very, very different from what almost everyone else is doing.</p>
+<p class="">And there's one other thing I want to make REALLY clear before we get into exactly how you can do this yourself…</p>
+<div class="pull keep">THE BOTTLE ISN'T THE STRATEGY.</div>
+<p class="">The bottle is simply one way of getting someone's attention.</p>
+<p class="keep">Which brings me to the question I get all the time…</p>
+<div class="pull keep">“BUT DAN… I CAN'T SEND BOOZE!”</div>
+<p class="">I know :-)</p>
+<p class="">Especially if you're in the US, where sending alcohol can be a pain in the ass.</p>
+<p class="keep">But here's the good news…</p>
+<div class="pull keep">YOU DON'T NEED TO SEND ALCOHOL.</div>
+<p class="">Because it was NEVER really about the booze.</p>
+<p class="keep">It was about putting something on somebody's desk that was:</p>
+<p class=""><b>Desirable.</b></p>
+<p class=""><b>Different.</b></p>
+<p class=""><b>Physical.</b></p>
+<p class=""><b>And difficult to ignore.</b></p>
+<p class="">We're now testing all sorts of other gifts.</p>
+<p class="keep">For example…</p>
+<p class=""><b>YETI tumblers.</b></p>
+<p class=""><b>AirTags and JBL speakers.</b></p>
+<p class=""><b>Premium products people actually WANT.</b></p>
+<figure class="gfx"><img src="img/image4.jpg" alt=""></figure>
+<p class="keep">In fact…</p>
+<p class="">Some of these options may turn out to work BETTER than alcohol.</p>
+<p class="">Because not everyone drinks.</p>
+<p class="">Pretty much everyone likes getting cool stuff :-)</p>
+<div class="chain"><div><em>→</em>THE GIFT GETS ATTENTION.</div><div><em>→</em>THE LOCK CREATES CURIOSITY.</div><div><em>→</em>THE LETTER CREATES THE CONVERSATION.</div></div>
+<p class="">That's the strategy.</p>
+<h2 class="sec keep">“OKAY DAN… BUT ISN'T THIS EXPENSIVE?”</h2>
+<p class="">Yep.</p>
+<p class="">Compared with sending an email? Absolutely.</p>
+<p class="keep">But that's the wrong question. The RIGHT question is…</p>
+<div class="pull keep">EXPENSIVE COMPARED TO WHAT?</div>
+<p class="">Let's say your entire package costs around <b>$40</b>.</p>
+<p class="">Gift… Packaging.. Postage… Everything.</p>
+<p class="">Send 10 and you're roughly <b>$400 in.</b></p>
+<p class="keep">Now…</p>
+<p class="">$400 is quite expensive if your objective is to acquire 10 nice mugs :-)</p>
+<p class="">But what if you're trying to get a meeting with the owner of a business worth $20M? $40M? <b>$80M?</b></p>
+<p class="">And what if ONE of those businesses could become a client worth…</p>
+<p class="">$5,000 a month… $10,000 a month… or MORE.</p>
+<p class="">Suddenly $40 doesn't sound quite so scary.</p>
+<p class="">And there's ONE more reason I actually LIKE the fact this costs money.</p>
+<div class="pull keep">THERE'S A BARRIER TO ENTRY!</div>
+<p class="">Anyone can send an email or a DM with ZERO effort.</p>
+<p class="keep">But when someone receives a physical package…</p>
+<p class="">They can SEE you've invested some thought, effort and money into getting their attention.</p>
+<p class="">It feels different. Because it IS different.</p>
+<p class="">If your dream client could be worth $20,000, $50,000 or $100,000+ to your business over their lifetime…</p>
+<p class="">What's it worth just to get them to have a proper conversation with you? That's the maths I'd be looking at.</p>
+<figure class="gfx"><img src="img/image11.png" alt=""></figure>
+<h2 class="sec keep" data-break="1">SO… HOW DO YOU ACTUALLY DO THIS?</h2>
+<p class="keep">Here’s the plan:</p>
+<div class="step keep"><span class="mono">Step 01</span><b>PICK YOUR NICHE.</b></div>
+<p class="keep">Don't start with…</p>
+<p class=""><i>"Every business owner in America."</i></p>
+<p class="">Pick ONE market.</p>
+<p class="">HVAC… Dentists… Roofers… Accountants… Manufacturers.</p>
+<p class="">Whatever makes sense for what you sell.</p>
+<p class="">GET SPECIFIC.</p>
+<p class="">It makes everything easier. (We call these “Subniches”)</p>
+<p class="">Your list gets better.</p>
+<p class="">Your letter gets better.</p>
+<p class="">Your offer gets better.</p>
+<p class="">Your conversations get better.</p>
+<div class="step keep"><span class="mono">Step 02</span><b>BUILD YOUR DREAM 100.</b></div>
+<p class="">Now find <b>100 businesses in that market you'd genuinely LOVE as clients.</b></p>
+<p class="">Don't just grab the first 100 businesses Google spits out.</p>
+<p class="">Look for businesses that actually have the ability to BUY what you sell.</p>
+<p class="">Then find the PERSON inside each business who can actually say…</p>
+<div class="stamp keep-prev">“YES.”</div>
+<p class="">Owner, Founder, CEO, Managing Director, Head of Sales, Head of Marketing.</p>
+<p class="">Whoever makes sense for your offer.</p>
+<p class="">Because there's no point spending $40 getting the attention of someone who can't buy from you.</p>
+<div class="step keep" data-break="1"><span class="mono">Step 03</span><b>GET THE DATA.</b></div>
+<p class="">This bit used to be a pain.</p>
+<p class="">Finding the company was easy.</p>
+<p class="keep">Finding the right person…</p>
+<p class="">Along with their mobile, email, LinkedIn and physical address to reach them…</p>
+<p class="">Not so much.</p>
+<p class="">But thankfully, AI and modern data tools have completely changed that.</p>
+<p class="">And I've got a little present for you here too :-)</p>
+<div class="pull keep">I'LL GIVE YOU ACCESS TO<br>OUR LEAD DATABASE FOR FREE</div>
+<p class=""><b>This isn’t 100 dodgy leads in a spreadsheet.</b></p>
+<p class=""><b>It’s over 350 MILLION contacts.</b></p>
+<p class="keep">More than enough to start building your Dream 100…</p>
+<p class="">And then some.</p>
+<figure class="gfx"><img src="img/image10.png" alt=""></figure>
+<div class="step keep"><span class="mono">Step 04</span><b>CHOOSE YOUR GIFT.</b></div>
+<p class="keep">Remember…</p>
+<p class="">You are NOT trying to bankrupt yourself.</p>
+<p class="">You don't need a $500 gift.</p>
+<p class="">Something in that <b>$30 - 50-ish range</b> can be more than enough.</p>
+<p class="">What matters is that it feels valuable enough that they WANT it…</p>
+<p class="">And interesting enough that they notice it.</p>
+<p class="">We gave you a few options above. Just pick something appropriate for your market.</p>
+<p class="keep">Then…</p>
+<div class="stamp keep-prev">LOCK IT.</div>
+<p class="">You now have the curiosity piece.</p>
+<div class="step keep"><span class="mono">Step 05</span><b>WRITE THE LETTER.</b></div>
+<p class="">Pleeease don't skip this bit.</p>
+<p class="keep">The gift without the letter is just…</p>
+<p class="">A nice gift.</p>
+<p class="">But not particularly useful if your goal is to land a client.</p>
+<p class="">Your letter needs to answer a few very simple questions.</p>
+<p class=""><b>Why them?</b></p>
+<p class=""><b>Why are you contacting them?</b></p>
+<p class=""><b>What do you believe you can help them with?</b></p>
+<p class=""><b>Why should they care?</b></p>
+<p class="keep">And…</p>
+<div class="pull keep">WHAT DO THEY NEED TO DO NEXT?</div>
+<p class="">The letter doesn't need to be 14 pages long.</p>
+<p class="">It doesn't need clever copywriting tricks.</p>
+<p class="keep">It needs to make the recipient think…</p>
+<p class=""><i>"Okay. This person clearly chose ME for a reason."</i></p>
+<p class="">And then give them a very simple next step.</p>
+<p class="">The exact letters we send are in our community. (See below to get access)</p>
+<div class="step keep"><span class="mono">Step 06</span><b>SEND IT… THEN FOLLOW UP.</b></div>
+<p class="">This isn't magic.</p>
+<p class="">Some people will call immediately, some won't.</p>
+<p class="">So follow up - call them, email, connect on LinkedIn.</p>
+<p class="">BUT now you've got a pretty useful reason to start the conversation…</p>
+<p class=""><i>"Hey John… Dan here. Quick one — did that package I sent you arrive?"</i></p>
+<p class="keep">That's a VERY different opening from…</p>
+<p class=""><i>"Hi John, we help businesses like yours leverage AI to increase revenue and streamline operations…"</i></p>
+<p class="">:-)</p>
+<p class="">You aren't another rando in their inbox anymore.</p>
+<h2 class="sec keep">WANT ME TO HELP YOU DO IT?</h2>
+<p class="">I’ve made a bunch of mistakes doing this so I know what works and what kills deals.</p>
+<p class="">I've created a completely <b>FREE</b> community and I’d be honoured to have you join us.</p>
+<p class="keep">It’s called…</p>
+<div class="pull keep">B2B LEADS LAB</div>
+<figure class="photo"><img class="frame" style="width:290px;" src="img/image18.jpg" alt=""></figure>
+<p class="keep">It's dedicated to ONE thing and one thing only:</p>
+<div class="pull keep">GENERATING B2B LEADS ON DEMAND.</div>
+<p class="">Inside, I'm documenting what we're doing ourselves.</p>
+<p class="">The Locked Gift Strategy.</p>
+<p class="">The letters we're testing.</p>
+<p class="">The gifts we're testing.</p>
+<p class="">How we're finding prospects.</p>
+<p class="">How we're using AI to enrich the data.</p>
+<p class="">How we're following up.</p>
+<p class="">Your access to our 350M+ lead database.</p>
+<p class="">What's working.</p>
+<p class="">What's NOT working.</p>
+<p class="">And the results we're getting as we keep sending these things out.</p>
+<p class="">I'll also share what other members are doing so we can all learn from each other's experiments.</p>
+<p class=""><b>And where you can get support as you go on this journey.</b></p>
+<p class="">This isn't some $5,000 course.</p>
+<div class="pull keep red">IT'S FREE.</div>
+<p class="keep">And if you've read this far…</p>
+<p class="">I'd love you to come join us.</p>
+<p class="">But I DON'T want you joining just to consume more content.</p>
+<p class="">You've probably got enough bloody content :-)</p>
+<p class="">I want you to actually DO this.</p>
+<p class="keep">So here's your little action plan…</p>
+<div class="act keep"><span class="n">1</span><span>JOIN <a href="https://www.skool.com/b2b-leads-lab">B2B LEADS LAB</a> SKOOL COMMUNITY FOR FREE.</span></div>
+<div class="act keep"><span class="n">2</span><span>CREATE YOUR <a href="https://app.topa.io/signup">FREE TOPA PLAN HERE</a> &amp; USE DANWARDROPELEADS TO GET UNLIMITED ACCESS TO OUR 350M+ B2B LEAD DATABASE.</span></div>
+<div class="act keep"><span class="n">3</span><span>BUILD YOUR DREAM 100.</span></div>
+<div class="act keep"><span class="n">4</span><span>PICK YOUR FIRST 10.</span></div>
+<div class="act"><span class="n">5</span><span>SEND SOMETHING THEY CAN'T IGNORE.</span></div>
+<div class="closer">STOP FIGHTING FOR THEIR SCREEN.<br><span class="red">GET ON THEIR DESK.</span></div>
+<figure class="photo"><img class="frame" style="width:470px;" src="img/image14.jpg" alt=""></figure>
+<p class="">…and I'll see you inside :-)</p>
+<div class="hand sign">Dan</div>
+<p class="keep"><b>P.S.</b> Remember…</p>
+<p class=""><b>The bottle isn't the strategy.</b></p>
+<p class="">The gift isn't even the strategy.</p>
+<p class="">The strategy is identifying the people you REALLY want to do business with…</p>
+<p class="">And doing something very very different to get them to WANT TO SPEAK TO YOU.</p>
+<p class="">Zig when others are zagging.</p>
+<p class="">It works.</p>
+</div>
+
+<script>
+// Pour the blocks in #flow into fixed-size pages, one block at a time.
+(async function paginate() {
+  await document.fonts.ready;
+  await Promise.all([...document.images].map(im => im.complete ? 0 : new Promise(r => { im.onload = im.onerror = r; })));
+  const flow = document.getElementById('flow');
+  const blocks = [...flow.children];
+  flow.remove();
+  let pageNo = 1, body;
+  const lock = '<svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
+  function newPage() {
+    pageNo++;
+    const s = document.createElement('section');
+    s.className = 'page';
+    s.innerHTML = '<div class="hdr mono"><span>The Locked Gift Strategy</span><span>Dan Wardrope · B2B Leads Lab</span></div>'
+      + '<div class="body"></div>'
+      + '<div class="ftr mono"><span class="pg">' + String(pageNo).padStart(2, '0') + '</span><span class="lock">' + lock + 'Get on their desk</span></div>';
+    document.body.appendChild(s);
+    body = s.querySelector('.body');
+  }
+  const over = () => body.scrollHeight > body.clientHeight + 1;
+  // If a page would hold only a few stray lines, squeeze them onto the page before it.
+  function rescue() {
+    const pages = document.querySelectorAll('.page');
+    if (pages.length < 3) return;
+    const prevBody = pages[pages.length - 2].querySelector('.body');
+    if (!prevBody || !body.children.length || body.children.length > 4) return;
+    const cur = body, moved = [...cur.children];
+    prevBody.classList.add('tight');
+    moved.forEach(c => prevBody.appendChild(c));
+    if (prevBody.scrollHeight > prevBody.clientHeight + 1) {
+      moved.forEach(c => cur.appendChild(c));
+      prevBody.classList.remove('tight');
+      return;
+    }
+    cur.closest('.page').remove();
+    pageNo--;
+    body = prevBody;
+  }
+  newPage();
+  for (const el of blocks) {
+    if (el.dataset.break && body.children.length) { rescue(); newPage(); }
+    body.appendChild(el);
+    if (over() && body.children.length > 1) {
+      // carry any trailing "keep with next" blocks over to the new page too
+      const carry = [el];
+      let prev = el.previousElementSibling;
+      while (prev && prev.classList.contains('keep') && body.children.length > carry.length + 1) {
+        carry.unshift(prev);
+        prev = prev.previousElementSibling;
+      }
+      newPage();
+      carry.forEach(c => body.appendChild(c));
+    }
+  }
+  rescue();
+  document.title = 'The Locked Gift Strategy';
+  document.body.dataset.pages = pageNo;
+  if (location.search.includes('sheet')) document.body.classList.add('sheet');
+  const row = new URLSearchParams(location.search).get('row');
+  if (row !== null) [...document.querySelectorAll('.page')].forEach((pg, i) => { if (Math.floor(i / 8) !== Number(row)) pg.style.display = 'none'; });
+})();
+</script>
+</body>
+</html>

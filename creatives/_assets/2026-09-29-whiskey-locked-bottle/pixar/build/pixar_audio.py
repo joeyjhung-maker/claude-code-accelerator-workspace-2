@@ -12,6 +12,7 @@ sys.path.insert(0, str(HERE.parents[1] / 'build'))
 import sfx as S  # noqa: E402
 
 SR = 48000; TOTAL = 77.6; N = int(TOTAL * SR)
+SAFE = '--safe' in sys.argv   # compliance cut: message pops and chimes instead of cash/coin sounds
 bus = np.zeros((N, 2))
 tt = lambda d: np.arange(int(SR * d)) / SR
 
@@ -78,10 +79,11 @@ C = [
  (11.2, snore(3.8), -12),
  (15.0, S.zip_(9), -12), (15.2, S.blips(10), -14), (15.45, S.bubble(11, 600), -14), (15.6, S.bubble(12, 800), -15), (15.75, S.boing(13), -12), (15.8, S.clatter(14), -14), (16.0, S.paper(15, .6), -18),
  (18.45, wobble(1.8), -13), (19.2, S.boing(16), -16),
- (22.0, S.riser(1.0, 17), -18), (22.3, S.cash(3.0, 18), -14), (23.2, S.coin(19), -20), (24.0, S.coin(20), -20),
- (25.3, S.impact(21, soft=1), -12), (25.32, S.kaching(22), -12), (25.5, S.thump(23, 70, .2), -12), (25.55, S.boing(24), -14),
+ (22.0, S.riser(1.0, 17), -18), *([] if SAFE else [(22.3, S.cash(3.0, 18), -14), (23.2, S.coin(19), -20), (24.0, S.coin(20), -20)]),
+ *([(22.3 + i * .22, S.bubble(60 + i, 520 + 45 * (i % 6)), -17) for i in range(20)] if SAFE else []),
+ (25.3, S.impact(21, soft=1), -12), (25.32, S.shimmer(1.2, 22) if SAFE else S.kaching(22), -14 if SAFE else -12), (25.5, S.thump(23, 70, .2), -12), (25.55, S.boing(24), -14),
  (27.0, S.squeak(25), -16), (27.1, S.shimmer(1.2, 26), -20), (28.0, S.slap(27), -14), (28.6, S.pop(28, 700), -18),
- (30.05, S.riser(.4, 29), -18), (30.1, S.kaching(30), -11), (30.12, S.impact(31, soft=1), -14),
+ (30.05, S.riser(.4, 29), -18), (30.1, S.shimmer(1.2, 30) if SAFE else S.kaching(30), -14 if SAFE else -11), (30.12, S.impact(31, soft=1), -14),
  (31.7, march(6, .33), -14), (33.3, S.pop(32, 600), -14), (33.35, S.sparkle(.5, 33), -20),
  (37.5, S.click(34), -12), (37.6, S.shimmer(1.0, 35), -16), (38.4, S.boing(36), -16), (42.3, S.pop(37, 450), -14),
  (43.3, S.paper(38, .8), -12), (43.6, S.paper(39, .8), -14), (44.2, S.thump(40, 110, .08), -14), (45.0, S.paper(41, .6), -16),
@@ -91,7 +93,7 @@ C = [
  (59.85, S.puff(45), -10), (59.9, S.sparkle(.8, 46), -14), (61.8, S.scribble(.3, 47), -14), (61.82, S.buzz if hasattr(S, 'buzz') else S.thump(48, 110, .1), -16),
  (63.0, S.pop(49, 520), -14), (63.05, S.sparkle(.6, 50), -18),
  (64.5, drumroll(1.7), -14), (66.25, S.impact(51, soft=1), -12), (66.27, S.shimmer(1.6, 52), -14), (67.0, S.ding(53, 1568), -22), (69.9, S.ding(54, 2093), -18),
- (74.6, S.clack(55), -12), (74.7, S.pop(56, 400), -12), (74.72, S.sparkle(.8, 57), -14), (74.9, S.swell(2.6, 58), -14), (75.0, S.kaching(59), -18),
+ (74.6, S.clack(55), -12), (74.7, S.pop(56, 400), -12), (74.72, S.sparkle(.8, 57), -14), (74.9, S.swell(2.6, 58), -14), *([] if SAFE else [(75.0, S.kaching(59), -18)]),
 ]
 for i in range(22):
     C.append((54.6 + i * .1, plink(i), -22))
@@ -102,7 +104,7 @@ for i, t0 in enumerate([1.2, 3.2, 7.95, 11.5, 27.4, 69.0]):                     
     C.append((t0, S.swish(.24, 120 + i), -21))
 for i in range(5): C.append((33.3 + i * .12, S.pop(140 + i, 600 + 60 * i), -15))       # check stamps
 for t0 in (63.1, 72.55): C.append((t0, S.pop(150, 820), -15))
-for i in range(10): C.append((35.0 + i * .18 + .85, S.coin(160 + i), -24))              # coins flying out of the folders
+for i in range(0 if SAFE else 10): C.append((35.0 + i * .18 + .85, S.coin(160 + i), -24))              # coins flying out of the folders
 C += [(18.5, S.thump(170, 120, .09), -12), (42.3, S.ding(171, 1760), -18), (1.4, S.pop(172, 500), -18), (8.1, S.pop(173, 520), -18), (11.6, S.pop(174, 540), -18)]
 for t, a, g in C:
     if callable(a): a = a(0)

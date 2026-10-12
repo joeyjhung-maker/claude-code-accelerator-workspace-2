@@ -2,7 +2,9 @@
 
 - **Source:** Copy Coders call (Mario), Aug 31, 2026 — https://www.youtube.com/watch?v=kEriE225iW0
 - **Length:** 1:40:10
-- **Transcript:** YouTube auto-captions, cleaned (profanity masked as [__] by YouTube). Not yet distilled.
+- **Transcript:** YouTube auto-captions, cleaned (profanity masked as [__] by YouTube).
+- **Distilled 2026-10-04** into the `/nerd-free` skill (`.claude/skills/nerd-free/`) and a short page in the Second Brain wiki (`nerd-free-idea-isolation`).
+- **Resources that ship with the call** (slides, workbook, swipe file): https://mcastelli99.github.io/trainings/nerd-free/
 
 Related: [[hooks]] [[Hooks are 80 percent]]
 

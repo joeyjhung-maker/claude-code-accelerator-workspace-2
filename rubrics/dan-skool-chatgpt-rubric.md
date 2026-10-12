@@ -28,6 +28,8 @@ current specimens and add future Joey-final versions as they appear:
 - `copy/2026-09-29-dan-skool-post-network-asset-hvac.md`
 - `copy/2026-09-29-dan-skool-post-hunters-vs-farmers.md`
 - `copy/2026-10-02-dan-skool-post-bonus-profile-optimiser.md`
+- `copy/2026-10-09-b2b-leads-lab-skool-post-well-timed-follow-up-signals-JOEY-FINAL.md`
+- `copy/2026-10-11-b2b-leads-lab-email-a-pile-b-pile-JOEY-FINAL.md`
 
 ## The hierarchy
 
@@ -46,6 +48,8 @@ Every finished post gets reformatted so each sentence sits on its own line (blan
 This is a mechanical reformat, not a content edit — it does not count against the 1-3 high-impact
 edit budget and it never touches wording, jokes, fragments, or rough edges. It just breaks lines.
 
+- A list of parallel items (five signals, three checks) stacks as ONE tight block with no blank
+  lines between the items. Blank lines go before and after the block. (Joey, 2026-10-09.)
 - An ellipsis-joined run of beats ("Pulled the address off Companies House… sent it out… and then
   nothing.") stays ONE line — the ellipsis marks a continuing breath, not a sentence break.
 - A genuine full stop starts a new line, even for a short fragment ("Crickets.", "Never opened
@@ -58,6 +62,19 @@ edit budget and it never touches wording, jokes, fragments, or rough edges. It j
 - After reformatting, run a rhythm scan. Three or more consecutive sentences under roughly six
   words is a warning that “one sentence per line” has become machine-gun copy. Combine related
   thoughts into a fuller spoken sentence unless the short run is an intentional closing crescendo.
+
+## Standing structural rule: no sign-off on Skool posts
+
+Skool community posts do NOT end with a `Dan` sign-off (Joey, 2026-10-09). The post ends on its
+last real line: the lesson, the question, the homework, or the shout out. Strip any "Dan",
+"Rooting for ya, Dan" or similar that Mariobot adds. A P.S. can still follow the last line with no
+name above it.
+
+EMAILS keep the sign-off. When a Skool post is duplicated to email, the email version gets `Dan`
+added back at the end.
+
+Older specimens in this file's source list still show a `Dan` sign-off. That is history, not the
+pattern to copy.
 
 ## The five-question judge
 
@@ -142,6 +159,26 @@ Use an appropriate close:
 - poll: a clear reason to vote and mutually useful options;
 - offer: one direct CTA with the real destination;
 - engagement: a question that makes people think or reveals useful audience information.
+- homework reply (Joey, 2026-10-09): give the reader a small task that APPLIES what the post just
+  taught, so they understand it and start using it, then ask them to report below with their
+  answers. Size it like a journal exercise: about 10 minutes, done where they are sitting, answered
+  in the same sitting. Shape: "So take some time and think about [the thing]. / Then, answer
+  below… / 👉🏻 [ONE pointed question whose answer is their homework]" (specimen: "What's your niche
+  and "signal(s)" that will show if your prospects are in motion?"). The reader does the work and
+  Dan promises nothing back.
+  - It is NOT field work. "Go reach out to 10 people and then report back" is too much work and the
+    turnaround is too long. If the task needs another person, a send, a call or a wait, it is the
+    wrong size for this close.
+  - This is different from a domino assignment, which sends them off to do something in the real
+    world and report back days later. Homework is thinking and writing; a domino is doing.
+  - Travis does this a lot. ONE tactic for communities, not a default: do not run it on
+    back-to-back posts in the same room. Untested as of 2026-10-09, so it is an option, not a
+    winner.
+- identity close (Joey, 2026-10-09, A-pile email): turn the lesson into a name the reader can BE,
+  set against the one they do not want to be, then tell them to be it ("A-pilers win the prize /
+  B-pilers get the bin / Be an A-piler using what we're teaching in here :-)"). The nod to "what
+  we're teaching in here" is as far as the selling goes. One specimen so far; an option, not a
+  default.
 
 Do not bolt on a question just because it is a Skool post.
 
@@ -150,12 +187,18 @@ post's theme], comment "[KEYWORD]" and we'll get the deets to ya." The keyword i
 caps, personalised to the post. The line before it must flow into it. No video/link pushes unless
 Joey asks for a click-driver. A post without this close FAILS the ask.
 
+Scope note (2026-10-09): Joey ran two posts without this close on the day the Topa campaign
+finished: the Jack Brandt proof post ("give value and goodwill now") and the signals post ("no CTA,
+pure value post"). When Joey briefs a post as pure value or no CTA, that brief wins and the missing
+keyword close is NOT a fail. Whether the keyword close is still the default outside a live campaign
+has not been confirmed by Joey. Ask if unsure.
+
 For practical advice, do not stop at the instruction. Name the bit the reader is reluctant to do,
 then disarm it with the mechanism that makes it easier. Example: calling takes “some cojones,” BUT
 gift recipients are among the easiest cold leads to call because the gift has already opened the
 door. This emotional bridge is often what turns correct advice into advice somebody will follow.
 
-A short FYI post may still use a functional headline and `Dan` sign-off. “Informal” means getting
+A short FYI post may still use a functional headline. “Informal” means getting
 to the point quickly; it does not automatically mean stripping away the post furniture Dan uses.
 
 ## How ChatGPT edits Mariobot
@@ -216,6 +259,39 @@ to the point quickly; it does not automatically mean stripping away the post fur
 
 - BANNED phrases (hard fail, Joey 2026-09-29): "Fair question…" and "So yeah…". Cut or replace on
   sight, including in Mariobot drafts.
+
+- A moral-of-the-story recap before the sign-off ("The point is simple. / Stop doing X. / Start
+  doing Y. / One X beats ten Y every day of the week."). Joey cut the whole block on 2026-10-09 and
+  ended on the action. If that closing line is the strongest plain statement of the idea, it is
+  probably the HEADLINE: he moved it up top and replaced his own angle line with it. An angle line
+  in a brief is the argument, not automatically the headline.
+
+- Clean contrast pairs: "Not because X. / Because Y." and "That's not X. / That's Y." Joey rewrote
+  both in one post (2026-10-09). His versions join the lines the way Dan talks ("And it's not
+  usually… / But because…"), add an honest aside in brackets ("altho sometimes it can be"), and put
+  the READER in the sentence ("You're not comin' in cold anymore").
+
+- Slogan lines with no join. Lead a consequence with "Which means…" so it follows from the line
+  before ("Which means the prospect feels seen instead of stalked").
+
+- Filler intensifiers. Cut "absolutely", "genuinely", "literally", "honestly" on sight. Joey has
+  now removed these from two pieces in one day (2026-10-09). The line is always stronger without.
+
+- Stock copywriter phrases: "But here's the kicker…", "Think about that for a sec.", "changed the
+  game". Joey swapped "here's the kicker" for the next thing that actually happens ("And before
+  they can get their hands on it…") and cut the rest (2026-10-09). Use the next concrete beat as
+  the transition.
+
+- Introducing a borrowed idea (a mentor, a classic, a study) without saying what it gets the
+  reader. Straight after the intro line, add the payoff ("And it's fantastic at helping us
+  understand how to get our outreach OPENED"), THEN explain the idea.
+
+- One-sided payoff on an outreach tactic. Joey showed both sides: "For THEM…" (what the prospect
+  gets) then "And for US…" (what we get). Use it when the tactic could otherwise read as a trick.
+
+- Narrating proof instead of showing it ("X said it best…", "His opinion:", "who has… said she…",
+  "Then she saw… and said…"). Dan makes the claim; the quote stands bare with a short tag. Hard fail
+  (Joey, 2026-10-08).
 
 ## Improvement loop
 

@@ -56,3 +56,32 @@ Sources:
 
 - **$79 vs $99 slips.** On Aug 28 he said "$99 a month" before correcting to "$79 for one account." He also said "$97" once on Sep 23. Always quote **$79 (1 account) / $99 (2 accounts)**.
 - **The Dallas free seat.** He said "just say instead of 99" to describe its value. The accurate figure for 1 account is $79.
+
+## New proof from Joey, 2026-10-05 (two dashboard screenshots, "both from Jonathan's campaigns")
+- Screenshot A: 20 connection requests sent, 12 accepted (60%), 30 people messaged, 22 replies, **73.3% reply rate**.
+- Screenshot B, campaign "Insurance Leads" (New Connections): 20 requests sent, 12 accepted (60%), 11 replies, **92% reply rate** (11 of 12).
+- Joey: use these two and drop the 27% (84 messaged, 23 replies) result from the launch video.
+- Open with Jonathan: both screenshots show 20 sent and 12 accepted, so confirm they are two campaigns and not one at two points in time. Small samples, so always give the counts with the percentage.
+- The image files are not in the workspace yet. Drop them in `inbox/` if the real screenshots should appear in creative.
+
+## LinkedIn Signals (from the Signals walkthrough video, pulled 2026-10-08)
+Source: `source/2026-10-linkedin-signals-dan-johnny-walkthrough.md` (Vimeo, 15:47). Timestamps are the video's.
+
+**Safe to use in copy**
+- **Two signal types, both run daily on autopilot once set up** (01:23): *profile monitoring* (everyone who interacts with a named person's posts) and *keyword monitoring* (people posting a keyword). Don't blend them: Jonathan corrected this on 5 Oct.
+- **Profile example:** an Alex Hormozi post had "over two and a half thousand people interact" in 24 hours; a coaching company on Topa scrapes those. Opener: "Hey, saw your comment on Alex's post." (01:40 to 02:23)
+- **Keyword result on camera:** "insurance leads" → 34 connection requests sent, 22 accepted (65%), 19 replied, **86% response rate**. (05:00 to 05:20)
+- **The messaging behind it:** connection note "Hi, [first name], saw you posted about leads" (7 words), then the pay-on-results DBR offer. The sequence stops when they reply. (05:25 to 08:35)
+- **Live demo:** keyword "Final Expense" found 224 leads in the last 24 hours; 82 were pulled into a new campaign during the call; "you can run that in five minutes." (06:05 to 11:48)
+- **Other real uses:** a PR firm tracking "just launched"; Topa's own team scraping people who engage with Clay / Instantly / Smartlead posts. (09:50 to 11:06)
+- **Where signal leads can go:** webhook to a CRM, Instantly, Smartlead, or Topa's LinkedIn campaigns or voicemail campaigns. (03:05, 06:50)
+- **Mobiles:** 7.5 cents each, "which I believe is the cheapest out there", about 70% found. (13:24 to 13:53)
+- Jonathan's loose comparisons, attribute to him and don't harden: signal-led outreach "beats just a crappy list… like 10 times"; "a five times better response rate than anything else you're doing." (10:17, 11:33)
+
+**Pulled back — do NOT claim**
+- **Address lookup is not live.** Dan: "Can we get the address yet, or is that still in the pipeline?" Jonathan: "The address is still in the works… If it's a priority, I'll get it done." Finding an address "takes a bit of detective work." (14:54 to 15:31) This overrides the "mobiles, emails, addresses" line in "Paid plan contents" above until Jonathan says it has shipped. Emails 11.1 and the 12.x set used "addresses".
+
+**Open with Jonathan**
+- **Are 92% and 86% one campaign?** The 92% screenshot above is campaign "Insurance Leads": 20 sent, 12 accepted, 11 replies. The video shows an "insurance leads" campaign at 34 sent, 22 accepted, 19 replies (86%). Same name, larger counts, so it may be the same campaign later on. Copy sent on 8 Oct says "REPLY rates of 92%, 86%, and 47%" as separate campaigns. Confirm before reusing all three together.
+- **Where the 47% comes from.** Joey supplied it on 8 Oct; no source is in the workspace yet.
+

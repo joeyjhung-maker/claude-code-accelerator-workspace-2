@@ -45,8 +45,8 @@ The brief's **Tap position** sets how direct the post is allowed to be:
   hedging the mechanism away.
 
 Primer source: `clients/{name}/primers/dan-skool-posts-body.md` — read the
-shipped examples for structure (headline → body → engagement close → sign-off
-→ P.S.) before drafting. This is the whole primer; there's no separate
+shipped examples for structure (headline → body → engagement close → P.S.)
+before drafting. No `Dan` sign-off on Skool posts (Joey, 2026-10-09). This is the whole primer; there's no separate
 hook/body/headline split like the ad path — a Skool post is one artifact.
 
 ### 3. Write — by Source route and Mechanic
@@ -71,9 +71,11 @@ brief itself.
   proof-post / philosophy-stance) and the primer examples.
 
 **Format branches what mariobot produces:**
-- **Skool community post** (default) → headline + body + engagement close +
-  sign-off, P.S. where the brief calls for one.
-- **email dupe** → body only, no headline/subhead, matching
+- **Skool community post** (default) → headline + body + engagement close,
+  P.S. where the brief calls for one. NO `Dan` sign-off (Joey, 2026-10-09) —
+  tell mariobot not to add one and strip it at the judge stage if it does.
+- **email dupe** → body only, no headline/subhead, ends with the `Dan`
+  sign-off (emails keep it), matching
   [[flexxable-output-format]].
 - **DM script** → short, conversational, no headline — this is a message,
   not a post.

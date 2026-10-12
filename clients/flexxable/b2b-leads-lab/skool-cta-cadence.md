@@ -46,6 +46,10 @@ official types, but common in Dan's existing posts) / `none`.
 2026-09-26 | roya | ascend | y | two-step | copy/2026-09-26-roya-skool-post-linkedin-automation-early-access.md
 2026-09-29 | topa-linkedin (dan) | ascend | y | comment-keyword | copy/2026-09-29-dan-skool-post-big-deals-automate-consistency.md
 2026-09-30 | topa-linkedin (dan) | ascend | y | comment-keyword | copy/2026-09-30-dan-skool-post-linkedin-gatekeeping.md (replaced cancel-sales-nav v1)
+2026-10-09 | aaa-ninjas | engage | n | none | copy/2026-10-09-aaa-ninjas-skool-post-jack-brandt-5k-to-22k.md
+2026-10-09 | b2b-leads-lab | engage | y | engagement-only | copy/2026-10-09-b2b-leads-lab-skool-post-well-timed-follow-up-signals-JOEY-FINAL.md (homework reply close, no offer)
+2026-10-11 | b2b-leads-lab (email) | engage | n | none | copy/2026-10-11-b2b-leads-lab-email-a-pile-b-pile-JOEY-FINAL.md (soft nod to the group in the last line, no offer)
+2026-10-11 | aaa-ninjas | engage | n | none | copy/2026-10-11-aaa-ninjas-skool-post-sell-then-build.md (alt ending = homework reply, engagement-only, if Joey picks it)
 
 ## Running observation (updated 2026-09-11, after the AAA Ninjas land-and-expand NAP)
 

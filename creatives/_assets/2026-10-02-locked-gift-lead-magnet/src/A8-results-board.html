@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>A8 · Locked gift results board</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#1C1A17; --red:#C23B22; --paper:#FFFFFF; --label:#FBF8F1; --tint:#F3EBDD; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; background:var(--paper); }
+  .card { width:1600px; height:640px; padding:44px 66px 56px 56px; color:var(--ink); display:flex; flex-direction:column; gap:32px; }
+  .mono { font-family:'IBM Plex Mono', monospace; font-weight:600; letter-spacing:.14em; font-size:17px; }
+  .top { display:flex; justify-content:space-between; padding-bottom:14px; border-bottom:3px dashed var(--ink); }
+  .grid { flex-grow:1; display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:30px; }
+  .tag { background:var(--label); border:4px solid var(--ink); box-shadow:10px 10px 0 var(--ink); display:flex; flex-direction:column; }
+  .sent { padding:22px 24px 10px; display:flex; flex-direction:column; align-items:flex-start; }
+  .sent .mono { font-size:15px; }
+  .num { font-family:Anton, sans-serif; font-size:200px; line-height:.95; }
+  .mid { margin:0 24px; padding:16px 0; border-top:3px dashed var(--ink); min-height:86px; display:flex; align-items:center; }
+  .rate { font-family:Anton, sans-serif; font-size:44px; line-height:1; }
+  .rate small { font-family:'IBM Plex Mono', monospace; font-weight:600; font-size:15px; letter-spacing:.14em; margin-left:10px; }
+  .who { font-size:15px; line-height:1.45; }
+  .result { margin-top:auto; background:var(--red); color:#FFFFFF; padding:18px 24px 22px; font-family:Anton, sans-serif; font-size:40px; line-height:1.08; min-height:128px; display:flex; flex-direction:column; justify-content:center; border-top:4px solid var(--ink); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top mono"><span>LOCKED GIFT SCOREBOARD</span><span>ABOUT $40 A PACKAGE</span></div>
+  <div class="grid">
+    <div class="tag">
+      <div class="sent"><span class="mono">GIFTS SENT</span><span class="num">10</span></div>
+      <div class="mid"><span class="rate">60%<small>RESPONSE</small></span></div>
+      <div class="result">6 CALLS BOOKED<br>3 CLOSED</div>
+    </div>
+    <div class="tag">
+      <div class="sent"><span class="mono">GIFTS SENT</span><span class="num">20</span></div>
+      <div class="mid"><span class="rate">35%<small>RESPONSE</small></span></div>
+      <div class="result">7 REPLIES</div>
+    </div>
+    <div class="tag">
+      <div class="sent"><span class="mono">GIFTS SENT</span><span class="num">70</span></div>
+      <div class="mid"><span class="rate">25%<small>RESPONSE</small></span></div>
+      <div class="result">6 NEW CLIENTS</div>
+    </div>
+    <div class="tag">
+      <div class="sent"><span class="mono">GIFTS SENT</span><span class="num">14</span></div>
+      <div class="mid"><span class="mono who">WITH $20M-$80M/YR<br>BUSINESSES</span></div>
+      <div class="result">4 CALLS BOOKED</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

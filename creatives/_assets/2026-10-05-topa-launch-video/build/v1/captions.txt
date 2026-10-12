@@ -1,0 +1,41 @@
+# Display text for captions. One spoken line per row, | = caption page break, [TAG] = section.
+[HOOK]
+The easiest sale you'll close this year | starts with two words.
+"How's business?"
+[DESIRE]
+The business owners with real budgets | are on LinkedIn, | thinking about their business.
+And the ones most likely to buy from you | already know your name.
+[PROBLEM]
+You've probably got five hundred of them | sitting in your connections, | maybe a few thousand.
+People who accepted your request, | liked a post once, | and never heard from you again.
+Reaching out by hand lasts about three days | before it gets tedious.
+And when someone does reply, | the convo dies in the DMs, | because nobody picks up the phone.
+[MECHANISM]
+That's why we built Topa.
+Topa connects to your LinkedIn account | and sends a short, casual opener | to your existing connections for you.
+There's no pitch in it… | we call it a hand raiser.
+If they don't reply, | it follows up with a second and third message.
+[PROOF]
+Jonathan, who runs Topa, | sent "How's business?" | to 84 of his own connections.
+23 of them replied.
+That's a 27% reply rate.
+[HOW]
+Connect your LinkedIn account | and pick who to message… | your existing connections, | or new people from the built-in database | of 350 million contacts.
+The AI helper suggests your messages, | you set the hours, | and it runs on autopilot.
+Every reply lands in one inbox.
+When you spot a hot one, | you click "Get Cell Phone"… | and for about seven in ten people, | their mobile number comes back | in a few seconds.
+Now you're ringing someone | who just replied to you, | so the call's already warm.
+And the hottest names on that list | are the ones worth sending a gift to, | before the coffee date.
+[OBJECTION]
+LinkedIn is strict, | and we're not going to pretend otherwise.
+So Topa keeps it slow on purpose… | randomised send times, | a residential IP in your own location, | and limits that start at | 15 connection requests | and 20 messages a day.
+You still write every reply yourself.
+No tool can promise what LinkedIn will do, | but we play it slower than most.
+[PRICE]
+It's $79 a month | for one LinkedIn account, | or $99 for two.
+Mobile numbers cost less than 8 cents each.
+And with the database built in, | you're not paying about $100 a month | for Sales Navigator on top.
+One client this year covers it.
+[CTA]
+Go to topa.io, | connect your LinkedIn account, | and send your first hand raiser today.
+Because the easiest sale you'll close this year… | is with someone who already knows your name.

@@ -193,7 +193,7 @@ a Meta ad. Grade Skool posts against this section, not the ad rules above, where
   line that's really a soft continuation of the sentence above, not a new sentence ("And it's
   working like gangbusters!" → "and it's working like gangbusters!"). Runs counter to normal
   instinct — resist "fixing" it. Full note at [[voice]].
-- **Sign off with his name.** Dan.
+- **Sign-off: emails only.** Emails end with `Dan`. Skool community posts carry NO sign-off (Joey, 2026-10-09; overrides the earlier "sign off with his name" rule for posts).
 
 ### Structure
 - **THE ELLIPSIS LADDER IS A DAN DEVICE — exempt from the fragment-stack FAIL.** I joined three
@@ -795,7 +795,7 @@ bigger than a line-edit, closer to a re-angle. Diffing his final version against
   one line: "Get this 'opener' right, the rest becomes easy." Extends the lesson already banked on
   the Dream 100 Scorecard post (teaching content doesn't need a hand-raiser) one step further —
   sometimes it doesn't need a big close at all, just one confident instruction.
-- **"Rooting for ya, Dan" is a valid alternate sign-off, not just bare "Dan."** Matches the
+- **"Rooting for ya, Dan" is a valid alternate sign-off, not just bare "Dan."** (EMAILS only from 2026-10-09; Skool posts carry no sign-off.) Matches the
   primer's own second shipped post exactly, and echoes Travis's own "Rooting For You, T Dub"
   sign-off from the newly-ingested PSM+BTEM notes. Reach for it when the post's mood is warmer/
   more encouraging than a flat sign-off suits.

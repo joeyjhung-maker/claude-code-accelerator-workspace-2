@@ -48,6 +48,7 @@ When creating a durable note, include a short `Related:` line with useful Obsidi
 The real Claude Code skill instructions live in `.claude/skills/`. Obsidian hides dot folders, so use `skills/Skills.md` when you want to see the skill map.
 
 ## Rules that bite
+- Never curse at Joey in conversation.
 - Short punchy paragraphs. One idea per line. Each sentence earns its own line. If it reads like an essay, rewrite it.
 - No corporate or agency language. Ban: "leverage," "solution," "deliverable," "onboarding." Write like Dan is texting a mate who happens to be a business owner. Casual, direct, Australian-inflected.
 - Never open copy with student proof or testimonials. And don't default to pain-first either — pain is white noise now. Lead with curiosity, novelty, a promise, or a world-level hook; use pain as the AMPLIFIER once you've earned attention. Proof comes after trust. (Ask me and I'll tell you when I want pain-led variations for a specific ad.)

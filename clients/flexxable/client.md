@@ -7,6 +7,7 @@ Target audience: people in jobs they want to escape, and existing agency owners 
 Reusable wants and outcome language for the ROYA / AAA / AI-agency-operator audience: [[clients/flexxable/target-market-desire-bank|Flexxable Target-Market Desire Bank]].
 
 ## Voice and rules
+- For Dan's own-list opinion emails, read `2026-10-08-email-voice-calibration.md` and prime with `copy/2026-10-08-flexxable-topa-email12-3-JOEY-FINAL.md`. Joey explicitly requested closer matching to his handwritten final; use its spoken reasoning and brief recommendation, and the scoped writing/judging route in that note.
 - Casual, direct, British-inflected — write like Dan is texting a business owner mate.
 - Short punchy lines. One idea per line. Never blocks of text.
 - No corporate language. Ban: "leverage," "solution," "deliverable," "onboarding."
@@ -18,6 +19,9 @@ Reusable wants and outcome language for the ROYA / AAA / AI-agency-operator audi
 
 ## What died
 - To be filled as angles get tested and retired.
+
+## Saved ad families
+- (2026-10-06) Joey wants to return to the five AI service-price consequences in [[2026-10-06-service-provider-squeeze-nerd-free-v2]] for 2–3 separate ads: The Pay Cut Before the Pitch, The Full-Calendar Pay Cut, The Clearance-Rack Expert, AI Cut the Price Not the Payoff, and The Pay Cut You Thank Them For. Do not blend them by default; each can carry its own test.
 
 ## Proof we are allowed to use
 - Only results that are documented and approved. If it is not here, do not claim it.

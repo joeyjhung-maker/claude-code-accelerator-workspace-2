@@ -20,6 +20,15 @@ Marketing director for coaching brands. My work is ad copy, hooks, and the strat
   - `.claude/skills/produce/SKILL.md` — the only stage that actually writes copy, from a locked brief
   - `.claude/skills/reflect/SKILL.md` — end-of-session promotion of what worked/died into memory
   - Same pattern for the Skool-specific variants (`storm-skool`, `brief-skool`, `produce-skool`).
+- **Hook and winner-multiplying playbooks (added 2026-10-06).** Same idea, open the file and follow it. These are also copied into `.agents/skills/` so Codex can load them as skills:
+  - `.claude/skills/nerd-free/SKILL.md` — find the IDEA before any hook is written, or diagnose whether a flat ad has a weak idea or weak writing. Output is idea cards, not hooks. It sharpens the angle Joey has locked; it never replaces it.
+  - `.claude/skills/organic-hooks/SKILL.md` — pull proven hooks word for word from outlier reels and weld them onto a body that already converts
+  - `.claude/skills/comment-goldmine/SKILL.md` — sort the comments under an ad into lenses and turn them into raw ideas for the hook writer
+  - `.claude/skills/multiply/SKILL.md` — the router for a winning ad: tag its genome, pick ONE part to swap, hand off to the right playbook
+  - `.claude/skills/formats-conceits/SKILL.md` — same message, new format or conceit
+  - `.claude/skills/horizontal-scaling/SKILL.md` — find new segments (outcome / demographic / facet) and aim an existing winner at them
+  - `.claude/skills/timeline-ad/SKILL.md` — build a "what happens if X does Y for 30 days" ad
+  - Every hook also has to pass `brand/hooks.md`, including the newest gate: grab them by the throat, then grease the slide.
 - **No persistent memory across sessions.** Claude Code keeps an auto-memory file outside this repo (`~/.claude/projects/.../memory/`) that you can't see. Anything durable that should survive between sessions with you needs to live in this repo instead — in `brand/voice.md`, a client's `client.md`, or this AGENTS.md file. If you learn something that should stick, say so explicitly so it gets written into one of those files rather than assumed remembered.
 - Start of session: check the most recent file in `daily/` for what was still outstanding before starting new work.
 - End of session: log a short entry to today's daily note (`daily/YYYY-MM-DD.md`) — what got made, what's still open.
@@ -48,6 +57,7 @@ Flow:
 - Finished or retired work: `archive/` (never delete from here)
 
 ## Rules that bite
+- Never curse at Joey in conversation.
 - When delivering copy Joey will paste into Google Docs, put a non-breaking space on each visually blank spacer line so Google Docs preserves the empty lines; never rely on Markdown paragraph margins alone.
 - Short punchy paragraphs. One idea per line. Each sentence earns its own line. If it reads like an essay, rewrite it.
 - No corporate or agency language. Banned words: "leverage," "solution," "deliverable," "onboarding." Write like texting a mate who happens to be a business owner. Casual, direct, Australian-inflected.

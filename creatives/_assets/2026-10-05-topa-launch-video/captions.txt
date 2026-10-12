@@ -1,0 +1,51 @@
+# Display text for captions (v4). One spoken line per row, | = caption page break, [TAG] = section.
+# Pages are 5 words or fewer: Joey wants 4-5 words on screen at a time, moving fast (2026-10-05).
+# The hand raiser wording is never shown or spoken, and nothing on screen says it is held back.
+[HOOK]
+Right now your dream client | is deleting a DM | that sounds exactly | like the one you sent | this morning.
+[LEAD]
+The $250k to $1m+ deals | are sitting on LinkedIn.
+The decision makers | with real budgets… | who can sign one contract | that completely changes your year.
+Everybody knows they're there.
+Everybody's fighting | for their attention | in the DMs.
+And almost nobody | is closing them.
+[PROBLEM]
+Their inbox is a graveyard | of copy-paste pitches | from strangers.
+And if someone does reply… | you're trapped | in a chat thread.
+You don't have their number.
+You don't have their email.
+The conversation just goes cold.
+The DMs are where | deals go to die.
+[TURN]
+The people who actually | close these deals | do two things | every single day.
+They keep adding | the right decision makers | to their network… | and they pull meetings | and sales | out of the connections | they already have.
+[MECHANISM]
+That's why we built Topa.
+Topa does both for you, | on autopilot, | from your own LinkedIn account.
+You pick the decision makers | you want… | and Topa sends them | connection requests every day, | then messages the ones | who accept.
+For the connections | you already have, | Topa sends one short message | with no pitch in it… | we call it | the hand raiser.
+[PROOF]
+Jonathan runs Topa, | and these are two | of his own campaigns.
+In the first, | 30 people were messaged | and 22 replied… | a 73% reply rate.
+In the second, | 12 new connections accepted, | and 11 of those 12 | replied.
+That's 92%.
+[HOW]
+Connect your account, | set your hours, | and it runs.
+Every reply lands | in one inbox… | click "Get Cell Phone", | and for about seven | in ten people, | their mobile number | comes back in seconds.
+Now you're ringing someone | who just replied to you.
+[DATABASE]
+And you've got access | to almost every LinkedIn member | sitting inside | Topa's internal database.
+That's over 350 million | potential leads.
+You can search | all of it, | and download 10,000 contacts | a month | with their full contact info… | mobile, email, address, | and more, | included in every Topa plan.
+So you can follow up | by phone, by email, | and for the hottest names, | with direct mail.
+That's how a reply | turns into a meeting… | and a meeting | into a big deal.
+And best of all: | You can delete | Sales Navigator | because this replaces it.
+[OBJECTION]
+LinkedIn is strict, | so Topa keeps it slow | on purpose… | randomised send times, | a residential IP | in your own location, | and low daily limits.
+You still write | every reply yourself, | and no tool can promise | what LinkedIn will do.
+[PRICE]
+It's $79 a month | for one LinkedIn account, | or $99 for two.
+One deal covers that | many times over.
+[CTA]
+Go to topa.io | and sign up.
+Because that dream client | isn't going to find | your DM | in a graveyard | of copy-paste pitches.

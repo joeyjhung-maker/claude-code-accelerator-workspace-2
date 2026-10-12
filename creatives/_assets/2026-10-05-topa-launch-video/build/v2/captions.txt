@@ -1,0 +1,43 @@
+# Display text for captions (v2). One spoken line per row, | = caption page break, [TAG] = section.
+# The hand raiser wording is never shown or spoken: buyers get it after they join.
+[LEAD]
+The $250k to $1m+ deals | are sitting on LinkedIn right now.
+The decision makers with real budgets… | who can sign one contract | that completely changes your year.
+Everybody knows they're there.
+Everybody's fighting for their attention | in the DMs.
+And almost nobody is closing them.
+[PROBLEM]
+A decision maker's LinkedIn inbox is a graveyard | of copy-paste pitches from strangers, | and they all get deleted.
+And when a DM does get a reply, | the convo dies in the chat, | because nobody picks up the phone.
+The DMs are where deals go to die.
+[TURN]
+The people who close these deals | aren't writing cleverer pitches.
+They start with people who already know their name, | open with a message that has no pitch in it, | and get out of the DMs fast.
+[MECHANISM]
+That's why we built Topa.
+Topa connects to your LinkedIn account | and sends your existing connections | one short message for you.
+We call it the hand raiser, | and the exact wording stays locked | until you join.
+[PROOF]
+Jonathan, who runs Topa, | sent the hand raiser | to 84 of his own connections.
+23 of them replied.
+That's a 27% reply rate.
+[HOW]
+Connect your LinkedIn account, | pick who to message, | set your hours, | and it runs on autopilot.
+Every reply lands in one inbox… | click "Get Cell Phone", | and for about seven in ten people, | their mobile number comes back in seconds.
+Now you're ringing someone | who just replied to you.
+[DATABASE]
+And you're not stuck in the DMs, | because Topa sits on a database | of 350 million+ contacts.
+You can search all of it, | and download 10,000 contacts a month | with their full contact info… | mobile, email, address, and more.
+So you can follow up by phone, by email, | and for the hottest names, | with a gift on their desk.
+That's how a reply turns into a coffee date… | and a coffee date into a big deal.
+[OBJECTION]
+LinkedIn is strict, | and we won't pretend otherwise.
+So Topa keeps it slow on purpose… | randomised send times, | a residential IP in your own location, | and low daily limits.
+You still write every reply yourself, | and no tool can promise what LinkedIn will do.
+[PRICE]
+It's $79 a month | for one LinkedIn account, | or $99 for two.
+The database is built in, | so you're not paying about $100 a month | for Sales Navigator on top.
+One deal covers that many times over.
+[CTA]
+Go to topa.io, | connect your LinkedIn account, | and get the hand raiser.
+The big deals are still sitting on LinkedIn… | and now you know how to go and get them.

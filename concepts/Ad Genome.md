@@ -42,6 +42,7 @@ Related: [[The Lock]] [[creative-coverage]] [[concepts-and-angles]] [[hooks]] [[
 - Format: the beat order (timeline, listicle, comparison, story).
 - Test: hold the concept and rotate angles. Hold the angle and rotate concepts. Keep both and change the format.
 - Lives in: `brand/concepts-and-angles.md`, `/timeline-ad`.
+- To find a new concept from a flat fact: `/nerd-free`.
 
 **4. Conceits.** What the ad pretends to be.
 - A podcast clip. A street interview. A customer call. An apology letter.
