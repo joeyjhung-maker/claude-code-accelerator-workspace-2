@@ -282,3 +282,214 @@ Joey then supplied 4 more real posts from his own archive, unprompted, as models
 **Skill:** `produce` + `creative-strategy-system` (variation / iteration path)
 **Issue:** The 2026-09-25 Marcio variation of the Hedge Fund winner produced 10 hooks, 9 of which dropped the "copied the hedge fund managers' model" concept and ran on the one-vs-ten payoff instead. Joey rejected all of them: a variation that loses the winner's concept isn't a variation. Message Isolator later showed that line is the ad's ONLY carrier of the mechanism, so it is FROZEN twice over.
 **Suggested fix:** Before varying any winner, run Genesis `message-isolator` first and treat its FROZEN column as a hard constraint on every downstream writer (Cash Rewriter, Segment/Mech Swapper, Marcio, mariobot). Change one lever at a time (`cash-analysisvariation-bot` → `cash-rewriter-bot`); never let a hook pass re-pick the concept.
+
+---
+
+### Observation 28: Swipe-route video scripts skip the runtime check, and client.md still says "British"
+
+**Status:** OPEN
+**Date:** 2026-10-05
+**Skill:** `brief` + `produce` (swipe route, video format)
+**Issue:** The Red Flags brief locked "about 1:45" by copying the RYZE swipe's runtime. RYZE's creator speaks about 204 wpm; Dan's measured pace is about 100 wpm. The Mad-Lib came back at 465 words (4:39 for Dan), and a deletion-only tight cut still ran 358. The mismatch was only caught at the judge stage because the video workflow's WPM check isn't part of `/brief`. Separately, `clients/flexxable/client.md` still says "British-inflected" while the Script and the copy rubric say Dan is Aussie, so the bot was told "British".
+**Suggested fix:** In `/brief`, when Format is video and Source route is swipe, convert the swipe's runtime to a word budget at the spokesperson's real wpm before locking the Format field. Update `client.md` voice line to Aussie.
+
+---
+
+### Observation 29: The copy judge passed a line with broken cause and effect, a vague phrase, and a "we're withholding this" line
+
+**Status:** OPEN
+**Date:** 2026-10-05
+**Skill:** `produce` (judge step) + `rubrics/copy-rubric.md`
+**Issue:** On the Topa launch video script, the judge scored three lines PASS that Joey rejected on first read. (1) "the convo dies in the chat, because nobody picks up the phone": the "because" doesn't cause the thing before it ("Your logic is wrong"). (2) "They start with people who already know their name": a cute phrase standing in for "existing LinkedIn connections" ("what does this mean??"). (3) "the exact wording stays locked until you join": Joey said to keep the hand raiser wording out of the video, and the script turned that into a line telling the viewer we're holding something back ("stupid, why would you say this"). The rubric checks structure, voice and proof but has no cause-and-effect check, and nothing stops an internal constraint being narrated to the audience.
+**Suggested fix:** Add three judge checks. For every "because / so / that's why": say the cause and the effect as two plain sentences and FAIL it if the first doesn't produce the second. For every noun phrase standing in for a thing the reader has a plain name for: use the plain name. And when Joey gives a "don't reveal X" rule, treat it as a silent omission unless he says to tease it, never as copy.
+
+---
+
+### Observation 30: Produce generated polished hooks before isolating a compelling idea
+
+**Status:** OPEN
+**Date:** 2026-10-05
+**Skill:** `produce` + `nerd-free`
+**Issue:** The Invisible Pay Cut batch followed the old hook-bot and vicious-hook rubric route, then passed its scorecard, but Joey rejected the whole set as weak. The process intensified the brief's literal premise and varied surface vehicles without first running the new Nerd-Free idea isolation process. The scorecard therefore rewarded wording around a flat idea.
+**Suggested fix:** Add a pre-hook idea gate to `/produce`: when a brief is driven by a raw market fact, a new problem label, or a rejected/flat hook batch, run `/nerd-free` first. Do not call the hook bot until Joey picks an idea card whose bare claim passes the four-part Nerd-Free Test. Vehicle variety happens after idea selection, not instead of it.
+
+---
+
+### Observation 31: Idea isolation must sharpen the locked angle, not replace it
+
+**Status:** OPEN
+**Date:** 2026-10-06
+**Skill:** `nerd-free` + `brief`
+**Issue:** After a hook batch was rejected, the Nerd-Free pass branched into five adjacent arguments—efficiency, cleanup, retainer risk, downstream value and rate defence. Joey rejected them because they no longer delivered his original macro angle: AI replacement fear, rate destruction even for survivors, the market rejecting upfront retainers, and a game-change into risk-free results pay. The process treated an operator-locked angle as raw material it could replace.
+**Suggested fix:** Before branching, separate LOCKED from OPEN. Preserve the operator's audience, fear, market diagnosis, transition and offer mechanism verbatim as immovable rails. Use consequence cascades only to deepen the missing part (for example the metaphor/problem name or scene), and reject any idea card that changes what the ad is fundamentally about.
+
+---
+
+### Observation 32: Hook scorecards must fail self-resolving hooks
+
+**Status:** OPEN
+**Date:** 2026-10-06
+**Skill:** `produce` + `new-hook-bot` + `nerd-free`
+**Issue:** The Service Provider Squeeze shortlist passed every existing idea, brief and truth check, but Joey rejected it as safe. The lines stated the threat and then explained the twist inside the hook, so there was no unresolved question forcing the reader into the body.
+**Suggested fix:** Add a hard open-loop gate to hook generation and judging. Write down the exact question each hook creates; if the hook itself supplies the why or how, FAIL it. Demand a “wait… WHAT?” reaction, show A and Z while hiding B through Y, and run a vicious ceiling pass before compliance or clarity grading.
+
+---
+
+### Observation 33: A relocked brief does not replace a rejected Nerd-Free gate
+
+**Status:** OPEN
+**Date:** 2026-10-06
+**Skill:** `nerd-free` + `produce`
+**Issue:** After the first Nerd-Free cards were rejected for drifting off the operator's angle, the brief was relocked and hook production resumed without running a new Mode A pass and getting an idea selected. Two batches intensified the same abstract claim and were rejected.
+**Suggested fix:** When a Nerd-Free pass is rejected, production remains blocked even if the brief is corrected. Rerun Mode A inside the locked rails, show new idea cards, and require an explicit card pick before any hook bot call.
+
+---
+
+### Observation 34: Drawable problem names can still sound scrubbed clean
+
+**Status:** OPEN
+**Date:** 2026-10-06
+**Skill:** `brief`
+**Issue:** The naming pass produced conceptually accurate, drawable labels built from clean marketing nouns such as “commission,” “margin,” “hijack” and “protection racket.” Joey wanted short words with bodily or tactile mouthfeel like “sweat,” “moist” and “dunk.”
+**Suggested fix:** Add a word-texture gate after The Image test. Say the key noun aloud and reject it if the word has no felt sound, weight, wetness, roughness or bodily action. Prefer blunt Germanic verbs/nouns such as bite, bleed, rip, suck, chew, claw, gut, rot and leech before abstract category language.
+
+---
+
+### Observation 35: Visceral words cannot substitute for a human wound
+
+**Status:** OPEN
+**Date:** 2026-10-06
+**Skill:** `nerd-free` + `brief`
+**Issue:** After clean labels failed, the next pass swapped in tactile words such as bite, bleed, leech, gut and chew. Joey still felt nothing because the words described what happened to an invoice rather than what the person experienced.
+**Suggested fix:** Before naming a problem, write the one-second human scene and identify the social or emotional wound—humiliation, relief, betrayal, shame, fear. The label should compress that lived contradiction. Physical vocabulary is an intensifier after the wound exists, not a replacement for it.
+
+---
+
+### Observation 36: New skills don't reach Codex unless someone copies them by hand
+
+**Status:** OPEN
+**Date:** 2026-10-06
+**Skill:** `save-as-skill` (and any skill install)
+**Issue:** Seven skills built 3–4 Oct (`nerd-free`, `organic-hooks`, `comment-goldmine`, `multiply`, `formats-conceits`, `horizontal-scaling`, `timeline-ad`) existed only in `.claude/skills/`. Codex's folder `.agents/skills/` was last synced 29 Sep and AGENTS.md named none of them. This is the third hand sync (7 Sep bulk copy, 29 Sep `curiosity-headlines`, 6 Oct these seven). 14 older Codex copies have also drifted through a blanket Claude→Codex word swap that left dead paths such as `.Codex/skills/`.
+**Suggested fix:** Make the Codex copy the last step of `save-as-skill`: copy the folder to `.agents/skills/`, repoint any `.claude/skills/` paths, add a line to AGENTS.md. No blanket word swap.
+
+---
+
+### Observation 37: /timeline-ad assumes a Flexxable-shaped client
+
+**Status:** OPEN
+**Date:** 2026-10-07
+**Skill:** `timeline-ad` (and `scripts/run_mario.py`)
+**Issue:** First live run of the skill, on a RYZE spec ad for the portfolio. Three things had to be worked around by hand. (1) The skill points at `clients/{name}/client.md` and a client primer. A spec brand has neither, so the primer was built on the fly from three RYZE coffee ads in the 306-ad swipe library Google Doc. (2) `run_mario.py` prepends the Dan style contract by default (Aussie, texting a mate). For any non-Dan brand it needs `--no-style-contract` and the structure and claims rules pasted into the brief. (3) The skill says 320 words. Mariobot came back at 412, then 395 after a trim note. RYZE's own timeline ads in the library run 300 to 400.
+**Suggested fix:** Add a "no client file" branch to step 0: where research lives, and build the primer from the swipe library section that matches the avatar. Add a line to step 5: non-Dan brand means `--no-style-contract`, with the structure rules moved into the instruction. Change the length line to "320 to 400, match the brand's own ads".
+
+---
+
+### Observation 38: /timeline-ad never asks about the "you" flip, and its frames break when the body flips
+
+**Status:** OPEN
+**Date:** 2026-10-07
+**Skill:** `timeline-ad`
+**Issue:** On the RYZE spec ad the skill produced a full third-person script ("she") and frames that tease something "she says". Joey then asked for three things the model ads do and the skill never prompts for: explicit open-loop lines early ("Nobody expected what happened next… the last stage…"), a turn line after the flat first stage, and the flip to "you" from stage one. After the flip, the frame's tease ("what came out of her mouth") no longer handed off and had to be rewritten. He also flagged two numbers in line one ("25 years" and "21 days") as jarring. Five revision passes that one gate question would have saved.
+**Suggested fix:** Add to the gate in step 3: (1) person: third person throughout, or third-person frame then "you" from stage one (the RYZE default); (2) the three loop lines as a required part of the frame and body: surprise, last-stage tease, turn after stage one; (3) if the body is "you", lines 2 and 3 of the frame must not say "she" or "her"; (4) one number at most in line one.
+
+---
+
+### Observation 39: An understated ladder can still have a high-ceiling frame
+
+**Status:** OPEN
+**Date:** 2026-10-07
+**Skill:** `timeline-ad`
+**Issue:** While varying a RYZE frame, the editing pass kept translating a believable gradual ladder into "quiet, subtle, almost missed" opening lines. Joey rejected the whole direction. He wanted the frame to tease that the final sentence COULD have a much bigger implication, without claiming that the result definitely was dramatic.
+**Suggested fix:** In step 2's frame pass, separate claim restraint from tease intensity. Offer at least one high-ceiling frame that uses possibility language such as "could," "might," or a question to make the last rung feel consequential while the approved ladder and factual claims remain unchanged.
+
+---
+
+### Observation 40: Body copy written on an untested headline note
+
+**Status:** OPEN
+**Date:** 2026-10-08
+**Skill:** `produce` / `produce-skool` (email route)
+**Issue:** Joey's doc had only a headline note for Email 12.3 ("Stop paying for LI Premium… you probably don't even use it"). The email was briefed, written and judged twice without stress-testing the argument. Joey rejected both: "The cause for argument is weak, the logic is weak, the hook is weak." The judge only checked voice, truth and structure, never whether the argument holds. Rebuilt after giving Joey three hook + logic options to pick from.
+**Suggested fix:** Before briefing Mariobot on any piece whose input is a bare headline or angle note, write the argument as a 3-4 step chain (claim → why → proof → so-what) and test it: does the hook give the reader an out, is the cause big enough for this slot, does each step follow? If it's weak, show Joey 2-3 rendered hook + logic options first. Add an "argument holds?" check to the judge ahead of the voice checks.
+
+---
+
+### Observation 41: Brief-match passed while the opening broke the brief
+
+**Status:** OPEN
+**Date:** 2026-10-08
+**Skill:** `produce`
+**Issue:** Email 12.3's brief explicitly said the reader's non-use should be evidence against the tool, not an accusation. The judged version still opened with “You pay…” and “when did it last…”, putting the reader on trial. Joey rejected the headline and first two lines as too confrontational.
+**Suggested fix:** Add an explicit reader-posture check to the brief-match gate: who is blamed, who is defended, and does the opening make the reader feel recognised or accused? A copy line can preserve the factual argument while reversing the emotional posture, so topic match alone is not enough.
+
+---
+
+### Observation 42: Do not promote a supplied first line into a headline
+
+**Status:** OPEN
+**Date:** 2026-10-08
+**Skill:** `produce`
+**Issue:** During an email revision, Joey supplied the new body opening. The process silently labelled it “HL:” and kept returning only an opening section, even though the email branch requires body-only copy. Joey had to clarify that it was the first line and ask for the rest of the email.
+**Suggested fix:** In email revisions, preserve the supplied element's role unless Joey explicitly renames it. If a line arrives without an “HL:” or “subject” label, treat it as body copy. Then finish the requested email rather than returning a fragment.
+
+---
+
+### Observation 43: A clean close can still be dead from sequence fatigue
+
+**Status:** OPEN
+**Date:** 2026-10-08
+**Skill:** `produce`
+**Issue:** Email 12.3's close passed truth, voice and structure but repeated the same deadline sentence, “May I suggest” turn, CTA rhythm and four-bonus P.S. already used throughout the campaign. Joey flagged that the audience had heard it repeatedly.
+**Suggested fix:** Add a sequence-fatigue check before judging campaign emails: compare the final 25% against the previous three sends. FAIL repeated close architecture, not only repeated wording. Build the close from the current email's unique argument and compress familiar offer details instead of recapping them again.
+
+---
+
+### Observation 44: Softening a qualifier can erase the sell and the deadline
+
+**Status:** OPEN
+**Date:** 2026-10-08
+**Skill:** `produce`
+**Issue:** The first alternate for Email 12.2 avoided the confrontational tone of the original by turning “who this is NOT for” into a gentle distinction between automated outreach and human replies. Joey rejected it as weak: it no longer clearly disqualified anyone, barely mirrored the right buyer, and did not feel like the second email on closing day.
+**Suggested fix:** For qualifier copy, grade three separate jobs before voice polish: (1) the wrong buyer is explicitly told not to buy, with concrete reasons; (2) the right buyer can name the exact job the offer removes from their plate; (3) the deadline changes what they receive or pay, so urgency is consequential rather than a countdown pasted onto the end. Tone can soften blame, but never soften the decision.
+
+---
+
+### Observation 45: The light judge passed a recap close and two contrast pairs
+
+**Status:** OPEN
+**Date:** 2026-10-09
+**Skill:** `produce-skool`
+**Issue:** On the B2B Leads Lab signals post, the judge kept Mariobot's four-line moral recap before the sign-off ("The point is simple… One well-timed message beats ten lazy ones…") and two clean contrast pairs ("Not because X. / Because Y." and "That's not X. / That's Y."). Joey cut the recap, rewrote both pairs with spoken joins, and lifted the recap's last line into the headline in place of his own angle line, which the judge had kept word for word as the headline.
+**Suggested fix:** Before showing a Dan Skool post, run three checks the rubric now carries (added 2026-10-09): (1) does the post restate its lesson just before the sign-off? Cut it and end on the action; (2) is the strongest plain statement of the idea buried in the body or the close? Offer it as the headline, even when Joey supplied an angle line; (3) scan for "Not X. / Y." and "That's not X. / That's Y." pairs and rejoin them the way Dan talks. If the same three get corrected again, move them from the rubric's failure list into step 4 of the skill.
+
+
+---
+
+### Observation 46: The one-line options loop was run by hand about ten times
+
+**Status:** OPEN
+**Date:** 2026-10-10
+**Skill:** `produce` (no skill covers this yet)
+**Issue:** On the Primal Viking "52-year-old Viking" ad, Joey polished the copy one line at a time: name the weak line, say why it fails, get 6 to 15 Mariobot options, pick one. Claude wrote a fresh throwaway brief each time (kidney line three times, axe line twice, cattle blanks, bridge, payoff insert, open loops). Same shape every run: the line, the lines around it, why it fails, the only facts allowed, hard limits, how many options and how they must differ.
+**Suggested fix:** Make it a skill or a script (`/line-options`): inputs are the ad file, the target line and Joey's complaint in his words. It builds the brief from a template, runs Mariobot without the style contract, and returns numbered options with a pick and a facts check. Save the options next to the ad automatically.
+
+---
+
+### Observation 47: /reflect tells Claude to `git add -A`, which CLAUDE.md forbids
+
+**Status:** OPEN
+**Date:** 2026-10-10
+**Skill:** `reflect`
+**Issue:** Step 7 of the reflect skill says to run `git add -A` and commit. CLAUDE.md says never to run `git add -A`, `git add .` or `git commit -a`, because Codex works in the same repo, and to stage only files this session created. On 2026-10-10 the working tree held dozens of modified and untracked files from other sessions. Claude followed CLAUDE.md and staged named files only.
+**Suggested fix:** Change step 7 of `.claude/skills/reflect/SKILL.md` to "stage only the files this session created or changed, by name; ask Joey about any file whose ownership is unclear". Add a note that large render folders need a decision before they are staged.
+
+---
+
+### Observation 48: Animated-ad build has no skill, and three things went wrong that a checklist would catch
+
+**Status:** OPEN
+**Date:** 2026-10-10
+**Skill:** none (video build)
+**Issue:** First long animated ad (Primal Viking, 3:44). Things that cost time or credits: (1) the voice-over was recorded and 16 clips were rendered before the pacing was compared with a reference, then the whole edit was rebuilt around a song; (2) the video model kept adding a horned helmet to the Viking in five shots, even when told he is bare-headed, and retakes did not fix it; (3) a voice-over chunk boundary fell mid-thought, so one line started abruptly; (4) the Whisper word check raised false alarms on numerals ("52", "157,579").
+**Suggested fix:** Write a workflow for animated ads with this order: pick a pacing reference and measure it first (shots, pauses, tempo); decide spoken or sung before any render; lock the audio; then stills, a three-clip motion test, then the batch. Add to the clip direction: describe the character without the word "Viking" and state headwear explicitly. Never split a voice chunk after a line ending in an ellipsis. Normalise numerals before comparing transcripts.

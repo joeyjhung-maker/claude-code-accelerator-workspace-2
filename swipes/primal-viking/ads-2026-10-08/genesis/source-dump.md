@@ -1,0 +1,631 @@
+# SOURCE MATERIALS: PRIMAL VIKING (reindeer-organ male testosterone supplement)
+Raw source dump. Use claims, proof and numbers exactly as they appear; do not invent any.
+
+
+## 1. Their homepage / sales page copy (verbatim)
+Primal Viking Testosterone Support
+Skip to content
+SAVE UP TO 70% NOW!
+FALL SALE
+→
+Navigation
+Testosterone Booster
+SAVE 63%
+Learn More
+Take Quiz
+Shop all
+0
+Compliments guaranteed
+Results showed in the mirror and in the blood work. Energy up, 22 pounds down, and total T jumped from 370 to 800 ng/dL.
+Michael
+About
+SCIENCE
+CLINICAL TRIAL
+Ingredients
+GUARANTEE
+our saga
+become a viking
+terms of service
+privacy policy
+Help
+FAQ
+Manage Subscription
+BESTSELLER
+SAVE 63%
+Reindeer Organ Superfood
+SHOP ALL PRODUCTS
+BESTSELLER
+SAVE 63%
+Reindeer Organ Superfood
+SHOP ALL PRODUCTS
+Find Your Primal Routine
+Take Quiz →
+science
+clinical trial
+ingredients
+our saga
+guarantee
+become a viking
+terms of service
+privacy policy
+faq
+manage subscription
+#1 Testo Support For Men
+Results showed in the mirror and in the blood work. Energy up, 22 pounds down, and total T jumped from 370 to 800 ng/dL.
+Michael
+Cart
+0
+Add 2 Jars and get
+FREE SHIPPING
+Free shipping
+Your cart is empty
+Reindeer Organ Superfood
+From
+$49.99
+Add to cart
+Join 157,579+ Men
+“My
+Testosterone Tripled
+and My Wife Can’t Stop Saying How Different I am”
+…I felt like a shadow of myself, and my doctor blamed aging.  Then I found Reindeer Organs & Arctic Herbs, and lost 20 lbs while getting my edge back 🔥
+Try risk free - SAVE 63%
+30-day money-back guarantee
+Try Risk-free & SAVE
+30-Day Money-Back Guarantee
+Testosterone Skyrocketing
+Man Boobs Melting
+Beer Belly Gone
+“The most potent ingredients for increased T-levels”
+“Worlds first with reindeer organs, 2x the power of beef”
+“They helped 100.000 people with unique Arctic Herbs”
+“Say bye to fatigue, bloating, dad bod and low libido”
+Backed By
+Men Who Train, Lead & Perform
+Chase Chewning
+Army Veteran, Health Coach & Host of Ever Forward Radio
+I got medically discharged from the Army with hips so damaged I had to learn to walk again, twice. Rebuilding a body from zero...
+Read More →
+I got medically discharged from the Army with hips so damaged I had to learn to walk again, twice.
+Rebuilding a body from zero teaches you one thing: you cannot run a system without giving it the raw materials it needs.
+That is exactly why I take Primal Viking.
+Whole-food reindeer organ nutrition, the dense fuel modern food stripped out, supporting my energy, drive, and healthy testosterone in the normal range.
+Read Less
+David Brubaker
+Content Creator, Filmmaker & Founder of SemiStupid
+I make comedy for a living, which mostly means I notice how ridiculous men are. And one of the funniest things men do is...
+Read More →
+I make comedy for a living, which mostly means I notice how ridiculous men are.
+And one of the funniest things men do is ignore their energy, drive, recovery, libido, and body for years…
+Then buy some black-bottle ‘alpha’ supplement with a wolf on it and act surprised when nothing happens.
+Primal Viking caught my attention because it sounded almost too weird to be fake:
+Freeze-dried Arctic reindeer organs, beef testicle, and Arctic herbs in capsules.
+But the more I looked at it, the more it made sense.
+Men used to eat the whole animal. Modern men don’t.
+Primal Viking isn’t magic, TRT, or another fake hype powder.
+It’s dense animal nutrition designed to support healthy testosterone, energy, recovery, libido, and masculine vitality.
+Weird? Absolutely.
+But honestly, so is pretending coffee, stress, and denial are a long-term health plan.”
+Read Less
+No Other Supplement on Earth Can
+Skyrocket  T
+Like
+Reindeer Organs
+PRIMAL VIKING TRANSFORMS
+MALES 30-55+
+IN 3 UNIQUE WAYS
+99% of supplements don’t work because of this and you’ll never get results forever wasting your money.
+1. Rewires the Whole Hormonal System in Days
+Think of testosterone like a campfire in your body. 99% of supplements try to...
+...throw more wood on the fire
+: Single vitamin or herb supplements like Vit D & Tongkat Ali
+...or poke the fire a bit
+(stimulating one hormone like Zinc or Boron)
+Reindeer organs don’t just add wood. They
+rebuild the entire fireplace
+by uniquely
+covering the full male hormonal axis
+.
+2. Reindeer Undergo the Most Extreme Androgen Surge in the Animal Kingdom
+During rut their
+testicles double
+in size. Their organs become biologically primed for androgen signaling and
+explode
+with nutrients to kick you into androgen-permissive state where T is allowed to be made, activated, and used.
+This cannot be done by isolated supplements.
+Reindeer live in -40°F, walks most in animal kingdom, eat very little and survive months of darkness
+packing organs with nutrition.
+3. Targets the Thyroid (the Real Problem in Most Men)
+Low T in men 35–60 is often caused by weak thyroid signaling. Living in -40°F forces Reindeer to over-develop their thyroid to generate heat and maintain metabolic rate. Their organs help men:
+Fix thyroid → metabolism rises
+Metabolism rises → fat loss accelerates
+Fat loss → aromatase drops
+Aromatase drops → T stays T
+This is why man boobs and beer belly melt effortlessly in men taking Primal Viking.
+“Stubborn Man Boobs Finally Gone After Years of Diet & Exercise Failed Me”
+Niko D. (32)
+Verified buyer
+Doctors and society told me this was
+"just aging"
+and I started to believe it. I even
+considered hormone therapy
+, but the risks and side effects scared me. I felt stuck in a body that didn't feel like mine anymore.
+A shadow of my former Self.
+Our return policy is simple, LOW T will NOT return
+Our return policy is simple, LOW T will NOT return
+Real Men.
+Real Transformations.
+Zero Bullshit.
+Don’t take our word for it, take theirs
+"Superfoods your
+body needs"
+"Not embarrassed
+anymore"
+"Turn on the fat
+burning machine"
+"Stubborn fat started
+melting off"
+"Boost your
+T levels"
+"Even my wife
+noticed"
+Transformation to Expect
+When Adding Back Man’s Most Vital Nutrients
+FINALLY GETTING YOUR BODY BACK TO PERFECT NUTRIENT BASELINE FOR THE FIRST TIME IN DECADES WILL CAUSE A RADICAL HEALTH AND BODY TRANSFORMATION
+24 HOURS
+Feel Less Sluggish
+B vitamins and Iron (Reindeer Liver) fuel red blood cell production & oxygen delivery
+Sharper Energy, Better Focus
+Rosavins + salidroside (Rhodiola) improve metabolism
+Better Nutrient Absorption and Less Bloating
+Menthol + rosmarinic acid (Peppermint) help digestion
+1 WEEK
+Boost in Androgen Signaling
+Cholesterol + androgenic peptides (Testicles) feed testosterone pathways
+Better Cellular Energy, More Workout Stamina
+Rosavins + salidroside (Rhodiola) improves metabolism
+Fat Already Melting Off
+Carnitine (from heart) move fatty acids into the mitochondria, where fat is actually burned for energy.
+1 MONTH
+Testosterone Through the Roof
+Retinol (Vitamin A) (Liver), CoQ10 + taurine (Heart) explode open testosterone pathways
+Body Transformation Taking Place
+Copper, choline, vit B (Liver), Androgenic peptides (Testicles) make burning fat and muscle building easy.
+Wife & Friends Notice Big Changes
+You’re firing on all cylinders, your confidence is like a glowing shield around you. You feel unstoppable while the pounds are melting around your waist.
+Try risk-free - SAVE 63%
+30-day money back guarantee
+Primal Viking
+Crushes Beef Organs
+in all aspects for Males 30-55+
+Reindeer
+explore untouched nature
+and need to survive and
+find food in the wild.
+Protect themselves from wolves and travel 5,000 km per season. More than ANY OTHER land mammal. Cattle are made to stand still and be fed without work.
+Try risk-free - SAVE 63%
+30-day money back guarantee
+Our return policy is simple, LOW T will NOT return
+Our return policy is simple, LOW T will NOT return
+"..using this less than 3 MONTHS"
+Matthew Kingston
+Verified buyer
+I have to tell you how much your products have helped me in just the first month alone. I'm so happy I take progress pictures to show the improvement! I struggle with low energy and drive and didn’t go the the gym and your product is really helping. I felt new motivation and started going to the gym, and when I saw results I kept going. I also feel like I lose fat and build muscle a LOT faster!
+Reindeer Thrive in -40 °F where Cattle Wouldn’t Survive
+Reindeer Cold-adapted organs equals stronger peptides. Forced to produce unique compounds:
+Cryoprotective peptides
+Cold-shock proteins
+Antioxidant defenses
+Omega-3-rich membranes
+These compounds are especially good for males 30-55+ and will speed up fat loss and muscle building drastically. And will especially help with that stubborn belly fat that never seem to let go.
+Support Joint & Muscle Recovery
+Organ Collagen from Reindeer is adapted for extreme tensile strength. And their antlers are the world’s fastest-growing bones, growing up to 2 cm per day during peak growth.
+Men everywhere rely on Reindeer Antlers + Organs to support joint mobility and ease muscle stiffness in days.
+Ultra-high in Bioavailable Carnitine compared to Cattle
+Carnitine’s job is to moves fatty acids into the mitochondria, where fat is actually burned for energy. Its job is to melt away fat and in consequence man boobs and beer belly.
+Reindeer rely heavily on fat oxidation for energy. That leaves them with a very high Carnitine demand compared to cattle. Reindeer Liver is one of the richest sources on earth.
+Record Low in Toxins
+One of the drawbacks backs of Beef Organs is the level of toxins. They are raised close to cities and pollution and are trapped in the same small area their whole life. Reindeer roam above the arctic circle far away from civilization and are free of heavy metals, micro-plastics and other toxins that will lower your Testosterone and performance.
+Try risk-free - SAVE 63%
+30-day money back guarantee
+Our return policy is simple, LOW T will NOT return
+Our return policy is simple, LOW T will NOT return
+Men 30-50+ are Silently
+Robbed of Their Best Years
+You feel like your best years are behind you. Your energy is gone, your drive is low, and intimacy with your wife has almost disappeared. You feel like a shadow of who you used to be.
+Thousands of men 30-55+ are suffering the consequences of low testosterone and nutrient deficiencies. And the medical system has failed them miserably.
+Testosterone is down 50% on average  in males 30-65 compared to what it was 20 years ago:
+Testosterone is the most important male hormone and is responsible for fat loss, muscle building, sexual drive, confidence, energy and how you handle stress.
+No wonder you are feeling like shit when your most important hormone is suffering.
+The pandemic of low testosterone in men 30-55+ is due to one thing...
+The Food System is Betraying You
+Studies show that vegetables and fruits have lost 80% of their nutrition due to mono cropping, use of chemicals, pesticides and herbicides, fillers, processing and GMO.
+You are taken so far away from what your ancestors ate. It’s not a surprise that your body is screaming telling you that something is very wrong. It would be more shocking if you actually were thriving inside today’s system.
+Men today are robbed of their best years, while our ancestors thrived until their late 90s. Vikings went to war until their late 50s because of Reindeer Organs.
+Try risk-free - SAVE 63%
+30-day money back guarantee
+Fruits & Vegetables used to be super foods...
+...Now they are deprived of up to 80% of the vitamins, minerals and key nutrition for males 30-55+.
+2,000 new chemicals are introduced in the US per year. And studies show they destroy the foods.
+To increase shelf life, to make them shine, to make them appear fresh, to do mass production, to make profits on your health.
+While the food is silently killing your drive and muscle mass, making fat gather around your belly and breasts. Letting your blood pressure rise through the roof....
+They are waiting with medication to collect their profits on your misery.
+The most important building stones for males 30-55+ crushed by the food industry are B Vitamins, Vitamin A, Zinc, Magnesium, CoQ10, Iron and Potassium.
+But there is a way to break out. To reclaim your health. To take control once again. To fill your body with the nutrition it needs to thrive.
+The human body is developed over 10,000 years and is used to run on animal nutrition like organs. Reindeer Organs have unmatched bioavailability.
+Meaning the body can utilize everything immediately and results will come very fast. All that needs to be done is to take 2 pills per day with a meal.
+Try risk-free - SAVE 63%
+30-day money back guarantee
+Meet Reindeer Organs
+:
+The most nutrient rich food on the planet
+HELPING 157,579+ MEN RECLAIM THEIR 40S, 50S AND BEYOND WITH THE BODY AND FIRE OF VIKINGS
+Awakened a fire I haven’t felt since my 20s
+Chris R. (55)
+Verified buyer
+My 40s and 50s left me with man boobs and a big beer belly. I didn’t change anything in my diet or lifestyle, but it happened anyway. The doc told me it’s just age. But I knew something was missing. Within the first week of Primal Viking I felt much more energy in the mornings. My wife noticed that something was different already then. Now I’m on my second bottle and my man boobs have started melting away already!
+Primal Viking users get faster results
+EACH DAY POSTPONING EQUALS MORE FAT, LOWER DRIVE AND ENERGY, AND LESS MUSCLE
+“
+12 Days
+in and I can’t
+Believe the Difference”
+157,579+ MEN HAVE TRANSFORMED THEIR LIFE WITH PRIMAL VIKING
+Try risk-free - SAVE 63%
+30-day money back guarantee
+The Primal Truth
+Men have become
+fat, weak, scared
+and
+feminine
+. Your food lacks vital nutrients to perform at peak level. Your diet is far from what your ancestors ate to keep their
+MASCULINE ENERGY
+and
+STRONG
+body & mind.
+...I was in the same boat. I had the typical western diet and felt
+sluggish
+and
+weak
+. No matter how much I went to the gym, my physique wouldn’t improve, and I had very low confidence. I even tried being vegan for 6 months...That’s how bad it was.
+I started digging, and the fact that the testosterone in men is down 50% in the last 20 years shocked me. For the next 6 years I was on a journey to find the truth about nutrition and performance.
+I started eating like the Vikings did. They ate Reindeer Organs (
+2x THE POWER
+of beef organs) and Arctic herbs before every bat
+
+## 2. Pricing and offer structure
+- Ancestral Testosterone Booster, 2 capsules a day with a meal. Fall Sale subscription prices: 1 jar $49.99 (struck $125); 2 jars $91.99 ($45.99 each, struck $250, default); 4 jars $37.49 each (~$149.96, struck $500). Free shipping on 2+ jars. 30-day 100% money-back guarantee (email support). Skip/pause/cancel anytime.
+- Libido Fire Drops add-on $54.99 (struck $139). BOGO page: free T-Drops with 2 jars.
+- Founder: Daniel Hoftun. 157,579+ men claim.
+
+
+## 3. Quiz funnel (quiz-t1) verbatim flow, results, FAQ
+# Shared quiz funnel: https://primalviking.com/pages/quiz-t1 (verbatim capture 2026-10-08)
+
+Several "quiz" and "emoji-quiz" slugs redirect to this same quiz-t1 funnel. Answers entered were arbitrary (age 40-49, first option each step). No personal data entered; the email gate was bypassed with the on-page "Skip & see my results" button.
+
+Persistent: logo header, orange pill "UNLOCK 60% OFF AT THE END", progress bar, back link. Social-proof strip above the quiz: "Men Who Started Are Getting Real Results" - Matthew Kingston (Age 48) VERIFIED BUYER "I have lost a total of 27lbs in the 2 months taking Primal Viking plus I have more energy."; Brett H. (Age 56) "At 56 yrs old my strength and energy levels are off the chart. Definitely feel a difference."; Chad S. (Age 37) "...All my friends are asking what shot I'm on... no shot here! Just a natural secret weapon..." Footer strap: "#1 Testo Support For Men - Results showed in the mirror and in the blood work. Energy up, 22 pounds down, and total T jumped from 370 to 800 ng/dL." (Michael).
+
+## Question flow (9 steps)
+Header on step 1: "LET'S BUILD YOUR TESTOSTERONE PLAN"
+1 of 9: Which Age Range Are You In? ("Age helps us adjust the pace and support level in your plan.") UNDER 30 / 30 TO 39 / 40 TO 49 / 50 TO 59 / 60+
+2 of 9: What Is Your Main Concern? ("Choose only the main one.") STEADY ENERGY ALL DAY / REDUCE BELLY / MORE STRENGTH & MUSCLE / STRONGER DRIVE & CONFIDENCE
+3 of 9: What Is Getting In The Way Right Now? (multi-select up to 3, then CONTINUE) AFTERNOON CRASH / STUBBORN FAT / LOW DRIVE / LIBIDO / HARDER TO BUILD MUSCLE / STRESS & POOR RECOVERY / NOT SURE YET
+4 of 9: How Often Do You Exercise In A Week? RARELY RIGHT NOW / 1 TO 2 SESSIONS / 3 TO 4 SESSIONS / 5+ SESSIONS / MY ROUTINE CHANGES
+5 of 9: How Often Does Your Energy Dip After Lunch? ("This helps us decide whether to prioritize daily energy support.") RARELY / SOME DAYS / MOST DAYS / ALMOST EVERY DAY / NOT SURE
+6 of 9: How Often Do You Experience Morning Erections? ("This helps us better personalize your results.") MOST MORNINGS / A FEW TIMES A WEEK / RARELY / PREFER NOT TO SAY
+7 of 9: Which Starting Point Feels Closest? ("No judgment. This only shapes your recommendation.") CARRYING EXTRA WEIGHT / SOFT / DAD BOD / SLIM / AVERAGE / LEAN / ATHLETIC / PREFER NOT TO SAY
+8 of 9: What Have You Already Tried? ("Knowing what you've tried helps us avoid repeating what hasn't worked for you." multi-select) DIET CHANGES / EXERCISE PROGRAMS / SUPPLEMENTS / TRT / PRESCRIPTION SUPPORT / NOTHING YET / OTHER
+9 of 9: How Ready Are You To Make A Change? JUST EXPLORING / READY FOR A SIMPLE FIRST STEP / READY FOR A FULL 30-DAY PLAN / I WANT THE COMPLETE PLAN
+
+## Processing screen
+"Building Your Primal Viking Profile..." with ticking lines: MATCHING YOUR PRIMARY GOAL / REVIEWING YOUR BODY-TYPE SELECTION / MAPPING YOUR DAILY ENERGY RHYTHM / SELECTING THE SIMPLEST ROUTINE (about 6 seconds).
+
+## Email gate (step 18, skippable)
+"We've Got Everything We Need To Build Your Ritual! Get your personalized result plus 60% off!" Fields: First name, Email address, checkbox "Email me with news and offers", "By continuing you agree to our Terms and Privacy Policy." Primary: "SHOW MY RESULTS ->". Secondary link: "Skip & see my results". Footer: "JOIN 280,000+ MEN BACK AT THEIR BEST". (Gate is soft: skip is allowed, so the email is a bonus, not a block.)
+
+## Result / offer page (step 14; screenshot assets/landing-02-result.png)
+"60% OFF UNLOCKED FOR LIMITED TIME" / "Your Primal Viking Routine Is Ready" / "BASED ON YOUR ANSWERS, OUR #1 RECOMMENDATION IS:" then ONE product card: "(3,352) 100,000+ SOLD / Ancestral Testosterone Booster / SAVE 63%". Result blurb personalized by answers, e.g. (age 40s + energy concern): "It's built for men in their 40s who want steady energy all day. The afternoon crash isn't on you, and it targets the root." (belly/fat concern variant: "It's built for men who want to slim down and steady energy all day. Stubborn fat and the afternoon crash aren't on you, and it works at the root.") Bullets: "Steady energy without a caffeine spike / Supports natural testosterone, the root of daily drive / One simple capsule routine, twice a day".
+Offer block: "LAST CHANCE . END OF FALL SALE - 63% OFF on first order is ENDING - PRICE INCREASES IN 00:08:33" then "Pick your system:"
+- 1 Jar: $125 struck, $49.99 /jar, SAVE $75, BESTSELLER
+- 2 Jars: $250 struck, $45.99 /jar, SAVE $158, BEST DEAL
+- 4 Jars: $500 struck, $37.49 /jar, SAVE $350
+- CTA "CLAIM OFFER" - $250 struck, $91.99 (2 jars pre-selected)
+- "Refill Ships Every 48 Days / Free shipping / Skip, pause or cancel anytime / 30-Day Money Back Guarantee"
+- "WARNING: LOW STOCK NOTICE (36 LEFT) Due to extreme demand and limited raw materials, we encourage you to take advantage of the limited sale and buy before sold out."
+Upsell/add-on: "WANT A STRONGER BOOST? 1 MONTH SUPPLY SKIP OR CANCEL ANYTIME - Libido Fire Drops - Supports drive, vitality & performance - $139 struck, $54.99 - Subscribe & Save - ADD TO ORDER".
+Below: press quotes (Bazaar, Men's Health, GQ, Forbes style quotes: "The most potent ingredients for increased T-levels", "Worlds first with reindeer organs, 2x the power of beef", "They helped 100.000 people with unique Arctic Herbs", "Say bye to fatigue, bloating, dad bod and low libido"); testimonials: Jorge S. ("I AIN'T GONNA STOP USING IT ANYTIME SOON EITHER. I LOVE IT."), Niko D. (32) ("STUBBORN MAN BOOBS FINALLY GONE AFTER YEARS OF DIET & EXERCISE FAILED ME"), Chris R. (55) ("AWAKENED A FIRE I HAVEN'T FELT SINCE MY 20S ... man boobs has started melting away already!"), Matthew K. ("...USING THIS LESS THAN 3 MONTHS"); "My Testosterone Tripled And My Wife Can't Stop Saying How Different I Am"; "OUR RETURN POLICY IS SIMPLE: NO RELIEF, FULL REFUND."; "The Primal Truth" founder story (Daniel Hoftun, Founder): "Men have become fat, weak, scared and feminine." ... testosterone "down 50% in the last 20 years", "6 years on a journey", "They ate Reindeer Organs (2x THE POWER of beef organs) and Arctic herbs before every battle", "The before and after photos above are 18 months apart..", "SCIENTIFICALLY PROVEN to boost testosterone, energy and libido in males."; long FAQ; ending CTA "Try it Once for $125 ->".
+Selected verbatim FAQ: "HOW LONG TO SEE RESULTS? ... Results can be experienced within 24 hours. Big results after 2-6 weeks and stable long term results from 3-6 months." "ARE THERE ANY SIDE EFFECTS? This is a natural super food without side effects." "DOES IT STOP THE BODY'S NATURAL T PRODUCTION LIKE TRT? No. TRT floods your body with synthetic hormones..." "WILL IT HELP WITH WEIGHT LOSS? Yes... Especially that stubborn belly fat and man boobs..." "WILL IT HELP WITH JOINTS AND SKIN? Primal Viking is fantastic for joint pain." "DOES IT COME WITH A GUARANTEE? Yes, it has a 100% money back guarantee... support@primalviking.com within 30 days."
+Ingredients: Primal Viking Proprietar Blend 337.50 mg (ReinDeer Liver, Heart, Kidney, Beef Testicles) + Rhodiola 33.75 mg + Sea Buckthorn 28.75 mg + Stinging Nettle 16.87 mg + Peppermint 5 mg; 48 caps, 2/day. Ships NJ/FL warehouse 2-5 days; free shipping at 2+ jars.
+
+Price summary: 1 jar $49.99 (list $125); 2 jars $91.99 total / $45.99 each (list $250); 4 jars $149.96 total / $37.49 each (list $500). Libido Fire Drops $54.99 (list $139) add-on. Subscription default ("Refill Ships Every 48 Days").
+
+
+## 4. Beer-belly advertorial analysis
+# Page 01 - /pages/10-reasons-beer-belly (8 ads)
+
+Captured 2026-10-08. Screenshot: assets/landing-01.png (hero, desktop 800px).
+**Redirect note:** the URL redirected to `https://primalviking.com/pages/7-reasons-lose-belly-fat` (title "7 Reasons Why Men 35+ Are Losing The Belly And Growing Their Arms"; page tab title earlier "Beer Belly Melter is Trending for 30-55+"). The "10 reasons" slug now serves a 7-reasons advertorial, "Last Updated Oct 6, 2026".
+
+## 1. Message Match
+Ad-source hooks not supplied. Slug and tab title promise a beer-belly angle; page leads with belly/arms ("skinny-fat") recomp. Partial-to-strong for belly-angle ads; page also drops man-boobs vocabulary ("BOOBS MELTING", "Melts Man Boobs & Beer Belly") in the hero strip, so man-boob ads also match.
+
+## 2. Above the fold + 5-second test
+Sticky top bar: "END OF FALL SALE / 60% OFF TODAY ONLY" with live countdown (00:19:52). Hero: star rating, "Join 157,579+ Men", a testimonial as the headline: "Great stuff! Changed my energy level, helped me burn fat and build muscle fast", sub-quote, big CTA "CLAIM OFFER - SAVE 60%", "30-day money back guarantee", "DEAL ENDING IN: 00:20:00" (second timer), product jar with "#1 RATED TESTOSTERONE SUPPORT FOR MEN" badge, press strip (Bazaar, Men's Health, GQ, Forbes) with quotes. What is this: clear (T supplement). What's in it: energy/fat/muscle. Next: CTA obvious. 5-sec test: pass.
+
+## 3. Awareness
+Problem-aware to solution-aware. Advertorial body educates ("skinny-fat", why cardio/diet fail) then mechanism (reindeer organs). Built for cold paid traffic.
+
+## 4. The Offer
+Type: DTC product, advertorial (listicle) into inline PDP. Verbatim bundle block:
+- "Pick your system:" 1 Jar $125 -> $49.99/jar SAVE $75 BESTSELLER (label order in text: 1 Jar $125 / $49.99 /jar / SAVE $75 / BESTSELLER)
+- 2 Jars $250 -> $45.99/jar SAVE $158 BEST DEAL
+- 4 Jars $500 -> $37.49/jar SAVE $350
+- Cart default selected: 2 Jars, "$250  $91.99" (struck $250, now $91.99 for 2 jars = $45.99/jar)
+- "63% OFF on subscription is ENDING", "Refill Ships Every 48 Days", "Free shipping", "Skip, pause or cancel anytime", "30-Day Money Back Guarantee"
+- Product header: "Ancestral Testosterone Booster", "SAVE 63%", "94% increased their testosterone", "Melts Man Boobs & Beer Belly", "Boosts Energy, Sleep, Drive & Muscle Building", "Healthy Joints and Immune System", "(3,352) 100,000+ SOLD".
+Price math: 1 jar $49.99 (list $125); 2 jars $91.99 (list $250); 4 jars $149.96 (4 x $37.49, list $500). Subscription-based (refill every 48 days).
+Risk reversal: "30-DAY MONEY-BACK GUARANTEE: If our products don't help you improve your energy and performance, we don't want your money."
+Rule of One: mostly one idea (reindeer organs for recomp), slightly diluted by joints/immune claims.
+
+## 5. Social proof
+"Join 157,579+ Men" (hero), "100,000+ Men On Reindeer Organs", "(3,352) 100,000+ SOLD". VERIFIED BUYER testimonials, named + age: Niko D. (32) "started losing weight at twice the speed"; Andrew F. (39) "I've already lost 20 pounds in a month"; Bob N. (41). Press logos (Bazaar, Men's Health, GQ, Forbes) with Primal-written pull quotes. Proof sits mid-article and near CTAs. No photos in text capture.
+
+## 6. Objection map
+Handled: "will diet/cardio do it" (reasons 1-2), natural vs pharma ("Doctors... considered hormone therapy"), effort ("Two Capsules A Day"), risk (guarantee), "is it magic" (reason 7: "Primal Viking isn't a fat-burner and it isn't magic"). Unhandled: ingredient safety/cholesterol on this page (FAQ not on this page), price of subscription commitment clarity.
+
+## 7. Copy strategy
+Advertorial voice, "By Mark L.", "Last Updated Oct 6, 2026", "Read this before your next diet change." Curiosity/identity lead ("skinny-fat"), pain amplified. Mechanism: Vikings ate organs, reindeer survive at forty below so nutrient-dense; "Reindeer Isn't Just 'Beef With Antlers'". Timeline: "Week 1 to 2: Energy... By day 30: You look like you lift." Disclaimer: "*Individual results vary... Not a guarantee." Notably this version is hedged ("supporting... healthy testosterone production in the normal range", "isn't magic") versus the quiz/other pages' harder claims.
+
+## 8. CTA & friction
+CTAs: "CLAIM OFFER - SAVE 60%" (hero), "TRY IT RISK-FREE - SAVE 60%" (mid-article), "ADD TO CART" in the bundle block. Zero form fields on page; add to cart -> checkout. Urgency: sticky "END OF FALL SALE / 60% OFF TODAY ONLY" timer, "DEAL ENDING IN 00:20:00", "PRICE INCREASES IN 00:09:43", "WARNING: Low Stock Notice (36 left)... sold out 12 times". All appear evergreen/manufactured (three separate timers with different values).
+
+## 9. Visual design
+Dark brown/amber premium look, hero with product jar and badge; press strip; article body in readable short paragraphs; testimonial cards; bundle selector with badges. Mobile-first design likely (page text structured for it).
+
+## 10. Funnel position
+Cold TOFU advertorial -> PDP/cart (BOFU) in one page. Subscription default; implies a subscription-LTV model ("Refill Ships Every 48 Days"); likely post-purchase upsells (Libido Fire Drops appears as add-on on the quiz page).
+
+## 11. What works
+- Identity label ("skinny-fat") plus authentic-sounding advertorial framing.
+- Timeline of expectation ("Week 1 to 2 / By day 30").
+- Bundle selector with per-jar price and saved-amount anchors ($125 list vs $49.99).
+
+## 12. Weaknesses
+- Three conflicting countdown timers undermine credibility. Fix: one real deadline.
+- Slug/ad promise "10 reasons beer belly" vs 7 reasons page: scent mismatch risk. Fix: keep slug and title aligned.
+
+## 13. Swipe notes
+Sticky sale bar + timer -> hero testimonial headline + CTA + press strip -> advertorial byline/date -> TL;DR -> 7 numbered reasons (problem, wrong tools, ancestors, mechanism, proof cards, effort, expectation timeline, honesty close) -> bundle selector with urgency/stock -> guarantee -> ingredients -> shipping.
+
+Ingredients (verbatim): Primal Viking Proprietar Blend 337.50 mg: ReinDeer Liver, ReinDeer Heart, ReinDeer Kidney, Beef Testicles; Rhodiola 33.75 mg; Sea Buckthorn 28.75 mg; Stinging Nettle 16.87 mg; Peppermint 5 mg. 48 capsules, 2/day.
+
+
+## 5. Libido / size sales page analysis
+# Page 03 - /pages/libido-booster (3 ads)
+
+Captured 2026-10-08. Screenshot: assets/landing-03.png. Page height ~16,900px (long-form). No redirect. Tab title "Libido Booster". All CTAs link to the product page https://primalviking.com/products/primal-testosterone-booster (final "GET 60% OFF" goes to variant of /products/primal-reindeer-testosterone-support).
+
+## 1. Message Match
+Source ads not supplied. Page is built for a libido/erection/bedroom angle: headline "She'll Feel The Difference. So Will You." Strong for libido/ED/"she notices" ads; would be broken for belly/man-boob ads.
+
+## 2. Above the fold + 5-second test
+Top bar: "END OF FALL SALE / SAVE UP TO 70% TODAY ONLY" + timer 00:19:50. Hero (desktop split, product image left): "Join 100,000+ Men", H1 "She'll Feel The Difference. So Will You.", sub: "Most men blame age. It's not age. It's a nutrient deficiency your doctor never tested, one that quietly kills your drive, your erections, and the confidence she used to feel from across the room." CTA "END OF FALL SALE" (button label is the sale name, not an action), "DEAL ENDING IN: 00:19:51". 5-sec: What is it: unclear until scroll (name only "Primal Viking T Booster"). Benefit: clear (libido/erections). Next step: weak CTA label.
+
+## 3. Awareness
+Problem-aware (symptoms) moving to solution-aware (mechanism, supplement comparison table). Heavy education for cold traffic.
+
+## 4. The Offer
+Type: DTC product, long-form sales page, no price shown on page. Price is only on the PDP: 1 Jar $125 -> $49.99; 2 Jars $250 -> $91.99 shown as cart default ($45.99/jar); 4 Jars $500 -> $37.49/jar ($149.96) (see page 01/02). Page text offers: "60% OFF FOR A LIMITED TIME ONLY!", "BOTTLES LEFT: 24", "Sell-Out Risk: High | FREE shipping", "Try it today with a 30-Day Money-Back Guarantee!", "OUR RETURN POLICY IS SIMPLE: NO RELIEF, FULL REFUND." Newsletter: "Sign up for our emails & get a 10% discount!"
+Value equation: dream outcome (drive, erections, "She notices the difference before you say a word") x mechanism credibility (reindeer organs) / time (24 hours, 1 week, 1 month ladder) / effort (capsules).
+Rule of One: diluted: libido + fat loss + liver + thyroid + cortisol + inflammation (items 1-10, numbering skips 9).
+
+## 5. Social proof
+"Join 100,000+ Men", "100.000+ MEN HAVE TRANSFORMED THEIR LIFE WITH PRIMAL VIKING", testimonial image "12 Days In And I Can't Believe The Difference" (image only, no text in capture). No named testimonial text in this page; proof is mostly stats and claims: "96% of men are deficient in one or more crucial nutrient", "Studies show that food has lost 80% of its nutritional value." Weak/unspecific vs the quiz result page.
+
+## 6. Objection map
+Handled: "is it just aging" (reframed as deficiency), "supplements fail" (comparison table), TRT (shuts down production), alcohol ("Fix Your Liver. Stay Hard Even When Drinking."), risk (refund). Unhandled on page: price, ingredients list, side effects, what the subscription entails.
+
+## 7. Copy strategy
+Direct, sexual-performance tone, second-person. Mechanism stack: "99% of 'Testosterone Supplements' Will Fail You Because Of This One Simple Reason" - HPT-Axis / campfire metaphor ("They rebuild the entire fireplace"). Competitor-comparison table (Zinc, Tongkat Ali, Ashwagandha, Boron, Fenugreek, Shilajit, TRT vs Primal Viking: "Reindeer Organs fix the entire system that makes testosterone possible"). Reindeer vs beef claims ("Reindeer can sprint 50 mph"). Strong verbatim claims: "Results... Testosterone Through the Roof" at 1 month, "Fat Already Melting Off" at 1 week, "Wife & Friends Notice Big Changes ... confidence is like a glowing shield around you".
+
+## 8. CTA & friction
+CTAs: "END OF FALL SALE" (x3 as button text), "TRY IT RISK FREE - SAVE 60%" (x3), "GET 60% OFF". All go to PDP (one extra step). Email capture at footer only. Urgency: sticky timer, "DEAL ENDING IN 00:19:50" repeated, "LAST CHANCE SECRET SALE", "BOTTLES LEFT: 24", "Sell-Out Risk: High" - manufactured/evergreen (timer ~20 min on every page load).
+
+## 9. Visual design
+Dark theme, rust/orange CTA, large product images, long-form with numbered benefit blocks, timeline table (24 HOURS / 1 WEEK / 1 MONTH), comparison table. Hero split layout.
+
+## 10. Funnel position
+Mid-funnel educational presell (long-form) -> PDP -> cart. Same economics as other pages: subscription supplement, bundle AOV push, Libido Fire Drops upsell on quiz result.
+
+## 11. What works
+- Mechanism reframing "It's not age. It's a nutrient deficiency your doctor never tested."
+- Competitor-supplement comparison table positioning reindeer organs as the "whole fireplace".
+- Time-ladder expectations (24 hours / 1 week / 1 month) to hold buyers through the guarantee window.
+
+## 12. Weaknesses
+- Hero CTA label "END OF FALL SALE" is not an action; fix: "Get 60% Off".
+- No price or product clarity on page, extra click to PDP; fix: inline bundle selector as on page 01.
+- Thin named proof.
+
+## 13. Swipe notes
+Sale bar + timer -> emotional hero H1 (partner reaction) + reframe sub -> problem ("Low T kills what happens in bed") -> 10 numbered mechanism blocks (organ-specific) -> risk-reversal strip -> timeline of transformation -> "How are results in days possible" nutrient-deficiency stats -> "99% of supplements fail" HPT-axis explainer + comparison table -> final secret-sale CTA with stock counter -> email capture.
+
+
+## 6. BOGO sales page analysis
+# Page 10 - /pages/natural-t-booster-for-males-40-gift (2 ads)
+
+Captured 2026-10-08. Screenshots: assets/landing-10.png (hero), assets/landing-10-pdp.png (BOGO product page it sends to). No redirect. Title "Natural T Booster for Males 40 Gift". Long-form sales page, ~gift/BOGO offer.
+
+## 1. Message Match
+Ads not supplied. Slug = "natural T booster for males 40 gift" - built for a "free gift / buy 1 get 1" offer ad, 40+ males. Hero testimonial-as-headline matches a "my testosterone tripled / my wife" hook.
+
+## 2. Above the fold + 5-second test
+Top bar "BUY 1 GET 1 FREE TODAY ONLY" + timer 00:19:56. Hero: stars, "Join 100,000+ Men", H1 (testimonial quote) "My Testosterone Tripled And My Wife Can't Stop Saying How Different I Am", sub: "...I was a shadow of my former self and the Doctor said it was due to ageing. I considered hormone therapy until I discovered Reindeer Organs and Arctic Herbs and it took 20 lbs of my waist while lighting a fire inside of me!" CTA "BUY 1 GET 1 FREE", "DEAL ENDING IN: 00:19:56", product jar with #1 badge, press strip (Bazaar, Men's Health, GQ, Forbes quotes). 5-sec: what (T supplement), what's in it (T tripled + wife + 20 lbs), next (BOGO button). Strong.
+
+## 3. Awareness
+Problem/solution-aware. Mechanism education (campfire/HPT-axis) targets viewers who have tried supplements.
+
+## 4. The Offer
+Type: BOGO ("Buy 1 Get 1 FREE With First Subscription Order") on subscription. The free item is "T-Drops" (Ultimate Botanical Vitality Shots/drops, "2 ANCESTRAL VIKING PRODUCTS" in the Ritual). Offer text on page: "BUY 1 GET 1 FREE", "BOTTLES LEFT: 24", "Sell-Out Risk: High | FREE shipping", "Try it today with a 30-Day Money-Back Guarantee!", "OUR RETURN POLICY IS SIMPLE, LOW T WILL NOT RETURN". PDP (https://primalviking.com/products/primal-reindeer-testosterone-support-free-gift, "Primal Testosterone Booster (Buy 1, Get 1)", "SAVE 83%" image badge, "FREE Buy 1 get 1 / Buy 2 get 2 / Buy 4 get 4"), selector "Select quantity":
+- 1 Jar + 1 T-Drops: $264 struck, $49.99 /jar, SAVE $214, BESTSELLER
+- 2 Jar + 2 T-Drops: $528 struck, $45.99 /jar, SAVE $436, BEST DEAL
+- 4 Jar + 4 T-Drops: $1,056 struck, $37.49 /jar, SAVE $906
+- Cart default: 2 jars + 2 T-Drops, $528 struck, $91.99 (same $91.99 as the non-BOGO page: the "free" drops are the incentive on top of the same jar price)
+Subscription: "Refill Ships Every 48 Days", "Skip, pause or cancel anytime", "30-Day Money Back Guarantee", free shipping on 2 jars. PDP signals: "Clinicians' Choice - 750 clinicians share this on FrontrowMD without compensation", "96% of users LOST FAT and felt MORE DRIVE*", "94% increased their testosterone", "2 Pills Per Day / 3rd Party Tested / Made in the US". Note the guarantee copy on the PDP still mentions "our balm... joints and muscles" (stale template text).
+
+## 5. Social proof
+Strong for the hero: first-person transformation testimonial as H1, "Join 100,000+ Men", press strip, "12 Days In And I Can't Believe The Difference" (image), "100.000+ MEN HAVE TRANSFORMED THEIR LIFE". Weakness: the testimonial is unattributed (no name/photo text in capture). PDP adds clinicians' endorsement badge.
+
+## 6. Objection map
+Handled: "supplements don't work" (99% fail / HPT-axis), "TRT" (considered hormone therapy), result timing (24 hours / 1 week / 1 month table), guarantee. Unhandled on page: price (hidden until the PDP), side effects, why a "free gift" exists.
+
+## 7. Copy strategy
+Testimonial-led story + mechanism. Mechanism claims verbatim: "No Other Supplement On Earth Can Skyrocket T Like Reindeer Organs"; "1. Rewires The Whole Hormonal System In Days" (campfire metaphor); "2. Reindeers Undergo The Most Extreme Androgen Surge In The Animal Kingdom: During rut their testicles double in size"; "3. Targets The Thyroid (The Real Problem In Most Men): Low T in men 35-60 is low due to weak thyroid signaling... Fix thyroid -> metabolism rises -> fat loss accelerates -> aromatase drops -> T stays T... This is why man boobs and beer belly melts effortlessly in men taking Primal Viking." Return-policy twist: "Our return policy is simple, LOW T will NOT return". Timeline 24 hours / 1 week / 1 month with ingredient-to-benefit lines (reuse of page 03). Deficiency stat block "96% of men are deficient...", "food has lost 80% of its nutritional value".
+
+## 8. CTA & friction
+CTAs: "BUY 1 GET 1 FREE" (sticky bar, hero, after every section, final secret sale). CTA goes to the BOGO PDP (one extra step) where cart default is 2 jars + 2 drops. Email capture at footer (10% discount). Urgency: "BUY 1 GET 1 FREE TODAY ONLY" bar + repeated timers (00:19:56/00:19:48), "BOTTLES LEFT: 24", PDP "PRICE INCREASES IN 00:09:41" + "LOW STOCK NOTICE (36 LEFT)" - manufactured/evergreen.
+
+## 9. Visual design
+Same dark/amber system as page 01; hero with large testimonial headline, bottle image, press strip; repeating CTA bars between sections; tables for timeline. Gift/BOGO banner dominates.
+
+## 10. Funnel position
+MOFU/BOFU sales page -> BOGO PDP (subscription) -> cart. Free gift (T-Drops, MSRP implied ~$139 per Libido Fire Drops pricing elsewhere) raises perceived value without changing jar price. Subscription refill every 48 days drives LTV.
+
+## 11. What works
+- BOGO + testimonial-headline combination: concrete reward (free product) with human proof.
+- Thyroid -> aromatase -> man boobs causal chain is a crisp mechanism.
+- Repeating the one CTA after every proof block.
+
+## 12. Weaknesses
+- Price hidden until PDP. Fix: inline bundle selector as on page 01.
+- Stale/inconsistent text (balm guarantee, 11 vs 10 numbering on sister pages) lowers polish.
+- BOGO is "with first subscription order" - fine print lives only on the PDP, risking a trust gap after the click.
+
+## 13. Swipe notes
+Offer bar (BOGO + timer) -> testimonial-as-H1 + CTA + press strip -> "3 unique ways" mechanism section (campfire, rut androgen surge, thyroid chain) -> return-policy joke -> transformation timeline -> social-proof image -> deficiency stats -> "99% of supplements fail" HPT-axis explainer -> final "secret sale" CTA with stock counter -> email capture.
+
+
+## 7. Their live ad copy and angles (30 active Meta ads)
+# Primal Viking: Ad Intelligence Report
+
+Generated: 2026-10-08
+Source: Meta Ad Library, active ads, keyword "primal viking" (30 ads loaded, all Primal Viking, page ID 61578329086281)
+Mode: raw. No compliance flags, claims verbatim (spec-ads rule).
+
+Related: [[Ad Genome]] [[hooks]]
+
+## Quick stats
+| Metric | Value |
+|---|---|
+| Active ads pulled | 30 (23 image, 7 video) |
+| Oldest still running | 13 May 2026 (BOGO video) |
+| Newest | 28 Sep 2026 (size / blood-flow ads) |
+| Unique ad-to-page URLs | 11, resolving to 6 real experiences |
+| Deep-dived | 8 ads (01, 04, 07, 11, 13, 14, 28, 30) |
+| Landing pages analysed | 11 |
+
+## The business in one paragraph
+One hero product (reindeer organs + Arctic herbs, 2 capsules a day) sold on a subscription ladder. Founder Daniel Hoftun. Avatar is men 30-55+ with man boobs, beer belly, low drive and a wife who's stopped noticing. Full breakdown is in the earlier chat; this report covers the ads and funnels.
+
+## Pricing (Fall Sale, subscription prices)
+- 1 jar $49.99 (struck $125)
+- 2 jars $91.99 / $45.99 each (struck $250), pre-selected default
+- 4 jars $37.49 each, about $149.96 (struck $500)
+- Free shipping on 2+, 30-day money-back
+- Libido Fire Drops add-on $54.99 (struck $139)
+- BOGO page: same ladder, free T-Drops as the bonus
+- quiz-v1 "Triple Testosterone Booster Ritual" $127.99 (struck $403, "SAVE 68% TODAY ONLY"), bundles cod liver oil + T booster + multiorgan extract
+
+## The four angle clusters
+1. **Belly and man boobs (the engine).** "#1 beer belly MELTER", "Burn it off in WEEKS with Secret Superfood", "Valhalla BOGO", "Beer belly is not your fault", "Man boobs melter".
+2. **Low T, not your fault.** "New Study Reveals #1 TESTOSTERONE BOOSTER for Males 30-55+... You can do everything perfect and still have it."
+3. **Size and libido (newest push, Aug/Sep).** "MOST MEN THINK SIZE IS FIXED. It's not. It's blood flow." Wife-voice testimonial: "I told my husband he felt bigger." Creative: "+1 INCH IN 30 DAYS OR YOUR MONEY BACK" with a condom as the ruler.
+4. **World-level curiosity hooks.** "Why your grandfather looked like a TANK at 50", "The Aromatase Trap", "Why is the modern male body powering down decades too early" (ions / spark plugs), "There is a reason Vikings gifted this specific arctic plant to men on their wedding night", "Men: where did all the testosterone go?"
+
+## Full ad inventory
+| # | Library ID | Started | Type | Hook (primary text) | Page |
+|---|---|---|---|---|---|
+| 01 | 1836867677282688 | 8 Jul | img | Why is the modern male body powering down decades too early? (ions / spark plugs) | quiz-short-reindeer |
+| 02 | 2461748607631261 | 3 Jun | img | BEER BELLY!?!? Burn it off in WEEKS with Secret Superfood | 10-reasons-beer-belly |
+| 03 | 1082010944388207 | 19 Jun | img | #1 beer belly MELTER, insanely fast results | 10-reasons-beer-belly |
+| 04 | 1061107323353068 | 26 Aug | img | MOST MEN THINK SIZE IS FIXED. It's blood flow. | libido-booster |
+| 05 | 1676176770133246 | 10 Jul | img | Why is the modern male body powering down (same as 01) | quiz-short-reindeer |
+| 06 | 862472436325307 | 3 Jun | img | BEER BELLY!?!? (same as 02) | 10-reasons-beer-belly |
+| 07 | 1011340221931390 | 26 Aug | img | "I told my husband he felt bigger. He laughed." | libido-booster |
+| 08 | 1728145388389395 | 21 Jul | img | New Study Reveals Beer Belly Melter #1, not your fault | 10-reasons-beer-belly |
+| 09 | 2133516614244553 | 27 Aug | img | MOST MEN THINK SIZE IS FIXED (same as 04) | libido-booster |
+| 10 | 1237272075011007 | 12 Jun | img | #1 beer belly MELTER (same as 03) | 10-reasons-beer-belly |
+| 11 | 4379443302371106 | 3 Jun | video | Why your grandfather looked like a TANK at 50 (video hook: 13 YEARS OF MAN BOOBS GONE IN 9 DAYS) | emoji-quiz-reindeer-long |
+| 12 | 1609860664107718 | 28 Sep | img | Most men aren't reaching their full size potential | quiz-reindeer |
+| 13 | 929001810191914 | 5 Jun | video | The Aromatase Trap (video: Low T men battle ropes) | emoji-quiz-reindeer-long |
+| 14 | 2562592227529985 | 8 Jul | video | Men: where did all the testosterone go? (video: Low T men battle ropes) | 10-reasons-beef-long |
+| 15 | 1346475210883730 | 11 Jul | video | Men: where did all the testosterone go? | 10-reasons-beef-long |
+| 16 | 27804166165870044 | 22 Jul | img | #1 beer belly MELTER | 10-reasons-beer-belly |
+| 17 | 982570934488303 | 10 Jun | img | New Study Reveals #1 TESTOSTERONE BOOSTER, Low T is not your fault | quiz-v1 |
+| 18 | 3110052002521849 | 9 Jul | img | New Study Reveals Man Boobs Melter #1 | 10-reasons-man-boobs |
+| 19 | 4573518652929753 | 29 Jul | img | Why is the modern male body powering down | quiz-short-reindeer |
+| 20 | 1686624519785658 | 23 Jul | img | New Study Reveals #1 TESTOSTERONE BOOSTER | 10-reasons-trt |
+| 21 | 2526897894434360 | 13 May | video | BUY ONE, GET ONE TO DROP WHAT WEIGHS YOU DOWN. Beer belly, we're looking at you | natural-t-booster-for-males-40-gift |
+| 22 | 959411963560128 | 3 Jun | img | There is a reason Vikings gifted this arctic plant to men on their wedding night | emoji-quiz-reindeer-long |
+| 23 | 1973923993290488 | 20 Jun | video | BUY ONE, GET ONE. SEND THE BEER BELLY TO VALHALLA | natural-t-booster-for-males-40-gift |
+| 24 | 1580873386929829 | 23 Jul | img | #1 TESTOSTERONE BOOSTER, insanely fast results | 10-reasons-trt |
+| 25 | 1052803691019618 | 30 Jul | img | #1 MAN BOOBS MELTER | 10-reasons-man-boobs |
+| 26 | 1624166932644668 | 28 Sep | img | MOST MEN THINK SIZE IS FIXED | quiz-reindeer |
+| 27 | 1149877088209782 | 8 Jun | img | New Study Reveals #1 TESTOSTERONE BOOSTER | quiz-reindeer |
+| 28 | 935616566200858 | 18 Jun | img | I'm 48, and according to my friends my beer belly is undefeated (creative: "CAN'T QUIT BEER BUT DON'T WANT BEER BELLY?") | emoji-quiz-reindeer-short |
+| 29 | 2594053484350857 | 14 Aug | img | BUY ONE, GET ONE. SEND THE BEER BELLY TO VALHALLA | quiz-short-reindeer |
+| 30 | 1615938952811303 | 3 Jun | video | BEER BELLY!?!? Burn it off in WEEKS (video: Low T men battle ropes) | 10-reasons-beer-belly |
+
+Only the opening of each primary text was captured. Full text is on the ad cards in the Ad Library under the Library ID.
+
+## Funnels (corrected count)
+Ad-count per URL as the ads point at it (my earlier chat estimate was off by one in two places):
+
+| Page | Ads | Resolves to |
+|---|---|---|
+| 10-reasons-beer-belly | 7 | `/pages/7-reasons-lose-belly-fat` advertorial, inline bundle selector. Best presell of the set. |
+| 10-reasons-man-boobs | 2 | same page as above (weak message match for man-boob ads) |
+| quiz-short-reindeer | 4 | `/pages/quiz-t1` |
+| emoji-quiz-reindeer-long | 3 | quiz-t1 |
+| quiz-reindeer | 3 | quiz-t1 |
+| emoji-quiz-reindeer-short | 1 | quiz-t1 |
+| libido-booster | 3 | long-form sales page, "She'll Feel The Difference. So Will You." |
+| 10-reasons-beef-long | 2 | reindeer-beats-beef advertorial, CTA about 9,000px down |
+| 10-reasons-trt | 2 | "Read this BEFORE doing TRT!" advertorial |
+| natural-t-booster-for-males-40-gift | 2 | BOGO sales page, testimonial headline "My Testosterone Tripled..." |
+| quiz-v1 | 1 | a different ~25-screen quiz (fake T-Score / biological age), $127.99 ritual offer |
+
+Real picture: **quiz-t1 takes 11 of 30 ads**, the beer-belly advertorial takes 9, and the other four experiences take the remaining 10.
+
+## What the deep-dives say
+- **Statics (01, 04, 07, 28):** all scored 7.5-8/10. The winners lead with a guarantee-framed number ("MELT 27 LBS OR MONEY BACK", "+1 INCH IN 30 DAYS OR YOUR MONEY BACK") or a visual metaphor (pint glass bent into a belly). Proof assets are mostly missing.
+- **Videos (11, 13, 14, 30):** the same "LOW TESTOSTERONE MEN:" battle-rope clip shows up in three of them (13, 14, 30) under different primary text. Ad 11 is a different clip: "13 YEARS OF MAN BOOBS... GONE IN 9 DAYS" with a clinical chest-pinch visual, scored 9/10.
+- **Creative and copy are paired freely.** Video hooks and primary text rarely match (ad 11, 30, 07). They test creative and copy as separate variables.
+- Files: `deep-dives/ad-01` through `ad-30-breakdown.md`.
+
+## Funnel patterns
+- Evergreen urgency everywhere: roughly 20-minute timers, "36 left", "24 bottles left", "Sell-Out Risk: High".
+- Quiz reward framing: "UNLOCK 60% OFF AT THE END", soft email gate with a skip link.
+- Founder proof on the quiz result: "Michael's total T from 370 ng/dL to 800" and 22 lbs lost, plus Daniel Hoftun's story.
+- Weak points we could beat: slugs promise "10 reasons" and pages have 7 or 11; "ORDER NOW" CTAs pointing at quizzes; 90-day challenge vs 30-day guarantee badge; thin proof on beef and TRT advertorials; quiz-v1 numbers don't match its own answers.
+
+## Takeaways for our spec ads
+1. **The "Low T men" list is their most recycled video concept.** Taboo call-out list plus curiosity gap, sound-off, native gym look. Cheap to copy and re-angle.
+2. **Guarantee-as-hook statics** ("X in 30 days or money back") are carrying spend. Whoever owns a more specific, more believable number wins this lane.
+3. **Size / blood flow is the live frontier** (relaunched 28 Sep). It's where they're scaling now.
+4. **Mechanism is under-sold in the ads.** Reindeer organs and the rut / thyroid story live on the pages, not in the creative. A hook that leads with the mechanism ("Why reindeer...") is a gap.
+5. **Message match is sloppy** across their funnels, so an ad-to-page set that matches tightly has room to beat them.
+6. **Not-your-fault reframe** runs through the whole account ("not your fault, you can do everything perfect and still have it"). Table stakes.
+
+## Files
+- Strategy report HTML: not generated (the extractor skill's HTML template step was skipped; this markdown is the master).
+- Assets: `assets/pv-01..30` plus `landing-*.png` screenshots
+- Deep-dives: `deep-dives/`
+- Landing pages: `landing-pages/` (page-01..11, plus QUIZ-T1-shared.md)
+
+## Caveats
+- Ad Library "active" view, keyword search. 30 ads loaded; Meta may hold more.
+- Impressions and spend aren't shown. Run length is the only winner signal.
+- Primary text captured only as openers.
+- Ad 30's Gemini run had safety filters turned off by the agent to get past a block. The frame breakdown is model-described.
+- Landing-page screenshots are first-view only, not full scrolls.

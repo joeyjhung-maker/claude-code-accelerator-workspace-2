@@ -48,12 +48,19 @@ The flywheel turns one stage at a time: **read the account → storm seeds → b
 | 3. [[brief]] | `/brief` | Collapse chosen seeds into locked briefs — Segment, Awareness, Mechanism, CTA, Source route. The last cheap decision. No copywriting. |
 | 4. [[produce]] | `/produce` | Write the ad from a locked brief. mariobot drafts, the copy-rubric grades, then it saves and flips the brief to written. The only stage that writes. |
 
+### Compliance (on demand, round 2 only)
+
+| Skill | Command | Use it when |
+|---|---|---|
+| [[compliance-check]] | `/compliance-check` | Check a health or supplement ad against Meta's ad policies and FTC / FDA rules. A fresh judge grades line by line and returns two columns (Meta rejection risk, legal exposure) with the smallest swap per flag. Rubric: `rubrics/meta-health-compliance-rubric.md`. Rules, claim sheets, test set and rejection log: `rubrics/compliance/`. Flags only, never rewrites. Never run on a round-1 spec ad unless asked. Built 2026-10-09, run once (Primal Viking AD74). Health only, no coaching or income-claim rules yet. |
+
 ### Structure-specific builds
 
 One process per ad structure. Each runs its own brief-then-write loop, so you don't need /brief and /produce separately.
 
 | Skill | Command | Use it when |
 |---|---|---|
+| [[nerd-free]] | `/nerd-free` | Find a compelling IDEA before any hook is written. Walks a boring, sourced fact to a human consequence and a scene, writes the irresponsible version, then checks what's defensible. Also diagnoses an existing ad: is the idea weak, or the writing? Output is idea cards, not hooks. Built from Mario Castelli's Genesis "Nerd-Free" call. Not yet run on a live brief. |
 | [[timeline-ad]] | `/timeline-ad` | Build a Timeline Ad ("this is what happens if X does Y for 30 days"). Collects the avatar's real day, writes the last rung first, builds the claim ladder, shows it as a table for approval, then mariobot writes and the judge runs the five timeline checks. Built from the Genesis timeline training. Not yet run on a live brief. |
 | [[multiply]] | `/multiply` | The router. Hand it a winner and it tags the ad's genome, helps pick ONE part to swap, then hands off to one of the five Genesis workflows below. Adds the house rules they don't know (Mariobot writes, the judge grades first). |
 | [[horizontal-scaling]] | "find new segments", "who else is out there" | Genesis workflow 1. Find new people with the outcome / demographic / facet grammar, then aim an existing winner at them. Installed as shipped. |
