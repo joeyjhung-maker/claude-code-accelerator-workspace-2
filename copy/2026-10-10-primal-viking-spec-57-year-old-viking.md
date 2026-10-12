@@ -5,16 +5,17 @@
 *Working files, hook options and line options: `swipes/primal-viking/ads-2026-10-08/full/` and `hooks/bot-viking.md`.*
 *Storyboard: `creatives/_assets/2026-10-10-primal-viking-57-year-old-viking/storyboard/`.*
 *The age changed from 57 to 52 in the final. The file keeps its original name.*
+*Hook rewritten by Joey 2026-10-12 (first three lines). Old opening: "...could easily fight hand to hand against men half his age and conquer nations. / But today, that same 52-year-old modern man needs ibuprofen to get out of bed. / The difference wasn’t genetics. It was what they ate."*
 
 Related: [[hooks]] [[spec-ads-raw-first-compliance-later]] [[2026-10-03-video-ad-rules]]
 
 ---
 
-A 52-year-old Viking rowing for days through frigid open water, hauling blood-crusted axes up jagged shoreline could easily fight hand to hand against men half his age and conquer nations.
+A 52-year-old Viking rowing for days through frigid open water, hauling blood-crusted axes up jagged shoreline could take out men half his age and conquer nations.
 
-But today, that same 52-year-old modern man needs ibuprofen to get out of bed.
+But today, that same 52-year-old man needs ibuprofen to get out of bed.
 
-The difference wasn’t genetics. It was what they ate.
+The difference? It’s not genetics. It was what they ate.
 
 And in the next 60 seconds, I’ll show you what ancient men ate every single day that modern men never touch…
 

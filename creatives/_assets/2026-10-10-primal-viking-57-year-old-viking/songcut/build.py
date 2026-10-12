@@ -5,11 +5,11 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 B = Path(__file__).resolve().parent; A = B.parent; SB = A / 'storyboard'; C = A / 'clips'; W, H, FPS = 1080, 1920, 30
-SONG = A / 'song' / 'song-FULL-A-sea-shanty-1.mp3'; WORDS = A / 'song' / 'song-FULL-A-sea-shanty-1-words.json'
+SONG = A / 'song' / 'song-FULL-A-sea-shanty-1-hookv2.mp3'; WORDS = A / 'song' / 'song-FULL-A-sea-shanty-1-hookv2-words.json'   # v4: Joey's new hook (take 2) spliced onto the original song at 28.85s
 run = lambda c: subprocess.run(c, check=True)
 FR = [
- ('01', "A 52-year-old Viking rowing for days through frigid open water,"), ('02', "hauling blood-crusted axes up jagged shoreline"), ('03', "could easily fight hand to hand against men half his age and conquer nations."),
- ('04', "But today, that same 52-year-old modern man needs ibuprofen to get out of bed."), ('05', "The difference wasn’t genetics. It was what they ate."),
+ ('01', "A 52-year-old Viking rowing for days through frigid open water,"), ('02', "hauling blood-crusted axes up jagged shoreline"), ('03', "could take out men half his age and conquer nations."),
+ ('04', "But today, that same 52-year-old man needs ibuprofen to get out of bed."), ('05', "The difference? It’s not genetics. It was what they ate."),
  ('06', "And in the next 60 seconds, I’ll show you what ancient men ate every single day that modern men never touch…"),
  ('07', "Why your energy. Your drive. Your ability to stay lean. And your confidence in the bedroom, all quietly stopped at the same time."),
  ('08', "And how to get them back without prescriptions. Without injections. And without another useless supplement collecting dust on your counter."),
