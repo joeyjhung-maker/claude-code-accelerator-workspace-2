@@ -493,3 +493,23 @@ Joey then supplied 4 more real posts from his own archive, unprompted, as models
 **Skill:** none (video build)
 **Issue:** First long animated ad (Primal Viking, 3:44). Things that cost time or credits: (1) the voice-over was recorded and 16 clips were rendered before the pacing was compared with a reference, then the whole edit was rebuilt around a song; (2) the video model kept adding a horned helmet to the Viking in five shots, even when told he is bare-headed, and retakes did not fix it; (3) a voice-over chunk boundary fell mid-thought, so one line started abruptly; (4) the Whisper word check raised false alarms on numerals ("52", "157,579").
 **Suggested fix:** Write a workflow for animated ads with this order: pick a pacing reference and measure it first (shots, pauses, tempo); decide spoken or sung before any render; lock the audio; then stills, a three-clip motion test, then the batch. Add to the clip direction: describe the character without the word "Viking" and state headwear explicitly. Never split a voice chunk after a line ending in an ellipsis. Normalise numerals before comparing transcripts.
+
+---
+
+### Observation 49: Welcome email brief banned the welcome
+
+**Status:** OPEN
+**Date:** 2026-10-12
+**Skill:** none (email briefs for mariobot)
+**Issue:** Joey asked for a welcome email for Locked Gift guide opt-ins. Claude's brief told mariobot "Do not open with Welcome or Thanks for signing up" and to put the guide link first. Both drafts skipped the welcome and went straight to selling the guide. Joey: "this is a welcome email, we need to welcome them and then give them the lead mag".
+**Suggested fix:** When the email type is named (welcome, confirmation, reminder), the brief keeps that type's basic job as step 1 and only bans the corporate wording of it, not the job. For a welcome email the order is: welcome and who Dan is, then the thing they asked for, then where to start.
+
+---
+
+### Observation 50: Opt-in redesign built sections nobody asked for
+
+**Status:** OPEN
+**Date:** 2026-10-14
+**Skill:** none (Claude Design mockups)
+**Issue:** Joey asked to redesign the Locked Gifts opt-in page (headline, subhead, one button, Dan photo). Claude's first mockup added an email form, a stats strip, a 4-step section, a results grid and a bonus block. Joey: "you added too much. Get rid of everything below the subscribe button. I dont want capture fields, just the button. Keep our image." Claude had also swapped Dan's photo for a drawing.
+**Suggested fix:** On a redesign, rebuild what's on the live page first: same sections, same photo, same capture method. Offer extra sections in the reply; don't build them. Rule now in clients/flexxable/client.md (Opt-in pages) and workflows/2026-10-14-design-mockup-to-png.md.
