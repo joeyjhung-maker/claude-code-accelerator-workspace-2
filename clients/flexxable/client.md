@@ -14,6 +14,14 @@ Reusable wants and outcome language for the ROYA / AAA / AI-agency-operator audi
 - Never open with student proof or testimonials. Pain-point or world-level hook first.
 - For the current proof-led testimonial-video format, use [[Flexxable Testimonial Video Copy Lessons]]; this is an explicit format exception to the usual opening rule.
 
+## Opt-in pages
+- (2026-10-14) One centred column: headline, subhead, one button, then the real Dan photo, then the legal footer. That's the whole page.
+- No form fields on the page. The button opens the capture.
+- No proof, steps or bonus sections under the button. The headline does the selling. Joey: "you added too much."
+- Legal bits every time: [[2026-10-14-optin-page-legal-checklist]].
+- Photo callouts: [[2026-10-14-photo-callout-points-at-mechanism]].
+- First build: Locked Gifts opt-in, `creatives/2026-10-14-locked-gifts-optin/`.
+
 ## What is working right now
 - To be filled as the account grows.
 
