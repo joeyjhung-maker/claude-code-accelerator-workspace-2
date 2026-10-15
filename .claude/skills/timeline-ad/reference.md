@@ -34,7 +34,9 @@ Rungs 2 and 3 often swap. Internal wins come first: the mirror arrives about
 Most winning ads open Day 1 on "nothing happened" or on invisible work.
 
 **Negative timeline:** the same ladder run downward. Harm from a habit grows
-over years, and the product gets one short beat at the end.
+over years, and the product gets one short beat at the end. For the
+deep-symptom version, which is how to rescue a stuck symptom ad, see
+"Deep symptom, negative timeline" below.
 
 ## The ten positions
 
@@ -113,6 +115,64 @@ line.
 **Underused, worth trying:** a recognition line that names the normalised
 decline; "coincidence, then pattern"; the connected-problems reveal at the seal;
 the skeptic narrator; the wrong-product fork.
+
+## Deep symptom, negative timeline (Mario Castelli, Oct 2026)
+
+Source: Mario's Creative Cartel email, filed in Notion (Second Brain /
+Marketing): https://app.notion.com/p/3fa78742be6080f595cef85bd1d41ecd
+
+**The tell.** An ad has good hook rate and watch time, but CPA sits above
+target. It stalls at $1–2K spend and Meta stops feeding it. People are
+watching. They just aren't scared enough to buy.
+
+**The Symptom Trap.** The ad lists symptoms, then sells the product as the
+cure for each one. "Feather pecking? Here's the fix." It reads like a cream
+for an itch. The whole sale hangs on one question in his head: is this
+annoying enough to pay to fix? For most people: "eh, not really." So the ad
+only sells to the few who are already desperate.
+
+**The move.** Sell a deeper, more serious problem. Use the symptoms he already
+sees as proof that the problem is there.
+1. **Open on an innocent symptom, reframed.** "I never knew [small symptom]
+   was a sign of something serious." This is a curiosity open, not a pain open.
+2. **Walk the negative timeline down.** At first it looks harmless. Underneath,
+   the real problem is advancing. A system wears down, then it spreads, then
+   if nobody catches it, the person or pet that was fine last month gets
+   worse.
+3. **Land the reframe.** The symptom isn't a nuisance any more. It's a warning
+   sign. He isn't trying to stop a behaviour. He's trying to save something he
+   loves.
+4. **Then the product**, as the thing that deals with the deeper problem.
+
+**Why it works (two wins).**
+- **It raises the cost of doing nothing.** You stop betting on whether the
+  symptom bugs him enough. You paint what happens if the problem goes unsolved.
+- **It widens the audience.** It now reaches the person who thinks everything
+  is fine. They'd never stop for an "itch" ad. Show them the signs they've
+  been ignoring and they stop.
+
+**Guardrails.**
+- **The deeper problem must be real.** Check it against research or the client
+  file. No exaggeration. Never invent the progression.
+- **It doesn't have to be death.** It only has to be bigger than the itch.
+- **Health ads:** the compliance pass still applies. Describe the progression
+  ("wearing down", "spreading") without naming a disease. Run
+  /compliance-check if it's going live.
+
+**How to use it here.**
+- **Rescue first.** Before scrapping an ad that has hook rate and watch time
+  but won't scale, rewrite the body around the deeper problem. Keep the hook.
+- **The ladder.** Run the rungs downward: symptom he can see → hidden cause →
+  wearing down → spreading → deterioration (life scene of the loss) → the
+  reframe line. Clock is soft sequence or years ("at first", "over time",
+  "if nobody catches it").
+- **The villain** is the deeper problem itself, named in the hook as "something
+  serious" and explained in the middle of the ladder.
+
+**Porting to a coaching offer (untested).** The symptom is the small thing the
+owner shrugs off. The deeper problem is what it signals about the business,
+and where that goes if nobody catches it. Pull both from the client file, and
+ask Joey if they aren't there. Don't invent a progression.
 
 ## The sales block (standard order)
 

@@ -43,6 +43,13 @@ cold IAA ads", not attribution science. Append to
 `clients/{name}/hypotheses.md`, dated, tagged `[YYYY-MM-DD]`, with the ad it
 came from. Show them all; Joey edits or kills any before they're banked.
 
+**Stuck-with-signal check.** Flag any ad with a solid hook rate and watch
+time whose CPA sits above target and won't scale past low spend. If its body
+sells a cure for each symptom, call it the **Symptom Trap**. Bank this
+hypothesis: "raising the severity will convert the attention it already has."
+Put a deep-symptom negative timeline rewrite (same hook) in the Production
+Plan. See the deep-symptom section in `.claude/skills/timeline-ad/reference.md`.
+
 **Trigger words (what the market responds to).** While reading the winners,
 watch for the specific WORDS that keep showing up where engagement is high —
 not concepts, actual words (inflammation, cortisol, silver, chlorine; for

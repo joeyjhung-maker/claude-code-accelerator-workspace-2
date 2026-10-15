@@ -1,6 +1,6 @@
 ---
 name: timeline-ad
-description: Build a Timeline Ad ("this is what happens to X if they do Y for 30 days") from start to finish, using the Genesis timeline training. Use when Joey says "timeline ad", "write a timeline", "day 1 to day 30 ad", "what would happen if ad", "/timeline-ad", or picks a seed or brief whose structure is Timeline. Runs one fixed process — collect the avatar's real day, write the last rung first, build the claim ladder, get the ladder approved as a table, THEN mariobot writes and the judge grades with the five timeline checks. Covers every frame (hypothetical, testimony, diary, skeptic, yapper friend, false warning, body-part narrator, negative timeline). Not for other ad structures — use /brief and /produce for those.
+description: Build a Timeline Ad ("this is what happens to X if they do Y for 30 days") from start to finish, using the Genesis timeline training. Use when Joey says "timeline ad", "write a timeline", "day 1 to day 30 ad", "what would happen if ad", "negative timeline", "deep symptom", "symptom trap", "/timeline-ad", or picks a seed or brief whose structure is Timeline. Also use it to rescue a stuck symptom ad (good hook rate and watch time, CPA above target, stalls at low spend) with a deep-symptom negative timeline. Runs one fixed process — collect the avatar's real day, write the last rung first, build the claim ladder, get the ladder approved as a table, THEN mariobot writes and the judge grades with the five timeline checks. Covers every frame (hypothetical, testimony, diary, skeptic, yapper friend, false warning, body-part narrator, negative timeline). Not for other ad structures — use /brief and /produce for those.
 ---
 
 # /timeline-ad — one process for timeline ads. Decisions first, ladder approved, then mariobot writes.
@@ -26,6 +26,10 @@ the ladder, the clocks, the frames, the sales-block order and the numbers.
 - **Not a supplement?** The training was built on consumables. For a coaching
   or info offer, use the translation table in `reference.md` and tell Joey it
   is an untested port.
+- **Rescuing a stuck symptom ad?** (Hook rate and watch time are fine, CPA is
+  above target, it stalls at $1–2K spend, and the body sells a cure for each
+  symptom.) Use the **deep-symptom negative timeline** in `reference.md`. Keep
+  the hook. Rebuild the body around the deeper problem.
 
 ### 1. Collect the raw material (ask, never invent)
 Four lists. Pull from the client file first. Anything missing, **ask Joey**.
@@ -39,6 +43,10 @@ Four lists. Pull from the client file first. Anything missing, **ask Joey**.
 4. **What can be defended.** Which results, on which timescale, the client can
    stand behind. Proof assets, offer, guarantee. No number that isn't in the
    client file.
+5. **Deep-symptom runs only:** the innocent symptoms he already sees, the
+   real deeper problem they point to (with its source), and how it progresses
+   if nobody catches it. If the deeper problem can't be sourced, **stop and ask
+   Joey.** Never invent the progression.
 
 ### 2. Build the construction sheet (in this order)
 1. **Last rung first.** The identity line in the avatar's own mouth, and the
@@ -140,6 +148,9 @@ product. The rungs stay frozen through all of it.
 - 14-step build guide: https://claude.ai/artifact/6RmY4UVgGazqRXA4a3qGEU
 - Swipe library (306 verified timeline ads, RYZE / IM8 / Resilia), Google Doc:
   https://docs.google.com/document/d/1B58h0BmgvavSl8U10JJaaSGWS6xJ0vlt7BHzVwjiO-o/edit
+- Deep symptom, negative timeline (Mario Castelli, Creative Cartel email),
+  Notion: https://app.notion.com/p/3fa78742be6080f595cef85bd1d41ecd. Added
+  2026-10-15.
 - Built 2026-10-03 from the Genesis "Constructing Timeline Ads" training. Not
   yet run on a live brief.
 
