@@ -1,0 +1,432 @@
+<title>Joey &amp; Lavan Launch Route</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a parcel-tracking route. Stages run down a single rail; each stage is a manifest card ending in a gate stamp. */
+:root{
+  --bg:#f3f5f8; --paper:#ffffff; --ink:#131c33; --muted:#5b6478; --line:#d5dbe6;
+  --accent:#ffc21a; --accent-ink:#3a2a00; --blue:#2453d6; --done:#1d8a5b; --done-soft:#e3f3ea;
+  --chip:#eef1f7; --shadow:0 1px 0 rgba(19,28,51,.06);
+  --f-display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0c1222; --paper:#141c31; --ink:#e8ecf5; --muted:#9aa4bb; --line:#27314b;
+  --accent:#ffc928; --accent-ink:#2b1f00; --blue:#7d9cff; --done:#4cc28c; --done-soft:#16342a;
+  --chip:#1d2741; --shadow:none; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c1222; --paper:#141c31; --ink:#e8ecf5; --muted:#9aa4bb; --line:#27314b;
+  --accent:#ffc928; --accent-ink:#2b1f00; --blue:#7d9cff; --done:#4cc28c; --done-soft:#16342a;
+  --chip:#1d2741; --shadow:none; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding-inline:16px;padding-block:28px 64px;display:grid;gap:28px}
+.mono{font-family:var(--f-mono)}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+
+/* Header */
+.top{display:grid;gap:18px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.eyebrow b{color:var(--ink);font-weight:600}
+h1{font-size:clamp(34px,6vw,58px);font-weight:800;font-variation-settings:"wdth" 72;line-height:.95;letter-spacing:-.01em}
+.lede{max-width:62ch;color:var(--muted);margin:0;font-size:16px}
+.lede strong{color:var(--ink);font-weight:600}
+
+/* Route summary (the tracking strip) */
+.strip{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:18px;display:grid;gap:16px;box-shadow:var(--shadow)}
+.strip-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.big{font-family:var(--f-display);font-weight:800;font-variation-settings:"wdth" 80;font-size:30px;font-variant-numeric:tabular-nums}
+.big small{font-size:15px;color:var(--muted);font-weight:500;font-family:var(--f-body)}
+.sync{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.sync.live .dot{background:var(--done)}
+.bar{height:8px;background:var(--chip);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--done);width:0;transition:width .4s ease}
+.stops{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(9,1fr);gap:4px}
+.stops li{display:grid;gap:6px;justify-items:center;text-align:center;min-width:0}
+.stops a{color:inherit;text-decoration:none;display:grid;gap:6px;justify-items:center;width:100%;min-width:0}
+.stop-dot{width:26px;height:26px;border-radius:50%;border:2px solid var(--line);background:var(--paper);display:grid;place-items:center;font-family:var(--f-mono);font-size:11px;font-weight:600;color:var(--muted)}
+.stops li.moving .stop-dot{border-color:var(--blue);color:var(--blue)}
+.stops li.cleared .stop-dot{border-color:var(--done);background:var(--done);color:var(--paper)}
+.stop-name{font-size:11px;line-height:1.2;color:var(--muted);overflow-wrap:anywhere}
+@media (max-width:640px){.stop-name{display:none}.stops{gap:2px}.stop-dot{width:22px;height:22px;font-size:10px}}
+
+/* Controls + rules */
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.row2{grid-template-columns:1fr}}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:grid;gap:10px;align-content:start;min-width:0}
+.panel h2{font-size:18px;font-weight:700;font-variation-settings:"wdth" 90}
+.panel p{margin:0;color:var(--muted);font-size:14px}
+.nope{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:14px}
+.nope li{display:flex;gap:10px;align-items:baseline}
+.nope li::before{content:"✕";font-family:var(--f-mono);font-size:12px;color:#c4373b;font-weight:600;flex:none}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{font:500 13px var(--f-body);border:1px solid var(--line);background:var(--chip);color:var(--ink);padding:6px 12px;border-radius:99px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.key{display:grid;gap:6px;font-size:13px;color:var(--muted)}
+.key span{display:flex;gap:8px;align-items:center}
+
+/* Stages */
+.route{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.stage{display:grid;grid-template-columns:44px 1fr;gap:14px;position:relative;padding-bottom:22px}
+.stage::before{content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;background:var(--line)}
+.stage:last-child::before{display:none}
+.stage.cleared::before{background:var(--done)}
+.marker{width:44px;height:44px;border-radius:50%;background:var(--paper);border:2px solid var(--line);display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:18px;font-variation-settings:"wdth" 80;color:var(--muted);position:relative;z-index:1}
+.stage.moving .marker{border-color:var(--blue);color:var(--blue)}
+.stage.cleared .marker{background:var(--done);border-color:var(--done);color:var(--paper)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden;min-width:0;box-shadow:var(--shadow)}
+.card-head{padding:14px 18px 12px;display:grid;gap:4px;border-bottom:1px dashed var(--line)}
+.meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.status{font-weight:600}
+.stage.moving .status{color:var(--blue)}
+.stage.cleared .status{color:var(--done)}
+.card h3{font-size:24px;font-weight:800;font-variation-settings:"wdth" 78;line-height:1.05}
+.goal{margin:0;color:var(--muted);font-size:14px;max-width:70ch}
+.items{list-style:none;margin:0;padding:6px 0}
+.item{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:start;padding:8px 18px}
+.item:hover{background:color-mix(in srgb,var(--chip) 60%,transparent)}
+.item[hidden]{display:none}
+.txt{min-width:0;padding-top:1px}
+.item.done .txt>span{color:var(--muted);text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--muted) 55%,transparent)}
+.who{display:block;font-family:var(--f-mono);font-size:11px;color:var(--done);margin-top:2px}
+
+/* Checkbox */
+.cb{appearance:none;-webkit-appearance:none;width:20px;height:20px;margin:1px 0 0;border:2px solid var(--muted);border-radius:5px;background:var(--paper);cursor:pointer;display:grid;place-items:center;flex:none}
+.cb:checked{background:var(--done);border-color:var(--done)}
+.cb:checked::after{content:"";width:5px;height:10px;border:solid var(--paper);border-width:0 2px 2px 0;transform:translateY(-1px) rotate(45deg)}
+.cb:focus-visible,.owner:focus-visible,.filters button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.cb:disabled{cursor:not-allowed;opacity:.6}
+
+/* Owner chip */
+.owner{font:500 11px var(--f-mono);border:1px dashed var(--line);background:transparent;color:var(--muted);padding:3px 8px;border-radius:6px;cursor:pointer;min-width:58px;text-align:center;white-space:nowrap}
+.owner[data-o="Joey"]{border-style:solid;border-color:var(--blue);color:var(--blue)}
+.owner[data-o="Lavan"]{border-style:solid;border-color:#b0459a;color:#b0459a}
+.owner[data-o="Both"]{border-style:solid;border-color:var(--ink);color:var(--ink)}
+.owner:disabled{cursor:default}
+
+/* Gate stamp */
+.gate{margin:4px 12px 12px;padding:10px 12px;background:var(--accent);color:var(--accent-ink);border-radius:8px;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:start}
+.gate .cb{border-color:var(--accent-ink);background:transparent}
+.gate .cb:checked{background:var(--accent-ink);border-color:var(--accent-ink)}
+.gate .cb:checked::after{border-color:var(--accent)}
+.gate-label{font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;display:block}
+.gate .txt span{font-weight:600}
+.gate .who{color:var(--accent-ink);opacity:.8}
+.gate .owner{border-color:var(--accent-ink);color:var(--accent-ink)}
+.skills{padding:0 18px 14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.skills .lbl{font-family:var(--f-mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-right:2px}
+.skills code{font-family:var(--f-mono);font-size:12px;background:var(--chip);padding:2px 7px;border-radius:5px;color:var(--ink)}
+.foot{font-size:13px;color:var(--muted);text-align:center}
+.empty-note{padding:10px 18px;color:var(--muted);font-size:13px;font-style:italic}
+@media (max-width:520px){
+  .stage{grid-template-columns:32px 1fr;gap:10px}
+  .marker{width:32px;height:32px;font-size:14px}
+  .stage::before{left:15px;top:32px}
+  .item{padding:8px 12px;gap:10px}
+  .card-head{padding:12px 14px}
+  .skills{padding:0 14px 12px}
+  .gate{margin:4px 8px 10px}
+}
+@media (prefers-reduced-motion: reduce){.bar i{transition:none}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="eyebrow"><b>Lavan Ecom Test</b><span>·</span><span>Route: idea → launch → scale or kill</span><span>·</span><span>Started 15 Oct 2026</span></div>
+    <h1>Joey &amp; Lavan<br>Launch Route</h1>
+    <p class="lede">Nine stages from <strong>no product</strong> to <strong>scale or kill</strong>. Each one ends with a gate in yellow. Don't move on until the gate is true. Tick as you go: it saves for both of you.</p>
+  </header>
+
+  <section class="strip" aria-label="Overall progress">
+    <div class="strip-head">
+      <div class="big"><span id="doneCount">0</span><small> of <span id="totalCount">0</span> steps done</small></div>
+      <div class="sync" id="sync"><span class="dot"></span><span id="syncText">Connecting…</span></div>
+    </div>
+    <div class="bar" role="progressbar" aria-label="Steps done" aria-valuemin="0" aria-valuemax="100" id="bar"><i id="barFill"></i></div>
+    <ol class="stops" id="stops"></ol>
+  </section>
+
+  <div class="row2">
+    <section class="panel" aria-labelledby="nopeH">
+      <h2 id="nopeH">Things we won't do</h2>
+      <p>Quick and dirty is fine. Shady isn't. If a step needs one of these to work, the product's wrong.</p>
+      <ul class="nope">
+        <li>Fake reviews, or reviews lifted from another store</li>
+        <li>Fake countdown timers or "only 3 left"</li>
+        <li>A made-up "was" price to fake a discount</li>
+        <li>Hiding real shipping times</li>
+        <li>Health or safety claims the product can't back</li>
+        <li>Making refunds hard</li>
+        <li>Using other brands' or creators' content without asking</li>
+      </ul>
+    </section>
+    <section class="panel" aria-labelledby="viewH">
+      <h2 id="viewH">Show</h2>
+      <div class="filters" role="group" aria-label="Filter steps">
+        <button type="button" id="f-all" data-f="all" aria-pressed="true">Everything</button>
+        <button type="button" id="f-open" data-f="open" aria-pressed="false">Still to do</button>
+        <button type="button" id="f-joey" data-f="Joey" aria-pressed="false">Joey's</button>
+        <button type="button" id="f-lavan" data-f="Lavan" aria-pressed="false">Lavan's</button>
+      </div>
+      <div class="key">
+        <span><button class="owner" type="button" tabindex="-1" aria-hidden="true" data-o="">Who?</button> Tap to set who owns a step: Joey, Lavan or both</span>
+        <span><code class="mono" style="background:var(--chip);padding:2px 7px;border-radius:5px;font-size:12px">hook-miner</code> Claude skills that do the heavy lifting for that stage</span>
+        <span>Day ranges are rough. Stages overlap where it makes sense.</span>
+      </div>
+    </section>
+  </div>
+
+  <ol class="route" id="route"></ol>
+
+  <p class="foot">Plain-text copy lives in the workspace at ventures/lavan-ecom/roadmap.md</p>
+</div>
+
+<script>
+const STAGES = [
+  {n:0, name:"Ground rules", days:"Day 0", goal:"Agree the deal before spending anything. Ten minutes now saves a falling-out later.",
+   items:[
+    ["p0a","Split the roles: who owns product and supplier, who owns ads and creative"],
+    ["p0b","Set the test budget and the most you'll both lose"],
+    ["p0c","Agree the profit split and who pays for what, written on one page"],
+    ["p0d","Set kill rules before any spend (e.g. 2x target CPA with no sale = kill the ad)"],
+    ["p0e","Pick the market you'll sell to and its currency"],
+    ["p0f","Shared setup: one Shopify, one ad account, one support inbox, one decisions log"]],
+   gate:["p0g","Budget, split and kill rules signed off by both"], skills:[]},
+  {n:1, name:"Find the product", days:"Days 1–5", goal:"Look for proven demand, not clever ideas. Ads that have run for a month are paying for themselves.",
+   items:[
+    ["p1a","Pick 2–3 niches you know, or a problem you've had yourselves"],
+    ["p1b","Pull ads running 30+ days from the Meta Ad Library in those niches"],
+    ["p1c","Check TikTok Creative Center, Amazon Movers & Shakers and Reddit complaints"],
+    ["p1d","Score each idea: real problem or real delight · shows in 3 seconds on video · 3x markup on landed cost · light and hard to break · no regulated claims"],
+    ["p1e","Read competitors' 1–3 star reviews to find the defects to avoid and the angle to own"],
+    ["p1f","Shortlist 3 products"]],
+   gate:["p1g","3 products pass the filter, and you'd both buy them"], skills:["meta-ads-extractor","ads-analyst","last30days","comment-goldmine"]},
+  {n:2, name:"Validate and source", days:"Days 5–12", goal:"Hold the thing in your hands and make the numbers work before you build anything.",
+   items:[
+    ["p2a","Order samples from 2–3 suppliers per shortlisted product"],
+    ["p2b","Use each sample for a week. Check quality, packaging and safety marks (CE / UKCA / FCC)"],
+    ["p2c","Get real shipping times to your market, and line up a backup supplier"],
+    ["p2d","Work the unit economics: price − landed cost − fees − returns = margin. Get breakeven CPA and ROAS"],
+    ["p2e","Tear down the top 3 competitors' ads, pages and offers"],
+    ["p2f","Pick ONE product"]],
+   gate:["p2g","Sample is good and breakeven ROAS is under 2"], skills:["ad-creative-analysis","landing-page-analysis","adversarial-review"]},
+  {n:3, name:"Angle and offer", days:"Days 10–14", goal:"Same product, better reason to buy. This is where you two win.",
+   items:[
+    ["p3a","Find the mechanism: why this works when other stuff didn't"],
+    ["p3b","Map who buys it and why. One main segment, two to test"],
+    ["p3c","Build the offer: price, bundles, guarantee, free shipping threshold"],
+    ["p3d","Name, domain, wordmark, two colours"],
+    ["p3e","Lock the brief: segment, angle, mechanism and offer in one breath"]],
+   gate:["p3f","The brief passes the one-breath test"], skills:["mechanism-finder","segments","brief"]},
+  {n:4, name:"Build the store", days:"Days 12–18", goal:"One product, one page, nothing to get lost in. Everything a buyer worries about is answered before they ask.",
+   items:[
+    ["p4a","Shopify with a one-product theme"],
+    ["p4b","Product page: your own sample photos and video, benefit-led copy, FAQ, shipping and returns up front"],
+    ["p4c","Policies: shipping, refunds, privacy, terms, a real contact address"],
+    ["p4d","Payments live, business bank account, tax registration checked for your market"],
+    ["p4e","Meta pixel and Conversions API installed"],
+    ["p4f","Email flows: welcome, abandoned cart, post-purchase review ask"],
+    ["p4g","Place a real test order end to end, then refund it"]],
+   gate:["p4h","Test order goes through and the purchase shows in Events Manager"], skills:["landing-page-analysis","produce"]},
+  {n:5, name:"Make the ads", days:"Days 14–20", goal:"The hook is most of the ad. Enough variety that the account can find a winner fast.",
+   items:[
+    ["p5a","20–30 hooks across 3 angles, stress-tested before any body copy"],
+    ["p5b","Shoot or source content: demo, unboxing, problem to fix, 2–3 UGC creators"],
+    ["p5c","At least 9 ads: 3 angles × 3 hooks, video and statics"],
+    ["p5d","Hook in frame 0, every word captioned"],
+    ["p5e","Claims check: every claim is one the product can back"]],
+   gate:["p5f","9+ ads ready and every claim checkable"], skills:["hook-miner","storm","produce","formats-conceits","compliance-check"]},
+  {n:6, name:"Launch", days:"Days 20–21", goal:"Go live, then keep your hands off long enough to learn something.",
+   items:[
+    ["p6a","Business Manager set up, domain verified, payment method on the ad account"],
+    ["p6b","One test campaign, one ad set per angle, broad targeting"],
+    ["p6c","Launch mid-week. Hands off for 48–72 hours"],
+    ["p6d","Support inbox live, replies inside 24 hours"]],
+   gate:["p6e","Ads spending and the pixel firing on real traffic"], skills:[]},
+  {n:7, name:"Read and decide", days:"Days 21–35", goal:"Find where the funnel leaks, fix that one thing, and make the call on day 14.",
+   items:[
+    ["p7a","Daily read: spend, link CTR, CPC, add-to-cart rate, checkout rate, CPA against breakeven"],
+    ["p7b","Low CTR = hook problem. Clicks but no carts = page or offer. Carts but no buys = price, shipping or trust"],
+    ["p7c","Kill an ad at 2x target CPA spent with no sale"],
+    ["p7d","New hooks on the winning angle, not new products"],
+    ["p7e","Watch fulfilment: tracking, delivery times, refund requests"],
+    ["p7f","Day 14 call: kill, iterate or scale. Write it in the decisions log"]],
+   gate:["p7g","At or above breakeven for 7 days straight"], skills:["account-read"]},
+  {n:8, name:"Scale, or kill it clean", days:"Day 35+", goal:"Either pour fuel on it, or close it out properly and keep the lesson.",
+   items:[
+    ["p8a","Raise winning budgets 20–30% every 2–3 days"],
+    ["p8b","Lock supply: bulk order, sourcing agent, branded packaging"],
+    ["p8c","Collect real photo reviews from real buyers"],
+    ["p8d","Lift order value: bundle, upsell, post-purchase offer"],
+    ["p8e","If it's dead: fulfil and refund open orders, write up what died and why"]],
+   gate:["p8f","A clear call, written down"], skills:[]}
+];
+
+const OWNERS = ["", "Joey", "Lavan", "Both"];
+const ALL_IDS = STAGES.flatMap(s => [...s.items.map(i => i[0]), s.gate[0]]);
+const LS_KEY = "lavan-route-local";
+const LS_FILTER = "lavan-route-filter";
+
+let state = {};          // id -> {done, owner, by, at}
+let db = null, user = null, canWrite = true, live = false;
+let filter = "all";
+const writeChains = {};  // one write at a time per doc
+
+function lsGet(k){ try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } }
+function lsSet(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+
+const $ = s => document.querySelector(s);
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function build(){
+  $("#totalCount").textContent = ALL_IDS.length;
+  $("#stops").innerHTML = STAGES.map(s =>
+    `<li id="stop-${s.n}"><a href="#stage-${s.n}"><span class="stop-dot">${s.n}</span><span class="stop-name">${esc(s.name)}</span></a></li>`).join("");
+  $("#route").innerHTML = STAGES.map(s => `
+    <li class="stage" id="stage-${s.n}">
+      <div class="marker" aria-hidden="true">${s.n}</div>
+      <article class="card" aria-labelledby="h-${s.n}">
+        <div class="card-head">
+          <div class="meta"><span>Stage ${s.n} · ${esc(s.days)}</span><span class="status" id="status-${s.n}">Waiting</span></div>
+          <h3 id="h-${s.n}">${esc(s.name)}</h3>
+          <p class="goal">${esc(s.goal)}</p>
+        </div>
+        <ul class="items">${s.items.map(([id,t]) => rowHTML(id,t,false)).join("")}
+          <li class="empty-note" id="empty-${s.n}" hidden>Nothing here for this filter.</li>
+        </ul>
+        ${rowHTML(s.gate[0], s.gate[1], true)}
+        ${s.skills.length ? `<div class="skills"><span class="lbl">Claude</span>${s.skills.map(k=>`<code>${k}</code>`).join("")}</div>` : ""}
+      </article>
+    </li>`).join("");
+
+  document.querySelectorAll(".cb").forEach(cb => cb.addEventListener("change", () => toggleDone(cb.dataset.id, cb.checked)));
+  document.querySelectorAll(".owner[data-id]").forEach(b => b.addEventListener("click", () => cycleOwner(b.dataset.id)));
+  document.querySelectorAll(".filters button").forEach(b => b.addEventListener("click", () => setFilter(b.dataset.f)));
+}
+
+function rowHTML(id, text, isGate){
+  const inner = `
+      <input type="checkbox" class="cb" id="cb-${id}" data-id="${id}" aria-label="${isGate ? "Gate: " : ""}${esc(text)}">
+      <label class="txt" for="cb-${id}">${isGate ? '<span class="gate-label">Gate</span>' : ""}<span>${esc(text)}</span><small class="who" id="who-${id}" hidden></small></label>
+      <button type="button" class="owner" id="own-${id}" data-id="${id}" data-o="" aria-label="Set owner">Who?</button>`;
+  return isGate ? `<div class="gate" id="row-${id}" data-gate="1">${inner}</div>` : `<li class="item" id="row-${id}">${inner}</li>`;
+}
+
+async function render(){
+  // names for whoever ticked things
+  const byIds = [...new Set(Object.values(state).map(v => v && v.by).filter(Boolean))];
+  let profiles = {};
+  if (user && byIds.length) { try { profiles = await user.profiles(byIds); } catch {} }
+
+  let doneTotal = 0;
+  for (const id of ALL_IDS){
+    const v = state[id] || {};
+    const cb = $("#cb-"+id), row = $("#row-"+id), own = $("#own-"+id), who = $("#who-"+id);
+    cb.checked = !!v.done; cb.disabled = !canWrite; own.disabled = !canWrite;
+    row.classList.toggle("done", !!v.done);
+    own.dataset.o = v.owner || ""; own.textContent = v.owner || "Who?";
+    own.setAttribute("aria-label", "Owner: " + (v.owner || "nobody yet") + (canWrite ? ". Tap to change" : ""));
+    if (v.done && (v.by || v.at)){
+      const nm = v.by ? ((profiles[v.by] && profiles[v.by].name) || "Someone") : "";
+      const dt = v.at ? new Date(v.at).toLocaleDateString(undefined,{day:"numeric",month:"short"}) : "";
+      who.textContent = "✓ " + [nm, dt].filter(Boolean).join(" · ");
+      who.hidden = false;
+    } else who.hidden = true;
+    if (v.done) doneTotal++;
+  }
+
+  $("#doneCount").textContent = doneTotal;
+  const pct = Math.round(doneTotal / ALL_IDS.length * 100);
+  $("#barFill").style.width = pct + "%";
+  $("#bar").setAttribute("aria-valuenow", pct);
+
+  for (const s of STAGES){
+    const ids = [...s.items.map(i=>i[0]), s.gate[0]];
+    const n = ids.filter(id => state[id] && state[id].done).length;
+    const gateDone = !!(state[s.gate[0]] && state[s.gate[0]].done);
+    const cls = gateDone ? "cleared" : n > 0 ? "moving" : "";
+    const el = $("#stage-"+s.n), stop = $("#stop-"+s.n);
+    el.classList.remove("cleared","moving"); stop.classList.remove("cleared","moving");
+    if (cls){ el.classList.add(cls); stop.classList.add(cls); }
+    $("#status-"+s.n).textContent = gateDone ? "Cleared" : n > 0 ? `In transit · ${n}/${ids.length}` : "Waiting";
+  }
+  applyFilter();
+}
+
+function applyFilter(){
+  document.querySelectorAll(".filters button").forEach(b => b.setAttribute("aria-pressed", b.dataset.f === filter));
+  for (const s of STAGES){
+    let shown = 0;
+    for (const [id] of s.items){
+      const v = state[id] || {};
+      let show = true;
+      if (filter === "open") show = !v.done;
+      else if (filter === "Joey" || filter === "Lavan") show = v.owner === filter || v.owner === "Both";
+      $("#row-"+id).hidden = !show;
+      if (show) shown++;
+    }
+    $("#empty-"+s.n).hidden = shown > 0;
+  }
+}
+
+function setFilter(f){ filter = f; lsSet(LS_FILTER, f); applyFilter(); }
+
+async function save(id, patch){
+  const next = {done:false, owner:"", ...(state[id]||{}), ...patch};
+  state = {...state, [id]: next};
+  render();
+  if (!live){ lsSet(LS_KEY, state); return; }
+  const ref = db.collection("progress").doc(id);
+  const run = () => ref.set(next).catch(e => {
+    if (e && e.code === "invalid_argument"){ canWrite = false; setSync(true, "View only. Ask Joey for edit access"); render(); }
+    else if (e && e.code === "unavailable") return new Promise(r => setTimeout(r, 400 + Math.random()*600)).then(() => ref.set(next)).catch(()=>{});
+  });
+  writeChains[id] = (writeChains[id] || Promise.resolve()).then(run);
+}
+
+async function toggleDone(id, done){
+  let by = null;
+  if (done && user){ try { by = await user.id(); } catch {} }
+  save(id, done ? {done:true, by, at:new Date().toISOString()} : {done:false, by:null, at:null});
+}
+function cycleOwner(id){
+  const cur = (state[id] && state[id].owner) || "";
+  save(id, {owner: OWNERS[(OWNERS.indexOf(cur)+1) % OWNERS.length]});
+}
+
+function setSync(isLive, text){
+  $("#sync").classList.toggle("live", isLive);
+  $("#syncText").textContent = text;
+}
+
+async function start(){
+  build();
+  const f = lsGet(LS_FILTER); if (f) filter = f;
+  render();
+  setSync(false, "Connecting…");
+
+  try { db = window.claude ? await window.claude.use("db") : null; } catch { db = null; }
+  try { user = window.claude ? await window.claude.use("user") : null; } catch { user = null; }
+
+  if (!db){
+    state = lsGet(LS_KEY) || {};
+    setSync(false, "Saving in this browser only");
+    render();
+    return;
+  }
+  live = true;
+  if (user){ try { const c = await user.can("data.write"); if (c === false) canWrite = false; } catch {} }
+  setSync(true, canWrite ? "Live · shared with Joey and Lavan" : "View only. Ask Joey for edit access");
+  db.collection("progress").onSnapshot(snap => {
+    const next = {};
+    snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); });
+    state = next;
+    render();
+  }, () => setSync(false, "Lost connection. Reload to reconnect"));
+}
+start();
+</script>

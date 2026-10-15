@@ -31,6 +31,7 @@ Reference (feeds the work):
 - Repeatable plays: workflows/
 - A specific client's context and rules: clients/{name}/client.md (one folder per client: primers/, strategy-map.md, seeds/, briefs/, winning-ads.md)
 - JV partner deals (separate from core Flexxable work): jv/JV-map.md
+- Joey's own ventures (e.g. the ecom test with Lavan): ventures/{name}/project.md
 - Human-readable skill guide: skills/Skills.md
 
 Production (what I make):

@@ -20,6 +20,10 @@ Separate line of work from core Flexxable copy. Map lives at [[JV Partnerships M
 
 External frameworks worth leveraging in strategy, kept separate from client work so they don't get buried in one folder. [[travis-sago]] (`mentors/travis-sago/`) — Dan's mentor, material spans JV, B2B Leads Lab, and ROYA. [[alex-hormozi]] (`mentors/alex-hormozi/`) — book ingestion, not a personal mentor; all three $100M books now fully ingested: *$100M Offers* (value equation, Grand Slam Offer build), *$100M Leads* (Core Four / lead-getter vocabulary), *$100M Money Models* (Attraction/Upsell/Downsell/Continuity offer sequencing). Read a mentor's `synthesis.md` when planning, not their raw transcripts.
 
+## Ventures (Joey's own side projects)
+
+Own bets outside client work. [[ventures/lavan-ecom/project|Lavan Ecom Test]] (`ventures/lavan-ecom/`): Joey + Lavan launching one ecom product, quick but legit. Roadmap in `roadmap.md` (live checklist: https://claude.ai/artifact/4zc3jgh1qrasmfCJNx1ZmU). Every go/kill call goes in `decisions.md`.
+
 ## Heuromi Media (Joey's own agency)
 
 Joey's own business, not client work — same status as Threads below. Home is
