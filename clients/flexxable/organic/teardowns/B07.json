@@ -1,0 +1,61 @@
+{
+ "transcript": "If you're looking to make money with AI right now, then you're probably struggling for a few reasons. Number one, is you don't know how to actually find or contact a decent client. Number two, is you don't know how to close a client. Number three, you don't know what you're going to offer the client because every business is different. Number four, you don't know the first thing about pricing or how to charge somebody for AI. Nobody really talks about these things at all, but we do things differently in my agency. What we do is reach out to a business owner and say, 'Do you have any old leads or customers you've given up on?' We turn them into sales using AI and SMS or WhatsApp. And if you don't make sales or book appointments, you don't pay. And we take all the risk. And guess what? They almost always say yes. Why? Because they've got nothing to lose. I call this the offer of the century, and it's the simplest way to get your foot in the door and have a conversation with a client and start building that relationship.",
+ "frame0_visual": "A man in a blue cap and a dark jacket with white stripes is sitting in front of a wooden slatted wall, looking directly at the camera with his hands clasped.",
+ "frame0_text": "WHAT IF CLIENTS ONLY PAID WHEN YOU WIN?",
+ "first_spoken_line": "If you're looking to make money with AI right now, then you're probably struggling for a few reasons.",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "combination",
+ "hook_layer_doing_the_work": "combination, with the on-screen text posing a compelling question and the spoken words immediately identifying and validating the viewer's likely struggles.",
+ "core_idea": "The speaker's agency offers a unique, risk-free AI-powered lead generation service to business owners, converting old leads into sales on a performance-only basis, which is an easy way to get clients.",
+ "topic_bucket": "pricing / offer",
+ "who_is_called_out": "Aspiring AI entrepreneurs or agency owners who are currently struggling with client acquisition, closing, defining services, or pricing.",
+ "format": "talking head with b-roll",
+ "setting_and_production": "The talking head is shot indoors, likely an office or studio, with a modern wooden slatted wall background, good lighting, and clear audio. B-roll features various office/work settings, people interacting, and hands on laptops, sometimes with a glitch/scanline effect. Captions are large, bold, animated, and highlight key phrases with yellow/green accents.",
+ "cuts_per_10_seconds": 2.8,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.05,
+   "beat": "hook",
+   "what_happens": "Man introduces the problem of struggling to make money with AI."
+  },
+  {
+   "start": 0.05,
+   "end": 0.22,
+   "beat": "setup",
+   "what_happens": "Lists four specific reasons why people struggle: finding clients, closing clients, knowing what to offer, and pricing."
+  },
+  {
+   "start": 0.22,
+   "end": 0.25,
+   "beat": "reframe",
+   "what_happens": "States that 'we do things differently in my agency'."
+  },
+  {
+   "start": 0.25,
+   "end": 0.39,
+   "beat": "example",
+   "what_happens": "Explains their unique offer: reaching out to business owners for old leads, converting them to sales using AI/SMS/WhatsApp, and only getting paid on results (taking all the risk)."
+  },
+  {
+   "start": 0.39,
+   "end": 0.42,
+   "beat": "proof",
+   "what_happens": "States clients 'almost always say yes' because they have 'nothing to lose'."
+  },
+  {
+   "start": 0.42,
+   "end": 0.5,
+   "beat": "payoff",
+   "what_happens": "Calls it 'the offer of the century' and the 'simplest way to get your foot in the door' and build relationships."
+  }
+ ],
+ "payoff_delivered": "yes, The hook asks 'WHAT IF CLIENTS ONLY PAID WHEN YOU WIN?' and the video directly answers this by explaining their agency's model where clients *only pay when they win* (i.e., when sales or appointments are booked), thus delivering on the hook's promise.",
+ "specificity": "AI, SMS or WhatsApp, old leads or customers, sales or book appointments, offer of the century",
+ "share_or_save_trigger": "share, This video presents a novel and seemingly low-risk business model for aspiring AI agency owners, making it highly shareable to others in the same niche who are struggling, as it offers a clear, actionable strategy.",
+ "likely_drop_off": "After listing the four common struggles, some viewers might drop off if they don't immediately see how the speaker's approach will solve *all* of those problems, or if they're looking for a quick fix rather than a detailed explanation of a business model.",
+ "cta": "none",
+ "cta_type": "none",
+ "one_line_verdict": "The reel effectively uses a problem-solution framework and a compelling, risk-free offer to engage aspiring AI agency owners, but lacks a direct call to action.",
+ "_model": "gemini-2.5-flash"
+}

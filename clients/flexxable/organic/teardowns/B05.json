@@ -1,0 +1,97 @@
+{
+ "transcript": "I'll never do business with a client unless they hit these three checkpoints. And if you skip this before you pitch anyone with your AI automations, you're going to be wasting months chasing the wrong businesses. I run them through three checkpoints. First, has the business actually been running five years or more? A business with that kind of track record already has systems, a customer base, cash flow. They're not gonna disappear on you mid-project, and you've got the stability to actually invest in something new. Second, are they actively spending money? That can be running ads, doing SEO, paying for marketing in some form. This matters because it proves two things: they've got a budget to spend, and they've already got a flow of leads coming in that your AI service can plug into. Third, what's their average sale value? You see, I'm looking for businesses where a single sale is worth $3,000 or more. If the business only makes a small profit per customer, you're going to have to help them make tons of sales with your AI, which is still possible, it's just much harder. But if one single sale is worth thousands, I mean, a roofing job's worth $100,000 sometimes. You're only going to have to get them one extra customer to make you look like a hero and a no-brainer to continue. Meanwhile, niches like roofing, solar, high-ticket services, one job, as I said, can be worth between five and a $100,000, even more. So you only need to land them a couple of extra jobs and they're thrilled to keep paying you. Established, already spending on leads, big enough sales value. That's my criteria.",
+ "frame0_visual": "A bald man in a black t-shirt is looking directly at the camera, with his hands clasped in front of him. The background consists of vertical wooden slats and a green plant on the left.",
+ "frame0_text": "3 CHECKPOINTS BEFORE YOU PITCH",
+ "first_spoken_line": "I'll never do business with a client unless they hit these three checkpoints.",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "list promise",
+ "hook_layer_doing_the_work": "combination, the spoken words make a bold claim and promise a list, while the on-screen text explicitly states the list promise.",
+ "core_idea": "To build a successful AI automation agency, focus on established businesses that are actively spending on marketing and have high average sale values, as these clients offer stability, budget, existing lead flow, and a clear path to demonstrating significant ROI.",
+ "topic_bucket": "lead generation / outreach",
+ "who_is_called_out": "The viewer, implied to be someone looking to pitch AI automations, is called out as someone who will be 'wasting months chasing the wrong businesses' if they don't follow the advice.",
+ "format": "talking head with b-roll",
+ "setting_and_production": "Shot indoors, likely a home office or studio, with a warm, wooden slat background. The framing is a medium shot. It is a produced video with clear audio, on-screen text overlays, and relevant b-roll footage.",
+ "cuts_per_10_seconds": 2.4,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.05,
+   "beat": "hook",
+   "what_happens": "Speaker states he only works with clients who meet 3 checkpoints."
+  },
+  {
+   "start": 0.05,
+   "end": 0.09,
+   "beat": "setup",
+   "what_happens": "Warns viewers they'll waste time if they skip these checkpoints for AI automations."
+  },
+  {
+   "start": 0.09,
+   "end": 0.14,
+   "beat": "steps",
+   "what_happens": "Introduces the first checkpoint: business running 5+ years."
+  },
+  {
+   "start": 0.14,
+   "end": 0.24,
+   "beat": "proof",
+   "what_happens": "Explains why longevity matters (systems, customer base, cash flow, stability for investment)."
+  },
+  {
+   "start": 0.24,
+   "end": 0.28,
+   "beat": "steps",
+   "what_happens": "Introduces the second checkpoint: actively spending money on marketing."
+  },
+  {
+   "start": 0.28,
+   "end": 0.36,
+   "beat": "proof",
+   "what_happens": "Explains why spending matters (budget, lead flow for AI service)."
+  },
+  {
+   "start": 0.36,
+   "end": 0.4,
+   "beat": "reframe",
+   "what_happens": "Shows an AI text generation tool, reinforcing the AI service context."
+  },
+  {
+   "start": 0.4,
+   "end": 0.46,
+   "beat": "steps",
+   "what_happens": "Introduces the third checkpoint: average sale value of $3,000+."
+  },
+  {
+   "start": 0.46,
+   "end": 0.55,
+   "beat": "proof",
+   "what_happens": "Explains why high sale value matters (easier to show ROI with fewer sales)."
+  },
+  {
+   "start": 0.55,
+   "end": 1.05,
+   "beat": "example",
+   "what_happens": "Gives examples of high-ticket niches like roofing ($100k jobs) where one extra customer makes a huge impact."
+  },
+  {
+   "start": 1.05,
+   "end": 1.16,
+   "beat": "payoff",
+   "what_happens": "Reiterates that high-ticket niches make it easy to prove value and get paid."
+  },
+  {
+   "start": 1.16,
+   "end": 1.22,
+   "beat": "summary",
+   "what_happens": "Summarizes the three criteria: established, spending on leads, big sales value."
+  }
+ ],
+ "payoff_delivered": "yes, the video clearly outlines and explains the three checkpoints promised in the hook, providing actionable advice.",
+ "specificity": "3 checkpoints, 5 years or more, $3,000 or more, roofing job's worth $100,000, between five and a $100,000, niches like roofing, solar, high-ticket services.",
+ "share_or_save_trigger": "save, the video provides valuable, actionable criteria for qualifying clients, making it a useful resource to refer back to for anyone in the AI/lead-gen agency space.",
+ "likely_drop_off": "49.0, the b-roll showing generic analytics and someone typing on a laptop is less engaging and directly illustrative of the specific point being made at that moment compared to other b-roll segments.",
+ "cta": "none",
+ "cta_type": "none",
+ "one_line_verdict": "A clear, concise, and actionable guide for qualifying high-value clients for an AI automation agency, effectively using a talking head format with relevant b-roll.",
+ "_model": "gemini-2.5-flash"
+}

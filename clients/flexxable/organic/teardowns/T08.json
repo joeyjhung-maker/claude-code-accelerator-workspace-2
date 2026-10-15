@@ -1,0 +1,62 @@
+{
+ "transcript": "This thing right here, with a combo code on top, has helped me land clients bigger than I could ever have imagined. I've been sending a whiskey bottle to six, seven, and eight-figure business owners to get their attention, and it works better than anything I've tried before. I send it with a locked cap and a code on it, and I attach a letter like this, which explains how I know I can make them more money, save them more money, and remove painful headaches that they've had for years in their business. The letter tells them to give me a call, even if it's telling me to f**k off. But most people are pretty curious, right? And they want the bottle. We're able to have a chat about these problems they have, and they're excited, really excited to hear from me. That's the power of leading with a give rather than an ask. And I work that methodology into my deal too. I tell them they don't have to pay me a penny unless what I offer works. Sure, I take a deposit so I know they're serious, but I'm not asking for crazy setup fees or long-term retainer contracts. Then we try running my AI solutions in their business, and if it generates revenue, then I get a cut of it. And it all starts with getting their attention with this.",
+ "frame0_visual": "A bald man in a dark t-shirt holding a bottle of Glen Moray whiskey with a black combination lock on its cap. He is looking directly at the camera. The background consists of vertical wooden slats.",
+ "frame0_text": "A WHISKEY BOTTLE IS LANDING EIGHT FIGURE CLIENTS",
+ "first_spoken_line": "This thing right here, with a combo code on top, has helped me land clients bigger than I could ever have imagined.",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "bold claim",
+ "hook_layer_doing_the_work": "combination, the visual of the locked whiskey bottle, the on-screen text, and the spoken words immediately establish a surprising and bold claim.",
+ "core_idea": "Sending a locked whiskey bottle with a personalized letter to high-figure business owners is an effective 'give-first' strategy to grab attention, initiate conversations about their business problems, and ultimately land clients for AI solutions on a performance-based model.",
+ "topic_bucket": "lead generation / outreach",
+ "who_is_called_out": "six, seven, and eight-figure business owners, implicitly positioning the viewer as someone who wants to land such clients or is one themselves.",
+ "format": "talking head with b-roll",
+ "setting_and_production": "Primarily indoors with a wooden slat background for talking head shots, one outdoor b-roll shot. Medium close-up framing. Moderately produced with good lighting, clear audio, dynamic cuts, and large, bright green animated on-screen text.",
+ "cuts_per_10_seconds": 3,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.12,
+   "beat": "hook",
+   "what_happens": "Bold claim about a whiskey bottle landing 8-figure clients and its effectiveness."
+  },
+  {
+   "start": 0.12,
+   "end": 0.29,
+   "beat": "setup",
+   "what_happens": "Explains the mechanics: locked cap, code, letter detailing value, and a call to action."
+  },
+  {
+   "start": 0.29,
+   "end": 0.38,
+   "beat": "proof",
+   "what_happens": "Describes the positive response from recipients and the power of a 'give-first' approach."
+  },
+  {
+   "start": 0.38,
+   "end": 0.52,
+   "beat": "reframe",
+   "what_happens": "Details the performance-based offer: no payment unless it works, deposit, no crazy fees."
+  },
+  {
+   "start": 0.52,
+   "end": 0.57,
+   "beat": "example",
+   "what_happens": "Briefly mentions running AI solutions and getting a cut of generated revenue."
+  },
+  {
+   "start": 0.57,
+   "end": 1.0,
+   "beat": "payoff",
+   "what_happens": "Reiterates that the entire process starts with getting attention using the whiskey bottle."
+  }
+ ],
+ "payoff_delivered": "yes, the video fully explains the process of how a whiskey bottle is used to land 8-figure clients, from initial outreach to the deal structure.",
+ "specificity": "Glen Moray, six/seven/eight-figure business owners, locked cap and code, letter, AI solutions, deposit, no crazy setup fees or long-term retainer contracts, get a cut of revenue.",
+ "share_or_save_trigger": "save, this reel offers a unique, actionable, and specific lead generation strategy that other business owners or sales professionals might want to implement or adapt.",
+ "likely_drop_off": 0.3,
+ "likely_drop_off_reason": "After explaining the initial attention-grabbing tactic (locked bottle and letter), some viewers might have gotten the core idea and may not be interested in the deeper explanation of the deal structure or the AI solutions.",
+ "cta": "none",
+ "cta_type": "none",
+ "one_line_verdict": "A highly engaging and specific explanation of a unique lead generation strategy, effectively using curiosity and a 'give-first' approach to attract high-value clients.",
+ "_model": "gemini-2.5-flash"
+}

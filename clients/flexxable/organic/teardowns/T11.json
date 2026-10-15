@@ -1,0 +1,73 @@
+{
+ "transcript": "Whoa, my AI sales bot created a bunch of revenue for my solar client. That's a great commission to start the day. Whoa, looks like my personal injury client just closed a few more sales. That should bring me a nice profit. By the way, are we out of oat milk? When people talk about running your own digital agency, they talk about the freedom, the high income potential, but they never talk about the hard times. But I have to say, for a guy like me who didn't come from a tech background, making a living from AI isn't the worst. Whoa, I'm on fire today. I might need a nap later. Start living life on your time. Get the proven playbook helping thousands of people launch and scale profitable digital agencies. Get your copy of The Instant AI Agency now.",
+ "frame0_visual": "A smartphone lying on a wooden surface. A green glowing circle with 'Payment Received' is overlaid on the screen. A notification bubble says 'You've Just Received a Transfer of $1,000'.",
+ "frame0_text": "Payment Received\nYou've Just Received a Transfer of $1,000",
+ "first_spoken_line": "Whoa, my AI sales bot created a bunch of revenue for my solar client.",
+ "seconds_to_first_word": 0.9,
+ "hook_type": "proof-first",
+ "hook_layer_doing_the_work": "combination, the visual of 'Payment Received' and '$1,000' notification, combined with the spoken reaction, immediately establishes proof and a bold claim.",
+ "core_idea": "You can build a profitable digital agency using AI, even without a tech background, and achieve financial freedom.",
+ "topic_bucket": "AI opportunity",
+ "who_is_called_out": "People who want to run their own digital agency, specifically those who desire freedom and high income potential but are worried about 'hard times' or lack a tech background.",
+ "format": "talking head with b-roll",
+ "setting_and_production": "Shot in various home settings (bedroom, kitchen, living room/office). Framing is mostly medium close-up to medium shot. Lo-fi production style, appears self-shot with natural lighting. On-screen text captions are used for key phrases and 'Payment Received' notifications.",
+ "cuts_per_10_seconds": 2,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.07,
+   "beat": "hook",
+   "what_happens": "Visual of 'Payment Received' notification appears on screen."
+  },
+  {
+   "start": 0.07,
+   "end": 0.07,
+   "beat": "proof",
+   "what_happens": "Man in bed reacts to AI bot generating revenue for solar client."
+  },
+  {
+   "start": 0.07,
+   "end": 0.15,
+   "beat": "proof",
+   "what_happens": "Man in kitchen reacts to personal injury client closing sales, bringing him profit."
+  },
+  {
+   "start": 0.15,
+   "end": 0.24,
+   "beat": "reframe",
+   "what_happens": "Man at table discusses the 'freedom' and 'high income potential' of digital agencies but acknowledges 'hard times'."
+  },
+  {
+   "start": 0.24,
+   "end": 0.3,
+   "beat": "reframe",
+   "what_happens": "Man states that for someone without a tech background, making a living from AI 'isn't the worst'."
+  },
+  {
+   "start": 0.3,
+   "end": 0.35,
+   "beat": "proof",
+   "what_happens": "Man reacts to another 'Payment Received' notification, expressing confidence."
+  },
+  {
+   "start": 0.35,
+   "end": 0.42,
+   "beat": "payoff",
+   "what_happens": "Encourages viewers to 'Start living life on your time' and introduces 'The Instant AI Agency' playbook."
+  },
+  {
+   "start": 0.42,
+   "end": 0.51,
+   "beat": "CTA",
+   "what_happens": "Shows book, reviews, and explicit call to action to 'Get your copy' and 'Comment 'BOOK''."
+  }
+ ],
+ "payoff_delivered": "yes, the hook immediately shows financial success, and the body of the video explains how this is possible through an AI agency, leading to the solution (the book/playbook) that promises to help others achieve similar results.",
+ "specificity": "$1,000 transfer, solar client, personal injury client, 'The Instant AI Agency' (book title), Dan Wardrope (author name), Limited Time Offer $14.40, specific Amazon reviews with names and dates.",
+ "share_or_save_trigger": "Share: To friends or colleagues interested in starting an AI agency or making money with AI. Save: For personal reference to remember the book or the business model.",
+ "likely_drop_off": "27, the cut to a random basketball photo is jarring and breaks the flow of the narrative, potentially causing viewers to disengage.",
+ "cta": "Get your copy of The Instant AI Agency now. Comment 'BOOK' to create an INSTANT AI Agency",
+ "cta_type": "comment keyword",
+ "one_line_verdict": "The reel effectively uses a proof-first approach with repeated 'payment received' notifications to demonstrate the potential of AI agencies, leading to a clear call to action for the associated book.",
+ "_model": "gemini-2.5-flash"
+}

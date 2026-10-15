@@ -1,0 +1,79 @@
+{
+ "transcript": "Coding. B-tier. Powerful, but vibe coding has made it like really easy for everyone. Prompting. A-tier. Knowing what you want and how to prompt it will put you ahead of most people on this planet. Web design. D-tier. It was huge 10 years ago, but it's going away fast. Good copywriting is always gonna be good design. Copywriting. S-tier. True copywriting is never gonna be replaced by ChatGPT. Networking. A-tier. Business is all about relationships and AI can't build relationships for you. Finance. B-tier. You gotta know your numbers, it's very important, but AI can definitely help make that simpler. App development. C-tier. Everyone's trying to build the best app, but you still gotta sell that thing. Growing an audience. S-tier. There's a reason why the Kardashians are billionaires, okay? Once you've got an audience, you've got distribution, you can sell anything to it.",
+ "frame0_visual": "A man holding a basketball, looking slightly off-camera. A tier list graphic with S, A, B, C, D tiers is on the right side of the screen.",
+ "frame0_text": "SKILLS TO LEARN IN 2026",
+ "first_spoken_line": "Coding.",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "list promise",
+ "hook_layer_doing_the_work": "combination, the on-screen text 'SKILLS TO LEARN IN 2026' immediately sets the expectation for a ranked list, which is then reinforced by the first spoken word 'Coding' and its placement on the tier list.",
+ "core_idea": "The video ranks various skills based on their relevance and future-proofing in 2026, particularly in the context of AI's growing capabilities, emphasizing human-centric skills like copywriting, networking, and audience building.",
+ "topic_bucket": "AI opportunity",
+ "who_is_called_out": "Anyone interested in learning valuable skills for the future, specifically those looking to stay ahead in a world increasingly influenced by AI.",
+ "format": "talking head with on-screen graphics",
+ "setting_and_production": "Shot indoors against a modern wooden slatted wall. The man is framed in a medium close-up, holding a basketball. The production is clean with clear audio, good lighting, and animated graphics for the tier list and skill icons. Captions are large, white, and bold.",
+ "cuts_per_10_seconds": 2.1,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.0,
+   "beat": "hook",
+   "what_happens": "The title 'SKILLS TO LEARN IN 2026' appears, setting up the video's premise."
+  },
+  {
+   "start": 0.0,
+   "end": 0.05,
+   "beat": "example",
+   "what_happens": "Coding is placed in B-tier, with the justification that AI makes it easier."
+  },
+  {
+   "start": 0.05,
+   "end": 0.11,
+   "beat": "example",
+   "what_happens": "Prompting is placed in A-tier, highlighting its importance for leveraging AI."
+  },
+  {
+   "start": 0.11,
+   "end": 0.18,
+   "beat": "example",
+   "what_happens": "Web Design is placed in D-tier, stating it's quickly becoming obsolete due to AI."
+  },
+  {
+   "start": 0.18,
+   "end": 0.24,
+   "beat": "example",
+   "what_happens": "Copywriting is placed in S-tier, asserting that true copywriting is irreplaceable by ChatGPT."
+  },
+  {
+   "start": 0.24,
+   "end": 0.3,
+   "beat": "example",
+   "what_happens": "Networking is placed in A-tier, emphasizing the human element of relationships that AI cannot replicate."
+  },
+  {
+   "start": 0.3,
+   "end": 0.35,
+   "beat": "example",
+   "what_happens": "Finance is placed in B-tier, noting its importance but also AI's ability to simplify it."
+  },
+  {
+   "start": 0.35,
+   "end": 0.4,
+   "beat": "example",
+   "what_happens": "App Development is placed in C-tier, with the point that selling the app is still crucial."
+  },
+  {
+   "start": 0.4,
+   "end": 0.47,
+   "beat": "example",
+   "what_happens": "Growing an Audience is placed in S-tier, using the Kardashians as an example to illustrate the power of distribution."
+  }
+ ],
+ "payoff_delivered": "yes, the video clearly delivers on its promise by ranking a list of skills for 2026 and providing concise justifications for each tier placement.",
+ "specificity": "The video mentions '2026' as the target year, 'ChatGPT' as a specific AI tool, and 'Kardashians' as an example of audience leverage. It also refers to '10 years ago' for web design's past relevance.",
+ "share_or_save_trigger": "A viewer would likely save this video for future reference on career planning or skill development, or share it with friends and colleagues who are also considering what skills to learn for the future.",
+ "likely_drop_off": 0.3,
+ "cta": "none",
+ "cta_type": "none",
+ "one_line_verdict": "The reel effectively uses a dynamic tier-list format to quickly deliver valuable insights on future-proof skills, making it highly engaging and informative.",
+ "_model": "gemini-2.5-flash"
+}

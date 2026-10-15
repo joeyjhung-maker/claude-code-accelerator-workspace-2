@@ -1,0 +1,62 @@
+{
+ "transcript": "The fastest way to fail with AI is chasing every new tool that launches. I see so many people trying to master everything and stay on top of every single tool that's coming out. And by the time they master that tool, another tool comes onto the market. What we do is we just take a small piece of that tool and master that and go deep in that. And what we do is we take business owners' old leads and we turn them into sales using AI and SMS, right? So we get very good at that small slice of AI, that small slice of the tool that just works over and over again, and it will work again for many years. So the trick is not to go broad and learn every single product or every single AI solution out there. It's just to master one small thing with a timeless pain point for a client. And if you can do that, then you're not gonna get outdated.",
+ "frame0_visual": "A man with a shaved head, wearing a white linen shirt, sits at a dark wooden table. A green plant is visible on the left, and a wooden slatted wall forms the background. He is gesturing with both hands.",
+ "frame0_text": "CHASING AI TOOLS GUARANTEES AGENCY FAILURE",
+ "first_spoken_line": "The fastest way to fail with AI is chasing every new tool that launches.",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "contrarian/negation",
+ "hook_layer_doing_the_work": "combination, the on-screen text makes a bold, negative claim, immediately reinforced by the speaker's opening line.",
+ "core_idea": "To succeed with AI in an agency, focus on mastering a small, specific application of AI that addresses a timeless client pain point, rather than trying to keep up with every new AI tool.",
+ "topic_bucket": "AI opportunity",
+ "who_is_called_out": "People who are 'chasing every new tool' and 'trying to master everything and stay on top of every single tool that's coming out,' implying they are on a path to 'agency failure'.",
+ "format": "talking head to camera",
+ "setting_and_production": "Shot indoors, likely an office or studio, with a warm, professional aesthetic. Medium close-up framing. Produced with good lighting and clear audio. Captions are large, white, sans-serif text with a black outline, appearing word-by-word.",
+ "cuts_per_10_seconds": 0,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.04,
+   "beat": "hook",
+   "what_happens": "On-screen text and spoken words immediately present a contrarian claim about AI tools leading to agency failure."
+  },
+  {
+   "start": 0.04,
+   "end": 0.14,
+   "beat": "setup",
+   "what_happens": "Explains the problem: people trying to master every new AI tool, only for new ones to emerge constantly."
+  },
+  {
+   "start": 0.14,
+   "end": 0.24,
+   "beat": "reframe",
+   "what_happens": "Introduces his agency's solution: mastering a small piece of a tool and going deep, exemplified by turning old leads into sales using AI and SMS."
+  },
+  {
+   "start": 0.24,
+   "end": 0.34,
+   "beat": "proof",
+   "what_happens": "Highlights the longevity and effectiveness of their focused approach, stating it 'works over and over again' for 'many years'."
+  },
+  {
+   "start": 0.34,
+   "end": 0.44,
+   "beat": "reframe",
+   "what_happens": "Reiterates the core advice: focus on mastering one small thing that solves a timeless client pain point, rather than going broad."
+  },
+  {
+   "start": 0.44,
+   "end": 0.48,
+   "beat": "payoff",
+   "what_happens": "Delivers the benefit of following the advice: avoiding becoming 'outdated'."
+  }
+ ],
+ "payoff_delivered": "yes, the body clearly explains how to avoid the 'agency failure' promised by the hook and offers a strategy to stay relevant.",
+ "specificity": "old leads, sales, AI and SMS, one small thing with a timeless pain point.",
+ "share_or_save_trigger": "save, the video offers actionable, strategic advice for agency owners or aspiring entrepreneurs feeling overwhelmed by AI tools, providing a clear path to focus.",
+ "likely_drop_off": 0.15,
+ "why": "After the problem is clearly stated, some viewers might drop off if they are looking for a quick tip rather than a strategic explanation, or if they already agree and are not interested in the speaker's specific solution.",
+ "cta": "none",
+ "cta_type": "none",
+ "one_line_verdict": "The reel provides clear, actionable advice on how to strategically approach AI in an agency context by focusing on depth over breadth, but it lacks a direct call to action.",
+ "_model": "gemini-2.5-flash"
+}

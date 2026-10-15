@@ -1,0 +1,56 @@
+{
+ "transcript": "Listen to what Alex Hormozi says you should do if you have a thousand bucks. I would watch YouTube videos on AI integration into small businesses, and then I would go to small businesses, and once I had a specific integration that I would do, which I would probably bet would be around email lists activation because that's typically like fastest, easiest money that most business owners have is their contact list, you know, they've been in business 10 years, they've got, you know, 8,000 customers they've sold over that whole time period, and maybe a list of 20,000 leads that they've had, they never email them ever. If they do, it's just like, here's our random discount that we send once a quarter for Christmas or whatever. And I would say, \"Hey, I will email those people, and I will get everything approved by you, don't pay me anything, just pay me a percentage of the sales that we generate afterwards. How's that sound?\" And that offer tends to do well, and I know that because I've done it. You don't need to spend a single dollar to start this. Talk to a business owner, tell them you can solve them a problem. Read this book, set a database reactivation AI agent live, and start getting paid when it starts making money.",
+ "frame0_visual": "A bald man in a light blue shirt, Dan Wardrope, is looking slightly to the right of the camera, gesturing with his hands. The background consists of vertical wooden slats and a gold spotlight.",
+ "frame0_text": "",
+ "first_spoken_line": "Listen to what Alex Hormozi says you should do if you have a thousand bucks.",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "borrowed authority",
+ "hook_layer_doing_the_work": "combination, the speaker introduces a well-known authority figure (Alex Hormozi) and a specific financial challenge ($1000) to immediately grab attention.",
+ "core_idea": "You can start an AI agency with no upfront cost by reactivating existing customer email lists for small businesses and getting paid a percentage of the sales generated, a strategy detailed in 'The Instant AI Agency' book.",
+ "topic_bucket": "AI opportunity",
+ "who_is_called_out": "Someone who has $1000 (or less, as clarified later) and is looking for a business opportunity, likely without being a 'tech nerd'.",
+ "format": "talking head with b-roll",
+ "setting_and_production": "Dan Wardrope's segments are shot indoors with warm lighting, a wooden slat background, and a gold spotlight, appearing produced. Alex Hormozi's segment is an interview clip with a dark background and a Twitter/X-style text overlay, also appearing produced. Captions are white text on a black background.",
+ "cuts_per_10_seconds": 1,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.02,
+   "beat": "hook",
+   "what_happens": "Dan Wardrope introduces Alex Hormozi's advice for starting a business with $1000."
+  },
+  {
+   "start": 0.02,
+   "end": 0.42,
+   "beat": "example",
+   "what_happens": "Alex Hormozi explains his strategy: watch AI integration videos, approach small businesses, offer to reactivate email lists for a percentage of sales, highlighting it as 'fastest, easiest money'."
+  },
+  {
+   "start": 0.42,
+   "end": 0.47,
+   "beat": "reframe",
+   "what_happens": "Dan Wardrope reiterates that no money is needed to start, just talk to a business owner and solve a problem."
+  },
+  {
+   "start": 0.47,
+   "end": 0.5,
+   "beat": "proof",
+   "what_happens": "Dan Wardrope presents his book, 'The Instant AI Agency,' as the solution and #1 best seller."
+  },
+  {
+   "start": 0.5,
+   "end": 0.53,
+   "beat": "steps",
+   "what_happens": "Dan Wardrope summarizes the steps: read the book, set up an AI agent, and get paid based on performance."
+  }
+ ],
+ "payoff_delivered": "yes, the body provides a specific, actionable strategy from Alex Hormozi and then offers a resource (the book) to implement it, fulfilling the hook's promise of what to do with $1000 (or less).",
+ "specificity": "Alex Hormozi, YouTube videos on AI integration, small businesses, email lists activation, 8,000 customers, 20,000 leads, percentage of sales, 'The Instant AI Agency' book, Dan Wardrope, 6 & 7 figure checks, 'New Digital Gold Rush', 'without being a tech nerd'.",
+ "share_or_save_trigger": "A viewer would save this reel for its actionable, low-cost business idea, especially if interested in AI or lead generation. They might share it with friends looking for entrepreneurial opportunities or struggling with their current business's lead generation.",
+ "likely_drop_off": 0.42,
+ "likely_drop_off_reason": "The transition from Alex Hormozi's segment back to Dan Wardrope might cause some viewers who were primarily interested in Hormozi's direct advice to drop off, although Dan's quick re-engagement with the 'no money' angle helps mitigate this.",
+ "cta": "Read this book, set a database reactivation AI agent live, and start getting paid when it starts making money.",
+ "cta_type": "other",
+ "one_line_verdict": "This reel effectively uses borrowed authority and a clear, actionable, low-barrier business model to transition into a compelling product recommendation.",
+ "_model": "gemini-2.5-flash"
+}

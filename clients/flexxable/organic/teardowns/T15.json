@@ -1,0 +1,79 @@
+{
+ "transcript": "I sent a locked bottle of whiskey to a $10 million business along with a question. Have you got any old leads sitting in your database? I can turn into sales using AI. You only pay me when you get a result. It's not gonna cost you a penny otherwise. Of course they said yes. Obviously they do. And when you know how to make offers like this, landing clients is super easy. And this is how I generated $1.2 million for a single business, and they've sent me over $225,000 as a thank you. A simple AI bot talks to old leads, handles the objection, books the calls, follow-ups like a pro, and it's 100% automated. I haven't worked a lead, done a cold call, or built a funnel in a very long time. And now I can sit back and watch AI reactivate old leads while I sit back and get a cut of the profits for doing nothing. Follow me for more.",
+ "frame0_visual": "A man with a shaved head and a light blue collared shirt is holding a bottle of Glen Moray whiskey. He is looking directly at the camera. Behind him is a wooden slatted wall and a green plant.",
+ "frame0_text": "AI TURNED DEAD LEADS INTO SALES",
+ "first_spoken_line": "I sent a locked bottle of whiskey to a $10 million business along with a question.",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "story open",
+ "hook_layer_doing_the_work": "combination, the on-screen text makes a bold claim, the visual is intriguing, and the spoken word immediately starts a story.",
+ "core_idea": "You can reactivate old leads and generate significant sales for businesses using AI, with a performance-based offer, allowing you to earn substantial profits passively.",
+ "topic_bucket": "AI opportunity",
+ "who_is_called_out": "Businesses with \"old leads sitting in your database\" who are missing out on potential revenue.",
+ "format": "talking head with b-roll",
+ "setting_and_production": "The talking head segments are shot indoors, likely a studio, with a wooden slatted wall background and good lighting. B-roll includes office scenes, a person on a laptop, and screen recordings. The production is polished with clear audio and on-screen text captions that highlight keywords with a glitch effect.",
+ "cuts_per_10_seconds": 2.6,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.04,
+   "beat": "hook",
+   "what_happens": "Man introduces sending whiskey to a $10M business with a question."
+  },
+  {
+   "start": 0.04,
+   "end": 0.09,
+   "beat": "setup",
+   "what_happens": "Explains the question: 'old leads in database? I can turn them into sales using AI.'"
+  },
+  {
+   "start": 0.09,
+   "end": 0.12,
+   "beat": "offer",
+   "what_happens": "Details the performance-based offer: 'only pay me when you get a result, not a penny otherwise.'"
+  },
+  {
+   "start": 0.12,
+   "end": 0.17,
+   "beat": "reframe / proof",
+   "what_happens": "States 'Of course they said yes' and that making offers like this makes landing clients easy."
+  },
+  {
+   "start": 0.17,
+   "end": 0.27,
+   "beat": "proof / payoff",
+   "what_happens": "Reveals results: '$1.2 million generated for a single business,' and '$225,000 as a thank you.'"
+  },
+  {
+   "start": 0.27,
+   "end": 0.32,
+   "beat": "how-to",
+   "what_happens": "Explains the mechanism: 'simple AI bot talks to old leads, handles objections, books calls, follow-ups.'"
+  },
+  {
+   "start": 0.32,
+   "end": 0.39,
+   "beat": "benefit / payoff",
+   "what_happens": "Emphasizes automation: '100% automated,' 'I haven't worked a lead... in a very long time.'"
+  },
+  {
+   "start": 0.39,
+   "end": 0.45,
+   "beat": "payoff / benefit",
+   "what_happens": "Reinforces passive income: 'sit back and watch AI reactivate old leads while I sit back and get a cut of the profits for doing nothing.'"
+  },
+  {
+   "start": 0.45,
+   "end": 0.47,
+   "beat": "CTA",
+   "what_happens": "Call to action to follow for more."
+  }
+ ],
+ "payoff_delivered": "yes, the hook promised AI turning dead leads into sales, and the video provides a story, a specific offer, and concrete results ($1.2M, $225K) to back it up, explaining how it's done (AI bot) and the benefit (passive income).",
+ "specificity": "locked bottle of whiskey, Glen Moray, $10 million dollar business, old leads sitting in your database, AI, $1.2 million, single business, $225,000, simple AI bot, Jarvis, Python code, calendar.",
+ "share_or_save_trigger": "strong, business owners or aspiring entrepreneurs would share this with others who have old leads or are looking for new revenue streams. People interested in AI, lead generation, or starting an agency would save this for the 'how-to' and the compelling offer structure, especially the promise of passive income.",
+ "likely_drop_off": 0.12,
+ "cta": "Follow me for more.",
+ "cta_type": "follow",
+ "one_line_verdict": "This reel effectively combines a compelling story, a bold claim, and strong proof with a clear, low-risk offer, making it highly engaging for business-minded viewers.",
+ "_model": "gemini-2.5-flash"
+}

@@ -1,0 +1,67 @@
+{
+ "transcript": "If you're selling leads to clients, someone that's got 10 years, 20 years experience doing this is going to completely wipe the floor with you if you're a newcomer or a newbie coming into this space. It's a complete level playing field. If you're able to watch, you know, one month's worth of training for free that you can get on YouTube, you're going to know more than your client, a little bit more, which means that you're going to be in a position to sell to them with confidence coming from experience. It's my responsibility to give you the confidence to be able to sell this and know that you're going to be able to get client results. This is the first time in history as well that AI is going to do the work for you. But you might be asking, you know, what can I sell? And it so just happens that we've created a guide that give you five ways that you can sell AI services with confidence to clients and then get AI to do all the work. It's called the last way for the little guy to make it, and I created it for you because we're the little guy and it's the little guy's chance, and it's our turn to really, really make a difference and really help these clients.",
+ "frame0_visual": "A bald man in a teal jacket with a 'The North Face' logo is speaking directly to the camera. The background consists of vertical wooden slats.",
+ "frame0_text": "if you're selling",
+ "first_spoken_line": "If you're selling",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "contrarian/negation",
+ "hook_layer_doing_the_work": "combination, the spoken words set up a common challenge, and the on-screen text and visual (Hulk smashing) dramatically emphasize the difficulty for newcomers.",
+ "core_idea": "Newcomers can successfully sell AI services to clients and achieve results by leveraging free training and AI tools, and a guide is available to show them how to do this confidently.",
+ "topic_bucket": "AI opportunity",
+ "who_is_called_out": "newcomer or newbie coming into the space (selling leads/AI services)",
+ "format": "talking head with b-roll",
+ "setting_and_production": "Shot indoors against a wooden slat wall, with a medium shot of the speaker. The production is polished with dynamic text overlays, animated graphics (stars, Hulk, old computer, polaroids), and background changes (green screen effects).",
+ "cuts_per_10_seconds": 5,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.09,
+   "beat": "hook",
+   "what_happens": "The speaker introduces the challenge for newcomers trying to sell leads against experienced competitors."
+  },
+  {
+   "start": 0.09,
+   "end": 0.11,
+   "beat": "reframe",
+   "what_happens": "He immediately reframes the situation, claiming it's a 'complete level playing field' in this new space."
+  },
+  {
+   "start": 0.11,
+   "end": 0.24,
+   "beat": "setup",
+   "what_happens": "Explains that free YouTube training can provide enough knowledge to confidently sell to clients."
+  },
+  {
+   "start": 0.24,
+   "end": 0.31,
+   "beat": "proof",
+   "what_happens": "States his personal responsibility to give viewers confidence and ensure they get client results."
+  },
+  {
+   "start": 0.31,
+   "end": 0.35,
+   "beat": "reframe",
+   "what_happens": "Highlights AI as a revolutionary tool that will do the work for the user."
+  },
+  {
+   "start": 0.35,
+   "end": 0.47,
+   "beat": "payoff",
+   "what_happens": "Reveals a guide with 'five ways' to sell AI services confidently to clients and let AI handle the tasks."
+  },
+  {
+   "start": 0.47,
+   "end": 0.59,
+   "beat": "CTA",
+   "what_happens": "Positions the guide as 'the last way for the little guy to make it' and provides a comment-based call to action."
+  }
+ ],
+ "payoff_delivered": "yes, the body delivers on the hook's promise by explaining how newcomers can gain confidence and leverage AI to compete effectively, offering a specific guide as the solution.",
+ "specificity": "10 years, 20 years experience, one month's worth of training for free that you can get on YouTube, five ways, AI services, the last way for the little guy to make it.",
+ "share_or_save_trigger": "strong, it directly addresses the pain point of 'newcomers' or 'little guys' feeling disadvantaged and offers a free, actionable guide to overcome this, making it highly relevant and valuable to its target audience.",
+ "likely_drop_off": 0.37,
+ "cta": "COMMENT \"GUIDE\" TO GET IT FOR FREE",
+ "cta_type": "comment keyword",
+ "one_line_verdict": "The reel effectively uses a contrarian hook and dynamic visuals to promise a solution for newcomers in the AI agency space, culminating in a clear, value-driven CTA.",
+ "_model": "gemini-2.5-flash"
+}

@@ -1,0 +1,67 @@
+{
+ "transcript": "rank these AI side hustles to start in the next year. Amazon FBA or drop shipping. F tier because it requires buying inventory upfront, dealing with shipping times and operating on pretty small profit margins. AI content creation or faceless channels. B tier. Very popular but it takes months to build an audience and monetize YouTube AdSense is slow. Writing AI children's books. F tier. A massive fad for the last two years. The Amazon Kindle store is completely saturated. Without a marketing budget and no one's going to buy them anyway. Selling AI prompts on Etsy. D tier. Highly saturated again. Low-ticket items. You have to sell hundreds of prompts just to make a few bucks. Reactivating dead leads for businesses. S tier. Businesses are desperate for sales and sick of spending money on new leads. All you have to do is rent out a bot that revives old leads. It's high profit and it's very low risk and the business owner loves it. Using AI for crypto or day trading. F tier. Extremely high risk and this is the fastest way you can lose all of your savings.",
+ "frame0_visual": "A man with a bald head and a blue t-shirt is looking to his right, with his right hand on his chin. In the bottom left, a tier list graphic with 'S', 'A', 'B', 'D', 'F' categories is visible.",
+ "frame0_text": "rank these",
+ "first_spoken_line": "rank these",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "list promise",
+ "hook_layer_doing_the_work": "combination, the spoken words set the premise, and the on-screen tier list graphic visually reinforces the 'ranking' aspect.",
+ "core_idea": "Most popular AI side hustles are poor choices due to saturation or risk, but reactivating dead leads for businesses using AI is a high-profit, low-risk S-tier opportunity.",
+ "topic_bucket": "AI opportunity",
+ "who_is_called_out": "People interested in 'AI side hustles' and looking to 'start in the next year', implicitly calling out those considering popular but ineffective options.",
+ "format": "talking head to camera",
+ "setting_and_production": "Shot indoors, likely an office or home office, with a striped wooden wall background. Medium close-up framing. Lo-fi production with simple cuts and on-screen text/graphics.",
+ "cuts_per_10_seconds": 2.07,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.02,
+   "beat": "hook",
+   "what_happens": "The speaker introduces the topic: ranking AI side hustles."
+  },
+  {
+   "start": 0.03,
+   "end": 0.1,
+   "beat": "example",
+   "what_happens": "Amazon FBA/Dropshipping is ranked F-tier with reasons provided."
+  },
+  {
+   "start": 0.11,
+   "end": 0.19,
+   "beat": "example",
+   "what_happens": "AI content creation/faceless channels are ranked B-tier with reasons."
+  },
+  {
+   "start": 0.2,
+   "end": 0.28,
+   "beat": "example",
+   "what_happens": "Writing AI children's books is ranked F-tier with reasons."
+  },
+  {
+   "start": 0.29,
+   "end": 0.37,
+   "beat": "example",
+   "what_happens": "Selling AI prompts on Etsy is ranked D-tier with reasons."
+  },
+  {
+   "start": 0.38,
+   "end": 0.49,
+   "beat": "payoff",
+   "what_happens": "Reactivating dead leads for businesses is ranked S-tier, highlighted as high profit and low risk."
+  },
+  {
+   "start": 0.5,
+   "end": 0.57,
+   "beat": "example",
+   "what_happens": "Using AI for crypto/day trading is ranked F-tier due to high risk."
+  }
+ ],
+ "payoff_delivered": "yes, the video delivers a clear ranking of AI side hustles as promised, with explanations for each tier.",
+ "specificity": "Amazon FBA, dropshipping, YouTube AdSense, Amazon Kindle store, Etsy, AI prompts, dead lead reactivation, crypto, day trading.",
+ "share_or_save_trigger": "likely save, as it provides actionable advice on which AI side hustles to pursue (S-tier) and which to avoid (F, D, B tiers).",
+ "likely_drop_off": "0:49, because the main S-tier recommendation has been made, and the subsequent item is another negative ranking, which might be less engaging to viewers who have already found their answer.",
+ "cta": "none",
+ "cta_type": "none",
+ "one_line_verdict": "The reel effectively uses a tier-list format to quickly rank and explain various AI side hustles, clearly highlighting a high-profit, low-risk opportunity.",
+ "_model": "gemini-2.5-flash"
+}

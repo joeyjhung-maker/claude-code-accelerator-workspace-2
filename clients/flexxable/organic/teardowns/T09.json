@@ -1,0 +1,73 @@
+{
+ "transcript": "Okay, so I have $1,000. So, I would take the $1,000, put it in my pocket, do nothing with it. And I would watch YouTube videos on AI integration into small businesses and then I would go to small businesses and once I had a specific integration that I would do, which I would probably bet would be around likely email list activation. SMS. Because that's typically like fastest, easiest money that most business owners have is their contact list. So they've got, you know, they've been in business 10 years. They've got, you know, 8,000 customers they've sold over that whole time period and maybe a list of, you know, call it 20,000 leads that they've had. They never email them ever. If they do, it's just like, here's our random discount that we sent once a quarter for Christmas or whatever. And I would say, hey, I will email those people and I will uh by you and don't pay me anything. Just pay me a percentage of the sales that we generate afterwards. How's that sound? sales. Or you can charge up front. And that offer tends to do well and I know that because I've done it. So that's what I would do. In the $1000 I would go buy a Layla something for a little bit of time until uh I make the money from my my email reactivation campaign. This is where I'd start, and it's absolutely free.",
+ "frame0_visual": "Split screen. Top: Man in black cap and black long-sleeve shirt, looking down, with a microphone clipped to his shirt. Background is a light wooden slatted wall. Bottom: Man with long hair, beard, black cap, and plaid shirt, looking slightly to the right, with a small black strip on his nose. Background is dark.",
+ "frame0_text": "",
+ "first_spoken_line": "Okay, so I have $1,000.",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "curiosity gap",
+ "hook_layer_doing_the_work": "spoken | The speaker immediately states a premise ('I have $1,000') that prompts the viewer to wonder what he would do with it.",
+ "core_idea": "With $1000, one should learn AI integration for small businesses, specifically focusing on email list reactivation on a performance basis, as it's a low-cost, high-return strategy.",
+ "topic_bucket": "AI opportunity",
+ "who_is_called_out": "Aspiring entrepreneurs or individuals with limited capital (specifically $1000) looking for a low-risk, high-reward business strategy.",
+ "format": "podcast or interview clip",
+ "setting_and_production": "Top screen: Indoor, well-lit, modern background. Bottom screen: Indoor, dark background. Both framed chest-up. Produced with on-screen text captions highlighting key phrases and a YouTube video overlay.",
+ "cuts_per_10_seconds": 1,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.01,
+   "beat": "hook",
+   "what_happens": "Speaker states he has $1000, setting up the premise."
+  },
+  {
+   "start": 0.01,
+   "end": 0.07,
+   "beat": "setup",
+   "what_happens": "He explains he would save the money and learn AI integration for small businesses via YouTube."
+  },
+  {
+   "start": 0.07,
+   "end": 0.16,
+   "beat": "example",
+   "what_happens": "He identifies email list activation (likely SMS) as a specific integration."
+  },
+  {
+   "start": 0.17,
+   "end": 0.31,
+   "beat": "reframe",
+   "what_happens": "He explains why email list activation is effective: it's the fastest, easiest money for businesses with dormant contact lists."
+  },
+  {
+   "start": 0.31,
+   "end": 0.44,
+   "beat": "steps",
+   "what_happens": "He details the offer: email people and get a percentage of sales generated, no upfront payment."
+  },
+  {
+   "start": 0.47,
+   "end": 0.5,
+   "beat": "proof",
+   "what_happens": "He states this offer tends to do well because he has done it himself."
+  },
+  {
+   "start": 0.5,
+   "end": 0.58,
+   "beat": "payoff",
+   "what_happens": "The $1000 is used for personal expenses until the email reactivation campaign generates income."
+  },
+  {
+   "start": 0.59,
+   "end": 1.03,
+   "beat": "CTA",
+   "what_happens": "Dan Wardrope points to a YouTube video, stating it's where to start and it's free."
+  }
+ ],
+ "payoff_delivered": "yes, The reel clearly outlines a step-by-step strategy for using $1000 to start an AI/lead-gen agency, fulfilling the implied promise of the hook.",
+ "specificity": "$1,000, YouTube videos, AI integration, small businesses, email list activation, SMS, 10 years in business, 8,000 customers, 20,000 leads, random discount, once a quarter for Christmas, percentage of sales, Layla (personal reference), Prince Charming AI Challenge (YouTube video title).",
+ "share_or_save_trigger": "strong, The reel offers actionable, low-cost business advice that is highly valuable for aspiring entrepreneurs or small business owners looking for new strategies.",
+ "likely_drop_off": 0.35,
+ "cta": "This is where I'd start, and it's absolutely free.",
+ "cta_type": "other",
+ "one_line_verdict": "The reel provides a highly actionable and specific business strategy for starting an AI/lead-gen agency with minimal capital, making it very valuable for its target audience.",
+ "_model": "gemini-2.5-flash"
+}

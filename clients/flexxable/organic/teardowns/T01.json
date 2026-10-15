@@ -1,0 +1,73 @@
+{
+ "transcript": "This thing right here has helped me land clients bigger than I could have ever imagined. I sent whiskey bottles to 6, 7 and 8 figure business owners and I've locked the cap, attached a letter and if they want the code, they've got to call me. And I'm actually pretty blunt in the letter. I tell them exactly how I know how I can make them more money, save them money and kill a headache they've probably had for years. And then I tell them to call me even if it's just to tell me to f*** off. Most business owners are curious though and they like good booze, so they want to open the bottle. So they call and within 2 minutes we're talking about what I can do for them. That's a difference between cold calling someone and having someone already curious before you've even said a word. I've sneakily figured out how to turn a cold prospect into a very warm one. And I don't ask the crazy setup fees. I don't lead with a retainer contract and I don't have them sign ridiculous contracts. I run a test and if my AI solutions make them money, I get a cut of it. If it doesn't, they've lost nothing. And it all starts with getting their attention with this and this.",
+ "frame0_visual": "A bald man in a dark blue t-shirt holds a small whiskey bottle with a black lock on its cap, looking directly at the camera. A slatted wooden wall is in the background, with a green plant on the left and a light fixture on the right.",
+ "frame0_text": "FROM LOCKED BOTTLE TO BOOKED CALL IN 2 MINUTES",
+ "first_spoken_line": "This thing right here has helped me land clients bigger than I could have ever imagined.",
+ "seconds_to_first_word": 0,
+ "hook_type": "bold claim",
+ "hook_layer_doing_the_work": "combination, the visual of the locked bottle and the on-screen text immediately create a curiosity gap and support the bold claim made verbally.",
+ "core_idea": "A unique, personalized outreach strategy involving a locked whiskey bottle can effectively convert cold prospects into warm leads and booked calls, leading to performance-based client relationships.",
+ "topic_bucket": "lead generation / outreach",
+ "who_is_called_out": "The viewer is implied to be someone interested in landing '6, 7 and 8 figure business owners' as clients, or someone looking for effective lead generation strategies.",
+ "format": "talking head with b-roll",
+ "setting_and_production": "The main speaker is filmed in a well-lit indoor setting with a modern wooden slatted wall background. B-roll includes various business environments like a cafe, office, and meeting room. The framing is a medium close-up for the speaker. The production quality is high, with clear audio and dynamic text overlays. Key phrases are highlighted with large, animated yellow and green text, while the full transcript appears in white.",
+ "cuts_per_10_seconds": 3,
+ "structure": [
+  {
+   "start": 0,
+   "end": 4,
+   "beat": "hook",
+   "what_happens": "Man introduces a 'thing' that helped him land big clients."
+  },
+  {
+   "start": 4,
+   "end": 12,
+   "beat": "setup",
+   "what_happens": "Explains the 'thing': sending locked whiskey bottles to high-figure business owners, requiring a call for the code."
+  },
+  {
+   "start": 12,
+   "end": 24,
+   "beat": "setup",
+   "what_happens": "Details the letter's content: how he can make/save them money and solve problems, with a blunt call to action."
+  },
+  {
+   "start": 24,
+   "end": 32,
+   "beat": "proof / example",
+   "what_happens": "Explains why it works (curiosity, good booze) and the immediate result (call within 2 minutes, talking about solutions)."
+  },
+  {
+   "start": 32,
+   "end": 43,
+   "beat": "reframe",
+   "what_happens": "Contrasts this method with cold calling, highlighting the 'warm prospect' advantage."
+  },
+  {
+   "start": 43,
+   "end": 49,
+   "beat": "reframe",
+   "what_happens": "Addresses common sales objections by stating what he doesn't do (crazy setup fees, retainers, ridiculous contracts)."
+  },
+  {
+   "start": 49,
+   "end": 54,
+   "beat": "payoff",
+   "what_happens": "Explains his performance-based model: a cut of money made, no loss if it doesn't work."
+  },
+  {
+   "start": 54,
+   "end": 59,
+   "beat": "CTA",
+   "what_happens": "Reiterates the core idea: it all starts with getting their attention with 'this and this' (showing the bottle)."
+  }
+ ],
+ "payoff_delivered": "yes, the video fully explains how the locked bottle leads to a booked call in 2 minutes, fulfilling the hook's promise with a detailed strategy and business model.",
+ "specificity": "whiskey bottles, 6 7 and 8 figure business owners, locked cap, attached letter, call for code, make them more money, save them money, kill a headache, within 2 minutes, cold prospect into a very warm one, AI solutions, get a cut of it, lost nothing.",
+ "share_or_save_trigger": "strong, the reel presents a highly unique, actionable, and potentially very effective lead generation strategy that sales professionals or business owners would likely want to save for future reference or share with colleagues.",
+ "likely_drop_off": 24,
+ "cta": "And it all starts with getting their attention with this and this.",
+ "cta_type": "none",
+ "one_line_verdict": "The reel masterfully uses a tangible, curiosity-inducing prop and a bold claim to present an innovative and highly effective lead generation strategy.",
+ "_model": "gemini-2.5-flash"
+}

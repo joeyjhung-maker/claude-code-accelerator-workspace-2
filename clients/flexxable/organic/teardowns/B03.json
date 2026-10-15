@@ -1,0 +1,56 @@
+{
+ "transcript": "I had a sales call and I was showing him what our AI sales Androids could do for his business. And then he came to the realization that his staff spent most of their time doing boring repetitive tasks. Stuff like giving patients their aftercare plans, answering questions over and over, organizing the calendar. But my mate didn't want to replace his staff with AI. He just wanted to take those boring tasks away from them. All the jobs that they hate. Because when they're happier, they can work on stuff that actually moves the needle and gives them a chance of growth and improving their skills, which is what they want too.",
+ "frame0_visual": "A woman with glasses is on a phone call while looking at a laptop, with a desk and office background.",
+ "frame0_text": "I had A SALES CALL",
+ "first_spoken_line": "I had a sales call",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "story open",
+ "hook_layer_doing_the_work": "combination, the spoken words immediately start an anecdote, reinforced by the on-screen text and visual of a person on a call.",
+ "core_idea": "AI can automate repetitive tasks, allowing human staff to focus on more meaningful work that drives growth and skill development, rather than replacing them.",
+ "topic_bucket": "AI opportunity",
+ "who_is_called_out": "Business owners or managers whose staff spend significant time on boring, repetitive tasks.",
+ "format": "talking head with b-roll",
+ "setting_and_production": "The main speaker is a talking head shot in a medium close-up against a warm, wooden slatted background with plants and studio lights, indicating a produced setting. B-roll footage is interspersed, showing various work scenarios. The caption style uses dynamic, green, glitch-effect text overlays for key phrases.",
+ "cuts_per_10_seconds": 6,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.05,
+   "beat": "hook",
+   "what_happens": "The speaker opens with a personal story about a sales call for AI sales Androids."
+  },
+  {
+   "start": 0.05,
+   "end": 0.1,
+   "beat": "setup",
+   "what_happens": "He explains the client's realization that staff spend most of their time on boring, repetitive tasks."
+  },
+  {
+   "start": 0.1,
+   "end": 0.16,
+   "beat": "example",
+   "what_happens": "Specific examples of these repetitive tasks are given, such as aftercare plans, answering questions, and organizing calendars."
+  },
+  {
+   "start": 0.16,
+   "end": 0.21,
+   "beat": "reframe",
+   "what_happens": "The speaker clarifies that the client didn't want to replace staff with AI, but rather to remove the boring tasks from them."
+  },
+  {
+   "start": 0.21,
+   "end": 0.28,
+   "beat": "payoff",
+   "what_happens": "The benefit is explained: happier staff can then work on tasks that move the needle, allowing for growth and skill improvement."
+  }
+ ],
+ "payoff_delivered": "yes, the body pays off the hook by explaining how AI can positively impact staff productivity and happiness by handling mundane tasks, which is a direct benefit of the 'AI sales Androids' mentioned in the hook.",
+ "specificity": "AI sales Androids, aftercare plans, answering questions over and over, organizing the calendar.",
+ "share_or_save_trigger": "A business owner or manager looking for ways to improve staff morale and productivity, or someone interested in practical, non-threatening applications of AI in the workplace, would likely save this reel.",
+ "likely_drop_off": 0.18,
+ "why": "After the examples of repetitive tasks, some viewers might disengage if they don't immediately see the relevance to their own situation or if they expect a different kind of AI solution (e.g., full automation/replacement).",
+ "cta": "none",
+ "cta_type": "none",
+ "one_line_verdict": "The reel effectively reframes the role of AI in the workplace from replacement to augmentation, offering a positive and practical perspective for business owners.",
+ "_model": "gemini-2.5-flash"
+}

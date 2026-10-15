@@ -1,0 +1,91 @@
+{
+ "transcript": "I accidentally made cold calling easier by making the opener impossible to ignore. And you know what? Cold calling feels horrible. I'm terrible at it. But what we did is we sent the people we're calling a bottle of whiskey. So we sent this bottle of whiskey to adventure park owners. These are kind of eight-figure business owners, and we sent a letter with this bottle. And as you can see, the actual bottles of whiskey have a combination lock on the lid. Guess what? Around one-third of the business owners called us back. But not everyone. There was two-thirds of people that didn't, which means eventually I have to do the one thing I hate doing, which is picking up the phone and calling them. And I just ask if they've got it. And that used to feel awkward if I hadn't sent something beforehand. But now if I'm calling someone, I can just say, 'Listen, did you get that bottle of whiskey I sent you?' And then it naturally progresses to getting them on a call and closing them with our AI offer. And the reason it works so well is, yeah, I've spent £30, $40, whatever it is on this bottle of whiskey, but it's well worth it, especially because the type of people I'm calling are like own big businesses. And that's the power of direct mail. It makes the cold call much more warmer before you even speak, especially if they've got it, and we send it by tracked post. It gives you a reason to start conversation without feeling like a desperate salesperson. And sometimes the best outreach strategy is just doing something that makes people feel like they should respond.",
+ "frame0_visual": "A man in a white and grey baseball cap and black t-shirt holds a bottle of Glen Moray whiskey. He is smiling and looking at the camera. Behind him is a wooden slatted wall and a green plant.",
+ "frame0_text": "THIS WHISKEY BOTTLE CLOSED MORE DEALS",
+ "first_spoken_line": "I accidentally made cold calling easier by making the opener impossible to ignore.",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "bold claim",
+ "hook_layer_doing_the_work": "combination, The on-screen text makes a bold claim, immediately reinforced by the speaker's words and the visual of him holding the whiskey bottle.",
+ "core_idea": "Sending a physical gift like a locked whiskey bottle via direct mail makes cold calling significantly easier and more effective by providing a natural conversation starter and increasing response rates.",
+ "topic_bucket": "lead generation / outreach",
+ "who_is_called_out": "Business owners, specifically \"8-figure business owners\" and those who \"own big businesses.\" The implied audience for the advice is anyone who struggles with cold calling or wants to improve their outreach.",
+ "format": "talking head with b-roll",
+ "setting_and_production": "Shot indoors, likely an office or studio with a wooden slatted wall. Medium close-up framing of the speaker. Produced with text overlays, b-roll (movie/TV clips, product shots), and clear audio. Caption style is large, bold white text with blue highlights for keywords.",
+ "cuts_per_10_seconds": 3,
+ "structure": [
+  {
+   "start": 0,
+   "end": 6,
+   "beat": "hook / bold claim",
+   "what_happens": "Speaker claims a whiskey bottle made cold calling easier and impossible to ignore."
+  },
+  {
+   "start": 6,
+   "end": 9,
+   "beat": "problem / empathy",
+   "what_happens": "Speaker expresses dislike for cold calling, relating to the audience."
+  },
+  {
+   "start": 9,
+   "end": 20,
+   "beat": "solution introduction",
+   "what_happens": "Introduces the idea of sending a bottle of whiskey to '8-figure business owners' with a letter."
+  },
+  {
+   "start": 20,
+   "end": 24,
+   "beat": "unique mechanism",
+   "what_happens": "Reveals the whiskey bottle has a combination lock on the lid."
+  },
+  {
+   "start": 24,
+   "end": 27,
+   "beat": "proof / results",
+   "what_happens": "States one-third of recipients called back for the code."
+  },
+  {
+   "start": 27,
+   "end": 35,
+   "beat": "problem reframe",
+   "what_happens": "Acknowledges two-thirds didn't call back, leading to the need for a cold call."
+  },
+  {
+   "start": 35,
+   "end": 49,
+   "beat": "solution application / reframe",
+   "what_happens": "Explains how the gift makes the subsequent cold call much easier and natural, leading to closing deals with their AI offer."
+  },
+  {
+   "start": 49,
+   "end": 50,
+   "beat": "CTA / product placement",
+   "what_happens": "Brief screen recording of his 'AI Automation Agency' offer."
+  },
+  {
+   "start": 50,
+   "end": 55,
+   "beat": "cost justification",
+   "what_happens": "Addresses the cost of the whiskey bottle (£30-40)."
+  },
+  {
+   "start": 55,
+   "end": 100,
+   "beat": "value proposition / proof",
+   "what_happens": "Explains it's 'well worth it' for targeting big businesses, highlighting the power of direct mail to warm up cold calls."
+  },
+  {
+   "start": 100,
+   "end": 118,
+   "beat": "summary / reframe / call to action",
+   "what_happens": "Reiterates that direct mail makes cold calls warmer and provides a reason to connect without seeming desperate, ending with the idea of making people feel they should respond."
+  }
+ ],
+ "payoff_delivered": "yes, The hook's promise that the whiskey bottle closed more deals and made cold calling easier is paid off by explaining the direct mail strategy, the combination lock, and how it warms up subsequent cold calls, leading to deals.",
+ "specificity": "Glen Moray whiskey, Jack Daniel's Sinatra Select, '15' and '12' year old whiskey, '8-figure business owners', 'one-third' and 'two-thirds' response rates, '£30, $40' cost.",
+ "share_or_save_trigger": "strong, Viewers interested in sales, lead generation, or unique outreach strategies would save this for future reference or share it with colleagues in sales/marketing due to the specific, actionable, and innovative tactic.",
+ "likely_drop_off": 49,
+ "cta": "START & SCALE AN A.I. AUTOMATION AGENCY",
+ "cta_type": "link in bio",
+ "one_line_verdict": "The reel effectively uses a unique, tangible example to illustrate an innovative lead generation strategy, making a typically dry topic engaging and actionable.",
+ "_model": "gemini-2.5-flash"
+}

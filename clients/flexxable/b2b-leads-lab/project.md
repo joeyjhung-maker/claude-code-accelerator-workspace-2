@@ -2,6 +2,39 @@
 
 *Started 2026-08-19. Parent client: [[clients/flexxable/client.md]]*
 
+## STRUCTURE SUPERSEDED 2026-10-10 — "Flexx Airways" (read this before anything below)
+
+Dan's Loom to Nat on 10 Oct 2026 replaces the ladder and the lanes further down this file. Full
+transcript and the handwritten page: [[flexx-airways-2026-10-10]]
+(`flexx-airways-2026-10-10.md`). Hormozi read of it: `../2026-10-12-hormozi-business-audit.md`.
+
+- **This is no longer the "second front."** Dan is moving Flexxable off AI automation and onto B2B
+  leads. His words: "we're going to lose high-level income, and it's going to be painful."
+- **Mission:** sell bottles and Topa, using bottles and Topa. Then recruit an army of affiliates.
+- **Tiers:** Tier 1 **$9/m** (DIY, no automation, their own offer; was $7) · Tier 2 **$97/m** (sell
+  Topa with Topa: ads, JVs, content; the affiliate tier) · Tier 3 **$1,197/m** (Tier 2 plus an
+  appointment-setting agency with bottles).
+- **How the $9 is built (Joey, 2026-10-12):** B2B Leads Lab stays a FREE Skool group. The $9/m is
+  a "premium" tier sold inside that same group with Skool's tier function. It is not a separate
+  group. Whether $97 and $1,197 are also tiers inside the same group is not confirmed.
+- **Lead magnet finished (Joey, 2026-10-12):** "The Locked Gift Strategy" guide is done. Squeeze
+  page and welcome email copy are in `copy/2026-10-12-flexxable-locked-gift-*.md`. Group URL in
+  that copy is skool.com/b2b-leads-lab.
+- **Path as built today:** ad or Dan video → squeeze page → guide (5 parts, free database access
+  in Part 5) → welcome email → P.S. to the free group → premium tier inside. No follow-up emails
+  after the welcome exist in this workspace yet.
+- **Flow:** lead magnet → free group → $9, or straight to $97, or straight to Tier 3.
+- **Traffic:** the owned audience, JVs recruited by sending them bottles, then affiliates. Dan:
+  "we won't really need to spend on ads."
+- **Roles:** Nat proves concept (may take six months), then owns B2B Leads Lab and its training ·
+  Joey owns NAPs and offer creation (offers with Dan), plus tapping with Leandro · Alan owns
+  organic content · Gavin is the first affiliate after Nat, then recruits JVs · Graham is the glue
+  · Johnny/Dean run a phone team selling Topa and B2B Gifts to free-lead opt-ins.
+- **Not confirmed, do not put in copy:** the 50% affiliate share, "8.33k a month" (Nat's target),
+  what Tier 3 includes, whether Tier 2 includes a Topa seat.
+- **Not addressed in the Loom:** what happens to ROYA, the book ads, the Rainmakers and the
+  avatar rule below (no "escape the 9-5" framing) now that Tier 2 is an income tier.
+
 ## What it is
 Dan Wardrope's second front. A Skool community teaching people to land meetings with 8, 9 and 10 figure companies using **"AI Enriched" Lumpy Mail** — physical gifts (whiskey bottles, letters) mailed to B2B prospects to force a reply.
 

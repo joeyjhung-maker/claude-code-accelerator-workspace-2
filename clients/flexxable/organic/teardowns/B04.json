@@ -1,0 +1,61 @@
+{
+ "transcript": "businesses know they need AI they just don't know what they need and they don't know who can do it for them, right? So people like you who have got some willingness to get up and like actually, you know, watching YouTube tutorials, figure out how to sell, put all this stuff together, can come in and go from 0 to 55k months just like you have with a you know, short I mean, that's insane money really. I mean, God, you were earning 40k a year, like and you thought that was good money back then and now you're earning more than that in a single month. Um, and only because you put some elbow grease in really, like that's all it's been. Elbow grease, resilience. You would have been knocked down hundreds of times, right? On this journey. So anyway, continue, so tell me, let's fast forward to the bit where you you came into my community and um, you know,",
+ "frame0_visual": "A bald man in a grey athletic top speaking directly to the camera, gesturing with his hands. The background is a modern wooden slatted wall with a green plant on the left.",
+ "frame0_text": "businesses know they need AI",
+ "first_spoken_line": "businesses know they need AI",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "curiosity gap",
+ "hook_layer_doing_the_work": "spoken | The speaker immediately states a common problem businesses face regarding AI, creating a curiosity gap about the solution.",
+ "core_idea": "Individuals with resilience and a willingness to learn can leverage the demand for AI solutions in businesses to build highly profitable agencies, as demonstrated by the interviewee's success.",
+ "topic_bucket": "AI opportunity",
+ "who_is_called_out": "People who are willing to 'get up and like actually watching YouTube tutorials, figure out how to sell, put all this stuff together' and have 'elbow grease resilience'. This targets aspiring entrepreneurs and self-starters, especially those currently in lower-paying jobs.",
+ "format": "podcast or interview clip",
+ "setting_and_production": "The speaker is in a well-lit indoor setting with a modern wooden slatted wall background. The interviewee is shown in a split screen, wearing headphones and a cap, in a more casual indoor setting. The video is produced with clear audio and on-screen captions for all spoken words.",
+ "cuts_per_10_seconds": 2,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 6.0,
+   "beat": "hook / setup",
+   "what_happens": "Speaker identifies the problem: businesses need AI but don't know what or who to get it from."
+  },
+  {
+   "start": 6.0,
+   "end": 16.0,
+   "beat": "opportunity / call-out",
+   "what_happens": "Speaker highlights the opportunity for self-starters willing to learn and build AI solutions."
+  },
+  {
+   "start": 16.0,
+   "end": 22.0,
+   "beat": "proof / bold claim",
+   "what_happens": "Speaker presents the interviewee's success: going from zero to $55k/month."
+  },
+  {
+   "start": 22.0,
+   "end": 31.0,
+   "beat": "proof / comparison",
+   "what_happens": "Speaker contrasts the interviewee's previous $40k/year income with current $55k/month income."
+  },
+  {
+   "start": 31.0,
+   "end": 44.0,
+   "beat": "reframe / mindset",
+   "what_happens": "Speaker attributes success to 'elbow grease' and 'resilience,' emphasizing effort over prior tech skills."
+  },
+  {
+   "start": 44.0,
+   "end": 50.0,
+   "beat": "CTA / transition",
+   "what_happens": "Speaker transitions to the full interview, displaying a YouTube thumbnail with the CTA."
+  }
+ ],
+ "payoff_delivered": "yes",
+ "specificity": "The reel mentions concrete numbers: '55k months' and '40k a year'. It also refers to 'YouTube tutorials' and the qualities of 'elbow grease resilience'. The YouTube thumbnail explicitly states 'store manager to $55k/m AI PRO' and 'From Zero Tech Skills to AI Agency Pro | Aaron's $55K/Month Story'.",
+ "share_or_save_trigger": "A viewer would likely save this reel for inspiration or as a potential business idea, especially if they are an aspiring entrepreneur or looking for a career change. The dramatic financial transformation ($40k/year to $55k/month) is a strong motivator.",
+ "likely_drop_off": "0:44, when the speaker says \"So anyway, continue, so tell me let's fast forward to the bit where you you came into my community\". This signals a transition to a longer-form interview, and viewers seeking quick, standalone content might disengage.",
+ "cta": "FULL INTERVIEW ON YOUTUBE",
+ "cta_type": "other",
+ "one_line_verdict": "The reel effectively uses a compelling personal success story with specific financial figures to highlight the AI agency opportunity, though the transition to the full interview is a clear drop-off point for short-form viewers.",
+ "_model": "gemini-2.5-flash"
+}

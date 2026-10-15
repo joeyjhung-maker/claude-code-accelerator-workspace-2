@@ -30,6 +30,7 @@ current specimens and add future Joey-final versions as they appear:
 - `copy/2026-10-02-dan-skool-post-bonus-profile-optimiser.md`
 - `copy/2026-10-09-b2b-leads-lab-skool-post-well-timed-follow-up-signals-JOEY-FINAL.md`
 - `copy/2026-10-11-b2b-leads-lab-email-a-pile-b-pile-JOEY-FINAL.md`
+- `copy/2026-10-14-dan-skool-post-audit-poll-JOEY-FINAL.md` (temperature poll close)
 
 ## The hierarchy
 
@@ -180,6 +181,14 @@ Use an appropriate close:
   we're teaching in here" is as far as the selling goes. One specimen so far; an option, not a
   default.
 
+- temperature poll (Joey, 2026-10-14, "Offer Goggles" audit-call post): tests interest before
+  anything opens. Shape: "Now… / Before we block out the calendar for these… / May I get a temp
+  check?" → ONE 👉🏻 question in plain, friendly words that the poll options answer ("Would you be
+  down to hang for an hour and make some $$ together?") → real stakes as a light joke about going
+  back to Dan's CURRENT work ("sending locked gifts", not the older whiskey bottles) → the poll
+  widget, with a funny hot option and a funny opt-out. No 1-to-10 number when the poll widget is
+  the temperature check. One specimen so far; an option, not a default.
+
 Do not bolt on a question just because it is a Skool post.
 
 **Standing CTA (Joey, 2026-09-28): every post ends with** "If you're ready to [outcome matching the
@@ -258,7 +267,8 @@ to the point quickly; it does not automatically mean stripping away the post fur
   this by hand twice (2026-09-28, 2026-09-29).
 
 - BANNED phrases (hard fail, Joey 2026-09-29): "Fair question…" and "So yeah…". Cut or replace on
-  sight, including in Mariobot drafts.
+  sight, including in Mariobot drafts. Added 2026-10-14: "Fair enough" (Joey: "never say this
+  again"). Just go to the next beat.
 
 - A moral-of-the-story recap before the sign-off ("The point is simple. / Stop doing X. / Start
   doing Y. / One X beats ten Y every day of the week."). Joey cut the whole block on 2026-10-09 and

@@ -1,0 +1,85 @@
+{
+ "transcript": "This is my number one play for getting business owners to actually pick up the phone. Big business owners. And if you're reaching out to decision-makers, you're getting ignored on cold email and skipped on LinkedIn every single day, I'm pretty sure. They've built up a wall because everyone reaching out is asking for something. But send them a physical bottle of whiskey like this with a locked cap and a letter like this, and suddenly you're not another cold outreach. You've actually just made them curious. They want to pick up the phone. And I've been sending out bottles of whiskey to business owners that I want to work with, and it's been converting better than I could have ever expected. And I was on a call recently with a business partner, and he mentioned that there's a guy in the US that's doing this with cakes, and he's making about 150k a month from what he calls cold caking. We've proven this works for the adventure park niche with bottles of whiskey just like this with a locked top on. But what if we could do it with other packages, other physical bits of mail that need to be signed for at a business owner's door? There's a huge opportunity here, and I'm pretty sure it's something we could turn into a done-for-you service down the line. Drop a comment if you're doing any weird cold outreach. Drop me a 'done for you' if you think this has got legs as a done-for-you service.",
+ "frame0_visual": "A bald man in a light blue collared shirt, with a microphone attached, is looking directly at the camera. His hands are clasped together, and his right index finger is pointing upwards. The background is a dark wooden slatted wall.",
+ "frame0_text": "THE COLD OUTREACH THAT GETS ANSWERS",
+ "first_spoken_line": "This is my number one play for getting business owners to actually pick up the phone.",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "bold claim",
+ "hook_layer_doing_the_work": "combination, The on-screen text makes a bold claim, and the spoken words immediately follow up with a bold claim about his 'number one play'.",
+ "core_idea": "Sending a physical, locked gift (like a bottle of whiskey or a cake) with a letter to decision-makers is a highly effective and unique cold outreach strategy that generates curiosity and significantly increases response rates, leading to substantial business growth.",
+ "topic_bucket": "lead generation / outreach",
+ "who_is_called_out": "Decision-makers who are 'getting ignored on cold email and skipped on LinkedIn every single day'.",
+ "format": "talking head with b-roll",
+ "setting_and_production": "Shot indoors, likely a studio or office with a decorative wooden slatted wall. The framing is a medium close-up. It's a produced video with on-screen text overlays, b-roll footage, and sound effects.",
+ "cuts_per_10_seconds": 2.5,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 5.0,
+   "beat": "hook / bold claim",
+   "what_happens": "Speaker makes a bold claim about his number one play for getting business owners to pick up the phone."
+  },
+  {
+   "start": 5.0,
+   "end": 11.0,
+   "beat": "problem / pain point",
+   "what_happens": "Highlights the common problem of decision-makers ignoring cold emails and LinkedIn messages."
+  },
+  {
+   "start": 11.0,
+   "end": 15.0,
+   "beat": "reframe / underlying cause",
+   "what_happens": "Explains that decision-makers build a wall because everyone is asking for something."
+  },
+  {
+   "start": 15.0,
+   "end": 23.0,
+   "beat": "solution / demonstration",
+   "what_happens": "Introduces the solution: sending a physical bottle of whiskey with a locked cap and a letter, demonstrating it visually."
+  },
+  {
+   "start": 23.0,
+   "end": 26.0,
+   "beat": "payoff / mechanism",
+   "what_happens": "Explains that this approach makes them curious and want to pick up the phone."
+  },
+  {
+   "start": 26.0,
+   "end": 32.0,
+   "beat": "proof / personal experience",
+   "what_happens": "Shares personal success with sending whiskey bottles, stating it converts better than expected."
+  },
+  {
+   "start": 32.0,
+   "end": 43.0,
+   "beat": "proof / borrowed authority / example",
+   "what_happens": "Mentions a business partner's story about someone making $150k/month with 'cold caking' in the US."
+  },
+  {
+   "start": 43.0,
+   "end": 48.0,
+   "beat": "proof / specific niche",
+   "what_happens": "Reiterates that this method works for the adventure park niche with whiskey bottles."
+  },
+  {
+   "start": 48.0,
+   "end": 56.0,
+   "beat": "opportunity / future vision",
+   "what_happens": "Presents a broader opportunity for other physical packages requiring signatures at business owners' doors."
+  },
+  {
+   "start": 56.0,
+   "end": 68.0,
+   "beat": "CTA / call to action",
+   "what_happens": "Suggests turning this into a done-for-you service and asks viewers to comment 'done for you' or about their weird cold outreach."
+  }
+ ],
+ "payoff_delivered": "yes",
+ "specificity": "physical bottle of whiskey, locked cap and a letter, guy in the US that's doing this with cakes, $150k a month, cold caking, adventure park niche",
+ "share_or_save_trigger": "strong",
+ "likely_drop_off": 15,
+ "cta": "Drop a comment if you're doing any weird cold outreach. Drop me a 'done for you' if you think this has got legs as a done-for-you service.",
+ "cta_type": "comment keyword",
+ "one_line_verdict": "The reel effectively presents a highly novel and specific cold outreach strategy, backed by personal and anecdotal proof, making it a compelling and actionable piece of content for its target audience.",
+ "_model": "gemini-2.5-flash"
+}

@@ -1,0 +1,61 @@
+{
+ "transcript": "Most people try to build an AI agency before they even know who actually writes the check. So they start by building a website, designing a logo, learning the software, and posting or talking about automation. But guess what? None of those things actually generate revenue on their own. From what I've learned, the only thing in business that matters is demand. If there's not an urgent painful problem, then the best system, the best automation, the best AI is not gonna make any difference at all. It's gonna sit there unused. So buyers move when the pain is high, not when technology is impressive, because pain triggers an action, whereas curiosity, I'm afraid, does not. Successful agencies begin with a very painful problem that costs businesses money, and then they apply AI as a solution, which flips the order dramatically, increases the chance of getting paid.",
+ "frame0_visual": "A bald man in a white linen shirt is sitting at a wooden desk, looking slightly to the right and talking. There's a plant in the background on the left and a wooden slatted wall behind him.",
+ "frame0_text": "SUCCESSFUL AGENCIES ALWAYS BEGIN WITH A VERY PAINFUL PROBLEM",
+ "first_spoken_line": "Most people try to build an AI agency before they even know who actually writes the check.",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "contrarian/negation",
+ "hook_layer_doing_the_work": "combination, The on-screen text makes a bold claim, while the spoken words immediately negate a common approach, creating a curiosity gap about the correct method.",
+ "core_idea": "Successful AI agencies prioritize solving an urgent, painful business problem that costs money, and then apply AI as the solution, rather than starting with technology or branding.",
+ "topic_bucket": "mindset / business model",
+ "who_is_called_out": "People trying to build an AI agency by focusing on superficial elements (website, logo, software, automation) before identifying a real problem or who pays for solutions.",
+ "format": "talking head to camera",
+ "setting_and_production": "Shot indoors, likely an office or studio, with a warm, professional background (wooden slats, plant). Medium close-up framing. Produced look with good lighting and audio. White captions appear dynamically.",
+ "cuts_per_10_seconds": 0,
+ "structure": [
+  {
+   "start": 0,
+   "end": 0.05,
+   "beat": "hook",
+   "what_happens": "Man starts speaking, on-screen text appears."
+  },
+  {
+   "start": 0.05,
+   "end": 0.15,
+   "beat": "setup",
+   "what_happens": "Describes the wrong approach: building an agency without knowing the client or problem."
+  },
+  {
+   "start": 0.15,
+   "end": 0.2,
+   "beat": "reframe",
+   "what_happens": "States that demand (urgent, painful problem) is the only thing that matters."
+  },
+  {
+   "start": 0.2,
+   "end": 0.26,
+   "beat": "proof",
+   "what_happens": "Explains that without demand, even the best tech is useless."
+  },
+  {
+   "start": 0.26,
+   "end": 0.35,
+   "beat": "reframe",
+   "what_happens": "Emphasizes that buyers move on pain, not impressive technology, as pain triggers action."
+  },
+  {
+   "start": 0.35,
+   "end": 0.49,
+   "beat": "payoff",
+   "what_happens": "Concludes by stating successful agencies start with a painful problem that costs money, then apply AI as a solution, increasing payment chances."
+  }
+ ],
+ "payoff_delivered": "yes, The body directly addresses and explains the initial claim made in the on-screen text and the implied 'right way' to build an AI agency.",
+ "specificity": "none",
+ "share_or_save_trigger": "save, This provides a clear, actionable framework for aspiring AI agency owners, challenging common misconceptions and offering foundational business advice.",
+ "likely_drop_off": "20, While the message is clear, the delivery is a continuous talking head with no visual changes or dynamic elements to hold attention beyond the initial hook. The lack of specific examples might also cause some to tune out if they're looking for concrete 'how-to.'",
+ "cta": "none",
+ "cta_type": "none",
+ "one_line_verdict": "A clear, concise, and well-articulated business model reframe for AI agencies, but its static visual presentation might struggle to retain attention on a fast-paced platform.",
+ "_model": "gemini-2.5-flash"
+}

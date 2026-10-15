@@ -1,0 +1,61 @@
+{
+ "transcript": "there's a big disparity between the value that the AI brings, the money that the clients are making, and how much we can get paid as a result, right? Absolutely. to like, you used to have to hire an appointment setter or, you know, a sales guy to be able to do this, right? But now those costs have gone to pretty much zero. So there's a lot of You know, Dan, it's, you know, it's so funny that, you know, I still see ads. I'm always looking at ads. I'm a marketer and I'm trying to see how people position things. And there are people who are still still running, you know, their their business around getting people like they really are talking about appointment setters. And it's it's really interesting to me because I've been thinking to myself like, man, it's still so much opportunity out here because, you know, I'm not saying that people are not valuable. They can just be repurposed for something more valuable. And AI can have so much more impact in just the day-to-day entry-level conversations that that could happen.",
+ "frame0_visual": "Split screen. Top: Bald man in white t-shirt, neon sign 'Flowable' behind him. Bottom: Bald man with beard in grey hoodie, microphone in front, dog picture on wall.",
+ "frame0_text": "disparity between",
+ "first_spoken_line": "there's a big disparity between",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "bold claim",
+ "hook_layer_doing_the_work": "combination, The speaker immediately states a 'big disparity' (spoken) and the on-screen text highlights key phrases, creating a curiosity gap about what this disparity is and its implications.",
+ "core_idea": "AI is drastically reducing the cost of sales and appointment setting, creating a huge opportunity for those who leverage it, while many businesses are still stuck in old, expensive models.",
+ "topic_bucket": "AI opportunity",
+ "who_is_called_out": "Businesses or individuals still relying on traditional, expensive methods like hiring appointment setters or sales guys, implying they are missing out on the AI opportunity.",
+ "format": "podcast or interview clip",
+ "setting_and_production": "Top speaker: professional office with neon sign, good lighting. Bottom speaker: home office/studio, mic visible, framed art. Both are talking heads, likely recorded remotely. Lo-fi feel due to split screen and casual setting. Captions are dynamic, highlighting words as they are spoken.",
+ "cuts_per_10_seconds": 0,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.07,
+   "beat": "hook / setup",
+   "what_happens": "Speaker 1 introduces the disparity between AI value, client money, and agency pay."
+  },
+  {
+   "start": 0.07,
+   "end": 0.08,
+   "beat": "agreement",
+   "what_happens": "Speaker 2 agrees."
+  },
+  {
+   "start": 0.08,
+   "end": 0.15,
+   "beat": "example / proof",
+   "what_happens": "Speaker 1 explains how AI eliminates costs like appointment setters/sales guys."
+  },
+  {
+   "start": 0.15,
+   "end": 0.16,
+   "beat": "transition",
+   "what_happens": "Speaker 1 concludes there's a lot of opportunity."
+  },
+  {
+   "start": 0.16,
+   "end": 0.33,
+   "beat": "reframe / example",
+   "what_happens": "Speaker 2 observes that many are still running businesses around human appointment setters."
+  },
+  {
+   "start": 0.33,
+   "end": 0.5,
+   "beat": "payoff / CTA",
+   "what_happens": "Speaker 2 highlights the vast opportunity with AI for repurposing human value and impacting entry-level conversations, with an on-screen CTA."
+  }
+ ],
+ "payoff_delivered": "yes, The body explains why there's a disparity (AI reducing costs) and how it creates opportunity, directly addressing the hook's implied problem.",
+ "specificity": "none",
+ "share_or_save_trigger": "A viewer interested in business opportunities, AI, or lead generation would save this for the insight into market shifts and potential for new business models.",
+ "likely_drop_off": 0.34,
+ "cta": "Comment \"LEARN\" to create an INSTANT AI Agency",
+ "cta_type": "comment keyword",
+ "one_line_verdict": "The reel effectively highlights a significant market shift driven by AI, presenting a clear opportunity for viewers, though it lacks concrete examples or numbers.",
+ "_model": "gemini-2.5-flash"
+}

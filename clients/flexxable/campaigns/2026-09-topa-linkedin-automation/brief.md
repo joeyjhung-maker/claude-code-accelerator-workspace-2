@@ -8,6 +8,8 @@ Related: [[b2b-leads-lab-project]] [[topa-call-launch-2026-09-04]] [[the-lock-ai
 
 **Pricing + competitor claims:** use `pricing-and-competitor-proof.md` (safe lines vs. ones Jonathan pulled back).
 
+**Buyer Q&A, 13 Oct:** `source/2026-10-13-topa-linkedin-qa-call-notes.md` has 40 real buyer questions with Jonny's answers, his 1-2-3 hand raiser word for word, the reseller model, the roadmap, and a new real signals number (67% acceptance / 62% reply). Get Jonny's OK on that number before using it in copy.
+
 **Standing campaign rules (Joey, 2026-09-30):**
 - **No free leads / coupon code in this campaign.** The 200-free-leads code is a freebie we don't want people taking now. We want them to PAY.
 - **The paid plan includes:** full search of the 350M+ database, plus **10,000 downloads a month**. That lets them enrich the data to get mobiles, emails, addresses, etc.

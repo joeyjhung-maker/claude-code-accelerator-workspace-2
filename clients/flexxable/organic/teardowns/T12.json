@@ -1,0 +1,44 @@
+{
+ "transcript": "If I just had a laptop and a Wi-Fi connection, the first thing I would do would be I would search for some local businesses in my area using Google, and then I would go to the contact us page on those websites, and I would also get their phone number, and I would reach out to them via phone and via cold call and ask them if they have any old leads that they've given up on that we can turn into sales on a performance basis using AI. Okay, that's an offer that they just don't say no to.",
+ "frame0_visual": "A man in a blue jacket and black shirt is sitting at a wooden table with a white mug in front of him. A green plant is visible in the background, which is a wooden slatted wall.",
+ "frame0_text": "OLD LEADSEQUAL FAST CASH",
+ "first_spoken_line": "If I just had a laptop and a Wi-Fi connection, the first thing I would do",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "bold claim",
+ "hook_layer_doing_the_work": "combination, The on-screen text makes a bold claim, and the spoken word immediately sets up a hypothetical scenario that promises a direct path to this outcome.",
+ "core_idea": "You can generate fast cash by finding local businesses, contacting them for their old, abandoned leads, and using AI to convert those leads into sales on a performance basis.",
+ "topic_bucket": "lead generation / outreach",
+ "who_is_called_out": "Aspiring entrepreneurs or individuals looking for a simple business model with minimal resources, implied by the hypothetical 'If I just had a laptop and a Wi-Fi connection'.",
+ "format": "podcast or interview clip",
+ "setting_and_production": "Shot in a produced setting, likely a studio or office, with good lighting, a wooden slatted wall background, and a plant. The framing is a medium shot, chest up. Captions are large, white, bold text with a black outline, appearing dynamically.",
+ "cuts_per_10_seconds": 0,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 0.05,
+   "beat": "hook / setup",
+   "what_happens": "On-screen text introduces the core idea: 'OLD LEADSEQUAL FAST CASH'."
+  },
+  {
+   "start": 0.05,
+   "end": 0.22,
+   "beat": "steps / example",
+   "what_happens": "Speaker outlines a step-by-step process: search local businesses, get contact info, cold call for old leads, convert with AI on a performance basis."
+  },
+  {
+   "start": 0.22,
+   "end": 0.27,
+   "beat": "payoff",
+   "what_happens": "Speaker concludes by stating this is an 'offer that they just don't say no to'."
+  }
+ ],
+ "payoff_delivered": "yes, The hook promised 'FAST CASH' from 'OLD LEADS', and the video provides a clear, actionable strategy to achieve this, concluding with the statement that the offer is irresistible.",
+ "specificity": "laptop and a Wi-Fi connection, local businesses in my area, Google, contact us page, phone number, cold call, old leads, performance basis, AI",
+ "share_or_save_trigger": "save, The reel provides a clear, actionable business strategy that viewers might want to refer back to later as a 'how-to' guide.",
+ "likely_drop_off": 22.0,
+ "why": "The core actionable steps and the full strategy are delivered by this point; the remaining seconds are a concluding remark.",
+ "cta": "none",
+ "cta_type": "none",
+ "one_line_verdict": "The reel effectively delivers a concise, actionable business strategy with high perceived value, making it highly savable.",
+ "_model": "gemini-2.5-flash"
+}

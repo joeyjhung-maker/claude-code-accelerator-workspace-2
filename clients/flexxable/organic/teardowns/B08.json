@@ -1,0 +1,80 @@
+{
+ "transcript": "I fired 10 stressful agency clients and replaced every dollar with one client where AI actually does all the work for me. I can take a business owner's database of old and forgotten leads and then use AI and SMS to do all the work to turn those leads into appointments or sales. And it doesn't matter whether I'm at the gym, out for lunch, picking up the kids from school. What really surprised me is that my clients would happily send me half of the profits from each sale or pay me per appointment. Why? Because these old leads are dead to the business owner. They have nothing to lose, which is why they're so happy to pay me such a large slice of the profits. It's the easiest thing I've ever sold. I made a ton of money without messing around with any of these serenity-sucking services ever again. No Meta ads, no Google ads, no YouTube ads, no building funnels, no CRO, no writing video scripts, no shooting or editing videos, no copywriting, no SEO, no managing sales people, no email marketing. All I do is send the client's database an SMS or WhatsApp and I'll let AI do the rest of the work. There are over 400 million businesses across the globe and this is the question on the tip of their tongues: How the heck can AI help us make more sales? They know they need it, they just don't have a clue how to get it to work for them. Scott for example, landed his first deal $27,000. Jack collected $15,000 for a single AI install. Ryan landed a $50 million roofing client. And we can be the bridge between AI and business owners.",
+ "frame0_visual": "A smartphone lying on a wooden desk, displaying a notification.",
+ "frame0_text": "I fired 10 stressful agency clients",
+ "first_spoken_line": "I fired 10 stressful agency clients",
+ "seconds_to_first_word": 0.0,
+ "hook_type": "bold claim",
+ "hook_layer_doing_the_work": "combination, the spoken words and on-screen text immediately present a strong, relatable claim about business transformation.",
+ "core_idea": "You can build a highly profitable, low-effort business by leveraging AI and SMS to reactivate old leads for business owners, who are willing to pay a large share of profits for this service.",
+ "topic_bucket": "AI opportunity",
+ "who_is_called_out": "The viewer is implicitly called out as someone looking for a less stressful, more profitable business model, specifically in the marketing/sales space, and is positioned as a potential 'bridge between AI and business owners'.",
+ "format": "talking head with b-roll",
+ "setting_and_production": "Talking head segments are shot in a modern, well-lit studio with a wooden slatted background. B-roll includes close-ups of phones, a person working, someone at the gym, food, a school bell, money counting, and screen recordings of data and search queries. The production is high-quality with clear audio and large, yellow text-on-screen captions.",
+ "cuts_per_10_seconds": 3.4,
+ "structure": [
+  {
+   "start": 0.0,
+   "end": 6.0,
+   "beat": "hook / setup",
+   "what_happens": "Speaker introduces firing stressful clients and replacing them with one AI-driven client."
+  },
+  {
+   "start": 6.0,
+   "end": 16.0,
+   "beat": "setup",
+   "what_happens": "Explains the core service: using AI/SMS to revive old leads for business owners."
+  },
+  {
+   "start": 16.0,
+   "end": 27.0,
+   "beat": "reframe",
+   "what_happens": "Highlights the lifestyle freedom and the surprising client willingness to pay half the profits or per appointment."
+  },
+  {
+   "start": 27.0,
+   "end": 38.0,
+   "beat": "why it works",
+   "what_happens": "Explains the rationale behind clients' willingness to pay: old leads are 'dead' to them, so they have nothing to lose."
+  },
+  {
+   "start": 38.0,
+   "end": 56.0,
+   "beat": "negation / benefit",
+   "what_happens": "Lists numerous traditional marketing services that are no longer needed with this model."
+  },
+  {
+   "start": 56.0,
+   "end": 60.0,
+   "beat": "how it works (simplified)",
+   "what_happens": "Re-emphasizes the simplicity: send client's database, AI does the rest."
+  },
+  {
+   "start": 60.0,
+   "end": 73.0,
+   "beat": "opportunity / problem",
+   "what_happens": "Establishes the massive global market of businesses and their common question about how AI can help them make more sales."
+  },
+  {
+   "start": 73.0,
+   "end": 83.0,
+   "beat": "proof / example",
+   "what_happens": "Shares three specific client success stories with impressive dollar amounts."
+  },
+  {
+   "start": 83.0,
+   "end": 88.0,
+   "beat": "payoff / CTA",
+   "what_happens": "Positions the viewer as the solution, the 'bridge between AI and business owners'."
+  }
+ ],
+ "payoff_delivered": "yes, the video successfully delivers on the hook's promise by explaining a simplified, profitable business model using AI, supported by clear examples and a rationale for its effectiveness.",
+ "specificity": "The video uses concrete numbers and names: '10 stressful agency clients', 'one client', 'half of the profits', '400 million businesses', 'Scott... $27,000+ Deal!', 'Jack collected $15,000', 'Ryan landed a $50M A Year Roofing Company'.",
+ "share_or_save_trigger": "strong, viewers interested in starting an online business, lead generation, or AI-powered services would likely save this for the compelling business model idea, the promise of low effort, and the specific examples of high-value client wins.",
+ "likely_drop_off": 56.0,
+ "likely_drop_off_why": "The statement 'All I do is send the client's database an SMS or WhatsApp and I'll let AI do the rest of the work' might sound overly simplistic or too good to be true for some, potentially leading to skepticism and disengagement before the proof points are presented.",
+ "cta": "none",
+ "cta_type": "none",
+ "one_line_verdict": "A highly effective reel that clearly articulates a lucrative, low-effort business model using AI, backed by strong social proof and a compelling 'anti-agency' narrative.",
+ "_model": "gemini-2.5-flash"
+}
