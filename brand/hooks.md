@@ -75,6 +75,11 @@ Read the hook aloud. If a non-marketer doesn't wince, gasp, or say "damn" — it
 too tame. Find the version that flinches, THEN dial back for compliance (never
 the reverse). See the rubric's hook-intensity gate for the compliance dial-back.
 
+**Run it on yourself first: the FEEL test** (Mario Castelli, banked 2026-10-15). Read each hook
+and notice whether your body reacts before your brain does. Most "technically correct" hooks,
+and most AI hooks, get nothing. If you feel nothing, a sharper wording won't save it. Go back to
+the idea. Source: [[copy-instincts]] in the Second Brain wiki.
+
 ## Define the core argument before you hook
 A hook without an argument behind it is just a headline — it might stop the
 scroll but it won't convert. Before briefing any creative, find the ARGUMENT:
@@ -184,4 +189,19 @@ to find out and what it does for him, in his own words (energy, drive, staying l
 to the story. Later in the ad, one line must come back and pay that promise off.
 
 Related: [[Promotion]]
+
+## One idea per ad — banked 2026-10-15
+
+Don't hedge by stacking ideas. When you're not sure one idea will land, it's tempting to throw in
+a second and a third "in case". Now the reader has to buy idea one, then two, then three before he
+can say yes, so he buys none of them. Four good ideas cancel each other out (Mario Castelli calls it
+"halftime-show stuffing").
+
+Pick the idea. Run it hard, with full intensity. Give each other idea its own ad.
+
+Test: say the idea of the ad in one flat sentence with all the copywriting stripped off. If you
+can't, there's more than one idea in it. If you can but wouldn't stop scrolling for that sentence,
+the idea is weak, and no wording will fix it.
+
+Related: [[Promotion]] [[nerd-free-idea-isolation]]
 
