@@ -13,6 +13,8 @@ One search term per idea, picked as the words a buyer would type.
 - **Seasonal:** busiest month against the quietest. Under 2 = steady all year. Over 3 = a seasonal product.
 - **Score:** growth counts most, then this year, then size, plus a small bonus for steady demand.
 
+**Update, same day:** the "everything doubled" effect turned out to be a Google-wide jump in March 2026. Every term rose about 3x in the same weeks. Dividing by the median handles most of it, but measuring against a reference product in the same request is cleaner. See [[2026-10-16-trends-rising-sweep]].
+
 Trends shows interest, not sales. A rising term still needs the Ad Library check (are people profitably selling into it?).
 
 ## Ranked

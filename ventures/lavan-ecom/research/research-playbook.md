@@ -47,6 +47,15 @@ Do this on the shortlist, not the longlist.
 - AliExpress / CJ Dropshipping / Alibaba: landed cost, order counts, how many suppliers.
 - If it's on Temu at a quarter of your price looking identical, that's a red flag. You'll need a better version or a better angle.
 
+### Getting more out of Google Trends
+- **Use it to find, not just to check.** Put in a broad seed (cat, sleep, shower), then read Related queries → Rising. "Breakout" means up 5,000%+.
+- **Switch Web Search to Google Shopping.** It only counts people shopping.
+- **Pick the "Topic" version of a search** so wording doesn't skew it.
+- **Always compare against a product you know sells** (we use "cat water fountain"), in the same chart. It also cancels out Google's own data jumps, like the one in March 2026.
+- **Read the shape.** A spike that collapses = fad. Steady growth = business.
+- **Country lag:** rising in the US but flat in the UK or Australia = an early opening there.
+- Claude can run the whole sweep (about 45–60 minutes because Google rate-limits). See [[2026-10-16-trends-rising-sweep]].
+
 ### 7. Your own lives
 What have you two bought that you rave about? What problem do you have that nothing fixes properly?
 Weakest proof, but it gives you real belief and a story to tell. Use it to pick niches, then prove it with methods 1–4.
