@@ -31,6 +31,8 @@ current specimens and add future Joey-final versions as they appear:
 - `copy/2026-10-09-b2b-leads-lab-skool-post-well-timed-follow-up-signals-JOEY-FINAL.md`
 - `copy/2026-10-11-b2b-leads-lab-email-a-pile-b-pile-JOEY-FINAL.md`
 - `copy/2026-10-14-dan-skool-post-audit-poll-JOEY-FINAL.md` (temperature poll close)
+- `copy/2026-10-16-b2b-leads-lab-skool-post-linkedin-automation-service-JOEY-FINAL.md` (real-event opener, product named as the vehicle, soft "just an idea" close)
+- `copy/2026-10-18-b2b-leads-lab-skool-post-nobodys-doing-it-yet-JOEY-FINAL.md` (fear-killer value post; P.S. names the REAL hurdle and bridges to the group)
 
 ## The hierarchy
 
@@ -202,6 +204,10 @@ pure value post"). When Joey briefs a post as pure value or no CTA, that brief w
 keyword close is NOT a fail. Whether the keyword close is still the default outside a live campaign
 has not been confirmed by Joey. Ask if unsure.
 
+Third case (2026-10-16, LinkedIn-service NAP): briefed WITH the keyword close (AUTOPILOT); Joey cut it and
+ended on "Just an idea for anyone who wants to try it out." That makes three seed/value posts in a row
+without the keyword. For a NAP that seeds an idea, default to a soft close unless Joey asks for the keyword.
+
 For practical advice, do not stop at the instruction. Name the bit the reader is reluctant to do,
 then disarm it with the mechanism that makes it easier. Example: calling takes “some cojones,” BUT
 gift recipients are among the easiest cold leads to call because the gift has already opened the
@@ -298,6 +304,25 @@ to the point quickly; it does not automatically mean stripping away the post fur
 
 - One-sided payoff on an outreach tactic. Joey showed both sides: "For THEM…" (what the prospect
   gets) then "And for US…" (what we get). Use it when the tactic could otherwise read as a trick.
+
+- Vague source when the real one is known. Mariobot wrote "Something came up on a call recently";
+  Joey named the real event ("On Tuesday Johnny and Joey held a bonus Q&A call for all the new TOPA
+  users") and used it to plug the replay (2026-10-16). If the brief gives a real who/when, use it.
+
+- Hiding the product on a post about USING the product. The brief said "Topa optional, one light
+  mention"; Joey named TOPA as the vehicle in every step and pointed to the house asset (the 1-2-3
+  handraiser) instead of "write the messages" (2026-10-16). For B2B Leads Lab posts about a Topa use
+  case, the product is the how, not a pitch to hide.
+
+- Killing a fear without saying WHY it feels true. Joey added "It may FEEL like everyone's doing the
+  same thing just because you're in here. But our group is a TINY slice of the overall b2b pie"
+  (2026-10-16). Name why the worry seems real, then shrink it. He also swapped a dry overlap stat for
+  a scale image ("thousands of different niches… all over the world… millions of cities").
+
+- A value post with no bridge. On the saturation post Joey kept the soft close, then used the P.S.
+  to name the real hurdle ("isn't so much competing… but getting the ATTENTION of the biz owners you
+  want") and invite people into B2B Leads Lab. Pattern for cross-posted NAPs: kill the false
+  problem in the body, name the true problem in the P.S., point at the group that solves it.
 
 - Narrating proof instead of showing it ("X said it best…", "His opinion:", "who has… said she…",
   "Then she saw… and said…"). Dan makes the claim; the quote stands bare with a short tag. Hard fail

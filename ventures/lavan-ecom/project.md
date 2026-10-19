@@ -2,9 +2,6 @@
 
 Joey + Lavan. A quick and dirty test to launch one ecom product.
 
-Quick doesn't mean shady.
-We only sell something we'd buy ourselves, and we stand behind it.
-
 Status: **Phase 0, ground rules.** No product picked yet.
 Started: 2026-10-15
 
@@ -25,15 +22,6 @@ _Fill in during Phase 0. Don't start spending until these are set._
 - Profit split:
 - Kill rule:
 - Target market / currency:
-
-## Things we won't do
-- Fake reviews, or reviews copied from another store.
-- Fake countdown timers or "only 3 left" when it isn't true.
-- A made-up "was" price to fake a discount.
-- Hide real shipping times.
-- Health, medical or safety claims the product can't back.
-- Make refunds hard.
-- Use other brands' or creators' content without permission.
 
 ## Where things go
 - `research/` raw product hunting, ad library pulls, review mining

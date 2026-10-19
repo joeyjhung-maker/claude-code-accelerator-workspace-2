@@ -2,7 +2,7 @@
 
 Live Zoom Q&A for people who bought TOPA LinkedIn Automation in the launch.
 Jonny Matthews demoed and answered.
-The host account ("Dan W") read out the chat; Jonny calls that person "Joey" twice, so it was probably Joey hosting on Dan's Zoom.
+Joey hosted on Dan's Zoom account (shows as "Dan W" in the transcript) and read out the chat. Confirmed by Joey's 16 Oct post: "Johnny and Joey held a bonus Q&A call".
 About 19 on the call. Over 100 buyers so far (host's figure).
 
 - Recording: https://us02web.zoom.us/rec/share/4b72LUNKxxGcM0L2MhlOq1aTzE7GudJWDLOfZdylwkxZ-tbglPnIYrZmODPXqiSi.CkPW1Qpf7jAKZE5F

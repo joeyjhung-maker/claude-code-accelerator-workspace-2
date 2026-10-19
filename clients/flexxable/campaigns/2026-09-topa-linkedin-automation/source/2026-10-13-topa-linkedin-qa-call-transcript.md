@@ -5,7 +5,7 @@ Raw Zoom auto-transcript (machine captions, lightly merged by speaker; not clean
 - Recording: https://us02web.zoom.us/rec/share/4b72LUNKxxGcM0L2MhlOq1aTzE7GudJWDLOfZdylwkxZ-tbglPnIYrZmODPXqiSi.CkPW1Qpf7jAKZE5F
 - Distilled notes (read these first): `2026-10-13-topa-linkedin-qa-call-notes.md`
 
-Speakers: Jonny Matthews (TOPA, demoing), "Dan W" (the host account reading out chat questions; Jonny calls this person "Joey" twice), plus members Jake Hall, Gene Malfetano, Simon Beck, Rey, elFronza (Alfonso/Alfonza).
+Speakers: Jonny Matthews (TOPA, demoing), "Dan W" (this is Joey, hosting on Dan's Zoom account and reading out chat questions), plus members Jake Hall, Gene Malfetano, Simon Beck, Rey, elFronza (Alfonso/Alfonza).
 
 Caption errors to know about: "Alex Hamozi" = Alex Hormozi. "DVR" / "LNDBR" / "TPR" = DBR. "college dealerships" / "college leaderships" = car dealerships. "Muse" = Meta's new ad tool (exact name unclear).
 

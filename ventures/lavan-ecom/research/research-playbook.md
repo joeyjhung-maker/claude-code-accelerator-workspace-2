@@ -74,8 +74,7 @@ Score each idea 1–5 on each line. Anything under 20 is out.
 | Easy to ship | Fragile, heavy, sizes, batteries | Light, tough, one size |
 
 **Any one of these and it's out, whatever the score:**
-- It needs health, medical or safety claims to sell
-- Kids' safety risk, or a regulated category (supplements, cosmetics with active ingredients, anything you plug into the mains without proper marks)
+- Kids' safety risk, or anything you plug into the mains without proper marks
 - It copies a brand, a trademark or a patent
 - It only sells one month a year
 - You wouldn't buy it yourselves
