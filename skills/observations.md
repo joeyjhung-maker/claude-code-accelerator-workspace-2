@@ -513,3 +513,9 @@ Joey then supplied 4 more real posts from his own archive, unprompted, as models
 **Skill:** none (Claude Design mockups)
 **Issue:** Joey asked to redesign the Locked Gifts opt-in page (headline, subhead, one button, Dan photo). Claude's first mockup added an email form, a stats strip, a 4-step section, a results grid and a bonus block. Joey: "you added too much. Get rid of everything below the subscribe button. I dont want capture fields, just the button. Keep our image." Claude had also swapped Dan's photo for a drawing.
 **Suggested fix:** On a redesign, rebuild what's on the live page first: same sections, same photo, same capture method. Offer extra sections in the reply; don't build them. Rule now in clients/flexxable/client.md (Opt-in pages) and workflows/2026-10-14-design-mockup-to-png.md.
+
+### Observation 52: Click-driver variations came out as filler plus a stapled tagline
+- **Date:** 2026-10-19 · **Skill:** produce-skool (short click-driver)
+- **What happened:** Asked for a super short Topa click-driver. Five "totally different" variations all ended with "Free plan. Unlimited access." and leaned on label lines ("Serious question.") and a "Most people are out here..." opener. Joey: "these suck man. Dial up curiosity more. Using lines like 'Serious question.' is not a serious question."
+- **Fix applied:** reran each angle as its own curiosity lens (scale math, mechanism tease, Rolodex, dream-client-is-in-here, name-a-job-title) with throat-clearing labels, the stapled tagline and feature lists banned in the brief.
+- **Rule to consider:** for click-drivers, the brief says the headline must open a loop and the post must not explain the product. Ban label lines ("Serious question.", "Quick one") in the brief itself. Promote if Joey picks a curiosity version.

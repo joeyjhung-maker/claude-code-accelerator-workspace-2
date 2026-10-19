@@ -65,3 +65,4 @@ now has a non-asking teaching post between those asks and whatever comes next.
 2026-10-14 | room not confirmed | invite | y | keyword-comment | copy/2026-10-14-dan-skool-post-audit-calls-5-spots.md (5 audit call spots, short T1 "private invite" shape; draft, not yet approved)
 2026-10-14 | flexxable groups | validate | y | temperature-poll | copy/2026-10-14-dan-skool-post-audit-poll-JOEY-FINAL.md (Offer Goggles audit calls; replaces the straight invite for Wed)
 2026-10-16 | flexxable groups | recruit | y | keyword-comment | copy/2026-10-16-dan-skool-post-48hr-android-origin.md (48 Hr Android origin story, keyword GOLD; third ask in a row for this run: poll, invite, story)
+2026-10-19 | aaa-ninjas + roya + mdad | harvest | y | link-click | copy/2026-10-19-core-groups-skool-post-topa-350m-weekly-click-driver.md (weekly Topa 350M+ free-database click-driver to opt-in, ~45 words, no P.S., no keyword; first of a weekly run, B2B Leads Lab excluded)

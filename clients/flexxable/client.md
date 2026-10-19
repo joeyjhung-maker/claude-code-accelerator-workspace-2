@@ -42,3 +42,4 @@ Reusable wants and outcome language for the ROYA / AAA / AI-agency-operator audi
 - **Client Acquisition Calls** — `client-acquisition-calls/README.md`. Weekly ROYA client-getting Zoom calls, mined for daily-post content. Full Zoom history mined (25 calls, Mar–Aug 2026 — that's the whole retention window, not a sample; see [[gold-nuggets]] and [[common-questions]]). Banked as raw material, not yet drafted into posts.
 
 Related: [[Flexxable]] [[Winners]]
+- Topa free-database click-driver (weekly, core groups minus B2B, curiosity-led, opt-in app.topa.io/lander): [[2026-10-19-topa-click-driver-rules]]
