@@ -514,6 +514,12 @@ Joey then supplied 4 more real posts from his own archive, unprompted, as models
 **Issue:** Joey asked to redesign the Locked Gifts opt-in page (headline, subhead, one button, Dan photo). Claude's first mockup added an email form, a stats strip, a 4-step section, a results grid and a bonus block. Joey: "you added too much. Get rid of everything below the subscribe button. I dont want capture fields, just the button. Keep our image." Claude had also swapped Dan's photo for a drawing.
 **Suggested fix:** On a redesign, rebuild what's on the live page first: same sections, same photo, same capture method. Offer extra sections in the reply; don't build them. Rule now in clients/flexxable/client.md (Opt-in pages) and workflows/2026-10-14-design-mockup-to-png.md.
 
+### Observation 51: Judge passed a source-post headline and opener that weren't in the source
+- **Date:** 2026-10-16 · **Skill:** produce-skool (light judge, truth gate)
+- **What happened:** NAP pushing to Dan's YouTube video. Mariobot's headline "The dumbest pricing hack I ever stumbled into" and opener "Most agency owners overthink pricing. / I used to as well." were not in the video. The second is invented first-person backstory (Dan-truth constraint). The judge checked the numbers but not the headline or the framing lines. Joey caught it: "is that headline actually in the video?"
+- **Fix applied:** headline swapped for one built on Dan's own line; opener cut.
+- **Rule to consider:** when a post is built from a source (video, call, post), the truth gate checks EVERY first-person line and the headline against the source, not just the numbers. Second time a framing line slipped (see the "walked in" scene on the 48 Hr Android post, 2026-10-14). Promote into the Dan judge if it happens again.
+
 ### Observation 52: Click-driver variations came out as filler plus a stapled tagline
 - **Date:** 2026-10-19 · **Skill:** produce-skool (short click-driver)
 - **What happened:** Asked for a super short Topa click-driver. Five "totally different" variations all ended with "Free plan. Unlimited access." and leaned on label lines ("Serious question.") and a "Most people are out here..." opener. Joey: "these suck man. Dial up curiosity more. Using lines like 'Serious question.' is not a serious question."

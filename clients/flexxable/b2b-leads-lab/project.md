@@ -2,6 +2,60 @@
 
 *Started 2026-08-19. Parent client: [[clients/flexxable/client.md]]*
 
+## UPDATE 2026-10-19: no $9/m tier. The lower tier is FREE (read first)
+
+Dan on Slack: "I realised we wont be having a $9/m tier. It will be free. You can start shouting
+about carrots asap."
+
+- **Everything below that says $9/m is out of date.** The DIY classroom is open to everyone in the
+  free B2B Leads Lab group. No premium tier at the bottom.
+- **The ladder is now:** free group (with the DIY classroom) → mid tier ($47 rising toward $97,
+  Rainmaker from 16 Nov) → upper tier $1,497.
+- **The "$9 launch" job becomes "shout about the carrots" — starting now, not 26–29 Oct.** The job
+  is getting people into the free group and through the classroom, so they're warm for the
+  Rainmaker.
+- **Carrots live in the classroom (seen 19 Oct):**
+  - **The Locked Gift Strategy** — "How we're getting CEOs of $20M–$80M companies to call US… for
+    just $40 bucks." Modules: Narrowing Down Your Niche · Your Dream 100 Businesses (list building
+    + AI enrichment, Claude and TOPA methods) · Your Dream 100 Decision Makers · Verify Your List
+    For Sending · The Letter, Gift & Lock (slide deck + long-letter template, windows and doors
+    example).
+  - **Money Bags to Get Coffee Dates** — Luke Jaten direct-mail training. Built for an AI offer;
+    Dan says don't change that.
+- **Already running:** Dan's own handraiser post, "Direct Mail to get DBR Partners – TELL ME IF I
+  AM KRAZY?" (comment "LUKE" for the training, on da house). Posted about 17 Oct.
+- **Number clash, ask Joey before copy uses it:** Dan's post says he paid Luke **$15K** for 10
+  weekly calls. The classroom card says **$10K**. Pick one before it goes in copy.
+- **Still to come per the 15 Oct call:** Nat's Follow-Up Madness and the 350M-lead update, the
+  generic LinkedIn profile guide. Not seen in the classroom yet.
+
+## LATEST PLAN, 2026-10-15: Dan's call with Joey on the next 1–2 months
+
+Full notes, deadlines and transcript: [[2026-10-15-dan-plan-call]] (`2026-10-15-dan-plan-call.md`).
+This builds on the Flexx Airways section below. Where they disagree, this one is newer.
+
+- **Before Christmas:** (1) get Nat and Gav live as affiliates #1 and #2, (2) launch the $9/m lower
+  tier (DIY bottles), (3) launch the $97/m mid tier through a **Rainmaker, late November**.
+- **The tiers open in stages:** free + $9 first. The mid tier is added for the Rainmaker. The lower
+  tier goes ASAP (about 10 days out once the training's ready). Joey picks the timing.
+- **Joey's priority order (16 Oct):** lead magnet VSL → Wingman Lifetime campaign (48-hour open,
+  Mon 19 – Wed 21 Oct, AAA / MDAD / Email, locked) → Nat and Gav's funnel → $9/m launch prep (content
+  plan placeholder 26–29 Oct; length not decided). Content plan: "Flexx Content Plan" Google Sheet.
+- **Joey's deadlines:** VSL slides, photos and intro ready for Dan's shoot **Wed 21 Oct** ·
+  **top priority after the VSL:** Joey builds and launches the appointment-setting funnel for both Nat and Gav on flexxdigital.com, ASAP and **31 Oct** at the latest · turned into
+  the student snapshot plus training by **about 8 Nov** · a lead magnet / T1 video landing page,
+  **started this week** · lower tier: a generic LinkedIn profile guide and a Money Bags review,
+  then NAPs · review Dan's emails · polls teasing the idea.
+- **Two avatars now:** mid tier = BizOp/MMO people who have tried to land B2B clients (coaches,
+  therapists; not ecom). Upper tier = established businesses that want appointments. **This
+  clashes with the "no escape-the-9-to-5" rule further down for mid-tier copy. Ask Joey.**
+- **ROYA is being phased out** (Dan's 12 Oct joint-role doc). Flexxable is out of the AI space for now.
+- **Settled (Dan's expectations doc, read 16 Oct):** upper tier **$1,497**. Mid tier opens at **$47 and rises
+  toward $97 every 50 sales**, via a **Rainmaker from 16 Nov**. The $9/m launches before that (placeholder
+  26–29 Oct; the doc's 1–15 Nov is out of date, per Joey). Joey's role and admin:
+  [[2026-10-12-joey-expectations-doc]].
+  Pay terms, Cancun and the $5K leaderboard threshold are internal. Never put them in copy.
+
 ## STRUCTURE SUPERSEDED 2026-10-10 — "Flexx Airways" (read this before anything below)
 
 Dan's Loom to Nat on 10 Oct 2026 replaces the ladder and the lanes further down this file. Full
