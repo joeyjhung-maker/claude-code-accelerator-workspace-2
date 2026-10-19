@@ -2,7 +2,7 @@
 
 *2026-10-19 · mariobot drafted (`--no-style-contract`), light Dan judge, 2 edits. First of a weekly run.*
 *Brief: `clients/flexxable/b2b-leads-lab/briefs/skool-post-topa-350m-weekly-click-driver.md` · Raw: `2026-10-19-core-groups-skool-post-topa-350m-weekly-click-driver-MARIO-RAW.md`*
-*Fill before posting: [OPTIN LINK]. No `Dan` sign-off on Skool posts.*
+*Link filled: https://app.topa.io/lander. No `Dan` sign-off on Skool posts.*
 
 ---
 
@@ -16,7 +16,7 @@ Mobiles, emails, addresses… the lot.
 
 Free plan, unlimited access. Grab it here:
 
-[OPTIN LINK]
+https://app.topa.io/lander
 
 ---
 
