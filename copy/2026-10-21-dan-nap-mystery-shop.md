@@ -13,19 +13,21 @@ What the judge changed (3 edits):
 - Cut claims we can't back: "stupid effective", "a bit sneaky but it works", "I haven't stopped thinking about" (invented Dan reaction), and "when real customers are browsing" (Nat only said "a really sociable time"). Used Nat's own words instead.
 - Added the missing last step from Nat's quote: tell them what one lead is worth (his example, 10 to 30 grand) and ask for X per month. Replaced the "Not a claim. Not an opinion." contrast pair with one spoken line.
 
+Joey's call (21 Oct): "make the intro stronger, this opening is weak sauce". Picked option 3 (tell vs show) from 4 Mariobot openings. Skool opening replaced; email already opens on tell vs show, so left as is. The other openings: `copy/2026-10-21-dan-nap-mystery-shop-OPENINGS-MARIO-RAW.md`.
+
 ---
 
 ## A) SKOOL POST (AAA Ninjas + MDAD)
 
-HL: The 9pm Saturday night test
+HL: Turn a prospect's own website against them (nicely)
 
-Most people pitch AI follow-up by telling the prospect their response time sucks.
+There's a difference between TELLING a prospect their follow-up sucks…
 
-Cool… except they don't believe you.
+And SHOWING them.
 
-Why would they?
+One gets you argued with.
 
-You're a stranger with something to sell.
+The other gets you listened to.
 
 So here's a cheeky move Nat shared on one of our coaching calls.
 
