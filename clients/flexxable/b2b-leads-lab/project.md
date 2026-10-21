@@ -25,8 +25,7 @@ about carrots asap."
 - **Already running:** Dan's own handraiser post, "Direct Mail to get DBR Partners – TELL ME IF I
   AM KRAZY?" (comment "LUKE" for the training, on da house). Posted about 17 Oct.
 - **Number clash SETTLED 2026-10-21:** Joey's 21 Oct B2B post says "my $15K course from Luke
-  Jaten". Use **$15K** (the classroom card's $10K is out). The Core 3 Luke NAP still keeps the
-  price out unless Joey asks for it.
+  Jaten". Use **$15K** (the classroom card's $10K is out).
 - **Still to come per the 15 Oct call:** Nat's Follow-Up Madness and the 350M-lead update, the
   generic LinkedIn profile guide. Not seen in the classroom yet.
 
