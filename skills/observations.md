@@ -525,3 +525,9 @@ Joey then supplied 4 more real posts from his own archive, unprompted, as models
 - **What happened:** Asked for a super short Topa click-driver. Five "totally different" variations all ended with "Free plan. Unlimited access." and leaned on label lines ("Serious question.") and a "Most people are out here..." opener. Joey: "these suck man. Dial up curiosity more. Using lines like 'Serious question.' is not a serious question."
 - **Fix applied:** reran each angle as its own curiosity lens (scale math, mechanism tease, Rolodex, dream-client-is-in-here, name-a-job-title) with throat-clearing labels, the stapled tagline and feature lists banned in the brief.
 - **Rule to consider:** for click-drivers, the brief says the headline must open a loop and the post must not explain the product. Ban label lines ("Serious question.", "Quick one") in the brief itself. Promote if Joey picks a curiosity version.
+
+### Observation 53: /reflect told Claude to `git add -A` in a shared repo
+- **Date:** 2026-10-21 · **Skill:** reflect (step 7)
+- **What happened:** The reflect skill said `git add -A` at close-out, but CLAUDE.md bans it (Codex and other sessions share the repo). On 2026-10-16 Claude also committed another session's unstaged lines in the daily note by staging the whole file.
+- **Fix applied:** step 7 now says stage only your own files, named one by one, and explains how to stage only your own lines in a shared daily note (git show HEAD + your section → hash-object → update-index).
+- **Status:** FIXED
