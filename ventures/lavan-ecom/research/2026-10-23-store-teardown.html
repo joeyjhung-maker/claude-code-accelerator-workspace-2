@@ -1,0 +1,344 @@
+<title>Winning Store Teardown</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an analyst's teardown. One reading column, findings first, charts as ruled bar strips, full store ledger at the end. */
+:root{
+  --bg:#f4f6f5; --paper:#ffffff; --ink:#16201d; --muted:#5d6b66; --line:#d7dfdb;
+  --accent:#0d7a62; --accent-soft:#d8eee7; --warn:#b4581d; --warn-soft:#f6e3d6; --bar:#9fb8b0;
+  --f-display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1513; --paper:#161e1b; --ink:#e6eeeb; --muted:#9aaba5; --line:#2a3632;
+  --accent:#4cc5a3; --accent-soft:#183a31; --warn:#f0a06a; --warn-soft:#3a2a1e; --bar:#4b625b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1513; --paper:#161e1b; --ink:#e6eeeb; --muted:#9aaba5; --line:#2a3632;
+  --accent:#4cc5a3; --accent-soft:#183a31; --warn:#f0a06a; --warn-soft:#3a2a1e; --bar:#4b625b; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.6 var(--f-body)}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 72px;display:grid;gap:36px}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.05;font-weight:700}
+h2{font-size:24px;font-weight:700}
+h3{font-size:16px;font-weight:600}
+p{margin:0;max-width:68ch}
+.eyebrow{font:500 12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.lede{color:var(--muted);font-size:16px}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+section{display:grid;gap:14px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+@media (min-width:700px){.tiles{grid-template-columns:repeat(5,1fr)}}
+.tile{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:grid;gap:2px}
+.tile b{font:600 24px var(--f-display);font-variant-numeric:tabular-nums}
+.tile span{color:var(--muted);font-size:13px}
+.finds{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.finds li{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:12px 16px;display:grid;gap:4px}
+.finds li strong{font-family:var(--f-display);font-size:16px}
+.finds li span{color:var(--muted);font-size:14px}
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.charts{grid-template-columns:1fr}}
+.chart{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0}
+.chart p{font-size:13px;color:var(--muted)}
+.bars{display:grid;gap:7px}
+.bar{display:grid;grid-template-columns:118px 1fr 62px;gap:10px;align-items:center;font-size:13px}
+.bar .lab{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .lab small{color:var(--muted)}
+.track{height:12px;background:var(--line);border-radius:3px;overflow:hidden}
+.fill{height:100%;background:var(--bar)}
+.fill.hi{background:var(--accent)}
+.bar .val{font-family:var(--f-mono);font-variant-numeric:tabular-nums;text-align:right}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+.list{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.list ol{margin:0;padding-left:20px;display:grid;gap:4px;font-size:14px}
+.list ol span{color:var(--muted)}
+.list.warn{border-top:3px solid var(--warn)}
+.list.good{border-top:3px solid var(--accent)}
+.patterns{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.pat{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:grid;gap:6px;align-content:start}
+.pat p{font-size:14px}
+.pat .ex{font-size:13px;color:var(--muted)}
+.models{display:grid;gap:12px}
+.model{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:6px 16px}
+.model .nums{font:13px var(--f-mono);color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+.model p{grid-column:1/-1;font-size:14px}
+@media (max-width:560px){.model{grid-template-columns:1fr}.model .nums{text-align:left}}
+.caveats{background:var(--warn-soft);border-radius:8px;padding:14px 18px;display:grid;gap:6px}
+.caveats ul{margin:0;padding-left:18px;font-size:14px;display:grid;gap:4px}
+.tablebox{overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:820px}
+th,td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 12px var(--f-body);color:var(--muted);cursor:pointer;user-select:none;white-space:nowrap;background:var(--paper);position:sticky;top:0}
+th:hover{color:var(--ink)}
+th[aria-sort] ::after{content:""}
+td.n{font-family:var(--f-mono);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th.n{text-align:right}
+td small{color:var(--muted)}
+.chip{display:inline-block;font:500 11px var(--f-mono);padding:1px 6px;border-radius:4px;background:var(--line);color:var(--ink);white-space:nowrap}
+.chip.up{background:var(--accent-soft);color:var(--accent)}
+.chip.down{background:var(--warn-soft);color:var(--warn)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.filters button{font:500 13px var(--f-body);border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:5px 12px;border-radius:99px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.filters button:focus-visible,th:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.foot{font-size:13px;color:var(--muted)}
+</style>
+
+<div class="wrap">
+  <header style="display:grid;gap:12px">
+    <div class="eyebrow">daily.ecommerce sheet · Single Product Brands tab · 80 stores · data pulled 18–23 Oct 2026</div>
+    <h1>Winning Store Teardown</h1>
+    <p class="lede">What 80 tracked stores have in common, what the money follows, and which ones are worth modelling for the Lavan test. Revenue, visits and ads are WinningHunter estimates, so read them as direction, not accounts.</p>
+  </header>
+
+  <section>
+    <div class="tiles">
+      <div class="tile"><b>80</b><span>stores tracked</span></div>
+      <div class="tile"><b>$0.98M</b><span>median revenue a month</span></div>
+      <div class="tile"><b>133K</b><span>median monthly visits</span></div>
+      <div class="tile"><b>$44.99</b><span>median price</span></div>
+      <div class="tile"><b>56 of 65</b><span>growing over 6 months</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">The short version</div>
+    <h2>Seven things the list says</h2>
+    <ul class="finds">
+      <li><strong>Half the list is health, but it isn't the best-paid half.</strong><span>41 of 80 stores are health, 21 of them supplements. Their median revenue is $0.86M. Pets ($1.2M) and home and kitchen ($1.5M) make more per store, from far fewer stores. Less crowded, better paid.</span></li>
+      <li><strong>A story about why beats no story, but a full scientific mechanism isn't needed.</strong><span>Stores with no mechanism have a median of $0.60M. A light or loose "why it works" line roughly doubles that ($1.1M to $1.3M). A full mechanism comes in at $0.85M. Pick one believable reason.</span></li>
+      <li><strong>Cheaper sells more.</strong><span>Under $30: median $2.75M. $30 to $49: $1.21M. $50 to $99: $0.56M. Over $100: $0.31M. Part of this is the big range stores sitting at low prices, but the slope holds.</span></li>
+      <li><strong>The biggest stores started with one product, then built a range.</strong><span>Stores with 11+ products have a median of $2.34M, against $0.65M for stores with 1 to 3. Kitty Spout, Wuffes and Uproot Clean all grew one hero into a range. One product is the way in, not the end state.</span></li>
+      <li><strong>Lots of ads doesn't mean winning.</strong><span>Revenue per active ad runs from about $121K (HydroJug) down to about $100 (VitalPaws). Stores spraying thousands of ads (VitalPaws 2,473, Tradesmen 3,400, Auniva 1,870) earn far less than tight advertisers like Earthly Derm, Primal Remedies and Dairy Pill.</span></li>
+      <li><strong>The real winners went vertical in under 6 months.</strong><span>Earthly Derm (26x to $10.5M), Primal Remedies (23x to $9M) and Primal Storm (15x to $7.4M) all went from small to big between April and September 2026, each on one mechanism-led product.</span></li>
+      <li><strong>Bad reviews don't stop sales.</strong><span>Stores under 3.5 on Trustpilot still have a median of $1.2M. BlackGirlVitamins makes an estimated $25M to $45M on 2.5 stars. Reviews matter for keeping customers, not for the first sale.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow">Where the money is</div>
+    <h2>Median monthly revenue by group</h2>
+    <div class="charts">
+      <div class="chart">
+        <h3>By category</h3>
+        <div class="bars" id="c-cat"></div>
+        <p>Number of stores in brackets. Health has the most stores but the lowest median.</p>
+      </div>
+      <div class="chart">
+        <h3>By price</h3>
+        <div class="bars" id="c-price"></div>
+        <p>Main product price. 79 stores with a price.</p>
+      </div>
+      <div class="chart">
+        <h3>By how the page explains it</h3>
+        <div class="bars" id="c-mech"></div>
+        <p>From the mechanism column. "Light" and "loose" mean a simple why, not a scientific one.</p>
+      </div>
+      <div class="chart">
+        <h3>By store size</h3>
+        <div class="bars" id="c-size"></div>
+        <p>Products on store. Range stores earn the most; most of the list is still 1 to 3 products.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Spend versus return</div>
+    <h2>Who gets the most from each ad</h2>
+    <p class="lede">Estimated monthly revenue divided by active ads, for stores running 50+ ads. A rough read on how hard each ad works.</p>
+    <div class="two">
+      <div class="list good">
+        <h3>Working hardest</h3>
+        <ol>
+          <li>HydroJug <span>· $121K per ad · 52 ads, $6.3M</span></li>
+          <li>PestLab <span>· $31K · 131 ads, $4.1M</span></li>
+          <li>BlackGirlVitamins <span>· $29K · 1,200 ads, $35M</span></li>
+          <li>Culligan <span>· $24K · 62 ads, $1.5M</span></li>
+          <li>Dairy Pill <span>· $24K · 116 ads, $2.75M</span></li>
+          <li>TheraPetMD <span>· $24K · 277 ads, $6.55M</span></li>
+          <li>Earthly Derm <span>· $19K · 564 ads, $10.5M</span></li>
+          <li>Primal Remedies <span>· $18K · 504 ads, $9M</span></li>
+        </ol>
+      </div>
+      <div class="list warn">
+        <h3>Spraying and praying</h3>
+        <ol>
+          <li>VitalPaws <span>· $100 per ad · 2,473 ads, $190K</span></li>
+          <li>Tradesmen Nutrition <span>· $200 · 3,400 ads, $620K</span></li>
+          <li>Piventra <span>· $500 · 170 ads, $85K</span></li>
+          <li>Boosh <span>· $600 · 198 ads, $120K</span></li>
+          <li>Crave <span>· $700 · 187 ads, $140K</span></li>
+          <li>Callixe <span>· $1K · 1,400 ads, $1.4M</span></li>
+          <li>Auniva <span>· $1K · 1,870 ads, $1.85M</span></li>
+          <li>rynw <span>· $1K · 71 ads, $74K</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Momentum</div>
+    <h2>Rising and falling</h2>
+    <div class="two">
+      <div class="list good">
+        <h3>Fastest risers (traffic over about 6 months)</h3>
+        <ol>
+          <li>Earthly Derm <span>· 26x, now $10.5M</span></li>
+          <li>Holior <span>· 26x at peak, fell 47% in Sep</span></li>
+          <li>Primal Remedies <span>· 23x, now $9M</span></li>
+          <li>Elorita <span>· 24x, now $0.47M</span></li>
+          <li>The Root Co. <span>· 24x, now $0.64M</span></li>
+          <li>Rivanta <span>· 17x, now $2.2M</span></li>
+          <li>SmilePlus <span>· 17x, now $0.67M</span></li>
+          <li>Primal Storm <span>· 15x, now $7.35M</span></li>
+          <li>Meimei Korean Beauty <span>· 14x, now $2.1M</span></li>
+          <li>WANDER+ <span>· 12x, now $1.7M</span></li>
+        </ol>
+        <p class="foot">Tradesmen Nutrition shows 155x, but off a near-zero start in June, so it's left off.</p>
+      </div>
+      <div class="list warn">
+        <h3>Shrinking</h3>
+        <ol>
+          <li>blyss <span>· down 89% while ads up 268%</span></li>
+          <li>Callixe <span>· down 45% while ads tripled</span></li>
+          <li>Edjy <span>· down 35%</span></li>
+          <li>zozofit <span>· down 26%</span></li>
+          <li>Flakes <span>· down 18%</span></li>
+          <li>PestLab <span>· down 15%, ads down 73% in a month</span></li>
+        </ol>
+        <p class="foot">Falling traffic plus rising ads is the warning sign: they're paying more to stand still.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Patterns across stores</div>
+    <h2>Moves that keep showing up</h2>
+    <div class="patterns">
+      <div class="pat"><h3>Same product, new buyer</h3><p>A proven product is renamed for one specific person and situation.</p><p class="ex">Human red light pad → dog joint wrap (Luma Pet). Car door handle → post-surgery leg lifter (Piventra). Castor oil pack → body-area kits (Tavio).</p></div>
+      <div class="pat"><h3>The older buyer</h3><p>A big cluster sells to people 45+ with a body that's started letting them down: energy, eyes, circulation, smell, joints, menopause.</p><p class="ex">Auniva, Primal Remedies, Elorita, Neurobella, Her Vitality, rynw, Mirai Clinical, Beminda, Piventra.</p></div>
+      <div class="pat"><h3>Fake experts sell the product</h3><p>Ads run from persona pages ("Dr. Valerie DVM", "Catherine Wright", "Natural Healing Journal") and lead to a presell article before the store.</p><p class="ex">Tavio, Roosty's, Kitty Spout, WANDER+, Feliway, Auniva (about 12 persona pages).</p></div>
+      <div class="pat"><h3>The "real reason" headline</h3><p>The top earners name a hidden cause the buyer hasn't heard: cortisol choking testosterone, raw garlic breaking down, soap pH stripping skin.</p><p class="ex">Primal Storm, Primal Remedies, Earthly Derm, NaturalRems, Menerals.</p></div>
+      <div class="pat"><h3>Pets graduate to ranges</h3><p>Pet stores start with one hero then stack refills, supplements and add-ons. Several of the biggest stores on the list are pet ranges.</p><p class="ex">Wuffes ($15M to $27M), Uproot Clean ($6.2M to $11.5M), Kitty Spout ($4.8M to $7.2M), TheraPetMD.</p></div>
+      <div class="pat"><h3>Refills and subscriptions</h3><p>The repeat purchase is built into the product: filters, refill vials, monthly chews, plan re-ships.</p><p class="ex">Curo Skin filters, Kitty Spout filters, TheraPetMD refills, Pestie plans, rynw.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">For the Lavan test</div>
+    <h2>Stores worth modelling</h2>
+    <p class="lede">One hero product, a price under about $60, a simple "why it works", a fast rise and ads that pull their weight. These are the shapes to copy, not the products to clone.</p>
+    <div class="models">
+      <div class="model"><h3>Earthly Derm · plant-ash acne soap</h3><div class="nums">$29 · $10.5M/mo · 26x · $19K/ad</div><p>Cheap, one product, one clear mechanism (normal soap's pH strips the skin; plant ash cleans the pore). The best all-round shape on the list.</p></div>
+      <div class="model"><h3>Primal Remedies · aged garlic supplement</h3><div class="nums">$39.95 · $9M/mo · 23x · $18K/ad</div><p>A "you've been taking the wrong form" mechanism that turns a commodity into something different. 90-day money back.</p></div>
+      <div class="model"><h3>Dairy Pill · lactase pills</h3><div class="nums">$27.77 · $2.75M/mo · 10x · $24K/ad</div><p>A named comparison ("6x stronger than Lactaid") does the explaining for it. Efficient ads, HSA/FSA eligible.</p></div>
+      <div class="model"><h3>Tavio · castor oil pack kit</h3><div class="nums">$54.99 · $2.3M/mo · 7x · $15K/ad</div><p>An old remedy turned into a ritual kit, then split into body-area versions. Sold heavily through advertorial pages.</p></div>
+      <div class="model"><h3>Kitty Spout · cat water fountain</h3><div class="nums">$38–69 · $6M/mo · range of 50</div><p>Pet, refillable, giftable. Shows the path from one hero to a range, and a sister store (Doggy Spout) for the next buyer.</p></div>
+      <div class="model"><h3>WANDER+ · travel neck pillow</h3><div class="nums">$39.95 · $1.7M/mo · 12x</div><p>No mechanism, just a sharp problem and a demo-friendly product. Proof that a plain, physical fix can scale fast.</p></div>
+    </div>
+  </section>
+
+  <section class="caveats">
+    <h3>Read these numbers with care</h3>
+    <ul>
+      <li>Revenue, visits and ad counts are WinningHunter estimates. Resilia's $125M to $210M a month is almost certainly wrong for a store that started in July, so it's left out of the rankings.</li>
+      <li>Traffic trends come in two shapes: older rows give monthly visits ("35K (Apr) to 913K (Sep)"), newer rows give percentages. Both are turned into a 6-month multiple here, so treat close calls as ties.</li>
+      <li>The 10 TikTok Shop rows have no web traffic or revenue estimate in the same terms, so they sit out of the revenue charts.</li>
+      <li>Two new rows (Peachies, usecadence.com) were still empty when this was pulled, so they're not included.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow">Every store</div>
+    <h2>The full list</h2>
+    <div class="filters" role="group" aria-label="Filter stores">
+      <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
+      <button type="button" id="f-health" data-f="Health" aria-pressed="false">Health</button>
+      <button type="button" id="f-pets" data-f="Pet" aria-pressed="false">Pets</button>
+      <button type="button" id="f-beauty" data-f="Beauty" aria-pressed="false">Beauty</button>
+      <button type="button" id="f-home" data-f="Home" aria-pressed="false">Home &amp; other</button>
+      <span class="foot">Click a column heading to sort.</span>
+    </div>
+    <div class="tablebox">
+      <table>
+        <thead><tr>
+          <th data-k="n" tabindex="0">Store</th>
+          <th data-k="c" tabindex="0">Category</th>
+          <th data-k="p" class="n" tabindex="0">Price</th>
+          <th data-k="r" class="n" tabindex="0">Revenue / mo</th>
+          <th data-k="v" class="n" tabindex="0">Visits</th>
+          <th data-k="a" class="n" tabindex="0">Active ads</th>
+          <th data-k="g" class="n" tabindex="0">6-mo growth</th>
+          <th data-k="m" tabindex="0">Mechanism</th>
+        </tr></thead>
+        <tbody id="tb"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="foot">Source: daily.ecommerce Google Sheet, tab 1, read 23 Oct 2026. Revenue is the midpoint of WinningHunter's range. Built for Joey and Lavan.</p>
+</div>
+
+<script>
+const ROWS = [{"n": "VitalPaws", "c": "Pets / supplements", "p": 49.0, "r": 190000, "rr": "$130K-250K", "v": 35703.0, "a": 2473.0, "g": 5.14, "m": "No mechanism", "t": false, "prod": "Daily multivitamin chews for dogs"}, {"n": "Primal Storm", "c": "Health / men", "p": 57.65, "r": 7350000, "rr": "$5.2M-9.5M", "v": 877699.0, "a": 2225.0, "g": 14.88, "m": "Mechanism", "t": false, "prod": "Men's supplement (plus ashwagandha)"}, {"n": "Auniva", "c": "Health / supplements", "p": 39.99, "r": 1850000, "rr": "$1.2M-2.5M", "v": 228391.0, "a": 1870.0, "g": 5.07, "m": "Mechanism", "t": false, "prod": "Amla, garlic and pomegranate capsules"}, {"n": "Rivanta", "c": "Electronics / preparedness", "p": 49.99, "r": 2200000, "rr": "$1.5M-2.9M", "v": 208887.0, "a": 1672.0, "g": 17.42, "m": "No mechanism", "t": false, "prod": "Emergency power bank (plus survival seed vault)"}, {"n": "Hanae Korea", "c": "Beauty / K-beauty makeup", "p": 29.95, "r": 1240000, "rr": "$810K-1.67M", "v": 164824.0, "a": 1130.0, "g": 11.0, "m": "No mechanism", "t": false, "prod": "NAD EGF firming multi balm (was dual-ended foundation stick)"}, {"n": "Resilia", "c": "Health / supplements", "p": 39.99, "r": 167500000, "rr": "$125M-210M", "v": 18087013.0, "a": 960.0, "g": 6.46, "m": "Loose mechanism", "t": false, "prod": "Oil of oregano plus black seed oil softgels (was aged garlic, cinnamon, black seed oil cap"}, {"n": "Meimei Korean Beauty", "c": "Beauty / anti-aging", "p": 45.0, "r": 2100000, "rr": "$1.5M-2.7M", "v": 212665.0, "a": 666.0, "g": 14.2, "m": "Light mechanism", "t": false, "prod": "NAD+ firming serum"}, {"n": "Earthly Derm", "c": "Beauty / skincare", "p": 29.0, "r": 10500000, "rr": "$7M-14M", "v": 912644.0, "a": 564.0, "g": 26.09, "m": "Mechanism", "t": false, "prod": "Anti-acne and blemish bar, a plant-ash black soap (was listed as turmeric glow soap)"}, {"n": "Menerals", "c": "Health / men", "p": 75.0, "r": 3300000, "rr": "$2.3M-4.3M", "v": 397705.0, "a": 535.0, "g": 2.27, "m": "Mechanism", "t": false, "prod": "Men's mineral supplement (plus energy drink)"}, {"n": "VivaNMN", "c": "Health / longevity", "p": 29.99, "r": 4250000, "rr": "$3M-5.5M", "v": 508640.0, "a": 521.0, "g": 1.74, "m": "Light mechanism", "t": false, "prod": "Pure NMN 500mg capsules"}, {"n": "Primal Remedies", "c": "Health / supplements", "p": 39.95, "r": 9000000, "rr": "$6.5M-11.5M", "v": 1223398.0, "a": 504.0, "g": 23.53, "m": "Mechanism", "t": false, "prod": "Aged garlic extract, Ceylon cinnamon"}, {"n": "GoodGrove", "c": "Health / supplements", "p": 49.99, "r": 935000, "rr": "$610K-1.26M", "v": 126195.0, "a": 453.0, "g": 10.5, "m": "Loose mechanism", "t": false, "prod": "Tart cherry extract, now sold for uric acid and joints (was sold for sleep)"}, {"n": "SleepEase", "c": "Health / sleep", "p": 299.0, "r": 1035000, "rr": "$720K-1.35M", "v": 125973.0, "a": 441.0, "g": 12.6, "m": "Mechanism", "t": false, "prod": "SleepEase Pro anti-snoring device (plus patches)"}, {"n": "Neurobella", "c": "Health / supplements", "p": 44.99, "r": 860000, "rr": "$620K-1.1M", "v": 149407.0, "a": 375.0, "g": 2.92, "m": "Light mechanism", "t": false, "prod": "Now leads with a nerve support formula. Promise and mechanism columns cover the 15-in-1 ey"}, {"n": "Elorita", "c": "Health / supplements", "p": 37.5, "r": 475000, "rr": "$300K-650K", "v": 47524.0, "a": 307.0, "g": 24.0, "m": "Mechanism", "t": false, "prod": "Cayenne pepper and Ceylon cinnamon softgels"}, {"n": "Nuropod", "c": "Electronics / wellness device", "p": 900.0, "r": 3300000, "rr": "$2.2M-4.4M", "v": 341460.0, "a": 241.0, "g": 4.11, "m": "Light mechanism", "t": false, "prod": "Nuropod earpiece device"}, {"n": "NX1 Project", "c": "Beauty / skincare", "p": 29.99, "r": 825000, "rr": "$550K-1.1M", "v": 121052.0, "a": 232.0, "g": 2.47, "m": "Loose mechanism", "t": false, "prod": "Tallow and raw honey body balm (plus face balm)"}, {"n": "Holior", "c": "Health / supplements", "p": 39.99, "r": 1320000, "rr": "$990K-1.65M", "v": 184881.0, "a": 210.0, "g": 26.43, "m": "Mechanism", "t": false, "prod": "Wormwood parasite cleanse softgels (was Rhodiola cortisol support)"}, {"n": "Boosh", "c": "Beauty / grooming", "p": 134.99, "r": 120000, "rr": "$90K-150K", "v": 20690.0, "a": 198.0, "g": 1.62, "m": "No mechanism", "t": false, "prod": "Electric body trimmer (plus blades)"}, {"n": "Crave", "c": "Health / fitness", "p": 44.0, "r": 140000, "rr": "$96K-184K", "v": 20453.0, "a": 187.0, "g": 6.67, "m": "No mechanism", "t": false, "prod": "Creatine gummies"}, {"n": "Piventra", "c": "Health / mobility", "p": 59.0, "r": 85000, "rr": "$65K-105K", "v": 11895.0, "a": 170.0, "g": null, "m": "No mechanism", "t": false, "prod": "Leg lifter strap for hip and knee surgery recovery (was car door support handle)"}, {"n": "Audigo", "c": "Electronics / audio", "p": 249.0, "r": 156000, "rr": "$117K-195K", "v": 21746.0, "a": 140.0, "g": 2.2, "m": "No mechanism", "t": false, "prod": "Wireless mic with phone app"}, {"n": "Luma Pet", "c": "Pets / device", "p": 79.0, "r": 340000, "rr": "$250K-430K", "v": 40201.0, "a": 122.0, "g": 1.67, "m": "Light mechanism", "t": false, "prod": "Red light therapy joint wrap for dogs (was the red light pad)"}, {"n": "Nutriveen", "c": "Health / supplements", "p": 50.0, "r": 162500, "rr": "$110K-215K", "v": 18322.0, "a": 119.0, "g": 0.9, "m": "Light mechanism", "t": false, "prod": "Gut-brain balance supplement"}, {"n": "Vysionary", "c": "Health / sleep", "p": 49.99, "r": 260000, "rr": "$190K-330K", "v": 45486.0, "a": 94.0, "g": 4.5, "m": "Loose mechanism", "t": false, "prod": "Blue light blocking glasses (plus focus drink)"}, {"n": "Beminda", "c": "Health / eye care", "p": 49.99, "r": 150000, "rr": "$110K-190K", "v": 19080.0, "a": 92.0, "g": 3.17, "m": "Mechanism", "t": false, "prod": "Steam Therapy Pro dry-eye steam mask (was the lid massage wand)"}, {"n": "Doggies", "c": "Pets / treats", "p": 43.96, "r": 150000, "rr": "$110K-190K", "v": 18762.0, "a": 82.0, "g": 5.22, "m": "Mechanism", "t": false, "prod": "Vet-formulated dental chews"}, {"n": "S\u00fcti", "c": "Accessories / phone", "p": 39.0, "r": 585000, "rr": "$420K-750K", "v": 70627.0, "a": 78.0, "g": 5.92, "m": "No mechanism", "t": false, "prod": "PhoneBack x PopSocket MagSafe case (was plain PhoneBack case)"}, {"n": "Her Vitality", "c": "Health / women 45+", "p": 89.99, "r": 500000, "rr": "$380K-620K", "v": 43382.0, "a": 78.0, "g": 5.38, "m": "Mechanism", "t": false, "prod": "MenoVital menopause supplement"}, {"n": "rynw", "c": "Health / supplements", "p": 29.99, "r": 74000, "rr": "$53K-95K", "v": 21329.0, "a": 71.0, "g": 7.0, "m": "Mechanism", "t": false, "prod": "Vitamin B complex"}, {"n": "Prime Mens Health", "c": "Health / men", "p": null, "r": 427500, "rr": "$285K-570K", "v": 46520.0, "a": 69.0, "g": 4.7, "m": "No mechanism", "t": false, "prod": "Single men's health product listed only as \"TST\""}, {"n": "breathewave", "c": "Health / sleep", "p": 50.0, "r": 285000, "rr": "$220K-350K", "v": 31609.0, "a": 63.0, "g": 2.46, "m": "Light mechanism", "t": false, "prod": "Nasal dilator (plus mouth tape)"}, {"n": "Curo Skin", "c": "Beauty / bathroom", "p": 80.0, "r": 190000, "rr": "$140K-240K", "v": 36911.0, "a": 62.0, "g": 1.76, "m": "Mechanism", "t": false, "prod": "Filtered shower head (plus replacement filters)"}, {"n": "Unplugs", "c": "Other", "p": 54.0, "r": 300000, "rr": "$210K-390K", "v": 33033.0, "a": 54.0, "g": 8.25, "m": "No mechanism", "t": false, "prod": "Unplugs (plus Mag Leash, FitWings)"}, {"n": "RestorAll", "c": "Health / digestion", "p": 39.9, "r": 95000, "rr": "$70K-120K", "v": 32898.0, "a": 54.0, "g": 16.5, "m": "Light mechanism", "t": false, "prod": "RefluxCare digestive formula"}, {"n": "Earclear", "c": "Health / ear care", "p": 12.99, "r": 91000, "rr": "$62K-120K", "v": 31511.0, "a": 45.0, "g": 34.0, "m": "Mechanism", "t": false, "prod": "Now leads with tinnitus relief patches. Promise and mechanism columns cover the ear wax dr"}, {"n": "Perfect Plantista", "c": "Home / garden", "p": 34.95, "r": 270000, "rr": "$180K-360K", "v": 30103.0, "a": 37.0, "g": 3.0, "m": "Light mechanism", "t": false, "prod": "Now leads with houseplant dusting gloves. Promise and mechanism columns cover the pest spr"}, {"n": "The Root Co.", "c": "Health / hair", "p": 59.9, "r": 640000, "rr": "$460K-820K", "v": 71785.0, "a": 26.0, "g": 24.0, "m": "Mechanism", "t": false, "prod": "Hair vitamin"}, {"n": "Sensate", "c": "Health / device", "p": 299.0, "r": 300000, "rr": "$210K-390K", "v": 30926.0, "a": 15.0, "g": 2.58, "m": "Light mechanism", "t": false, "prod": "Sensate 2 calming device"}, {"n": "Fitnexa", "c": "Electronics / sleep", "p": 169.99, "r": 325000, "rr": "$230K-420K", "v": 47742.0, "a": 4.0, "g": 2.4, "m": "Light mechanism", "t": false, "prod": "SomniPods 3 sleep earbuds"}, {"n": "Attaboy", "c": "Health / supplements", "p": 79.0, "r": 367500, "rr": "$265K-470K", "v": 60663.0, "a": 57.0, "g": 4.69, "m": "No mechanism", "t": false, "prod": "Every Damn Day daily supplement sticks (creatine, citrulline, electrolytes)"}, {"n": "MosquitoNix", "c": "Home / pest control", "p": 79.99, "r": 200000, "rr": "$140K-260K", "v": 33966.0, "a": 10.0, "g": null, "m": "No mechanism", "t": false, "prod": "On-The-Go portable mosquito mister"}, {"n": "LiceGuard", "c": "Beauty / kids' hair", "p": 19.99, "r": 24000, "rr": "$18K-30K", "v": 3572.0, "a": 33.0, "g": null, "m": "Mechanism", "t": false, "prod": "ROBICOMB lice zapping comb (plus spray, combing kits)"}, {"n": "Nex Playground", "c": "Toys / gaming", "p": 388.0, "r": null, "rr": "$713K shop / $1.3M product (TikTok 30d)", "v": null, "a": null, "g": null, "m": "No mechanism", "t": true, "prod": "Active-play game console for kids and families"}, {"n": "Sweet Mayhem", "c": "Clothing", "p": 33.0, "r": null, "rr": "$430K shop / $581K product (TikTok 30d)", "v": null, "a": null, "g": null, "m": "No mechanism", "t": true, "prod": "Fleece-lined 'magic' leggings for women"}, {"n": "Bella All Natural", "c": "Health / supplements", "p": 55.0, "r": null, "rr": "$384K (TikTok 30d), $1.1M over 90d", "v": null, "a": null, "g": null, "m": "No mechanism", "t": true, "prod": "Colon cleanse powder, 400g"}, {"n": "Bold Buns", "c": "Health / supplements", "p": 49.0, "r": null, "rr": "$265K (TikTok 30d), $745K over 90d", "v": null, "a": null, "g": null, "m": "No mechanism", "t": true, "prod": "Creatine for women (plus a cortisol supplement)"}, {"n": "Bondie", "c": "Beauty", "p": 30.0, "r": null, "rr": "$220-250K (TikTok 30d)", "v": null, "a": null, "g": null, "m": "No mechanism", "t": true, "prod": "Body adhesive for clothes and tape, sweat-proof, washes off"}, {"n": "Decent Nature", "c": "Health / supplements", "p": 49.0, "r": null, "rr": "$206K (TikTok 30d)", "v": null, "a": null, "g": null, "m": "No mechanism", "t": true, "prod": "Magnesium complex, 7 forms, 90 capsules"}, {"n": "NUDE Mints", "c": "Health / oral care", "p": 27.0, "r": null, "rr": "$190K (TikTok 30d)", "v": null, "a": null, "g": null, "m": "No mechanism", "t": true, "prod": "Sugar-free liquid breath mint capsules"}, {"n": "Routine Wellness", "c": "Beauty / haircare", "p": 64.0, "r": null, "rr": "$189K (TikTok 30d)", "v": null, "a": null, "g": null, "m": "No mechanism", "t": true, "prod": "Anti-thinning shampoo and conditioner set"}, {"n": "Peach Perfect Nutrition", "c": "Health / supplements", "p": 51.0, "r": null, "rr": "$172K (TikTok 30d), $511K over 90d", "v": null, "a": null, "g": null, "m": "Light mechanism", "t": true, "prod": "Own site now leads with creatine gummies. Promise and mechanism columns cover the inositol"}, {"n": "Hem Healer", "c": "Health / supplements", "p": 90.0, "r": null, "rr": "$120K (TikTok 30d)", "v": null, "a": null, "g": null, "m": "Light mechanism", "t": true, "prod": "Complete Relief System bundle, built round the Hem Hero hemorrhoid capsule"}, {"n": "Edjy", "c": "Beauty / grooming", "p": 18.0, "r": 962500, "rr": "725,000 to 1,200,000", "v": 115900.0, "a": 211.0, "g": 0.65, "m": "Mechanism", "t": false, "prod": "A better nailclipper that actually cuts nails"}, {"n": "zozofit.com", "c": "Health / fitness device", "p": 99.99, "r": 875000, "rr": "$650,000-$1,100,000", "v": 140500.0, "a": 168.0, "g": 0.74, "m": "Light mechanism", "t": false, "prod": "Body tracking suit"}, {"n": "Flakes", "c": "Beauty / haircare", "p": 39.0, "r": 1750000, "rr": "$1,300,000 \u2013 $2,200,000", "v": 217300.0, "a": 476.0, "g": 0.82, "m": "Loose mechanism", "t": false, "prod": "Dandruff shampoo for men"}, {"n": "Tryresia", "c": "Health / supplements", "p": 34.99, "r": 1000000, "rr": "$700,000-$1,300,000", "v": 104600.0, "a": 433.0, "g": 8.17, "m": "Light mechanism", "t": false, "prod": "Ceylon cinnamon supplement"}, {"n": "SmilePlus", "c": "Beauty / oral care", "p": 58.0, "r": 665000, "rr": "$480,000 \u2013 $850,000", "v": 77900.0, "a": 173.0, "g": 16.67, "m": "Light mechanism", "t": false, "prod": "WHITENING + FRESH BREATH POUCH"}, {"n": "Kepos", "c": "Health / supplements", "p": 69.0, "r": 740000, "rr": "$530,000 \u2013 $950,000", "v": 75800.0, "a": 575.0, "g": null, "m": "Mechanism", "t": false, "prod": "Human milk supplement"}, {"n": "BlackGirlVitamins", "c": "Health / supplements", "p": 15.0, "r": 35000000, "rr": "$25M-45M", "v": 4000000.0, "a": 1200.0, "g": 3.69, "m": "No mechanism", "t": false, "prod": "Mix of supps"}, {"n": "Wuffes", "c": "Pet Supplements", "p": 24.99, "r": 21000000, "rr": "15M-27M", "v": 2800000.0, "a": 1400.0, "g": 2.59, "m": "Loose mechanism", "t": false, "prod": "Vet-approved dog supplement range (hip and joint, allergy and itch, calming, dental, probi"}, {"n": "TheraPetMD", "c": "Pet Calming", "p": 49.0, "r": 6550000, "rr": "$4.6M-$8.5M", "v": 910000.0, "a": 277.0, "g": null, "m": "Light mechanism", "t": false, "prod": "Calming pheromone diffuser for dogs and cats (plus refills and sprays)"}, {"n": "NaturalRems", "c": "Health / supplements", "p": 39.99, "r": 5650000, "rr": "$4.1M-7.2M", "v": 840000.0, "a": 410.0, "g": 1.8, "m": "Mechanism", "t": false, "prod": "Sea moss 16-in-1 gummies (plus shilajit, mushroom and joint support lines)"}, {"n": "PestLab", "c": "Home / pest control", "p": 29.99, "r": 4100000, "rr": "3M-5.2M", "v": 626000.0, "a": 131.0, "g": 0.85, "m": "Light mechanism", "t": false, "prod": "Pest Control Device"}, {"n": "Naked Nutrition", "c": "Health / supplements", "p": 24.99, "r": 4150000, "rr": "$3.2M-5.1M", "v": 574000.0, "a": 1400.0, "g": 0.99, "m": "No mechanism", "t": false, "prod": "Clean Supplements"}, {"n": "Mirai Clinical", "c": "Beauty / body care", "p": 19.97, "r": 1750000, "rr": "$1.3m - 2.2m", "v": 288000.0, "a": 133.0, "g": 2.42, "m": "Mechanism", "t": false, "prod": "Deodorizing soap with persimmon (plus body wash, wipes, deodorant and hair care)"}, {"n": "Dairy Pill", "c": "Health / digestion", "p": 27.77, "r": 2750000, "rr": "$1,900,000-$3,600,000", "v": 277000.0, "a": 116.0, "g": 10.03, "m": "Light mechanism", "t": false, "prod": "Lactase enzyme pills, 6x stronger than Lactaid (plus Key Pod keychain case)"}, {"n": "Tavio", "c": "Health / wellness", "p": 54.99, "r": 2342500, "rr": "$1,802,000-$2,883,000", "v": 276500.0, "a": 157.0, "g": 7.29, "m": "Light mechanism", "t": false, "prod": "Castor oil pack kit (organic castor oil, flannel pack and heat pack)"}, {"n": "Pebblebee", "c": "Electronics / trackers", "p": 34.99, "r": 1175000, "rr": "$850,000-$1,500,000", "v": 230000.0, "a": 42.0, "g": 0.94, "m": "Light mechanism", "t": false, "prod": "Clip 5 item finder (plus Card 5, Halo safety alarm, L\u00d4C8, bundles)"}, {"n": "WANDER+", "c": "Travel / sleep", "p": 39.95, "r": 1675000, "rr": "$1,250,000-$2,100,000", "v": 227600.0, "a": 315.0, "g": 12.34, "m": "No mechanism", "t": false, "prod": "Original WANDER+ Pillow (for flights)"}, {"n": "Uproot Clean", "c": "Pets / cleaning", "p": 24.99, "r": 8850000, "rr": "$6,200,000-$11,500,000", "v": 984700.0, "a": 1700.0, "g": 1.84, "m": "No mechanism", "t": false, "prod": "Uproot Cleaner Pro pet hair remover (plus laundry, grooming and care range)"}, {"n": "Kitty Spout", "c": "Pets / feeding", "p": 38.0, "r": 6000000, "rr": "$4,800,000-$7,200,000", "v": 911100.0, "a": 1100.0, "g": 1.27, "m": "Light mechanism", "t": false, "prod": "Stainless steel wireless cat water fountain (plus filters, kits, supplements)"}, {"n": "HydroJug", "c": "Kitchen / drinkware", "p": 19.0, "r": 6300000, "rr": "$4,800,000-$7,800,000", "v": 806300.0, "a": 52.0, "g": 1.75, "m": "No mechanism", "t": false, "prod": "HydroJug water bottles and tumblers (Traveler, Ease2O, Sport, Everyday, coffee)"}, {"n": "blyss", "c": "Home / cleaning", "p": 38.0, "r": 1965000, "rr": "$1,480,000-$2,450,000", "v": 223200.0, "a": 618.0, "g": 0.11, "m": "No mechanism", "t": false, "prod": "Natural scented mop soap (plus spin mop heads, room sprays, deodorizer sprays)"}, {"n": "Culligan", "c": "Home / water filtration", "p": 34.99, "r": 1500000, "rr": "$1,100,000-$1,900,000", "v": 192000.0, "a": 62.0, "g": 1.58, "m": "Light mechanism", "t": false, "prod": "Culligan with ZeroWater Technology filter pitchers and dispensers (plus replacement filter"}, {"n": "Roosty's", "c": "Pets / poultry supplements", "p": 32.99, "r": 1200000, "rr": "$900,000-$1,500,000", "v": 174800.0, "a": 849.0, "g": 3.37, "m": "No mechanism", "t": false, "prod": "Daily Worm Defense + Gut Support for backyard hens (plus egg booster, nesting herbs, multi"}, {"n": "Feliway", "c": "Pets / calming", "p": 24.99, "r": 1100000, "rr": "$850,000-$1,350,000", "v": 153400.0, "a": 152.0, "g": 1.77, "m": "Light mechanism", "t": false, "prod": "Calming pheromone diffusers for cats (Classic, MultiCat, Optimum) plus refills and spray"}, {"n": "Pestie", "c": "Home / pest control", "p": 45.0, "r": 1210500, "rr": "$887,000-$1,534,000", "v": 151500.0, "a": 533.0, "g": 1.11, "m": "Light mechanism", "t": false, "prod": "Pestie Smart Pest Plan (DIY pest control subscription)"}, {"n": "Callixe", "c": "Health / pain relief device", "p": 99.0, "r": 1375000, "rr": "$1,000,000-$1,750,000", "v": 177600.0, "a": 1400.0, "g": 0.55, "m": "Light mechanism", "t": false, "prod": "Thera Pillow neck pillow with heat, vibration and traction (plus Thera Back Pillow, Thera "}, {"n": "Tradesmen Nutrition", "c": "Health / supplements", "p": 54.0, "r": 625000, "rr": "$450,000-$800,000", "v": 63900.0, "a": 3400.0, "g": 155.59, "m": "No mechanism", "t": false, "prod": "Shred fat-loss supplement (plus energy drink, sleep, T-Fuel testosterone, creatine, meal s"}];
+const fmtM = x => x == null ? '' : x >= 1e6 ? '$' + (x/1e6).toFixed(x >= 1e7 ? 0 : 1) + 'M' : '$' + Math.round(x/1e3) + 'K';
+const fmtN = x => x == null ? '' : x >= 1e6 ? (x/1e6).toFixed(1) + 'M' : x >= 1e3 ? Math.round(x/1e3) + 'K' : String(Math.round(x));
+
+function bars(id, items){
+  const max = Math.max(...items.map(i => i.v));
+  const top = Math.max(...items.map(i => i.v));
+  document.getElementById(id).innerHTML = items.map(i =>
+    `<div class="bar"><span class="lab">${i.l} <small>(${i.n})</small></span><span class="track"><span class="fill${i.v===top?' hi':''}" style="width:${(i.v/max*100).toFixed(1)}%"></span></span><span class="val">${fmtM(i.v)}</span></div>`).join('');
+}
+bars('c-cat', [
+  {l:'Home & kitchen', n:7, v:1.5e6}, {l:'Pets', n:9, v:1.2e6}, {l:'Electronics', n:5, v:1.175e6},
+  {l:'Beauty', n:13, v:0.9625e6}, {l:'Health', n:41, v:0.86e6}
+]);
+bars('c-price', [
+  {l:'Under $30', n:18, v:2.75e6}, {l:'$30 to $49', n:32, v:1.21e6}, {l:'$50 to $99', n:22, v:0.56e6}, {l:'$100+', n:7, v:0.31e6}
+]);
+bars('c-mech', [
+  {l:'Loose why', n:6, v:1.34e6}, {l:'Light why', n:26, v:1.14e6}, {l:'Full mechanism', n:20, v:0.85e6}, {l:'No mechanism', n:28, v:0.60e6}
+]);
+bars('c-size', [
+  {l:'11+ products', n:19, v:2.34e6}, {l:'1 to 3 products', n:40, v:0.65e6}, {l:'4 to 10 products', n:21, v:0.50e6}
+]);
+
+let sortKey = 'r', sortDir = -1, filter = 'all';
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function match(r){
+  if (filter === 'all') return true;
+  const c = (r.c || '').toLowerCase();
+  if (filter === 'Health') return c.startsWith('health');
+  if (filter === 'Pet') return c.startsWith('pet');
+  if (filter === 'Beauty') return c.startsWith('beauty');
+  return !c.startsWith('health') && !c.startsWith('pet') && !c.startsWith('beauty');
+}
+function render(){
+  const list = ROWS.filter(match).slice().sort((a,b) => {
+    const x = a[sortKey], y = b[sortKey];
+    if (x == null && y == null) return 0; if (x == null) return 1; if (y == null) return -1;
+    return (typeof x === 'string' ? x.localeCompare(y) : x - y) * sortDir;
+  });
+  document.getElementById('tb').innerHTML = list.map(r => {
+    const g = r.g == null ? '' : `<span class="chip ${r.g >= 1.5 ? 'up' : r.g < 1 ? 'down' : ''}">${r.g >= 10 ? Math.round(r.g) : r.g.toFixed(1)}x</span>`;
+    return `<tr><td><b>${esc(r.n)}</b><br><small>${esc(r.prod)}</small></td><td>${esc(r.c)}</td><td class="n">${r.p == null ? '' : '$' + r.p}</td><td class="n">${r.t ? '<small>TikTok</small>' : fmtM(r.r)}</td><td class="n">${fmtN(r.v)}</td><td class="n">${fmtN(r.a)}</td><td class="n">${g}</td><td>${esc(r.m)}</td></tr>`;
+  }).join('');
+  document.querySelectorAll('th').forEach(th => th.setAttribute('aria-sort', th.dataset.k === sortKey ? (sortDir > 0 ? 'ascending' : 'descending') : 'none'));
+}
+document.querySelectorAll('th').forEach(th => {
+  const go = () => { const k = th.dataset.k; sortDir = k === sortKey ? -sortDir : (['n','c','m'].includes(k) ? 1 : -1); sortKey = k; render(); };
+  th.addEventListener('click', go);
+  th.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+});
+document.querySelectorAll('.filters button').forEach(b => b.addEventListener('click', () => {
+  filter = b.dataset.f;
+  document.querySelectorAll('.filters button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  render();
+}));
+render();
+</script>
