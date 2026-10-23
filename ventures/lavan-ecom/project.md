@@ -12,7 +12,7 @@ Started: 2026-10-15
 
 ## Who does what
 - Joey: angle, hooks, ad creative, copy, reading the account.
-- Lavan: _to agree in Phase 0_
+- Lavan: _to agree in Phase 0_. Our shared edge (agreed on call 1): creative strategy and marketing craft.
 - Claude: research sweeps, teardowns, unit economics, briefs, drafts, store copy, daily reads.
 
 ## Numbers we've agreed
@@ -30,6 +30,7 @@ _Fill in during Phase 0. Don't start spending until these are set._
 - `store/` product page copy, policies, store setup notes
 - `creative/` hooks, scripts, ad copy, creator briefs
 - `reads/` launch results and daily account reads
+- `meetings/` call notes
 - [decisions.md](decisions.md) every go / kill / pick call, with the reason
 
 ## Rules that carry over
