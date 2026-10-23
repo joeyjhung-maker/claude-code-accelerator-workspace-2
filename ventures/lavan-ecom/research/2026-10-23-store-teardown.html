@@ -47,8 +47,8 @@ section{display:grid;gap:14px}
 .bar{display:grid;grid-template-columns:118px 1fr 62px;gap:10px;align-items:center;font-size:13px}
 .bar .lab{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bar .lab small{color:var(--muted)}
-.track{height:12px;background:var(--line);border-radius:3px;overflow:hidden}
-.fill{height:100%;background:var(--bar)}
+.track{display:block;height:12px;background:var(--line);border-radius:3px;overflow:hidden}
+.fill{display:block;height:100%;background:var(--bar)}
 .fill.hi{background:var(--accent)}
 .bar .val{font-family:var(--f-mono);font-variant-numeric:tabular-nums;text-align:right}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
