@@ -23,13 +23,20 @@ _Fill in during Phase 0. Don't start spending until these are set._
 - Kill rule:
 - Target market / currency:
 
-## Product criteria (agreed 23 Oct 2026)
-A product only makes the shortlist if a competitor selling something similar meets **all four**:
-1. **$300K+ a month** in revenue (WinningHunter estimate). For new searches, look in the $300K to $1M band.
+## Product criteria (revised 23 Oct 2026)
+Two stages. Discovery uses what Meta proves. Search volume is a market check later, not a discovery filter.
+
+**Stage 1: discovery (a store goes on the sheet if it meets all three)**
+1. **$300K+ a month** in revenue (WinningHunter midpoint). Search band for new finds: $300K to $1M.
 2. **100+ active Meta ads.**
-3. **30K+ monthly searches in the US** for the main product term (not the brand name). Strict: Google Keyword Planner, US. If it only shows a band, the bottom of the band must be 30K+ (so 100K-1M passes, 10K-100K fails). Global numbers (Exploding Topics) don't count.
-4. **1 to 3 products** on the store.
-Then Mark's margin rule (price minus landed cost ≥ $30, and price ≥ 3x landed cost), then the purple ocean score. See [[2026-10-23-purple-ocean-filter]].
+3. **1 to 3 real products**, counted on the store's own site (WinningHunter's count undercounts; bundles, colour/size variants and add-ons like shipping protection don't count as extra products).
+
+**Stage 2: shortlist checks (before anything gets tested)**
+4. **Market search demand:** the market or problem term (e.g. "dog calming", "ADHD sleep"), not the store's exact product term. US band from Google Keyword Planner. 10K-100K or higher counts as a live market; it's a tie-breaker between options, not a kill switch. Get exact numbers (Keywords Everywhere or Semrush) when it decides between two finalists.
+5. **Mark's margin rule:** price minus landed cost ≥ $30, and price ≥ 3x landed cost.
+6. **Purple ocean score** (A to E, 11+ out of 15). See [[2026-10-23-purple-ocean-filter]].
+
+Why it changed: requiring 30K+ exact-term US searches at discovery passed 3 of ~280 stores and favoured search-led, crowded products (sofa beds, office chairs). Meta winners often have low search volume because the ads create the demand. Mark lists search volume as one of four ways to check demand, not a requirement.
 
 ## Where things go
 - `research/` raw product hunting, ad library pulls, review mining
